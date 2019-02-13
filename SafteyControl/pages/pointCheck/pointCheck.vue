@@ -18,7 +18,7 @@
 			</swiper-item>  
 		</swiper>  
 		<view class="userinfo">
-		  <view class='dangerView'>
+		  <view class='dangerView' @tap="jumpListPage">
 		    <image class="dangerIcon" src="../../assets/add.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>所有记录</text>
@@ -58,6 +58,18 @@
 </template>
 
 <script>
+	export default {
+		methods:{
+			jumpListPage() {
+				uni.navigateTo({
+					url: '../pointList/uni-tabs',
+					success: res => {},
+					fail: () => {},
+					complete: () => {}
+				});
+			},
+		},
+	}
 </script>
 
 <style>

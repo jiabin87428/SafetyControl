@@ -10,6 +10,9 @@ var config = {
   host,
   // 登录
   login: `${host}/mobile/system/login.do`,
+  
+  // 待整改
+  waitForChange: `${host}/mobile/dzglb.do`,
 
   // 注册
   register: `${host}/register.do?action=Register`,

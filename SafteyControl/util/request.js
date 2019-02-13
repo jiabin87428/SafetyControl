@@ -12,6 +12,7 @@ const requestLoading = function(url, params, message, success, fail) {
 // 	    title: message,
 // 	  })
 // 	}
+	console.log(url);
 	uni.request({
 			url: url, 
 			data: params,
@@ -26,7 +27,7 @@ const requestLoading = function(url, params, message, success, fail) {
 // 					  wx.hideLoading()
 // 					}
 
-				// console.log('' + JSON.stringify(res));
+				console.log('' + JSON.stringify(res));
 				if (res.data.success == 'true') {
 					success(res.data)
 				} else {
@@ -34,7 +35,7 @@ const requestLoading = function(url, params, message, success, fail) {
 				}
 			},
 			fail:(res) => {
-				console.log(res)
+				console.log('' + JSON.stringify(res))
 				fail()
 			}
 	});

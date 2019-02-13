@@ -8,7 +8,11 @@ const getUsers = function () {
 //     if (!ret) {
 //         ret = '[]';
 //     }
-    return JSON.parse(ret);
+    if (!ret) {
+		return null;
+	}else{
+		return JSON.parse(ret);
+	}
 }
 
 const addUser = function (userInfo) {

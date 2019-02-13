@@ -39,6 +39,20 @@
       }
     ]
   },
+  "nvue": {
+    "pages": {
+      "pages/uni-tabs/uni-tabs.html": {
+        "window": {
+          "navigationBarTitleText": "点位检查11"
+        }
+      },
+      "pages/pointList/uni-tabs.html": {
+        "window": {
+          "navigationBarTitleText": "点位检查"
+        }
+      }
+    }
+  },
   "splashscreen": {
     "autoclose": true
   },

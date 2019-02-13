@@ -30,6 +30,16 @@
             "style": {
                 "navigationBarTitleText": "检查记录"
             }
+        }, {
+            "path": "pages/pointList/uni-tabs",
+            "style": {
+                "navigationBarTitleText": "点位检查"
+            }
+        }, {
+            "path": "pages/uni-tabs/uni-tabs",
+            "style": {
+                "navigationBarTitleText": "点位检查11"
+            }
         }
     ],
     "tabBar": {

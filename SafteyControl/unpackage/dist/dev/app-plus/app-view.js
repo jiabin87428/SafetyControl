@@ -11,12 +11,12 @@ var __WXML_GLOBAL__ = {
 };
 var $gwx;
 
-/*v0.5vv_20181116_syb_scopedata*/window.__wcc_version__='v0.5vv_20181116_syb_scopedata';window.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
+/*v0.5vv_20180810_syb_zp*/window.__wcc_version__='v0.5vv_20180810_syb_zp';window.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
 var $gwxc
 var $gaic={}
 $gwx=function(path,global){
-if(typeof global === 'undefined') global={};if(typeof __WXML_GLOBAL__ === 'undefined') {__WXML_GLOBAL__={};
-}__WXML_GLOBAL__.modules = __WXML_GLOBAL__.modules || {};
+if(typeof global === 'undefined') global={};
+if(typeof __WXML_GLOBAL__ === 'undefined') __WXML_GLOBAL__={};
 function _(a,b){if(typeof(b)!='undefined')a.children.push(b);}
 function _v(k){if(typeof(k)!='undefined')return {tag:'virtual','wxKey':k,children:[]};return {tag:'virtual',children:[]};}
 function _n(tag){$gwxc++;if($gwxc>=16000){throw 'Dom limit exceeded, please check if there\'s any mistake you\'ve made.'};return {tag:'wx-'+tag,attr:{},children:[],n:[],raw:{},generics:{}}}
@@ -422,11 +422,8 @@ e.stack = e.stack.substring(0,e.stack.indexOf("\n", e.stack.lastIndexOf("at nv_"
 e.stack = e.stack.replace(/\snv_/g," "); 
 e.stack = $gstack(e.stack);	
 if(g.debugInfo)
-{
 e.stack += "\n "+" "+" "+" at "+g.debugInfo[0]+":"+g.debugInfo[1]+":"+g.debugInfo[2];
-console.error(e);
-}
-_r = undefined;
+throw e;
 }
 return should_pass_type_info && (_tb || _ta) ? wh.nh( _r, 'f' ) : _r;
 }
@@ -1029,31 +1026,12 @@ function _gd(p,c,e,d){if(!c)return;if(d[p][c])return d[p][c];for(var x=e[p].i.le
 function _gapi(e,p){if(!p)return [];if($gaic[p]){return $gaic[p]};var ret=[],q=[],h=0,t=0,put={},visited={};q.push(p);visited[p]=true;t++;while(h<t){var a=q[h++];for(var i=0;i<e[a].ic.length;i++){var nd=e[a].ic[i];var np=_grp(nd,e,a);if(np&&!visited[np]){visited[np]=true;q.push(np);t++;}}for(var i=0;a!=p&&i<e[a].ti.length;i++){var ni=e[a].ti[i];var nm=_grp(ni,e,a);if(nm&&!put[nm]){put[nm]=true;ret.push(nm);}}}$gaic[p]=ret;return ret;}
 var $ixc={};function _ic(p,ent,me,e,s,r,gg){var x=_grp(p,ent,me);ent[me].j.push(x);if(x){if($ixc[x]){_wp('-1:include:-1:-1: `'+p+'` is being included in a loop, will be stop.');return;}$ixc[x]=true;try{ent[x].f(e,s,r,gg)}catch(e){}$ixc[x]=false;}else{_wp(me+':include:-1:-1: Included path `'+p+'` not found from `'+me+'`.')}}
 function _w(tn,f,line,c){_wp(f+':template:'+line+':'+c+': Template `'+tn+'` not found.');}function _ev(dom){var changed=false;delete dom.properities;delete dom.n;if(dom.children){do{changed=false;var newch = [];for(var i=0;i<dom.children.length;i++){var ch=dom.children[i];if( ch.tag=='virtual'){changed=true;for(var j=0;ch.children&&j<ch.children.length;j++){newch.push(ch.children[j]);}}else { newch.push(ch); } } dom.children = newch; }while(changed);for(var i=0;i<dom.children.length;i++){_ev(dom.children[i]);}} return dom; }
-function _tsd( root )
-{
-if( root.tag == "wx-wx-scope" ) 
-{
-root.tag = "virtual";
-root.wxCkey = "11";
-root['wxScopeData'] = root.attr['wx:scope-data'];
-delete root.n;
-delete root.raw;
-delete root.generics;
-delete root.attr;
-}
-for( var i = 0 ; root.children && i < root.children.length ; i++ )
-{
-_tsd( root.children[i] );
-}
-return root;
-}
-
 var e_={}
 if(typeof(global.entrys)==='undefined')global.entrys={};e_=global.entrys;
 var d_={}
 if(typeof(global.defines)==='undefined')global.defines={};d_=global.defines;
 var f_={}
-if(typeof(global.modules)==='undefined')global.modules={};f_=global.modules || {};
+if(typeof(global.modules)==='undefined')global.modules={};f_=global.modules;
 var p_={}
 var cs
 __WXML_GLOBAL__.ops_cached = __WXML_GLOBAL__.ops_cached || {}
@@ -1247,7 +1225,10 @@ Z(z[8])
 Z(z[9])
 Z(z[10])
 Z([3,'_view 10bbdf1a userinfo'])
+Z([3,'handleProxy'])
 Z([3,'_view 10bbdf1a dangerView'])
+Z([[7],[3,'$k']])
+Z([1,'10bbdf1a-0'])
 Z([3,'_image 10bbdf1a dangerIcon'])
 Z([3,'widthFix'])
 Z([3,'../../assets/add.png'])
@@ -1255,43 +1236,43 @@ Z([3,'_view 10bbdf1a subView'])
 Z([3,'_text 10bbdf1a dangerText'])
 Z([3,'所有记录'])
 Z([3,'_text 10bbdf1a subText'])
-Z(z[30])
-Z(z[24])
+Z(z[33])
 Z(z[25])
-Z(z[26])
+Z(z[28])
+Z(z[29])
 Z([3,'../../assets/list.png'])
-Z(z[28])
-Z(z[29])
+Z(z[31])
+Z(z[32])
 Z([3,'消火栓'])
-Z(z[31])
+Z(z[34])
+Z(z[42])
+Z(z[25])
+Z(z[28])
+Z(z[29])
 Z(z[39])
-Z(z[24])
-Z(z[25])
-Z(z[26])
-Z(z[36])
-Z(z[28])
-Z(z[29])
+Z(z[31])
+Z(z[32])
 Z([3,'阀组'])
-Z(z[31])
-Z(z[48])
-Z(z[24])
+Z(z[34])
+Z(z[51])
 Z(z[25])
-Z(z[26])
-Z(z[36])
 Z(z[28])
 Z(z[29])
+Z(z[39])
+Z(z[31])
+Z(z[32])
 Z([3,'高位水箱'])
-Z(z[31])
-Z(z[57])
-Z(z[24])
+Z(z[34])
+Z(z[60])
 Z(z[25])
-Z(z[26])
-Z(z[36])
 Z(z[28])
 Z(z[29])
-Z([3,'消防泵'])
+Z(z[39])
 Z(z[31])
-Z(z[66])
+Z(z[32])
+Z([3,'消防泵'])
+Z(z[34])
+Z(z[69])
 })(__WXML_GLOBAL__.ops_cached.$gwx_8);return __WXML_GLOBAL__.ops_cached.$gwx_8
 }
 function gz$gwx_9(){
@@ -1427,7 +1408,7 @@ Z([3,'240234ba'])
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
-var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
+var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);throw e;}
 }}}()
 var x=['./common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./pages/login/login.vue.wxml','/components/m-input.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
 var m0=function(e,s,r,gg){
@@ -1898,26 +1879,25 @@ cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:929")
 var aL=_n('view')
 _rz(z,aL,'class',23,e,s,gg)
 cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:967")
-var tM=_n('view')
-_rz(z,tM,'class',24,e,s,gg)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:image:1:1007")
-var eN=_mz(z,'image',['class',25,'mode',1,'src',2],[],e,s,gg)
+var tM=_mz(z,'view',['bindtap',24,'class',1,'data-comkey',2,'data-eventid',3],[],e,s,gg)
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:image:1:1082")
+var eN=_mz(z,'image',['class',28,'mode',1,'src',2],[],e,s,gg)
 cs.pop()
 _(tM,eN)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:1100")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:1175")
 var bO=_n('view')
-_rz(z,bO,'class',28,e,s,gg)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:1137")
+_rz(z,bO,'class',31,e,s,gg)
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:1212")
 var oP=_n('text')
-_rz(z,oP,'class',29,e,s,gg)
-var xQ=_oz(z,30,e,s,gg)
+_rz(z,oP,'class',32,e,s,gg)
+var xQ=_oz(z,33,e,s,gg)
 _(oP,xQ)
 cs.pop()
 _(bO,oP)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:1196")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:1271")
 var oR=_n('text')
-_rz(z,oR,'class',31,e,s,gg)
-var fS=_oz(z,32,e,s,gg)
+_rz(z,oR,'class',34,e,s,gg)
+var fS=_oz(z,35,e,s,gg)
 _(oR,fS)
 cs.pop()
 _(bO,oR)
@@ -1925,27 +1905,27 @@ cs.pop()
 _(tM,bO)
 cs.pop()
 _(aL,tM)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:1266")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:1341")
 var cT=_n('view')
-_rz(z,cT,'class',33,e,s,gg)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:image:1:1306")
-var hU=_mz(z,'image',['class',34,'mode',1,'src',2],[],e,s,gg)
+_rz(z,cT,'class',36,e,s,gg)
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:image:1:1381")
+var hU=_mz(z,'image',['class',37,'mode',1,'src',2],[],e,s,gg)
 cs.pop()
 _(cT,hU)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:1400")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:1475")
 var oV=_n('view')
-_rz(z,oV,'class',37,e,s,gg)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:1437")
+_rz(z,oV,'class',40,e,s,gg)
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:1512")
 var cW=_n('text')
-_rz(z,cW,'class',38,e,s,gg)
-var oX=_oz(z,39,e,s,gg)
+_rz(z,cW,'class',41,e,s,gg)
+var oX=_oz(z,42,e,s,gg)
 _(cW,oX)
 cs.pop()
 _(oV,cW)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:1493")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:1568")
 var lY=_n('text')
-_rz(z,lY,'class',40,e,s,gg)
-var aZ=_oz(z,41,e,s,gg)
+_rz(z,lY,'class',43,e,s,gg)
+var aZ=_oz(z,44,e,s,gg)
 _(lY,aZ)
 cs.pop()
 _(oV,lY)
@@ -1953,27 +1933,27 @@ cs.pop()
 _(cT,oV)
 cs.pop()
 _(aL,cT)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:1560")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:1635")
 var t1=_n('view')
-_rz(z,t1,'class',42,e,s,gg)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:image:1:1600")
-var e2=_mz(z,'image',['class',43,'mode',1,'src',2],[],e,s,gg)
+_rz(z,t1,'class',45,e,s,gg)
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:image:1:1675")
+var e2=_mz(z,'image',['class',46,'mode',1,'src',2],[],e,s,gg)
 cs.pop()
 _(t1,e2)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:1694")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:1769")
 var b3=_n('view')
-_rz(z,b3,'class',46,e,s,gg)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:1731")
+_rz(z,b3,'class',49,e,s,gg)
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:1806")
 var o4=_n('text')
-_rz(z,o4,'class',47,e,s,gg)
-var x5=_oz(z,48,e,s,gg)
+_rz(z,o4,'class',50,e,s,gg)
+var x5=_oz(z,51,e,s,gg)
 _(o4,x5)
 cs.pop()
 _(b3,o4)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:1784")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:1859")
 var o6=_n('text')
-_rz(z,o6,'class',49,e,s,gg)
-var f7=_oz(z,50,e,s,gg)
+_rz(z,o6,'class',52,e,s,gg)
+var f7=_oz(z,53,e,s,gg)
 _(o6,f7)
 cs.pop()
 _(b3,o6)
@@ -1981,27 +1961,27 @@ cs.pop()
 _(t1,b3)
 cs.pop()
 _(aL,t1)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:1848")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:1923")
 var c8=_n('view')
-_rz(z,c8,'class',51,e,s,gg)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:image:1:1888")
-var h9=_mz(z,'image',['class',52,'mode',1,'src',2],[],e,s,gg)
+_rz(z,c8,'class',54,e,s,gg)
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:image:1:1963")
+var h9=_mz(z,'image',['class',55,'mode',1,'src',2],[],e,s,gg)
 cs.pop()
 _(c8,h9)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:1982")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:2057")
 var o0=_n('view')
-_rz(z,o0,'class',55,e,s,gg)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:2019")
+_rz(z,o0,'class',58,e,s,gg)
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:2094")
 var cAB=_n('text')
-_rz(z,cAB,'class',56,e,s,gg)
-var oBB=_oz(z,57,e,s,gg)
+_rz(z,cAB,'class',59,e,s,gg)
+var oBB=_oz(z,60,e,s,gg)
 _(cAB,oBB)
 cs.pop()
 _(o0,cAB)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:2078")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:2153")
 var lCB=_n('text')
-_rz(z,lCB,'class',58,e,s,gg)
-var aDB=_oz(z,59,e,s,gg)
+_rz(z,lCB,'class',61,e,s,gg)
+var aDB=_oz(z,62,e,s,gg)
 _(lCB,aDB)
 cs.pop()
 _(o0,lCB)
@@ -2009,27 +1989,27 @@ cs.pop()
 _(c8,o0)
 cs.pop()
 _(aL,c8)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:2148")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:2223")
 var tEB=_n('view')
-_rz(z,tEB,'class',60,e,s,gg)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:image:1:2188")
-var eFB=_mz(z,'image',['class',61,'mode',1,'src',2],[],e,s,gg)
+_rz(z,tEB,'class',63,e,s,gg)
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:image:1:2263")
+var eFB=_mz(z,'image',['class',64,'mode',1,'src',2],[],e,s,gg)
 cs.pop()
 _(tEB,eFB)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:2282")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:2357")
 var bGB=_n('view')
-_rz(z,bGB,'class',64,e,s,gg)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:2319")
+_rz(z,bGB,'class',67,e,s,gg)
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:2394")
 var oHB=_n('text')
-_rz(z,oHB,'class',65,e,s,gg)
-var xIB=_oz(z,66,e,s,gg)
+_rz(z,oHB,'class',68,e,s,gg)
+var xIB=_oz(z,69,e,s,gg)
 _(oHB,xIB)
 cs.pop()
 _(bGB,oHB)
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:2375")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:text:1:2450")
 var oJB=_n('text')
-_rz(z,oJB,'class',67,e,s,gg)
-var fKB=_oz(z,68,e,s,gg)
+_rz(z,oJB,'class',70,e,s,gg)
+var fKB=_oz(z,71,e,s,gg)
 _(oJB,fKB)
 cs.pop()
 _(bGB,oJB)
@@ -2408,7 +2388,6 @@ env=window.__mergeData__(env,dd);
 }
 try{
 main(env,{},root,global);
-_tsd(root)
 if(typeof(window.__webview_engine_version__)=='undefined'|| window.__webview_engine_version__+1e-6<0.01+1e-6){return _ev(root);}
 }catch(err){
 console.log(cs, env);
@@ -2425,10 +2404,10 @@ var BASE_DEVICE_WIDTH = 750;
 var isIOS=navigator.userAgent.match("iPhone");
 var deviceWidth = window.screen.width || 375;
 var deviceDPR = window.devicePixelRatio || 2;
-var checkDeviceWidth = window.__checkDeviceWidth__ || function() {
+function checkDeviceWidth() {
 var newDeviceWidth = window.screen.width || 375
 var newDeviceDPR = window.devicePixelRatio || 2
-var newDeviceHeight = window.screen.height || 375
+const newDeviceHeight = window.screen.height || 375
 if (window.screen.orientation && /^landscape/.test(window.screen.orientation.type || '')) newDeviceWidth = newDeviceHeight
 if (newDeviceWidth !== deviceWidth || newDeviceDPR !== deviceDPR) {
 deviceWidth = newDeviceWidth
@@ -2437,7 +2416,7 @@ deviceDPR = newDeviceDPR
 }
 checkDeviceWidth()
 var eps = 1e-4;
-var transformRPX = window.__transformRpx__ || function(number, newDeviceWidth) {
+function transformRPX(number, newDeviceWidth) {
 if ( number === 0 ) return 0;
 number = number / BASE_DEVICE_WIDTH * ( newDeviceWidth || deviceWidth );
 number = Math.floor(number + eps);
