@@ -32,6 +32,27 @@
 		      <text class='subText'>消火栓</text>
 		    </view>
 		  </view>
+		  <view class='dangerView'>
+		    <image class="dangerIcon" src="../../assets/list.png" mode="widthFix"></image>
+		    <view class='subView'>
+		      <text class='dangerText'>阀组</text>
+		      <text class='subText'>阀组</text>
+		    </view>
+		  </view>
+		  <view class='dangerView'>
+		    <image class="dangerIcon" src="../../assets/list.png" mode="widthFix"></image>
+		    <view class='subView'>
+		      <text class='dangerText'>高位水箱</text>
+		      <text class='subText'>高位水箱</text>
+		    </view>
+		  </view>
+		  <view class='dangerView'>
+		    <image class="dangerIcon" src="../../assets/list.png" mode="widthFix"></image>
+		    <view class='subView'>
+		      <text class='dangerText'>消防泵</text>
+		      <text class='subText'>消防泵</text>
+		    </view>
+		  </view>
 		</view>
 	</view>
 </template>
@@ -46,17 +67,7 @@
 	  flex: 1;
 	  flex-direction: column;
 	  background-color: #efeff4;
-	}  
-	.part2:after{  
-		content: " ";  
-		height: 20px;  
-		border-radius: 50%;  
-		background: #f9f9f9;  
-		position: absolute;  
-		bottom: -10px;  
-		left: -20px;  
-		right: -20px;  
-	}  
+	}   
 	.banner-box{  
 		width: 100%;  
 		/* height: 100%;  */
@@ -76,7 +87,7 @@
 	  display:flex;
 	  flex-direction:row;
 	  width: 90%;
-	  height: 80px;
+	  height: 150px;
 	  background-color: white;
 	  margin-top: 10px;
 	  border-color: #D9E5F0;
@@ -97,13 +108,13 @@
 	  justify-content: center;/*水平居中*/
 	}
 	.dangerText {
-	  font-size: 16px;
+	  font-size: 16;
 	  color: #256FBD;
 	  margin-left: 15px;
 	}
 
 	.subText {
-	  font-size: 14px;
+	  font-size: 14;
 	  color: #767676;
 	  margin-left: 20px;
 	  margin-top: 5px;

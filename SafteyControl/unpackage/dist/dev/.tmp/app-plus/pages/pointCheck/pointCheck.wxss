@@ -40,6 +40,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 轮播图 */
 .part2{  
   display: -webkit-box;  
@@ -56,16 +77,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #efeff4;
-}
-.part2:after{  
-	content: " ";  
-	height: 20rpx;  
-	border-radius: 50%;  
-	background: #f9f9f9;  
-	position: absolute;  
-	bottom: -10rpx;  
-	left: -20rpx;  
-	right: -20rpx;
 }
 .banner-box{  
 	width: 100%;  
@@ -103,7 +114,7 @@
       -ms-flex-direction:row;
           flex-direction:row;
   width: 90%;
-  height: 80rpx;
+  height: 150rpx;
   background-color: white;
   margin-top: 10rpx;
   border-color: #D9E5F0;
@@ -136,12 +147,12 @@
           justify-content: center;/*水平居中*/
 }
 .dangerText {
-  font-size: 16rpx;
+  font-size: 16;
   color: #256FBD;
   margin-left: 15rpx;
 }
 .subText {
-  font-size: 14rpx;
+  font-size: 14;
   color: #767676;
   margin-left: 20rpx;
   margin-top: 5rpx;
