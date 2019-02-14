@@ -1,29 +1,244 @@
 
-.hello {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .hello {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .title {
+        color: #8f8f94;
+        margin-top: 50upx;
+    }
+
+    .ul {
+        font-size: 30upx;
+        color: #8f8f94;
+        margin-top: 50upx;
+    }
+
+    .ul>view {
+        line-height: 50upx;
+    } */
+.baseView{  
+	  display: -webkit-box;  
+	  display: -webkit-flex;  
+	  display: -ms-flexbox;  
+	  display: flex;
+	  -webkit-box-flex: 1;
+	  -webkit-flex: 1;
+	      -ms-flex: 1;
+	          flex: 1;
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -webkit-flex-direction: column;
+	      -ms-flex-direction: column;
+	          flex-direction: column;
+	  -webkit-box-align: center;
+	  -webkit-align-items: center;
+	      -ms-flex-align: center;
+	          align-items: center;
+	  background-color: #FFFFFF;
 }
-.title {
-    color: #8f8f94;
-    margin-top: 50rpx;
+.topView {
+		width: 100%;
+		height: 300rpx;
+		background-color: #2D68AA;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 }
-.ul {
-    font-size: 30rpx;
-    color: #8f8f94;
-    margin-top: 50rpx;
+.topTextTitle {
+		width: 300rpx;
+		text-align: center;
+		color: #FFFFFF;
+		font-size: 30rpx;
 }
-.ul>view {
-    line-height: 50rpx;
+.topTextNum {
+		width: 300rpx;
+		text-align: center;
+		color: #FFFFFF;
+		font-size: 60rpx;
+}
+.middleView {
+		width: 100%;
+		height: 200rpx;
+		background-color: #FFFFFF;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-justify-content: space-around;
+		    -ms-flex-pack: distribute;
+		        justify-content: space-around;
+}
+.btnView {
+		width: 100%;
+		height: 100%;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+}
+.btnImage {
+		width: 100rpx;
+		height: 100rpx;
+}
+.vLine {
+		width: 1rpx;
+		height: 130rpx;
+		background-color: #B0B0B0;
+}
+.btnText {
+		text-align: center;
+		color: #6D6D6D;
+		font-size: 24rpx;
+		font-style: normal;
+}
+.hLine {
+		width: 95%;
+		height: 1rpx;
+		background-color: #E8E8E8;
 }
 

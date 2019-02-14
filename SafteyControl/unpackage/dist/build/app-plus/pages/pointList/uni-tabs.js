@@ -2417,6 +2417,9 @@ var dom = weex.requireModule('dom');var _default =
         obj['comment_count'] = '';
         this.newsitems[index].data.push(obj);
       }
+      if (!isRefresh) {// 上拉加载更多结束后改回加载更多，增加体验
+        that.newsitems[e].loadingText = '加载更多...';
+      }
       if (this.newsitems[index].data.length <= 0) {
         uni.showToast({
           icon: 'none',
@@ -2447,6 +2450,10 @@ var dom = weex.requireModule('dom');var _default =
         pageRows: that.pageRows,
         lx: that.lx == '所有记录' ? '' : that.lx };
 
+
+      if (!isRefresh) {// 上拉加载更多，改变文字，增加体验
+        that.newsitems[e].loadingText = '正在加载...';
+      }
 
       _request.default.requestLoading(url, data, '正在加载',
       function (res) {

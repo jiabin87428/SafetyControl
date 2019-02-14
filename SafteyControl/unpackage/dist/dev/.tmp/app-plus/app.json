@@ -6,7 +6,9 @@
     "pages/pwd/pwd",
     "pages/user/user",
     "pages/pointCheck/pointCheck",
-    "pages/pointDetail/pointDetail"
+    "pages/pointDetail/pointDetail",
+    "pages/pointAdd/pointAdd",
+    "pages/mpvue-echarts/mpvue-echarts"
   ],
   "subPackages": [],
   "window": {
@@ -39,6 +41,9 @@
         "selectedIconPath": "static/img/userHL.png"
       }
     ]
+  },
+  "networkTimeout": {
+    "request": 60000
   },
   "nvue": {
     "pages": {

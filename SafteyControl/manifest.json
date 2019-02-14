@@ -29,5 +29,8 @@
 		"setting" : {
 			"urlCheck" : true
 		}
-    }
+    },
+	"networkTimeout": {// 网络请求超时
+		"request": 60000
+	  }
 }

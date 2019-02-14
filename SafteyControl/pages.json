@@ -41,6 +41,16 @@
                 "navigationBarTitleText": "点位详情"
             }
         }, {
+            "path": "pages/pointAdd/pointAdd",
+            "style": {
+                "navigationBarTitleText": "新增检查"
+            }
+        }, {
+            "path": "pages/mpvue-echarts/mpvue-echarts",
+            "style": {
+                "navigationBarTitleText": "ECharts图表"
+            }
+        }, {
             "path": "pages/uni-tabs/uni-tabs",
             "style": {
                 "navigationBarTitleText": "点位检查11"
