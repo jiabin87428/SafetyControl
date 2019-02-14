@@ -10,12 +10,12 @@ var requirePlugin = requirePlugin || function() {};
 var Behavior = Behavior || function() {};
 var $gwx;
   
-/*v0.5vv_20180810_syb_zp*/global.__wcc_version__='v0.5vv_20180810_syb_zp';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
+/*v0.5vv_20181116_syb_scopedata*/global.__wcc_version__='v0.5vv_20181116_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
 var $gwxc
 var $gaic={}
 $gwx=function(path,global){
-if(typeof global === 'undefined') global={};
-if(typeof __WXML_GLOBAL__ === 'undefined') __WXML_GLOBAL__={};
+if(typeof global === 'undefined') global={};if(typeof __WXML_GLOBAL__ === 'undefined') {__WXML_GLOBAL__={};
+}__WXML_GLOBAL__.modules = __WXML_GLOBAL__.modules || {};
 function _(a,b){if(typeof(b)!='undefined')a.children.push(b);}
 function _v(k){if(typeof(k)!='undefined')return {tag:'virtual','wxKey':k,children:[]};return {tag:'virtual',children:[]};}
 function _n(tag){$gwxc++;if($gwxc>=16000){throw 'Dom limit exceeded, please check if there\'s any mistake you\'ve made.'};return {tag:'wx-'+tag,attr:{},children:[],n:[],raw:{},generics:{}}}
@@ -421,8 +421,11 @@ e.stack = e.stack.substring(0,e.stack.indexOf("\n", e.stack.lastIndexOf("at nv_"
 e.stack = e.stack.replace(/\snv_/g," "); 
 e.stack = $gstack(e.stack);	
 if(g.debugInfo)
+{
 e.stack += "\n "+" "+" "+" at "+g.debugInfo[0]+":"+g.debugInfo[1]+":"+g.debugInfo[2];
-throw e;
+console.error(e);
+}
+_r = undefined;
 }
 return should_pass_type_info && (_tb || _ta) ? wh.nh( _r, 'f' ) : _r;
 }
@@ -1022,12 +1025,31 @@ function _gd(p,c,e,d){if(!c)return;if(d[p][c])return d[p][c];for(var x=e[p].i.le
 function _gapi(e,p){if(!p)return [];if($gaic[p]){return $gaic[p]};var ret=[],q=[],h=0,t=0,put={},visited={};q.push(p);visited[p]=true;t++;while(h<t){var a=q[h++];for(var i=0;i<e[a].ic.length;i++){var nd=e[a].ic[i];var np=_grp(nd,e,a);if(np&&!visited[np]){visited[np]=true;q.push(np);t++;}}for(var i=0;a!=p&&i<e[a].ti.length;i++){var ni=e[a].ti[i];var nm=_grp(ni,e,a);if(nm&&!put[nm]){put[nm]=true;ret.push(nm);}}}$gaic[p]=ret;return ret;}
 var $ixc={};function _ic(p,ent,me,e,s,r,gg){var x=_grp(p,ent,me);ent[me].j.push(x);if(x){if($ixc[x]){_wp('-1:include:-1:-1: `'+p+'` is being included in a loop, will be stop.');return;}$ixc[x]=true;try{ent[x].f(e,s,r,gg)}catch(e){}$ixc[x]=false;}else{_wp(me+':include:-1:-1: Included path `'+p+'` not found from `'+me+'`.')}}
 function _w(tn,f,line,c){_wp(f+':template:'+line+':'+c+': Template `'+tn+'` not found.');}function _ev(dom){var changed=false;delete dom.properities;delete dom.n;if(dom.children){do{changed=false;var newch = [];for(var i=0;i<dom.children.length;i++){var ch=dom.children[i];if( ch.tag=='virtual'){changed=true;for(var j=0;ch.children&&j<ch.children.length;j++){newch.push(ch.children[j]);}}else { newch.push(ch); } } dom.children = newch; }while(changed);for(var i=0;i<dom.children.length;i++){_ev(dom.children[i]);}} return dom; }
+function _tsd( root )
+{
+if( root.tag == "wx-wx-scope" ) 
+{
+root.tag = "virtual";
+root.wxCkey = "11";
+root['wxScopeData'] = root.attr['wx:scope-data'];
+delete root.n;
+delete root.raw;
+delete root.generics;
+delete root.attr;
+}
+for( var i = 0 ; root.children && i < root.children.length ; i++ )
+{
+_tsd( root.children[i] );
+}
+return root;
+}
+
 var e_={}
 if(typeof(global.entrys)==='undefined')global.entrys={};e_=global.entrys;
 var d_={}
 if(typeof(global.defines)==='undefined')global.defines={};d_=global.defines;
 var f_={}
-if(typeof(global.modules)==='undefined')global.modules={};f_=global.modules;
+if(typeof(global.modules)==='undefined')global.modules={};f_=global.modules || {};
 var p_={}
 var cs
 __WXML_GLOBAL__.ops_cached = __WXML_GLOBAL__.ops_cached || {}
@@ -1143,6 +1165,21 @@ function gz$gwx_10(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
 __WXML_GLOBAL__.ops_cached.$gwx_10=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'21b694de'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
+}
+function gz$gwx_11(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_11)return __WXML_GLOBAL__.ops_cached.$gwx_11
+__WXML_GLOBAL__.ops_cached.$gwx_11=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'21b694de'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_11);return __WXML_GLOBAL__.ops_cached.$gwx_11
+}
+function gz$gwx_12(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_12)return __WXML_GLOBAL__.ops_cached.$gwx_12
+__WXML_GLOBAL__.ops_cached.$gwx_12=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'6cbf6956'])
 Z([3,'handleProxy'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'6cbf6956-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
@@ -1152,19 +1189,19 @@ Z([3,'7dcb1efb'])
 Z([3,'请输入邮箱'])
 Z([3,'text'])
 Z([[7],[3,'email']])
-})(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
+})(__WXML_GLOBAL__.ops_cached.$gwx_12);return __WXML_GLOBAL__.ops_cached.$gwx_12
 }
-function gz$gwx_11(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_11)return __WXML_GLOBAL__.ops_cached.$gwx_11
-__WXML_GLOBAL__.ops_cached.$gwx_11=[];
+function gz$gwx_13(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_13)return __WXML_GLOBAL__.ops_cached.$gwx_13
+__WXML_GLOBAL__.ops_cached.$gwx_13=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'6cbf6956'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_11);return __WXML_GLOBAL__.ops_cached.$gwx_11
+})(__WXML_GLOBAL__.ops_cached.$gwx_13);return __WXML_GLOBAL__.ops_cached.$gwx_13
 }
-function gz$gwx_12(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_12)return __WXML_GLOBAL__.ops_cached.$gwx_12
-__WXML_GLOBAL__.ops_cached.$gwx_12=[];
+function gz$gwx_14(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_14)return __WXML_GLOBAL__.ops_cached.$gwx_14
+__WXML_GLOBAL__.ops_cached.$gwx_14=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'90021ef8'])
 Z([3,'_view 90021ef8 input-group'])
@@ -1192,24 +1229,6 @@ Z(z[6])
 Z([3,'请输入邮箱'])
 Z(z[8])
 Z([[7],[3,'email']])
-})(__WXML_GLOBAL__.ops_cached.$gwx_12);return __WXML_GLOBAL__.ops_cached.$gwx_12
-}
-function gz$gwx_13(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_13)return __WXML_GLOBAL__.ops_cached.$gwx_13
-__WXML_GLOBAL__.ops_cached.$gwx_13=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'90021ef8'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_13);return __WXML_GLOBAL__.ops_cached.$gwx_13
-}
-function gz$gwx_14(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_14)return __WXML_GLOBAL__.ops_cached.$gwx_14
-__WXML_GLOBAL__.ops_cached.$gwx_14=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'240234ba'])
-Z([3,'_view 240234ba btn-row'])
-Z([[2,'!'],[[7],[3,'hasLogin']]])
-Z([[7],[3,'hasLogin']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_14);return __WXML_GLOBAL__.ops_cached.$gwx_14
 }
 function gz$gwx_15(){
@@ -1217,14 +1236,32 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_15)return __WXML_GLOBAL__.ops_cached.$gwx_15
 __WXML_GLOBAL__.ops_cached.$gwx_15=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'240234ba'])
+Z([3,'90021ef8'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_15);return __WXML_GLOBAL__.ops_cached.$gwx_15
+}
+function gz$gwx_16(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_16)return __WXML_GLOBAL__.ops_cached.$gwx_16
+__WXML_GLOBAL__.ops_cached.$gwx_16=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'240234ba'])
+Z([3,'_view 240234ba btn-row'])
+Z([[2,'!'],[[7],[3,'hasLogin']]])
+Z([[7],[3,'hasLogin']])
+})(__WXML_GLOBAL__.ops_cached.$gwx_16);return __WXML_GLOBAL__.ops_cached.$gwx_16
+}
+function gz$gwx_17(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_17)return __WXML_GLOBAL__.ops_cached.$gwx_17
+__WXML_GLOBAL__.ops_cached.$gwx_17=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'240234ba'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_17);return __WXML_GLOBAL__.ops_cached.$gwx_17
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
-var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);throw e;}
+var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./pages/login/login.vue.wxml','/components/m-input.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+var x=['./common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./pages/login/login.vue.wxml','/components/m-input.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
 var m0=function(e,s,r,gg){
 var z=gz$gwx_1()
 return r
@@ -1522,28 +1559,14 @@ return r
 }
 e_[x[12]]={f:m8,j:[],i:[],ti:[x[13]],ic:[]}
 d_[x[14]]={}
-d_[x[14]]["6cbf6956"]=function(e,s,r,gg){
+d_[x[14]]["21b694de"]=function(e,s,r,gg){
 var z=gz$gwx_10()
-var b=x[14]+':6cbf6956'
+var b=x[14]+':21b694de'
 r.wxVkey=b
-gg.f=$gdc(f_["./pages/pwd/pwd.vue.wxml"],"",1)
+gg.f=$gdc(f_["./pages/pointDetail/pointDetail.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[14]);return}
 p_[b]=true
 try{
-var oB=_v()
-_(r,oB)
-cs.push("./pages/pwd/pwd.vue.wxml:template:1:240")
-var xC=_oz(z,5,e,s,gg)
-var oD=_gd(x[14],xC,e_,d_)
-if(oD){
-var fE=_1z(z,2,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[14],1,465)
-cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -1553,42 +1576,100 @@ return r
 }
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
-var e2=e_[x[14]].i
-_ai(e2,x[5],e_,x[14],1,1)
-e2.pop()
 return r
 }
-e_[x[14]]={f:m9,j:[],i:[],ti:[x[5]],ic:[]}
+e_[x[14]]={f:m9,j:[],i:[],ti:[],ic:[]}
 d_[x[15]]={}
 var m10=function(e,s,r,gg){
 var z=gz$gwx_11()
-var o4=e_[x[15]].i
-_ai(o4,x[16],e_,x[15],1,1)
-var x5=_v()
-_(r,x5)
-cs.push("./pages/pwd/pwd.wxml:template:2:6")
-var o6=_oz(z,1,e,s,gg)
-var f7=_gd(x[15],o6,e_,d_)
-if(f7){
-var c8=_1z(z,0,e,s,gg) || {}
+var b3=e_[x[15]].i
+_ai(b3,x[16],e_,x[15],1,1)
+var o4=_v()
+_(r,o4)
+cs.push("./pages/pointDetail/pointDetail.wxml:template:2:6")
+var x5=_oz(z,1,e,s,gg)
+var o6=_gd(x[15],x5,e_,d_)
+if(o6){
+var f7=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-x5.wxXCkey=3
-f7(c8,c8,x5,gg)
+o4.wxXCkey=3
+o6(f7,f7,o4,gg)
 gg.f=cur_globalf
 }
-else _w(o6,x[15],2,18)
+else _w(x5,x[15],2,18)
 cs.pop()
-o4.pop()
+b3.pop()
 return r
 }
 e_[x[15]]={f:m10,j:[],i:[],ti:[x[16]],ic:[]}
 d_[x[17]]={}
-d_[x[17]]["90021ef8"]=function(e,s,r,gg){
+d_[x[17]]["6cbf6956"]=function(e,s,r,gg){
 var z=gz$gwx_12()
-var b=x[17]+':90021ef8'
+var b=x[17]+':6cbf6956'
+r.wxVkey=b
+gg.f=$gdc(f_["./pages/pwd/pwd.vue.wxml"],"",1)
+if(p_[b]){_wl(b,x[17]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./pages/pwd/pwd.vue.wxml:template:1:240")
+var xC=_oz(z,5,e,s,gg)
+var oD=_gd(x[17],xC,e_,d_)
+if(oD){
+var fE=_1z(z,2,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[17],1,465)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+var m11=function(e,s,r,gg){
+var z=gz$gwx_12()
+var h9=e_[x[17]].i
+_ai(h9,x[5],e_,x[17],1,1)
+h9.pop()
+return r
+}
+e_[x[17]]={f:m11,j:[],i:[],ti:[x[5]],ic:[]}
+d_[x[18]]={}
+var m12=function(e,s,r,gg){
+var z=gz$gwx_13()
+var cAB=e_[x[18]].i
+_ai(cAB,x[19],e_,x[18],1,1)
+var oBB=_v()
+_(r,oBB)
+cs.push("./pages/pwd/pwd.wxml:template:2:6")
+var lCB=_oz(z,1,e,s,gg)
+var aDB=_gd(x[18],lCB,e_,d_)
+if(aDB){
+var tEB=_1z(z,0,e,s,gg) || {}
+var cur_globalf=gg.f
+oBB.wxXCkey=3
+aDB(tEB,tEB,oBB,gg)
+gg.f=cur_globalf
+}
+else _w(lCB,x[18],2,18)
+cs.pop()
+cAB.pop()
+return r
+}
+e_[x[18]]={f:m12,j:[],i:[],ti:[x[19]],ic:[]}
+d_[x[20]]={}
+d_[x[20]]["90021ef8"]=function(e,s,r,gg){
+var z=gz$gwx_14()
+var b=x[20]+':90021ef8'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/reg/reg.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[17]);return}
+if(p_[b]){_wl(b,x[20]);return}
 p_[b]=true
 try{
 cs.push("./pages/reg/reg.vue.wxml:view:1:109")
@@ -1598,7 +1679,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/reg/reg.vue.wxml:template:1:247")
 var oD=_oz(z,6,e,s,gg)
-var fE=_gd(x[17],oD,e_,d_)
+var fE=_gd(x[20],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1606,13 +1687,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[17],1,474)
+else _w(oD,x[20],1,474)
 cs.pop()
 var hG=_v()
 _(oB,hG)
 cs.push("./pages/reg/reg.vue.wxml:template:1:601")
 var oH=_oz(z,14,e,s,gg)
-var cI=_gd(x[17],oH,e_,d_)
+var cI=_gd(x[20],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,11,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1620,13 +1701,13 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[17],1,829)
+else _w(oH,x[20],1,829)
 cs.pop()
 var lK=_v()
 _(oB,lK)
 cs.push("./pages/reg/reg.vue.wxml:template:1:949")
 var aL=_oz(z,22,e,s,gg)
-var tM=_gd(x[17],aL,e_,d_)
+var tM=_gd(x[20],aL,e_,d_)
 if(tM){
 var eN=_1z(z,19,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1634,7 +1715,7 @@ lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[17],1,1168)
+else _w(aL,x[20],1,1168)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -1645,44 +1726,44 @@ throw err
 p_[b]=false
 return r
 }
-var m11=function(e,s,r,gg){
-var z=gz$gwx_12()
-var o0=e_[x[17]].i
-_ai(o0,x[5],e_,x[17],1,1)
-o0.pop()
+var m13=function(e,s,r,gg){
+var z=gz$gwx_14()
+var bGB=e_[x[20]].i
+_ai(bGB,x[5],e_,x[20],1,1)
+bGB.pop()
 return r
 }
-e_[x[17]]={f:m11,j:[],i:[],ti:[x[5]],ic:[]}
-d_[x[18]]={}
-var m12=function(e,s,r,gg){
-var z=gz$gwx_13()
-var oBB=e_[x[18]].i
-_ai(oBB,x[19],e_,x[18],1,1)
-var lCB=_v()
-_(r,lCB)
+e_[x[20]]={f:m13,j:[],i:[],ti:[x[5]],ic:[]}
+d_[x[21]]={}
+var m14=function(e,s,r,gg){
+var z=gz$gwx_15()
+var xIB=e_[x[21]].i
+_ai(xIB,x[22],e_,x[21],1,1)
+var oJB=_v()
+_(r,oJB)
 cs.push("./pages/reg/reg.wxml:template:2:6")
-var aDB=_oz(z,1,e,s,gg)
-var tEB=_gd(x[18],aDB,e_,d_)
-if(tEB){
-var eFB=_1z(z,0,e,s,gg) || {}
+var fKB=_oz(z,1,e,s,gg)
+var cLB=_gd(x[21],fKB,e_,d_)
+if(cLB){
+var hMB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-lCB.wxXCkey=3
-tEB(eFB,eFB,lCB,gg)
+oJB.wxXCkey=3
+cLB(hMB,hMB,oJB,gg)
 gg.f=cur_globalf
 }
-else _w(aDB,x[18],2,18)
+else _w(fKB,x[21],2,18)
 cs.pop()
-oBB.pop()
+xIB.pop()
 return r
 }
-e_[x[18]]={f:m12,j:[],i:[],ti:[x[19]],ic:[]}
-d_[x[20]]={}
-d_[x[20]]["240234ba"]=function(e,s,r,gg){
-var z=gz$gwx_14()
-var b=x[20]+':240234ba'
+e_[x[21]]={f:m14,j:[],i:[],ti:[x[22]],ic:[]}
+d_[x[23]]={}
+d_[x[23]]["240234ba"]=function(e,s,r,gg){
+var z=gz$gwx_16()
+var b=x[23]+':240234ba'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/user/user.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[20]);return}
+if(p_[b]){_wl(b,x[23]);return}
 p_[b]=true
 try{
 cs.push("./pages/user/user.vue.wxml:view:1:64")
@@ -1711,34 +1792,34 @@ throw err
 p_[b]=false
 return r
 }
-var m13=function(e,s,r,gg){
-var z=gz$gwx_14()
+var m15=function(e,s,r,gg){
+var z=gz$gwx_16()
 return r
 }
-e_[x[20]]={f:m13,j:[],i:[],ti:[],ic:[]}
-d_[x[21]]={}
-var m14=function(e,s,r,gg){
-var z=gz$gwx_15()
-var xIB=e_[x[21]].i
-_ai(xIB,x[22],e_,x[21],1,1)
-var oJB=_v()
-_(r,oJB)
+e_[x[23]]={f:m15,j:[],i:[],ti:[],ic:[]}
+d_[x[24]]={}
+var m16=function(e,s,r,gg){
+var z=gz$gwx_17()
+var oPB=e_[x[24]].i
+_ai(oPB,x[25],e_,x[24],1,1)
+var lQB=_v()
+_(r,lQB)
 cs.push("./pages/user/user.wxml:template:2:6")
-var fKB=_oz(z,1,e,s,gg)
-var cLB=_gd(x[21],fKB,e_,d_)
-if(cLB){
-var hMB=_1z(z,0,e,s,gg) || {}
+var aRB=_oz(z,1,e,s,gg)
+var tSB=_gd(x[24],aRB,e_,d_)
+if(tSB){
+var eTB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-oJB.wxXCkey=3
-cLB(hMB,hMB,oJB,gg)
+lQB.wxXCkey=3
+tSB(eTB,eTB,lQB,gg)
 gg.f=cur_globalf
 }
-else _w(fKB,x[21],2,18)
+else _w(aRB,x[24],2,18)
 cs.pop()
-xIB.pop()
+oPB.pop()
 return r
 }
-e_[x[21]]={f:m14,j:[],i:[],ti:[x[22]],ic:[]}
+e_[x[24]]={f:m16,j:[],i:[],ti:[x[25]],ic:[]}
 if(path&&e_[path]){
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
 var main=e_[path].f
@@ -1746,6 +1827,7 @@ cs=[]
 if (typeof global==="undefined")global={};global.f=$gdc(f_[path],"",1);
 try{
 main(env,{},root,global);
+_tsd(root)
 }catch(err){
 console.log(cs, env);
 console.log(err)
@@ -1758,7 +1840,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/reg/reg","pages/pwd/pwd","pages/user/user","pages/pointCheck/pointCheck"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/pointCheck/pointCheck","text":"检查记录","iconPath":"static/img/point.png","selectedIconPath":"static/img/pointHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"nvue":{"pages":{"pages/pointList/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查"}}}},"splashscreen":{"autoclose":true},"appname":"SafteyControl"};
+__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/reg/reg","pages/pwd/pwd","pages/user/user","pages/pointCheck/pointCheck"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/pointCheck/pointCheck","text":"检查记录","iconPath":"static/img/point.png","selectedIconPath":"static/img/pointHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"nvue":{"pages":{"pages/uni-tabs/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查11"}},"pages/pointList/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查"}}}},"splashscreen":{"autoclose":true},"appname":"SafteyControl"};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 
@@ -2456,7 +2538,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  */\nvar host = \"http://222.223.19.166:10012/boeb9\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: \"\".concat(host, \"/mobile/system/login.do\"),\n\n  // 待整改\n  waitForChange: \"\".concat(host, \"/mobile/dzglb.do\"),\n\n  // 注册\n  register: \"\".concat(host, \"/register.do?action=Register\"),\n\n  // 修改密码\n  changePassword: \"\".concat(host, \"/getXx.do?action=updatePwd\"),\n\n  // 企业名称列表\n  getCompanyName: \"\".concat(host, \"/getXx.do?action=getQyList\"),\n\n  // 企业属地接口\n  getLocal: \"\".concat(host, \"/getXx.do?action=getLocal\"),\n\n  // 企业类型\n  getType: \"\".concat(host, \"/getXx.do?action=getType\"),\n\n  // 隐患列表\n  getYhList: \"\".concat(host, \"/getXx.do?action=getYhList\"),\n\n  // 获取企业隐患列表\n  getQyyhList: \"\".concat(host, \"/getXx.do?action=getQyyhList\"),\n\n  // 隐患详情\n  getOneYh: \"\".concat(host, \"/getXx.do?action=getOneYh\"),\n\n  // 统计接口\n  getTj: \"\".concat(host, \"/getXx.do?action=getTj\"),\n\n  // 插入隐患\n  insertYh: \"\".concat(host, \"/getXx.do?action=insertYh\"),\n\n  // 上传图片接口\n  uploadImg: \"\".concat(host, \"/uploadImg\"),\n  // 删除图片接口\n  deleteImg: \"\".concat(host, \"/getXx.do?action=delYhzp\"),\n\n  // 头像默认链接\n  logoImg: \"\".concat(host, \"/getXx.do?action=loadQyxxPhoto&qyid=\"),\n\n  // 加载隐患图片头部链接-小图\n  loadYhPhoto: \"\".concat(host, \"/getXx.do?action=loadYhPhoto&attid=\"),\n  // 加载隐患图片头部链接-大图\n  loadBigPhoto: \"\".concat(host, \"/getXx.do?action=loadPhoto&attid=\"),\n\n  // 修改企业信息\n  updateQyxx: \"\".concat(host, \"/getXx.do?action=updateQyxx\"),\n\n  // 获取企业信息\n  getQyxx: \"\".concat(host, \"/getXx.do?action=getQyxx\"),\n\n  //-----------纪杰------------\n\n  // 获取任务列表\n  getRw: \"\".concat(host, \"/getXx.do?action=getRw&\"),\n\n  // 获取企业信息和企业安全生产管理现状\n  getBaseAndSaftyInfo: \"\".concat(host, \"/getXx.do?action=getQyxx&qyid=\"),\n\n  // 更新企业基本信息和安全生产信息\n  updateBaseInfoAndSaftyInfo: \"\".concat(host, \"/getXx.do?action=updateQyxx\"),\n\n  // 更新任务信息\n  updateRw: \"\".concat(host, \"/getXx.do?action=updateRw\"),\n\n  // 获取设备信息\n  getSb: \"\".concat(host, \"/getXx.do?action=getSb&qyid=\"),\n\n  // // 获取区、街道（总共有3层：市、区、镇）\n  // getLocal: `${host}/getXx.do?action=getLocal&orgid=`,\n\n  // 获取模板隐患类别\n  getCategory: \"\".concat(host, \"/getXx.do?action=getLb\"),\n\n  // 根据模版隐患类别获取详情隐患列表\n  getDangerType: \"\".concat(host, \"/getXx.do?action=getCjwt\"),\n\n  // 获取隐患分类\n  getDangerClassify: \"\".concat(host, \"/getXx.do?action=getYhfl\"),\n\n  // 获取法律法规分类\n  getLawsType: \"\".concat(host, \"/getXx.do?action=getFgfl\"),\n\n  // 根据分类获取法律法规详情文书\n  getLawsDetail: \"\".concat(host, \"/getXx.do?action=getFlfg\"),\n\n  // 法律法规内容检索\n  searchLawsInfo: \"\".concat(host, \"/getXx.do?action=showWj\"),\n\n  // 获取全部法律法规-新建隐患从法规库选择对应条款\n  getAllFlfg: \"\".concat(host, \"/getXx.do?action=getAllFlfg\"),\n\n  // 新建项目\n  createProjcet: \"\".concat(host, \"/getXx.do?action=insertXm\"),\n  // 获取项目列表\n  getProjectList: \"\".concat(host, \"/getXx.do?action=getXmlist\"),\n  // 获取项目详情\n  getProjectDetail: \"\".concat(host, \"/getXx.do?action=getOneXm&xmid=\"),\n\n  // 获取法规抓取文件\n  getGrabLaws: \"\".concat(host, \"/getXx.do?action=getFglist\"),\n\n  // 删除隐患\n  deleteYH: \"\".concat(host, \"/getXx.do?action=delYh\"),\n  // 删除项目\n  deleteProject: \"\".concat(host, \"/getXx.do?action=delXm\"),\n\n  // 获取企业列表\n  getCompanyList: \"\".concat(host, \"/getXx.do?action=getQyList\"),\n  // 新建/编辑企业\n  editCompany: \"\".concat(host, \"/getXx.do?action=insertQy\"),\n  // 删除企业\n  deleteCompany: \"\".concat(host, \"/getXx.do?action=delQy\"),\n  // 重置企业密码\n  resetCompanyPassword: \"\".concat(host, \"/getXx.do?action=resetPwd\"),\n  // 获取企业报告\n  getBgList: \"\".concat(host, \"/getXx.do?action=getBgList\"),\n  // 企业编辑，新建账号\n  createAccount: \"\".concat(host, \"/getXx.do?action=register\"),\n\n  // 获取检查类型\n  getJclx: \"\".concat(host, \"/getXx.do?action=getJclx\"),\n\n  // 下载文件\n  downLoadFile: \"\".concat(host, \"/getfile?fileid=\") };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?a0b7");
+eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  */\nvar host = \"http://222.223.19.166:10012/boeb9\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: \"\".concat(host, \"/mobile/system/login.do\"),\n\n  // 待整改\n  waitForChange: \"\".concat(host, \"/mobile/dzglb.do\"),\n\n  // 已完成\n  finishChange: \"\".concat(host, \"/mobile/ywclb.do\"),\n\n  // 未检查\n  notCheck: \"\".concat(host, \"/mobile/wjclb.do\"),\n\n\n  // 注册\n  register: \"\".concat(host, \"/register.do?action=Register\"),\n\n  // 修改密码\n  changePassword: \"\".concat(host, \"/getXx.do?action=updatePwd\"),\n\n  // 企业名称列表\n  getCompanyName: \"\".concat(host, \"/getXx.do?action=getQyList\"),\n\n  // 企业属地接口\n  getLocal: \"\".concat(host, \"/getXx.do?action=getLocal\"),\n\n  // 企业类型\n  getType: \"\".concat(host, \"/getXx.do?action=getType\"),\n\n  // 隐患列表\n  getYhList: \"\".concat(host, \"/getXx.do?action=getYhList\"),\n\n  // 获取企业隐患列表\n  getQyyhList: \"\".concat(host, \"/getXx.do?action=getQyyhList\"),\n\n  // 隐患详情\n  getOneYh: \"\".concat(host, \"/getXx.do?action=getOneYh\"),\n\n  // 统计接口\n  getTj: \"\".concat(host, \"/getXx.do?action=getTj\"),\n\n  // 插入隐患\n  insertYh: \"\".concat(host, \"/getXx.do?action=insertYh\"),\n\n  // 上传图片接口\n  uploadImg: \"\".concat(host, \"/uploadImg\"),\n  // 删除图片接口\n  deleteImg: \"\".concat(host, \"/getXx.do?action=delYhzp\"),\n\n  // 头像默认链接\n  logoImg: \"\".concat(host, \"/getXx.do?action=loadQyxxPhoto&qyid=\"),\n\n  // 加载隐患图片头部链接-小图\n  loadYhPhoto: \"\".concat(host, \"/getXx.do?action=loadYhPhoto&attid=\"),\n  // 加载隐患图片头部链接-大图\n  loadBigPhoto: \"\".concat(host, \"/getXx.do?action=loadPhoto&attid=\"),\n\n  // 修改企业信息\n  updateQyxx: \"\".concat(host, \"/getXx.do?action=updateQyxx\"),\n\n  // 获取企业信息\n  getQyxx: \"\".concat(host, \"/getXx.do?action=getQyxx\"),\n\n  //-----------纪杰------------\n\n  // 获取任务列表\n  getRw: \"\".concat(host, \"/getXx.do?action=getRw&\"),\n\n  // 获取企业信息和企业安全生产管理现状\n  getBaseAndSaftyInfo: \"\".concat(host, \"/getXx.do?action=getQyxx&qyid=\"),\n\n  // 更新企业基本信息和安全生产信息\n  updateBaseInfoAndSaftyInfo: \"\".concat(host, \"/getXx.do?action=updateQyxx\"),\n\n  // 更新任务信息\n  updateRw: \"\".concat(host, \"/getXx.do?action=updateRw\"),\n\n  // 获取设备信息\n  getSb: \"\".concat(host, \"/getXx.do?action=getSb&qyid=\"),\n\n  // // 获取区、街道（总共有3层：市、区、镇）\n  // getLocal: `${host}/getXx.do?action=getLocal&orgid=`,\n\n  // 获取模板隐患类别\n  getCategory: \"\".concat(host, \"/getXx.do?action=getLb\"),\n\n  // 根据模版隐患类别获取详情隐患列表\n  getDangerType: \"\".concat(host, \"/getXx.do?action=getCjwt\"),\n\n  // 获取隐患分类\n  getDangerClassify: \"\".concat(host, \"/getXx.do?action=getYhfl\"),\n\n  // 获取法律法规分类\n  getLawsType: \"\".concat(host, \"/getXx.do?action=getFgfl\"),\n\n  // 根据分类获取法律法规详情文书\n  getLawsDetail: \"\".concat(host, \"/getXx.do?action=getFlfg\"),\n\n  // 法律法规内容检索\n  searchLawsInfo: \"\".concat(host, \"/getXx.do?action=showWj\"),\n\n  // 获取全部法律法规-新建隐患从法规库选择对应条款\n  getAllFlfg: \"\".concat(host, \"/getXx.do?action=getAllFlfg\"),\n\n  // 新建项目\n  createProjcet: \"\".concat(host, \"/getXx.do?action=insertXm\"),\n  // 获取项目列表\n  getProjectList: \"\".concat(host, \"/getXx.do?action=getXmlist\"),\n  // 获取项目详情\n  getProjectDetail: \"\".concat(host, \"/getXx.do?action=getOneXm&xmid=\"),\n\n  // 获取法规抓取文件\n  getGrabLaws: \"\".concat(host, \"/getXx.do?action=getFglist\"),\n\n  // 删除隐患\n  deleteYH: \"\".concat(host, \"/getXx.do?action=delYh\"),\n  // 删除项目\n  deleteProject: \"\".concat(host, \"/getXx.do?action=delXm\"),\n\n  // 获取企业列表\n  getCompanyList: \"\".concat(host, \"/getXx.do?action=getQyList\"),\n  // 新建/编辑企业\n  editCompany: \"\".concat(host, \"/getXx.do?action=insertQy\"),\n  // 删除企业\n  deleteCompany: \"\".concat(host, \"/getXx.do?action=delQy\"),\n  // 重置企业密码\n  resetCompanyPassword: \"\".concat(host, \"/getXx.do?action=resetPwd\"),\n  // 获取企业报告\n  getBgList: \"\".concat(host, \"/getXx.do?action=getBgList\"),\n  // 企业编辑，新建账号\n  createAccount: \"\".concat(host, \"/getXx.do?action=register\"),\n\n  // 获取检查类型\n  getJclx: \"\".concat(host, \"/getXx.do?action=getJclx\"),\n\n  // 下载文件\n  downLoadFile: \"\".concat(host, \"/getfile?fileid=\") };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?a0b7");
 
 /***/ }),
 
@@ -2468,7 +2550,7 @@ eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  */\nvar host 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0; // 展示进度条的网络请求\n// url:网络请求的url\n// params:请求参数\n// message:进度条的提示信息\n// success:成功的回调函数\n// fail：失败的回调\nvar requestLoading = function requestLoading(url, params, message, _success, _fail) {\n  // console.log(params)\n  // \twx.showNavigationBarLoading()\n  // \tif (message != \"\") {\n  // \t  wx.showLoading({\n  // \t    title: message,\n  // \t  })\n  // \t}\n  console.log(url);\n  uni.request({\n    url: url,\n    data: params,\n    header: {\n      // 'Content-Type': 'application/json'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'POST',\n    success: function success(res) {\n      // \t\t\t\t\twx.hideNavigationBarLoading()\n      // \t\t\t\t\tif (message != \"\") {\n      // \t\t\t\t\t  wx.hideLoading()\n      // \t\t\t\t\t}\n\n      console.log('' + JSON.stringify(res));\n      if (res.data.success == 'true') {\n        _success(res.data);\n      } else {\n        _fail();\n      }\n    },\n    fail: function fail(res) {\n      console.log('' + JSON.stringify(res));\n      _fail();\n    } });\n\n};\nvar request = function request(url, message, _success2, _fail2) {\n  //   wx.showNavigationBarLoading()\n  //   if (message != \"\") {\n  //     wx.showLoading({\n  //       title: message,\n  //     })\n  //   }\n  uni.request({\n    url: url,\n    header: {\n      // 'Content-Type': 'application/json'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'GET',\n    success: function success(res) {\n      // \t\t\t\t\twx.hideNavigationBarLoading()\n      // \t\t\t\t\tif (message != \"\") {\n      // \t\t\t\t\t  wx.hideLoading()\n      // \t\t\t\t\t}\n      if (res.success == 'true') {\n        _success2(res.data);\n      } else {\n        _fail2();\n      }\n    },\n    fail: function fail(res) {\n      _fail2();\n    } });\n\n};var _default =\n{\n  request: request,\n  requestLoading: requestLoading };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///util/request.js?e22c");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0; // 展示进度条的网络请求\n// url:网络请求的url\n// params:请求参数\n// message:进度条的提示信息\n// success:成功的回调函数\n// fail：失败的回调\nvar requestLoading = function requestLoading(url, params, message, _success, _fail) {\n  // console.log(params)\n  // \twx.showNavigationBarLoading()\n  // \tif (message != \"\") {\n  // \t  wx.showLoading({\n  // \t    title: message,\n  // \t  })\n  // \t}\n  console.log(url);\n  uni.request({\n    url: url,\n    data: params,\n    header: {\n      // 'Content-Type': 'application/json'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'POST',\n    success: function success(res) {\n      // \t\t\t\t\twx.hideNavigationBarLoading()\n      // \t\t\t\t\tif (message != \"\") {\n      // \t\t\t\t\t  wx.hideLoading()\n      // \t\t\t\t\t}\n\n      // console.log('' + JSON.stringify(res));\n      if (res.data.success == 'true') {\n        _success(res.data);\n      } else {\n        _fail();\n      }\n    },\n    fail: function fail(res) {\n      // console.log('' + JSON.stringify(res))\n      _fail();\n    } });\n\n};\nvar request = function request(url, message, _success2, _fail2) {\n  //   wx.showNavigationBarLoading()\n  //   if (message != \"\") {\n  //     wx.showLoading({\n  //       title: message,\n  //     })\n  //   }\n  uni.request({\n    url: url,\n    header: {\n      // 'Content-Type': 'application/json'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'GET',\n    success: function success(res) {\n      // \t\t\t\t\twx.hideNavigationBarLoading()\n      // \t\t\t\t\tif (message != \"\") {\n      // \t\t\t\t\t  wx.hideLoading()\n      // \t\t\t\t\t}\n      if (res.success == 'true') {\n        _success2(res.data);\n      } else {\n        _fail2();\n      }\n    },\n    fail: function fail(res) {\n      _fail2();\n    } });\n\n};var _default =\n{\n  request: request,\n  requestLoading: requestLoading };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///util/request.js?e22c");
 
 /***/ }),
 
@@ -2823,7 +2905,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default =\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n{\n  methods: {\n    jumpListPage: function jumpListPage() {\n      uni.navigateTo({\n        url: '../pointList/uni-tabs',\n        success: function success(res) {},\n        fail: function fail() {},\n        complete: function complete() {} });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointCheck/pointCheck.vue?vue&type=script&lang=js&?f61e");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _default =\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n{\n  onLoad: function onLoad() {\n    var hydrantTab = {\n      name: '当月检查',\n      id: '/mobile/xhsdywjclb.do' };\n\n    this.saveTabInfo('消火栓', hydrantTab);\n\n    var valveTab = {\n      name: '周末检查',\n      id: '/mobile/fzzwjclb.do' };\n\n    this.saveTabInfo('阀组', valveTab);\n\n    var waterTab = {\n      name: '当天未检查',\n      id: '/mobile/jtwjclb.do' };\n\n    this.saveTabInfo('高位水箱', waterTab);\n    this.saveTabInfo('消防泵', waterTab);\n\n  },\n  methods: {\n    jumpListPage: function jumpListPage(lx) {\n      this.saveTabInfo('currentLx', lx); // 保存当前类型名称\n      uni.navigateTo({\n        url: '../pointList/uni-tabs',\n        success: function success(res) {},\n        fail: function fail() {},\n        complete: function complete() {} });\n\n    },\n    saveTabInfo: function saveTabInfo(key, data) {\n      uni.setStorage({\n        key: key,\n        data: data,\n        success: function success() {\n          console.log('success');\n        } });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointCheck/pointCheck.vue?vue&type=script&lang=js&?f61e");
 
 /***/ }),
 
@@ -2846,13 +2928,93 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"part2\" },\n    [\n      _c(\n        \"swiper\",\n        {\n          staticClass: \"banner-box\",\n          attrs: {\n            \"indicator-dots\": \"\",\n            autoplay: \"\",\n            \"indicator-active-color\": \"#169bd5\",\n            circular: \"\",\n            interval: 5000,\n            duration: 300,\n            \"indicator-color\": \"rgba(0,0,0,.3)\"\n          }\n        },\n        [\n          _c(\"swiper-item\", { attrs: { mpcomid: \"10bbdf1a-0\" } }, [\n            _c(\"image\", {\n              staticClass: \"banner-image\",\n              attrs: {\n                src: \"../../static/img/fgBG.png\",\n                mode: \"aspectFill\",\n                \"lazy-load\": \"\"\n              }\n            })\n          ]),\n          _c(\"swiper-item\", { attrs: { mpcomid: \"10bbdf1a-1\" } }, [\n            _c(\"image\", {\n              staticClass: \"banner-image\",\n              attrs: {\n                src: \"../../static/img/fgBG.png\",\n                mode: \"aspectFill\",\n                \"lazy-load\": \"\"\n              }\n            })\n          ]),\n          _c(\"swiper-item\", { attrs: { mpcomid: \"10bbdf1a-2\" } }, [\n            _c(\"image\", {\n              staticClass: \"banner-image\",\n              attrs: {\n                src: \"../../static/img/fgBG.png\",\n                mode: \"aspectFill\",\n                \"lazy-load\": \"\"\n              }\n            })\n          ]),\n          _c(\"swiper-item\", { attrs: { mpcomid: \"10bbdf1a-3\" } }, [\n            _c(\"image\", {\n              staticClass: \"banner-image\",\n              attrs: {\n                src: \"../../static/img/fgBG.png\",\n                mode: \"aspectFill\",\n                \"lazy-load\": \"\"\n              }\n            })\n          ])\n        ],\n        1\n      ),\n      _c(\"view\", { staticClass: \"userinfo\" }, [\n        _c(\n          \"view\",\n          {\n            staticClass: \"dangerView\",\n            attrs: { eventid: \"10bbdf1a-0\" },\n            on: { tap: _vm.jumpListPage }\n          },\n          [\n            _c(\"image\", {\n              staticClass: \"dangerIcon\",\n              attrs: { src: \"../../assets/add.png\", mode: \"widthFix\" }\n            }),\n            _vm._m(0)\n          ]\n        ),\n        _vm._m(1),\n        _vm._m(2),\n        _vm._m(3),\n        _vm._m(4)\n      ])\n    ],\n    1\n  )\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"所有记录\")]),\n      _c(\"text\", { staticClass: \"subText\" }, [_vm._v(\"所有记录\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"dangerView\" }, [\n      _c(\"image\", {\n        staticClass: \"dangerIcon\",\n        attrs: { src: \"../../assets/list.png\", mode: \"widthFix\" }\n      }),\n      _c(\"view\", { staticClass: \"subView\" }, [\n        _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"消火栓\")]),\n        _c(\"text\", { staticClass: \"subText\" }, [_vm._v(\"消火栓\")])\n      ])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"dangerView\" }, [\n      _c(\"image\", {\n        staticClass: \"dangerIcon\",\n        attrs: { src: \"../../assets/list.png\", mode: \"widthFix\" }\n      }),\n      _c(\"view\", { staticClass: \"subView\" }, [\n        _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"阀组\")]),\n        _c(\"text\", { staticClass: \"subText\" }, [_vm._v(\"阀组\")])\n      ])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"dangerView\" }, [\n      _c(\"image\", {\n        staticClass: \"dangerIcon\",\n        attrs: { src: \"../../assets/list.png\", mode: \"widthFix\" }\n      }),\n      _c(\"view\", { staticClass: \"subView\" }, [\n        _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"高位水箱\")]),\n        _c(\"text\", { staticClass: \"subText\" }, [_vm._v(\"高位水箱\")])\n      ])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"dangerView\" }, [\n      _c(\"image\", {\n        staticClass: \"dangerIcon\",\n        attrs: { src: \"../../assets/list.png\", mode: \"widthFix\" }\n      }),\n      _c(\"view\", { staticClass: \"subView\" }, [\n        _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"消防泵\")]),\n        _c(\"text\", { staticClass: \"subText\" }, [_vm._v(\"消防泵\")])\n      ])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointCheck/pointCheck.vue?vue&type=template&id=5e9bec31&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"part2\" },\n    [\n      _c(\n        \"swiper\",\n        {\n          staticClass: \"banner-box\",\n          attrs: {\n            \"indicator-dots\": \"\",\n            autoplay: \"\",\n            \"indicator-active-color\": \"#169bd5\",\n            circular: \"\",\n            interval: 5000,\n            duration: 300,\n            \"indicator-color\": \"rgba(0,0,0,.3)\"\n          }\n        },\n        [\n          _c(\"swiper-item\", { attrs: { mpcomid: \"10bbdf1a-0\" } }, [\n            _c(\"image\", {\n              staticClass: \"banner-image\",\n              attrs: {\n                src: \"../../static/img/fgBG.png\",\n                mode: \"aspectFill\",\n                \"lazy-load\": \"\"\n              }\n            })\n          ]),\n          _c(\"swiper-item\", { attrs: { mpcomid: \"10bbdf1a-1\" } }, [\n            _c(\"image\", {\n              staticClass: \"banner-image\",\n              attrs: {\n                src: \"../../static/img/fgBG.png\",\n                mode: \"aspectFill\",\n                \"lazy-load\": \"\"\n              }\n            })\n          ]),\n          _c(\"swiper-item\", { attrs: { mpcomid: \"10bbdf1a-2\" } }, [\n            _c(\"image\", {\n              staticClass: \"banner-image\",\n              attrs: {\n                src: \"../../static/img/fgBG.png\",\n                mode: \"aspectFill\",\n                \"lazy-load\": \"\"\n              }\n            })\n          ]),\n          _c(\"swiper-item\", { attrs: { mpcomid: \"10bbdf1a-3\" } }, [\n            _c(\"image\", {\n              staticClass: \"banner-image\",\n              attrs: {\n                src: \"../../static/img/fgBG.png\",\n                mode: \"aspectFill\",\n                \"lazy-load\": \"\"\n              }\n            })\n          ])\n        ],\n        1\n      ),\n      _c(\"view\", { staticClass: \"userinfo\" }, [\n        _c(\n          \"view\",\n          {\n            staticClass: \"dangerView\",\n            attrs: { eventid: \"10bbdf1a-0\" },\n            on: {\n              tap: function($event) {\n                _vm.jumpListPage(\"所有记录\")\n              }\n            }\n          },\n          [\n            _c(\"image\", {\n              staticClass: \"dangerIcon\",\n              attrs: { src: \"../../static/img/point_all.png\", mode: \"widthFix\" }\n            }),\n            _vm._m(0)\n          ]\n        ),\n        _c(\n          \"view\",\n          {\n            staticClass: \"dangerView\",\n            attrs: { eventid: \"10bbdf1a-1\" },\n            on: {\n              tap: function($event) {\n                _vm.jumpListPage(\"消火栓\")\n              }\n            }\n          },\n          [\n            _c(\"image\", {\n              staticClass: \"dangerIcon\",\n              attrs: { src: \"../../static/img/point_xhs.png\", mode: \"widthFix\" }\n            }),\n            _vm._m(1)\n          ]\n        ),\n        _c(\n          \"view\",\n          {\n            staticClass: \"dangerView\",\n            attrs: { eventid: \"10bbdf1a-2\" },\n            on: {\n              tap: function($event) {\n                _vm.jumpListPage(\"阀组\")\n              }\n            }\n          },\n          [\n            _c(\"image\", {\n              staticClass: \"dangerIcon\",\n              attrs: { src: \"../../static/img/point_fz.png\", mode: \"widthFix\" }\n            }),\n            _vm._m(2)\n          ]\n        ),\n        _c(\n          \"view\",\n          {\n            staticClass: \"dangerView\",\n            attrs: { eventid: \"10bbdf1a-3\" },\n            on: {\n              tap: function($event) {\n                _vm.jumpListPage(\"高位水箱\")\n              }\n            }\n          },\n          [\n            _c(\"image\", {\n              staticClass: \"dangerIcon\",\n              attrs: { src: \"../../static/img/point_sx.png\", mode: \"widthFix\" }\n            }),\n            _vm._m(3)\n          ]\n        ),\n        _c(\n          \"view\",\n          {\n            staticClass: \"dangerView\",\n            attrs: { eventid: \"10bbdf1a-4\" },\n            on: {\n              tap: function($event) {\n                _vm.jumpListPage(\"消防泵\")\n              }\n            }\n          },\n          [\n            _c(\"image\", {\n              staticClass: \"dangerIcon\",\n              attrs: { src: \"../../static/img/point_xfb.png\", mode: \"widthFix\" }\n            }),\n            _vm._m(4)\n          ]\n        )\n      ])\n    ],\n    1\n  )\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"所有记录\")]),\n      _c(\"text\", { staticClass: \"subText\" }, [_vm._v(\"所有记录\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"消火栓\")]),\n      _c(\"text\", { staticClass: \"subText\" }, [_vm._v(\"消火栓\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"阀组\")]),\n      _c(\"text\", { staticClass: \"subText\" }, [_vm._v(\"阀组\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"高位水箱\")]),\n      _c(\"text\", { staticClass: \"subText\" }, [_vm._v(\"高位水箱\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"subView\" }, [\n      _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"消防泵\")]),\n      _c(\"text\", { staticClass: \"subText\" }, [_vm._v(\"消防泵\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointCheck/pointCheck.vue?vue&type=template&id=5e9bec31&");
 
 /***/ })
 
 },[["../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/main.js?{\"page\":\"pages%2FpointCheck%2FpointCheck\"}","common/runtime","common/vendor"]]]);
 });
 require('pages/pointCheck/pointCheck.js');
+__wxRoute = 'pages/pointDetail/pointDetail';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/pointDetail/pointDetail.js';
+
+define('pages/pointDetail/pointDetail.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
+(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/pointDetail/pointDetail"],{
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/main.js?{\"page\":\"pages%2FpointDetail%2FpointDetail\"}":
+/*!*************************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/main.js?{"page":"pages%2FpointDetail%2FpointDetail"} ***!
+  \*************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__(/*! uni-pages */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages.json\");\nvar _mpvuePageFactory = _interopRequireDefault(__webpack_require__(/*! mpvue-page-factory */ \"./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue-page-factory/index.js\"));\nvar _pointDetail = _interopRequireDefault(__webpack_require__(/*! ./pages/pointDetail/pointDetail.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}\nPage((0, _mpvuePageFactory.default)(_pointDetail.default));\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/main.js?%7B%22page%22:%22pages%252FpointDetail%252FpointDetail%22%7D");
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue":
+/*!******************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pointDetail_vue_vue_type_template_id_153e3c35___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pointDetail.vue?vue&type=template&id=153e3c35& */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=template&id=153e3c35&\");\n/* harmony import */ var _pointDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pointDetail.vue?vue&type=script&lang=js& */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=script&lang=js&\");\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _pointDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _pointDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(\n  _pointDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  _pointDetail_vue_vue_type_template_id_153e3c35___WEBPACK_IMPORTED_MODULE_0__[\"render\"],\n  _pointDetail_vue_vue_type_template_id_153e3c35___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"],\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue\"\n/* harmony default export */ __webpack_exports__[\"default\"] = (component.exports);\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue");
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_pointDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/babel-loader/lib!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./pointDetail.vue?vue&type=script&lang=js& */ \"./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=script&lang=js&\");\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_pointDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_pointDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);\n/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_pointDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_pointDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));\n /* harmony default export */ __webpack_exports__[\"default\"] = (_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_babel_loader_lib_index_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_12_1_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_18_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_script_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_pointDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); \n\n//# sourceURL=uni-app:///pages/pointDetail/pointDetail.vue?vue&type=script&lang=js&?5830");
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=template&id=153e3c35&":
+/*!*************************************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=template&id=153e3c35& ***!
+  \*************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_pointDetail_vue_vue_type_template_id_153e3c35___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib??vue-loader-options!./pointDetail.vue?vue&type=template&id=153e3c35& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=template&id=153e3c35&\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_pointDetail_vue_vue_type_template_id_153e3c35___WEBPACK_IMPORTED_MODULE_0__[\"render\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return _Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue_cli_plugin_uni_packages_webpack_preprocess_loader_index_js_ref_17_0_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_webpack_uni_mp_loader_lib_template_js_Applications_HBuilderX_app_Contents_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_index_js_vue_loader_options_pointDetail_vue_vue_type_template_id_153e3c35___WEBPACK_IMPORTED_MODULE_0__[\"staticRenderFns\"]; });\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=template&id=153e3c35&");
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--18-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/vue-loader/lib??vue-loader-options!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n//# sourceURL=uni-app:///pages/pointDetail/pointDetail.vue?vue&type=script&lang=js&?e596");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader/index.js?!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib/index.js?!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=template&id=153e3c35&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--17-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/vue-loader/lib??vue-loader-options!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=template&id=153e3c35& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", [_vm._v(\"详情页面\")])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=template&id=153e3c35&");
+
+/***/ })
+
+},[["../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/main.js?{\"page\":\"pages%2FpointDetail%2FpointDetail\"}","common/runtime","common/vendor"]]]);
+});
+require('pages/pointDetail/pointDetail.js');
 __wxRoute = 'pages/uni-tabs/uni-tabs';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/uni-tabs/uni-tabs.js';
 
 define('pages/uni-tabs/uni-tabs.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){

@@ -36,6 +36,11 @@
                 "navigationBarTitleText": "点位检查"
             }
         }, {
+            "path": "pages/pointDetail/pointDetail",
+            "style": {
+                "navigationBarTitleText": "点位详情"
+            }
+        }, {
             "path": "pages/uni-tabs/uni-tabs",
             "style": {
                 "navigationBarTitleText": "点位检查11"

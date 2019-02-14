@@ -1,0 +1,264 @@
+<template>
+    <div>
+        <uni-tabs @change="changeTab" :index="tabIndex">
+            <uni-tab-bar :drag="false" :tab-bars="tabBars" :tab-index="tabIndex"></uni-tab-bar>
+            <uni-tab-content>
+                <list class="list" @loadmore="loadMore(index1)" loadmoreoffset="10" v-for="(tab,index1) in newsitems"
+                    :key="index1">
+                    <refresh class="refresh" @refresh="onrefresh(index1)" @pullingdown="onpullingdown" :display="refreshing ? 'show' : 'hide'">
+                        <text class="refresh-text">{{refreshText}}</text>
+                    </refresh>
+                    <cell v-for="(newsitem,index2) in tab.data" :key="index2">
+                        <uni-media-list :data="newsitem" @close="close(index1,index2)" @click="goDetail(newsitem)"></uni-media-list>
+                    </cell>
+                    <cell class="loadmore">
+                        <text class="loadmore-text">{{tab.loadingText}}</text>
+                    </cell>
+                </list> 
+            </uni-tab-content>
+        </uni-tabs>
+    </div>
+</template>
+
+<script>
+    import uniTabContent from '@/components/uni-tab-content/uni-tab-content.nvue'
+    import uniTabBar from '@/components/uni-tab-bar/uni-tab-bar.nvue'
+    import uniTabs from '@/components/uni-tabs/uni-tabs.nvue'
+    import uniMediaList from '@/components/uni-media-list/uni-media-list.nvue'
+	import service from '../../service.js';
+	import config from '../../util/config.js';
+	import request from '../../util/request.js';
+    const dom = weex.requireModule('dom')
+    export default {
+        components: {
+            uniTabContent,
+            uniTabBar,
+            uniTabs,
+            uniMediaList
+        },
+        data() {
+            return {
+				pageRows: 15,
+				lx: "",
+                refreshing: false,
+                refreshText: "下拉可以刷新",
+                tabIndex: 0,
+                newsitems: [],
+                tabBars: [{
+                    name: '待整改',
+                    id: '/mobile/dzglb.do'
+                }, {
+                    name: '已完成',
+                    id: '/mobile/ywclb.do'
+                }, {
+                    name: '未检查',
+                    id: '/mobile/wjclb.do'
+                }]
+            }
+        },
+		onLoad: function (option) {
+			console.log(111111)
+			let page = option.page;
+			this.lx = option.type;
+			// 添加额外的Tab页
+			if (page == "hydrant") {// 消火栓
+				let tab1 = {
+					name: '当月检查',
+					id: '/mobile/xhsdywjclb.do'
+				}
+				this.tabBars.push(tab1);
+			}else if (page == "valve") {// 阀组
+				let tab1 = {
+					name: '周末检查',
+					id: '/mobile/fzzwjclb.do'
+				}
+				this.tabBars.push(tab1);
+			}else if (page == "water" || page == "fire") {// 高位水箱，消防泵
+				let tab1 = {
+					name: '当天未检查',
+					id: '/mobile/jtwjclb.do'
+				}
+				this.tabBars.push(tab1);
+			}
+			// console.log('' + JSON.stringify(this.tabBars));
+		},
+        created() {
+			setTimeout(() => {
+			    this.newsitems = this.randomfn();
+				this.onrefresh(this.tabIndex);
+			}, 50)
+        },
+        methods: {
+            goDetail(e) {
+                console.log("前往详情页面")
+            },
+            close(index1, index2) {
+                uni.showModal({
+                    content: '是否删除本条信息？',
+                    success: (res) => {
+                        if (res.confirm) {
+                            this.newsitems[index1].data.splice(index2, 1);
+                        }
+                    }
+                })
+            },
+            loadMore(e) {
+                setTimeout(() => {
+                    this.addData(e);
+                }, 50);
+            },
+            addData(e) {
+				var that = this
+				that.getListData(e, false);
+            },
+            async changeTab(e) {
+                this.tabIndex = e.index;
+				// console.log(e.index)
+				this.onrefresh(this.tabIndex);
+            },
+            getElSize(el) { //得到元素的size
+                return new Promise((res, rej) => {
+                    const result = dom.getComponentRect(el, option => {
+                        res(option.size);
+                    })
+                })
+            },
+			// 首先生成3个Tab页对应的空模型
+			randomfn() {
+			    let ary = [];
+			    for (let i = 0, length = this.tabBars.length; i < length; i++) {
+			        let aryItem = {
+			            loadingText: "加载更多...",
+			            data: [],
+						pageNum: 1
+			        };
+					ary.push(aryItem);
+			    }
+			    return ary;
+			},
+			// 格式化接口数据，让数据变成组件需要的内容
+			formatData(list, index, isRefresh){
+				if (isRefresh) {
+					this.newsitems[index].data = [];
+				}
+				for(var i = 0; i < list.length; i++){					
+					var obj = {};
+					var item = list[i];
+					obj['title'] = item.dwbh;
+					obj['source'] = '检查人：' + item.zrrmc;
+					obj['datetime'] = '检查日期：' + item.jcrq;
+					obj['id'] = item.id;
+					obj['article_type'] = 0;
+					obj['comment_count'] = '';
+					this.newsitems[index].data.push(obj);
+				}
+			},
+            onrefresh(e) {
+				var that = this
+				that.newsitems[e].pageNum = 1;
+				
+				uni.showLoading({
+					title: "正在刷新...",
+					mask: true
+				})
+                that.refreshText = "正在刷新...";
+                that.refreshing = true;
+				
+				that.getListData(e, true);
+            },
+			// 请求列表数据
+			getListData(e, isRefresh){
+				var that = this;
+				var url = config.host + that.tabBars[e].id;	// 拼接接口
+				
+				const data = {
+				    pageNum: that.newsitems[e].pageNum,
+				    pageRows: that.pageRows,
+					lx: that.lx
+				};
+				
+				request.requestLoading(url, data, '正在加载', 
+					function(res){
+						uni.hideLoading();
+						that.refreshing = false
+						
+						uni.showToast({
+							icon: 'none',
+							title: '请求成功'
+						});
+						
+						that.newsitems[e].pageNum++;
+						that.formatData(res.list, e, isRefresh);
+					},function(){
+						uni.hideLoading();
+						that.refreshing = false
+						
+						uni.showToast({
+							icon: 'none',
+							title: '请求失败'
+						});
+					}
+				);
+			},
+			
+            onpullingdown(event) {
+                if (this.refreshing) {
+                    return;
+                }
+                if (Math.abs(event.pullingDistance) > Math.abs(event.viewHeight)) {
+                    this.refreshText = "释放立即刷新";
+                } else {
+                    this.refreshText = "下拉可以刷新";
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    .tab-bar-item {
+        width: 150px;
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tab-bar-title {
+        height: 100px;
+        line-height: 100px;
+        font-size: 30px;
+        color: #555;
+    }
+
+    .active {
+        color: #007AFF;
+    }
+
+    .loadmore {
+        height: 70px;
+        width: 750px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .loadmore-text {
+        font-size: 30px;
+        text-align: center;
+        color: #999999;
+    }
+
+    .refresh {
+        width: 750px;
+        height: 70px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .refresh-text {
+        text-align: center;
+        font-size: 28px;
+        color: #999999;
+    }
+</style>

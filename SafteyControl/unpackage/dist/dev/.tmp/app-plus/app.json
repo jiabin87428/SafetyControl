@@ -5,7 +5,8 @@
     "pages/reg/reg",
     "pages/pwd/pwd",
     "pages/user/user",
-    "pages/pointCheck/pointCheck"
+    "pages/pointCheck/pointCheck",
+    "pages/pointDetail/pointDetail"
   ],
   "subPackages": [],
   "window": {

@@ -375,6 +375,13 @@ var config = {
   // 待整改
   waitForChange: "".concat(host, "/mobile/dzglb.do"),
 
+  // 已完成
+  finishChange: "".concat(host, "/mobile/ywclb.do"),
+
+  // 未检查
+  notCheck: "".concat(host, "/mobile/wjclb.do"),
+
+
   // 注册
   register: "".concat(host, "/register.do?action=Register"),
 
@@ -541,7 +548,7 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
       // 					  wx.hideLoading()
       // 					}
 
-      console.log('' + JSON.stringify(res));
+      // console.log('' + JSON.stringify(res));
       if (res.data.success == 'true') {
         _success(res.data);
       } else {
@@ -549,7 +556,7 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
       }
     },
     fail: function fail(res) {
-      console.log('' + JSON.stringify(res));
+      // console.log('' + JSON.stringify(res))
       _fail();
     } });
 
@@ -2094,7 +2101,8 @@ var dom = weex.requireModule('dom');var _default2 =
 
   watch: {
     tabIndex: function tabIndex(newVal) {
-      this.change(newVal);
+      //监听属性不需要调用change，上面的div已经注册了Click=change，这里再调用会引起调用两次
+      // this.change(newVal)
     } },
 
   methods: {
@@ -2297,112 +2305,81 @@ var dom = weex.requireModule('dom');var _default =
 
   data: function data() {
     return {
-      pageNum: 1,
       pageRows: 15,
-      lx: "",
+      lx: "点位检查", // 类型&导航栏标题
       refreshing: false,
       refreshText: "下拉可以刷新",
       tabIndex: 0,
+      tabType: 0, //0-基础（待整改、已完成、未检查），1-扩展（月中检查、周末检查、当天检查等）
       newsitems: [],
-      data0: {
-        "datetime": "40分钟前",
-        "article_type": 0,
-        "title": "uni-app行业峰会频频亮相，开发者反响热烈!",
-        "source": "DCloud",
-        "comment_count": 639 },
-
-      data1: {
-        "datetime": "一天前",
-        "article_type": 1,
-        "title": "DCloud完成B2轮融资，uni-app震撼发布!",
-        "image_url": "https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/shuijiao.jpg?imageView2/3/w/200/h/100/q/90",
-        "source": "DCloud",
-        "comment_count": 11395 },
-
-      data2: {
-        "datetime": "一天前",
-        "article_type": 2,
-        "title": "中国技术界小奇迹：HBuilder开发者突破200万",
-        "image_url": "https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/muwu.jpg?imageView2/3/w/200/h/100/q/90",
-        "source": "DCloud",
-        "comment_count": 11395 },
-
-      data4: {
-        "datetime": "2小时前",
-        "article_type": 4,
-        "title": "uni-app 支持原生小程序自定义组件，更开放、更自由",
-        "image_url": "https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/cbd.jpg?imageView2/3/w/200/h/100/q/90",
-        "source": "DCloud",
-        "comment_count": 69 },
-
-      data3: {
-        "article_type": 3,
-        "image_list": [{
-          "url": "https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/cbd.jpg?imageView2/3/w/200/h/100/q/90",
-          "width": 563,
-          "height": 316 },
-        {
-          "url": "https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/muwu.jpg?imageView2/3/w/200/h/100/q/90",
-          "width": 641,
-          "height": 360 },
-        {
-          "url": "https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/shuijiao.jpg?imageView2/3/w/200/h/100/q/90",
-          "width": 640,
-          "height": 360 }],
-
-        "datetime": "5分钟前",
-        "title": "uni-app 支持使用 npm 安装第三方包，生态更趋丰富",
-        "source": "DCloud",
-        "comment_count": 11 },
-
       tabBars: [{
         name: '待整改',
-        id: 'dzg' },
+        id: '/mobile/dzglb.do' },
       {
         name: '已完成',
-        id: 'ywc' },
+        id: '/mobile/ywclb.do' },
       {
         name: '未检查',
-        id: 'wjc' }] };
+        id: '/mobile/wjclb.do' }] };
 
 
   },
-  created: function created() {var _this = this;
+  created: function created() {
+    var that = this;
+    // 获取该页面显示的类型
+    uni.getStorage({
+      key: 'currentLx',
+      success: function success(res) {
+        that.lx = res.data;
+        uni.getStorage({
+          key: res.data,
+          success: function success(res) {
+            that.tabBars.push(JSON.parse(res.data));
+          } });
+
+      } });
+
     setTimeout(function () {
-      _this.newsitems = _this.randomfn();
-    }, 150);
+      uni.setNavigationBarTitle({
+        title: that.lx });
+
+      that.newsitems = that.randomfn();
+      that.onrefresh(that.tabIndex);
+    }, 50);
   },
   methods: {
     goDetail: function goDetail(e) {
-      console.log("前往详情页面");
+      // console.log("前往详情页面")
+      uni.navigateTo({
+        url: '../pointDetail/pointDetail',
+        success: function success(res) {},
+        fail: function fail() {},
+        complete: function complete() {} });
+
     },
-    close: function close(index1, index2) {var _this2 = this;
+    close: function close(index1, index2) {var _this = this;
       uni.showModal({
         content: '是否删除本条信息？',
         success: function success(res) {
           if (res.confirm) {
-            _this2.newsitems[index1].data.splice(index2, 1);
+            _this.newsitems[index1].data.splice(index2, 1);
           }
         } });
 
     },
-    loadMore: function loadMore(e) {var _this3 = this;
+    loadMore: function loadMore(e) {var _this2 = this;
       setTimeout(function () {
-        _this3.addData(e);
-      }, 1000);
+        _this2.addData(e);
+      }, 50);
     },
     addData: function addData(e) {
-      console.log("加载更多...");
-      if (this.newsitems[e].data.length > 30) {
-        this.newsitems[e].loadingText = '没有更多了';
-        return;
-      }
-      for (var i = 1; i <= 10; i++) {
-        this.newsitems[e].data.push(this['data' + Math.floor(Math.random() * 5)]);
-      }
+      var that = this;
+      that.getListData(e, false);
     },
     changeTab: function () {var _changeTab = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(e) {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
-                this.tabIndex = e.index;case 1:case "end":return _context.stop();}}}, _callee, this);}));function changeTab(_x) {return _changeTab.apply(this, arguments);}return changeTab;}(),
+                this.tabIndex = e.index;
+                // console.log(e.index)
+                this.onrefresh(this.tabIndex);case 2:case "end":return _context.stop();}}}, _callee, this);}));function changeTab(_x) {return _changeTab.apply(this, arguments);}return changeTab;}(),
 
     getElSize: function getElSize(el) {//得到元素的size
       return new Promise(function (res, rej) {
@@ -2411,47 +2388,89 @@ var dom = weex.requireModule('dom');var _default =
         });
       });
     },
+    // 首先生成3个Tab页对应的空模型
     randomfn: function randomfn() {
       var ary = [];
       for (var i = 0, length = this.tabBars.length; i < length; i++) {
         var aryItem = {
           loadingText: "加载更多...",
-          data: [] };
+          data: [],
+          pageNum: 1 };
 
-        for (var j = 1; j <= 10; j++) {
-          aryItem.data.push(this['data' + Math.floor(Math.random() * 5)]);
-        }
         ary.push(aryItem);
       }
       return ary;
     },
-    onrefresh: function onrefresh(event) {var _this4 = this;
-      uni.showToast({
-        title: "refresh",
-        icon: "none" });
-
-      this.refreshText = "正在刷新...";
-      this.refreshing = true;
-      setTimeout(function () {
-        console.log("刷新结束");
-        _this4.refreshing = false;
-      }, 2000);
-
-
-      var data = {
-        pageNum: this.pageNum,
-        pageRows: this.pageRows,
-        lx: this.lx };
-
-      _request.default.requestLoading(_config.default.waitForChange, data, '正在加载',
-      function (res) {
-        // plus.nativeUI.alert('成功');
+    // 格式化接口数据，让数据变成组件需要的内容
+    formatData: function formatData(list, index, isRefresh) {
+      if (isRefresh) {
+        this.newsitems[index].data = [];
+      }
+      if (index > 2) {// 如果前三个Tab页，说明是基础Tab，否则是扩展Tab
+        this.tabType = 1;
+      } else {
+        this.tabType = 0;
+      }
+      for (var i = 0; i < list.length; i++) {
+        var obj = {};
+        var item = list[i];
+        obj['title'] = item.dwbh;
+        obj['source'] = this.tabType == 0 ? '检查人：' + item.zrrmc : '责任部门：' + item.zrbm;
+        obj['datetime'] = this.tabType == 0 ? '检查日期：' + item.jcrq : '';
+        obj['id'] = this.tabType == 0 ? item.id : '';
+        obj['article_type'] = 0;
+        obj['comment_count'] = '';
+        this.newsitems[index].data.push(obj);
+      }
+      if (!isRefresh) {// 上拉加载更多结束后改回加载更多，增加体验
+        that.newsitems[e].loadingText = '加载更多...';
+      }
+      if (this.newsitems[index].data.length <= 0) {
         uni.showToast({
           icon: 'none',
-          title: '请求成功' });
+          title: '暂无数据' });
 
-        // console.log('' + JSON.stringify(res));
+      }
+    },
+    onrefresh: function onrefresh(e) {
+      var that = this;
+      that.newsitems[e].pageNum = 1;
+
+      uni.showLoading({
+        title: "正在刷新...",
+        mask: true });
+
+      that.refreshText = "正在刷新...";
+      that.refreshing = true;
+
+      that.getListData(e, true);
+    },
+    // 请求列表数据
+    getListData: function getListData(e, isRefresh) {
+      var that = this;
+      var url = _config.default.host + that.tabBars[e].id; // 拼接接口
+
+      var data = {
+        pageNum: that.newsitems[e].pageNum,
+        pageRows: that.pageRows,
+        lx: that.lx == '所有记录' ? '' : that.lx };
+
+
+      if (!isRefresh) {// 上拉加载更多，改变文字，增加体验
+        that.newsitems[e].loadingText = '正在加载...';
+      }
+
+      _request.default.requestLoading(url, data, '正在加载',
+      function (res) {
+        uni.hideLoading();
+        that.refreshing = false;
+
+        that.newsitems[e].pageNum++;
+        that.formatData(res.list, e, isRefresh);
       }, function () {
+        uni.hideLoading();
+        that.refreshing = false;
+
         uni.showToast({
           icon: 'none',
           title: '请求失败' });
@@ -2459,6 +2478,7 @@ var dom = weex.requireModule('dom');var _default =
       });
 
     },
+
     onpullingdown: function onpullingdown(event) {
       if (this.refreshing) {
         return;
@@ -2723,7 +2743,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "display": _vm.refreshing ? 'show' : 'hide'
       },
       on: {
-        "refresh": _vm.onrefresh,
+        "refresh": function($event) {
+          _vm.onrefresh(index1)
+        },
         "pullingdown": _vm.onpullingdown
       }
     }, [_c('text', {
@@ -2859,21 +2881,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["info-text"]
   }, [_vm._v(_vm._s(_vm.data.source))]), _c('text', {
     staticClass: ["info-text"]
-  }, [_vm._v(_vm._s(_vm.data.comment_count) + "条评论")]), _c('text', {
+  }, [_vm._v(_vm._s(_vm.data.comment_count))]), _c('text', {
     staticClass: ["info-text"]
-  }, [_vm._v(_vm._s(_vm.data.datetime))])]), _c('div', {
-    staticClass: ["max-close-view"],
-    on: {
-      "click": _vm.close
-    }
-  }, [_vm._m(0)])])]) : _vm._e()])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["close-view"]
-  }, [_c('text', {
-    staticClass: ["close"]
-  }, [_vm._v("×")])])
-}]}
+  }, [_vm._v(_vm._s(_vm.data.datetime))])])])]) : _vm._e()])])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ })

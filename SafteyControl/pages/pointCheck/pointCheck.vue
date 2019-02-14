@@ -18,36 +18,36 @@
 			</swiper-item>  
 		</swiper>  
 		<view class="userinfo">
-		  <view class='dangerView' @tap="jumpListPage">
-		    <image class="dangerIcon" src="../../assets/add.png" mode="widthFix"></image>
+		  <view class='dangerView' @tap="jumpListPage('所有记录')">
+		    <image class="dangerIcon" src="../../static/img/point_all.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>所有记录</text>
 		      <text class='subText'>所有记录</text>
 		    </view>
 		  </view>
-		  <view class='dangerView'>
-		    <image class="dangerIcon" src="../../assets/list.png" mode="widthFix"></image>
+		  <view class='dangerView' @tap="jumpListPage('消火栓')">
+		    <image class="dangerIcon" src="../../static/img/point_xhs.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>消火栓</text>
 		      <text class='subText'>消火栓</text>
 		    </view>
 		  </view>
-		  <view class='dangerView'>
-		    <image class="dangerIcon" src="../../assets/list.png" mode="widthFix"></image>
+		  <view class='dangerView' @tap="jumpListPage('阀组')">
+		    <image class="dangerIcon" src="../../static/img/point_fz.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>阀组</text>
 		      <text class='subText'>阀组</text>
 		    </view>
 		  </view>
-		  <view class='dangerView'>
-		    <image class="dangerIcon" src="../../assets/list.png" mode="widthFix"></image>
+		  <view class='dangerView' @tap="jumpListPage('高位水箱')">
+		    <image class="dangerIcon" src="../../static/img/point_sx.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>高位水箱</text>
 		      <text class='subText'>高位水箱</text>
 		    </view>
 		  </view>
-		  <view class='dangerView'>
-		    <image class="dangerIcon" src="../../assets/list.png" mode="widthFix"></image>
+		  <view class='dangerView' @tap="jumpListPage('消防泵')">
+		    <image class="dangerIcon" src="../../static/img/point_xfb.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>消防泵</text>
 		      <text class='subText'>消防泵</text>
@@ -59,8 +59,30 @@
 
 <script>
 	export default {
+		onLoad() {
+			let hydrantTab = {
+				name: '当月检查',
+				id: '/mobile/xhsdywjclb.do'
+			}
+			this.saveTabInfo('消火栓', hydrantTab);
+			
+			let valveTab = {
+				name: '周末检查',
+				id: '/mobile/fzzwjclb.do'
+			}
+			this.saveTabInfo('阀组', valveTab);
+			
+			let waterTab = {
+				name: '当天未检查',
+				id: '/mobile/jtwjclb.do'
+			}
+			this.saveTabInfo('高位水箱', waterTab);
+			this.saveTabInfo('消防泵', waterTab);
+			
+		},
 		methods:{
-			jumpListPage() {
+			jumpListPage(lx) {
+				this.saveTabInfo('currentLx', lx);// 保存当前类型名称
 				uni.navigateTo({
 					url: '../pointList/uni-tabs',
 					success: res => {},
@@ -68,6 +90,15 @@
 					complete: () => {}
 				});
 			},
+			saveTabInfo(key, data){
+				uni.setStorage({
+						key: key,
+						data: data,
+						success: function () {
+								console.log('success');
+						}
+				});
+			}
 		},
 	}
 </script>
@@ -109,7 +140,7 @@
 	  align-items:center;/*垂直居中*/
 	}
 	.dangerIcon {
-	  width: 45px;
+	  width: 90px;
 	  margin-left: 10px;
 	}
 
@@ -128,7 +159,7 @@
 	.subText {
 	  font-size: 14;
 	  color: #767676;
-	  margin-left: 20px;
+	  margin-left: 15px;
 	  margin-top: 5px;
 	}
 </style>

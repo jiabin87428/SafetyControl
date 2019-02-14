@@ -13,6 +13,13 @@ var config = {
   
   // 待整改
   waitForChange: `${host}/mobile/dzglb.do`,
+  
+  // 已完成
+  finishChange: `${host}/mobile/ywclb.do`,
+  
+  // 未检查
+  notCheck: `${host}/mobile/wjclb.do`,
+  
 
   // 注册
   register: `${host}/register.do?action=Register`,

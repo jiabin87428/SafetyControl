@@ -5,7 +5,7 @@
             <uni-tab-content>
                 <list class="list" @loadmore="loadMore(index1)" loadmoreoffset="10" v-for="(tab,index1) in newsitems"
                     :key="index1">
-                    <refresh class="refresh" @refresh="onrefresh" @pullingdown="onpullingdown" :display="refreshing ? 'show' : 'hide'">
+                    <refresh class="refresh" @refresh="onrefresh(index1)" @pullingdown="onpullingdown" :display="refreshing ? 'show' : 'hide'">
                         <text class="refresh-text">{{refreshText}}</text>
                     </refresh>
                     <cell v-for="(newsitem,index2) in tab.data" :key="index2">
@@ -38,84 +38,57 @@
         },
         data() {
             return {
-				pageNum: 1,
 				pageRows: 15,
-				lx: "",
+				lx: "点位检查", // 类型&导航栏标题
                 refreshing: false,
                 refreshText: "下拉可以刷新",
                 tabIndex: 0,
+				tabType: 0,	//0-基础（待整改、已完成、未检查），1-扩展（月中检查、周末检查、当天检查等）
                 newsitems: [],
-                data0: {
-                    "datetime": "40分钟前",
-                    "article_type": 0,
-                    "title": "uni-app行业峰会频频亮相，开发者反响热烈!",
-                    "source": "DCloud",
-                    "comment_count": 639
-                },
-                data1: {
-                    "datetime": "一天前",
-                    "article_type": 1,
-                    "title": "DCloud完成B2轮融资，uni-app震撼发布!",
-                    "image_url": "https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/shuijiao.jpg?imageView2/3/w/200/h/100/q/90",
-                    "source": "DCloud",
-                    "comment_count": 11395
-                },
-                data2: {
-                    "datetime": "一天前",
-                    "article_type": 2,
-                    "title": "中国技术界小奇迹：HBuilder开发者突破200万",
-                    "image_url": "https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/muwu.jpg?imageView2/3/w/200/h/100/q/90",
-                    "source": "DCloud",
-                    "comment_count": 11395
-                },
-                data4: {
-                    "datetime": "2小时前",
-                    "article_type": 4,
-                    "title": "uni-app 支持原生小程序自定义组件，更开放、更自由",
-                    "image_url": "https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/cbd.jpg?imageView2/3/w/200/h/100/q/90",
-                    "source": "DCloud",
-                    "comment_count": 69
-                },
-                data3: {
-                    "article_type": 3,
-                    "image_list": [{
-                        "url": "https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/cbd.jpg?imageView2/3/w/200/h/100/q/90",
-                        "width": 563,
-                        "height": 316
-                    }, {
-                        "url": "https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/muwu.jpg?imageView2/3/w/200/h/100/q/90",
-                        "width": 641,
-                        "height": 360
-                    }, {
-                        "url": "https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/shuijiao.jpg?imageView2/3/w/200/h/100/q/90",
-                        "width": 640,
-                        "height": 360
-                    }],
-                    "datetime": "5分钟前",
-                    "title": "uni-app 支持使用 npm 安装第三方包，生态更趋丰富",
-                    "source": "DCloud",
-                    "comment_count": 11
-                },
                 tabBars: [{
                     name: '待整改',
-                    id: 'dzg'
+                    id: '/mobile/dzglb.do'
                 }, {
                     name: '已完成',
-                    id: 'ywc'
+                    id: '/mobile/ywclb.do'
                 }, {
                     name: '未检查',
-                    id: 'wjc'
+                    id: '/mobile/wjclb.do'
                 }]
             }
         },
         created() {
-            setTimeout(() => {
-                this.newsitems = this.randomfn();
-            }, 150)
+			var that = this
+			// 获取该页面显示的类型
+			uni.getStorage({
+				key: 'currentLx',
+				success: function (res) {
+					that.lx = res.data;
+					uni.getStorage({
+						key: res.data,
+						success: function (res) {
+							that.tabBars.push(JSON.parse(res.data));
+						}
+					})
+				}
+			});
+			setTimeout(() => {
+				uni.setNavigationBarTitle({
+					title: that.lx
+				})
+			    that.newsitems = that.randomfn();
+				that.onrefresh(that.tabIndex);
+			}, 50)
         },
         methods: {
             goDetail(e) {
-                console.log("前往详情页面")
+                // console.log("前往详情页面")
+				uni.navigateTo({
+					url: '../pointDetail/pointDetail',
+					success: res => {},
+					fail: () => {},
+					complete: () => {}
+				});
             },
             close(index1, index2) {
                 uni.showModal({
@@ -130,20 +103,16 @@
             loadMore(e) {
                 setTimeout(() => {
                     this.addData(e);
-                }, 1000);
+                }, 50);
             },
             addData(e) {
-                console.log("加载更多...");
-                if (this.newsitems[e].data.length > 30) {
-                    this.newsitems[e].loadingText = '没有更多了';
-                    return;
-                }
-                for (let i = 1; i <= 10; i++) {
-                    this.newsitems[e].data.push(this['data' + Math.floor(Math.random() * 5)]);
-                }
+				var that = this
+				that.getListData(e, false);
             },
             async changeTab(e) {
                 this.tabIndex = e.index;
+				// console.log(e.index)
+				this.onrefresh(this.tabIndex);
             },
             getElSize(el) { //得到元素的size
                 return new Promise((res, rej) => {
@@ -152,54 +121,97 @@
                     })
                 })
             },
-            randomfn() {
-                let ary = [];
-                for (let i = 0, length = this.tabBars.length; i < length; i++) {
-                    let aryItem = {
-                        loadingText: "加载更多...",
-                        data: []
-                    };
-                    for (let j = 1; j <= 10; j++) {
-                        aryItem.data.push(this['data' + Math.floor(Math.random() * 5)]);
-                    }
-                    ary.push(aryItem);
-                }
-                return ary;
-            },
-            onrefresh(event) {
-                uni.showToast({
-                    title: "refresh",
-                    icon: "none"
-                });
-                this.refreshText = "正在刷新...";
-                this.refreshing = true;
-                setTimeout(() => {
-                    console.log("刷新结束")
-                    this.refreshing = false
-                }, 2000)
+			// 首先生成3个Tab页对应的空模型
+			randomfn() {
+			    let ary = [];
+			    for (let i = 0, length = this.tabBars.length; i < length; i++) {
+			        let aryItem = {
+			            loadingText: "加载更多...",
+			            data: [],
+						pageNum: 1
+			        };
+					ary.push(aryItem);
+			    }
+			    return ary;
+			},
+			// 格式化接口数据，让数据变成组件需要的内容
+			formatData(list, index, isRefresh){
+				if (isRefresh) {
+					this.newsitems[index].data = [];
+				}
+				if(index > 2) { // 如果前三个Tab页，说明是基础Tab，否则是扩展Tab
+					this.tabType = 1;
+				}else {
+					this.tabType = 0
+				}
+				for(var i = 0; i < list.length; i++){					
+					var obj = {};
+					var item = list[i];
+					obj['title'] = item.dwbh;
+					obj['source'] = this.tabType == 0 ? '检查人：' + item.zrrmc : '责任部门：' + item.zrbm;
+					obj['datetime'] = this.tabType == 0 ? '检查日期：' + item.jcrq : '';
+					obj['id'] = this.tabType == 0 ? item.id : '';
+					obj['article_type'] = 0;
+					obj['comment_count'] = '';
+					this.newsitems[index].data.push(obj);
+				}
+				if (!isRefresh) {// 上拉加载更多结束后改回加载更多，增加体验
+					that.newsitems[e].loadingText = '加载更多...';
+				}
+				if (this.newsitems[index].data.length <= 0) {
+					uni.showToast({
+						icon: 'none',
+						title: '暂无数据'
+					});
+				}
+			},
+            onrefresh(e) {
+				var that = this
+				that.newsitems[e].pageNum = 1;
 				
+				uni.showLoading({
+					title: "正在刷新...",
+					mask: true
+				})
+                that.refreshText = "正在刷新...";
+                that.refreshing = true;
+				
+				that.getListData(e, true);
+            },
+			// 请求列表数据
+			getListData(e, isRefresh){
+				var that = this;
+				var url = config.host + that.tabBars[e].id;	// 拼接接口
 				
 				const data = {
-				    pageNum: this.pageNum,
-				    pageRows: this.pageRows,
-					lx: this.lx
+				    pageNum: that.newsitems[e].pageNum,
+				    pageRows: that.pageRows,
+					lx: that.lx == '所有记录' ? '' : that.lx
 				};
-				request.requestLoading(config.waitForChange, data, '正在加载', 
+				
+				if (!isRefresh) {// 上拉加载更多，改变文字，增加体验
+					that.newsitems[e].loadingText = '正在加载...';
+				}
+				
+				request.requestLoading(url, data, '正在加载', 
 					function(res){
-						// plus.nativeUI.alert('成功');
-						uni.showToast({
-							icon: 'none',
-							title: '请求成功'
-						});
-						// console.log('' + JSON.stringify(res));
+						uni.hideLoading();
+						that.refreshing = false
+						
+						that.newsitems[e].pageNum++;
+						that.formatData(res.list, e, isRefresh);
 					},function(){
+						uni.hideLoading();
+						that.refreshing = false
+						
 						uni.showToast({
 							icon: 'none',
 							title: '请求失败'
 						});
 					}
 				);
-            },
+			},
+			
             onpullingdown(event) {
                 if (this.refreshing) {
                     return;

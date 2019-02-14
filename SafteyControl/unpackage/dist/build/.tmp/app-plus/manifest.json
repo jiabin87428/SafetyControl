@@ -17,7 +17,11 @@
     "email": "",
     "url": ""
   },
-  "permissions": {},
+  "permissions": {
+    "UniNView": {
+      "description": "UniNView原生渲染"
+    }
+  },
   "plus": {
     "useragent": {
       "value": "uni-app appservice",

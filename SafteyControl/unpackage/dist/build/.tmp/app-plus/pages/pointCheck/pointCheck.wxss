@@ -61,6 +61,49 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 轮播图 */
 .part2{  
   display: -webkit-box;  
@@ -127,7 +170,7 @@
           align-items:center;/*垂直居中*/
 }
 .dangerIcon {
-  width: 45rpx;
+  width: 90rpx;
   margin-left: 10rpx;
 }
 .subView {
@@ -154,7 +197,7 @@
 .subText {
   font-size: 14;
   color: #767676;
-  margin-left: 20rpx;
+  margin-left: 15rpx;
   margin-top: 5rpx;
 }
 
