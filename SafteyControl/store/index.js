@@ -12,6 +12,9 @@ const store = new Vuex.Store({
         hasLogin: false,
         userName: "",
 		userInfo: null,
+		
+		// 输入页的内容，供其他页面取用
+		inputPageText: "",
     },
     mutations: {
         login(state, user) {
@@ -25,6 +28,10 @@ const store = new Vuex.Store({
             state.userName = "";
             state.hasLogin = false;
         },
+		
+		setInputPageText(text) {
+			state.inputPageText = text;
+		},
     }
 })
 

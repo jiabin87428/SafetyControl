@@ -8,6 +8,9 @@
 </template>
 
 <script>
+	import {
+	    mapMutations
+	} from 'vuex'
 	export default {
     data() {
         return {
@@ -19,7 +22,9 @@
 		this.placeholder = option.placeholder;
 		this.text = option.text;
 	},
+	
     methods: {
+		...mapMutations(['setInputPageText']),
         saveText() {
 			uni.navigateBack({
 				delta: 1
