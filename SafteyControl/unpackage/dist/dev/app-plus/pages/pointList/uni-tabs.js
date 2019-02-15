@@ -372,139 +372,8 @@ var config = {
   // 登录
   login: "".concat(host, "/mobile/system/login.do"),
 
-  // 待整改
-  waitForChange: "".concat(host, "/mobile/dzglb.do"),
-
-  // 已完成
-  finishChange: "".concat(host, "/mobile/ywclb.do"),
-
-  // 未检查
-  notCheck: "".concat(host, "/mobile/wjclb.do"),
-
-
-  // 注册
-  register: "".concat(host, "/register.do?action=Register"),
-
-  // 修改密码
-  changePassword: "".concat(host, "/getXx.do?action=updatePwd"),
-
-  // 企业名称列表
-  getCompanyName: "".concat(host, "/getXx.do?action=getQyList"),
-
-  // 企业属地接口
-  getLocal: "".concat(host, "/getXx.do?action=getLocal"),
-
-  // 企业类型
-  getType: "".concat(host, "/getXx.do?action=getType"),
-
-  // 隐患列表
-  getYhList: "".concat(host, "/getXx.do?action=getYhList"),
-
-  // 获取企业隐患列表
-  getQyyhList: "".concat(host, "/getXx.do?action=getQyyhList"),
-
-  // 隐患详情
-  getOneYh: "".concat(host, "/getXx.do?action=getOneYh"),
-
-  // 统计接口
-  getTj: "".concat(host, "/getXx.do?action=getTj"),
-
-  // 插入隐患
-  insertYh: "".concat(host, "/getXx.do?action=insertYh"),
-
-  // 上传图片接口
-  uploadImg: "".concat(host, "/uploadImg"),
-  // 删除图片接口
-  deleteImg: "".concat(host, "/getXx.do?action=delYhzp"),
-
-  // 头像默认链接
-  logoImg: "".concat(host, "/getXx.do?action=loadQyxxPhoto&qyid="),
-
-  // 加载隐患图片头部链接-小图
-  loadYhPhoto: "".concat(host, "/getXx.do?action=loadYhPhoto&attid="),
-  // 加载隐患图片头部链接-大图
-  loadBigPhoto: "".concat(host, "/getXx.do?action=loadPhoto&attid="),
-
-  // 修改企业信息
-  updateQyxx: "".concat(host, "/getXx.do?action=updateQyxx"),
-
-  // 获取企业信息
-  getQyxx: "".concat(host, "/getXx.do?action=getQyxx"),
-
-  //-----------纪杰------------
-
-  // 获取任务列表
-  getRw: "".concat(host, "/getXx.do?action=getRw&"),
-
-  // 获取企业信息和企业安全生产管理现状
-  getBaseAndSaftyInfo: "".concat(host, "/getXx.do?action=getQyxx&qyid="),
-
-  // 更新企业基本信息和安全生产信息
-  updateBaseInfoAndSaftyInfo: "".concat(host, "/getXx.do?action=updateQyxx"),
-
-  // 更新任务信息
-  updateRw: "".concat(host, "/getXx.do?action=updateRw"),
-
-  // 获取设备信息
-  getSb: "".concat(host, "/getXx.do?action=getSb&qyid="),
-
-  // // 获取区、街道（总共有3层：市、区、镇）
-  // getLocal: `${host}/getXx.do?action=getLocal&orgid=`,
-
-  // 获取模板隐患类别
-  getCategory: "".concat(host, "/getXx.do?action=getLb"),
-
-  // 根据模版隐患类别获取详情隐患列表
-  getDangerType: "".concat(host, "/getXx.do?action=getCjwt"),
-
-  // 获取隐患分类
-  getDangerClassify: "".concat(host, "/getXx.do?action=getYhfl"),
-
-  // 获取法律法规分类
-  getLawsType: "".concat(host, "/getXx.do?action=getFgfl"),
-
-  // 根据分类获取法律法规详情文书
-  getLawsDetail: "".concat(host, "/getXx.do?action=getFlfg"),
-
-  // 法律法规内容检索
-  searchLawsInfo: "".concat(host, "/getXx.do?action=showWj"),
-
-  // 获取全部法律法规-新建隐患从法规库选择对应条款
-  getAllFlfg: "".concat(host, "/getXx.do?action=getAllFlfg"),
-
-  // 新建项目
-  createProjcet: "".concat(host, "/getXx.do?action=insertXm"),
-  // 获取项目列表
-  getProjectList: "".concat(host, "/getXx.do?action=getXmlist"),
-  // 获取项目详情
-  getProjectDetail: "".concat(host, "/getXx.do?action=getOneXm&xmid="),
-
-  // 获取法规抓取文件
-  getGrabLaws: "".concat(host, "/getXx.do?action=getFglist"),
-
-  // 删除隐患
-  deleteYH: "".concat(host, "/getXx.do?action=delYh"),
-  // 删除项目
-  deleteProject: "".concat(host, "/getXx.do?action=delXm"),
-
-  // 获取企业列表
-  getCompanyList: "".concat(host, "/getXx.do?action=getQyList"),
-  // 新建/编辑企业
-  editCompany: "".concat(host, "/getXx.do?action=insertQy"),
-  // 删除企业
-  deleteCompany: "".concat(host, "/getXx.do?action=delQy"),
-  // 重置企业密码
-  resetCompanyPassword: "".concat(host, "/getXx.do?action=resetPwd"),
-  // 获取企业报告
-  getBgList: "".concat(host, "/getXx.do?action=getBgList"),
-  // 企业编辑，新建账号
-  createAccount: "".concat(host, "/getXx.do?action=register"),
-
-  // 获取检查类型
-  getJclx: "".concat(host, "/getXx.do?action=getJclx"),
-
-  // 下载文件
-  downLoadFile: "".concat(host, "/getfile?fileid=") };
+  // 点位检查扫码接口
+  scan: "".concat(host, "/mobile/dwsm.do") };
 
 //对外把对象config返回
 module.exports = config;
@@ -525,7 +394,7 @@ module.exports = config;
 // message:进度条的提示信息
 // success:成功的回调函数
 // fail：失败的回调
-var requestLoading = function requestLoading(url, params, message, _success, _fail) {
+var requestLoading = function requestLoading(url, params, message, _success, _fail, _complete) {
   // console.log(params)
   // 	wx.showNavigationBarLoading()
   // 	if (message != "") {
@@ -558,6 +427,9 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
     fail: function fail(res) {
       // console.log('' + JSON.stringify(res))
       _fail();
+    },
+    complete: function complete() {
+      _complete();
     } });
 
 };

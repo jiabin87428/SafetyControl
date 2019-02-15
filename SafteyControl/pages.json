@@ -46,6 +46,31 @@
                 "navigationBarTitleText": "新增检查"
             }
         }, {
+            "path": "pages/pointAdd/pointCheckInfo",
+            "style": {
+                "navigationBarTitleText": "检查结论"
+            }
+        },  {
+            "path": "pages/mpvue-echarts/chartList",
+            "style": {
+                "navigationBarTitleText": "数据统计"
+            }
+        },{
+            "path": "pages/mpvue-echarts/deviceChart",
+            "style": {
+                "navigationBarTitleText": "报警设备类型统计"
+            }
+        },{
+            "path": "pages/mpvue-echarts/eventChart",
+            "style": {
+                "navigationBarTitleText": "报警事件类型统计"
+            }
+        },{
+            "path": "pages/mpvue-echarts/valveChart",
+            "style": {
+                "navigationBarTitleText": "阀组压力统计"
+            }
+        },{
             "path": "pages/mpvue-echarts/mpvue-echarts",
             "style": {
                 "navigationBarTitleText": "ECharts图表"
@@ -54,6 +79,11 @@
             "path": "pages/uni-tabs/uni-tabs",
             "style": {
                 "navigationBarTitleText": "点位检查11"
+            }
+        },{
+            "path": "pages/common/inputPage",
+            "style": {
+                "navigationBarTitleText": "输入内容"
             }
         }
     ],

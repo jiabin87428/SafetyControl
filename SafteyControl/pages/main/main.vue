@@ -39,6 +39,8 @@
 
 <script>
 	import service from '../../service.js';
+	import config from '../../util/config.js';
+	import request from '../../util/request.js';
     import {
         mapState,
 		mapMutations
@@ -50,25 +52,47 @@
 		    ...mapMutations(['login']),
 			// 扫一扫
 			openScan() {
+				var that = this;
 				// 允许从相机和相册扫码
 				uni.scanCode({
 					success: function (res) {
 // 						console.log('条码类型：' + res.scanType);
 // 						console.log('条码内容：' + res.result);
-						uni.showToast({
-							icon: 'none',
-							title: '条码内容：' + res.result
-						});
-						uni.navigateTo({
-							url: '../pointAdd/pointAdd?code=' + res.result
+
+// 						uni.showToast({
+// 							icon: 'none',
+// 							title: '条码内容：' + res.result
+// 						});
+						
+						let param = {
+							userid: that.userInfo.userid,
+							dwbh: res.result,
+						};
+						uni.showLoading({
+							title: "正在加载...",
+							mask: true
 						})
+						request.requestLoading(config.scan, param, '正在加载', 
+							function(res){
+								// console.log('' + JSON.stringify(res));
+								uni.navigateTo({
+									url: '../pointAdd/pointAdd?obj=' + JSON.stringify(res)
+								});
+							},function(){
+								uni.showToast({
+									icon: 'none',
+									title: '请求失败'
+								});
+							},function() {
+								uni.hideLoading();
+							});
 					}
 				});
 			},
 			// 数据图表统计
 			openCharts() {
 				uni.navigateTo({
-					url: '../mpvue-echarts/mpvue-echarts'
+					url: '../mpvue-echarts/chartList'
 				})
 			},
 		},

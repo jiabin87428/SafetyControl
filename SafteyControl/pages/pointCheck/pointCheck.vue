@@ -61,7 +61,7 @@
 	export default {
 		onLoad() {
 			let hydrantTab = {
-				name: '当月检查',
+				name: '当月未检查',
 				id: '/mobile/xhsdywjclb.do'
 			}
 			this.saveTabInfo('消火栓', hydrantTab);

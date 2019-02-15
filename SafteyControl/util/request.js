@@ -4,7 +4,7 @@
 // message:进度条的提示信息
 // success:成功的回调函数
 // fail：失败的回调
-const requestLoading = function(url, params, message, success, fail) {
+const requestLoading = function(url, params, message, success, fail, complete) {
   // console.log(params)
 // 	wx.showNavigationBarLoading()
 // 	if (message != "") {
@@ -37,6 +37,9 @@ const requestLoading = function(url, params, message, success, fail) {
 			fail:(res) => {
 				// console.log('' + JSON.stringify(res))
 				fail()
+			},
+			complete:() => {
+				complete()
 			}
 	});
 }
