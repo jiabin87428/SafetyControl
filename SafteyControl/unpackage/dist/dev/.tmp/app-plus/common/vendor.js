@@ -320,7 +320,7 @@ eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  */\nvar host = \"http://222.223.19.166:10012/boeb9\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: \"\".concat(host, \"/mobile/system/login.do\"),\n\n  // 点位检查扫码接口\n  scan: \"\".concat(host, \"/mobile/dwsm.do\") };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?a0b7");
+eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  */\nvar host = \"http://222.223.19.166:10012/boeb9\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: \"\".concat(host, \"/mobile/system/login.do\"),\n\n  // 点位检查扫码接口\n  scan: \"\".concat(host, \"/mobile/dwsm.do\"),\n\n  // 扫码新增检查\n  createCheckPoint: \"\".concat(host, \"/mobile/updateJcjl.do\") };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?a0b7");
 
 /***/ }),
 

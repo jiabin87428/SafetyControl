@@ -809,10 +809,11 @@
 .uni-list-cell__content-note {
       color: #999;
       font-size: 28rpx;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
       white-space: normal;
+      line-height: 1.5;
       display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2;
       overflow: hidden;
 }
 .uni-list-cell__extra {

@@ -373,7 +373,10 @@ var config = {
   login: "".concat(host, "/mobile/system/login.do"),
 
   // 点位检查扫码接口
-  scan: "".concat(host, "/mobile/dwsm.do") };
+  scan: "".concat(host, "/mobile/dwsm.do"),
+
+  // 扫码新增检查
+  createCheckPoint: "".concat(host, "/mobile/updateJcjl.do") };
 
 //对外把对象config返回
 module.exports = config;

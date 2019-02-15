@@ -10,12 +10,12 @@ var requirePlugin = requirePlugin || function() {};
 var Behavior = Behavior || function() {};
 var $gwx;
   
-/*v0.5vv_20181116_syb_scopedata*/global.__wcc_version__='v0.5vv_20181116_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
+/*v0.5vv_20180810_syb_zp*/global.__wcc_version__='v0.5vv_20180810_syb_zp';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
 var $gwxc
 var $gaic={}
 $gwx=function(path,global){
-if(typeof global === 'undefined') global={};if(typeof __WXML_GLOBAL__ === 'undefined') {__WXML_GLOBAL__={};
-}__WXML_GLOBAL__.modules = __WXML_GLOBAL__.modules || {};
+if(typeof global === 'undefined') global={};
+if(typeof __WXML_GLOBAL__ === 'undefined') __WXML_GLOBAL__={};
 function _(a,b){if(typeof(b)!='undefined')a.children.push(b);}
 function _v(k){if(typeof(k)!='undefined')return {tag:'virtual','wxKey':k,children:[]};return {tag:'virtual',children:[]};}
 function _n(tag){$gwxc++;if($gwxc>=16000){throw 'Dom limit exceeded, please check if there\'s any mistake you\'ve made.'};return {tag:'wx-'+tag,attr:{},children:[],n:[],raw:{},generics:{}}}
@@ -421,11 +421,8 @@ e.stack = e.stack.substring(0,e.stack.indexOf("\n", e.stack.lastIndexOf("at nv_"
 e.stack = e.stack.replace(/\snv_/g," "); 
 e.stack = $gstack(e.stack);	
 if(g.debugInfo)
-{
 e.stack += "\n "+" "+" "+" at "+g.debugInfo[0]+":"+g.debugInfo[1]+":"+g.debugInfo[2];
-console.error(e);
-}
-_r = undefined;
+throw e;
 }
 return should_pass_type_info && (_tb || _ta) ? wh.nh( _r, 'f' ) : _r;
 }
@@ -1025,31 +1022,12 @@ function _gd(p,c,e,d){if(!c)return;if(d[p][c])return d[p][c];for(var x=e[p].i.le
 function _gapi(e,p){if(!p)return [];if($gaic[p]){return $gaic[p]};var ret=[],q=[],h=0,t=0,put={},visited={};q.push(p);visited[p]=true;t++;while(h<t){var a=q[h++];for(var i=0;i<e[a].ic.length;i++){var nd=e[a].ic[i];var np=_grp(nd,e,a);if(np&&!visited[np]){visited[np]=true;q.push(np);t++;}}for(var i=0;a!=p&&i<e[a].ti.length;i++){var ni=e[a].ti[i];var nm=_grp(ni,e,a);if(nm&&!put[nm]){put[nm]=true;ret.push(nm);}}}$gaic[p]=ret;return ret;}
 var $ixc={};function _ic(p,ent,me,e,s,r,gg){var x=_grp(p,ent,me);ent[me].j.push(x);if(x){if($ixc[x]){_wp('-1:include:-1:-1: `'+p+'` is being included in a loop, will be stop.');return;}$ixc[x]=true;try{ent[x].f(e,s,r,gg)}catch(e){}$ixc[x]=false;}else{_wp(me+':include:-1:-1: Included path `'+p+'` not found from `'+me+'`.')}}
 function _w(tn,f,line,c){_wp(f+':template:'+line+':'+c+': Template `'+tn+'` not found.');}function _ev(dom){var changed=false;delete dom.properities;delete dom.n;if(dom.children){do{changed=false;var newch = [];for(var i=0;i<dom.children.length;i++){var ch=dom.children[i];if( ch.tag=='virtual'){changed=true;for(var j=0;ch.children&&j<ch.children.length;j++){newch.push(ch.children[j]);}}else { newch.push(ch); } } dom.children = newch; }while(changed);for(var i=0;i<dom.children.length;i++){_ev(dom.children[i]);}} return dom; }
-function _tsd( root )
-{
-if( root.tag == "wx-wx-scope" ) 
-{
-root.tag = "virtual";
-root.wxCkey = "11";
-root['wxScopeData'] = root.attr['wx:scope-data'];
-delete root.n;
-delete root.raw;
-delete root.generics;
-delete root.attr;
-}
-for( var i = 0 ; root.children && i < root.children.length ; i++ )
-{
-_tsd( root.children[i] );
-}
-return root;
-}
-
 var e_={}
 if(typeof(global.entrys)==='undefined')global.entrys={};e_=global.entrys;
 var d_={}
 if(typeof(global.defines)==='undefined')global.defines={};d_=global.defines;
 var f_={}
-if(typeof(global.modules)==='undefined')global.modules={};f_=global.modules || {};
+if(typeof(global.modules)==='undefined')global.modules={};f_=global.modules;
 var p_={}
 var cs
 __WXML_GLOBAL__.ops_cached = __WXML_GLOBAL__.ops_cached || {}
@@ -1090,13 +1068,13 @@ Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],
 Z(z[2])
 Z(z[3])
 Z([3,'位置'])
-Z([3,'7be27b0c-default-7be27b0c-8'])
+Z([3,'7be27b0c-default-7be27b0c-11'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[6],[[7],[3,'obj']],[3,'sublist']])
 Z(z[31])
 Z(z[9])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-7-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[11])
 Z([[2,'+'],[1,'7be27b0c-1-'],[[7],[3,'index']]])
 Z(z[2])
@@ -1401,7 +1379,23 @@ Z([3,'7be27b0c'])
 Z([3,'_view 7be27b0c baseView'])
 Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-6']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'7be27b0c-default-7be27b0c-6']]])
 Z([3,'3b6bb3ad'])
-Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-8']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'7be27b0c-default-7be27b0c-8']]])
+Z([3,'_view 7be27b0c cellTitleView'])
+Z([3,'#24BE41'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'346bda0d'])
+Z([3,'22'])
+Z([3,'checkbox-filled'])
+Z([3,'#FFDE52'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-8']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z(z[8])
+Z([3,'info-filled'])
+Z([3,'#C11E1E'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-9']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[7])
+Z(z[8])
+Z([3,'clear'])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-11']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'7be27b0c-default-7be27b0c-11']]])
 Z(z[3])
 })(__WXML_GLOBAL__.ops_cached.$gwx_25);return __WXML_GLOBAL__.ops_cached.$gwx_25
 }
@@ -1543,9 +1537,9 @@ Z([3,'240234ba'])
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
-var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
+var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);throw e;}
 }}}()
-var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/login/login.vue.wxml','/components/m-input.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','/common/slots.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/login/login.vue.wxml','/components/m-input.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
 d_[x[0]]["7be27b0c-default-7be27b0c-6"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':7be27b0c-default-7be27b0c-6'
@@ -1556,7 +1550,7 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:4:47")
+cs.push("./common/slots.wxml:template:5:47")
 var xC=_oz(z,2,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
@@ -1566,11 +1560,11 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],4,158)
+else _w(xC,x[0],5,158)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:4:181")
+cs.push("./common/slots.wxml:template:5:181")
 var hG=_oz(z,6,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
@@ -1580,13 +1574,13 @@ cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],4,289)
+else _w(hG,x[0],5,289)
 cs.pop()
-cs.push("./common/slots.wxml:picker:4:312")
+cs.push("./common/slots.wxml:picker:5:312")
 var oJ=_mz(z,'picker',['bindchange',9,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:4:456")
+cs.push("./common/slots.wxml:template:5:456")
 var aL=_oz(z,16,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
@@ -1596,13 +1590,13 @@ lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],4,548)
+else _w(aL,x[0],5,548)
 cs.pop()
 cs.pop()
 _(r,oJ)
 var bO=_v()
 _(r,bO)
-cs.push("./common/slots.wxml:template:4:580")
+cs.push("./common/slots.wxml:template:5:580")
 var oP=_oz(z,19,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
@@ -1612,11 +1606,11 @@ bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],4,691)
+else _w(oP,x[0],5,691)
 cs.pop()
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:4:714")
+cs.push("./common/slots.wxml:template:5:714")
 var cT=_oz(z,23,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
@@ -1626,11 +1620,11 @@ fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],4,819)
+else _w(cT,x[0],5,819)
 cs.pop()
 var cW=_v()
 _(r,cW)
-cs.push("./common/slots.wxml:template:4:842")
+cs.push("./common/slots.wxml:template:5:842")
 var oX=_oz(z,27,e,s,gg)
 var lY=_gd(x[0],oX,e_,d_)
 if(lY){
@@ -1640,7 +1634,7 @@ cW.wxXCkey=3
 lY(aZ,aZ,cW,gg)
 gg.f=cur_globalf
 }
-else _w(oX,x[0],4,947)
+else _w(oX,x[0],5,947)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -1649,9 +1643,9 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[0]]["7be27b0c-default-7be27b0c-8"]=function(e,s,r,gg){
+d_[x[0]]["7be27b0c-default-7be27b0c-11"]=function(e,s,r,gg){
 var z=gz$gwx_1()
-var b=x[0]+':7be27b0c-default-7be27b0c-8'
+var b=x[0]+':7be27b0c-default-7be27b0c-11'
 r.wxVkey=b
 gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
@@ -1659,11 +1653,11 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:6:47")
+cs.push("./common/slots.wxml:template:7:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:6:47")
+cs.push("./common/slots.wxml:template:7:48")
 var cI=_oz(z,39,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
@@ -1673,7 +1667,7 @@ oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],6,245)
+else _w(cI,x[0],7,247)
 cs.pop()
 return cF
 }
@@ -1695,11 +1689,11 @@ gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
-cs.push("./common/slots.wxml:picker:8:47")
+cs.push("./common/slots.wxml:picker:9:47")
 var oB=_mz(z,'picker',['bindchange',42,'class',1,'data-comkey',2,'data-eventid',3,'range',4,'value',5],[],e,s,gg)
 var xC=_v()
 _(oB,xC)
-cs.push("./common/slots.wxml:template:8:198")
+cs.push("./common/slots.wxml:template:9:198")
 var oD=_oz(z,49,e,s,gg)
 var fE=_gd(x[0],oD,e_,d_)
 if(fE){
@@ -1709,13 +1703,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[0],8,290)
+else _w(oD,x[0],9,290)
 cs.pop()
 cs.pop()
 _(r,oB)
 var hG=_v()
 _(r,hG)
-cs.push("./common/slots.wxml:template:8:322")
+cs.push("./common/slots.wxml:template:9:322")
 var oH=_oz(z,55,e,s,gg)
 var cI=_gd(x[0],oH,e_,d_)
 if(cI){
@@ -1725,13 +1719,13 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[0],8,489)
+else _w(oH,x[0],9,489)
 cs.pop()
-cs.push("./common/slots.wxml:picker:8:512")
+cs.push("./common/slots.wxml:picker:9:512")
 var lK=_mz(z,'picker',['bindchange',57,'class',1,'data-comkey',2,'data-eventid',3,'range',4,'value',5],[],e,s,gg)
 var aL=_v()
 _(lK,aL)
-cs.push("./common/slots.wxml:template:8:666")
+cs.push("./common/slots.wxml:template:9:666")
 var tM=_oz(z,64,e,s,gg)
 var eN=_gd(x[0],tM,e_,d_)
 if(eN){
@@ -1741,7 +1735,7 @@ aL.wxXCkey=3
 eN(bO,bO,aL,gg)
 gg.f=cur_globalf
 }
-else _w(tM,x[0],8,758)
+else _w(tM,x[0],9,758)
 cs.pop()
 cs.pop()
 _(r,lK)
@@ -1762,7 +1756,7 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:10:47")
+cs.push("./common/slots.wxml:template:11:47")
 var xC=_oz(z,71,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
@@ -1772,11 +1766,11 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],10,226)
+else _w(xC,x[0],11,226)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:10:249")
+cs.push("./common/slots.wxml:template:11:249")
 var hG=_oz(z,77,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
@@ -1786,11 +1780,11 @@ cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],10,428)
+else _w(hG,x[0],11,428)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:10:451")
+cs.push("./common/slots.wxml:template:11:451")
 var lK=_oz(z,83,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
@@ -1800,7 +1794,7 @@ oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],10,624)
+else _w(lK,x[0],11,624)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -1814,18 +1808,20 @@ var z=gz$gwx_1()
 var oB=e_[x[0]].i
 _ai(oB,x[1],e_,x[0],1,1)
 _ai(oB,x[2],e_,x[0],2,2)
+_ai(oB,x[3],e_,x[0],3,2)
+oB.pop()
 oB.pop()
 oB.pop()
 return r
 }
-e_[x[0]]={f:m0,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[3]]={}
-d_[x[3]]["68dcfa4a"]=function(e,s,r,gg){
+e_[x[0]]={f:m0,j:[],i:[],ti:[x[1],x[2],x[3]],ic:[]}
+d_[x[4]]={}
+d_[x[4]]["68dcfa4a"]=function(e,s,r,gg){
 var z=gz$gwx_2()
-var b=x[3]+':68dcfa4a'
+var b=x[4]+':68dcfa4a'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-badge/uni-badge.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[3]);return}
+if(p_[b]){_wl(b,x[4]);return}
 p_[b]=true
 try{
 var oB=_v()
@@ -1846,14 +1842,14 @@ var m1=function(e,s,r,gg){
 var z=gz$gwx_2()
 return r
 }
-e_[x[3]]={f:m1,j:[],i:[],ti:[],ic:[]}
-d_[x[4]]={}
-d_[x[4]]["346bda0d"]=function(e,s,r,gg){
+e_[x[4]]={f:m1,j:[],i:[],ti:[],ic:[]}
+d_[x[5]]={}
+d_[x[5]]["346bda0d"]=function(e,s,r,gg){
 var z=gz$gwx_3()
-var b=x[4]+':346bda0d'
+var b=x[5]+':346bda0d'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-icon/uni-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[4]);return}
+if(p_[b]){_wl(b,x[5]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -1867,14 +1863,14 @@ var m2=function(e,s,r,gg){
 var z=gz$gwx_3()
 return r
 }
-e_[x[4]]={f:m2,j:[],i:[],ti:[],ic:[]}
-d_[x[5]]={}
-d_[x[5]]["30c48a99"]=function(e,s,r,gg){
+e_[x[5]]={f:m2,j:[],i:[],ti:[],ic:[]}
+d_[x[6]]={}
+d_[x[6]]["30c48a99"]=function(e,s,r,gg){
 var z=gz$gwx_4()
-var b=x[5]+':30c48a99'
+var b=x[6]+':30c48a99'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list-item/uni-list-item.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[5]);return}
+if(p_[b]){_wl(b,x[6]);return}
 p_[b]=true
 try{
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:view:1:149")
@@ -1894,7 +1890,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:805")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[5],oH,e_,d_)
+var cI=_gd(x[6],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,9,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1902,7 +1898,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[5],1,876)
+else _w(oH,x[6],1,876)
 cs.pop()
 cs.pop()
 }
@@ -1927,7 +1923,7 @@ var bO=_v()
 _(aL,bO)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1325")
 var oP=_oz(z,16,e,s,gg)
-var xQ=_gd(x[5],oP,e_,d_)
+var xQ=_gd(x[6],oP,e_,d_)
 if(xQ){
 var oR=_1z(z,15,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1935,7 +1931,7 @@ bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[5],1,1451)
+else _w(oP,x[6],1,1451)
 cs.pop()
 cs.pop()
 }
@@ -1953,7 +1949,7 @@ var fS=_v()
 _(eN,fS)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1696")
 var cT=_oz(z,21,e,s,gg)
-var hU=_gd(x[5],cT,e_,d_)
+var hU=_gd(x[6],cT,e_,d_)
 if(hU){
 var oV=_1z(z,20,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -1961,7 +1957,7 @@ fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[5],1,1863)
+else _w(cT,x[6],1,1863)
 cs.pop()
 cs.pop()
 }
@@ -1988,14 +1984,14 @@ return r
 }
 var m3=function(e,s,r,gg){
 var z=gz$gwx_4()
-var cF=e_[x[5]].i
-_ai(cF,x[6],e_,x[5],1,1)
-_ai(cF,x[7],e_,x[5],1,61)
+var cF=e_[x[6]].i
+_ai(cF,x[3],e_,x[6],1,1)
+_ai(cF,x[7],e_,x[6],1,61)
 cF.pop()
 cF.pop()
 return r
 }
-e_[x[5]]={f:m3,j:[],i:[],ti:[x[6],x[7]],ic:[]}
+e_[x[6]]={f:m3,j:[],i:[],ti:[x[3],x[7]],ic:[]}
 d_[x[8]]={}
 d_[x[8]]["3b6bb3ad"]=function(e,s,r,gg){
 var z=gz$gwx_5()
@@ -2638,12 +2634,12 @@ gg.f=$gdc(f_["./pages/pointAdd/pointAdd.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[40]);return}
 p_[b]=true
 try{
-cs.push("./pages/pointAdd/pointAdd.vue.wxml:view:1:157")
+cs.push("./pages/pointAdd/pointAdd.vue.wxml:view:1:217")
 var oB=_n('view')
 _rz(z,oB,'class',1,e,s,gg)
 var xC=_v()
 _(oB,xC)
-cs.push("./pages/pointAdd/pointAdd.vue.wxml:template:1:345")
+cs.push("./pages/pointAdd/pointAdd.vue.wxml:template:1:405")
 var oD=_oz(z,3,e,s,gg)
 var fE=_gd(x[40],oD,e_,d_)
 if(fE){
@@ -2653,21 +2649,68 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[40],1,460)
+else _w(oD,x[40],1,520)
 cs.pop()
-var hG=_v()
-_(oB,hG)
-cs.push("./pages/pointAdd/pointAdd.vue.wxml:template:1:640")
-var oH=_oz(z,5,e,s,gg)
-var cI=_gd(x[40],oH,e_,d_)
-if(cI){
-var oJ=_1z(z,4,e,s,gg) || {}
+cs.push("./pages/pointAdd/pointAdd.vue.wxml:view:1:550")
+var hG=_n('view')
+_rz(z,hG,'class',4,e,s,gg)
+var oH=_v()
+_(hG,oH)
+cs.push("./pages/pointAdd/pointAdd.vue.wxml:template:1:704")
+var cI=_oz(z,7,e,s,gg)
+var oJ=_gd(x[40],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,6,e,s,gg) || {}
 var cur_globalf=gg.f
-hG.wxXCkey=3
-cI(oJ,oJ,hG,gg)
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[40],1,755)
+else _w(cI,x[40],1,824)
+cs.pop()
+var aL=_v()
+_(hG,aL)
+cs.push("./pages/pointAdd/pointAdd.vue.wxml:template:1:900")
+var tM=_oz(z,12,e,s,gg)
+var eN=_gd(x[40],tM,e_,d_)
+if(eN){
+var bO=_1z(z,11,e,s,gg) || {}
+var cur_globalf=gg.f
+aL.wxXCkey=3
+eN(bO,bO,aL,gg)
+gg.f=cur_globalf
+}
+else _w(tM,x[40],1,1016)
+cs.pop()
+var oP=_v()
+_(hG,oP)
+cs.push("./pages/pointAdd/pointAdd.vue.wxml:template:1:1092")
+var xQ=_oz(z,17,e,s,gg)
+var oR=_gd(x[40],xQ,e_,d_)
+if(oR){
+var fS=_1z(z,16,e,s,gg) || {}
+var cur_globalf=gg.f
+oP.wxXCkey=3
+oR(fS,fS,oP,gg)
+gg.f=cur_globalf
+}
+else _w(xQ,x[40],1,1202)
+cs.pop()
+cs.pop()
+_(oB,hG)
+var cT=_v()
+_(oB,cT)
+cs.push("./pages/pointAdd/pointAdd.vue.wxml:template:1:1274")
+var hU=_oz(z,21,e,s,gg)
+var oV=_gd(x[40],hU,e_,d_)
+if(oV){
+var cW=_1z(z,20,e,s,gg) || {}
+var cur_globalf=gg.f
+cT.wxXCkey=3
+oV(cW,cW,cT,gg)
+gg.f=cur_globalf
+}
+else _w(hU,x[40],1,1391)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -2683,11 +2726,13 @@ var z=gz$gwx_25()
 var xAC=e_[x[40]].i
 _ai(xAC,x[1],e_,x[40],1,1)
 _ai(xAC,x[2],e_,x[40],1,61)
+_ai(xAC,x[3],e_,x[40],1,131)
+xAC.pop()
 xAC.pop()
 xAC.pop()
 return r
 }
-e_[x[40]]={f:m24,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+e_[x[40]]={f:m24,j:[],i:[],ti:[x[1],x[2],x[3]],ic:[]}
 d_[x[41]]={}
 var m25=function(e,s,r,gg){
 var z=gz$gwx_26()
@@ -3087,7 +3132,6 @@ cs=[]
 if (typeof global==="undefined")global={};global.f=$gdc(f_[path],"",1);
 try{
 main(env,{},root,global);
-_tsd(root)
 }catch(err){
 console.log(cs, env);
 console.log(err)
@@ -3100,7 +3144,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/reg/reg","pages/pwd/pwd","pages/user/user","pages/pointCheck/pointCheck","pages/pointDetail/pointDetail","pages/pointAdd/pointAdd","pages/pointAdd/pointCheckInfo","pages/mpvue-echarts/chartList","pages/mpvue-echarts/deviceChart","pages/mpvue-echarts/eventChart","pages/mpvue-echarts/valveChart","pages/mpvue-echarts/mpvue-echarts"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/pointCheck/pointCheck","text":"检查记录","iconPath":"static/img/point.png","selectedIconPath":"static/img/pointHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"networkTimeout":{"request":60000},"nvue":{"pages":{"pages/uni-tabs/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查11"}},"pages/pointList/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查"}}}},"splashscreen":{"autoclose":true},"appname":"SafteyControl"};
+__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/reg/reg","pages/pwd/pwd","pages/user/user","pages/pointCheck/pointCheck","pages/pointDetail/pointDetail","pages/pointAdd/pointAdd","pages/pointAdd/pointCheckInfo","pages/mpvue-echarts/chartList","pages/mpvue-echarts/deviceChart","pages/mpvue-echarts/eventChart","pages/mpvue-echarts/valveChart","pages/mpvue-echarts/mpvue-echarts","pages/common/inputPage"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/pointCheck/pointCheck","text":"检查记录","iconPath":"static/img/point.png","selectedIconPath":"static/img/pointHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"networkTimeout":{"request":60000},"nvue":{"pages":{"pages/uni-tabs/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查11"}},"pages/pointList/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查"}}}},"splashscreen":{"autoclose":true},"appname":"SafteyControl"};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 
@@ -3164,7 +3208,7 @@ eval("__webpack_require__(/*! uni-pages */ \"../../../../../../Users/lijiabin/Do
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ \"./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue/index.js\"));\nvar _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}\n\n_vue.default.use(_vuex.default);\n\nvar store = new _vuex.default.Store({\n  state: {\n    /**\n            * 是否需要强制登录\n            */\n    forcedLogin: true,\n    hasLogin: false,\n    userName: \"\",\n    userInfo: null,\n\n    // 输入页的内容，供其他页面取用\n    inputPageText: \"\" },\n\n  mutations: {\n    login: function login(state, user) {\n      if (user != null) {\n        state.userName = user.username || '新用户';\n        state.hasLogin = true;\n        state.userInfo = user;\n      }\n    },\n    logout: function logout(state) {\n      state.userName = \"\";\n      state.hasLogin = false;\n    },\n\n    setInputPageText: function setInputPageText(text) {\n      state.inputPageText = text;\n    } } });var _default =\n\n\n\nstore;exports.default = _default;\n\n//# sourceURL=uni-app:///store/index.js?35a2");
+eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ \"./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue/index.js\"));\nvar _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}\n\n_vue.default.use(_vuex.default);\n\nvar store = new _vuex.default.Store({\n  state: {\n    /**\n            * 是否需要强制登录\n            */\n    forcedLogin: true,\n    hasLogin: false,\n    userName: \"\",\n    userInfo: null,\n\n    // 输入页的内容，供其他页面取用\n    inputPageText: \"\",\n    // 内容对应的id\n    key: \"\",\n\n    // ------------扫码新建检查----------------\n    // sublist中的对象\n    sublistItem: null,\n    // 对象位于sublist中的位置\n    sublistIndex: 0 },\n\n  mutations: {\n    login: function login(state, user) {\n      if (user != null) {\n        state.userName = user.username || '新用户';\n        state.hasLogin = true;\n        state.userInfo = user;\n      }\n    },\n    logout: function logout(state) {\n      state.userName = \"\";\n      state.hasLogin = false;\n    },\n\n    setInputPageText: function setInputPageText(state, item) {\n      state.inputPageText = item.text;\n      state.key = item.key;\n    },\n\n    setSublistItem: function setSublistItem(state, obj) {\n      state.sublistItem = obj.item;\n      state.sublistIndex = obj.index;\n    } } });var _default =\n\n\n\nstore;exports.default = _default;\n\n//# sourceURL=uni-app:///store/index.js?35a2");
 
 /***/ }),
 
@@ -3671,7 +3715,7 @@ eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  */\nvar host = \"http://222.223.19.166:10012/boeb9\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: \"\".concat(host, \"/mobile/system/login.do\"),\n\n  // 点位检查扫码接口\n  scan: \"\".concat(host, \"/mobile/dwsm.do\") };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?a0b7");
+eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  */\nvar host = \"http://222.223.19.166:10012/boeb9\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: \"\".concat(host, \"/mobile/system/login.do\"),\n\n  // 点位检查扫码接口\n  scan: \"\".concat(host, \"/mobile/dwsm.do\"),\n\n  // 扫码新增检查\n  createCheckPoint: \"\".concat(host, \"/mobile/updateJcjl.do\") };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?a0b7");
 
 /***/ }),
 
@@ -4680,7 +4724,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n{\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default },\n  data: function data() {\n    return {\n      obj: '',\n      normal: { // 正常图标\n        color: '#24BE41',\n        size: '22',\n        type: 'checkbox-filled' },\n\n      undetected: { // 未检图标\n        color: '#FFDE52',\n        size: '22',\n        type: 'info-filled' },\n\n      abnormal: { // 异常图标\n        color: '#C11E1E',\n        size: '22',\n        type: 'clear' } };\n\n\n  },\n  onLoad: function onLoad(option) {\n    this.obj = JSON.parse(option.obj);\n  },\n  onUnload: function onUnload() {\n  },\n  methods: {\n    bindDateChange: function bindDateChange(e) {\n      this.obj.jcrq = e.target.value;\n    },\n    jumpEdit: function jumpEdit(item) {\n      uni.navigateTo({\n        url: './pointCheckInfo?item=' + JSON.stringify(item) + '&placeholder=请输入问题描述' });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointAdd/pointAdd.vue?vue&type=script&lang=js&?83a9");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['sublistItem', 'sublistIndex', 'userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      // 当页面OnShow的时候是否需要从state里去拿Item对象 - 用于页面反传参数\n      needGetItemOnShow: false,\n\n      obj: '',\n      normal: { // 正常图标\n        color: '#24BE41',\n        size: '22',\n        type: 'checkbox-filled' },\n\n      undetected: { // 未检图标\n        color: '#FFDE52',\n        size: '22',\n        type: 'info-filled' },\n\n      abnormal: { // 异常图标\n        color: '#C11E1E',\n        size: '22',\n        type: 'clear' } };\n\n\n  },\n  onLoad: function onLoad(option) {\n    this.obj = JSON.parse(option.obj);\n  },\n  onShow: function onShow() {\n    if (this.needGetItemOnShow == true) {\n      this.obj.sublist[this.sublistIndex] = this.sublistItem;\n      this.needGetItemOnShow = false;\n    }\n  },\n  methods: {\n    bindDateChange: function bindDateChange(e) {\n      this.obj.jcrq = e.target.value;\n    },\n    jumpEdit: function jumpEdit(item, index) {\n      this.needGetItemOnShow = true;\n      uni.navigateTo({\n        url: './pointCheckInfo?item=' + JSON.stringify(item) + '&index=' + index });\n\n    },\n    getIcon: function getIcon(item) {\n      if (item.jcjl == '正常') {\n        return this.normal;\n      } else if (item.jcjl == '异常') {\n        return this.abnormal;\n      } else {\n        return this.undetected;\n      }\n    },\n    submit: function submit() {\n      var that = this;\n      that.obj['userid'] = that.userInfo.userid;\n      // console.log('' + JSON.stringify(that.obj));\n      _request.default.requestLoading(_config.default.createCheckPoint, that.obj, '正在加载',\n      function (res) {\n        uni.showToast({\n          icon: 'none',\n          title: '新建检查成功',\n          duration: 1000,\n          complete: function complete() {\n            uni.navigateBack({\n              delta: 1 });\n\n          } });\n\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '新建检查失败' });\n\n      }, function () {\n        uni.hideLoading();\n      });\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointAdd/pointAdd.vue?vue&type=script&lang=js&?83a9");
 
 /***/ }),
 
@@ -4703,7 +4747,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _vm._m(0),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"7be27b0c-6\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"点位编号\",\n                note: _vm.obj.dwbh,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-0\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"检查人\",\n                note: _vm.obj.zrrmc,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-1\"\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  mode: \"date\",\n                  value: _vm.obj.jcrq,\n                  eventid: \"7be27b0c-0\"\n                },\n                on: { change: _vm.bindDateChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"检查日期\",\n                    note: _vm.obj.jcrq,\n                    mpcomid: \"7be27b0c-2\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"责任部门\",\n                note: _vm.obj.zrbm,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-3\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"楼层\",\n                note: _vm.obj.lc,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-4\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"位置\",\n                note: _vm.obj.wz,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-5\"\n              }\n            })\n          ],\n          1\n        )\n      ],\n      1\n    ),\n    _vm._m(1),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"7be27b0c-8\" } },\n          _vm._l(_vm.obj.sublist, function(item, index) {\n            return _c(\"uni-list-item\", {\n              key: index,\n              attrs: {\n                title: item.jcbz,\n                \"show-extra-icon\": \"true\",\n                \"extra-icon\": _vm.undetected,\n                eventid: \"7be27b0c-1-\" + index,\n                mpcomid: \"7be27b0c-7-\" + index\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpEdit(item)\n                }\n              }\n            })\n          })\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"基础信息\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"检查信息\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointAdd/pointAdd.vue?vue&type=template&id=4fbbb711&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _vm._m(0),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"7be27b0c-6\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"点位编号\",\n                note: _vm.obj.dwbh,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-0\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"检查人\",\n                note: _vm.obj.zrrmc,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-1\"\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  mode: \"date\",\n                  value: _vm.obj.jcrq,\n                  eventid: \"7be27b0c-0\"\n                },\n                on: { change: _vm.bindDateChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"检查日期\",\n                    note: _vm.obj.jcrq,\n                    mpcomid: \"7be27b0c-2\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"责任部门\",\n                note: _vm.obj.zrbm,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-3\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"楼层\",\n                note: _vm.obj.lc,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-4\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"位置\",\n                note: _vm.obj.wz,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-5\"\n              }\n            })\n          ],\n          1\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellTitleView\" },\n      [\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"检查信息\")]),\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"正常-\")]),\n        _c(\"uni-icon\", {\n          attrs: {\n            type: \"checkbox-filled\",\n            size: \"22\",\n            color: \"#24BE41\",\n            mpcomid: \"7be27b0c-7\"\n          }\n        }),\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"未检-\")]),\n        _c(\"uni-icon\", {\n          attrs: {\n            type: \"info-filled\",\n            size: \"22\",\n            color: \"#FFDE52\",\n            mpcomid: \"7be27b0c-8\"\n          }\n        }),\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"异常-\")]),\n        _c(\"uni-icon\", {\n          attrs: {\n            type: \"clear\",\n            size: \"22\",\n            color: \"#C11E1E\",\n            mpcomid: \"7be27b0c-9\"\n          }\n        })\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"7be27b0c-11\" } },\n          _vm._l(_vm.obj.sublist, function(item, index) {\n            return _c(\"uni-list-item\", {\n              key: index,\n              attrs: {\n                title: item.jcbz,\n                \"show-extra-icon\": \"true\",\n                \"extra-icon\": _vm.getIcon(item),\n                eventid: \"7be27b0c-1-\" + index,\n                mpcomid: \"7be27b0c-10-\" + index\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpEdit(item, index)\n                }\n              }\n            })\n          })\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"btn-row\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"primary\",\n            attrs: { type: \"primary\", eventid: \"7be27b0c-2\" },\n            on: { tap: _vm.submit }\n          },\n          [_vm._v(\"提交\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"基础信息\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointAdd/pointAdd.vue?vue&type=template&id=4fbbb711&");
 
 /***/ })
 
@@ -4783,7 +4827,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n{\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default },\n  data: function data() {\n    return {\n      typeArray: ['正常', '未检', '异常'],\n      rectifyTypes: ['立即整改', '整改通知', '整改中'],\n      item: '' };\n\n  },\n  onLoad: function onLoad(option) {\n    this.item = JSON.parse(option.item);\n  },\n  methods: {\n    bindTypeChange: function bindTypeChange(e) {\n      this.item.jcjl = this.typeArray[e.detail.value];\n    },\n    bindRectifyChange: function bindRectifyChange(e) {\n      this.item.zgfs = this.rectifyTypes[e.detail.value];\n    },\n    jumpInput: function jumpInput(text) {\n      uni.navigateTo({\n        url: '../common/inputPage?text=' + text });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointAdd/pointCheckInfo.vue?vue&type=script&lang=js&?58ac");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: (0, _vuex.mapState)(['inputPageText', 'key']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default },\n  data: function data() {\n    return {\n      // 当页面OnShow的时候是否需要从state里去拿输入的内容\n      needGetInputOnShow: false,\n\n      typeArray: ['正常', '未检', '异常'],\n      rectifyTypes: ['立即整改', '整改通知', '整改中'],\n      item: '',\n      itemIndex: 0 };\n\n  },\n  onLoad: function onLoad(option) {\n    this.item = JSON.parse(option.item);\n    this.itemIndex = JSON.parse(option.index);\n  },\n  onShow: function onShow() {\n    if (this.needGetInputOnShow == true) {\n      this.item[this.key] = this.inputPageText;\n      this.needGetInputOnShow = false;\n    }\n  },\n  methods: _objectSpread({},\n  (0, _vuex.mapMutations)(['setSublistItem']), {\n    bindTypeChange: function bindTypeChange(e) {\n      this.item.jcjl = this.typeArray[e.detail.value];\n    },\n    bindRectifyChange: function bindRectifyChange(e) {\n      this.item.zgfs = this.rectifyTypes[e.detail.value];\n    },\n    jumpInput: function jumpInput(text) {\n      this.needGetInputOnShow = true;\n      uni.navigateTo({\n        url: '../common/inputPage?text=' + text + '&key=jcwtms&placeholder=请输入问题描述' });\n\n    },\n    saveItem: function saveItem() {\n      var obj = {\n        item: this.item,\n        index: this.itemIndex };\n\n      this.setSublistItem(obj);\n      uni.navigateBack({\n        delta: 1 });\n\n    } }) };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointAdd/pointCheckInfo.vue?vue&type=script&lang=js&?58ac");
 
 /***/ }),
 
@@ -4806,7 +4850,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(_vm._s(_vm.item.jcbz))])\n    ]),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"4bd08622-3\" } },\n          [\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  value: _vm.index,\n                  range: _vm.typeArray,\n                  eventid: \"4bd08622-0\"\n                },\n                on: { change: _vm.bindTypeChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"检查结论\",\n                    note: _vm.item.jcjl,\n                    mpcomid: \"4bd08622-0\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"问题描述\",\n                note: _vm.item.jcwtms,\n                eventid: \"4bd08622-1\",\n                mpcomid: \"4bd08622-1\"\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpInput(_vm.item.jcwtms)\n                }\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  value: _vm.index,\n                  range: _vm.rectifyTypes,\n                  eventid: \"4bd08622-2\"\n                },\n                on: { change: _vm.bindRectifyChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"整改方式\",\n                    note: _vm.item.zgfs,\n                    mpcomid: \"4bd08622-2\"\n                  }\n                })\n              ],\n              1\n            )\n          ],\n          1\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointAdd/pointCheckInfo.vue?vue&type=template&id=2c8a1874&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(_vm._s(_vm.item.jcbz))])\n    ]),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"4bd08622-3\" } },\n          [\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  value: _vm.index,\n                  range: _vm.typeArray,\n                  eventid: \"4bd08622-0\"\n                },\n                on: { change: _vm.bindTypeChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"检查结论\",\n                    note: _vm.item.jcjl,\n                    mpcomid: \"4bd08622-0\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"问题描述\",\n                note: _vm.item.jcwtms,\n                eventid: \"4bd08622-1\",\n                mpcomid: \"4bd08622-1\"\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpInput(_vm.item.jcwtms)\n                }\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  value: _vm.index,\n                  range: _vm.rectifyTypes,\n                  eventid: \"4bd08622-2\"\n                },\n                on: { change: _vm.bindRectifyChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"整改方式\",\n                    note: _vm.item.zgfs,\n                    mpcomid: \"4bd08622-2\"\n                  }\n                })\n              ],\n              1\n            )\n          ],\n          1\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"btn-row\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"primary\",\n            attrs: { type: \"primary\", eventid: \"4bd08622-3\" },\n            on: { tap: _vm.saveItem }\n          },\n          [_vm._v(\"确定\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointAdd/pointCheckInfo.vue?vue&type=template&id=2c8a1874&");
 
 /***/ })
 
@@ -5416,7 +5460,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n{\n  data: function data() {\n    return {\n      placeholder: '请输入内容',\n      text: '' };\n\n  },\n  onLoad: function onLoad(option) {\n    this.placeholder = option.placeholder;\n    this.text = option.text;\n  },\n\n  methods: _objectSpread({},\n  (0, _vuex.mapMutations)(['setInputPageText']), {\n    saveText: function saveText() {\n      uni.navigateBack({\n        delta: 1 });\n\n    } }) };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/common/inputPage.vue?vue&type=script&lang=js&?0f94");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n{\n  data: function data() {\n    return {\n      placeholder: '请输入内容',\n      text: '',\n      key: '' };\n\n  },\n  onLoad: function onLoad(option) {\n    this.placeholder = option.placeholder;\n    this.text = option.text;\n    this.key = option.key;\n  },\n\n  methods: _objectSpread({},\n  (0, _vuex.mapMutations)(['setInputPageText']), {\n    saveText: function saveText() {\n      var obj = {\n        text: this.text,\n        key: this.key };\n\n      this.setInputPageText(obj);\n      uni.navigateBack({\n        delta: 1 });\n\n    },\n    descInput: function descInput(e) {\n      this.text = e.detail.value;\n    } }) };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/common/inputPage.vue?vue&type=script&lang=js&?0f94");
 
 /***/ }),
 
@@ -5439,7 +5483,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\"textarea\", {\n      staticClass: \"myText\",\n      attrs: { placeholder: _vm.placeholder, value: _vm.text }\n    }),\n    _c(\n      \"view\",\n      { staticClass: \"btn-row\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"primary\",\n            attrs: { type: \"primary\", eventid: \"ab7aaa6c-0\" },\n            on: { tap: _vm.saveText }\n          },\n          [_vm._v(\"确定\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/common/inputPage.vue?vue&type=template&id=cf5504fa&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\"textarea\", {\n      staticClass: \"myText\",\n      attrs: {\n        placeholder: _vm.placeholder,\n        value: _vm.text,\n        eventid: \"ab7aaa6c-0\"\n      },\n      on: { input: _vm.descInput }\n    }),\n    _c(\n      \"view\",\n      { staticClass: \"btn-row\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"primary\",\n            attrs: { type: \"primary\", eventid: \"ab7aaa6c-1\" },\n            on: { tap: _vm.saveText }\n          },\n          [_vm._v(\"确定\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/common/inputPage.vue?vue&type=template&id=cf5504fa&");
 
 /***/ })
 

@@ -15,6 +15,14 @@ const store = new Vuex.Store({
 		
 		// 输入页的内容，供其他页面取用
 		inputPageText: "",
+		// 内容对应的id
+		key: "",
+		
+		// ------------扫码新建检查----------------
+		// sublist中的对象
+		sublistItem: null,
+		// 对象位于sublist中的位置
+		sublistIndex: 0,
     },
     mutations: {
         login(state, user) {
@@ -29,8 +37,14 @@ const store = new Vuex.Store({
             state.hasLogin = false;
         },
 		
-		setInputPageText(text) {
-			state.inputPageText = text;
+		setInputPageText(state, item) {
+			state.inputPageText = item.text;
+			state.key = item.key;
+		},
+		
+		setSublistItem(state, obj) {
+			state.sublistItem = obj.item;
+			state.sublistIndex = obj.index;
 		},
     }
 })

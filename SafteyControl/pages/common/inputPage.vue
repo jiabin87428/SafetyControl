@@ -1,6 +1,6 @@
 <template>
 	<view class="baseView">
-		<textarea class="myText" :placeholder="placeholder" :value="text"/>
+		<textarea class="myText" :placeholder="placeholder" :value="text" @input="descInput"/>
 		<view class="btn-row">
 		    <button type="primary" class="primary" @tap="saveText">确定</button>
 		</view>
@@ -16,20 +16,30 @@
         return {
 			placeholder: '请输入内容',
 			text: '',
+			key: '',
 		}
     },
 	onLoad(option) {
 		this.placeholder = option.placeholder;
 		this.text = option.text;
+		this.key = option.key;
 	},
 	
     methods: {
 		...mapMutations(['setInputPageText']),
         saveText() {
+			let obj = {
+				text: this.text,
+				key: this.key
+			}
+			this.setInputPageText(obj)
 			uni.navigateBack({
 				delta: 1
 			})
 		},
+		descInput(e) {
+			this.text = e.detail.value;
+		}
     }
 }
 </script>
@@ -39,7 +49,7 @@
 		display: flex;
 		flex: 1;
 		flex-direction: column;
-		background-color: #C11E1E;
+		background-color: #efeff4;
 	}
 	/* .textView {
 		display: flex;

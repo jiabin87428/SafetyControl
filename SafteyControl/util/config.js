@@ -13,6 +13,9 @@ var config = {
   
   // 点位检查扫码接口
   scan: `${host}/mobile/dwsm.do`,
+  
+  // 扫码新增检查
+  createCheckPoint: `${host}/mobile/updateJcjl.do`,
 };
 //对外把对象config返回
 module.exports = config

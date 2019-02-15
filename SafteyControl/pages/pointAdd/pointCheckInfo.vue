@@ -14,25 +14,45 @@
 				</picker>
 			</uni-list>
 		</view>
+		<view class="btn-row">
+		    <button type="primary" class="primary" @tap="saveItem">确定</button>
+		</view>
 	</view>
 </template>
 
 <script>
 	import uniList from '@/components/list/uni-list/uni-list.vue'
 	import uniListItem from '@/components/list/uni-list-item/uni-list-item.vue'
+	import {
+	    mapState,
+		mapMutations
+	} from 'vuex'
 	export default {
+		computed: mapState(['inputPageText', 'key']),
 		components: {uniList,uniListItem},
 		data() {
 		    return {
+				// 当页面OnShow的时候是否需要从state里去拿输入的内容
+				needGetInputOnShow: false,
+				
 				typeArray: ['正常', '未检', '异常'],
 				rectifyTypes: ['立即整改', '整改通知', '整改中'],
 		        item: '',
+				itemIndex: 0,
 		    }
 		},
 		onLoad(option) {
 			this.item = JSON.parse(option.item);
+			this.itemIndex = JSON.parse(option.index);
+		},
+		onShow() {
+			if (this.needGetInputOnShow == true) {
+				this.item[this.key] = this.inputPageText;
+				this.needGetInputOnShow = false;
+			}
 		},
 		methods:{
+			...mapMutations(['setSublistItem']),
 			bindTypeChange(e) {
 				this.item.jcjl = this.typeArray[e.detail.value];
 			},
@@ -40,8 +60,19 @@
 				this.item.zgfs = this.rectifyTypes[e.detail.value];
 			},
 			jumpInput(text) {
+				this.needGetInputOnShow = true;
 				uni.navigateTo({
-					url: '../common/inputPage?text=' + text,
+					url: '../common/inputPage?text=' + text + '&key=jcwtms&placeholder=请输入问题描述',
+				})
+			},
+			saveItem() {
+				let obj = {
+					item: this.item,
+					index: this.itemIndex
+				}
+				this.setSublistItem(obj)
+				uni.navigateBack({
+					delta: 1
 				})
 			},
 		}

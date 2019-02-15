@@ -160,10 +160,12 @@
 			&-note {
 				color: $uni-text-color-grey;
 				font-size: $uni-font-size-base;
+				text-overflow: ellipsis;
 				white-space: normal;
+				line-height: 1.5;
 				display: -webkit-box;
-				-webkit-box-orient: vertical;
-				-webkit-line-clamp: 2;
+// 				-webkit-box-orient: vertical;
+// 				-webkit-line-clamp: 2;
 				overflow: hidden;
 			}
 		}

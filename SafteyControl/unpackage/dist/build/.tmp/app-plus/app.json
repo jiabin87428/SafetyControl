@@ -8,7 +8,13 @@
     "pages/pointCheck/pointCheck",
     "pages/pointDetail/pointDetail",
     "pages/pointAdd/pointAdd",
-    "pages/mpvue-echarts/mpvue-echarts"
+    "pages/pointAdd/pointCheckInfo",
+    "pages/mpvue-echarts/chartList",
+    "pages/mpvue-echarts/deviceChart",
+    "pages/mpvue-echarts/eventChart",
+    "pages/mpvue-echarts/valveChart",
+    "pages/mpvue-echarts/mpvue-echarts",
+    "pages/common/inputPage"
   ],
   "subPackages": [],
   "window": {
