@@ -19,7 +19,14 @@ const addUser = function (userInfo) {
     uni.setStorageSync(USERS_KEY, JSON.stringify(userInfo));
 }
 
+const copyObj = function (a){
+	var c = {};
+	c = JSON.parse(JSON.stringify(a));
+	return c;
+}
+
 export default {
     getUsers,
-    addUser
+    addUser,
+	copyObj
 }

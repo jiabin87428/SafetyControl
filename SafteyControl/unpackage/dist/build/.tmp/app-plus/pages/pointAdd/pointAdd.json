@@ -1,3 +1,13 @@
 {
-  "navigationBarTitleText": "新增检查"
+  "navigationBarTitleText": "新增检查",
+  "titleNView": {
+    "buttons": [
+      {
+        "text": "一键正常",
+        "fontSrc": "/static/uni.ttf",
+        "fontSize": "14px",
+        "width": "70px"
+      }
+    ]
+  }
 }

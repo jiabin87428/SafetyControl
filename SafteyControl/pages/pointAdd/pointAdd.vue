@@ -44,6 +44,7 @@
 	import uniListItem from '@/components/list/uni-list-item/uni-list-item.vue'
 	import config from '../../util/config.js';
 	import request from '../../util/request.js';
+	import service from '../../service.js';
 	import {
 	    mapState
 	} from 'vuex'
@@ -76,6 +77,26 @@
 		onLoad(option) {
 			this.obj = JSON.parse(option.obj);
 		},
+		onNavigationBarButtonTap() {
+			var that = this;
+			uni.showModal({
+				title: '提示',
+				content: '确认要设置所有的检查点都正常吗？',
+				success: function (res) {
+					if (res.confirm) {
+						// console.log('用户点击确定');
+						for (var i = 0; i < that.obj.sublist.length; i++) {
+							var item = that.obj.sublist[i];
+							item["jcjl"] = "正常";
+							item["jcwtms"] = "";
+							item["zgfs"] = "";
+						}
+					} else if (res.cancel) {
+						// console.log('用户点击取消');
+					}
+				}
+			});
+		},
 		onShow() {
 			if (this.needGetItemOnShow == true) {
 				this.obj.sublist[this.sublistIndex] = this.sublistItem;
@@ -103,9 +124,10 @@
 			},
 			submit() {
 				var that = this;
-				that.obj['userid'] = that.userInfo.userid;
-				// console.log('' + JSON.stringify(that.obj));
-				request.requestLoading(config.createCheckPoint, that.obj, '正在加载', 
+				var param = service.copyObj(that.obj);
+				param['userid'] = that.userInfo.userid;
+				param['sublist'] = JSON.stringify(param['sublist']);
+				request.requestLoading(config.createCheckPoint, param, '正在加载', 
 					function(res){
 						uni.showToast({
 							icon: 'none',
@@ -123,7 +145,7 @@
 							title: '新建检查失败'
 						});
 					},function() {
-						uni.hideLoading();
+						
 					});
 			},
 		}

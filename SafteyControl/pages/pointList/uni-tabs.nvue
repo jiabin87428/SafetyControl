@@ -28,6 +28,7 @@
 	import service from '../../service.js';
 	import config from '../../util/config.js';
 	import request from '../../util/request.js';
+
     const dom = weex.requireModule('dom')
     export default {
         components: {
@@ -38,6 +39,7 @@
         },
         data() {
             return {
+				userid: "",
 				pageRows: 15,
 				lx: "点位检查", // 类型&导航栏标题
                 refreshing: false,
@@ -72,6 +74,12 @@
 					})
 				}
 			});
+			uni.getStorage({
+				key: 'userInfo',
+				success: function (res) {
+					that.userid = JSON.parse(res.data).userid;
+				}
+			})
 			setTimeout(() => {
 				uni.setNavigationBarTitle({
 					title: that.lx
@@ -169,10 +177,6 @@
 				var that = this
 				that.newsitems[e].pageNum = 1;
 				
-				uni.showLoading({
-					title: "正在刷新...",
-					mask: true
-				})
                 that.refreshText = "正在刷新...";
                 that.refreshing = true;
 				
@@ -182,32 +186,31 @@
 			getListData(e, isRefresh){
 				var that = this;
 				var url = config.host + that.tabBars[e].id;	// 拼接接口
-				
 				const data = {
 				    pageNum: that.newsitems[e].pageNum,
 				    pageRows: that.pageRows,
-					lx: that.lx == '所有记录' ? '' : that.lx
+					lx: that.lx == '所有记录' ? '' : that.lx,
+					userid: that.userid,
 				};
-				
 				if (!isRefresh) {// 上拉加载更多，改变文字，增加体验
 					that.newsitems[e].loadingText = '正在加载...';
 				}
 				
 				request.requestLoading(url, data, '正在加载', 
 					function(res){
-						uni.hideLoading();
 						that.refreshing = false
 						
 						that.newsitems[e].pageNum++;
 						that.formatData(res.list, e, isRefresh);
 					},function(){
-						uni.hideLoading();
 						that.refreshing = false
 						
 						uni.showToast({
 							icon: 'none',
 							title: '请求失败'
 						});
+					}, function(){
+						
 					}
 				);
 			},

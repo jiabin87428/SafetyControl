@@ -7,12 +7,12 @@
 const requestLoading = function(url, params, message, success, fail, complete) {
   // console.log(params)
 // 	wx.showNavigationBarLoading()
-// 	if (message != "") {
-// 	  wx.showLoading({
-// 	    title: message,
-// 	  })
-// 	}
-	console.log(url);
+	if (message != "") {
+	  uni.showLoading({
+	  	title: message,
+	  });
+	}
+	console.log('request.js :' + url);
 	uni.request({
 			url: url, 
 			data: params,
@@ -23,9 +23,9 @@ const requestLoading = function(url, params, message, success, fail, complete) {
 			method: 'POST',
 			success: (res) => {
 // 					wx.hideNavigationBarLoading()
-// 					if (message != "") {
-// 					  wx.hideLoading()
-// 					}
+					if (message != "") {
+					  uni.hideLoading()
+					}
 
 				// console.log('' + JSON.stringify(res));
 				if (res.data.success == 'true') {
@@ -36,9 +36,15 @@ const requestLoading = function(url, params, message, success, fail, complete) {
 			},
 			fail:(res) => {
 				// console.log('' + JSON.stringify(res))
+				if (message != "") {
+				  uni.hideLoading()  
+				}
 				fail()
 			},
 			complete:() => {
+				if (message != "") {
+				  uni.hideLoading()
+				}
 				complete()
 			}
 	});

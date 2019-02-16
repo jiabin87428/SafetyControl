@@ -68,10 +68,6 @@
 							userid: that.userInfo.userid,
 							dwbh: res.result,
 						};
-						uni.showLoading({
-							title: "正在加载...",
-							mask: true
-						})
 						request.requestLoading(config.scan, param, '正在加载', 
 							function(res){
 								// console.log('' + JSON.stringify(res));
@@ -84,7 +80,7 @@
 									title: '请求失败'
 								});
 							},function() {
-								uni.hideLoading();
+								
 							});
 					}
 				});

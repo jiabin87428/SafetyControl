@@ -14,7 +14,7 @@
             <button type="primary" class="primary" @tap="bindLogin">登录</button>
         </view>
         <view class="action-row">
-            <navigator url="../reg/reg">注册账号</navigator>
+            <navigator url="diyHost">自定义域</navigator>
             <text>|</text>
             <navigator url="../pwd/pwd">忘记密码</navigator>
         </view>
@@ -110,14 +110,26 @@
                     username: that.account,
                     password: that.password
                 };
-				
+				uni.showLoading({
+					title: "正在登录",
+				});
 				request.requestLoading(config.login, data, '正在登录', 
 					function(res){
 						// plus.nativeUI.alert('成功');
 						service.addUser(res);
 						that.toMain(res);
+						// 本地也保存一份用户信息，给nvue文件使用
+						uni.setStorage({
+								key: 'userInfo',
+								data: res,
+								success: function () {
+										console.log('用户信息缓存成功');
+								}
+						});
 					},function(){
 						plus.nativeUI.alert('失败');
+					},function(){
+						
 					}
 				);
 				

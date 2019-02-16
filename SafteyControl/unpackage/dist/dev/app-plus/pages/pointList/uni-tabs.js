@@ -342,11 +342,18 @@ var getUsers = function getUsers() {
 
 var addUser = function addUser(userInfo) {
   uni.setStorageSync(USERS_KEY, JSON.stringify(userInfo));
+};
+
+var copyObj = function copyObj(a) {
+  var c = {};
+  c = JSON.parse(JSON.stringify(a));
+  return c;
 };var _default =
 
 {
   getUsers: getUsers,
-  addUser: addUser };exports.default = _default;
+  addUser: addUser,
+  copyObj: copyObj };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
 
 /***/ }),
@@ -400,12 +407,12 @@ module.exports = config;
 var requestLoading = function requestLoading(url, params, message, _success, _fail, _complete) {
   // console.log(params)
   // 	wx.showNavigationBarLoading()
-  // 	if (message != "") {
-  // 	  wx.showLoading({
-  // 	    title: message,
-  // 	  })
-  // 	}
-  console.log(url);
+  if (message != "") {
+    uni.showLoading({
+      title: message });
+
+  }
+  console.log('request.js :' + url);
   uni.request({
     url: url,
     data: params,
@@ -416,9 +423,9 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
     method: 'POST',
     success: function success(res) {
       // 					wx.hideNavigationBarLoading()
-      // 					if (message != "") {
-      // 					  wx.hideLoading()
-      // 					}
+      if (message != "") {
+        uni.hideLoading();
+      }
 
       // console.log('' + JSON.stringify(res));
       if (res.data.success == 'true') {
@@ -429,9 +436,15 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
     },
     fail: function fail(res) {
       // console.log('' + JSON.stringify(res))
+      if (message != "") {
+        uni.hideLoading();
+      }
       _fail();
     },
     complete: function complete() {
+      if (message != "") {
+        uni.hideLoading();
+      }
       _complete();
     } });
 
@@ -2170,6 +2183,7 @@ var _uniMediaList = _interopRequireDefault(__webpack_require__(/*! @/components/
 var _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js"));
 var _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js"));
 var _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
+
 var dom = weex.requireModule('dom');var _default =
 {
   components: {
@@ -2180,6 +2194,7 @@ var dom = weex.requireModule('dom');var _default =
 
   data: function data() {
     return {
+      userid: "",
       pageRows: 15,
       lx: "点位检查", // 类型&导航栏标题
       refreshing: false,
@@ -2212,6 +2227,12 @@ var dom = weex.requireModule('dom');var _default =
             that.tabBars.push(JSON.parse(res.data));
           } });
 
+      } });
+
+    uni.getStorage({
+      key: 'userInfo',
+      success: function success(res) {
+        that.userid = JSON.parse(res.data).userid;
       } });
 
     setTimeout(function () {
@@ -2311,10 +2332,6 @@ var dom = weex.requireModule('dom');var _default =
       var that = this;
       that.newsitems[e].pageNum = 1;
 
-      uni.showLoading({
-        title: "正在刷新...",
-        mask: true });
-
       that.refreshText = "正在刷新...";
       that.refreshing = true;
 
@@ -2324,12 +2341,11 @@ var dom = weex.requireModule('dom');var _default =
     getListData: function getListData(e, isRefresh) {
       var that = this;
       var url = _config.default.host + that.tabBars[e].id; // 拼接接口
-
       var data = {
         pageNum: that.newsitems[e].pageNum,
         pageRows: that.pageRows,
-        lx: that.lx == '所有记录' ? '' : that.lx };
-
+        lx: that.lx == '所有记录' ? '' : that.lx,
+        userid: that.userid };
 
       if (!isRefresh) {// 上拉加载更多，改变文字，增加体验
         that.newsitems[e].loadingText = '正在加载...';
@@ -2337,18 +2353,18 @@ var dom = weex.requireModule('dom');var _default =
 
       _request.default.requestLoading(url, data, '正在加载',
       function (res) {
-        uni.hideLoading();
         that.refreshing = false;
 
         that.newsitems[e].pageNum++;
         that.formatData(res.list, e, isRefresh);
       }, function () {
-        uni.hideLoading();
         that.refreshing = false;
 
         uni.showToast({
           icon: 'none',
           title: '请求失败' });
+
+      }, function () {
 
       });
 
