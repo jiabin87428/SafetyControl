@@ -817,7 +817,6 @@
       overflow: hidden;
 }
 .uni-list-cell__extra {
-    width: 25%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

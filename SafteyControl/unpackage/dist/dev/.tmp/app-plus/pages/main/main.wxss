@@ -125,6 +125,47 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* .hello {
         display: flex;
         flex: 1;
@@ -173,6 +214,28 @@
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+}
+.topItemView {
+		width: 100%;
+		height: 300rpx;
+		background-color: #2D68AA;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-webkit-flex-direction: column;
@@ -188,16 +251,16 @@
 		        justify-content: center;
 }
 .topTextTitle {
-		width: 300rpx;
+		width: 100%;
 		text-align: center;
 		color: #FFFFFF;
 		font-size: 30rpx;
 }
 .topTextNum {
-		width: 300rpx;
+		width: 100%;
 		text-align: center;
 		color: #FFFFFF;
-		font-size: 60rpx;
+		font-size: 40rpx;
 }
 .middleView {
 		width: 100%;

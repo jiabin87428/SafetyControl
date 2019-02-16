@@ -18,9 +18,19 @@
                 <view>在 “我的” 中点击 “登录” 可以 “登录您的账户”</view>
             </view>
         </view> -->
-		<view class="topView">
-			<text class="topTextTitle">检查总数</text>
-			<text class="topTextNum">1000条</text>
+		<view class="topView" @tap="getCount('正在获取统计数据')">
+			<view class="topItemView">
+				<text class="topTextTitle">阀组本周未检</text>
+				<text class="topTextNum">{{bzwjcsl}}</text>
+			</view>
+			<view class="topItemView">
+				<text class="topTextTitle">当天火警</text>
+				<text class="topTextNum">{{dthjs}}</text>
+			</view>
+			<view class="topItemView">
+				<text class="topTextTitle">已整改</text>
+				<text class="topTextNum">{{dywjcsl}}</text>
+			</view>
 		</view>
 		<view class="middleView">
 			<view class="btnView" @tap="openScan()">
@@ -48,6 +58,16 @@
 
     export default {
         computed: mapState(['forcedLogin', 'hasLogin', 'userInfo']),
+		data() {
+		    return {
+				// 阀组本周未检查数量
+				bzwjcsl: '正在读取...',
+				// 当天火警数
+				dthjs: '正在读取...',
+				// 当月未检查数量
+				dywjcsl: '正在读取...',
+			}
+		},
 		methods: {
 		    ...mapMutations(['login']),
 			// 扫一扫
@@ -91,6 +111,25 @@
 					url: '../mpvue-echarts/chartList'
 				})
 			},
+			// 顶部数据统计
+			getCount(message = "") {
+				var that = this;
+				let params = {
+					userid: that.userInfo.userid
+				};
+				request.requestLoading(config.getMainPageCount, params, message, function(res){
+					console.log('' + JSON.stringify(res));
+					that.bzwjcsl = res.bzwjcsl;
+					that.dthjs = res.dthjs;
+					that.dywjcsl = res.dywjcsl;
+				}, function(){
+					that.bzwjcsl = "获取失败，点击重新获取";
+					that.dthjs = "获取失败，点击重新获取";
+					that.dywjcsl = "获取失败，点击重新获取";
+				}, function(){
+					
+				})
+			},
 		},
         onShow() {
 			this.login(service.getUsers());
@@ -119,7 +158,9 @@
                         }
                     }
                 });
-            }
+            }else {
+				this.getCount();
+			}
         }
     }
 </script>
@@ -158,21 +199,30 @@
 		height: 300upx;
 		background-color: #2D68AA;
 		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.topItemView {
+		width: 100%;
+		height: 300upx;
+		background-color: #2D68AA;
+		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 	}
 	.topTextTitle {
-		width: 300upx;
+		width: 100%;
 		text-align: center;
 		color: #FFFFFF;
 		font-size: 30upx;
 	}
 	.topTextNum {
-		width: 300upx;
+		width: 100%;
 		text-align: center;
 		color: #FFFFFF;
-		font-size: 60upx;
+		font-size: 40upx;
 	}
 	.middleView {
 		width: 100%;

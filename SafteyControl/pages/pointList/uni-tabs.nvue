@@ -70,6 +70,9 @@
 						key: res.data,
 						success: function (res) {
 							that.tabBars.push(JSON.parse(res.data));
+						},
+						complete() {
+							that.getTabCounts();
 						}
 					})
 				}
@@ -90,12 +93,23 @@
         },
         methods: {
             goDetail(e) {
-                // console.log("前往详情页面")
-				uni.navigateTo({
-					url: '../pointDetail/pointDetail',
-					success: res => {},
-					fail: () => {},
-					complete: () => {}
+				var that = this;
+				let params = {
+					id: e.id,
+					userid: that.userid
+				};
+				request.requestLoading(config.getPointDetail, params, "正在加载详情", function(res){
+					console.log('' + JSON.stringify(res));
+					uni.navigateTo({
+						url: '../pointDetail/pointDetail?obj=' + JSON.stringify(res)
+					});
+				}, function(){
+					uni.showToast({
+						icon: 'none',
+						title: '请求失败'
+					});
+				},function(){
+					
 				});
             },
             close(index1, index2) {
@@ -182,6 +196,38 @@
 				
 				that.getListData(e, true);
             },
+			// 请求Tab页数量
+			getTabCounts(){
+				var that = this;
+				request.requestLoading(config.getTabCounts, {"lx": that.lx, "userid": that.userid}, '正在加载', 
+					function(res){
+						console.log('Tab页数量：' + JSON.stringify(res));
+						for (var i=0; i<that.tabBars.length; i++) {
+							var tab = that.tabBars[i];
+							if (tab.name == "待整改") {
+								tab.name = "待整改(" + res.dzgsl + ")"
+							}else if (tab.name == "已完成") {
+								tab.name = "已完成(" + res.ywcsl + ")"
+							}else if (tab.name == "未检查") {
+								tab.name = "未检查(" + res.wjcsl + ")"
+							}else if (tab.name == "当月未检查") {
+								tab.name = "当月未检查(" + res.dywjcsl + ")"
+							}else if (tab.name == "本周未检查") {
+								tab.name = "本周未检查(" + res.bzwjcsl + ")"
+							}else if (tab.name == "当天未检查") {
+								tab.name = "当天未检查(" + res.dtwjcsl + ")"
+							}
+						}
+					},function(){
+						uni.showToast({
+							icon: 'none',
+							title: '请求失败'
+						});
+					}, function(){
+						
+					}
+				);
+			},
 			// 请求列表数据
 			getListData(e, isRefresh){
 				var that = this;

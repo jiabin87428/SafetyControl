@@ -67,7 +67,7 @@
 			this.saveTabInfo('消火栓', hydrantTab);
 			
 			let valveTab = {
-				name: '周末检查',
+				name: '本周未检查',
 				id: '/mobile/fzzwjclb.do'
 			}
 			this.saveTabInfo('阀组', valveTab);

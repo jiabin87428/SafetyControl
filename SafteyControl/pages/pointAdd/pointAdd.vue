@@ -5,14 +5,14 @@
 		</view>
 		<view class="cellInfoView">
 			<uni-list>
-				<uni-list-item title="点位编号" :note="obj.dwbh" show-arrow="false"></uni-list-item>
-				<uni-list-item title="检查人" :note="obj.zrrmc" show-arrow="false"></uni-list-item>
+				<uni-list-item title="点位编号" :subnote="obj.dwbh" show-arrow="false" show-badge="true"></uni-list-item>
+				<uni-list-item title="检查人" :subnote="obj.zrrmc" show-arrow="false"></uni-list-item>
 				<picker mode="date" :value="obj.jcrq" @change="bindDateChange">
-					<uni-list-item title="检查日期" :note="obj.jcrq"></uni-list-item>
+					<uni-list-item title="检查日期" :subnote="obj.jcrq"></uni-list-item>
 				</picker>
-				<uni-list-item title="责任部门" :note="obj.zrbm" show-arrow="false"></uni-list-item>
-				<uni-list-item title="楼层" :note="obj.lc" show-arrow="false"></uni-list-item>
-				<uni-list-item title="位置" :note="obj.wz" show-arrow="false"></uni-list-item>
+				<uni-list-item title="责任部门" :subnote="obj.zrbm" show-arrow="false"></uni-list-item>
+				<uni-list-item title="楼层" :subnote="obj.lc" show-arrow="false"></uni-list-item>
+				<uni-list-item title="位置" :subnote="obj.wz" show-arrow="false"></uni-list-item>
 				<!--<uni-list-item title="禁用状态" disabled="true" show-badge="true" badge-text="12"></uni-list-item>
 				 <uni-list-item title="检查日期" show-badge="true" badge-text="12"></uni-list-item>
 				<uni-list-item title="禁用状态" disabled="true" show-badge="true" badge-text="12"></uni-list-item> -->
@@ -98,10 +98,11 @@
 			});
 		},
 		onShow() {
-			if (this.needGetItemOnShow == true) {
+			if (this.needGetItemOnShow == true && this.sublistIndex != null && this.sublistItem != null) {
+				console.log('' + JSON.stringify(this.sublistItem));
 				this.obj.sublist[this.sublistIndex] = this.sublistItem;
-				this.needGetItemOnShow = false;
 			}
+			this.needGetItemOnShow = false;
 		},
 		methods:{
 			bindDateChange: function(e) {
@@ -132,7 +133,7 @@
 						uni.showToast({
 							icon: 'none',
 							title: '新建检查成功',
-							duration: 1000,
+							duration: 2000,
 							complete() {
 								uni.navigateBack({
 									delta: 1

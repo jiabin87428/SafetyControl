@@ -16,6 +16,15 @@ var config = {
   
   // 扫码新增检查
   createCheckPoint: `${host}/mobile/updateJcjl.do`,
+  
+  // 获取Tab页上的数量
+  getTabCounts: `${host}/mobile/getTabCount.do`,
+  
+  // 获取检查详情
+  getPointDetail: `${host}/mobile/getJcjl.do`,
+  
+  // 首页统计
+  getMainPageCount: `${host}/mobile/getSytj.do`,
 };
 //对外把对象config返回
 module.exports = config

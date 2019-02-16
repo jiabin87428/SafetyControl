@@ -46,10 +46,69 @@
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.cellView {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.cellSubView {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.arrow {
+	width: 15rpx;
+	height: 25rpx;
+	margin-right: 18rpx;
+}
+.leftText {
+	margin-top: 20rpx;
+	margin-left: 20rpx;
+	font-size: 34rpx;
+}
+.rightText {
+	margin-left: 20rpx;
+	margin-bottom: 20rpx;
+	font-size: 28rpx;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
+	white-space: normal;
+	color: inherit;
+	line-height: 1.5;
+	overflow: hidden;
+	color: #BBBBBB;
+}
+.line {
+	width: 100%;
+	height: 1rpx;
+	background-color: #E8E8E8;
 }
 

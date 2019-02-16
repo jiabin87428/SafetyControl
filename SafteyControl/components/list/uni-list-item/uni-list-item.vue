@@ -12,7 +12,8 @@
 				<view class="uni-list-cell__content-title">{{title}}</view>
 				<view class="uni-list-cell__content-note" v-if="note">{{note}}</view>
 			</view>
-			<view class="uni-list-cell__extra" v-if="showBadge === true || showBadge === 'true' || showArrow === true || showArrow === 'true'||showSwitch === true || showSwitch === 'true'">
+			<view class="uni-list-cell__extra" v-if="subnote || showBadge === true || showBadge === 'true' || showArrow === true || showArrow === 'true'||showSwitch === true || showSwitch === 'true'">
+				<view class="uni-list-cell__content-note" v-if="subnote">{{subnote}}</view>
 				<uni-badge v-if="showBadge === true || showBadge === 'true'" :type="badgeType" :text="badgeText"></uni-badge>
 				<switch v-if="showSwitch === true || showSwitch === 'true'" :disabled='disabled' :checked="switchChecked" @change="onSwitchChange" />
 				<uni-icon v-if="showArrow === true || showArrow === 'true'" color="#bbb" size="20" type="arrowright"></uni-icon>
@@ -38,6 +39,7 @@
 		props: {
 			title: String, //列表标题
 			note: String, //列表描述
+			subnote: String, //列表右侧描述
 			disabled: { //是否禁用
 				type: [Boolean, String],
 				default: false
@@ -79,6 +81,7 @@
 				}
 			}
 		},
+		
 		methods: {
 			onClick() {
 				this.$emit('click')
@@ -171,7 +174,7 @@
 		}
 
 		&__extra {
-			width: 25%;
+			// width: 25%;
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-end;
