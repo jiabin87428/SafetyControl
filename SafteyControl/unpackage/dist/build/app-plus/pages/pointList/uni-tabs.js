@@ -378,7 +378,16 @@ var config = {
   scan: "".concat(host, "/mobile/dwsm.do"),
 
   // 扫码新增检查
-  createCheckPoint: "".concat(host, "/mobile/updateJcjl.do") };
+  createCheckPoint: "".concat(host, "/mobile/updateJcjl.do"),
+
+  // 获取Tab页上的数量
+  getTabCounts: "".concat(host, "/mobile/getTabCount.do"),
+
+  // 获取检查详情
+  getPointDetail: "".concat(host, "/mobile/getJcjl.do"),
+
+  // 首页统计
+  getMainPageCount: "".concat(host, "/mobile/getSytj.do") };
 
 //对外把对象config返回
 module.exports = config;
@@ -2220,6 +2229,9 @@ var dom = weex.requireModule('dom');var _default =
           key: res.data,
           success: function success(res) {
             that.tabBars.push(JSON.parse(res.data));
+          },
+          complete: function complete() {
+            that.getTabCounts();
           } });
 
       } });
@@ -2240,13 +2252,24 @@ var dom = weex.requireModule('dom');var _default =
   },
   methods: {
     goDetail: function goDetail(e) {
-      // console.log("前往详情页面")
-      uni.navigateTo({
-        url: '../pointDetail/pointDetail',
-        success: function success(res) {},
-        fail: function fail() {},
-        complete: function complete() {} });
+      var that = this;
+      var params = {
+        id: e.id,
+        userid: that.userid };
 
+      _request.default.requestLoading(_config.default.getPointDetail, params, "正在加载详情", function (res) {
+        console.log('' + JSON.stringify(res));
+        uni.navigateTo({
+          url: '../pointDetail/pointDetail?obj=' + JSON.stringify(res) });
+
+      }, function () {
+        uni.showToast({
+          icon: 'none',
+          title: '请求失败' });
+
+      }, function () {
+
+      });
     },
     close: function close(index1, index2) {var _this = this;
       uni.showModal({
@@ -2331,6 +2354,38 @@ var dom = weex.requireModule('dom');var _default =
       that.refreshing = true;
 
       that.getListData(e, true);
+    },
+    // 请求Tab页数量
+    getTabCounts: function getTabCounts() {
+      var that = this;
+      _request.default.requestLoading(_config.default.getTabCounts, { "lx": that.lx, "userid": that.userid }, '正在加载',
+      function (res) {
+        console.log('Tab页数量：' + JSON.stringify(res));
+        for (var i = 0; i < that.tabBars.length; i++) {
+          var tab = that.tabBars[i];
+          if (tab.name == "待整改") {
+            tab.name = "待整改(" + res.dzgsl + ")";
+          } else if (tab.name == "已完成") {
+            tab.name = "已完成(" + res.ywcsl + ")";
+          } else if (tab.name == "未检查") {
+            tab.name = "未检查(" + res.wjcsl + ")";
+          } else if (tab.name == "当月未检查") {
+            tab.name = "当月未检查(" + res.dywjcsl + ")";
+          } else if (tab.name == "本周未检查") {
+            tab.name = "本周未检查(" + res.bzwjcsl + ")";
+          } else if (tab.name == "当天未检查") {
+            tab.name = "当天未检查(" + res.dtwjcsl + ")";
+          }
+        }
+      }, function () {
+        uni.showToast({
+          icon: 'none',
+          title: '请求失败' });
+
+      }, function () {
+
+      });
+
     },
     // 请求列表数据
     getListData: function getListData(e, isRefresh) {
