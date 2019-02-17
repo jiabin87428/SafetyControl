@@ -196,7 +196,7 @@
 	} 
 	.topView {
 		width: 100%;
-		height: 300upx;
+		height: 240upx;
 		background-color: #2D68AA;
 		display: flex;
 		flex-direction: row;

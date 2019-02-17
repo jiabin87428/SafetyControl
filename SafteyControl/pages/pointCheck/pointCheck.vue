@@ -22,36 +22,33 @@
 		    <image class="dangerIcon" src="../../static/img/point_all.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>所有记录</text>
-		      <text class='subText'>所有记录</text>
 		    </view>
 		  </view>
 		  <view class='dangerView' @tap="jumpListPage('消火栓')">
 		    <image class="dangerIcon" src="../../static/img/point_xhs.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>消火栓</text>
-		      <text class='subText'>消火栓</text>
 		    </view>
 		  </view>
 		  <view class='dangerView' @tap="jumpListPage('阀组')">
 		    <image class="dangerIcon" src="../../static/img/point_fz.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>阀组</text>
-		      <text class='subText'>阀组</text>
 		    </view>
 		  </view>
 		  <view class='dangerView' @tap="jumpListPage('高位水箱')">
 		    <image class="dangerIcon" src="../../static/img/point_sx.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>高位水箱</text>
-		      <text class='subText'>高位水箱</text>
 		    </view>
 		  </view>
 		  <view class='dangerView' @tap="jumpListPage('消防泵')">
 		    <image class="dangerIcon" src="../../static/img/point_xfb.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>消防泵</text>
-		      <text class='subText'>消防泵</text>
 		    </view>
+		  </view>
+		  <view class='dangerView'>
 		  </view>
 		</view>
 	</view>
@@ -109,7 +106,7 @@
 	  display: flex;
 	  flex: 1;
 	  flex-direction: column;
-	  background-color: #efeff4;
+	  background-color: #FFFFFF;
 	}   
 	.banner-box{  
 		width: 100%;  
@@ -123,43 +120,33 @@
 	.userinfo {
 	  width: 100%;
 	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
+	  flex-wrap: wrap;
+	  flex-direction: row;
+	  justify-content: space-around;
 	}
 	.dangerView {
 	  display:flex;
-	  flex-direction:row;
-	  width: 90%;
-	  height: 150px;
-	  background-color: white;
-	  margin-top: 10px;
-	  border-color: #D9E5F0;
-	  border-width: 1px;
-	  border-radius: 10px;
-	  border-style: solid;
+	  flex-direction:column;
+	  width: 30%;
+	  margin-top: 50px;
 	  align-items:center;/*垂直居中*/
 	}
 	.dangerIcon {
-	  width: 90px;
-	  margin-left: 10px;
+	  width: 80upx;
+	  height: 80upx;
 	}
 
 	.subView {
 	  display:flex;
 	  flex-direction:column;
-	  height: 80%;
-	  justify-content: center;/*水平居中*/
+	  width: 100%;
+	  margin-top: 10px;
+	  align-items:center;/*垂直居中*/
 	}
 	.dangerText {
-	  font-size: 16;
-	  color: #256FBD;
-	  margin-left: 15px;
-	}
-
-	.subText {
-	  font-size: 14;
-	  color: #767676;
-	  margin-left: 15px;
-	  margin-top: 5px;
+		width: 100%;
+		font-size: 16;
+		color: #898989;
+		text-align: center;
 	}
 </style>

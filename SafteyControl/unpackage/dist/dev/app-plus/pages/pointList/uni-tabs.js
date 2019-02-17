@@ -344,6 +344,12 @@ var addUser = function addUser(userInfo) {
   uni.setStorageSync(USERS_KEY, JSON.stringify(userInfo));
 };
 
+var removeUser = function removeUser() {
+  uni.removeStorageSync(USERS_KEY);
+  //把给nvue文件用的另一份userInfo也清空
+  uni.removeStorageSync('userInfo');
+};
+
 var copyObj = function copyObj(a) {
   var c = {};
   c = JSON.parse(JSON.stringify(a));
@@ -353,6 +359,7 @@ var copyObj = function copyObj(a) {
 {
   getUsers: getUsers,
   addUser: addUser,
+  removeUser: removeUser,
   copyObj: copyObj };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
 
