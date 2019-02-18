@@ -18,7 +18,24 @@
             </uni-tab-content>
         </uni-tabs>
 		
-		<div class="rightView" ref="rightView"></div>
+		<div class="mask" v-bind:style="{height:screenHeight / screenWidth*750, width: rightViewOpen ? 750 : 0}" ref="mask" @touchstart="maskViewClick"></div>
+		<div class="rightView" v-bind:style="{height:screenHeight / screenWidth*750}" ref="rightView">
+			<text class="tipText">楼层</text>
+			<input ref="floor" type="text" placeholder="请输入楼层" class="input" :autofocus="true" :value="searchLC" @change="onchange" @input="oninput"/>
+			<text class="tipText">部门</text>
+			<input ref="depart" type="text" placeholder="请输入部门" class="input" :autofocus="true" :value="searchBM" @change="onchange" @input="oninput"/>
+			<text class="tipText">位置</text>
+			<input ref="position" type="text" placeholder="请输入位置" class="input" :autofocus="true" :value="searchWZ" @change="onchange" @input="oninput"/>
+			
+			<div class="fliterButtonView">
+				<div class="resetButton" @click="resetClick">
+					<text class="resetText">重置</text>
+				</div>
+				<div class="searchButton" @click="submitClick">
+					<text class="submitText">确定</text>
+				</div>
+			</div>
+		</div>
     </div>
 </template>
 
@@ -60,7 +77,13 @@
                 }, {
                     name: '未检查',
                     id: '/mobile/wjclb.do'
-                }]
+                }],
+				searchLC: '1',
+				searchBM: '2',
+				searchWZ: '3',
+				rightViewOpen: false,
+				screenWidth: 0,
+				screenHeight: 0,
             }
         },
         created() {
@@ -90,31 +113,88 @@
 			setTimeout(() => {
 				uni.setNavigationBarTitle({
 					title: that.lx
-				})
+				});
+				// 获取窗口高度
+				uni.getSystemInfo({
+					success(res) {
+						// console.log('' + JSON.stringify(res.screenHeight));
+						that.screenWidth = res.screenWidth;
+						that.screenHeight = res.screenHeight;
+					}
+				});
 			    that.newsitems = that.randomfn();
 				that.onrefresh(that.tabIndex);
 			}, 50)
 			
 			uni.onNavigationBarButtonTap((e) => {
-				this.move();
+				if (that.rightViewOpen == true) {
+					this.move('close');
+				}else {
+					this.move('open');
+				}
 			})
         },
         methods: {
-			move () {
-				var testEl = this.$refs.rightView;
+			// 搜索提交
+			submitClick() {
+				console.log('搜索');
+			},
+			// 搜索重置
+			resetClick() {
+				console.log('重置');
+				this.searchLC = "";
+				this.searchBM = "";
+				this.searchWZ = "";
+			},
+			// type: open/close，开或关
+			move (type = 'open') {
+				var that = this;
+				var testEl = that.$refs.rightView;
+				var num = -500;
+				if (type == 'close') {
+					that.rightViewOpen = false;
+					num = 500;
+				}else {
+					that.rightViewOpen = true;
+				}
 				animation.transition(testEl, {
 					styles: {
-					backgroundColor: '#FF0000',
-					transform: 'translate(250px, 100px)',
+					transform: 'translateX(' + num + 'px)',
 				},
-				duration: 800, //ms
+				duration: 300, //ms
 				timingFunction: 'ease',
 				delay: 0 //ms
 				}, function () {
-					modal.toast({ message: 'animation finished.' })
+					console.log("message: 'animation finished.'");
 				})
 			},
+			// 筛选输入完成
+			onchange(e) {
+				// console.log('' + JSON.stringify(e));
+// 				console.log('ref' + JSON.stringify(e.currentTarget.ref));
+// 				console.log('rightRef' + JSON.stringify(this.$refs.rightView.ref));
+				if (e.target.ref == this.$refs.floor.ref) {
+					this.searchLC = e.value;
+					console.log('searchLC' + this.searchLC);
+				}else if (e.target.ref == this.$refs.depart.ref) {
+					this.searchBM = e.value;
+					console.log('searchBM' + this.searchBM);
+				}else if (e.target.ref == this.$refs.position.ref) {
+					this.searchWZ = e.value;
+					console.log('searchWZ' + this.searchWZ);
+				}
+			},
+			// 筛选正在输入
+			oninput(e) {
+				// console.log('' + JSON.stringify(e));
+			},
+			// 点击mask隐藏键盘
+			maskViewClick(e) {
+				uni.hideKeyboard();
+				this.move('close');
+			},
 			
+			// 获取检查详情
             goDetail(e) {
 				var that = this;
 				let params = {
@@ -345,10 +425,71 @@
         color: #999999;
     }
 	
+	.mask {
+		position: fixed;
+		opacity: 0.5;
+		background-color: #232323;
+	}
 	.rightView {
 		position: fixed;
+		margin-left: 750px;
+		display: flex;
+		flex-direction: column;
 		width: 750px;
-		height: 750px;
-		background-color: #DDD;
+		background-color: #FFFFFF;
+	},
+	.input {
+		margin-left: 20px;
+		margin-top: 20px;
+		font-size: 30px;
+		height: 80px;
+		width: 460px;
+		border-radius: 10px;
+		color: #232323;
+		background-color: #F3F3F5;
+	}
+	.tipText {
+		margin-left: 20px;
+		margin-top: 30px;
+		width: 460px;
+		font-size: 28px;
+		color: #888888;
+	}
+	.fliterButtonView {
+		display: flex;
+		flex-direction: row;
+		margin-top: 100px;
+		width: 500px;
+	}
+	.resetButton {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-width: 1;
+		border-bottom-color: #F1F1F1;
+		border-top-color: #F1F1F1;
+		border-left-width: 0px;
+		border-right-width: 0px;
+		width: 200px;
+		height: 90px;
+		text-align: center;
+	}
+	.searchButton {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 300px;
+		height: 90px;
+		background-color: #2D68AA;
+		color: #FFFFFF;
+		text-align: center;
+	}
+	.resetText {
+		font-size: 28px;
+		color: #232323;
+	}
+	.submitText {
+		font-size: 28px;
+		color: #FFFFFF;
 	}
 </style>

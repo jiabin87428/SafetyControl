@@ -1,13 +1,3 @@
 {
-  "navigationBarTitleText": "检查记录",
-  "enablePullDownRefresh": true,
-  "titleNView": {
-    "buttons": [
-      {
-        "text": "",
-        "fontSrc": "/static/aliIcon/iconfont.ttf",
-        "fontSize": "22px"
-      }
-    ]
-  }
+  "navigationBarTitleText": "检查记录"
 }

@@ -2194,6 +2194,23 @@ var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-c
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-content/uni-tab-content.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue"));
 var _uniTabBar = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-bar/uni-tab-bar.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue"));
 var _uniTabs = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tabs/uni-tabs.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue"));
@@ -2230,8 +2247,14 @@ var animation = weex.requireModule('animation');var _default =
         id: '/mobile/ywclb.do' },
       {
         name: '未检查',
-        id: '/mobile/wjclb.do' }] };
+        id: '/mobile/wjclb.do' }],
 
+      searchLC: '1',
+      searchBM: '2',
+      searchWZ: '3',
+      rightViewOpen: false,
+      screenWidth: 0,
+      screenHeight: 0 };
 
   },
   created: function created() {var _this = this;
@@ -2262,30 +2285,87 @@ var animation = weex.requireModule('animation');var _default =
       uni.setNavigationBarTitle({
         title: that.lx });
 
+      // 获取窗口高度
+      uni.getSystemInfo({
+        success: function success(res) {
+          // console.log('' + JSON.stringify(res.screenHeight));
+          that.screenWidth = res.screenWidth;
+          that.screenHeight = res.screenHeight;
+        } });
+
       that.newsitems = that.randomfn();
       that.onrefresh(that.tabIndex);
     }, 50);
 
     uni.onNavigationBarButtonTap(function (e) {
-      _this.move();
+      if (that.rightViewOpen == true) {
+        _this.move('close');
+      } else {
+        _this.move('open');
+      }
     });
   },
   methods: {
-    move: function move() {
-      var testEl = this.$refs.rightView;
+    // 搜索提交
+    submitClick: function submitClick() {
+      console.log('搜索');
+    },
+    // 搜索重置
+    resetClick: function resetClick() {
+      console.log('重置');
+      this.searchLC = "";
+      this.searchBM = "";
+      this.searchWZ = "";
+    },
+    // type: open/close，开或关
+    move: function move() {var type = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'open';
+      var that = this;
+      var testEl = that.$refs.rightView;
+      var num = -500;
+      if (type == 'close') {
+        that.rightViewOpen = false;
+        num = 500;
+      } else {
+        that.rightViewOpen = true;
+      }
       animation.transition(testEl, {
         styles: {
-          backgroundColor: '#FF0000',
-          transform: 'translate(250px, 100px)' },
+          transform: 'translateX(' + num + 'px)' },
 
-        duration: 800, //ms
+        duration: 300, //ms
         timingFunction: 'ease',
         delay: 0 //ms
       }, function () {
-        modal.toast({ message: 'animation finished.' });
+        console.log("message: 'animation finished.'");
       });
     },
+    // 筛选输入完成
+    onchange: function onchange(e) {
+      // console.log('' + JSON.stringify(e));
+      // 				console.log('ref' + JSON.stringify(e.currentTarget.ref));
+      // 				console.log('rightRef' + JSON.stringify(this.$refs.rightView.ref));
+      if (e.target.ref == this.$refs.floor.ref) {
+        this.searchLC = e.value;
+        console.log('searchLC' + this.searchLC);
+      } else if (e.target.ref == this.$refs.depart.ref) {
+        this.searchBM = e.value;
+        console.log('searchBM' + this.searchBM);
+      } else if (e.target.ref == this.$refs.position.ref) {
+        this.searchWZ = e.value;
+        console.log('searchWZ' + this.searchWZ);
+      }
+    },
+    // 筛选正在输入
+    oninput: function oninput(e) {
+      // console.log('' + JSON.stringify(e));
+    },
+    // 点击mask隐藏键盘
+    maskViewClick: function maskViewClick(e) {
+      uni.hideKeyboard();
+      this.move('close');
+    },
 
+    // 获取检查详情
     goDetail: function goDetail(e) {
       var that = this;
       var params = {
@@ -2516,11 +2596,72 @@ module.exports = {
     "fontSize": "28",
     "color": "#999999"
   },
+  "mask": {
+    "position": "fixed",
+    "opacity": 0.5,
+    "backgroundColor": "#232323"
+  },
   "rightView": {
     "position": "fixed",
+    "marginLeft": "750",
+    "display": "flex",
+    "flexDirection": "column",
     "width": "750",
-    "height": "750",
-    "backgroundColor": "#DDDDDD"
+    "backgroundColor": "#FFFFFF"
+  },
+  "input": {
+    "marginLeft": "20",
+    "marginTop": "20",
+    "fontSize": "30",
+    "height": "80",
+    "width": "460",
+    "borderRadius": "10",
+    "color": "#232323",
+    "backgroundColor": "#F3F3F5"
+  },
+  "tipText": {
+    "marginLeft": "20",
+    "marginTop": "30",
+    "width": "460",
+    "fontSize": "28",
+    "color": "#888888"
+  },
+  "fliterButtonView": {
+    "display": "flex",
+    "flexDirection": "row",
+    "marginTop": "100",
+    "width": "500"
+  },
+  "resetButton": {
+    "display": "flex",
+    "alignItems": "center",
+    "justifyContent": "center",
+    "borderWidth": 1,
+    "borderBottomColor": "#F1F1F1",
+    "borderTopColor": "#F1F1F1",
+    "borderLeftWidth": "0",
+    "borderRightWidth": "0",
+    "width": "200",
+    "height": "90",
+    "textAlign": "center"
+  },
+  "searchButton": {
+    "display": "flex",
+    "alignItems": "center",
+    "justifyContent": "center",
+    "width": "300",
+    "height": "90",
+    "backgroundColor": "#2D68AA",
+    "color": "#FFFFFF",
+    "textAlign": "center"
+  },
+  "resetText": {
+    "fontSize": "28",
+    "color": "#232323"
+  },
+  "submitText": {
+    "fontSize": "28",
+    "color": "#FFFFFF"
   }
 }
 
@@ -2762,9 +2903,83 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: ["loadmore-text"]
     }, [_vm._v(_vm._s(tab.loadingText))])])], 2)
   }))], 1), _c('div', {
+    ref: "mask",
+    staticClass: ["mask"],
+    style: {
+      height: _vm.screenHeight / _vm.screenWidth * 750,
+      width: _vm.rightViewOpen ? 750 : 0
+    },
+    on: {
+      "touchstart": _vm.maskViewClick
+    }
+  }), _c('div', {
     ref: "rightView",
-    staticClass: ["rightView"]
-  })], 1)
+    staticClass: ["rightView"],
+    style: {
+      height: _vm.screenHeight / _vm.screenWidth * 750
+    }
+  }, [_c('text', {
+    staticClass: ["tipText"]
+  }, [_vm._v("楼层")]), _c('input', {
+    ref: "floor",
+    staticClass: ["input"],
+    attrs: {
+      "type": "text",
+      "placeholder": "请输入楼层",
+      "autofocus": true,
+      "value": _vm.searchLC
+    },
+    on: {
+      "change": _vm.onchange,
+      "input": _vm.oninput
+    }
+  }), _c('text', {
+    staticClass: ["tipText"]
+  }, [_vm._v("部门")]), _c('input', {
+    ref: "depart",
+    staticClass: ["input"],
+    attrs: {
+      "type": "text",
+      "placeholder": "请输入部门",
+      "autofocus": true,
+      "value": _vm.searchBM
+    },
+    on: {
+      "change": _vm.onchange,
+      "input": _vm.oninput
+    }
+  }), _c('text', {
+    staticClass: ["tipText"]
+  }, [_vm._v("位置")]), _c('input', {
+    ref: "position",
+    staticClass: ["input"],
+    attrs: {
+      "type": "text",
+      "placeholder": "请输入位置",
+      "autofocus": true,
+      "value": _vm.searchWZ
+    },
+    on: {
+      "change": _vm.onchange,
+      "input": _vm.oninput
+    }
+  }), _c('div', {
+    staticClass: ["fliterButtonView"]
+  }, [_c('div', {
+    staticClass: ["resetButton"],
+    on: {
+      "click": _vm.resetClick
+    }
+  }, [_c('text', {
+    staticClass: ["resetText"]
+  }, [_vm._v("重置")])]), _c('div', {
+    staticClass: ["searchButton"],
+    on: {
+      "click": _vm.submitClick
+    }
+  }, [_c('text', {
+    staticClass: ["submitText"]
+  }, [_vm._v("确定")])])])])], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
