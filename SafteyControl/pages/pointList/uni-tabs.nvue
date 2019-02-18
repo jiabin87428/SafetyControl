@@ -17,6 +17,8 @@
                 </list> 
             </uni-tab-content>
         </uni-tabs>
+		
+		<div class="rightView" ref="rightView"></div>
     </div>
 </template>
 
@@ -30,6 +32,8 @@
 	import request from '../../util/request.js';
 
     const dom = weex.requireModule('dom')
+	const animation = weex.requireModule('animation')
+	
     export default {
         components: {
             uniTabContent,
@@ -90,8 +94,27 @@
 			    that.newsitems = that.randomfn();
 				that.onrefresh(that.tabIndex);
 			}, 50)
+			
+			uni.onNavigationBarButtonTap((e) => {
+				this.move();
+			})
         },
         methods: {
+			move () {
+				var testEl = this.$refs.rightView;
+				animation.transition(testEl, {
+					styles: {
+					backgroundColor: '#FF0000',
+					transform: 'translate(250px, 100px)',
+				},
+				duration: 800, //ms
+				timingFunction: 'ease',
+				delay: 0 //ms
+				}, function () {
+					modal.toast({ message: 'animation finished.' })
+				})
+			},
+			
             goDetail(e) {
 				var that = this;
 				let params = {
@@ -321,4 +344,11 @@
         font-size: 28px;
         color: #999999;
     }
+	
+	.rightView {
+		position: fixed;
+		width: 750px;
+		height: 750px;
+		background-color: #DDD;
+	}
 </style>

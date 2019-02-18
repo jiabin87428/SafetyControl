@@ -2192,6 +2192,8 @@ var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-c
 
 
 
+
+
 var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-content/uni-tab-content.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue"));
 var _uniTabBar = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-bar/uni-tab-bar.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue"));
 var _uniTabs = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tabs/uni-tabs.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue"));
@@ -2200,7 +2202,9 @@ var _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js *
 var _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js"));
 var _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
 
-var dom = weex.requireModule('dom');var _default =
+var dom = weex.requireModule('dom');
+var animation = weex.requireModule('animation');var _default =
+
 {
   components: {
     uniTabContent: _uniTabContent.default,
@@ -2230,7 +2234,7 @@ var dom = weex.requireModule('dom');var _default =
 
 
   },
-  created: function created() {
+  created: function created() {var _this = this;
     var that = this;
     // 获取该页面显示的类型
     uni.getStorage({
@@ -2261,8 +2265,27 @@ var dom = weex.requireModule('dom');var _default =
       that.newsitems = that.randomfn();
       that.onrefresh(that.tabIndex);
     }, 50);
+
+    uni.onNavigationBarButtonTap(function (e) {
+      _this.move();
+    });
   },
   methods: {
+    move: function move() {
+      var testEl = this.$refs.rightView;
+      animation.transition(testEl, {
+        styles: {
+          backgroundColor: '#FF0000',
+          transform: 'translate(250px, 100px)' },
+
+        duration: 800, //ms
+        timingFunction: 'ease',
+        delay: 0 //ms
+      }, function () {
+        modal.toast({ message: 'animation finished.' });
+      });
+    },
+
     goDetail: function goDetail(e) {
       var that = this;
       var params = {
@@ -2283,19 +2306,19 @@ var dom = weex.requireModule('dom');var _default =
 
       });
     },
-    close: function close(index1, index2) {var _this = this;
+    close: function close(index1, index2) {var _this2 = this;
       uni.showModal({
         content: '是否删除本条信息？',
         success: function success(res) {
           if (res.confirm) {
-            _this.newsitems[index1].data.splice(index2, 1);
+            _this2.newsitems[index1].data.splice(index2, 1);
           }
         } });
 
     },
-    loadMore: function loadMore(e) {var _this2 = this;
+    loadMore: function loadMore(e) {var _this3 = this;
       setTimeout(function () {
-        _this2.addData(e);
+        _this3.addData(e);
       }, 50);
     },
     addData: function addData(e) {
@@ -2492,6 +2515,12 @@ module.exports = {
     "textAlign": "center",
     "fontSize": "28",
     "color": "#999999"
+  },
+  "rightView": {
+    "position": "fixed",
+    "width": "750",
+    "height": "750",
+    "backgroundColor": "#DDDDDD"
   }
 }
 
@@ -2732,7 +2761,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_c('text', {
       staticClass: ["loadmore-text"]
     }, [_vm._v(_vm._s(tab.loadingText))])])], 2)
-  }))], 1)], 1)
+  }))], 1), _c('div', {
+    ref: "rightView",
+    staticClass: ["rightView"]
+  })], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

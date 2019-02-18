@@ -8,6 +8,7 @@
     "pages/user/accountEdit",
     "pages/user/user",
     "pages/pointCheck/pointCheck",
+    "pages/pointList/pointList",
     "pages/pointDetail/pointDetail",
     "pages/pointAdd/pointAdd",
     "pages/pointAdd/pointCheckInfo",
@@ -62,7 +63,16 @@
       },
       "pages/pointList/uni-tabs.html": {
         "window": {
-          "navigationBarTitleText": "点位检查"
+          "navigationBarTitleText": "点位检查",
+          "titleNView": {
+            "buttons": [
+              {
+                "text": "",
+                "fontSrc": "/static/aliIcon/iconfont.ttf",
+                "fontSize": "22px"
+              }
+            ]
+          }
         }
       }
     }

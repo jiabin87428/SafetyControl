@@ -51,11 +51,24 @@
 		  <view class='dangerView'>
 		  </view>
 		</view>
+		
+		<uni-drawer :visible="showDrawer">
+			<view style="padding:30upx;">
+				<view class="uni-title">抽屉式导航</view>
+			</view>
+		</uni-drawer>
 	</view>
 </template>
 
 <script>
+	import uniDrawer from "@/components/drawer/uni-drawer.vue"
 	export default {
+		components: {uniDrawer},
+		data() {
+			return {
+				showDrawer: false,
+			}
+		},
 		onLoad() {
 			let hydrantTab = {
 				name: '当月未检查',
@@ -77,14 +90,22 @@
 			this.saveTabInfo('消防泵', waterTab);
 			
 		},
+		onNavigationBarButtonTap() {
+			var that = this;
+			if (that.showDrawer == true) {
+				that.showDrawer = false;
+			}else {
+				that.showDrawer = true;
+			}
+		},
 		methods:{
 			jumpListPage(lx) {
 				this.saveTabInfo('currentLx', lx);// 保存当前类型名称
+// 				uni.navigateTo({
+// 					url: '../pointList/pointList?lx=' + lx,
+// 				});
 				uni.navigateTo({
-					url: '../pointList/uni-tabs',
-					success: res => {},
-					fail: () => {},
-					complete: () => {}
+					url: '../pointList/uni-tabs'
 				});
 			},
 			saveTabInfo(key, data){

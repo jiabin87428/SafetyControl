@@ -1,6 +1,5 @@
 {
-  "navigationBarTitleText": "检查记录",
-  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "点位检查",
   "titleNView": {
     "buttons": [
       {
