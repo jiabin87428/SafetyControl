@@ -339,6 +339,12 @@ var addUser = function addUser(userInfo) {
   uni.setStorageSync(USERS_KEY, JSON.stringify(userInfo));
 };
 
+var removeUser = function removeUser() {
+  uni.removeStorageSync(USERS_KEY);
+  //把给nvue文件用的另一份userInfo也清空
+  uni.removeStorageSync('userInfo');
+};
+
 var copyObj = function copyObj(a) {
   var c = {};
   c = JSON.parse(JSON.stringify(a));
@@ -348,6 +354,7 @@ var copyObj = function copyObj(a) {
 {
   getUsers: getUsers,
   addUser: addUser,
+  removeUser: removeUser,
   copyObj: copyObj };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
 
@@ -378,7 +385,7 @@ var config = {
   scan: "".concat(host, "/mobile/dwsm.do"),
 
   // 扫码新增检查
-  createCheckPoint: "".concat(host, "/mobile/updateJcjl.do"),
+  UpdatePoint: "".concat(host, "/mobile/updateJcjl.do"),
 
   // 获取Tab页上的数量
   getTabCounts: "".concat(host, "/mobile/getTabCount.do"),
@@ -409,7 +416,6 @@ module.exports = config;
 // success:成功的回调函数
 // fail：失败的回调
 var requestLoading = function requestLoading(url, params, message, _success, _fail, _complete) {
-  // console.log(params)
   // 	wx.showNavigationBarLoading()
   if (message != "") {
     uni.showLoading({
@@ -2180,6 +2186,25 @@ var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-c
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-content/uni-tab-content.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue"));
 var _uniTabBar = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-bar/uni-tab-bar.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue"));
 var _uniTabs = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tabs/uni-tabs.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue"));
@@ -2188,7 +2213,9 @@ var _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js *
 var _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js"));
 var _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
 
-var dom = weex.requireModule('dom');var _default =
+var dom = weex.requireModule('dom');
+var animation = weex.requireModule('animation');var _default =
+
 {
   components: {
     uniTabContent: _uniTabContent.default,
@@ -2214,8 +2241,11 @@ var dom = weex.requireModule('dom');var _default =
         id: '/mobile/ywclb.do' },
       {
         name: '未检查',
-        id: '/mobile/wjclb.do' }] };
+        id: '/mobile/wjclb.do' }],
 
+      rightViewOpen: false,
+      screenWidth: 0,
+      screenHeight: 0 };
 
   },
   created: function created() {
@@ -2227,8 +2257,8 @@ var dom = weex.requireModule('dom');var _default =
         that.lx = res.data;
         uni.getStorage({
           key: res.data,
-          success: function success(res) {
-            that.tabBars.push(JSON.parse(res.data));
+          success: function success(result) {
+            that.tabBars.push(JSON.parse(result.data));
           },
           complete: function complete() {
             that.getTabCounts();
@@ -2246,11 +2276,84 @@ var dom = weex.requireModule('dom');var _default =
       uni.setNavigationBarTitle({
         title: that.lx });
 
+      // 获取窗口高度
+      uni.getSystemInfo({
+        success: function success(res) {
+          that.screenWidth = res.screenWidth;
+          that.screenHeight = res.screenHeight;
+        } });
+
       that.newsitems = that.randomfn();
       that.onrefresh(that.tabIndex);
     }, 50);
+    uni.onNavigationBarButtonTap(function (e) {
+      if (that.rightViewOpen == true) {
+        that.move('close');
+      } else {
+        that.move('open');
+      }
+    });
   },
   methods: {
+    // 搜索提交
+    submitClick: function submitClick(index) {
+      console.log('搜索');
+      this.newsitems[index].pageNum = 0;
+      this.getListData(index, true);
+    },
+    // 搜索重置
+    resetClick: function resetClick(index) {
+      console.log('重置');
+      this.newsitems[index].searchLC = "";
+      this.newsitems[index].searchBM = "";
+      this.newsitems[index].searchWZ = "";
+    },
+    // type: open/close，开或关
+    move: function move() {var type = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'open';
+      var that = this;
+      var testEl = that.$refs.rightView;
+      var num = -500;
+      if (type == 'close') {
+        that.rightViewOpen = false;
+        num = 500;
+      } else {
+        that.rightViewOpen = true;
+      }
+      animation.transition(testEl, {
+        styles: {
+          transform: 'translateX(' + num + 'px)' },
+
+        duration: 300, //ms
+        timingFunction: 'ease',
+        delay: 0 //ms
+      }, function () {
+        console.log("message: 'animation finished.'");
+      });
+    },
+    // 筛选输入完成
+    onchange: function onchange(e) {
+      if (e.target.ref == this.$refs.floor.ref) {
+        this.newsitems[this.tabIndex].searchLC = e.value;
+        console.log('searchLC' + this.newsitems[this.tabIndex].searchLC);
+      } else if (e.target.ref == this.$refs.depart.ref) {
+        this.newsitems[this.tabIndex].searchBM = e.value;
+        console.log('searchBM' + this.newsitems[this.tabIndex].searchBM);
+      } else if (e.target.ref == this.$refs.position.ref) {
+        this.newsitems[this.tabIndex].searchWZ = e.value;
+        console.log('searchWZ' + this.newsitems[this.tabIndex].searchWZ);
+      }
+    },
+    // 筛选正在输入
+    oninput: function oninput(e) {
+      // console.log('' + JSON.stringify(e));
+    },
+    // 点击mask隐藏键盘
+    maskViewClick: function maskViewClick(e) {
+      uni.hideKeyboard();
+      this.move('close');
+    },
+
+    // 获取检查详情
     goDetail: function goDetail(e) {
       var that = this;
       var params = {
@@ -2260,7 +2363,8 @@ var dom = weex.requireModule('dom');var _default =
       _request.default.requestLoading(_config.default.getPointDetail, params, "正在加载详情", function (res) {
         console.log('' + JSON.stringify(res));
         uni.navigateTo({
-          url: '../pointDetail/pointDetail?obj=' + JSON.stringify(res) });
+          // url: '../pointDetail/pointDetail?obj=' + JSON.stringify(res)
+          url: '../pointAdd/pointAdd?obj=' + JSON.stringify(res) });
 
       }, function () {
         uni.showToast({
@@ -2281,14 +2385,14 @@ var dom = weex.requireModule('dom');var _default =
         } });
 
     },
-    loadMore: function loadMore(e) {var _this2 = this;
+    loadMore: function loadMore(index) {var _this2 = this;
       setTimeout(function () {
-        _this2.addData(e);
+        _this2.addData(index);
       }, 50);
     },
-    addData: function addData(e) {
+    addData: function addData(index) {
       var that = this;
-      that.getListData(e, false);
+      that.getListData(index, false);
     },
     changeTab: function () {var _changeTab = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(e) {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
                 this.tabIndex = e.index;
@@ -2309,7 +2413,11 @@ var dom = weex.requireModule('dom');var _default =
         var aryItem = {
           loadingText: "加载更多...",
           data: [],
-          pageNum: 1 };
+          pageNum: 0,
+          searchLC: '',
+          searchBM: '',
+          searchWZ: '' };
+
 
         ary.push(aryItem);
       }
@@ -2337,7 +2445,7 @@ var dom = weex.requireModule('dom');var _default =
         this.newsitems[index].data.push(obj);
       }
       if (!isRefresh) {// 上拉加载更多结束后改回加载更多，增加体验
-        that.newsitems[e].loadingText = '加载更多...';
+        this.newsitems[index].loadingText = '加载更多...';
       }
       if (this.newsitems[index].data.length <= 0) {
         uni.showToast({
@@ -2346,19 +2454,27 @@ var dom = weex.requireModule('dom');var _default =
 
       }
     },
-    onrefresh: function onrefresh(e) {
+    onrefresh: function onrefresh(index) {
       var that = this;
-      that.newsitems[e].pageNum = 1;
+      that.newsitems[index].pageNum = 0;
 
       that.refreshText = "正在刷新...";
       that.refreshing = true;
 
-      that.getListData(e, true);
+      that.newsitems[index].searchLC = "";
+      that.newsitems[index].searchBM = "";
+      that.newsitems[index].searchWZ = "";
+
+      that.getListData(index, true);
     },
     // 请求Tab页数量
     getTabCounts: function getTabCounts() {
       var that = this;
-      _request.default.requestLoading(_config.default.getTabCounts, { "lx": that.lx, "userid": that.userid }, '正在加载',
+      var param = {
+        lx: that.lx == '所有记录' ? '' : that.lx,
+        userid: that.userid };
+
+      _request.default.requestLoading(_config.default.getTabCounts, param, '正在加载',
       function (res) {
         console.log('Tab页数量：' + JSON.stringify(res));
         for (var i = 0; i < that.tabBars.length; i++) {
@@ -2383,30 +2499,35 @@ var dom = weex.requireModule('dom');var _default =
           title: '请求失败' });
 
       }, function () {
-
       });
 
     },
     // 请求列表数据
-    getListData: function getListData(e, isRefresh) {
+    getListData: function getListData(index, isRefresh) {
       var that = this;
-      var url = _config.default.host + that.tabBars[e].id; // 拼接接口
+      var url = _config.default.host + that.tabBars[index].id; // 拼接接口
       var data = {
-        pageNum: that.newsitems[e].pageNum,
+        pageNum: that.newsitems[index].pageNum,
         pageRows: that.pageRows,
         lx: that.lx == '所有记录' ? '' : that.lx,
-        userid: that.userid };
+        userid: that.userid,
+        search_lc: that.newsitems[index].searchLC,
+        search_bm: that.newsitems[index].searchBM,
+        search_wz: that.newsitems[index].searchWZ };
 
       if (!isRefresh) {// 上拉加载更多，改变文字，增加体验
-        that.newsitems[e].loadingText = '正在加载...';
+        that.newsitems[index].loadingText = '正在加载...';
       }
 
       _request.default.requestLoading(url, data, '正在加载',
       function (res) {
         that.refreshing = false;
 
-        that.newsitems[e].pageNum++;
-        that.formatData(res.list, e, isRefresh);
+        that.rightViewOpen = false;
+        that.move('close');
+
+        that.newsitems[index].pageNum++;
+        that.formatData(res.list, index, isRefresh);
       }, function () {
         that.refreshing = false;
 
@@ -2480,6 +2601,73 @@ module.exports = {
     "textAlign": "center",
     "fontSize": "28",
     "color": "#999999"
+  },
+  "mask": {
+    "position": "fixed",
+    "opacity": 0.5,
+    "backgroundColor": "#232323"
+  },
+  "rightView": {
+    "position": "fixed",
+    "marginLeft": "750",
+    "display": "flex",
+    "flexDirection": "column",
+    "width": "750",
+    "backgroundColor": "#FFFFFF"
+  },
+  "input": {
+    "marginLeft": "20",
+    "marginTop": "20",
+    "fontSize": "30",
+    "height": "80",
+    "width": "460",
+    "borderRadius": "10",
+    "color": "#232323",
+    "backgroundColor": "#F3F3F5"
+  },
+  "tipText": {
+    "marginLeft": "20",
+    "marginTop": "30",
+    "width": "460",
+    "fontSize": "28",
+    "color": "#888888"
+  },
+  "fliterButtonView": {
+    "display": "flex",
+    "flexDirection": "row",
+    "marginTop": "100",
+    "width": "500"
+  },
+  "resetButton": {
+    "display": "flex",
+    "alignItems": "center",
+    "justifyContent": "center",
+    "borderWidth": 1,
+    "borderBottomColor": "#F1F1F1",
+    "borderTopColor": "#F1F1F1",
+    "borderLeftWidth": "0",
+    "borderRightWidth": "0",
+    "width": "200",
+    "height": "90",
+    "textAlign": "center"
+  },
+  "searchButton": {
+    "display": "flex",
+    "alignItems": "center",
+    "justifyContent": "center",
+    "width": "300",
+    "height": "90",
+    "backgroundColor": "#2D68AA",
+    "color": "#FFFFFF",
+    "textAlign": "center"
+  },
+  "resetText": {
+    "fontSize": "28",
+    "color": "#232323"
+  },
+  "submitText": {
+    "fontSize": "28",
+    "color": "#FFFFFF"
   }
 }
 
@@ -2720,7 +2908,85 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_c('text', {
       staticClass: ["loadmore-text"]
     }, [_vm._v(_vm._s(tab.loadingText))])])], 2)
-  }))], 1)], 1)
+  }))], 1), _c('div', {
+    ref: "mask",
+    staticClass: ["mask"],
+    style: {
+      height: _vm.screenHeight / _vm.screenWidth * 750,
+      width: _vm.rightViewOpen ? 750 : 0
+    },
+    on: {
+      "touchstart": _vm.maskViewClick
+    }
+  }), _c('div', {
+    ref: "rightView",
+    staticClass: ["rightView"],
+    style: {
+      height: _vm.screenHeight / _vm.screenWidth * 750
+    }
+  }, [_c('text', {
+    staticClass: ["tipText"]
+  }, [_vm._v("楼层")]), _c('input', {
+    ref: "floor",
+    staticClass: ["input"],
+    attrs: {
+      "type": "text",
+      "placeholder": "请输入楼层",
+      "value": _vm.newsitems[_vm.tabIndex] == null ? '' : _vm.newsitems[_vm.tabIndex].searchLC
+    },
+    on: {
+      "change": _vm.onchange,
+      "input": _vm.oninput
+    }
+  }), _c('text', {
+    staticClass: ["tipText"]
+  }, [_vm._v("部门")]), _c('input', {
+    ref: "depart",
+    staticClass: ["input"],
+    attrs: {
+      "type": "text",
+      "placeholder": "请输入部门",
+      "value": _vm.newsitems[_vm.tabIndex] == null ? '' : _vm.newsitems[_vm.tabIndex].searchBM
+    },
+    on: {
+      "change": _vm.onchange,
+      "input": _vm.oninput
+    }
+  }), _c('text', {
+    staticClass: ["tipText"]
+  }, [_vm._v("位置")]), _c('input', {
+    ref: "position",
+    staticClass: ["input"],
+    attrs: {
+      "type": "text",
+      "placeholder": "请输入位置",
+      "value": _vm.newsitems[_vm.tabIndex] == null ? '' : _vm.newsitems[_vm.tabIndex].searchWZ
+    },
+    on: {
+      "change": _vm.onchange,
+      "input": _vm.oninput
+    }
+  }), _c('div', {
+    staticClass: ["fliterButtonView"]
+  }, [_c('div', {
+    staticClass: ["resetButton"],
+    on: {
+      "click": function($event) {
+        _vm.resetClick(_vm.tabIndex)
+      }
+    }
+  }, [_c('text', {
+    staticClass: ["resetText"]
+  }, [_vm._v("重置")])]), _c('div', {
+    staticClass: ["searchButton"],
+    on: {
+      "click": function($event) {
+        _vm.submitClick(_vm.tabIndex)
+      }
+    }
+  }, [_c('text', {
+    staticClass: ["submitText"]
+  }, [_vm._v("确定")])])])])], 1)
 },staticRenderFns: []}
 
 /***/ }),

@@ -26,7 +26,7 @@
 		</view>
 		<view class="cellInfoView">
 			<uni-list>
-				<uni-list-item  v-for="(item,index) in obj.sublist" :key="index" :title="item.jcbz" show-extra-icon="true" :extra-icon="getIcon(item)" @click="jumpEdit(item, index)"></uni-list-item>
+				<uni-list-item  v-for="(item,index) in obj.sublist" :key="index" :title="item.jcbz" :note="item.jcwtms" show-extra-icon="true" :extra-icon="getIcon(item)" @click="jumpEdit(item, index)"></uni-list-item>
 			</uni-list>
 		</view>
 		<view class="btn-row">
@@ -125,7 +125,7 @@
 				var param = service.copyObj(that.obj);
 				param['userid'] = that.userInfo.userid;
 				param['sublist'] = JSON.stringify(param['sublist']);
-				request.requestLoading(config.createCheckPoint, param, '正在加载', 
+				request.requestLoading(config.UpdatePoint, param, '正在加载', 
 					function(res){
 						uni.showToast({
 							icon: 'none',

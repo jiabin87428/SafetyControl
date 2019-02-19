@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "点位检查",
+  "titleNView": {
+    "buttons": [
+      {
+        "text": "",
+        "fontSrc": "/static/aliIcon/iconfont.ttf",
+        "fontSize": "22px"
+      }
+    ]
+  }
+}

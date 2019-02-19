@@ -113,7 +113,7 @@
 						key: key,
 						data: data,
 						success: function () {
-								console.log('success');
+								console.log('保存成功');
 						}
 				});
 			}

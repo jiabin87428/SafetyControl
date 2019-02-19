@@ -52,4 +52,69 @@
 	    -ms-flex-direction: row;
 	        flex-direction: row;
 }
+.btnView {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+}
+.saveBtn {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	border-width: 1;
+	border-bottom-color: #F1F1F1;
+	border-top-color: #F1F1F1;
+	border-left-width: 0rpx;
+	border-right-width: 0rpx;
+	width: 100%;
+	height: 90rpx;
+	text-align: center;
+	margin-top: 20rpx;
+	margin-left: 20rpx;
+	margin-bottom: 20rpx;
+	margin-right: 10rpx;
+}
+.closeBtn {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	width: 100%;
+	height: 90rpx;
+	background-color: #2D68AA;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 20rpx;
+	margin-left: 10rpx;
+	margin-bottom: 20rpx;
+	margin-right: 20rpx;
+}
 

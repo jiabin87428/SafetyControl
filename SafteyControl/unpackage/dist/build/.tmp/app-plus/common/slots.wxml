@@ -1,15 +1,20 @@
+<import src="/components/drawer/uni-drawer.vue.wxml" />
 <import src="/components/list/uni-list/uni-list.vue.wxml" />
 <import src="/components/list/uni-list-item/uni-list-item.vue.wxml" />
 <import src="/components/list/uni-icon/uni-icon.vue.wxml" />
 <import src="/components/m-input.vue.wxml" />
 <import src="/components/mpvue-echarts/src/echarts.vue.wxml" />
-<import src="/components/m-icon/m-icon.vue.wxml" />
 <import src="/common/slots.wxml" />
+<import src="/components/m-icon/m-icon.vue.wxml" />
 <import src="/components/list/uni-badge/uni-badge.vue.wxml" />
+
+<template name="58792338-default-58792338-10"><view style="padding:30rpx;" class="_view 58792338"><view class="_view 58792338 uni-title">抽屉式导航</view></view></template>
 
 <template name="21b694de-default-21b694de-6"><template title="点位编号" show-arrow="false" show-badge="true" data="{{...$root['0'], ...$root[$kk+'21b694de-0'],$root}}" is="30c48a99"></template><template title="检查人" show-arrow="false" data="{{...$root['0'], ...$root[$kk+'21b694de-1'],$root}}" is="30c48a99"></template><picker mode="date" value="{{obj.jcrq}}" bindchange="handleProxy" data-eventid="{{'21b694de-0'}}" data-comkey="{{$k}}" class="_picker 21b694de"><template title="检查日期" data="{{...$root['0'], ...$root[$kk+'21b694de-2'],$root}}" is="30c48a99"></template></picker><template title="责任部门" show-arrow="false" data="{{...$root['0'], ...$root[$kk+'21b694de-3'],$root}}" is="30c48a99"></template><template title="楼层" show-arrow="false" data="{{...$root['0'], ...$root[$kk+'21b694de-4'],$root}}" is="30c48a99"></template><template title="位置" show-arrow="false" data="{{...$root['0'], ...$root[$kk+'21b694de-5'],$root}}" is="30c48a99"></template></template>
 
 <template name="21b694de-default-21b694de-11"><template wx:key="index" show-extra-icon="true" bindtap="handleProxy" data-eventid="{{'21b694de-1-'+index}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'21b694de-10-'+index],$root}}" is="30c48a99" wx:for="{{obj.sublist}}" wx:for-index="index" wx:for-item="item"></template></template>
+
+<template name="10bbdf1a-default-10bbdf1a-4"><view style="padding:30rpx;" class="_view 10bbdf1a"><view class="_view 10bbdf1a uni-title">抽屉式导航</view></view></template>
 
 <template name="7be27b0c-default-7be27b0c-6"><template title="点位编号" show-arrow="false" show-badge="true" data="{{...$root['0'], ...$root[$kk+'7be27b0c-0'],$root}}" is="30c48a99"></template><template title="检查人" show-arrow="false" data="{{...$root['0'], ...$root[$kk+'7be27b0c-1'],$root}}" is="30c48a99"></template><picker mode="date" value="{{obj.jcrq}}" bindchange="handleProxy" data-eventid="{{'7be27b0c-0'}}" data-comkey="{{$k}}" class="_picker 7be27b0c"><template title="检查日期" data="{{...$root['0'], ...$root[$kk+'7be27b0c-2'],$root}}" is="30c48a99"></template></picker><template title="责任部门" show-arrow="false" data="{{...$root['0'], ...$root[$kk+'7be27b0c-3'],$root}}" is="30c48a99"></template><template title="楼层" show-arrow="false" data="{{...$root['0'], ...$root[$kk+'7be27b0c-4'],$root}}" is="30c48a99"></template><template title="位置" show-arrow="false" data="{{...$root['0'], ...$root[$kk+'7be27b0c-5'],$root}}" is="30c48a99"></template></template>
 

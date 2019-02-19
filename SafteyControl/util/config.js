@@ -15,7 +15,7 @@ var config = {
   scan: `${host}/mobile/dwsm.do`,
   
   // 扫码新增检查
-  createCheckPoint: `${host}/mobile/updateJcjl.do`,
+  UpdatePoint: `${host}/mobile/updateJcjl.do`,
   
   // 获取Tab页上的数量
   getTabCounts: `${host}/mobile/getTabCount.do`,

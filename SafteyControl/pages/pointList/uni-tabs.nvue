@@ -21,17 +21,17 @@
 		<div class="mask" v-bind:style="{height:screenHeight / screenWidth*750, width: rightViewOpen ? 750 : 0}" ref="mask" @touchstart="maskViewClick"></div>
 		<div class="rightView" v-bind:style="{height:screenHeight / screenWidth*750}" ref="rightView">
 			<text class="tipText">楼层</text>
-			<input ref="floor" type="text" placeholder="请输入楼层" class="input" :autofocus="true" :value="searchLC" @change="onchange" @input="oninput"/>
+			<input ref="floor" type="text" placeholder="请输入楼层" class="input" :value="newsitems[tabIndex] == null ? '':newsitems[tabIndex].searchLC" @change="onchange" @input="oninput"/>
 			<text class="tipText">部门</text>
-			<input ref="depart" type="text" placeholder="请输入部门" class="input" :autofocus="true" :value="searchBM" @change="onchange" @input="oninput"/>
+			<input ref="depart" type="text" placeholder="请输入部门" class="input" :value="newsitems[tabIndex] == null ? '':newsitems[tabIndex].searchBM" @change="onchange" @input="oninput"/>
 			<text class="tipText">位置</text>
-			<input ref="position" type="text" placeholder="请输入位置" class="input" :autofocus="true" :value="searchWZ" @change="onchange" @input="oninput"/>
+			<input ref="position" type="text" placeholder="请输入位置" class="input" :value="newsitems[tabIndex] == null ? '':newsitems[tabIndex].searchWZ" @change="onchange" @input="oninput"/>
 			
 			<div class="fliterButtonView">
-				<div class="resetButton" @click="resetClick">
+				<div class="resetButton" @click="resetClick(tabIndex)">
 					<text class="resetText">重置</text>
 				</div>
-				<div class="searchButton" @click="submitClick">
+				<div class="searchButton" @click="submitClick(tabIndex)">
 					<text class="submitText">确定</text>
 				</div>
 			</div>
@@ -78,9 +78,6 @@
                     name: '未检查',
                     id: '/mobile/wjclb.do'
                 }],
-				searchLC: '1',
-				searchBM: '2',
-				searchWZ: '3',
 				rightViewOpen: false,
 				screenWidth: 0,
 				screenHeight: 0,
@@ -95,8 +92,8 @@
 					that.lx = res.data;
 					uni.getStorage({
 						key: res.data,
-						success: function (res) {
-							that.tabBars.push(JSON.parse(res.data));
+						success: function (result) {
+							that.tabBars.push(JSON.parse(result.data));
 						},
 						complete() {
 							that.getTabCounts();
@@ -117,7 +114,6 @@
 				// 获取窗口高度
 				uni.getSystemInfo({
 					success(res) {
-						// console.log('' + JSON.stringify(res.screenHeight));
 						that.screenWidth = res.screenWidth;
 						that.screenHeight = res.screenHeight;
 					}
@@ -125,26 +121,27 @@
 			    that.newsitems = that.randomfn();
 				that.onrefresh(that.tabIndex);
 			}, 50)
-			
 			uni.onNavigationBarButtonTap((e) => {
 				if (that.rightViewOpen == true) {
-					this.move('close');
+					that.move('close');
 				}else {
-					this.move('open');
+					that.move('open');
 				}
 			})
         },
         methods: {
 			// 搜索提交
-			submitClick() {
+			submitClick(index) {
 				console.log('搜索');
+				this.newsitems[index].pageNum = 0;
+				this.getListData(index, true);
 			},
 			// 搜索重置
-			resetClick() {
+			resetClick(index) {
 				console.log('重置');
-				this.searchLC = "";
-				this.searchBM = "";
-				this.searchWZ = "";
+				this.newsitems[index].searchLC = "";
+				this.newsitems[index].searchBM = "";
+				this.newsitems[index].searchWZ = "";
 			},
 			// type: open/close，开或关
 			move (type = 'open') {
@@ -170,18 +167,15 @@
 			},
 			// 筛选输入完成
 			onchange(e) {
-				// console.log('' + JSON.stringify(e));
-// 				console.log('ref' + JSON.stringify(e.currentTarget.ref));
-// 				console.log('rightRef' + JSON.stringify(this.$refs.rightView.ref));
 				if (e.target.ref == this.$refs.floor.ref) {
-					this.searchLC = e.value;
-					console.log('searchLC' + this.searchLC);
+					this.newsitems[this.tabIndex].searchLC = e.value;
+					console.log('searchLC' + this.newsitems[this.tabIndex].searchLC);
 				}else if (e.target.ref == this.$refs.depart.ref) {
-					this.searchBM = e.value;
-					console.log('searchBM' + this.searchBM);
+					this.newsitems[this.tabIndex].searchBM = e.value;
+					console.log('searchBM' + this.newsitems[this.tabIndex].searchBM);
 				}else if (e.target.ref == this.$refs.position.ref) {
-					this.searchWZ = e.value;
-					console.log('searchWZ' + this.searchWZ);
+					this.newsitems[this.tabIndex].searchWZ = e.value;
+					console.log('searchWZ' + this.newsitems[this.tabIndex].searchWZ);
 				}
 			},
 			// 筛选正在输入
@@ -204,7 +198,8 @@
 				request.requestLoading(config.getPointDetail, params, "正在加载详情", function(res){
 					console.log('' + JSON.stringify(res));
 					uni.navigateTo({
-						url: '../pointDetail/pointDetail?obj=' + JSON.stringify(res)
+						// url: '../pointDetail/pointDetail?obj=' + JSON.stringify(res)
+						url: '../pointAdd/pointAdd?obj=' + JSON.stringify(res)
 					});
 				}, function(){
 					uni.showToast({
@@ -225,14 +220,14 @@
                     }
                 })
             },
-            loadMore(e) {
+            loadMore(index) {
                 setTimeout(() => {
-                    this.addData(e);
+                    this.addData(index);
                 }, 50);
             },
-            addData(e) {
+            addData(index) {
 				var that = this
-				that.getListData(e, false);
+				that.getListData(index, false);
             },
             async changeTab(e) {
                 this.tabIndex = e.index;
@@ -253,7 +248,11 @@
 			        let aryItem = {
 			            loadingText: "加载更多...",
 			            data: [],
-						pageNum: 1
+						pageNum: 0,
+						searchLC: '',
+						searchBM: '',
+						searchWZ: '',
+						
 			        };
 					ary.push(aryItem);
 			    }
@@ -281,7 +280,7 @@
 					this.newsitems[index].data.push(obj);
 				}
 				if (!isRefresh) {// 上拉加载更多结束后改回加载更多，增加体验
-					that.newsitems[e].loadingText = '加载更多...';
+					this.newsitems[index].loadingText = '加载更多...';
 				}
 				if (this.newsitems[index].data.length <= 0) {
 					uni.showToast({
@@ -290,19 +289,27 @@
 					});
 				}
 			},
-            onrefresh(e) {
+            onrefresh(index) {
 				var that = this
-				that.newsitems[e].pageNum = 1;
+				that.newsitems[index].pageNum = 0;
 				
                 that.refreshText = "正在刷新...";
                 that.refreshing = true;
 				
-				that.getListData(e, true);
+				that.newsitems[index].searchLC = "";
+				that.newsitems[index].searchBM = "";
+				that.newsitems[index].searchWZ = "";
+								
+				that.getListData(index, true);
             },
 			// 请求Tab页数量
 			getTabCounts(){
 				var that = this;
-				request.requestLoading(config.getTabCounts, {"lx": that.lx, "userid": that.userid}, '正在加载', 
+				let param = {
+					lx: that.lx == '所有记录' ? '' : that.lx,
+					userid: that.userid
+				}
+				request.requestLoading(config.getTabCounts, param, '正在加载', 
 					function(res){
 						console.log('Tab页数量：' + JSON.stringify(res));
 						for (var i=0; i<that.tabBars.length; i++) {
@@ -327,30 +334,35 @@
 							title: '请求失败'
 						});
 					}, function(){
-						
 					}
 				);
 			},
 			// 请求列表数据
-			getListData(e, isRefresh){
+			getListData(index, isRefresh){
 				var that = this;
-				var url = config.host + that.tabBars[e].id;	// 拼接接口
+				var url = config.host + that.tabBars[index].id;	// 拼接接口
 				const data = {
-				    pageNum: that.newsitems[e].pageNum,
+				    pageNum: that.newsitems[index].pageNum,
 				    pageRows: that.pageRows,
 					lx: that.lx == '所有记录' ? '' : that.lx,
 					userid: that.userid,
+					search_lc: that.newsitems[index].searchLC,
+					search_bm: that.newsitems[index].searchBM,
+					search_wz: that.newsitems[index].searchWZ
 				};
 				if (!isRefresh) {// 上拉加载更多，改变文字，增加体验
-					that.newsitems[e].loadingText = '正在加载...';
+					that.newsitems[index].loadingText = '正在加载...';
 				}
 				
 				request.requestLoading(url, data, '正在加载', 
 					function(res){
-						that.refreshing = false
+						that.refreshing = false;
 						
-						that.newsitems[e].pageNum++;
-						that.formatData(res.list, e, isRefresh);
+						that.rightViewOpen = false;
+						that.move('close');
+						
+						that.newsitems[index].pageNum++;
+						that.formatData(res.list, index, isRefresh);
 					},function(){
 						that.refreshing = false
 						

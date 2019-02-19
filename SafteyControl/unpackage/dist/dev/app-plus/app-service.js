@@ -10,12 +10,12 @@ var requirePlugin = requirePlugin || function() {};
 var Behavior = Behavior || function() {};
 var $gwx;
   
-/*v0.5vv_20180810_syb_zp*/global.__wcc_version__='v0.5vv_20180810_syb_zp';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
+/*v0.5vv_20181116_syb_scopedata*/global.__wcc_version__='v0.5vv_20181116_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
 var $gwxc
 var $gaic={}
 $gwx=function(path,global){
-if(typeof global === 'undefined') global={};
-if(typeof __WXML_GLOBAL__ === 'undefined') __WXML_GLOBAL__={};
+if(typeof global === 'undefined') global={};if(typeof __WXML_GLOBAL__ === 'undefined') {__WXML_GLOBAL__={};
+}__WXML_GLOBAL__.modules = __WXML_GLOBAL__.modules || {};
 function _(a,b){if(typeof(b)!='undefined')a.children.push(b);}
 function _v(k){if(typeof(k)!='undefined')return {tag:'virtual','wxKey':k,children:[]};return {tag:'virtual',children:[]};}
 function _n(tag){$gwxc++;if($gwxc>=16000){throw 'Dom limit exceeded, please check if there\'s any mistake you\'ve made.'};return {tag:'wx-'+tag,attr:{},children:[],n:[],raw:{},generics:{}}}
@@ -421,8 +421,11 @@ e.stack = e.stack.substring(0,e.stack.indexOf("\n", e.stack.lastIndexOf("at nv_"
 e.stack = e.stack.replace(/\snv_/g," "); 
 e.stack = $gstack(e.stack);	
 if(g.debugInfo)
+{
 e.stack += "\n "+" "+" "+" at "+g.debugInfo[0]+":"+g.debugInfo[1]+":"+g.debugInfo[2];
-throw e;
+console.error(e);
+}
+_r = undefined;
 }
 return should_pass_type_info && (_tb || _ta) ? wh.nh( _r, 'f' ) : _r;
 }
@@ -1022,12 +1025,31 @@ function _gd(p,c,e,d){if(!c)return;if(d[p][c])return d[p][c];for(var x=e[p].i.le
 function _gapi(e,p){if(!p)return [];if($gaic[p]){return $gaic[p]};var ret=[],q=[],h=0,t=0,put={},visited={};q.push(p);visited[p]=true;t++;while(h<t){var a=q[h++];for(var i=0;i<e[a].ic.length;i++){var nd=e[a].ic[i];var np=_grp(nd,e,a);if(np&&!visited[np]){visited[np]=true;q.push(np);t++;}}for(var i=0;a!=p&&i<e[a].ti.length;i++){var ni=e[a].ti[i];var nm=_grp(ni,e,a);if(nm&&!put[nm]){put[nm]=true;ret.push(nm);}}}$gaic[p]=ret;return ret;}
 var $ixc={};function _ic(p,ent,me,e,s,r,gg){var x=_grp(p,ent,me);ent[me].j.push(x);if(x){if($ixc[x]){_wp('-1:include:-1:-1: `'+p+'` is being included in a loop, will be stop.');return;}$ixc[x]=true;try{ent[x].f(e,s,r,gg)}catch(e){}$ixc[x]=false;}else{_wp(me+':include:-1:-1: Included path `'+p+'` not found from `'+me+'`.')}}
 function _w(tn,f,line,c){_wp(f+':template:'+line+':'+c+': Template `'+tn+'` not found.');}function _ev(dom){var changed=false;delete dom.properities;delete dom.n;if(dom.children){do{changed=false;var newch = [];for(var i=0;i<dom.children.length;i++){var ch=dom.children[i];if( ch.tag=='virtual'){changed=true;for(var j=0;ch.children&&j<ch.children.length;j++){newch.push(ch.children[j]);}}else { newch.push(ch); } } dom.children = newch; }while(changed);for(var i=0;i<dom.children.length;i++){_ev(dom.children[i]);}} return dom; }
+function _tsd( root )
+{
+if( root.tag == "wx-wx-scope" ) 
+{
+root.tag = "virtual";
+root.wxCkey = "11";
+root['wxScopeData'] = root.attr['wx:scope-data'];
+delete root.n;
+delete root.raw;
+delete root.generics;
+delete root.attr;
+}
+for( var i = 0 ; root.children && i < root.children.length ; i++ )
+{
+_tsd( root.children[i] );
+}
+return root;
+}
+
 var e_={}
 if(typeof(global.entrys)==='undefined')global.entrys={};e_=global.entrys;
 var d_={}
 if(typeof(global.defines)==='undefined')global.defines={};d_=global.defines;
 var f_={}
-if(typeof(global.modules)==='undefined')global.modules={};f_=global.modules;
+if(typeof(global.modules)==='undefined')global.modules={};f_=global.modules || {};
 var p_={}
 var cs
 __WXML_GLOBAL__.ops_cached = __WXML_GLOBAL__.ops_cached || {}
@@ -1039,6 +1061,7 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'10bbdf1a-default-10bbdf1a-4'])
+Z([3,'58792338-default-58792338-10'])
 Z([3,'21b694de-default-21b694de-6'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'30c48a99'])
@@ -1046,8 +1069,8 @@ Z([3,'false'])
 Z([3,'true'])
 Z([3,'点位编号'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
 Z(z[4])
+Z(z[5])
 Z([3,'检查人'])
 Z([3,'handleProxy'])
 Z([3,'_picker 21b694de'])
@@ -1056,92 +1079,91 @@ Z([1,'21b694de-0'])
 Z([3,'date'])
 Z([[6],[[7],[3,'obj']],[3,'jcrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[4])
 Z([3,'检查日期'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
 Z(z[4])
+Z(z[5])
 Z([3,'责任部门'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
 Z(z[4])
+Z(z[5])
 Z([3,'楼层'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
 Z(z[4])
+Z(z[5])
 Z([3,'位置'])
 Z([3,'21b694de-default-21b694de-11'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[6],[[7],[3,'obj']],[3,'sublist']])
-Z(z[33])
-Z(z[11])
+Z(z[34])
+Z(z[12])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[14])
 Z([[2,'+'],[1,'21b694de-1-'],[[7],[3,'index']]])
-Z(z[3])
-Z(z[5])
-Z([3,'58792338-default-58792338-10'])
+Z(z[4])
+Z(z[6])
 Z([3,'7be27b0c-default-7be27b0c-6'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
 Z(z[4])
 Z(z[5])
 Z(z[6])
+Z(z[7])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
 Z(z[4])
-Z(z[10])
+Z(z[5])
 Z(z[11])
+Z(z[12])
 Z([3,'_picker 7be27b0c'])
-Z(z[13])
+Z(z[14])
 Z([1,'7be27b0c-0'])
-Z(z[15])
 Z(z[16])
+Z(z[17])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z(z[19])
+Z(z[4])
+Z(z[20])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
 Z(z[4])
-Z(z[23])
+Z(z[5])
+Z(z[24])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
 Z(z[4])
-Z(z[27])
+Z(z[5])
+Z(z[28])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
 Z(z[4])
-Z(z[31])
+Z(z[5])
+Z(z[32])
 Z([3,'7be27b0c-default-7be27b0c-11'])
-Z(z[33])
 Z(z[34])
 Z(z[35])
-Z(z[33])
-Z(z[11])
+Z(z[36])
+Z(z[34])
+Z(z[12])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[14])
 Z([[2,'+'],[1,'7be27b0c-1-'],[[7],[3,'index']]])
-Z(z[3])
-Z(z[5])
+Z(z[4])
+Z(z[6])
 Z([3,'47b16668-default-47b16668-3'])
-Z(z[11])
+Z(z[12])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'47b16668-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[14])
 Z([1,'47b16668-0'])
-Z(z[3])
+Z(z[4])
 Z([3,'报警设备类型统计'])
-Z(z[11])
+Z(z[12])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'47b16668-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[14])
 Z([1,'47b16668-1'])
-Z(z[3])
+Z(z[4])
 Z([3,'报警事件类型统计'])
-Z(z[11])
+Z(z[12])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'47b16668-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[14])
 Z([1,'47b16668-2'])
-Z(z[3])
+Z(z[4])
 Z([3,'阀组压力统计'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
@@ -1454,6 +1476,9 @@ Z(z[8])
 Z([3,'clear'])
 Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-11']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'7be27b0c-default-7be27b0c-11']]])
 Z(z[3])
+Z([3,'_view 7be27b0c btnView'])
+Z([[7],[3,'showSave']])
+Z([[7],[3,'showClose']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_28);return __WXML_GLOBAL__.ops_cached.$gwx_28
 }
 function gz$gwx_29(){
@@ -1657,12 +1682,27 @@ Z([3,'240234ba'])
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
-var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);throw e;}
+var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
 var x=['./common/slots.wxml','/components/drawer/uni-drawer.vue.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/m-input.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','/components/m-icon/m-icon.vue.wxml','/common/slots.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/drawer/uni-drawer.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/login/diyHost.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pointList/pointList.vue.wxml','./pages/pointList/pointList.wxml','./pointList.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
 d_[x[0]]["10bbdf1a-default-10bbdf1a-4"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':10bbdf1a-default-10bbdf1a-4'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["58792338-default-58792338-10"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':58792338-default-58792338-10'
 r.wxVkey=b
 gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
@@ -1685,91 +1725,91 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:13:47")
-var xC=_oz(z,3,e,s,gg)
+cs.push("./common/slots.wxml:template:15:47")
+var xC=_oz(z,4,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,2,e,s,gg) || {}
+var fE=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],13,176)
+else _w(xC,x[0],15,176)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:13:199")
-var hG=_oz(z,8,e,s,gg)
+cs.push("./common/slots.wxml:template:15:199")
+var hG=_oz(z,9,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,7,e,s,gg) || {}
+var cI=_1z(z,8,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],13,307)
+else _w(hG,x[0],15,307)
 cs.pop()
-cs.push("./common/slots.wxml:picker:13:330")
-var oJ=_mz(z,'picker',['bindchange',11,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:15:330")
+var oJ=_mz(z,'picker',['bindchange',12,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:13:474")
-var aL=_oz(z,18,e,s,gg)
+cs.push("./common/slots.wxml:template:15:474")
+var aL=_oz(z,19,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
-var eN=_1z(z,17,e,s,gg) || {}
+var eN=_1z(z,18,e,s,gg) || {}
 var cur_globalf=gg.f
 lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],13,566)
+else _w(aL,x[0],15,566)
 cs.pop()
 cs.pop()
 _(r,oJ)
 var bO=_v()
 _(r,bO)
-cs.push("./common/slots.wxml:template:13:598")
-var oP=_oz(z,21,e,s,gg)
+cs.push("./common/slots.wxml:template:15:598")
+var oP=_oz(z,22,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,20,e,s,gg) || {}
+var oR=_1z(z,21,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],13,709)
+else _w(oP,x[0],15,709)
 cs.pop()
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:13:732")
-var cT=_oz(z,25,e,s,gg)
+cs.push("./common/slots.wxml:template:15:732")
+var cT=_oz(z,26,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
-var oV=_1z(z,24,e,s,gg) || {}
+var oV=_1z(z,25,e,s,gg) || {}
 var cur_globalf=gg.f
 fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],13,837)
+else _w(cT,x[0],15,837)
 cs.pop()
 var cW=_v()
 _(r,cW)
-cs.push("./common/slots.wxml:template:13:860")
-var oX=_oz(z,29,e,s,gg)
+cs.push("./common/slots.wxml:template:15:860")
+var oX=_oz(z,30,e,s,gg)
 var lY=_gd(x[0],oX,e_,d_)
 if(lY){
-var aZ=_1z(z,28,e,s,gg) || {}
+var aZ=_1z(z,29,e,s,gg) || {}
 var cur_globalf=gg.f
 cW.wxXCkey=3
 lY(aZ,aZ,cW,gg)
 gg.f=cur_globalf
 }
-else _w(oX,x[0],13,965)
+else _w(oX,x[0],15,965)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -1788,42 +1828,27 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:15:48")
+cs.push("./common/slots.wxml:template:17:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:15:48")
-var cI=_oz(z,41,fE,oD,gg)
+cs.push("./common/slots.wxml:template:17:48")
+var cI=_oz(z,42,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,38,fE,oD,gg) || {}
+var lK=_1z(z,39,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],15,247)
+else _w(cI,x[0],17,247)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,35,xC,e,s,gg,oB,'item','index','index')
+_2z(z,36,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["58792338-default-58792338-10"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':58792338-default-58792338-10'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
 }catch(err){
 p_[b]=false
 throw err
@@ -3082,6 +3107,25 @@ gg.f=cur_globalf
 }
 else _w(hU,x[45],1,1391)
 cs.pop()
+cs.push("./pages/pointAdd/pointAdd.vue.wxml:view:1:1421")
+var oX=_n('view')
+_rz(z,oX,'class',22,e,s,gg)
+var lY=_v()
+_(oX,lY)
+if(_oz(z,23,e,s,gg)){lY.wxVkey=1
+cs.push("./pages/pointAdd/pointAdd.vue.wxml:button:1:1458")
+cs.pop()
+}
+var aZ=_v()
+_(oX,aZ)
+if(_oz(z,24,e,s,gg)){aZ.wxVkey=1
+cs.push("./pages/pointAdd/pointAdd.vue.wxml:button:1:1610")
+cs.pop()
+}
+lY.wxXCkey=1
+aZ.wxXCkey=1
+cs.pop()
+_(oB,oX)
 cs.pop()
 _(r,oB)
 }catch(err){
@@ -3707,6 +3751,7 @@ cs=[]
 if (typeof global==="undefined")global={};global.f=$gdc(f_[path],"",1);
 try{
 main(env,{},root,global);
+_tsd(root)
 }catch(err){
 console.log(cs, env);
 console.log(err)
@@ -4338,7 +4383,7 @@ eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  */\nvar host = \"http://222.223.19.166:10012/boeb9\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: \"\".concat(host, \"/mobile/system/login.do\"),\n\n  // 点位检查扫码接口\n  scan: \"\".concat(host, \"/mobile/dwsm.do\"),\n\n  // 扫码新增检查\n  createCheckPoint: \"\".concat(host, \"/mobile/updateJcjl.do\"),\n\n  // 获取Tab页上的数量\n  getTabCounts: \"\".concat(host, \"/mobile/getTabCount.do\"),\n\n  // 获取检查详情\n  getPointDetail: \"\".concat(host, \"/mobile/getJcjl.do\"),\n\n  // 首页统计\n  getMainPageCount: \"\".concat(host, \"/mobile/getSytj.do\") };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?a0b7");
+eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  */\nvar host = \"http://222.223.19.166:10012/boeb9\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: \"\".concat(host, \"/mobile/system/login.do\"),\n\n  // 点位检查扫码接口\n  scan: \"\".concat(host, \"/mobile/dwsm.do\"),\n\n  // 扫码新增检查\n  UpdatePoint: \"\".concat(host, \"/mobile/updateJcjl.do\"),\n\n  // 获取Tab页上的数量\n  getTabCounts: \"\".concat(host, \"/mobile/getTabCount.do\"),\n\n  // 获取检查详情\n  getPointDetail: \"\".concat(host, \"/mobile/getJcjl.do\"),\n\n  // 首页统计\n  getMainPageCount: \"\".concat(host, \"/mobile/getSytj.do\") };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?a0b7");
 
 /***/ }),
 
@@ -4350,7 +4395,7 @@ eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  */\nvar host 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0; // 展示进度条的网络请求\n// url:网络请求的url\n// params:请求参数\n// message:进度条的提示信息\n// success:成功的回调函数\n// fail：失败的回调\nvar requestLoading = function requestLoading(url, params, message, _success, _fail, _complete) {\n  // console.log(params)\n  // \twx.showNavigationBarLoading()\n  if (message != \"\") {\n    uni.showLoading({\n      title: message });\n\n  }\n  console.log('request.js :' + url);\n  uni.request({\n    url: url,\n    data: params,\n    header: {\n      // 'Content-Type': 'application/json'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'POST',\n    success: function success(res) {\n      // \t\t\t\t\twx.hideNavigationBarLoading()\n      if (message != \"\") {\n        uni.hideLoading();\n      }\n\n      // console.log('' + JSON.stringify(res));\n      if (res.data.success == 'true') {\n        _success(res.data);\n      } else {\n        _fail();\n      }\n    },\n    fail: function fail(res) {\n      // console.log('' + JSON.stringify(res))\n      if (message != \"\") {\n        uni.hideLoading();\n      }\n      _fail();\n    },\n    complete: function complete() {\n      if (message != \"\") {\n        uni.hideLoading();\n      }\n      _complete();\n    } });\n\n};\nvar request = function request(url, message, _success2, _fail2) {\n  //   wx.showNavigationBarLoading()\n  //   if (message != \"\") {\n  //     wx.showLoading({\n  //       title: message,\n  //     })\n  //   }\n  uni.request({\n    url: url,\n    header: {\n      // 'Content-Type': 'application/json'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'GET',\n    success: function success(res) {\n      // \t\t\t\t\twx.hideNavigationBarLoading()\n      // \t\t\t\t\tif (message != \"\") {\n      // \t\t\t\t\t  wx.hideLoading()\n      // \t\t\t\t\t}\n      if (res.success == 'true') {\n        _success2(res.data);\n      } else {\n        _fail2();\n      }\n    },\n    fail: function fail(res) {\n      _fail2();\n    } });\n\n};var _default =\n{\n  request: request,\n  requestLoading: requestLoading };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///util/request.js?e22c");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0; // 展示进度条的网络请求\n// url:网络请求的url\n// params:请求参数\n// message:进度条的提示信息\n// success:成功的回调函数\n// fail：失败的回调\nvar requestLoading = function requestLoading(url, params, message, _success, _fail, _complete) {\n  // \twx.showNavigationBarLoading()\n  if (message != \"\") {\n    uni.showLoading({\n      title: message });\n\n  }\n  console.log('request.js :' + url);\n  uni.request({\n    url: url,\n    data: params,\n    header: {\n      // 'Content-Type': 'application/json'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'POST',\n    success: function success(res) {\n      // \t\t\t\t\twx.hideNavigationBarLoading()\n      if (message != \"\") {\n        uni.hideLoading();\n      }\n\n      // console.log('' + JSON.stringify(res));\n      if (res.data.success == 'true') {\n        _success(res.data);\n      } else {\n        _fail();\n      }\n    },\n    fail: function fail(res) {\n      // console.log('' + JSON.stringify(res))\n      if (message != \"\") {\n        uni.hideLoading();\n      }\n      _fail();\n    },\n    complete: function complete() {\n      if (message != \"\") {\n        uni.hideLoading();\n      }\n      _complete();\n    } });\n\n};\nvar request = function request(url, message, _success2, _fail2) {\n  //   wx.showNavigationBarLoading()\n  //   if (message != \"\") {\n  //     wx.showLoading({\n  //       title: message,\n  //     })\n  //   }\n  uni.request({\n    url: url,\n    header: {\n      // 'Content-Type': 'application/json'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'GET',\n    success: function success(res) {\n      // \t\t\t\t\twx.hideNavigationBarLoading()\n      // \t\t\t\t\tif (message != \"\") {\n      // \t\t\t\t\t  wx.hideLoading()\n      // \t\t\t\t\t}\n      if (res.success == 'true') {\n        _success2(res.data);\n      } else {\n        _fail2();\n      }\n    },\n    fail: function fail(res) {\n      _fail2();\n    } });\n\n};var _default =\n{\n  request: request,\n  requestLoading: requestLoading };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///util/request.js?e22c");
 
 /***/ }),
 
@@ -5405,7 +5450,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniDrawer = _interopRequireDefault(__webpack_require__(/*! @/components/drawer/uni-drawer.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/drawer/uni-drawer.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n{\n  components: { uniDrawer: _uniDrawer.default },\n  data: function data() {\n    return {\n      showDrawer: false };\n\n  },\n  onLoad: function onLoad() {\n    var hydrantTab = {\n      name: '当月未检查',\n      id: '/mobile/xhsdywjclb.do' };\n\n    this.saveTabInfo('消火栓', hydrantTab);\n\n    var valveTab = {\n      name: '本周未检查',\n      id: '/mobile/fzzwjclb.do' };\n\n    this.saveTabInfo('阀组', valveTab);\n\n    var waterTab = {\n      name: '当天未检查',\n      id: '/mobile/jtwjclb.do' };\n\n    this.saveTabInfo('高位水箱', waterTab);\n    this.saveTabInfo('消防泵', waterTab);\n\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n    var that = this;\n    if (that.showDrawer == true) {\n      that.showDrawer = false;\n    } else {\n      that.showDrawer = true;\n    }\n  },\n  methods: {\n    jumpListPage: function jumpListPage(lx) {\n      this.saveTabInfo('currentLx', lx); // 保存当前类型名称\n      // \t\t\t\tuni.navigateTo({\n      // \t\t\t\t\turl: '../pointList/pointList?lx=' + lx,\n      // \t\t\t\t});\n      uni.navigateTo({\n        url: '../pointList/uni-tabs' });\n\n    },\n    saveTabInfo: function saveTabInfo(key, data) {\n      uni.setStorage({\n        key: key,\n        data: data,\n        success: function success() {\n          console.log('success');\n        } });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointCheck/pointCheck.vue?vue&type=script&lang=js&?f61e");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniDrawer = _interopRequireDefault(__webpack_require__(/*! @/components/drawer/uni-drawer.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/drawer/uni-drawer.vue\"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n{\n  components: { uniDrawer: _uniDrawer.default },\n  data: function data() {\n    return {\n      showDrawer: false };\n\n  },\n  onLoad: function onLoad() {\n    var hydrantTab = {\n      name: '当月未检查',\n      id: '/mobile/xhsdywjclb.do' };\n\n    this.saveTabInfo('消火栓', hydrantTab);\n\n    var valveTab = {\n      name: '本周未检查',\n      id: '/mobile/fzzwjclb.do' };\n\n    this.saveTabInfo('阀组', valveTab);\n\n    var waterTab = {\n      name: '当天未检查',\n      id: '/mobile/jtwjclb.do' };\n\n    this.saveTabInfo('高位水箱', waterTab);\n    this.saveTabInfo('消防泵', waterTab);\n\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n    var that = this;\n    if (that.showDrawer == true) {\n      that.showDrawer = false;\n    } else {\n      that.showDrawer = true;\n    }\n  },\n  methods: {\n    jumpListPage: function jumpListPage(lx) {\n      this.saveTabInfo('currentLx', lx); // 保存当前类型名称\n      // \t\t\t\tuni.navigateTo({\n      // \t\t\t\t\turl: '../pointList/pointList?lx=' + lx,\n      // \t\t\t\t});\n      uni.navigateTo({\n        url: '../pointList/uni-tabs' });\n\n    },\n    saveTabInfo: function saveTabInfo(key, data) {\n      uni.setStorage({\n        key: key,\n        data: data,\n        success: function success() {\n          console.log('保存成功');\n        } });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointCheck/pointCheck.vue?vue&type=script&lang=js&?f61e");
 
 /***/ }),
 
@@ -5611,7 +5656,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['sublistItem', 'sublistIndex', 'userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      // 当页面OnShow的时候是否需要从state里去拿Item对象 - 用于页面反传参数\n      needGetItemOnShow: false,\n\n      obj: '',\n      normal: { // 正常图标\n        color: '#24BE41',\n        size: '22',\n        type: 'checkbox-filled' },\n\n      undetected: { // 未检图标\n        color: '#FFDE52',\n        size: '22',\n        type: 'info-filled' },\n\n      abnormal: { // 异常图标\n        color: '#C11E1E',\n        size: '22',\n        type: 'clear' } };\n\n\n  },\n  onLoad: function onLoad(option) {\n    this.obj = JSON.parse(option.obj);\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n    var that = this;\n    uni.showModal({\n      title: '提示',\n      content: '确认要设置所有的检查点都正常吗？',\n      success: function success(res) {\n        if (res.confirm) {\n          // console.log('用户点击确定');\n          for (var i = 0; i < that.obj.sublist.length; i++) {\n            var item = that.obj.sublist[i];\n            item[\"jcjl\"] = \"正常\";\n            item[\"jcwtms\"] = \"\";\n            item[\"zgfs\"] = \"\";\n          }\n        } else if (res.cancel) {\n          // console.log('用户点击取消');\n        }\n      } });\n\n  },\n  onShow: function onShow() {\n    if (this.needGetItemOnShow == true && this.sublistIndex != null && this.sublistItem != null) {\n      console.log('' + JSON.stringify(this.sublistItem));\n      this.obj.sublist[this.sublistIndex] = this.sublistItem;\n    }\n    this.needGetItemOnShow = false;\n  },\n  methods: {\n    bindDateChange: function bindDateChange(e) {\n      this.obj.jcrq = e.target.value;\n    },\n    jumpEdit: function jumpEdit(item, index) {\n      // \t\t\t\tthis.needGetItemOnShow = true;\n      // \t\t\t\tuni.navigateTo({\n      // \t\t\t\t\turl: './pointCheckInfo?item=' + JSON.stringify(item) + '&index=' + index\n      // \t\t\t\t});\n    },\n    getIcon: function getIcon(item) {\n      if (item.jcjl == '正常') {\n        return this.normal;\n      } else if (item.jcjl == '异常') {\n        return this.abnormal;\n      } else {\n        return this.undetected;\n      }\n    },\n    submit: function submit() {\n      var that = this;\n      var param = _service.default.copyObj(that.obj);\n      param['userid'] = that.userInfo.userid;\n      param['sublist'] = JSON.stringify(param['sublist']);\n      _request.default.requestLoading(_config.default.createCheckPoint, param, '正在加载',\n      function (res) {\n        uni.showToast({\n          icon: 'none',\n          title: '新建检查成功',\n          duration: 2000,\n          complete: function complete() {\n            uni.navigateBack({\n              delta: 1 });\n\n          } });\n\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '新建检查失败' });\n\n      }, function () {\n\n      });\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointDetail/pointDetail.vue?vue&type=script&lang=js&?e596");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['sublistItem', 'sublistIndex', 'userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      // 当页面OnShow的时候是否需要从state里去拿Item对象 - 用于页面反传参数\n      needGetItemOnShow: false,\n\n      obj: '',\n      normal: { // 正常图标\n        color: '#24BE41',\n        size: '22',\n        type: 'checkbox-filled' },\n\n      undetected: { // 未检图标\n        color: '#FFDE52',\n        size: '22',\n        type: 'info-filled' },\n\n      abnormal: { // 异常图标\n        color: '#C11E1E',\n        size: '22',\n        type: 'clear' } };\n\n\n  },\n  onLoad: function onLoad(option) {\n    this.obj = JSON.parse(option.obj);\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n    var that = this;\n    uni.showModal({\n      title: '提示',\n      content: '确认要设置所有的检查点都正常吗？',\n      success: function success(res) {\n        if (res.confirm) {\n          // console.log('用户点击确定');\n          for (var i = 0; i < that.obj.sublist.length; i++) {\n            var item = that.obj.sublist[i];\n            item[\"jcjl\"] = \"正常\";\n            item[\"jcwtms\"] = \"\";\n            item[\"zgfs\"] = \"\";\n          }\n        } else if (res.cancel) {\n          // console.log('用户点击取消');\n        }\n      } });\n\n  },\n  onShow: function onShow() {\n    if (this.needGetItemOnShow == true && this.sublistIndex != null && this.sublistItem != null) {\n      console.log('' + JSON.stringify(this.sublistItem));\n      this.obj.sublist[this.sublistIndex] = this.sublistItem;\n    }\n    this.needGetItemOnShow = false;\n  },\n  methods: {\n    bindDateChange: function bindDateChange(e) {\n      this.obj.jcrq = e.target.value;\n    },\n    jumpEdit: function jumpEdit(item, index) {\n      // \t\t\t\tthis.needGetItemOnShow = true;\n      // \t\t\t\tuni.navigateTo({\n      // \t\t\t\t\turl: './pointCheckInfo?item=' + JSON.stringify(item) + '&index=' + index\n      // \t\t\t\t});\n    },\n    getIcon: function getIcon(item) {\n      if (item.jcjl == '正常') {\n        return this.normal;\n      } else if (item.jcjl == '异常') {\n        return this.abnormal;\n      } else {\n        return this.undetected;\n      }\n    },\n    submit: function submit() {\n      var that = this;\n      var param = _service.default.copyObj(that.obj);\n      param['userid'] = that.userInfo.userid;\n      param['sublist'] = JSON.stringify(param['sublist']);\n      _request.default.requestLoading(_config.default.UpdatePoint, param, '正在加载',\n      function (res) {\n        uni.showToast({\n          icon: 'none',\n          title: '新建检查成功',\n          duration: 2000,\n          complete: function complete() {\n            uni.navigateBack({\n              delta: 1 });\n\n          } });\n\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '新建检查失败' });\n\n      }, function () {\n\n      });\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointDetail/pointDetail.vue?vue&type=script&lang=js&?e596");
 
 /***/ }),
 
@@ -5634,7 +5679,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _vm._m(0),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"21b694de-6\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"点位编号\",\n                subnote: _vm.obj.dwbh,\n                \"show-arrow\": \"false\",\n                \"show-badge\": \"true\",\n                mpcomid: \"21b694de-0\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"检查人\",\n                subnote: _vm.obj.zrrmc,\n                \"show-arrow\": \"false\",\n                mpcomid: \"21b694de-1\"\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  mode: \"date\",\n                  value: _vm.obj.jcrq,\n                  eventid: \"21b694de-0\"\n                },\n                on: { change: _vm.bindDateChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"检查日期\",\n                    subnote: _vm.obj.jcrq,\n                    mpcomid: \"21b694de-2\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"责任部门\",\n                subnote: _vm.obj.zrbm,\n                \"show-arrow\": \"false\",\n                mpcomid: \"21b694de-3\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"楼层\",\n                subnote: _vm.obj.lc,\n                \"show-arrow\": \"false\",\n                mpcomid: \"21b694de-4\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"位置\",\n                subnote: _vm.obj.wz,\n                \"show-arrow\": \"false\",\n                mpcomid: \"21b694de-5\"\n              }\n            })\n          ],\n          1\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellTitleView\" },\n      [\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"检查信息\")]),\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"正常-\")]),\n        _c(\"uni-icon\", {\n          attrs: {\n            type: \"checkbox-filled\",\n            size: \"22\",\n            color: \"#24BE41\",\n            mpcomid: \"21b694de-7\"\n          }\n        }),\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"未检-\")]),\n        _c(\"uni-icon\", {\n          attrs: {\n            type: \"info-filled\",\n            size: \"22\",\n            color: \"#FFDE52\",\n            mpcomid: \"21b694de-8\"\n          }\n        }),\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"异常-\")]),\n        _c(\"uni-icon\", {\n          attrs: {\n            type: \"clear\",\n            size: \"22\",\n            color: \"#C11E1E\",\n            mpcomid: \"21b694de-9\"\n          }\n        })\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"21b694de-11\" } },\n          _vm._l(_vm.obj.sublist, function(item, index) {\n            return _c(\"uni-list-item\", {\n              key: index,\n              attrs: {\n                title: item.jcbz,\n                \"show-extra-icon\": \"true\",\n                \"extra-icon\": _vm.getIcon(item),\n                eventid: \"21b694de-1-\" + index,\n                mpcomid: \"21b694de-10-\" + index\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpEdit(item, index)\n                }\n              }\n            })\n          })\n        )\n      ],\n      1\n    ),\n    _c(\"view\", { staticClass: \"btn-row\" })\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"基础信息\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=template&id=153e3c35&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _vm._m(0),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"21b694de-6\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"点位编号\",\n                subnote: _vm.obj.dwbh,\n                \"show-arrow\": \"false\",\n                \"show-badge\": \"true\",\n                mpcomid: \"21b694de-0\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"检查人\",\n                subnote: _vm.obj.zrrmc,\n                \"show-arrow\": \"false\",\n                mpcomid: \"21b694de-1\"\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  mode: \"date\",\n                  value: _vm.obj.jcrq,\n                  eventid: \"21b694de-0\"\n                },\n                on: { change: _vm.bindDateChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"检查日期\",\n                    subnote: _vm.obj.jcrq,\n                    mpcomid: \"21b694de-2\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"责任部门\",\n                subnote: _vm.obj.zrbm,\n                \"show-arrow\": \"false\",\n                mpcomid: \"21b694de-3\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"楼层\",\n                subnote: _vm.obj.lc,\n                \"show-arrow\": \"false\",\n                mpcomid: \"21b694de-4\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"位置\",\n                subnote: _vm.obj.wz,\n                \"show-arrow\": \"false\",\n                mpcomid: \"21b694de-5\"\n              }\n            })\n          ],\n          1\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellTitleView\" },\n      [\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"检查信息\")]),\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"正常-\")]),\n        _c(\"uni-icon\", {\n          attrs: {\n            type: \"checkbox-filled\",\n            size: \"22\",\n            color: \"#24BE41\",\n            mpcomid: \"21b694de-7\"\n          }\n        }),\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"未检-\")]),\n        _c(\"uni-icon\", {\n          attrs: {\n            type: \"info-filled\",\n            size: \"22\",\n            color: \"#FFDE52\",\n            mpcomid: \"21b694de-8\"\n          }\n        }),\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"异常-\")]),\n        _c(\"uni-icon\", {\n          attrs: {\n            type: \"clear\",\n            size: \"22\",\n            color: \"#C11E1E\",\n            mpcomid: \"21b694de-9\"\n          }\n        })\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"21b694de-11\" } },\n          _vm._l(_vm.obj.sublist, function(item, index) {\n            return _c(\"uni-list-item\", {\n              key: index,\n              attrs: {\n                title: item.jcbz,\n                note: item.jcwtms,\n                \"show-extra-icon\": \"true\",\n                \"extra-icon\": _vm.getIcon(item),\n                eventid: \"21b694de-1-\" + index,\n                mpcomid: \"21b694de-10-\" + index\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpEdit(item, index)\n                }\n              }\n            })\n          })\n        )\n      ],\n      1\n    ),\n    _c(\"view\", { staticClass: \"btn-row\" })\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"基础信息\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointDetail/pointDetail.vue?vue&type=template&id=153e3c35&");
 
 /***/ })
 
@@ -5714,7 +5759,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['sublistItem', 'sublistIndex', 'userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      // 当页面OnShow的时候是否需要从state里去拿Item对象 - 用于页面反传参数\n      needGetItemOnShow: false,\n\n      obj: '',\n      normal: { // 正常图标\n        color: '#24BE41',\n        size: '22',\n        type: 'checkbox-filled' },\n\n      undetected: { // 未检图标\n        color: '#FFDE52',\n        size: '22',\n        type: 'info-filled' },\n\n      abnormal: { // 异常图标\n        color: '#C11E1E',\n        size: '22',\n        type: 'clear' } };\n\n\n  },\n  onLoad: function onLoad(option) {\n    this.obj = JSON.parse(option.obj);\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n    var that = this;\n    uni.showModal({\n      title: '提示',\n      content: '确认要设置所有的检查点都正常吗？',\n      success: function success(res) {\n        if (res.confirm) {\n          // console.log('用户点击确定');\n          for (var i = 0; i < that.obj.sublist.length; i++) {\n            var item = that.obj.sublist[i];\n            item[\"jcjl\"] = \"正常\";\n            item[\"jcwtms\"] = \"\";\n            item[\"zgfs\"] = \"\";\n          }\n        } else if (res.cancel) {\n          // console.log('用户点击取消');\n        }\n      } });\n\n  },\n  onShow: function onShow() {\n    if (this.needGetItemOnShow == true && this.sublistIndex != null && this.sublistItem != null) {\n      console.log('' + JSON.stringify(this.sublistItem));\n      this.obj.sublist[this.sublistIndex] = this.sublistItem;\n    }\n    this.needGetItemOnShow = false;\n  },\n  methods: {\n    bindDateChange: function bindDateChange(e) {\n      this.obj.jcrq = e.target.value;\n    },\n    jumpEdit: function jumpEdit(item, index) {\n      this.needGetItemOnShow = true;\n      uni.navigateTo({\n        url: './pointCheckInfo?item=' + JSON.stringify(item) + '&index=' + index });\n\n    },\n    getIcon: function getIcon(item) {\n      if (item.jcjl == '正常') {\n        return this.normal;\n      } else if (item.jcjl == '异常') {\n        return this.abnormal;\n      } else {\n        return this.undetected;\n      }\n    },\n    submit: function submit() {\n      var that = this;\n      var param = _service.default.copyObj(that.obj);\n      param['userid'] = that.userInfo.userid;\n      param['sublist'] = JSON.stringify(param['sublist']);\n      _request.default.requestLoading(_config.default.createCheckPoint, param, '正在加载',\n      function (res) {\n        uni.showToast({\n          icon: 'none',\n          title: '新建检查成功',\n          duration: 2000,\n          complete: function complete() {\n            uni.navigateBack({\n              delta: 1 });\n\n          } });\n\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '新建检查失败' });\n\n      }, function () {\n\n      });\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointAdd/pointAdd.vue?vue&type=script&lang=js&?83a9");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n\n{\n  computed: (0, _vuex.mapState)(['sublistItem', 'sublistIndex', 'userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      // 当页面OnShow的时候是否需要从state里去拿Item对象 - 用于页面反传参数\n      needGetItemOnShow: false,\n      // 是否显示关单按钮-扫码后是没id的，所以只能显示一个保存按钮,只有有id并且status=1的情况下，才显示保存和关单按钮\n      showClose: false,\n      showSave: false,\n      // 是否可编辑\n      editable: false,\n\n      obj: '',\n      normal: { // 正常图标\n        color: '#24BE41',\n        size: '22',\n        type: 'checkbox-filled' },\n\n      undetected: { // 未检图标\n        color: '#FFDE52',\n        size: '22',\n        type: 'info-filled' },\n\n      abnormal: { // 异常图标\n        color: '#C11E1E',\n        size: '22',\n        type: 'clear' } };\n\n\n  },\n  onLoad: function onLoad(option) {\n    this.obj = JSON.parse(option.obj);\n    this.checkShowClose();\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n    var that = this;\n    if (that.editable == false) {\n      uni.showToast({\n        icon: 'none',\n        title: '已关单 无法编辑',\n        duration: 1000 });\n\n      return;\n    }\n    uni.showModal({\n      title: '提示',\n      content: '确认要设置所有的检查点都正常吗？',\n      success: function success(res) {\n        if (res.confirm) {\n          // console.log('用户点击确定');\n          for (var i = 0; i < that.obj.sublist.length; i++) {\n            var item = that.obj.sublist[i];\n            item[\"jcjl\"] = \"正常\";\n            item[\"jcwtms\"] = \"\";\n            item[\"zgfs\"] = \"\";\n          }\n        } else if (res.cancel) {\n          // console.log('用户点击取消');\n        }\n      } });\n\n  },\n  onShow: function onShow() {\n    if (this.needGetItemOnShow == true && this.sublistIndex != null && this.sublistItem != null) {\n      console.log('' + JSON.stringify(this.sublistItem));\n      this.obj.sublist[this.sublistIndex] = this.sublistItem;\n    }\n    this.needGetItemOnShow = false;\n  },\n  methods: {\n    bindDateChange: function bindDateChange(e) {\n      this.obj.jcrq = e.target.value;\n    },\n    jumpEdit: function jumpEdit(item, index) {\n      if (this.editable == false) {\n        return;\n      }\n      this.needGetItemOnShow = true;\n      uni.navigateTo({\n        url: './pointCheckInfo?item=' + JSON.stringify(item) + '&index=' + index });\n\n    },\n    getIcon: function getIcon(item) {\n      if (item.jcjl == '正常') {\n        return this.normal;\n      } else if (item.jcjl == '异常') {\n        return this.abnormal;\n      } else {\n        return this.undetected;\n      }\n    },\n    // 保存\n    saveClick: function saveClick() {\n      var that = this;\n      var param = _service.default.copyObj(that.obj);\n      param['userid'] = that.userInfo.userid;\n      param['sublist'] = JSON.stringify(param['sublist']);\n      _request.default.requestLoading(_config.default.UpdatePoint, param, '正在加载',\n      function (res) {\n        uni.showToast({\n          icon: 'none',\n          title: '保存成功',\n          duration: 1000 });\n\n        // that.obj.status = res.status;\n        that.obj.id = res.id;\n        that.checkShowClose();\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '保存失败' });\n\n      }, function () {\n\n      });\n    },\n    // 关单\n    closeClick: function closeClick() {\n      var that = this;\n      var param = _service.default.copyObj(that.obj);\n      param['userid'] = that.userInfo.userid;\n      param['sublist'] = JSON.stringify(param['sublist']);\n      param['status'] = '2';\n      _request.default.requestLoading(_config.default.UpdatePoint, param, '正在加载',\n      function (res) {\n        uni.showToast({\n          icon: 'none',\n          title: '关单成功',\n          duration: 1000 });\n\n        that.obj.status = res.status;\n        that.obj.id = res.id;\n        that.checkShowClose();\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '关单失败' });\n\n      }, function () {\n\n      });\n    },\n    // 判断是否显示关单按钮\n    checkShowClose: function checkShowClose() {\n      if (this.obj.status == '1' && this.obj.id != null && this.obj.id != '') {\n        this.showClose = true;\n      } else {\n        this.showClose = false;\n      }\n\n      // status为2，已关单，不能编辑\n      if (this.obj.status == '2') {\n        this.showSave = false;\n        this.editable = false;\n      } else {\n        this.showSave = true;\n        this.editable = true;\n      }\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointAdd/pointAdd.vue?vue&type=script&lang=js&?83a9");
 
 /***/ }),
 
@@ -5737,7 +5782,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _vm._m(0),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"7be27b0c-6\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"点位编号\",\n                subnote: _vm.obj.dwbh,\n                \"show-arrow\": \"false\",\n                \"show-badge\": \"true\",\n                mpcomid: \"7be27b0c-0\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"检查人\",\n                subnote: _vm.obj.zrrmc,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-1\"\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  mode: \"date\",\n                  value: _vm.obj.jcrq,\n                  eventid: \"7be27b0c-0\"\n                },\n                on: { change: _vm.bindDateChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"检查日期\",\n                    subnote: _vm.obj.jcrq,\n                    mpcomid: \"7be27b0c-2\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"责任部门\",\n                subnote: _vm.obj.zrbm,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-3\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"楼层\",\n                subnote: _vm.obj.lc,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-4\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"位置\",\n                subnote: _vm.obj.wz,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-5\"\n              }\n            })\n          ],\n          1\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellTitleView\" },\n      [\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"检查信息\")]),\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"正常-\")]),\n        _c(\"uni-icon\", {\n          attrs: {\n            type: \"checkbox-filled\",\n            size: \"22\",\n            color: \"#24BE41\",\n            mpcomid: \"7be27b0c-7\"\n          }\n        }),\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"未检-\")]),\n        _c(\"uni-icon\", {\n          attrs: {\n            type: \"info-filled\",\n            size: \"22\",\n            color: \"#FFDE52\",\n            mpcomid: \"7be27b0c-8\"\n          }\n        }),\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"异常-\")]),\n        _c(\"uni-icon\", {\n          attrs: {\n            type: \"clear\",\n            size: \"22\",\n            color: \"#C11E1E\",\n            mpcomid: \"7be27b0c-9\"\n          }\n        })\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"7be27b0c-11\" } },\n          _vm._l(_vm.obj.sublist, function(item, index) {\n            return _c(\"uni-list-item\", {\n              key: index,\n              attrs: {\n                title: item.jcbz,\n                \"show-extra-icon\": \"true\",\n                \"extra-icon\": _vm.getIcon(item),\n                eventid: \"7be27b0c-1-\" + index,\n                mpcomid: \"7be27b0c-10-\" + index\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpEdit(item, index)\n                }\n              }\n            })\n          })\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"btn-row\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"primary\",\n            attrs: { type: \"primary\", eventid: \"7be27b0c-2\" },\n            on: { tap: _vm.submit }\n          },\n          [_vm._v(\"提交\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"基础信息\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointAdd/pointAdd.vue?vue&type=template&id=4fbbb711&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _vm._m(0),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"7be27b0c-6\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"点位编号\",\n                subnote: _vm.obj.dwbh,\n                \"show-arrow\": \"false\",\n                \"show-badge\": \"true\",\n                mpcomid: \"7be27b0c-0\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"检查人\",\n                subnote: _vm.obj.zrrmc,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-1\"\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  mode: \"date\",\n                  value: _vm.obj.jcrq,\n                  eventid: \"7be27b0c-0\"\n                },\n                on: { change: _vm.bindDateChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"检查日期\",\n                    subnote: _vm.obj.jcrq,\n                    mpcomid: \"7be27b0c-2\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"责任部门\",\n                subnote: _vm.obj.zrbm,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-3\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"楼层\",\n                subnote: _vm.obj.lc,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-4\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"位置\",\n                subnote: _vm.obj.wz,\n                \"show-arrow\": \"false\",\n                mpcomid: \"7be27b0c-5\"\n              }\n            })\n          ],\n          1\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellTitleView\" },\n      [\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"检查信息\")]),\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"正常-\")]),\n        _c(\"uni-icon\", {\n          attrs: {\n            type: \"checkbox-filled\",\n            size: \"22\",\n            color: \"#24BE41\",\n            mpcomid: \"7be27b0c-7\"\n          }\n        }),\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"未检-\")]),\n        _c(\"uni-icon\", {\n          attrs: {\n            type: \"info-filled\",\n            size: \"22\",\n            color: \"#FFDE52\",\n            mpcomid: \"7be27b0c-8\"\n          }\n        }),\n        _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"异常-\")]),\n        _c(\"uni-icon\", {\n          attrs: {\n            type: \"clear\",\n            size: \"22\",\n            color: \"#C11E1E\",\n            mpcomid: \"7be27b0c-9\"\n          }\n        })\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"7be27b0c-11\" } },\n          _vm._l(_vm.obj.sublist, function(item, index) {\n            return _c(\"uni-list-item\", {\n              key: index,\n              attrs: {\n                title: item.jcbz,\n                note: item.jcwtms,\n                \"show-extra-icon\": \"true\",\n                \"show-arrow\": _vm.editable,\n                \"extra-icon\": _vm.getIcon(item),\n                eventid: \"7be27b0c-1-\" + index,\n                mpcomid: \"7be27b0c-10-\" + index\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpEdit(item, index)\n                }\n              }\n            })\n          })\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"btnView\" },\n      [\n        _vm.showSave\n          ? _c(\n              \"button\",\n              {\n                staticClass: \"saveBtn\",\n                attrs: { eventid: \"7be27b0c-2\" },\n                on: { tap: _vm.saveClick }\n              },\n              [_vm._v(\"保存\")]\n            )\n          : _vm._e(),\n        _vm.showClose\n          ? _c(\n              \"button\",\n              {\n                staticClass: \"closeBtn\",\n                attrs: { eventid: \"7be27b0c-3\" },\n                on: { tap: _vm.closeClick }\n              },\n              [_vm._v(\"关单\")]\n            )\n          : _vm._e()\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"基础信息\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointAdd/pointAdd.vue?vue&type=template&id=4fbbb711&");
 
 /***/ })
 

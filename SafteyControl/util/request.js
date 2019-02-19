@@ -5,7 +5,6 @@
 // success:成功的回调函数
 // fail：失败的回调
 const requestLoading = function(url, params, message, success, fail, complete) {
-  // console.log(params)
 // 	wx.showNavigationBarLoading()
 	if (message != "") {
 	  uni.showLoading({

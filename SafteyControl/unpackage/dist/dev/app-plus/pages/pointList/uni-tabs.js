@@ -390,7 +390,7 @@ var config = {
   scan: "".concat(host, "/mobile/dwsm.do"),
 
   // 扫码新增检查
-  createCheckPoint: "".concat(host, "/mobile/updateJcjl.do"),
+  UpdatePoint: "".concat(host, "/mobile/updateJcjl.do"),
 
   // 获取Tab页上的数量
   getTabCounts: "".concat(host, "/mobile/getTabCount.do"),
@@ -421,7 +421,6 @@ module.exports = config;
 // success:成功的回调函数
 // fail：失败的回调
 var requestLoading = function requestLoading(url, params, message, _success, _fail, _complete) {
-  // console.log(params)
   // 	wx.showNavigationBarLoading()
   if (message != "") {
     uni.showLoading({
@@ -2249,15 +2248,12 @@ var animation = weex.requireModule('animation');var _default =
         name: '未检查',
         id: '/mobile/wjclb.do' }],
 
-      searchLC: '1',
-      searchBM: '2',
-      searchWZ: '3',
       rightViewOpen: false,
       screenWidth: 0,
       screenHeight: 0 };
 
   },
-  created: function created() {var _this = this;
+  created: function created() {
     var that = this;
     // 获取该页面显示的类型
     uni.getStorage({
@@ -2266,8 +2262,8 @@ var animation = weex.requireModule('animation');var _default =
         that.lx = res.data;
         uni.getStorage({
           key: res.data,
-          success: function success(res) {
-            that.tabBars.push(JSON.parse(res.data));
+          success: function success(result) {
+            that.tabBars.push(JSON.parse(result.data));
           },
           complete: function complete() {
             that.getTabCounts();
@@ -2288,7 +2284,6 @@ var animation = weex.requireModule('animation');var _default =
       // 获取窗口高度
       uni.getSystemInfo({
         success: function success(res) {
-          // console.log('' + JSON.stringify(res.screenHeight));
           that.screenWidth = res.screenWidth;
           that.screenHeight = res.screenHeight;
         } });
@@ -2296,26 +2291,27 @@ var animation = weex.requireModule('animation');var _default =
       that.newsitems = that.randomfn();
       that.onrefresh(that.tabIndex);
     }, 50);
-
     uni.onNavigationBarButtonTap(function (e) {
       if (that.rightViewOpen == true) {
-        _this.move('close');
+        that.move('close');
       } else {
-        _this.move('open');
+        that.move('open');
       }
     });
   },
   methods: {
     // 搜索提交
-    submitClick: function submitClick() {
+    submitClick: function submitClick(index) {
       console.log('搜索');
+      this.newsitems[index].pageNum = 0;
+      this.getListData(index, true);
     },
     // 搜索重置
-    resetClick: function resetClick() {
+    resetClick: function resetClick(index) {
       console.log('重置');
-      this.searchLC = "";
-      this.searchBM = "";
-      this.searchWZ = "";
+      this.newsitems[index].searchLC = "";
+      this.newsitems[index].searchBM = "";
+      this.newsitems[index].searchWZ = "";
     },
     // type: open/close，开或关
     move: function move() {var type = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'open';
@@ -2341,18 +2337,15 @@ var animation = weex.requireModule('animation');var _default =
     },
     // 筛选输入完成
     onchange: function onchange(e) {
-      // console.log('' + JSON.stringify(e));
-      // 				console.log('ref' + JSON.stringify(e.currentTarget.ref));
-      // 				console.log('rightRef' + JSON.stringify(this.$refs.rightView.ref));
       if (e.target.ref == this.$refs.floor.ref) {
-        this.searchLC = e.value;
-        console.log('searchLC' + this.searchLC);
+        this.newsitems[this.tabIndex].searchLC = e.value;
+        console.log('searchLC' + this.newsitems[this.tabIndex].searchLC);
       } else if (e.target.ref == this.$refs.depart.ref) {
-        this.searchBM = e.value;
-        console.log('searchBM' + this.searchBM);
+        this.newsitems[this.tabIndex].searchBM = e.value;
+        console.log('searchBM' + this.newsitems[this.tabIndex].searchBM);
       } else if (e.target.ref == this.$refs.position.ref) {
-        this.searchWZ = e.value;
-        console.log('searchWZ' + this.searchWZ);
+        this.newsitems[this.tabIndex].searchWZ = e.value;
+        console.log('searchWZ' + this.newsitems[this.tabIndex].searchWZ);
       }
     },
     // 筛选正在输入
@@ -2375,7 +2368,8 @@ var animation = weex.requireModule('animation');var _default =
       _request.default.requestLoading(_config.default.getPointDetail, params, "正在加载详情", function (res) {
         console.log('' + JSON.stringify(res));
         uni.navigateTo({
-          url: '../pointDetail/pointDetail?obj=' + JSON.stringify(res) });
+          // url: '../pointDetail/pointDetail?obj=' + JSON.stringify(res)
+          url: '../pointAdd/pointAdd?obj=' + JSON.stringify(res) });
 
       }, function () {
         uni.showToast({
@@ -2386,24 +2380,24 @@ var animation = weex.requireModule('animation');var _default =
 
       });
     },
-    close: function close(index1, index2) {var _this2 = this;
+    close: function close(index1, index2) {var _this = this;
       uni.showModal({
         content: '是否删除本条信息？',
         success: function success(res) {
           if (res.confirm) {
-            _this2.newsitems[index1].data.splice(index2, 1);
+            _this.newsitems[index1].data.splice(index2, 1);
           }
         } });
 
     },
-    loadMore: function loadMore(e) {var _this3 = this;
+    loadMore: function loadMore(index) {var _this2 = this;
       setTimeout(function () {
-        _this3.addData(e);
+        _this2.addData(index);
       }, 50);
     },
-    addData: function addData(e) {
+    addData: function addData(index) {
       var that = this;
-      that.getListData(e, false);
+      that.getListData(index, false);
     },
     changeTab: function () {var _changeTab = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(e) {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
                 this.tabIndex = e.index;
@@ -2424,7 +2418,11 @@ var animation = weex.requireModule('animation');var _default =
         var aryItem = {
           loadingText: "加载更多...",
           data: [],
-          pageNum: 1 };
+          pageNum: 0,
+          searchLC: '',
+          searchBM: '',
+          searchWZ: '' };
+
 
         ary.push(aryItem);
       }
@@ -2452,7 +2450,7 @@ var animation = weex.requireModule('animation');var _default =
         this.newsitems[index].data.push(obj);
       }
       if (!isRefresh) {// 上拉加载更多结束后改回加载更多，增加体验
-        that.newsitems[e].loadingText = '加载更多...';
+        this.newsitems[index].loadingText = '加载更多...';
       }
       if (this.newsitems[index].data.length <= 0) {
         uni.showToast({
@@ -2461,19 +2459,27 @@ var animation = weex.requireModule('animation');var _default =
 
       }
     },
-    onrefresh: function onrefresh(e) {
+    onrefresh: function onrefresh(index) {
       var that = this;
-      that.newsitems[e].pageNum = 1;
+      that.newsitems[index].pageNum = 0;
 
       that.refreshText = "正在刷新...";
       that.refreshing = true;
 
-      that.getListData(e, true);
+      that.newsitems[index].searchLC = "";
+      that.newsitems[index].searchBM = "";
+      that.newsitems[index].searchWZ = "";
+
+      that.getListData(index, true);
     },
     // 请求Tab页数量
     getTabCounts: function getTabCounts() {
       var that = this;
-      _request.default.requestLoading(_config.default.getTabCounts, { "lx": that.lx, "userid": that.userid }, '正在加载',
+      var param = {
+        lx: that.lx == '所有记录' ? '' : that.lx,
+        userid: that.userid };
+
+      _request.default.requestLoading(_config.default.getTabCounts, param, '正在加载',
       function (res) {
         console.log('Tab页数量：' + JSON.stringify(res));
         for (var i = 0; i < that.tabBars.length; i++) {
@@ -2498,30 +2504,35 @@ var animation = weex.requireModule('animation');var _default =
           title: '请求失败' });
 
       }, function () {
-
       });
 
     },
     // 请求列表数据
-    getListData: function getListData(e, isRefresh) {
+    getListData: function getListData(index, isRefresh) {
       var that = this;
-      var url = _config.default.host + that.tabBars[e].id; // 拼接接口
+      var url = _config.default.host + that.tabBars[index].id; // 拼接接口
       var data = {
-        pageNum: that.newsitems[e].pageNum,
+        pageNum: that.newsitems[index].pageNum,
         pageRows: that.pageRows,
         lx: that.lx == '所有记录' ? '' : that.lx,
-        userid: that.userid };
+        userid: that.userid,
+        search_lc: that.newsitems[index].searchLC,
+        search_bm: that.newsitems[index].searchBM,
+        search_wz: that.newsitems[index].searchWZ };
 
       if (!isRefresh) {// 上拉加载更多，改变文字，增加体验
-        that.newsitems[e].loadingText = '正在加载...';
+        that.newsitems[index].loadingText = '正在加载...';
       }
 
       _request.default.requestLoading(url, data, '正在加载',
       function (res) {
         that.refreshing = false;
 
-        that.newsitems[e].pageNum++;
-        that.formatData(res.list, e, isRefresh);
+        that.rightViewOpen = false;
+        that.move('close');
+
+        that.newsitems[index].pageNum++;
+        that.formatData(res.list, index, isRefresh);
       }, function () {
         that.refreshing = false;
 
@@ -2926,8 +2937,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "text",
       "placeholder": "请输入楼层",
-      "autofocus": true,
-      "value": _vm.searchLC
+      "value": _vm.newsitems[_vm.tabIndex] == null ? '' : _vm.newsitems[_vm.tabIndex].searchLC
     },
     on: {
       "change": _vm.onchange,
@@ -2941,8 +2951,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "text",
       "placeholder": "请输入部门",
-      "autofocus": true,
-      "value": _vm.searchBM
+      "value": _vm.newsitems[_vm.tabIndex] == null ? '' : _vm.newsitems[_vm.tabIndex].searchBM
     },
     on: {
       "change": _vm.onchange,
@@ -2956,8 +2965,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "text",
       "placeholder": "请输入位置",
-      "autofocus": true,
-      "value": _vm.searchWZ
+      "value": _vm.newsitems[_vm.tabIndex] == null ? '' : _vm.newsitems[_vm.tabIndex].searchWZ
     },
     on: {
       "change": _vm.onchange,
@@ -2968,14 +2976,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: ["resetButton"],
     on: {
-      "click": _vm.resetClick
+      "click": function($event) {
+        _vm.resetClick(_vm.tabIndex)
+      }
     }
   }, [_c('text', {
     staticClass: ["resetText"]
   }, [_vm._v("重置")])]), _c('div', {
     staticClass: ["searchButton"],
     on: {
-      "click": _vm.submitClick
+      "click": function($event) {
+        _vm.submitClick(_vm.tabIndex)
+      }
     }
   }, [_c('text', {
     staticClass: ["submitText"]

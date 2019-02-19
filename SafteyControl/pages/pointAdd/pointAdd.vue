@@ -29,11 +29,12 @@
 		</view>
 		<view class="cellInfoView">
 			<uni-list>
-				<uni-list-item  v-for="(item,index) in obj.sublist" :key="index" :title="item.jcbz" show-extra-icon="true" :extra-icon="getIcon(item)" @click="jumpEdit(item, index)"></uni-list-item>
+				<uni-list-item  v-for="(item,index) in obj.sublist" :key="index" :title="item.jcbz" :note="item.jcwtms" show-extra-icon="true" :show-arrow="editable" :extra-icon="getIcon(item)" @click="jumpEdit(item, index)"></uni-list-item>
 			</uni-list>
 		</view>
-		<view class="btn-row">
-		    <button type="primary" class="primary" @tap="submit">提交</button>
+		<view class="btnView">
+		    <button class="saveBtn" v-if="showSave" @tap="saveClick">保存</button>
+				<button class="closeBtn" v-if="showClose" @tap="closeClick">关单</button>
 		</view>
 	</view>
 </template>
@@ -55,8 +56,13 @@
 		    return {
 				// 当页面OnShow的时候是否需要从state里去拿Item对象 - 用于页面反传参数
 				needGetItemOnShow: false,
+				// 是否显示关单按钮-扫码后是没id的，所以只能显示一个保存按钮,只有有id并且status=1的情况下，才显示保存和关单按钮
+				showClose: false,
+				showSave: false,
+				// 是否可编辑
+				editable: false,
 				
-		        obj: '',
+		    obj: '',
 				normal: {// 正常图标
 					color: '#24BE41',
 					size: '22',
@@ -76,9 +82,18 @@
 		},
 		onLoad(option) {
 			this.obj = JSON.parse(option.obj);
+			this.checkShowClose();
 		},
 		onNavigationBarButtonTap() {
 			var that = this;
+			if (that.editable == false) {
+				uni.showToast({
+					icon: 'none',
+					title: '已关单 无法编辑',
+					duration: 1000,
+				})
+				return;
+			}
 			uni.showModal({
 				title: '提示',
 				content: '确认要设置所有的检查点都正常吗？',
@@ -109,6 +124,9 @@
 				this.obj.jcrq = e.target.value
 			},
 			jumpEdit: function(item, index) {
+				if (this.editable == false) {
+					return;
+				}
 				this.needGetItemOnShow = true;
 				uni.navigateTo({
 					url: './pointCheckInfo?item=' + JSON.stringify(item) + '&index=' + index
@@ -123,31 +141,73 @@
 					return this.undetected;
 				}
 			},
-			submit() {
+			// 保存
+			saveClick() {
 				var that = this;
 				var param = service.copyObj(that.obj);
 				param['userid'] = that.userInfo.userid;
 				param['sublist'] = JSON.stringify(param['sublist']);
-				request.requestLoading(config.createCheckPoint, param, '正在加载', 
+				request.requestLoading(config.UpdatePoint, param, '正在加载', 
 					function(res){
 						uni.showToast({
 							icon: 'none',
-							title: '新建检查成功',
-							duration: 2000,
-							complete() {
-								uni.navigateBack({
-									delta: 1
-								})
-							}
+							title: '保存成功',
+							duration: 1000,
 						});
+						// that.obj.status = res.status;
+						that.obj.id = res.id;
+						that.checkShowClose();
 					},function(){
 						uni.showToast({
 							icon: 'none',
-							title: '新建检查失败'
+							title: '保存失败'
 						});
 					},function() {
 						
 					});
+			},
+			// 关单
+			closeClick(){
+				var that = this;
+				var param = service.copyObj(that.obj);
+				param['userid'] = that.userInfo.userid;
+				param['sublist'] = JSON.stringify(param['sublist']);
+				param['status'] = '2';
+				request.requestLoading(config.UpdatePoint, param, '正在加载', 
+					function(res){
+						uni.showToast({
+							icon: 'none',
+							title: '关单成功',
+							duration: 1000,
+						});
+						that.obj.status = res.status;
+						that.obj.id = res.id;
+						that.checkShowClose();
+					},function(){
+						uni.showToast({
+							icon: 'none',
+							title: '关单失败'
+						});
+					},function() {
+						
+					});
+			},
+			// 判断是否显示关单按钮
+			checkShowClose() {
+				if (this.obj.status == '1' && this.obj.id != null && this.obj.id != '') {
+					this.showClose = true;
+				}else {
+					this.showClose = false;
+				}
+				
+				// status为2，已关单，不能编辑
+				if (this.obj.status == '2') {
+					this.showSave = false;
+					this.editable = false;
+				}else {
+					this.showSave = true;
+					this.editable = true;
+				}
 			},
 		}
 	}
@@ -179,5 +239,42 @@
 		background-color: #FFFFFF;
 		display: flex;
 		flex-direction: row;
+	}
+	.btnView {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+	}
+	.saveBtn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-width: 1;
+		border-bottom-color: #F1F1F1;
+		border-top-color: #F1F1F1;
+		border-left-width: 0px;
+		border-right-width: 0px;
+		width: 100%;
+		height: 90px;
+		text-align: center;
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		margin-right: 10px;
+	}
+	.closeBtn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 90px;
+		background-color: #2D68AA;
+		color: #FFFFFF;
+		text-align: center;
+		margin-top: 20px;
+		margin-left: 10px;
+		margin-bottom: 20px;
+		margin-right: 20px;
 	}
 </style>
