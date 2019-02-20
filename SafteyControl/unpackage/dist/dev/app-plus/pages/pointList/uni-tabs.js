@@ -399,7 +399,18 @@ var config = {
   getPointDetail: "".concat(host, "/mobile/getJcjl.do"),
 
   // 首页统计
-  getMainPageCount: "".concat(host, "/mobile/getSytj.do") };
+  getMainPageCount: "".concat(host, "/mobile/getSytj.do"),
+
+  // 报警设备类型统计
+  alertDeviceCount: "".concat(host, "/mobile/bjsblx.do"),
+
+  // 报警事件类型统计
+  alertEventCount: "".concat(host, "/mobile/bjsjlx.do"),
+
+  // 阀组压力统计
+  alertValveCount: "".concat(host, "/mobile/ylfz.do"),
+  // 阀组压力统计 - 根据楼层获取阀组编号
+  getValveDataByFloor: "".concat(host, "/mobile/getfz.do") };
 
 //对外把对象config返回
 module.exports = config;

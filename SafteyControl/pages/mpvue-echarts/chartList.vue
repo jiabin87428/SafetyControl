@@ -27,6 +27,10 @@
 					uni.navigateTo({
 						url: './valveChart'
 					})
+				} else {
+					uni.navigateTo({
+						url: './mpvue-echarts'
+					})
 				}
 			}
 		},

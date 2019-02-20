@@ -102,17 +102,44 @@
         },{
             "path": "pages/mpvue-echarts/deviceChart",
             "style": {
-                "navigationBarTitleText": "报警设备类型统计"
+                "navigationBarTitleText": "报警设备类型统计",
+				"app-plus": {  
+					"titleNView": {  
+						"buttons": [{  
+							"text": "\ue64d",
+							"fontSrc": "/static/aliIcon/iconfont.ttf",
+							"fontSize": "22px"
+						}]  
+					}  
+				} 
             }
         },{
             "path": "pages/mpvue-echarts/eventChart",
             "style": {
-                "navigationBarTitleText": "报警事件类型统计"
+                "navigationBarTitleText": "报警事件类型统计",
+				"app-plus": {  
+					"titleNView": {  
+						"buttons": [{  
+							"text": "\ue64d",
+							"fontSrc": "/static/aliIcon/iconfont.ttf",
+							"fontSize": "22px"
+						}]  
+					}  
+				} 
             }
         },{
             "path": "pages/mpvue-echarts/valveChart",
             "style": {
-                "navigationBarTitleText": "阀组压力统计"
+                "navigationBarTitleText": "阀组压力统计",
+				"app-plus": {  
+					"titleNView": {  
+						"buttons": [{  
+							"text": "\ue64d",
+							"fontSrc": "/static/aliIcon/iconfont.ttf",
+							"fontSize": "22px"
+						}]  
+					}  
+				} 
             }
         },{
             "path": "pages/mpvue-echarts/mpvue-echarts",

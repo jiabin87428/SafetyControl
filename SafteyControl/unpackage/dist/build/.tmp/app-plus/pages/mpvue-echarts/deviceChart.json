@@ -1,3 +1,12 @@
 {
-  "navigationBarTitleText": "报警设备类型统计"
+  "navigationBarTitleText": "报警设备类型统计",
+  "titleNView": {
+    "buttons": [
+      {
+        "text": "",
+        "fontSrc": "/static/aliIcon/iconfont.ttf",
+        "fontSize": "22px"
+      }
+    ]
+  }
 }
