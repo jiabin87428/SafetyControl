@@ -18,8 +18,9 @@
             </uni-tab-content>
         </uni-tabs>
 		
-		<div class="mask" v-bind:style="{height:screenHeight / screenWidth*750, width: rightViewOpen ? 750 : 0}" ref="mask" @touchstart="maskViewClick"></div>
-		<div class="rightView" v-bind:style="{height:screenHeight / screenWidth*750}" ref="rightView">
+		<div class="mask" v-if="platform == 'ios'" v-bind:style="{height:screenHeight / screenWidth*750, width: rightViewOpen ? 750 : 0}" ref="mask" @touchstart="maskViewClick"></div>
+		<div class="mask" v-if="platform == 'android'" v-bind:style="{height:screenHeight / screenWidth*750, width: rightViewOpen ? 750 : 0}" ref="mask" @touchstart="maskViewClick"></div>
+		<div class="rightView" v-if="platform != ''" v-bind:style="{height:screenHeight / screenWidth*750}" ref="rightView">
 			<text class="tipText">楼层</text>
 			<input ref="floor" type="text" placeholder="请输入楼层" class="input" :value="newsitems[tabIndex] == null ? '':newsitems[tabIndex].searchLC" @change="onchange" @input="oninput"/>
 			<text class="tipText">部门</text>
@@ -81,6 +82,7 @@
 				rightViewOpen: false,
 				screenWidth: 0,
 				screenHeight: 0,
+				platform: '',	//平台-ios，android
             }
         },
         created() {
@@ -114,6 +116,7 @@
 				// 获取窗口高度
 				uni.getSystemInfo({
 					success(res) {
+						that.platform = res.platform
 						that.screenWidth = res.screenWidth;
 						that.screenHeight = res.screenHeight;
 					}

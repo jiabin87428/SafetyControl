@@ -2221,6 +2221,7 @@ var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-c
 
 
 
+
 var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-content/uni-tab-content.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue"));
 var _uniTabBar = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-bar/uni-tab-bar.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue"));
 var _uniTabs = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tabs/uni-tabs.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue"));
@@ -2261,8 +2262,9 @@ var animation = weex.requireModule('animation');var _default =
 
       rightViewOpen: false,
       screenWidth: 0,
-      screenHeight: 0 };
-
+      screenHeight: 0,
+      platform: '' //平台-ios，android
+    };
   },
   created: function created() {
     var that = this;
@@ -2295,6 +2297,7 @@ var animation = weex.requireModule('animation');var _default =
       // 获取窗口高度
       uni.getSystemInfo({
         success: function success(res) {
+          that.platform = res.platform;
           that.screenWidth = res.screenWidth;
           that.screenHeight = res.screenHeight;
         } });
@@ -2924,7 +2927,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_c('text', {
       staticClass: ["loadmore-text"]
     }, [_vm._v(_vm._s(tab.loadingText))])])], 2)
-  }))], 1), _c('div', {
+  }))], 1), (_vm.platform == 'ios') ? _c('div', {
     ref: "mask",
     staticClass: ["mask"],
     style: {
@@ -2934,7 +2937,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "touchstart": _vm.maskViewClick
     }
-  }), _c('div', {
+  }) : _vm._e(), (_vm.platform == 'android') ? _c('div', {
+    ref: "mask",
+    staticClass: ["mask"],
+    style: {
+      height: _vm.screenHeight / _vm.screenWidth * 750,
+      width: _vm.rightViewOpen ? 750 : 0
+    },
+    on: {
+      "touchstart": _vm.maskViewClick
+    }
+  }) : _vm._e(), (_vm.platform != '') ? _c('div', {
     ref: "rightView",
     staticClass: ["rightView"],
     style: {
@@ -3002,7 +3015,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('text', {
     staticClass: ["submitText"]
-  }, [_vm._v("确定")])])])])], 1)
+  }, [_vm._v("确定")])])])]) : _vm._e()], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

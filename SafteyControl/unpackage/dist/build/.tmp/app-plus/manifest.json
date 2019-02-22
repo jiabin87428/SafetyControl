@@ -5,10 +5,10 @@
     "iPad"
   ],
   "id": "__UNI__165502E",
-  "name": "移动安全管家",
+  "name": "京东方消防安全",
   "version": {
-    "name": "1.0.0",
-    "code": "100"
+    "name": "1.0.4",
+    "code": 1
   },
   "description": "",
   "launch_path": "__uniappservice.html",
