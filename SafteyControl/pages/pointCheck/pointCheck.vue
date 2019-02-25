@@ -78,19 +78,19 @@
 		</view>
 		<view class="userinfo">
 		  <view class='dangerView' @tap="jumpListPage('隐患上报')">
-		    <image class="dangerIcon" src="../../static/img/point_all.png" mode="widthFix"></image>
+		    <image class="dangerIcon" src="../../static/img/yhsb.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>隐患上报</text>
 		    </view>
 		  </view>
 		  <view class='dangerView' @tap="jumpListPage('隐患审批')">
-		    <image class="dangerIcon" src="../../static/img/point_xhs.png" mode="widthFix"></image>
+		    <image class="dangerIcon" src="../../static/img/yhsp.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>隐患审批</text>
 		    </view>
 		  </view>
 		  <view class='dangerView' @tap="jumpListPage('已整改隐患')">
-		    <image class="dangerIcon" src="../../static/img/point_fz.png" mode="widthFix"></image>
+		    <image class="dangerIcon" src="../../static/img/ygyh.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>已整改隐患</text>
 		    </view>
@@ -101,8 +101,8 @@
 			<text class="titleText_pc">事故管理</text>
 		</view>
 		<view class="userinfo">
-		  <view class='dangerView' @tap="jumpListPage('隐患上报')">
-		    <image class="dangerIcon" src="../../static/img/point_all.png" mode="widthFix"></image>
+		  <view class='dangerView' @tap="jumpListPage('事故快报')">
+		    <image class="dangerIcon" src="../../static/img/sgkb.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>事故快报</text>
 		    </view>
@@ -117,38 +117,38 @@
 			<text class="titleText_pc">安全培训</text>
 		</view>
 		<view class="userinfo">
-		  <view class='dangerView' @tap="jumpListPage('隐患上报')">
-		    <image class="dangerIcon" src="../../static/img/point_all.png" mode="widthFix"></image>
+		  <view class='dangerView' @tap="jumpListPage('培训资料')">
+		    <image class="dangerIcon" src="../../static/img/pxzl.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>培训资料</text>
 		    </view>
 		  </view>
-		  <view class='dangerView' @tap="jumpListPage('隐患审批')">
-		    <image class="dangerIcon" src="../../static/img/point_xhs.png" mode="widthFix"></image>
+		  <view class='dangerView' @tap="jumpListPage('在线考试')">
+		    <image class="dangerIcon" src="../../static/img/zxks.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>在线考试</text>
 		    </view>
 		  </view>
-		  <view class='dangerView' @tap="jumpListPage('已整改隐患')">
-		    <image class="dangerIcon" src="../../static/img/point_fz.png" mode="widthFix"></image>
+		  <view class='dangerView' @tap="jumpListPage('培训计划')">
+		    <image class="dangerIcon" src="../../static/img/pxjh.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>培训计划</text>
 		    </view>
 		  </view>
-		  <view class='dangerView' @tap="jumpListPage('隐患上报')">
-		    <image class="dangerIcon" src="../../static/img/point_all.png" mode="widthFix"></image>
+		  <view class='dangerView' @tap="jumpListPage('培训课程')">
+		    <image class="dangerIcon" src="../../static/img/pxkc.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>培训课程</text>
 		    </view>
 		  </view>
-		  <view class='dangerView' @tap="jumpListPage('隐患审批')">
-		    <image class="dangerIcon" src="../../static/img/point_xhs.png" mode="widthFix"></image>
+		  <view class='dangerView' @tap="jumpListPage('自我测试')">
+		    <image class="dangerIcon" src="../../static/img/zwcs.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>自我测试</text>
 		    </view>
 		  </view>
-		  <view class='dangerView' @tap="jumpListPage('已整改隐患')">
-		    <image class="dangerIcon" src="../../static/img/point_fz.png" mode="widthFix"></image>
+		  <view class='dangerView' @tap="jumpListPage('统一考试')">
+		    <image class="dangerIcon" src="../../static/img/tyks.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>统一考试</text>
 		    </view>
@@ -159,8 +159,8 @@
 			<text class="titleText_pc">法律法规</text>
 		</view>
 		<view class="userinfo">
-		  <view class='dangerView' @tap="jumpListPage('隐患上报')">
-		    <image class="dangerIcon" src="../../static/img/point_all.png" mode="widthFix"></image>
+		  <view class='dangerView' @tap="jumpListPage('法规清单')">
+		    <image class="dangerIcon" src="../../static/img/fgqd.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>法规清单</text>
 		    </view>
@@ -175,14 +175,14 @@
 			<text class="titleText_pc">环保管理</text>
 		</view>
 		<view class="userinfo">
-		  <view class='dangerView' @tap="jumpListPage('隐患上报')">
-		    <image class="dangerIcon" src="../../static/img/point_all.png" mode="widthFix"></image>
+		  <view class='dangerView' @tap="jumpListPage('三废排放')">
+		    <image class="dangerIcon" src="../../static/img/sfpf.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>三废排放</text>
 		    </view>
 		  </view>
-		  <view class='dangerView' @tap="jumpListPage('隐患上报')">
-		    <image class="dangerIcon" src="../../static/img/point_all.png" mode="widthFix"></image>
+		  <view class='dangerView' @tap="jumpListPage('监测记录')">
+		    <image class="dangerIcon" src="../../static/img/jcjl.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>监测记录</text>
 		    </view>

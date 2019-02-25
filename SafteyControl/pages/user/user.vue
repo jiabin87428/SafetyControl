@@ -56,24 +56,14 @@
 				<!-- <text class="go-login navigat-arrow" v-if="!login">&#xe65e;</text> -->
 			</view>
 		</view>
-		<view class="center-list">
+		<!-- <view class="center-list">
 			<view class="center-list-item border-bottom" @tap="jumpAccountEdit()">
 				<text class="list-icon">&#xe60f;</text>
 				<text class="list-text">账号管理</text>
 				<text class="navigat-arrow">&#xe65e;</text>
 			</view>
-			<!-- <view class="center-list-item">
-				<text class="list-icon">&#xe639;</text>
-				<text class="list-text">新消息通知</text>
-				<text class="navigat-arrow">&#xe65e;</text>
-			</view> -->
 		</view>
 		<view class="center-list">
-			<!-- <view class="center-list-item border-bottom">
-				<text class="list-icon">&#xe60b;</text>
-				<text class="list-text">帮助与反馈</text>
-				<text class="navigat-arrow">&#xe65e;</text>
-			</view> -->
 			<view class="center-list-item">
 				<text class="list-icon">&#xe65f;</text>
 				<text class="list-text">服务条款及隐私</text>
@@ -86,6 +76,44 @@
 				<text class="list-text">关于应用</text>
 				<text class="navigat-arrow">&#xe65e;</text>
 			</view>
+		</view> -->
+		<view class="userinfo">
+		  <view class='dangerView' @tap="jumpAccountEdit()">
+		    <image class="dangerIcon" src="../../static/img/setting.png" mode="widthFix"></image>
+		    <view class='subView'>
+		      <text class='dangerText'>设置</text>
+		    </view>
+		  </view>
+		  <view class='dangerView' @tap="jumpAccountEdit()">
+		    <image class="dangerIcon" src="../../static/img/wdkc.png" mode="widthFix"></image>
+		    <view class='subView'>
+		      <text class='dangerText'>我的课程</text>
+		    </view>
+		  </view>
+		  <view class='dangerView' @tap="jumpAccountEdit()">
+		    <image class="dangerIcon" src="../../static/img/wdsc.png" mode="widthFix"></image>
+		    <view class='subView'>
+		      <text class='dangerText'>我的收藏</text>
+		    </view>
+		  </view>
+		  <view class='dangerView' @tap="jumpAccountEdit()">
+		    <image class="dangerIcon" src="../../static/img/wdpc.png" mode="widthFix"></image>
+		    <view class='subView'>
+		      <text class='dangerText'>我的评测</text>
+		    </view>
+		  </view>
+		  <view class='dangerView' @tap="jumpAccountEdit()">
+		    <image class="dangerIcon" src="../../static/img/wdks.png" mode="widthFix"></image>
+		    <view class='subView'>
+		      <text class='dangerText'>我的考试</text>
+		    </view>
+		  </view>
+		  <view class='dangerView' @tap="jumpAccountEdit()">
+		    <image class="dangerIcon" src="../../static/img/wdsx.png" mode="widthFix"></image>
+		    <view class='subView'>
+		      <text class='dangerText'>我的私信</text>
+		    </view>
+		  </view>
 		</view>
 	</view>
 </template>
@@ -258,5 +286,42 @@
 		color: #555;
 		text-align: right;
 		font-family: texticons;
+	}
+	/*九宫格*/
+	/* 菜单按钮 */
+	.userinfo {
+	  width: 99%;
+	  display: flex;
+	  flex-wrap: wrap;
+	  flex-direction: row;
+	  justify-content: space-around;
+	}
+	.dangerView {
+	  display:flex;
+	  flex-direction:column;
+	  width: 33%;
+	  margin-top: 5px;
+	  background-color: #FFFFFF;
+	  align-items:center;/*垂直居中*/
+	}
+	.dangerIcon {
+	  width: 80upx;
+	  height: 80upx;
+	  margin-top: 50upx;
+	}
+	
+	.subView {
+	  display:flex;
+	  flex-direction:column;
+	  width: 100%;
+	  margin-top: 10px;
+	  align-items:center;/*垂直居中*/
+	}
+	.dangerText {
+		width: 100%;
+		font-size: 16;
+		color: #898989;
+		text-align: center;
+		margin-bottom: 50upx;
 	}
 </style>

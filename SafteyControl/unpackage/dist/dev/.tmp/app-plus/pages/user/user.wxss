@@ -170,3 +170,72 @@ page {
 	font-family: texticons;
 }
 
+/*九宫格*/
+
+/* 菜单按钮 */
+.userinfo {
+  width: 99%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.dangerView {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:column;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  width: 33%;
+  margin-top: 5rpx;
+  background-color: #FFFFFF;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+      -ms-flex-align:center;
+          align-items:center;/*垂直居中*/
+}
+.dangerIcon {
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 50rpx;
+}
+.subView {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:column;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  width: 100%;
+  margin-top: 10rpx;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+      -ms-flex-align:center;
+          align-items:center;/*垂直居中*/
+}
+.dangerText {
+	width: 100%;
+	font-size: 16;
+	color: #898989;
+	text-align: center;
+	margin-bottom: 50rpx;
+}
+

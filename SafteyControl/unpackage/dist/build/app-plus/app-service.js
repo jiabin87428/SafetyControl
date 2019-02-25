@@ -10,7 +10,7 @@ var requirePlugin = requirePlugin || function() {};
 var Behavior = Behavior || function() {};
 var $gwx;
   
-/*v0.5vv_20181116_syb_scopedata*/global.__wcc_version__='v0.5vv_20181116_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
+/*v0.5vv_20181221_syb_scopedata*/global.__wcc_version__='v0.5vv_20181221_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
 var $gwxc
 var $gaic={}
 $gwx=function(path,global){
@@ -650,34 +650,32 @@ return false;
 function _da( node, attrname, opindex, raw, o )
 {
 var isaffected = false;
+var value = $gdc( raw, "", 2 );
+if ( o.ap && value && value.constructor===Function ) 
+{
+attrname = "$wxs:" + attrname; 
+node.attr["$gdc"] = $gdc;
+}
 if ( o.is_affected || _ca(raw) ) 
 {
 node.n.push( attrname );
 node.raw[attrname] = raw;
-var value = $gdc( raw, "", 2 );
-return value;
 }
-else
-{
-var value = $gdc( raw, "", 2 );
-return value;
-}
+node.attr[attrname] = value;
 }
 function _r( node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _rz( z, node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _o( opindex, env, scope, global )
 {
@@ -1060,121 +1058,102 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'58792338-default-58792338-10'])
-Z([3,'21b694de-default-21b694de-6'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'7be27b0c-default-7be27b0c-6'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'30c48a99'])
 Z([3,'false'])
 Z([3,'true'])
 Z([3,'点位编号'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
 Z([3,'检查人'])
 Z([3,'handleProxy'])
-Z([3,'_picker 21b694de'])
+Z([3,'_picker 7be27b0c'])
 Z([[7],[3,'$k']])
-Z([1,'21b694de-0'])
+Z([1,'7be27b0c-0'])
 Z([3,'date'])
 Z([[6],[[7],[3,'obj']],[3,'jcrq']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z([3,'检查日期'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
 Z([3,'责任部门'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
 Z([3,'楼层'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
 Z([3,'位置'])
-Z([3,'21b694de-default-21b694de-11'])
+Z([3,'7be27b0c-default-7be27b0c-11'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[6],[[7],[3,'obj']],[3,'sublist']])
-Z(z[33])
-Z(z[11])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
-Z([[2,'+'],[1,'21b694de-1-'],[[7],[3,'index']]])
-Z(z[3])
-Z(z[5])
-Z([3,'7be27b0c-default-7be27b0c-6'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z(z[4])
-Z(z[5])
-Z(z[6])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z(z[4])
+Z(z[32])
 Z(z[10])
-Z(z[11])
-Z([3,'_picker 7be27b0c'])
-Z(z[13])
-Z([1,'7be27b0c-0'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[12])
+Z([[2,'+'],[1,'7be27b0c-1-'],[[7],[3,'index']]])
+Z(z[2])
+Z(z[4])
+Z([3,'21b694de-default-21b694de-6'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
+Z(z[3])
+Z(z[4])
+Z(z[5])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
+Z(z[3])
+Z(z[9])
+Z(z[10])
+Z([3,'_picker 21b694de'])
+Z(z[12])
+Z([1,'21b694de-0'])
+Z(z[14])
 Z(z[15])
-Z(z[16])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
+Z(z[18])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[19])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[22])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
-Z(z[23])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[26])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
-Z(z[27])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z(z[4])
-Z(z[31])
-Z([3,'7be27b0c-default-7be27b0c-11'])
+Z(z[30])
+Z([3,'21b694de-default-21b694de-11'])
+Z(z[32])
 Z(z[33])
 Z(z[34])
-Z(z[35])
-Z(z[33])
-Z(z[11])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
-Z([[2,'+'],[1,'7be27b0c-1-'],[[7],[3,'index']]])
-Z(z[3])
-Z(z[5])
+Z(z[32])
+Z(z[10])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[12])
+Z([[2,'+'],[1,'21b694de-1-'],[[7],[3,'index']]])
+Z(z[2])
+Z(z[4])
 Z([3,'00eed4f4-default-00eed4f4-1'])
-Z([3,'47b16668-default-47b16668-3'])
-Z(z[11])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'47b16668-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
-Z([1,'47b16668-0'])
-Z(z[3])
-Z([3,'报警设备类型统计'])
-Z(z[11])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'47b16668-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
-Z([1,'47b16668-1'])
-Z(z[3])
-Z([3,'报警事件类型统计'])
-Z(z[11])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'47b16668-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
-Z([1,'47b16668-2'])
-Z(z[3])
-Z([3,'阀组压力统计'])
 Z([3,'7e389618-default-7e389618-1'])
 Z([3,'1b853e3c-default-1b853e3c-2'])
-Z(z[33])
+Z(z[32])
 Z([3,'name'])
 Z([[7],[3,'xLine']])
-Z(z[33])
+Z(z[32])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'1b853e3c-1-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
 Z([3,'1b853e3c-default-1b853e3c-3'])
+Z([3,'58792338-default-58792338-10'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
@@ -1399,8 +1378,6 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_19)return __WXML_GLOBAL__.ops_cached.$gwx_19
 __WXML_GLOBAL__.ops_cached.$gwx_19=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'47b16668'])
-Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'47b16668-3']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'47b16668-default-47b16668-3']]])
-Z([3,'3b6bb3ad'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_19);return __WXML_GLOBAL__.ops_cached.$gwx_19
 }
 function gz$gwx_20(){
@@ -1735,163 +1712,7 @@ __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/drawer/uni-drawer.vue.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','/components/drawer/hj-dragabledrawer.vue.wxml','/components/m-input.vue.wxml','/common/slots.wxml','/components/m-icon/m-icon.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/drawer/hj-dragabledrawer.vue.wxml','./components/drawer/uni-drawer.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/login/diyHost.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pointList/pointList.vue.wxml','./pages/pointList/pointList.wxml','./pointList.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
-d_[x[0]]["58792338-default-58792338-10"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':58792338-default-58792338-10'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["21b694de-default-21b694de-6"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':21b694de-default-21b694de-6'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:14:47")
-var xC=_oz(z,3,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,2,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],14,176)
-cs.pop()
-var cF=_v()
-_(r,cF)
-cs.push("./common/slots.wxml:template:14:199")
-var hG=_oz(z,8,e,s,gg)
-var oH=_gd(x[0],hG,e_,d_)
-if(oH){
-var cI=_1z(z,7,e,s,gg) || {}
-var cur_globalf=gg.f
-cF.wxXCkey=3
-oH(cI,cI,cF,gg)
-gg.f=cur_globalf
-}
-else _w(hG,x[0],14,307)
-cs.pop()
-cs.push("./common/slots.wxml:picker:14:330")
-var oJ=_mz(z,'picker',['bindchange',11,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
-var lK=_v()
-_(oJ,lK)
-cs.push("./common/slots.wxml:template:14:474")
-var aL=_oz(z,18,e,s,gg)
-var tM=_gd(x[0],aL,e_,d_)
-if(tM){
-var eN=_1z(z,17,e,s,gg) || {}
-var cur_globalf=gg.f
-lK.wxXCkey=3
-tM(eN,eN,lK,gg)
-gg.f=cur_globalf
-}
-else _w(aL,x[0],14,566)
-cs.pop()
-cs.pop()
-_(r,oJ)
-var bO=_v()
-_(r,bO)
-cs.push("./common/slots.wxml:template:14:598")
-var oP=_oz(z,21,e,s,gg)
-var xQ=_gd(x[0],oP,e_,d_)
-if(xQ){
-var oR=_1z(z,20,e,s,gg) || {}
-var cur_globalf=gg.f
-bO.wxXCkey=3
-xQ(oR,oR,bO,gg)
-gg.f=cur_globalf
-}
-else _w(oP,x[0],14,709)
-cs.pop()
-var fS=_v()
-_(r,fS)
-cs.push("./common/slots.wxml:template:14:732")
-var cT=_oz(z,25,e,s,gg)
-var hU=_gd(x[0],cT,e_,d_)
-if(hU){
-var oV=_1z(z,24,e,s,gg) || {}
-var cur_globalf=gg.f
-fS.wxXCkey=3
-hU(oV,oV,fS,gg)
-gg.f=cur_globalf
-}
-else _w(cT,x[0],14,837)
-cs.pop()
-var cW=_v()
-_(r,cW)
-cs.push("./common/slots.wxml:template:14:860")
-var oX=_oz(z,29,e,s,gg)
-var lY=_gd(x[0],oX,e_,d_)
-if(lY){
-var aZ=_1z(z,28,e,s,gg) || {}
-var cur_globalf=gg.f
-cW.wxXCkey=3
-lY(aZ,aZ,cW,gg)
-gg.f=cur_globalf
-}
-else _w(oX,x[0],14,965)
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["21b694de-default-21b694de-11"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':21b694de-default-21b694de-11'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:16:48")
-var xC=function(fE,oD,cF,gg){
-var oH=_v()
-_(cF,oH)
-cs.push("./common/slots.wxml:template:16:48")
-var cI=_oz(z,41,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,38,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],16,247)
-cs.pop()
-return cF
-}
-oB.wxXCkey=2
-_2z(z,35,xC,e,s,gg,oB,'item','index','index')
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
+var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','/components/drawer/hj-dragabledrawer.vue.wxml','/components/drawer/uni-drawer.vue.wxml','/components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','/common/slots.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/drawer/hj-dragabledrawer.vue.wxml','./components/drawer/uni-drawer.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/login/diyHost.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pointList/pointList.vue.wxml','./pages/pointList/pointList.wxml','./pointList.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
 d_[x[0]]["7be27b0c-default-7be27b0c-6"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':7be27b0c-default-7be27b0c-6'
@@ -1902,91 +1723,91 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:18:47")
-var xC=_oz(z,45,e,s,gg)
+cs.push("./common/slots.wxml:template:12:47")
+var xC=_oz(z,2,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,44,e,s,gg) || {}
+var fE=_1z(z,1,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],18,176)
+else _w(xC,x[0],12,176)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:18:199")
-var hG=_oz(z,50,e,s,gg)
+cs.push("./common/slots.wxml:template:12:199")
+var hG=_oz(z,7,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,49,e,s,gg) || {}
+var cI=_1z(z,6,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],18,307)
+else _w(hG,x[0],12,307)
 cs.pop()
-cs.push("./common/slots.wxml:picker:18:330")
-var oJ=_mz(z,'picker',['bindchange',53,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:12:330")
+var oJ=_mz(z,'picker',['bindchange',10,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:18:474")
-var aL=_oz(z,60,e,s,gg)
+cs.push("./common/slots.wxml:template:12:474")
+var aL=_oz(z,17,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
-var eN=_1z(z,59,e,s,gg) || {}
+var eN=_1z(z,16,e,s,gg) || {}
 var cur_globalf=gg.f
 lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],18,566)
+else _w(aL,x[0],12,566)
 cs.pop()
 cs.pop()
 _(r,oJ)
 var bO=_v()
 _(r,bO)
-cs.push("./common/slots.wxml:template:18:598")
-var oP=_oz(z,63,e,s,gg)
+cs.push("./common/slots.wxml:template:12:598")
+var oP=_oz(z,20,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,62,e,s,gg) || {}
+var oR=_1z(z,19,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],18,709)
+else _w(oP,x[0],12,709)
 cs.pop()
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:18:732")
-var cT=_oz(z,67,e,s,gg)
+cs.push("./common/slots.wxml:template:12:732")
+var cT=_oz(z,24,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
-var oV=_1z(z,66,e,s,gg) || {}
+var oV=_1z(z,23,e,s,gg) || {}
 var cur_globalf=gg.f
 fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],18,837)
+else _w(cT,x[0],12,837)
 cs.pop()
 var cW=_v()
 _(r,cW)
-cs.push("./common/slots.wxml:template:18:860")
-var oX=_oz(z,71,e,s,gg)
+cs.push("./common/slots.wxml:template:12:860")
+var oX=_oz(z,28,e,s,gg)
 var lY=_gd(x[0],oX,e_,d_)
 if(lY){
-var aZ=_1z(z,70,e,s,gg) || {}
+var aZ=_1z(z,27,e,s,gg) || {}
 var cur_globalf=gg.f
 cW.wxXCkey=3
 lY(aZ,aZ,cW,gg)
 gg.f=cur_globalf
 }
-else _w(oX,x[0],18,965)
+else _w(oX,x[0],12,965)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2005,26 +1826,167 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:20:48")
+cs.push("./common/slots.wxml:template:14:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:20:48")
-var cI=_oz(z,83,fE,oD,gg)
+cs.push("./common/slots.wxml:template:14:48")
+var cI=_oz(z,40,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,80,fE,oD,gg) || {}
+var lK=_1z(z,37,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],20,247)
+else _w(cI,x[0],14,247)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,77,xC,e,s,gg,oB,'item','index','index')
+_2z(z,34,xC,e,s,gg,oB,'item','index','index')
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["21b694de-default-21b694de-6"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':21b694de-default-21b694de-6'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:16:47")
+var xC=_oz(z,44,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,43,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],16,176)
+cs.pop()
+var cF=_v()
+_(r,cF)
+cs.push("./common/slots.wxml:template:16:199")
+var hG=_oz(z,49,e,s,gg)
+var oH=_gd(x[0],hG,e_,d_)
+if(oH){
+var cI=_1z(z,48,e,s,gg) || {}
+var cur_globalf=gg.f
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
+gg.f=cur_globalf
+}
+else _w(hG,x[0],16,307)
+cs.pop()
+cs.push("./common/slots.wxml:picker:16:330")
+var oJ=_mz(z,'picker',['bindchange',52,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var lK=_v()
+_(oJ,lK)
+cs.push("./common/slots.wxml:template:16:474")
+var aL=_oz(z,59,e,s,gg)
+var tM=_gd(x[0],aL,e_,d_)
+if(tM){
+var eN=_1z(z,58,e,s,gg) || {}
+var cur_globalf=gg.f
+lK.wxXCkey=3
+tM(eN,eN,lK,gg)
+gg.f=cur_globalf
+}
+else _w(aL,x[0],16,566)
+cs.pop()
+cs.pop()
+_(r,oJ)
+var bO=_v()
+_(r,bO)
+cs.push("./common/slots.wxml:template:16:598")
+var oP=_oz(z,62,e,s,gg)
+var xQ=_gd(x[0],oP,e_,d_)
+if(xQ){
+var oR=_1z(z,61,e,s,gg) || {}
+var cur_globalf=gg.f
+bO.wxXCkey=3
+xQ(oR,oR,bO,gg)
+gg.f=cur_globalf
+}
+else _w(oP,x[0],16,709)
+cs.pop()
+var fS=_v()
+_(r,fS)
+cs.push("./common/slots.wxml:template:16:732")
+var cT=_oz(z,66,e,s,gg)
+var hU=_gd(x[0],cT,e_,d_)
+if(hU){
+var oV=_1z(z,65,e,s,gg) || {}
+var cur_globalf=gg.f
+fS.wxXCkey=3
+hU(oV,oV,fS,gg)
+gg.f=cur_globalf
+}
+else _w(cT,x[0],16,837)
+cs.pop()
+var cW=_v()
+_(r,cW)
+cs.push("./common/slots.wxml:template:16:860")
+var oX=_oz(z,70,e,s,gg)
+var lY=_gd(x[0],oX,e_,d_)
+if(lY){
+var aZ=_1z(z,69,e,s,gg) || {}
+var cur_globalf=gg.f
+cW.wxXCkey=3
+lY(aZ,aZ,cW,gg)
+gg.f=cur_globalf
+}
+else _w(oX,x[0],16,965)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["21b694de-default-21b694de-11"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':21b694de-default-21b694de-11'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:18:48")
+var xC=function(fE,oD,cF,gg){
+var oH=_v()
+_(cF,oH)
+cs.push("./common/slots.wxml:template:18:48")
+var cI=_oz(z,82,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,79,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],18,247)
+cs.pop()
+return cF
+}
+oB.wxXCkey=2
+_2z(z,76,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2041,63 +2003,6 @@ gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["47b16668-default-47b16668-3"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':47b16668-default-47b16668-3'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:24:47")
-var xC=_oz(z,91,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,88,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],24,226)
-cs.pop()
-var cF=_v()
-_(r,cF)
-cs.push("./common/slots.wxml:template:24:249")
-var hG=_oz(z,97,e,s,gg)
-var oH=_gd(x[0],hG,e_,d_)
-if(oH){
-var cI=_1z(z,94,e,s,gg) || {}
-var cur_globalf=gg.f
-cF.wxXCkey=3
-oH(cI,cI,cF,gg)
-gg.f=cur_globalf
-}
-else _w(hG,x[0],24,428)
-cs.pop()
-var oJ=_v()
-_(r,oJ)
-cs.push("./common/slots.wxml:template:24:451")
-var lK=_oz(z,103,e,s,gg)
-var aL=_gd(x[0],lK,e_,d_)
-if(aL){
-var tM=_1z(z,100,e,s,gg) || {}
-var cur_globalf=gg.f
-oJ.wxXCkey=3
-aL(tM,tM,oJ,gg)
-gg.f=cur_globalf
-}
-else _w(lK,x[0],24,624)
-cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -2130,26 +2035,26 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:28:47")
+cs.push("./common/slots.wxml:template:24:47")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:28:47")
-var cI=_oz(z,112,fE,oD,gg)
+cs.push("./common/slots.wxml:template:24:47")
+var cI=_oz(z,92,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,111,fE,oD,gg) || {}
+var lK=_1z(z,91,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],28,159)
+else _w(cI,x[0],24,159)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,109,xC,e,s,gg,oB,'name','index','index')
+_2z(z,89,xC,e,s,gg,oB,'name','index','index')
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2161,6 +2066,21 @@ return r
 d_[x[0]]["1b853e3c-default-1b853e3c-3"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':1b853e3c-default-1b853e3c-3'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["58792338-default-58792338-10"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':58792338-default-58792338-10'
 r.wxVkey=b
 gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
@@ -2262,11 +2182,11 @@ return r
 var m1=function(e,s,r,gg){
 var z=gz$gwx_2()
 var oD=e_[x[11]].i
-_ai(oD,x[8],e_,x[11],1,1)
+_ai(oD,x[9],e_,x[11],1,1)
 oD.pop()
 return r
 }
-e_[x[11]]={f:m1,j:[],i:[],ti:[x[8]],ic:[]}
+e_[x[11]]={f:m1,j:[],i:[],ti:[x[9]],ic:[]}
 d_[x[12]]={}
 d_[x[12]]["590c6f9d"]=function(e,s,r,gg){
 var z=gz$gwx_3()
@@ -2326,11 +2246,11 @@ return r
 var m2=function(e,s,r,gg){
 var z=gz$gwx_3()
 var cF=e_[x[12]].i
-_ai(cF,x[8],e_,x[12],1,1)
+_ai(cF,x[9],e_,x[12],1,1)
 cF.pop()
 return r
 }
-e_[x[12]]={f:m2,j:[],i:[],ti:[x[8]],ic:[]}
+e_[x[12]]={f:m2,j:[],i:[],ti:[x[9]],ic:[]}
 d_[x[13]]={}
 d_[x[13]]["68dcfa4a"]=function(e,s,r,gg){
 var z=gz$gwx_4()
@@ -2508,13 +2428,13 @@ return r
 var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
 var oJ=e_[x[15]].i
-_ai(oJ,x[4],e_,x[15],1,1)
+_ai(oJ,x[3],e_,x[15],1,1)
 _ai(oJ,x[10],e_,x[15],1,61)
 oJ.pop()
 oJ.pop()
 return r
 }
-e_[x[15]]={f:m5,j:[],i:[],ti:[x[4],x[10]],ic:[]}
+e_[x[15]]={f:m5,j:[],i:[],ti:[x[3],x[10]],ic:[]}
 d_[x[16]]={}
 d_[x[16]]["3b6bb3ad"]=function(e,s,r,gg){
 var z=gz$gwx_7()
@@ -2568,11 +2488,11 @@ return r
 var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
 var aL=e_[x[16]].i
-_ai(aL,x[8],e_,x[16],1,1)
+_ai(aL,x[9],e_,x[16],1,1)
 aL.pop()
 return r
 }
-e_[x[16]]={f:m6,j:[],i:[],ti:[x[8]],ic:[]}
+e_[x[16]]={f:m6,j:[],i:[],ti:[x[9]],ic:[]}
 d_[x[17]]={}
 d_[x[17]]["2241d2a0"]=function(e,s,r,gg){
 var z=gz$gwx_8()
@@ -2660,11 +2580,11 @@ return r
 var m8=function(e,s,r,gg){
 var z=gz$gwx_9()
 var bO=e_[x[18]].i
-_ai(bO,x[9],e_,x[18],1,1)
+_ai(bO,x[8],e_,x[18],1,1)
 bO.pop()
 return r
 }
-e_[x[18]]={f:m8,j:[],i:[],ti:[x[9]],ic:[]}
+e_[x[18]]={f:m8,j:[],i:[],ti:[x[8]],ic:[]}
 d_[x[19]]={}
 d_[x[19]]["53499e7e"]=function(e,s,r,gg){
 var z=gz$gwx_10()
@@ -2943,20 +2863,6 @@ gg.f=$gdc(f_["./pages/mpvue-echarts/chartList.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[32]);return}
 p_[b]=true
 try{
-var oB=_v()
-_(r,oB)
-cs.push("./pages/mpvue-echarts/chartList.vue.wxml:template:1:194")
-var xC=_oz(z,2,e,s,gg)
-var oD=_gd(x[32],xC,e_,d_)
-if(oD){
-var fE=_1z(z,1,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[32],1,309)
-cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -2966,34 +2872,29 @@ return r
 }
 var m18=function(e,s,r,gg){
 var z=gz$gwx_19()
-var cLB=e_[x[32]].i
-_ai(cLB,x[2],e_,x[32],1,1)
-_ai(cLB,x[3],e_,x[32],1,61)
-cLB.pop()
-cLB.pop()
 return r
 }
-e_[x[32]]={f:m18,j:[],i:[],ti:[x[2],x[3]],ic:[]}
+e_[x[32]]={f:m18,j:[],i:[],ti:[],ic:[]}
 d_[x[33]]={}
 var m19=function(e,s,r,gg){
 var z=gz$gwx_20()
-var oNB=e_[x[33]].i
-_ai(oNB,x[34],e_,x[33],1,1)
-var cOB=_v()
-_(r,cOB)
+var hMB=e_[x[33]].i
+_ai(hMB,x[34],e_,x[33],1,1)
+var oNB=_v()
+_(r,oNB)
 cs.push("./pages/mpvue-echarts/chartList.wxml:template:2:6")
-var oPB=_oz(z,1,e,s,gg)
-var lQB=_gd(x[33],oPB,e_,d_)
-if(lQB){
-var aRB=_1z(z,0,e,s,gg) || {}
+var cOB=_oz(z,1,e,s,gg)
+var oPB=_gd(x[33],cOB,e_,d_)
+if(oPB){
+var lQB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-cOB.wxXCkey=3
-lQB(aRB,aRB,cOB,gg)
+oNB.wxXCkey=3
+oPB(lQB,lQB,oNB,gg)
 gg.f=cur_globalf
 }
-else _w(oPB,x[33],2,18)
+else _w(cOB,x[33],2,18)
 cs.pop()
-oNB.pop()
+hMB.pop()
 return r
 }
 e_[x[33]]={f:m19,j:[],i:[],ti:[x[34]],ic:[]}
@@ -3048,34 +2949,34 @@ return r
 }
 var m20=function(e,s,r,gg){
 var z=gz$gwx_21()
-var eTB=e_[x[35]].i
-_ai(eTB,x[5],e_,x[35],1,1)
-_ai(eTB,x[6],e_,x[35],1,64)
-eTB.pop()
-eTB.pop()
+var tSB=e_[x[35]].i
+_ai(tSB,x[4],e_,x[35],1,1)
+_ai(tSB,x[5],e_,x[35],1,64)
+tSB.pop()
+tSB.pop()
 return r
 }
-e_[x[35]]={f:m20,j:[],i:[],ti:[x[5],x[6]],ic:[]}
+e_[x[35]]={f:m20,j:[],i:[],ti:[x[4],x[5]],ic:[]}
 d_[x[36]]={}
 var m21=function(e,s,r,gg){
 var z=gz$gwx_22()
-var oVB=e_[x[36]].i
-_ai(oVB,x[37],e_,x[36],1,1)
-var xWB=_v()
-_(r,xWB)
+var bUB=e_[x[36]].i
+_ai(bUB,x[37],e_,x[36],1,1)
+var oVB=_v()
+_(r,oVB)
 cs.push("./pages/mpvue-echarts/deviceChart.wxml:template:2:6")
-var oXB=_oz(z,1,e,s,gg)
-var fYB=_gd(x[36],oXB,e_,d_)
-if(fYB){
-var cZB=_1z(z,0,e,s,gg) || {}
+var xWB=_oz(z,1,e,s,gg)
+var oXB=_gd(x[36],xWB,e_,d_)
+if(oXB){
+var fYB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-xWB.wxXCkey=3
-fYB(cZB,cZB,xWB,gg)
+oVB.wxXCkey=3
+oXB(fYB,fYB,oVB,gg)
 gg.f=cur_globalf
 }
-else _w(oXB,x[36],2,18)
+else _w(xWB,x[36],2,18)
 cs.pop()
-oVB.pop()
+bUB.pop()
 return r
 }
 e_[x[36]]={f:m21,j:[],i:[],ti:[x[37]],ic:[]}
@@ -3130,34 +3031,34 @@ return r
 }
 var m22=function(e,s,r,gg){
 var z=gz$gwx_23()
-var o2B=e_[x[38]].i
-_ai(o2B,x[5],e_,x[38],1,1)
-_ai(o2B,x[6],e_,x[38],1,64)
-o2B.pop()
-o2B.pop()
+var h1B=e_[x[38]].i
+_ai(h1B,x[4],e_,x[38],1,1)
+_ai(h1B,x[5],e_,x[38],1,64)
+h1B.pop()
+h1B.pop()
 return r
 }
-e_[x[38]]={f:m22,j:[],i:[],ti:[x[5],x[6]],ic:[]}
+e_[x[38]]={f:m22,j:[],i:[],ti:[x[4],x[5]],ic:[]}
 d_[x[39]]={}
 var m23=function(e,s,r,gg){
 var z=gz$gwx_24()
-var o4B=e_[x[39]].i
-_ai(o4B,x[40],e_,x[39],1,1)
-var l5B=_v()
-_(r,l5B)
+var c3B=e_[x[39]].i
+_ai(c3B,x[40],e_,x[39],1,1)
+var o4B=_v()
+_(r,o4B)
 cs.push("./pages/mpvue-echarts/eventChart.wxml:template:2:6")
-var a6B=_oz(z,1,e,s,gg)
-var t7B=_gd(x[39],a6B,e_,d_)
-if(t7B){
-var e8B=_1z(z,0,e,s,gg) || {}
+var l5B=_oz(z,1,e,s,gg)
+var a6B=_gd(x[39],l5B,e_,d_)
+if(a6B){
+var t7B=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-l5B.wxXCkey=3
-t7B(e8B,e8B,l5B,gg)
+o4B.wxXCkey=3
+a6B(t7B,t7B,o4B,gg)
 gg.f=cur_globalf
 }
-else _w(a6B,x[39],2,18)
+else _w(l5B,x[39],2,18)
 cs.pop()
-o4B.pop()
+c3B.pop()
 return r
 }
 e_[x[39]]={f:m23,j:[],i:[],ti:[x[40]],ic:[]}
@@ -3212,32 +3113,32 @@ return r
 }
 var m24=function(e,s,r,gg){
 var z=gz$gwx_25()
-var o0B=e_[x[41]].i
-_ai(o0B,x[5],e_,x[41],1,1)
-o0B.pop()
+var b9B=e_[x[41]].i
+_ai(b9B,x[4],e_,x[41],1,1)
+b9B.pop()
 return r
 }
-e_[x[41]]={f:m24,j:[],i:[],ti:[x[5]],ic:[]}
+e_[x[41]]={f:m24,j:[],i:[],ti:[x[4]],ic:[]}
 d_[x[42]]={}
 var m25=function(e,s,r,gg){
 var z=gz$gwx_26()
-var oBC=e_[x[42]].i
-_ai(oBC,x[43],e_,x[42],1,1)
-var fCC=_v()
-_(r,fCC)
+var xAC=e_[x[42]].i
+_ai(xAC,x[43],e_,x[42],1,1)
+var oBC=_v()
+_(r,oBC)
 cs.push("./pages/mpvue-echarts/mpvue-echarts.wxml:template:2:6")
-var cDC=_oz(z,1,e,s,gg)
-var hEC=_gd(x[42],cDC,e_,d_)
-if(hEC){
-var oFC=_1z(z,0,e,s,gg) || {}
+var fCC=_oz(z,1,e,s,gg)
+var cDC=_gd(x[42],fCC,e_,d_)
+if(cDC){
+var hEC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-fCC.wxXCkey=3
-hEC(oFC,oFC,fCC,gg)
+oBC.wxXCkey=3
+cDC(hEC,hEC,oBC,gg)
 gg.f=cur_globalf
 }
-else _w(cDC,x[42],2,18)
+else _w(fCC,x[42],2,18)
 cs.pop()
-oBC.pop()
+xAC.pop()
 return r
 }
 e_[x[42]]={f:m25,j:[],i:[],ti:[x[43]],ic:[]}
@@ -3306,38 +3207,38 @@ return r
 }
 var m26=function(e,s,r,gg){
 var z=gz$gwx_27()
-var oHC=e_[x[44]].i
-_ai(oHC,x[5],e_,x[44],1,1)
-_ai(oHC,x[2],e_,x[44],1,64)
-_ai(oHC,x[3],e_,x[44],1,124)
-_ai(oHC,x[6],e_,x[44],1,194)
-oHC.pop()
-oHC.pop()
-oHC.pop()
-oHC.pop()
+var cGC=e_[x[44]].i
+_ai(cGC,x[4],e_,x[44],1,1)
+_ai(cGC,x[1],e_,x[44],1,64)
+_ai(cGC,x[2],e_,x[44],1,124)
+_ai(cGC,x[5],e_,x[44],1,194)
+cGC.pop()
+cGC.pop()
+cGC.pop()
+cGC.pop()
 return r
 }
-e_[x[44]]={f:m26,j:[],i:[],ti:[x[5],x[2],x[3],x[6]],ic:[]}
+e_[x[44]]={f:m26,j:[],i:[],ti:[x[4],x[1],x[2],x[5]],ic:[]}
 d_[x[45]]={}
 var m27=function(e,s,r,gg){
 var z=gz$gwx_28()
-var aJC=e_[x[45]].i
-_ai(aJC,x[46],e_,x[45],1,1)
-var tKC=_v()
-_(r,tKC)
+var lIC=e_[x[45]].i
+_ai(lIC,x[46],e_,x[45],1,1)
+var aJC=_v()
+_(r,aJC)
 cs.push("./pages/mpvue-echarts/valveChart.wxml:template:2:6")
-var eLC=_oz(z,1,e,s,gg)
-var bMC=_gd(x[45],eLC,e_,d_)
-if(bMC){
-var oNC=_1z(z,0,e,s,gg) || {}
+var tKC=_oz(z,1,e,s,gg)
+var eLC=_gd(x[45],tKC,e_,d_)
+if(eLC){
+var bMC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-tKC.wxXCkey=3
-bMC(oNC,oNC,tKC,gg)
+aJC.wxXCkey=3
+eLC(bMC,bMC,aJC,gg)
 gg.f=cur_globalf
 }
-else _w(eLC,x[45],2,18)
+else _w(tKC,x[45],2,18)
 cs.pop()
-aJC.pop()
+lIC.pop()
 return r
 }
 e_[x[45]]={f:m27,j:[],i:[],ti:[x[46]],ic:[]}
@@ -3458,36 +3359,36 @@ return r
 }
 var m28=function(e,s,r,gg){
 var z=gz$gwx_29()
-var oPC=e_[x[47]].i
-_ai(oPC,x[2],e_,x[47],1,1)
-_ai(oPC,x[3],e_,x[47],1,61)
-_ai(oPC,x[4],e_,x[47],1,131)
-oPC.pop()
-oPC.pop()
-oPC.pop()
+var xOC=e_[x[47]].i
+_ai(xOC,x[1],e_,x[47],1,1)
+_ai(xOC,x[2],e_,x[47],1,61)
+_ai(xOC,x[3],e_,x[47],1,131)
+xOC.pop()
+xOC.pop()
+xOC.pop()
 return r
 }
-e_[x[47]]={f:m28,j:[],i:[],ti:[x[2],x[3],x[4]],ic:[]}
+e_[x[47]]={f:m28,j:[],i:[],ti:[x[1],x[2],x[3]],ic:[]}
 d_[x[48]]={}
 var m29=function(e,s,r,gg){
 var z=gz$gwx_30()
-var cRC=e_[x[48]].i
-_ai(cRC,x[49],e_,x[48],1,1)
-var hSC=_v()
-_(r,hSC)
+var fQC=e_[x[48]].i
+_ai(fQC,x[49],e_,x[48],1,1)
+var cRC=_v()
+_(r,cRC)
 cs.push("./pages/pointAdd/pointAdd.wxml:template:2:6")
-var oTC=_oz(z,1,e,s,gg)
-var cUC=_gd(x[48],oTC,e_,d_)
-if(cUC){
-var oVC=_1z(z,0,e,s,gg) || {}
+var hSC=_oz(z,1,e,s,gg)
+var oTC=_gd(x[48],hSC,e_,d_)
+if(oTC){
+var cUC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-hSC.wxXCkey=3
-cUC(oVC,oVC,hSC,gg)
+cRC.wxXCkey=3
+oTC(cUC,cUC,cRC,gg)
 gg.f=cur_globalf
 }
-else _w(oTC,x[48],2,18)
+else _w(hSC,x[48],2,18)
 cs.pop()
-cRC.pop()
+fQC.pop()
 return r
 }
 e_[x[48]]={f:m29,j:[],i:[],ti:[x[49]],ic:[]}
@@ -3522,23 +3423,23 @@ e_[x[50]]={f:m30,j:[],i:[],ti:[],ic:[]}
 d_[x[51]]={}
 var m31=function(e,s,r,gg){
 var z=gz$gwx_32()
-var tYC=e_[x[51]].i
-_ai(tYC,x[52],e_,x[51],1,1)
-var eZC=_v()
-_(r,eZC)
+var aXC=e_[x[51]].i
+_ai(aXC,x[52],e_,x[51],1,1)
+var tYC=_v()
+_(r,tYC)
 cs.push("./pages/pointAdd/pointCheckInfo.wxml:template:2:6")
-var b1C=_oz(z,1,e,s,gg)
-var o2C=_gd(x[51],b1C,e_,d_)
-if(o2C){
-var x3C=_1z(z,0,e,s,gg) || {}
+var eZC=_oz(z,1,e,s,gg)
+var b1C=_gd(x[51],eZC,e_,d_)
+if(b1C){
+var o2C=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-eZC.wxXCkey=3
-o2C(x3C,x3C,eZC,gg)
+tYC.wxXCkey=3
+b1C(o2C,o2C,tYC,gg)
 gg.f=cur_globalf
 }
-else _w(b1C,x[51],2,18)
+else _w(eZC,x[51],2,18)
 cs.pop()
-tYC.pop()
+aXC.pop()
 return r
 }
 e_[x[51]]={f:m31,j:[],i:[],ti:[x[52]],ic:[]}
@@ -3566,23 +3467,23 @@ e_[x[53]]={f:m32,j:[],i:[],ti:[],ic:[]}
 d_[x[54]]={}
 var m33=function(e,s,r,gg){
 var z=gz$gwx_34()
-var c6C=e_[x[54]].i
-_ai(c6C,x[55],e_,x[54],1,1)
-var h7C=_v()
-_(r,h7C)
+var f5C=e_[x[54]].i
+_ai(f5C,x[55],e_,x[54],1,1)
+var c6C=_v()
+_(r,c6C)
 cs.push("./pages/pointCheck/pointCheck.wxml:template:2:6")
-var o8C=_oz(z,1,e,s,gg)
-var c9C=_gd(x[54],o8C,e_,d_)
-if(c9C){
-var o0C=_1z(z,0,e,s,gg) || {}
+var h7C=_oz(z,1,e,s,gg)
+var o8C=_gd(x[54],h7C,e_,d_)
+if(o8C){
+var c9C=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-h7C.wxXCkey=3
-c9C(o0C,o0C,h7C,gg)
+c6C.wxXCkey=3
+o8C(c9C,c9C,c6C,gg)
 gg.f=cur_globalf
 }
-else _w(o8C,x[54],2,18)
+else _w(h7C,x[54],2,18)
 cs.pop()
-c6C.pop()
+f5C.pop()
 return r
 }
 e_[x[54]]={f:m33,j:[],i:[],ti:[x[55]],ic:[]}
@@ -3684,36 +3585,36 @@ return r
 }
 var m34=function(e,s,r,gg){
 var z=gz$gwx_35()
-var aBD=e_[x[56]].i
-_ai(aBD,x[2],e_,x[56],1,1)
-_ai(aBD,x[3],e_,x[56],1,61)
-_ai(aBD,x[4],e_,x[56],1,131)
-aBD.pop()
-aBD.pop()
-aBD.pop()
+var lAD=e_[x[56]].i
+_ai(lAD,x[1],e_,x[56],1,1)
+_ai(lAD,x[2],e_,x[56],1,61)
+_ai(lAD,x[3],e_,x[56],1,131)
+lAD.pop()
+lAD.pop()
+lAD.pop()
 return r
 }
-e_[x[56]]={f:m34,j:[],i:[],ti:[x[2],x[3],x[4]],ic:[]}
+e_[x[56]]={f:m34,j:[],i:[],ti:[x[1],x[2],x[3]],ic:[]}
 d_[x[57]]={}
 var m35=function(e,s,r,gg){
 var z=gz$gwx_36()
-var eDD=e_[x[57]].i
-_ai(eDD,x[58],e_,x[57],1,1)
-var bED=_v()
-_(r,bED)
+var tCD=e_[x[57]].i
+_ai(tCD,x[58],e_,x[57],1,1)
+var eDD=_v()
+_(r,eDD)
 cs.push("./pages/pointDetail/pointDetail.wxml:template:2:6")
-var oFD=_oz(z,1,e,s,gg)
-var xGD=_gd(x[57],oFD,e_,d_)
-if(xGD){
-var oHD=_1z(z,0,e,s,gg) || {}
+var bED=_oz(z,1,e,s,gg)
+var oFD=_gd(x[57],bED,e_,d_)
+if(oFD){
+var xGD=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-bED.wxXCkey=3
-xGD(oHD,oHD,bED,gg)
+eDD.wxXCkey=3
+oFD(xGD,xGD,eDD,gg)
 gg.f=cur_globalf
 }
-else _w(oFD,x[57],2,18)
+else _w(bED,x[57],2,18)
 cs.pop()
-eDD.pop()
+tCD.pop()
 return r
 }
 e_[x[57]]={f:m35,j:[],i:[],ti:[x[58]],ic:[]}
@@ -3757,32 +3658,32 @@ return r
 }
 var m36=function(e,s,r,gg){
 var z=gz$gwx_37()
-var cJD=e_[x[59]].i
-_ai(cJD,x[1],e_,x[59],1,1)
-cJD.pop()
+var fID=e_[x[59]].i
+_ai(fID,x[6],e_,x[59],1,1)
+fID.pop()
 return r
 }
-e_[x[59]]={f:m36,j:[],i:[],ti:[x[1]],ic:[]}
+e_[x[59]]={f:m36,j:[],i:[],ti:[x[6]],ic:[]}
 d_[x[60]]={}
 var m37=function(e,s,r,gg){
 var z=gz$gwx_38()
-var oLD=e_[x[60]].i
-_ai(oLD,x[61],e_,x[60],1,1)
-var cMD=_v()
-_(r,cMD)
+var hKD=e_[x[60]].i
+_ai(hKD,x[61],e_,x[60],1,1)
+var oLD=_v()
+_(r,oLD)
 cs.push("./pages/pointList/pointList.wxml:template:2:6")
-var oND=_oz(z,1,e,s,gg)
-var lOD=_gd(x[60],oND,e_,d_)
-if(lOD){
-var aPD=_1z(z,0,e,s,gg) || {}
+var cMD=_oz(z,1,e,s,gg)
+var oND=_gd(x[60],cMD,e_,d_)
+if(oND){
+var lOD=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-cMD.wxXCkey=3
-lOD(aPD,aPD,cMD,gg)
+oLD.wxXCkey=3
+oND(lOD,lOD,oLD,gg)
 gg.f=cur_globalf
 }
-else _w(oND,x[60],2,18)
+else _w(cMD,x[60],2,18)
 cs.pop()
-oLD.pop()
+hKD.pop()
 return r
 }
 e_[x[60]]={f:m37,j:[],i:[],ti:[x[61]],ic:[]}
@@ -3818,32 +3719,32 @@ return r
 }
 var m38=function(e,s,r,gg){
 var z=gz$gwx_39()
-var eRD=e_[x[62]].i
-_ai(eRD,x[7],e_,x[62],1,1)
-eRD.pop()
+var tQD=e_[x[62]].i
+_ai(tQD,x[7],e_,x[62],1,1)
+tQD.pop()
 return r
 }
 e_[x[62]]={f:m38,j:[],i:[],ti:[x[7]],ic:[]}
 d_[x[63]]={}
 var m39=function(e,s,r,gg){
 var z=gz$gwx_40()
-var oTD=e_[x[63]].i
-_ai(oTD,x[64],e_,x[63],1,1)
-var xUD=_v()
-_(r,xUD)
+var bSD=e_[x[63]].i
+_ai(bSD,x[64],e_,x[63],1,1)
+var oTD=_v()
+_(r,oTD)
 cs.push("./pages/pwd/pwd.wxml:template:2:6")
-var oVD=_oz(z,1,e,s,gg)
-var fWD=_gd(x[63],oVD,e_,d_)
-if(fWD){
-var cXD=_1z(z,0,e,s,gg) || {}
+var xUD=_oz(z,1,e,s,gg)
+var oVD=_gd(x[63],xUD,e_,d_)
+if(oVD){
+var fWD=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-xUD.wxXCkey=3
-fWD(cXD,cXD,xUD,gg)
+oTD.wxXCkey=3
+oVD(fWD,fWD,oTD,gg)
 gg.f=cur_globalf
 }
-else _w(oVD,x[63],2,18)
+else _w(xUD,x[63],2,18)
 cs.pop()
-oTD.pop()
+bSD.pop()
 return r
 }
 e_[x[63]]={f:m39,j:[],i:[],ti:[x[64]],ic:[]}
@@ -3912,32 +3813,32 @@ return r
 }
 var m40=function(e,s,r,gg){
 var z=gz$gwx_41()
-var oZD=e_[x[65]].i
-_ai(oZD,x[7],e_,x[65],1,1)
-oZD.pop()
+var hYD=e_[x[65]].i
+_ai(hYD,x[7],e_,x[65],1,1)
+hYD.pop()
 return r
 }
 e_[x[65]]={f:m40,j:[],i:[],ti:[x[7]],ic:[]}
 d_[x[66]]={}
 var m41=function(e,s,r,gg){
 var z=gz$gwx_42()
-var o2D=e_[x[66]].i
-_ai(o2D,x[67],e_,x[66],1,1)
-var l3D=_v()
-_(r,l3D)
+var c1D=e_[x[66]].i
+_ai(c1D,x[67],e_,x[66],1,1)
+var o2D=_v()
+_(r,o2D)
 cs.push("./pages/reg/reg.wxml:template:2:6")
-var a4D=_oz(z,1,e,s,gg)
-var t5D=_gd(x[66],a4D,e_,d_)
-if(t5D){
-var e6D=_1z(z,0,e,s,gg) || {}
+var l3D=_oz(z,1,e,s,gg)
+var a4D=_gd(x[66],l3D,e_,d_)
+if(a4D){
+var t5D=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-l3D.wxXCkey=3
-t5D(e6D,e6D,l3D,gg)
+o2D.wxXCkey=3
+a4D(t5D,t5D,o2D,gg)
 gg.f=cur_globalf
 }
-else _w(a4D,x[66],2,18)
+else _w(l3D,x[66],2,18)
 cs.pop()
-o2D.pop()
+c1D.pop()
 return r
 }
 e_[x[66]]={f:m41,j:[],i:[],ti:[x[67]],ic:[]}
@@ -3965,23 +3866,23 @@ e_[x[68]]={f:m42,j:[],i:[],ti:[],ic:[]}
 d_[x[69]]={}
 var m43=function(e,s,r,gg){
 var z=gz$gwx_44()
-var x9D=e_[x[69]].i
-_ai(x9D,x[70],e_,x[69],1,1)
-var o0D=_v()
-_(r,o0D)
+var o8D=e_[x[69]].i
+_ai(o8D,x[70],e_,x[69],1,1)
+var x9D=_v()
+_(r,x9D)
 cs.push("./pages/user/accountEdit.wxml:template:2:6")
-var fAE=_oz(z,1,e,s,gg)
-var cBE=_gd(x[69],fAE,e_,d_)
-if(cBE){
-var hCE=_1z(z,0,e,s,gg) || {}
+var o0D=_oz(z,1,e,s,gg)
+var fAE=_gd(x[69],o0D,e_,d_)
+if(fAE){
+var cBE=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-o0D.wxXCkey=3
-cBE(hCE,hCE,o0D,gg)
+x9D.wxXCkey=3
+fAE(cBE,cBE,x9D,gg)
 gg.f=cur_globalf
 }
-else _w(fAE,x[69],2,18)
+else _w(o0D,x[69],2,18)
 cs.pop()
-x9D.pop()
+o8D.pop()
 return r
 }
 e_[x[69]]={f:m43,j:[],i:[],ti:[x[70]],ic:[]}
@@ -4028,23 +3929,23 @@ e_[x[71]]={f:m44,j:[],i:[],ti:[],ic:[]}
 d_[x[72]]={}
 var m45=function(e,s,r,gg){
 var z=gz$gwx_46()
-var oFE=e_[x[72]].i
-_ai(oFE,x[73],e_,x[72],1,1)
-var lGE=_v()
-_(r,lGE)
+var cEE=e_[x[72]].i
+_ai(cEE,x[73],e_,x[72],1,1)
+var oFE=_v()
+_(r,oFE)
 cs.push("./pages/user/user.wxml:template:2:6")
-var aHE=_oz(z,1,e,s,gg)
-var tIE=_gd(x[72],aHE,e_,d_)
-if(tIE){
-var eJE=_1z(z,0,e,s,gg) || {}
+var lGE=_oz(z,1,e,s,gg)
+var aHE=_gd(x[72],lGE,e_,d_)
+if(aHE){
+var tIE=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-lGE.wxXCkey=3
-tIE(eJE,eJE,lGE,gg)
+oFE.wxXCkey=3
+aHE(tIE,tIE,oFE,gg)
 gg.f=cur_globalf
 }
-else _w(aHE,x[72],2,18)
+else _w(lGE,x[72],2,18)
 cs.pop()
-oFE.pop()
+cEE.pop()
 return r
 }
 e_[x[72]]={f:m45,j:[],i:[],ti:[x[73]],ic:[]}
@@ -4136,13 +4037,13 @@ require('pages/user/accountEdit.js');
 __wxRoute = 'pages/user/user';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/user/user.js';
 
 define('pages/user/user.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/user/user"],{"1b29":function(t,e,a){"use strict";var n=a("dd7a"),s=a.n(n);s.a},"1c85":function(t,e,a){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var n=a("2f62");function s(t){for(var e=1;e<arguments.length;e++){var a=null!=arguments[e]?arguments[e]:{},n=Object.keys(a);"function"===typeof Object.getOwnPropertySymbols&&(n=n.concat(Object.getOwnPropertySymbols(a).filter(function(t){return Object.getOwnPropertyDescriptor(a,t).enumerable}))),n.forEach(function(e){i(t,e,a[e])})}return t}function i(t,e,a){return e in t?Object.defineProperty(t,e,{value:a,enumerable:!0,configurable:!0,writable:!0}):t[e]=a,t}var r={computed:s({},(0,n.mapState)(["hasLogin","forcedLogin","userInfo"])),data:function(){return{userid:"",avatarUrl:"../../static/img/head.png",uerInfo:{}}},onLoad:function(){this.userid=this.userInfo.userid,console.log(""+JSON.stringify(this.userInfo))},methods:s({},(0,n.mapMutations)(["logout"]),{bindLogin:function(){t.navigateTo({url:"../login/login"})},jumpAccountEdit:function(){t.navigateTo({url:"./accountEdit"})}})};e.default=r}).call(this,a("649d")["default"])},"5a42":function(t,e,a){"use strict";var n=function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"center"},[a("view",{staticClass:"logo",attrs:{"hover-class":t.logo-t.hover}},[a("image",{staticClass:"logo-img",attrs:{src:t.avatarUrl}}),a("view",{staticClass:"logo-title"},[t.hasLogin?a("view",{staticClass:"infoView"},[a("text",{staticClass:"uer-name"},[t._v("你好，"+t._s(t.userInfo.fullname))]),a("text",{staticClass:"uer-code"},[t._v("工号："+t._s(t.userInfo.usercode))])]):t._e(),t.hasLogin?t._e():a("button",{staticClass:"primary",attrs:{type:"primary",eventid:"240234ba-0"},on:{tap:t.bindLogin}},[t._v("点击登录")])],1)]),a("view",{staticClass:"center-list"},[a("view",{staticClass:"center-list-item border-bottom",attrs:{eventid:"240234ba-1"},on:{tap:function(e){t.jumpAccountEdit()}}},[a("text",{staticClass:"list-icon"},[t._v("")]),a("text",{staticClass:"list-text"},[t._v("账号管理")]),a("text",{staticClass:"navigat-arrow"},[t._v("")])])]),t._m(0),t._m(1)])},s=[function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"center-list"},[a("view",{staticClass:"center-list-item"},[a("text",{staticClass:"list-icon"},[t._v("")]),a("text",{staticClass:"list-text"},[t._v("服务条款及隐私")]),a("text",{staticClass:"navigat-arrow"},[t._v("")])])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"center-list"},[a("view",{staticClass:"center-list-item"},[a("text",{staticClass:"list-icon"},[t._v("")]),a("text",{staticClass:"list-text"},[t._v("关于应用")]),a("text",{staticClass:"navigat-arrow"},[t._v("")])])])}];a.d(e,"a",function(){return n}),a.d(e,"b",function(){return s})},"7b67":function(t,e,a){"use strict";a.r(e);var n=a("1c85"),s=a.n(n);for(var i in n)"default"!==i&&function(t){a.d(e,t,function(){return n[t]})}(i);e["default"]=s.a},a857:function(t,e,a){"use strict";a.r(e);var n=a("5a42"),s=a("7b67");for(var i in s)"default"!==i&&function(t){a.d(e,t,function(){return s[t]})}(i);a("1b29");var r=a("2877"),o=Object(r["a"])(s["default"],n["a"],n["b"],!1,null,null,null);o.options.__file="user.vue",e["default"]=o.exports},dd7a:function(t,e,a){},ed3d:function(t,e,a){"use strict";a("de83");var n=i(a("b0ce")),s=i(a("a857"));function i(t){return t&&t.__esModule?t:{default:t}}Page((0,n.default)(s.default))}},[["ed3d","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/user/user"],{"1b29":function(t,e,a){"use strict";var n=a("dd7a"),s=a.n(n);s.a},"1c85":function(t,e,a){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var n=a("2f62");function s(t){for(var e=1;e<arguments.length;e++){var a=null!=arguments[e]?arguments[e]:{},n=Object.keys(a);"function"===typeof Object.getOwnPropertySymbols&&(n=n.concat(Object.getOwnPropertySymbols(a).filter(function(t){return Object.getOwnPropertyDescriptor(a,t).enumerable}))),n.forEach(function(e){i(t,e,a[e])})}return t}function i(t,e,a){return e in t?Object.defineProperty(t,e,{value:a,enumerable:!0,configurable:!0,writable:!0}):t[e]=a,t}var r={computed:s({},(0,n.mapState)(["hasLogin","forcedLogin","userInfo"])),data:function(){return{userid:"",avatarUrl:"../../static/img/head.png",uerInfo:{}}},onLoad:function(){this.userid=this.userInfo.userid,console.log(""+JSON.stringify(this.userInfo))},methods:s({},(0,n.mapMutations)(["logout"]),{bindLogin:function(){t.navigateTo({url:"../login/login"})},jumpAccountEdit:function(){t.navigateTo({url:"./accountEdit"})}})};e.default=r}).call(this,a("649d")["default"])},"44ec":function(t,e,a){"use strict";var n=function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"center"},[a("view",{staticClass:"logo",attrs:{"hover-class":t.logo-t.hover}},[a("image",{staticClass:"logo-img",attrs:{src:t.avatarUrl}}),a("view",{staticClass:"logo-title"},[t.hasLogin?a("view",{staticClass:"infoView"},[a("text",{staticClass:"uer-name"},[t._v("你好，"+t._s(t.userInfo.fullname))]),a("text",{staticClass:"uer-code"},[t._v("工号："+t._s(t.userInfo.usercode))])]):t._e(),t.hasLogin?t._e():a("button",{staticClass:"primary",attrs:{type:"primary",eventid:"240234ba-0"},on:{tap:t.bindLogin}},[t._v("点击登录")])],1)]),a("view",{staticClass:"userinfo"},[a("view",{staticClass:"dangerView",attrs:{eventid:"240234ba-1"},on:{tap:function(e){t.jumpAccountEdit()}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/setting.png",mode:"widthFix"}}),t._m(0)]),a("view",{staticClass:"dangerView",attrs:{eventid:"240234ba-2"},on:{tap:function(e){t.jumpAccountEdit()}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/wdkc.png",mode:"widthFix"}}),t._m(1)]),a("view",{staticClass:"dangerView",attrs:{eventid:"240234ba-3"},on:{tap:function(e){t.jumpAccountEdit()}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/wdsc.png",mode:"widthFix"}}),t._m(2)]),a("view",{staticClass:"dangerView",attrs:{eventid:"240234ba-4"},on:{tap:function(e){t.jumpAccountEdit()}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/wdpc.png",mode:"widthFix"}}),t._m(3)]),a("view",{staticClass:"dangerView",attrs:{eventid:"240234ba-5"},on:{tap:function(e){t.jumpAccountEdit()}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/wdks.png",mode:"widthFix"}}),t._m(4)]),a("view",{staticClass:"dangerView",attrs:{eventid:"240234ba-6"},on:{tap:function(e){t.jumpAccountEdit()}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/wdsx.png",mode:"widthFix"}}),t._m(5)])])])},s=[function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("设置")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("我的课程")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("我的收藏")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("我的评测")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("我的考试")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("我的私信")])])}];a.d(e,"a",function(){return n}),a.d(e,"b",function(){return s})},"7b67":function(t,e,a){"use strict";a.r(e);var n=a("1c85"),s=a.n(n);for(var i in n)"default"!==i&&function(t){a.d(e,t,function(){return n[t]})}(i);e["default"]=s.a},a857:function(t,e,a){"use strict";a.r(e);var n=a("44ec"),s=a("7b67");for(var i in s)"default"!==i&&function(t){a.d(e,t,function(){return s[t]})}(i);a("1b29");var r=a("2877"),c=Object(r["a"])(s["default"],n["a"],n["b"],!1,null,null,null);c.options.__file="user.vue",e["default"]=c.exports},dd7a:function(t,e,a){},ed3d:function(t,e,a){"use strict";a("de83");var n=i(a("b0ce")),s=i(a("a857"));function i(t){return t&&t.__esModule?t:{default:t}}Page((0,n.default)(s.default))}},[["ed3d","common/runtime","common/vendor"]]]);
 });
 require('pages/user/user.js');
 __wxRoute = 'pages/pointCheck/pointCheck';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/pointCheck/pointCheck.js';
 
 define('pages/pointCheck/pointCheck.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/pointCheck/pointCheck"],{"0927":function(t,e,a){"use strict";a.r(e);var s=a("0ad6"),i=a.n(s);for(var n in s)"default"!==n&&function(t){a.d(e,t,function(){return s[t]})}(n);e["default"]=i.a},"0ad6":function(t,e,a){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var s=i(a("6cfe"));function i(t){return t&&t.__esModule?t:{default:t}}var n={components:{uniDrawer:s.default},data:function(){return{showDrawer:!1}},onLoad:function(){var t={name:"当月未检查",id:"/mobile/xhsdywjclb.do"};this.saveTabInfo("消火栓",t);var e={name:"本周未检查",id:"/mobile/fzzwjclb.do"};this.saveTabInfo("阀组",e);var a={name:"当天未检查",id:"/mobile/jtwjclb.do"};this.saveTabInfo("高位水箱",a),this.saveTabInfo("消防泵",a)},onNavigationBarButtonTap:function(){var t=this;1==t.showDrawer?t.showDrawer=!1:t.showDrawer=!0},methods:{jumpListPage:function(e){this.saveTabInfo("currentLx",e),t.navigateTo({url:"../pointList/uni-tabs"})},saveTabInfo:function(e,a){t.setStorage({key:e,data:a,success:function(){console.log("保存成功")}})}}};e.default=n}).call(this,a("649d")["default"])},"2dc8":function(t,e,a){},a36f:function(t,e,a){"use strict";var s=a("2dc8"),i=a.n(s);i.a},ab69:function(t,e,a){"use strict";a.r(e);var s=a("ee24"),i=a("0927");for(var n in i)"default"!==n&&function(t){a.d(e,t,function(){return i[t]})}(n);a("a36f");var c=a("2877"),r=Object(c["a"])(i["default"],s["a"],s["b"],!1,null,null,null);r.options.__file="pointCheck.vue",e["default"]=r.exports},be2a:function(t,e,a){"use strict";a("de83");var s=n(a("b0ce")),i=n(a("ab69"));function n(t){return t&&t.__esModule?t:{default:t}}Page((0,s.default)(i.default))},ee24:function(t,e,a){"use strict";var s=function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"part2"},[t._m(0),a("view",{staticClass:"topView_pc",attrs:{eventid:"10bbdf1a-0"},on:{tap:function(e){t.getCount("正在获取统计数据")}}},[t._m(1),t._m(2),t._m(3)]),t._m(4),a("view",{staticClass:"userinfo"},[a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-1"},on:{tap:function(e){t.jumpListPage("所有记录")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_all.png",mode:"widthFix"}}),t._m(5)]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-2"},on:{tap:function(e){t.jumpListPage("消火栓")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_xhs.png",mode:"widthFix"}}),t._m(6)]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-3"},on:{tap:function(e){t.jumpListPage("阀组")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_fz.png",mode:"widthFix"}}),t._m(7)]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-4"},on:{tap:function(e){t.jumpListPage("高位水箱")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_sx.png",mode:"widthFix"}}),t._m(8)]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-5"},on:{tap:function(e){t.jumpListPage("消防泵")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_xfb.png",mode:"widthFix"}}),t._m(9)]),a("view",{staticClass:"dangerView"})]),t._m(10),a("view",{staticClass:"userinfo"},[a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-6"},on:{tap:function(e){t.jumpListPage("隐患上报")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_all.png",mode:"widthFix"}}),t._m(11)]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-7"},on:{tap:function(e){t.jumpListPage("隐患审批")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_xhs.png",mode:"widthFix"}}),t._m(12)]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-8"},on:{tap:function(e){t.jumpListPage("已整改隐患")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_fz.png",mode:"widthFix"}}),t._m(13)])]),t._m(14),a("view",{staticClass:"userinfo"},[a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-9"},on:{tap:function(e){t.jumpListPage("隐患上报")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_all.png",mode:"widthFix"}}),t._m(15)]),a("view",{staticClass:"dangerView"}),a("view",{staticClass:"dangerView"})]),t._m(16),a("view",{staticClass:"userinfo"},[a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-10"},on:{tap:function(e){t.jumpListPage("隐患上报")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_all.png",mode:"widthFix"}}),t._m(17)]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-11"},on:{tap:function(e){t.jumpListPage("隐患审批")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_xhs.png",mode:"widthFix"}}),t._m(18)]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-12"},on:{tap:function(e){t.jumpListPage("已整改隐患")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_fz.png",mode:"widthFix"}}),t._m(19)]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-13"},on:{tap:function(e){t.jumpListPage("隐患上报")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_all.png",mode:"widthFix"}}),t._m(20)]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-14"},on:{tap:function(e){t.jumpListPage("隐患审批")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_xhs.png",mode:"widthFix"}}),t._m(21)]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-15"},on:{tap:function(e){t.jumpListPage("已整改隐患")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_fz.png",mode:"widthFix"}}),t._m(22)])]),t._m(23),a("view",{staticClass:"userinfo"},[a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-16"},on:{tap:function(e){t.jumpListPage("隐患上报")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_all.png",mode:"widthFix"}}),t._m(24)]),a("view",{staticClass:"dangerView"}),a("view",{staticClass:"dangerView"})]),t._m(25),a("view",{staticClass:"userinfo"},[a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-17"},on:{tap:function(e){t.jumpListPage("隐患上报")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_all.png",mode:"widthFix"}}),t._m(26)]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-18"},on:{tap:function(e){t.jumpListPage("隐患上报")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_all.png",mode:"widthFix"}}),t._m(27)]),a("view",{staticClass:"dangerView"})])])},i=[function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"titleView_pc"},[a("text",{staticClass:"titleText_pc"},[t._v("数据统计")]),a("text",{staticClass:"titleSubText_pc"},[t._v("查看更多")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"topItemView"},[a("text",{staticClass:"topTextTitle"},[t._v("隐患总数")]),a("text",{staticClass:"topTextNum"},[t._v("1005")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"topItemView"},[a("text",{staticClass:"topTextTitle"},[t._v("事故总数")]),a("text",{staticClass:"topTextNum"},[t._v("600")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"topItemView"},[a("text",{staticClass:"topTextTitle"},[t._v("检查次数")]),a("text",{staticClass:"topTextNum"},[t._v("2000")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"titleView_pc"},[a("text",{staticClass:"titleText_pc"},[t._v("检查管理")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("所有记录")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("消火栓")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("阀组")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("高位水箱")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("消防泵")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"titleView_pc"},[a("text",{staticClass:"titleText_pc"},[t._v("隐患排查")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("隐患上报")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("隐患审批")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("已整改隐患")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"titleView_pc"},[a("text",{staticClass:"titleText_pc"},[t._v("事故管理")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("事故快报")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"titleView_pc"},[a("text",{staticClass:"titleText_pc"},[t._v("安全培训")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("培训资料")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("在线考试")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("培训计划")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("培训课程")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("自我测试")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("统一考试")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"titleView_pc"},[a("text",{staticClass:"titleText_pc"},[t._v("法律法规")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("法规清单")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"titleView_pc"},[a("text",{staticClass:"titleText_pc"},[t._v("环保管理")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("三废排放")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("监测记录")])])}];a.d(e,"a",function(){return s}),a.d(e,"b",function(){return i})}},[["be2a","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/pointCheck/pointCheck"],{"0927":function(t,e,s){"use strict";s.r(e);var a=s("0ad6"),i=s.n(a);for(var n in a)"default"!==n&&function(t){s.d(e,t,function(){return a[t]})}(n);e["default"]=i.a},"0ad6":function(t,e,s){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var a=i(s("6cfe"));function i(t){return t&&t.__esModule?t:{default:t}}var n={components:{uniDrawer:a.default},data:function(){return{showDrawer:!1}},onLoad:function(){var t={name:"当月未检查",id:"/mobile/xhsdywjclb.do"};this.saveTabInfo("消火栓",t);var e={name:"本周未检查",id:"/mobile/fzzwjclb.do"};this.saveTabInfo("阀组",e);var s={name:"当天未检查",id:"/mobile/jtwjclb.do"};this.saveTabInfo("高位水箱",s),this.saveTabInfo("消防泵",s)},onNavigationBarButtonTap:function(){var t=this;1==t.showDrawer?t.showDrawer=!1:t.showDrawer=!0},methods:{jumpListPage:function(e){this.saveTabInfo("currentLx",e),t.navigateTo({url:"../pointList/uni-tabs"})},saveTabInfo:function(e,s){t.setStorage({key:e,data:s,success:function(){console.log("保存成功")}})}}};e.default=n}).call(this,s("649d")["default"])},"2dc8":function(t,e,s){},"9e7a":function(t,e,s){"use strict";var a=function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"part2"},[t._m(0),s("view",{staticClass:"topView_pc",attrs:{eventid:"10bbdf1a-0"},on:{tap:function(e){t.getCount("正在获取统计数据")}}},[t._m(1),t._m(2),t._m(3)]),t._m(4),s("view",{staticClass:"userinfo"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-1"},on:{tap:function(e){t.jumpListPage("所有记录")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_all.png",mode:"widthFix"}}),t._m(5)]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-2"},on:{tap:function(e){t.jumpListPage("消火栓")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_xhs.png",mode:"widthFix"}}),t._m(6)]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-3"},on:{tap:function(e){t.jumpListPage("阀组")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_fz.png",mode:"widthFix"}}),t._m(7)]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-4"},on:{tap:function(e){t.jumpListPage("高位水箱")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_sx.png",mode:"widthFix"}}),t._m(8)]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-5"},on:{tap:function(e){t.jumpListPage("消防泵")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_xfb.png",mode:"widthFix"}}),t._m(9)]),s("view",{staticClass:"dangerView"})]),t._m(10),s("view",{staticClass:"userinfo"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-6"},on:{tap:function(e){t.jumpListPage("隐患上报")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/yhsb.png",mode:"widthFix"}}),t._m(11)]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-7"},on:{tap:function(e){t.jumpListPage("隐患审批")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/yhsp.png",mode:"widthFix"}}),t._m(12)]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-8"},on:{tap:function(e){t.jumpListPage("已整改隐患")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/ygyh.png",mode:"widthFix"}}),t._m(13)])]),t._m(14),s("view",{staticClass:"userinfo"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-9"},on:{tap:function(e){t.jumpListPage("事故快报")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/sgkb.png",mode:"widthFix"}}),t._m(15)]),s("view",{staticClass:"dangerView"}),s("view",{staticClass:"dangerView"})]),t._m(16),s("view",{staticClass:"userinfo"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-10"},on:{tap:function(e){t.jumpListPage("培训资料")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pxzl.png",mode:"widthFix"}}),t._m(17)]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-11"},on:{tap:function(e){t.jumpListPage("在线考试")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/zxks.png",mode:"widthFix"}}),t._m(18)]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-12"},on:{tap:function(e){t.jumpListPage("培训计划")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pxjh.png",mode:"widthFix"}}),t._m(19)]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-13"},on:{tap:function(e){t.jumpListPage("培训课程")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pxkc.png",mode:"widthFix"}}),t._m(20)]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-14"},on:{tap:function(e){t.jumpListPage("自我测试")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/zwcs.png",mode:"widthFix"}}),t._m(21)]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-15"},on:{tap:function(e){t.jumpListPage("统一考试")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/tyks.png",mode:"widthFix"}}),t._m(22)])]),t._m(23),s("view",{staticClass:"userinfo"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-16"},on:{tap:function(e){t.jumpListPage("法规清单")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/fgqd.png",mode:"widthFix"}}),t._m(24)]),s("view",{staticClass:"dangerView"}),s("view",{staticClass:"dangerView"})]),t._m(25),s("view",{staticClass:"userinfo"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-17"},on:{tap:function(e){t.jumpListPage("三废排放")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/sfpf.png",mode:"widthFix"}}),t._m(26)]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-18"},on:{tap:function(e){t.jumpListPage("监测记录")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/jcjl.png",mode:"widthFix"}}),t._m(27)]),s("view",{staticClass:"dangerView"})])])},i=[function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("数据统计")]),s("text",{staticClass:"titleSubText_pc"},[t._v("查看更多")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"topItemView"},[s("text",{staticClass:"topTextTitle"},[t._v("隐患总数")]),s("text",{staticClass:"topTextNum"},[t._v("1005")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"topItemView"},[s("text",{staticClass:"topTextTitle"},[t._v("事故总数")]),s("text",{staticClass:"topTextNum"},[t._v("600")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"topItemView"},[s("text",{staticClass:"topTextTitle"},[t._v("检查次数")]),s("text",{staticClass:"topTextNum"},[t._v("2000")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("检查管理")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("所有记录")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("消火栓")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("阀组")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("高位水箱")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("消防泵")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("隐患排查")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("隐患上报")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("隐患审批")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("已整改隐患")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("事故管理")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("事故快报")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("安全培训")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("培训资料")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("在线考试")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("培训计划")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("培训课程")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("自我测试")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("统一考试")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("法律法规")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("法规清单")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("环保管理")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("三废排放")])])},function(){var t=this,e=t.$createElement,s=t._self._c||e;return s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("监测记录")])])}];s.d(e,"a",function(){return a}),s.d(e,"b",function(){return i})},a36f:function(t,e,s){"use strict";var a=s("2dc8"),i=s.n(a);i.a},ab69:function(t,e,s){"use strict";s.r(e);var a=s("9e7a"),i=s("0927");for(var n in i)"default"!==n&&function(t){s.d(e,t,function(){return i[t]})}(n);s("a36f");var c=s("2877"),r=Object(c["a"])(i["default"],a["a"],a["b"],!1,null,null,null);r.options.__file="pointCheck.vue",e["default"]=r.exports},be2a:function(t,e,s){"use strict";s("de83");var a=n(s("b0ce")),i=n(s("ab69"));function n(t){return t&&t.__esModule?t:{default:t}}Page((0,a.default)(i.default))}},[["be2a","common/runtime","common/vendor"]]]);
 });
 require('pages/pointCheck/pointCheck.js');
 __wxRoute = 'pages/pointList/pointList';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/pointList/pointList.js';
@@ -4172,7 +4073,7 @@ require('pages/pointAdd/pointCheckInfo.js');
 __wxRoute = 'pages/mpvue-echarts/chartList';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/mpvue-echarts/chartList.js';
 
 define('pages/mpvue-echarts/chartList.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/mpvue-echarts/chartList"],{7911:function(t,e,n){"use strict";n.r(e);var i=n("adbd"),u=n("8555");for(var a in u)"default"!==a&&function(t){n.d(e,t,function(){return u[t]})}(a);var c=n("2877"),o=Object(c["a"])(u["default"],i["a"],i["b"],!1,null,null,null);o.options.__file="chartList.vue",e["default"]=o.exports},8555:function(t,e,n){"use strict";n.r(e);var i=n("b8b9"),u=n.n(i);for(var a in i)"default"!==a&&function(t){n.d(e,t,function(){return i[t]})}(a);e["default"]=u.a},adbd:function(t,e,n){"use strict";var i=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("view",{staticClass:"content"},[n("uni-list",{attrs:{mpcomid:"47b16668-3"}},[n("uni-list-item",{attrs:{title:"报警设备类型统计",eventid:"47b16668-0",mpcomid:"47b16668-0"},on:{click:function(e){t.onClick("device")}}}),n("uni-list-item",{attrs:{title:"报警事件类型统计",eventid:"47b16668-1",mpcomid:"47b16668-1"},on:{click:function(e){t.onClick("event")}}}),n("uni-list-item",{attrs:{title:"阀组压力统计",eventid:"47b16668-2",mpcomid:"47b16668-2"},on:{click:function(e){t.onClick("valve")}}})],1)],1)},u=[];n.d(e,"a",function(){return i}),n.d(e,"b",function(){return u})},b8b9:function(t,e,n){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var i=a(n("7c03")),u=a(n("4b9c"));function a(t){return t&&t.__esModule?t:{default:t}}var c={components:{uniList:i.default,uniListItem:u.default},methods:{onClick:function(e){"device"==e?t.navigateTo({url:"./deviceChart"}):"event"==e?t.navigateTo({url:"./eventChart"}):"valve"==e?t.navigateTo({url:"./valveChart"}):t.navigateTo({url:"./mpvue-echarts"})}}};e.default=c}).call(this,n("649d")["default"])},fdcf:function(t,e,n){"use strict";n("de83");var i=a(n("b0ce")),u=a(n("7911"));function a(t){return t&&t.__esModule?t:{default:t}}Page((0,i.default)(u.default))}},[["fdcf","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/mpvue-echarts/chartList"],{"001f":function(t,e,i){"use strict";var a=function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"part2"},[t._m(0),i("view",{staticClass:"userinfo"},[i("view",{staticClass:"dangerView",attrs:{eventid:"47b16668-0"},on:{tap:function(e){t.onClick("device")}}},[i("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pieDraw.png",mode:"widthFix"}}),t._m(1)]),i("view",{staticClass:"dangerView",attrs:{eventid:"47b16668-1"},on:{tap:function(e){t.onClick("event")}}},[i("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pieDraw.png",mode:"widthFix"}}),t._m(2)]),i("view",{staticClass:"dangerView",attrs:{eventid:"47b16668-2"},on:{tap:function(e){t.onClick("valve")}}},[i("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pointLineDraw.png",mode:"widthFix"}}),t._m(3)])]),t._m(4),i("view",{staticClass:"userinfo"},[i("view",{staticClass:"dangerView",attrs:{eventid:"47b16668-3"},on:{tap:function(e){t.onClick("device")}}},[i("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pieDraw.png",mode:"widthFix"}}),t._m(5)]),i("view",{staticClass:"dangerView",attrs:{eventid:"47b16668-4"},on:{tap:function(e){t.onClick("event")}}},[i("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/cloumDraw.png",mode:"widthFix"}}),t._m(6)]),i("view",{staticClass:"dangerView",attrs:{eventid:"47b16668-5"},on:{tap:function(e){t.onClick("valve")}}},[i("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pieDraw.png",mode:"widthFix"}}),t._m(7)])]),t._m(8),i("view",{staticClass:"userinfo"},[i("view",{staticClass:"dangerView",attrs:{eventid:"47b16668-6"},on:{tap:function(e){t.onClick("device")}}},[i("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pieDraw.png",mode:"widthFix"}}),t._m(9)]),i("view",{staticClass:"dangerView"}),i("view",{staticClass:"dangerView"})]),t._m(10),i("view",{staticClass:"userinfo"},[i("view",{staticClass:"dangerView",attrs:{eventid:"47b16668-7"},on:{tap:function(e){t.onClick("device")}}},[i("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pieDraw.png",mode:"widthFix"}}),t._m(11)]),i("view",{staticClass:"dangerView",attrs:{eventid:"47b16668-8"},on:{tap:function(e){t.onClick("event")}}},[i("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/cloumDraw.png",mode:"widthFix"}}),t._m(12)]),i("view",{staticClass:"dangerView"})]),t._m(13),i("view",{staticClass:"userinfo"},[i("view",{staticClass:"dangerView",attrs:{eventid:"47b16668-9"},on:{tap:function(e){t.onClick("device")}}},[i("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pieDraw.png",mode:"widthFix"}}),t._m(14)]),i("view",{staticClass:"dangerView",attrs:{eventid:"47b16668-10"},on:{tap:function(e){t.onClick("event")}}},[i("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pieDraw.png",mode:"widthFix"}}),t._m(15)]),i("view",{staticClass:"dangerView",attrs:{eventid:"47b16668-11"},on:{tap:function(e){t.onClick("event")}}},[i("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pointLineDraw.png",mode:"widthFix"}}),t._m(16)])])])},s=[function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"titleView_pc"},[i("text",{staticClass:"titleText_pc"},[t._v("消防统计")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"subView"},[i("text",{staticClass:"dangerText"},[t._v("报警设备类型")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"subView"},[i("text",{staticClass:"dangerText"},[t._v("报警事件类型")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"subView"},[i("text",{staticClass:"dangerText"},[t._v("阀组压力")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"titleView_pc"},[i("text",{staticClass:"titleText_pc"},[t._v("隐患统计")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"subView"},[i("text",{staticClass:"dangerText"},[t._v("隐患分类")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"subView"},[i("text",{staticClass:"dangerText"},[t._v("隐患提出")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"subView"},[i("text",{staticClass:"dangerText"},[t._v("隐患状态")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"titleView_pc"},[i("text",{staticClass:"titleText_pc"},[t._v("检查统计")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"subView"},[i("text",{staticClass:"dangerText"},[t._v("检查类型")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"titleView_pc"},[i("text",{staticClass:"titleText_pc"},[t._v("变更统计")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"subView"},[i("text",{staticClass:"dangerText"},[t._v("变更状态")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"subView"},[i("text",{staticClass:"dangerText"},[t._v("变更数量")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"titleView_pc"},[i("text",{staticClass:"titleText_pc"},[t._v("安全培训")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"subView"},[i("text",{staticClass:"dangerText"},[t._v("考试分数分布")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"subView"},[i("text",{staticClass:"dangerText"},[t._v("培训资料分类")])])},function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"subView"},[i("text",{staticClass:"dangerText"},[t._v("每周考试次数")])])}];i.d(e,"a",function(){return a}),i.d(e,"b",function(){return s})},"21f7":function(t,e,i){},"424e":function(t,e,i){"use strict";var a=i("21f7"),s=i.n(a);s.a},7911:function(t,e,i){"use strict";i.r(e);var a=i("001f"),s=i("8555");for(var n in s)"default"!==n&&function(t){i.d(e,t,function(){return s[t]})}(n);i("424e");var c=i("2877"),r=Object(c["a"])(s["default"],a["a"],a["b"],!1,null,null,null);r.options.__file="chartList.vue",e["default"]=r.exports},8555:function(t,e,i){"use strict";i.r(e);var a=i("b8b9"),s=i.n(a);for(var n in a)"default"!==n&&function(t){i.d(e,t,function(){return a[t]})}(n);e["default"]=s.a},b8b9:function(t,e,i){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var a=n(i("7c03")),s=n(i("4b9c"));function n(t){return t&&t.__esModule?t:{default:t}}var c={components:{uniList:a.default,uniListItem:s.default},methods:{onClick:function(e){"device"==e?t.navigateTo({url:"./deviceChart"}):"event"==e?t.navigateTo({url:"./eventChart"}):"valve"==e?t.navigateTo({url:"./valveChart"}):t.navigateTo({url:"./mpvue-echarts"})}}};e.default=c}).call(this,i("649d")["default"])},fdcf:function(t,e,i){"use strict";i("de83");var a=n(i("b0ce")),s=n(i("7911"));function n(t){return t&&t.__esModule?t:{default:t}}Page((0,a.default)(s.default))}},[["fdcf","common/runtime","common/vendor"]]]);
 });
 require('pages/mpvue-echarts/chartList.js');
 __wxRoute = 'pages/mpvue-echarts/deviceChart';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/mpvue-echarts/deviceChart.js';
