@@ -39,7 +39,7 @@
       },
       {
         "pagePath": "pages/pointCheck/pointCheck",
-        "text": "检查记录",
+        "text": "应用",
         "iconPath": "static/img/point.png",
         "selectedIconPath": "static/img/pointHL.png"
       },
