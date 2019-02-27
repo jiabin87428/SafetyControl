@@ -89,12 +89,14 @@
 		      <text class='dangerText'>隐患审批</text>
 		    </view>
 		  </view>
-		  <view class='dangerView' @tap="jumpListPage('已整改隐患')">
+		  <view class='dangerView'>
+		  </view>
+		  <!-- <view class='dangerView' @tap="jumpListPage('已整改隐患')">
 		    <image class="dangerIcon" src="../../static/img/ygyh.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>已整改隐患</text>
 		    </view>
-		  </view>
+		  </view> -->
 		</view>
 		
 		<view class="titleView_pc">
@@ -108,6 +110,26 @@
 		    </view>
 		  </view>
 		  <view class='dangerView'>
+		  </view>
+		  <view class='dangerView'>
+		  </view>
+		</view>
+		
+		<view class="titleView_pc">
+			<text class="titleText_pc">作业管理</text>
+		</view>
+		<view class="userinfo">
+		  <view class='dangerView' @tap="jumpListPage('作业风险评估')">
+		    <image class="dangerIcon" src="../../static/img/zyfxpg.png" mode="widthFix"></image>
+		    <view class='subView'>
+		      <text class='dangerText'>作业风险评估</text>
+		    </view>
+		  </view>
+		  <view class='dangerView' @tap="jumpListPage('作业审批')">
+		    <image class="dangerIcon" src="../../static/img/zysp.png" mode="widthFix"></image>
+		    <view class='subView'>
+		      <text class='dangerText'>作业审批</text>
+		    </view>
 		  </view>
 		  <view class='dangerView'>
 		  </view>

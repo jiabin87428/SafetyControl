@@ -156,7 +156,21 @@
             "style": {
                 "navigationBarTitleText": "输入内容"
             }
-        }
+        },{
+			"path": "pages/danger/danger",
+			"style": {
+				"navigationBarTitleText": "隐患排查",
+				"app-plus": {  
+					"titleNView": {  
+						"buttons": [{  
+							"text": "\ue605",
+							"fontSrc": "/static/aliIcon/iconfont.ttf",
+							"fontSize": "22px"
+						}]  
+					}  
+				}
+			}
+		}
     ],
     "tabBar": {
         "color": "#7a7e83",

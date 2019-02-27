@@ -17,7 +17,8 @@
     "pages/mpvue-echarts/eventChart",
     "pages/mpvue-echarts/valveChart",
     "pages/mpvue-echarts/mpvue-echarts",
-    "pages/common/inputPage"
+    "pages/common/inputPage",
+    "pages/danger/danger"
   ],
   "subPackages": [],
   "window": {
