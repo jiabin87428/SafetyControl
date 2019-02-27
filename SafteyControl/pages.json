@@ -157,18 +157,14 @@
                 "navigationBarTitleText": "输入内容"
             }
         },{
-			"path": "pages/danger/danger",
+			"path": "pages/danger/dangerList",
 			"style": {
-				"navigationBarTitleText": "隐患排查",
-				"app-plus": {  
-					"titleNView": {  
-						"buttons": [{  
-							"text": "\ue605",
-							"fontSrc": "/static/aliIcon/iconfont.ttf",
-							"fontSize": "22px"
-						}]  
-					}  
-				}
+				"navigationBarTitleText": "隐患审批"
+			}
+		},{
+			"path": "pages/danger/addDanger",
+			"style": {
+				"navigationBarTitleText": "隐患上报"
 			}
 		}
     ],

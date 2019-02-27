@@ -18,7 +18,7 @@
     "pages/mpvue-echarts/valveChart",
     "pages/mpvue-echarts/mpvue-echarts",
     "pages/common/inputPage",
-    "pages/danger/danger"
+    "pages/danger/addDanger"
   ],
   "subPackages": [],
   "window": {
@@ -57,6 +57,11 @@
   },
   "nvue": {
     "pages": {
+      "pages/danger/dangerList.html": {
+        "window": {
+          "navigationBarTitleText": "隐患审批"
+        }
+      },
       "pages/uni-tabs/uni-tabs.html": {
         "window": {
           "navigationBarTitleText": "点位检查11"

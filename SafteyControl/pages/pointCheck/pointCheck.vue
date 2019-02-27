@@ -77,13 +77,13 @@
 			<text class="titleText_pc">隐患排查</text>
 		</view>
 		<view class="userinfo">
-		  <view class='dangerView' @tap="jumpListPage('隐患上报')">
+		  <view class='dangerView' @tap="jumpPage('../danger/addDanger')">
 		    <image class="dangerIcon" src="../../static/img/yhsb.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>隐患上报</text>
 		    </view>
 		  </view>
-		  <view class='dangerView' @tap="jumpListPage('隐患审批')">
+		  <view class='dangerView' @tap="jumpPage('../danger/dangerList')">
 		    <image class="dangerIcon" src="../../static/img/yhsp.png" mode="widthFix"></image>
 		    <view class='subView'>
 		      <text class='dangerText'>隐患审批</text>
@@ -261,6 +261,11 @@
 // 				});
 				uni.navigateTo({
 					url: '../pointList/uni-tabs'
+				});
+			},
+			jumpPage(url) {
+				uni.navigateTo({
+					url: url
 				});
 			},
 			saveTabInfo(key, data){
