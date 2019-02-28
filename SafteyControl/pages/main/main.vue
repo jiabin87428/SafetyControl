@@ -18,7 +18,7 @@
                 <view>在 “我的” 中点击 “登录” 可以 “登录您的账户”</view>
             </view>
         </view> -->
-		<view class="topView" @tap="getCount('正在获取统计数据')">
+		<view class="topView" @tap="getCount('正在获取统计数据')" v-if="userType == 1">
 			<view class="topItemView">
 				<text class="topTextTitle">阀组本周未检</text>
 				<text class="topTextNum">{{bzwjcsl}}</text>
@@ -32,13 +32,20 @@
 				<text class="topTextNum">{{dywjcsl}}</text>
 			</view>
 		</view>
+		<swiper class="banner-box" indicator-dots autoplay  
+			indicator-active-color="#169bd5"  circular  
+			:interval="5000" :duration="300" indicator-color="rgba(0,0,0,.3)" v-if="userType != 1">  
+			<swiper-item>  
+				<image src="../../static/img/fgBG.png" class="banner-image" mode="aspectFill" lazy-load></image>  
+			</swiper-item>   
+		</swiper>
 		<view class="middleView">
 			<view class="btnView" @tap="openScan()">
 				<image class="btnImage" src="../../static/img/scan.png"></image>
 				<text class="btnText">添加检查</text>
 			</view>
-			<view class="vLine"></view>
-			<view class="btnView" @tap="openCharts()">
+			<view class="vLine" v-if="userType == 1"></view>
+			<view class="btnView" @tap="openCharts()" v-if="userType == 1">
 				<image class="btnImage" src="../../static/img/chart.png"></image>
 				<text class="btnText">数据统计</text>
 			</view>
@@ -57,7 +64,7 @@
     } from 'vuex'
 
     export default {
-        computed: mapState(['forcedLogin', 'hasLogin', 'userInfo']),
+        computed: mapState(['forcedLogin', 'hasLogin', 'userType', 'userInfo']),
 		data() {
 		    return {
 				// 阀组本周未检查数量
@@ -159,7 +166,9 @@
                     }
                 });
             }else {
-				this.getCount();
+				if (this.userType == 1) {
+					this.getCount();
+				}
 			}
         }
     }
@@ -187,6 +196,13 @@
         line-height: 50upx;
     } */
 	
+	.banner-box{  
+		width: 100%; 
+	}
+	.banner-image{  
+		width: 100%;  
+		height: 100%;  
+	} 
 	.baseView{  
 	  display: flex;
 	  flex: 1;

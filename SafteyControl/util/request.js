@@ -1,3 +1,4 @@
+const config = require('./config')
 // 展示进度条的网络请求
 // url:网络请求的url
 // params:请求参数
@@ -13,7 +14,7 @@ const requestLoading = function(url, params, message, success, fail, complete) {
 	}
 	console.log('request.js :' + url);
 	uni.request({
-			url: url, 
+			url: config.host + url, 
 			data: params,
 			header: {
 					// 'Content-Type': 'application/json'
@@ -78,7 +79,39 @@ const request = function(url, message, success, fail) {
 			}
 	});
 }
+// 上传图片
+const uploadImage = function(url, filePaths, successUp, failUp, i, length, cb) {
+	uni.uploadFile({
+	  url: config.host + url,
+	  filePath: filePaths[i],
+	  name: 'fileData',
+	  formData: {
+
+	  },
+	  success: (resp) => {
+		successUp++;
+	  },
+	  fail: (res) => {
+		failUp++;
+	  },
+	  complete: () => {
+		i++;
+		if (i == length) {
+		  uni.showToast({
+		    title: '总共' + successUp + '张上传成功,' + failUp + '张上传失败！',
+		    icon: 'none',
+		    duration: 2000
+		  })
+		  typeof cb == "function" && cb('200')
+		}
+		else {  //递归调用uploadImage函数
+		  this.uploadImage(url,filePaths, successUp, failUp, i, length);
+		}
+	  },
+	});
+}
 export default {
     request,
-    requestLoading
+    requestLoading,
+	uploadImage
 }

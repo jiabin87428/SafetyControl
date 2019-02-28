@@ -282,6 +282,11 @@
 
 
 
+
+
+
+
+
 	/* 轮播图 */
 .part2{  
 	  display: -webkit-box;  
@@ -308,7 +313,7 @@
 		height: 100%;
 }  
 	/* 菜单按钮 */
-.userinfo {
+.menuBlockView {
 	  width: 100%;
 	  background-color: #FFFFFF;
 	  display: -webkit-box;
@@ -326,6 +331,7 @@
 	  -webkit-justify-content: space-around;
 	      -ms-flex-pack: distribute;
 	          justify-content: space-around;
+	  padding-bottom: 30rpx;
 }
 .dangerView {
 	  display:-webkit-box;

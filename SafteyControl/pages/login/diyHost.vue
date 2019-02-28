@@ -7,7 +7,7 @@
             </view>
         </view>
         <view class="btn-row">
-            <button type="primary" class="primary" @tap="testConnect">测试连接</button>
+            <button type="primary" class="primary" @tap="testConnect">确认地址</button>
         </view>
     </view>
 </template>
@@ -33,28 +33,58 @@
         methods: {
             testConnect() {
 				var that = this;
-                request.requestLoading(that.host, {}, "正在测试连接", function(res){
-					config.host = that.host;
-					uni.showToast({
-					    title: '连接成功',
-						duration: 1000,
-						complete() {
-							uni.navigateBack({
-							    delta: 1
+				uni.showModal({
+					title: '提示',
+					content: '请确认地址输入正确\n' + that.host,
+					success: function (res) {
+						if (res.confirm) {
+							// console.log('用户点击确定');
+							config.host = that.host;
+							uni.setStorage({
+									key: "LOCAL_URL",
+									data: that.host,
+									success: function () {
+										console.log('自定义域缓存成功');
+										uni.navigateBack({
+											delta: 1
+										});
+									}
 							});
+						} else if (res.cancel) {
+							// console.log('用户点击取消');
 						}
-					});
-				}, function(){
-					uni.showToast({
-						icon: 'none',
-					    title: '连接失败'
-					});
-				}, function(){
-					uni.showToast({
-						icon: 'none',
-					    title: '连接失败'
-					});
+					}
 				});
+				
+//                 request.requestLoading(that.host, {}, "正在测试连接", function(res){
+// 					config.host = that.host;
+// 					uni.setStorage({
+// 							key: "LOCAL_URL",
+// 							data: that.host,
+// 							success: function () {
+// 									console.log('自定义域缓存成功');
+// 							}
+// 					});
+// 					uni.showToast({
+// 					    title: '连接成功',
+// 						duration: 1000,
+// 						complete() {
+// 							uni.navigateBack({
+// 							    delta: 1
+// 							});
+// 						}
+// 					});
+// 				}, function(){
+// 					uni.showToast({
+// 						icon: 'none',
+// 					    title: '连接失败'
+// 					});
+// 				}, function(){
+// 					uni.showToast({
+// 						icon: 'none',
+// 					    title: '连接失败'
+// 					});
+// 				});
             }
         }
     }

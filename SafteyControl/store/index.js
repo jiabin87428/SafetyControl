@@ -11,6 +11,7 @@ const store = new Vuex.Store({
         forcedLogin: true,
         hasLogin: false,
         userName: "",
+		userType: 1,	// 1.管理员，2.普通用户
 		userInfo: null,
 		
 		// 输入页的内容，供其他页面取用
@@ -29,6 +30,7 @@ const store = new Vuex.Store({
 			if (user != null) {
 				state.userName = user.username || '新用户';
 				state.hasLogin = true;
+				state.userType = user.yhlx;
 				state.userInfo = user;
 			}
         },

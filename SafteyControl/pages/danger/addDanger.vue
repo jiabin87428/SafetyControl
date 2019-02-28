@@ -17,6 +17,23 @@
 				<uni-list-item title="隐患发现日" show-arrow="true" @click="jumpInput('')"></uni-list-item>
 				<uni-list-item title="责任部门" show-arrow="true" @click="jumpInput('')"></uni-list-item>
 			</uni-list>
+			<view class='imageBaseView' v-bind:style="{height:58+imageViewHeight + 'px'}"> 
+				<view class='titleView'>
+				  <text class='cellText1'>隐患照片</text>
+				  <text class='cellText3'>{{imageList.length}}</text>
+				</view>
+				<view id='imageView' v-bind:style="{height:imageViewHeight + 'px'}" class='imageView'>
+				  <block v-for="(image,idx) in imageList" :key="idx">
+					<view class="littleImageView" v-bind:style="{width:littleImageWidth + 'px', height:littleImageWidth + 'px'}">
+					  <image class="littleImage" bindtap='viewPhoto' :id="idx" :src="image"></image>
+					  <image class='littleImageDelete' src='../../static/img/delete.png' @click="deleteImage" :id='idx'></image>
+					</view>
+				  </block>
+				  <view class="littleImageView" @click='addPhoto' v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
+					<image class="littleImage" src="../../static/img/addImage.png"></image>
+				  </view>
+				</view>
+			</view>
 		</view>
 		<view class="btnView">
 		    <button class="saveBtn" @tap="saveClick">保存</button>
@@ -49,23 +66,28 @@
 				// 是否可编辑
 				editable: false,
 				
-		    obj: '',
-				normal: {// 正常图标
-					color: '#24BE41',
-					size: '22',
-					type: 'checkbox-filled'
-				},
-				undetected: {// 未检图标
-					color: '#FFDE52',
-					size: '22',
-					type: 'info-filled'
-				},
-				abnormal: {// 异常图标
-					color: '#C11E1E',
-					size: '22',
-					type: 'clear'
-				},
-		    }
+				imageViewHeight: 100,
+				imageList: [],
+				newaddImagelist: [],
+				littleImageWidth: 0,
+				
+				obj: '',
+					normal: {// 正常图标
+						color: '#24BE41',
+						size: '22',
+						type: 'checkbox-filled'
+					},
+					undetected: {// 未检图标
+						color: '#FFDE52',
+						size: '22',
+						type: 'info-filled'
+					},
+					abnormal: {// 异常图标
+						color: '#C11E1E',
+						size: '22',
+						type: 'clear'
+					},
+				}
 		},
 		onLoad(option) {
 // 			this.obj = JSON.parse(option.obj);
@@ -269,5 +291,75 @@
 		margin-left: 10px;
 		margin-bottom: 20px;
 		margin-right: 20px;
+	}
+	
+	/*添加照片的css样式*/
+	.imageBaseView {
+	  display:flex;
+	  flex-direction:column;
+	  width: 100%;
+	  height: 100%;
+	  background-color: white;
+	  /* margin-bottom: 10px; */
+	  border-bottom: 1rpx solid #D3D3D3;
+	  align-items:center;/*垂直居中*/
+	}
+
+	.imageView {
+	  display:flex;
+	  flex-direction:row;
+	  width: 100%;
+	  /* height: 100px; */
+	  background-color: white;
+	  align-items: flex-start;/*垂直居中*/
+	  /* justify-content: space-between; */
+	  flex-wrap: wrap;
+	}
+
+	.titleView {
+	  display:flex;
+	  flex-direction:row;
+	  width: 100%;
+	  height: 48px;
+	  background-color: white;
+	  /* margin-bottom: 10px; */
+	  align-items:center;/*垂直居中*/
+	}
+
+	.littleImageView {
+	  display:flex;
+	  flex-direction:row;
+	  margin: 5px 0px 0px 10px;
+	}
+
+	.littleImageDelete {
+	  position: absolute;
+	  width: 20px;
+	  height: 20px;
+	}
+
+	.littleImage {
+	  width: 100%;
+	  height: 100%; 
+	}
+	.cellText1 {
+	  font-size: 14px;
+	  color: #060606;
+	  margin-left: 10px;
+	  width: 90px;
+	}
+	.cellText2 {
+	  font-size: 14px;
+	  color: #696969;
+	  margin-left: 20px;
+	  margin-right: 5px;
+	  width: 100%;
+	  display: -webkit-box;
+	  line-height: 40rpx;
+	  word-break: break-all;
+	  -webkit-box-orient: vertical;
+	  -webkit-line-clamp:10;
+	  overflow: hidden;
+	  text-overflow:ellipsis;
 	}
 </style>

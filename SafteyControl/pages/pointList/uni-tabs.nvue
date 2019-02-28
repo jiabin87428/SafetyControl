@@ -343,7 +343,7 @@
 			// 请求列表数据
 			getListData(index, isRefresh){
 				var that = this;
-				var url = config.host + that.tabBars[index].id;	// 拼接接口
+				var url = that.tabBars[index].id;	// 拼接接口
 				const data = {
 				    pageNum: that.newsitems[index].pageNum,
 				    pageRows: that.pageRows,

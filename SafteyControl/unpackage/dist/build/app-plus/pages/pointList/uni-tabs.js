@@ -376,38 +376,42 @@ var copyObj = function copyObj(a) {
   */
 var host = "http://222.223.19.166:10012/boeb9"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
 
+
 var config = {
 
   // 下面的地址配合 Server 工作
   host: host,
   // 登录
-  login: "".concat(host, "/mobile/system/login.do"),
+  login: '/mobile/system/login.do',
 
   // 点位检查扫码接口
-  scan: "".concat(host, "/mobile/dwsm.do"),
+  scan: '/mobile/dwsm.do',
 
   // 扫码新增检查
-  UpdatePoint: "".concat(host, "/mobile/updateJcjl.do"),
+  UpdatePoint: '/mobile/updateJcjl.do',
 
   // 获取Tab页上的数量
-  getTabCounts: "".concat(host, "/mobile/getTabCount.do"),
+  getTabCounts: '/mobile/getTabCount.do',
 
   // 获取检查详情
-  getPointDetail: "".concat(host, "/mobile/getJcjl.do"),
+  getPointDetail: '/mobile/getJcjl.do',
 
   // 首页统计
-  getMainPageCount: "".concat(host, "/mobile/getSytj.do"),
+  getMainPageCount: '/mobile/getSytj.do',
 
   // 报警设备类型统计
-  alertDeviceCount: "".concat(host, "/mobile/bjsblx.do"),
+  alertDeviceCount: '/mobile/bjsblx.do',
 
   // 报警事件类型统计
-  alertEventCount: "".concat(host, "/mobile/bjsjlx.do"),
+  alertEventCount: '/mobile/bjsjlx.do',
 
   // 阀组压力统计
-  alertValveCount: "".concat(host, "/mobile/ylfz.do"),
+  alertValveCount: '/mobile/ylfz.do',
   // 阀组压力统计 - 根据楼层获取阀组编号
-  getValveDataByFloor: "".concat(host, "/mobile/getfz.do") };
+  getValveDataByFloor: '/mobile/getfz.do',
+
+  // 上传图片
+  uploadImage: '/uploadImg' };
 
 //对外把对象config返回
 module.exports = config;
@@ -422,7 +426,8 @@ module.exports = config;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 展示进度条的网络请求
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var config = __webpack_require__(/*! ./config */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js");
+// 展示进度条的网络请求
 // url:网络请求的url
 // params:请求参数
 // message:进度条的提示信息
@@ -437,7 +442,7 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
   }
   console.log('request.js :' + url);
   uni.request({
-    url: url,
+    url: config.host + url,
     data: params,
     header: {
       // 'Content-Type': 'application/json'
@@ -501,10 +506,42 @@ var request = function request(url, message, _success2, _fail2) {
       _fail2();
     } });
 
+};
+// 上传图片
+var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, length, cb) {var _this = this;
+  uni.uploadFile({
+    url: config.host + url,
+    filePath: filePaths[i],
+    name: 'fileData',
+    formData: {},
+
+
+    success: function success(resp) {
+      successUp++;
+    },
+    fail: function fail(res) {
+      failUp++;
+    },
+    complete: function complete() {
+      i++;
+      if (i == length) {
+        uni.showToast({
+          title: '总共' + successUp + '张上传成功,' + failUp + '张上传失败！',
+          icon: 'none',
+          duration: 2000 });
+
+        typeof cb == "function" && cb('200');
+      } else
+      {//递归调用uploadImage函数
+        _this.uploadImage(url, filePaths, successUp, failUp, i, length);
+      }
+    } });
+
 };var _default =
 {
   request: request,
-  requestLoading: requestLoading };exports.default = _default;
+  requestLoading: requestLoading,
+  uploadImage: uploadImage };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
 
 /***/ }),
@@ -2521,7 +2558,7 @@ var animation = weex.requireModule('animation');var _default =
     // 请求列表数据
     getListData: function getListData(index, isRefresh) {
       var that = this;
-      var url = _config.default.host + that.tabBars[index].id; // 拼接接口
+      var url = that.tabBars[index].id; // 拼接接口
       var data = {
         pageNum: that.newsitems[index].pageNum,
         pageRows: that.pageRows,

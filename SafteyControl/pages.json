@@ -38,7 +38,7 @@
         }, {
             "path": "pages/pointCheck/pointCheck",
             "style": {
-                "navigationBarTitleText": "检查记录"
+                "navigationBarTitleText": "应用"
             }
         }, {
             "path": "pages/pointList/uni-tabs",
