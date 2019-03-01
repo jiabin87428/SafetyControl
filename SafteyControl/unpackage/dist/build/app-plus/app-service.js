@@ -1146,7 +1146,6 @@ Z([[2,'+'],[1,'7be27b0c-1-'],[[7],[3,'index']]])
 Z(z[3])
 Z(z[5])
 Z([3,'00eed4f4-default-00eed4f4-1'])
-Z([3,'7e389618-default-7e389618-1'])
 Z([3,'1b853e3c-default-1b853e3c-2'])
 Z(z[33])
 Z([3,'name'])
@@ -1156,6 +1155,7 @@ Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],
 Z(z[3])
 Z(z[4])
 Z([3,'1b853e3c-default-1b853e3c-3'])
+Z([3,'7e389618-default-7e389618-1'])
 Z([3,'72ed35ad-default-72ed35ad-11'])
 Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
@@ -1627,7 +1627,9 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_33)return __WXML_GLOBAL__.ops_cached.$gwx_33
 __WXML_GLOBAL__.ops_cached.$gwx_33=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'4bd08622'])
+Z([3,'_view 4bd08622 cellInfoView'])
 Z([[2,'=='],[[6],[[7],[3,'item']],[3,'jcjl']],[1,'异常']])
+Z([[2,'!='],[[6],[[7],[3,'item']],[3,'id']],[1,'']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_33);return __WXML_GLOBAL__.ops_cached.$gwx_33
 }
 function gz$gwx_34(){
@@ -2137,21 +2139,6 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[0]]["7e389618-default-7e389618-1"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':7e389618-default-7e389618-1'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
 d_[x[0]]["1b853e3c-default-1b853e3c-2"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':1b853e3c-default-1b853e3c-2'
@@ -2162,26 +2149,26 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:26:47")
+cs.push("./common/slots.wxml:template:24:47")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:26:47")
-var cI=_oz(z,93,fE,oD,gg)
+cs.push("./common/slots.wxml:template:24:47")
+var cI=_oz(z,92,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,92,fE,oD,gg) || {}
+var lK=_1z(z,91,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],26,159)
+else _w(cI,x[0],24,159)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,90,xC,e,s,gg,oB,'name','index','index')
+_2z(z,89,xC,e,s,gg,oB,'name','index','index')
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2193,6 +2180,21 @@ return r
 d_[x[0]]["1b853e3c-default-1b853e3c-3"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':1b853e3c-default-1b853e3c-3'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["7e389618-default-7e389618-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':7e389618-default-7e389618-1'
 r.wxVkey=b
 gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
@@ -3783,13 +3785,25 @@ gg.f=$gdc(f_["./pages/pointAdd/pointCheckInfo.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[53]);return}
 p_[b]=true
 try{
-var oB=_v()
-_(r,oB)
-if(_oz(z,1,e,s,gg)){oB.wxVkey=1
+cs.push("./pages/pointAdd/pointCheckInfo.vue.wxml:view:1:174")
+var oB=_n('view')
+_rz(z,oB,'class',1,e,s,gg)
+var xC=_v()
+_(oB,xC)
+if(_oz(z,2,e,s,gg)){xC.wxVkey=1
 cs.push("./pages/pointAdd/pointCheckInfo.vue.wxml:picker:1:1119")
 cs.pop()
 }
-oB.wxXCkey=1
+var oD=_v()
+_(oB,oD)
+if(_oz(z,3,e,s,gg)){oD.wxVkey=1
+cs.push("./pages/pointAdd/pointCheckInfo.vue.wxml:view:1:1649")
+cs.pop()
+}
+xC.wxXCkey=1
+oD.wxXCkey=1
+cs.pop()
+_(r,oB)
 }catch(err){
 p_[b]=false
 throw err
@@ -4508,7 +4522,7 @@ require('pages/pointAdd/pointAdd.js');
 __wxRoute = 'pages/pointAdd/pointCheckInfo';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/pointAdd/pointCheckInfo.js';
 
 define('pages/pointAdd/pointCheckInfo.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/pointAdd/pointCheckInfo"],{"2bc3":function(t,e,i){"use strict";i.r(e);var s=i("7acd"),a=i("e7d1");for(var n in a)"default"!==n&&function(t){i.d(e,t,function(){return a[t]})}(n);i("9e98");var l=i("2877"),c=Object(l["a"])(a["default"],s["a"],s["b"],!1,null,null,null);c.options.__file="pointCheckInfo.vue",e["default"]=c.exports},3571:function(t,e,i){},"7acd":function(t,e,i){"use strict";var s=function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"baseView"},[i("view",{staticClass:"cellTitleView"},[i("text",{staticClass:"cellTitle"},[t._v(t._s(t.item.jcbz))])]),i("view",{staticClass:"cellInfoView"},[i("picker",{attrs:{value:t.index,range:t.typeArray,eventid:"4bd08622-0"},on:{change:t.bindTypeChange}},[i("view",{staticClass:"cellView"},[i("view",{staticClass:"cellSubView"},[i("text",{staticClass:"leftText"},[t._v("检查结论")]),i("view",{staticClass:"rightText"},[t._v(t._s(t.item.jcjl))])]),i("image",{staticClass:"arrow",attrs:{src:"../../static/img/rightArrow.png"}})])]),i("view",{staticClass:"line"}),i("view",{staticClass:"cellView",attrs:{eventid:"4bd08622-1"},on:{click:function(e){t.jumpInput(t.item.jcwtms)}}},[i("view",{staticClass:"cellSubView"},[i("text",{staticClass:"leftText"},[t._v("问题描述")]),i("view",{staticClass:"rightText"},[t._v(t._s(t.item.jcwtms))])]),i("image",{staticClass:"arrow",attrs:{src:"../../static/img/rightArrow.png"}})]),i("view",{staticClass:"line"}),"异常"==t.item.jcjl?i("picker",{attrs:{value:t.index,range:t.rectifyTypes,eventid:"4bd08622-2"},on:{change:t.bindRectifyChange}},[i("view",{staticClass:"cellView"},[i("view",{staticClass:"cellSubView"},[i("text",{staticClass:"leftText"},[t._v("整改方式")]),i("view",{staticClass:"rightText"},[t._v(t._s(t.item.zgfs))])]),i("image",{staticClass:"arrow",attrs:{src:"../../static/img/rightArrow.png"}})])]):t._e(),i("view",{staticClass:"line"}),i("view",{staticClass:"imageBaseView"},[i("view",{staticClass:"cellSubViewRow"},[i("text",{staticClass:"leftTextRow"},[t._v("隐患照片")]),i("text",{staticClass:"rightTextRow"},[t._v(t._s(t.imageList.length))])]),i("view",{staticClass:"imageView",attrs:{id:"imageView"}},[t._l(t.imageList,function(e,s){return i("block",{key:s},[i("view",{staticClass:"littleImageView",style:{width:t.littleImageWidth+"px",height:t.littleImageWidth+"px"}},[i("image",{staticClass:"littleImage",attrs:{id:s,src:e.src,mode:"aspectFit",eventid:"4bd08622-3-"+s},on:{click:t.viewPhoto}}),i("image",{staticClass:"littleImageDelete",attrs:{src:"../../static/img/delete.png",id:s,mode:"aspectFit",eventid:"4bd08622-4-"+s},on:{click:function(i){t.deleteImage(e,s)}}})])])}),i("view",{staticClass:"littleImageView",style:{width:t.littleImageWidth+"px",height:t.littleImageWidth+"px"},attrs:{eventid:"4bd08622-5"},on:{click:t.addPhoto}},[i("image",{staticClass:"littleImage",attrs:{src:"../../static/img/addImage.png"}})])],2)])],1),i("view",{staticClass:"btn-row"},[i("button",{staticClass:"primary",attrs:{type:"primary",eventid:"4bd08622-6"},on:{tap:t.saveItem}},[t._v("确定")])],1)])},a=[];i.d(e,"a",function(){return s}),i.d(e,"b",function(){return a})},"9e98":function(t,e,i){"use strict";var s=i("3571"),a=i.n(s);a.a},b330:function(t,e,i){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var s=r(i("7c03")),a=r(i("4b9c")),n=r(i("17f7")),l=r(i("3731")),c=i("2f62");function r(t){return t&&t.__esModule?t:{default:t}}function o(t){for(var e=1;e<arguments.length;e++){var i=null!=arguments[e]?arguments[e]:{},s=Object.keys(i);"function"===typeof Object.getOwnPropertySymbols&&(s=s.concat(Object.getOwnPropertySymbols(i).filter(function(t){return Object.getOwnPropertyDescriptor(i,t).enumerable}))),s.forEach(function(e){u(t,e,i[e])})}return t}function u(t,e,i){return e in t?Object.defineProperty(t,e,{value:i,enumerable:!0,configurable:!0,writable:!0}):t[e]=i,t}var d={computed:(0,c.mapState)(["inputPageText","key","userInfo"]),components:{uniList:s.default,uniListItem:a.default},data:function(){return{needGetInputOnShow:!1,typeArray:["正常","未检","异常"],rectifyTypes:["发起整改","查看整改"],item:"",itemIndex:0,imageViewHeight:100,imageList:[],littleImageWidth:0}},onLoad:function(e){if(this.item=JSON.parse(e.item),this.itemIndex=JSON.parse(e.index),this.littleImageWidth=(t.getSystemInfoSync().windowWidth-50)/4,""!=this.item.fj){console.log("FJ:"+this.item.fj);for(var i=JSON.parse(this.item.fj),s=0;s<i.length;s++){var a=i[s],l=n.default.host+n.default.loadImage+a.fileId+"&userid="+this.userInfo.userid,c={fileid:a.fileId,src:l,type:2};this.imageList.push(c)}}},onShow:function(){1==this.needGetInputOnShow&&(this.item[this.key]=this.inputPageText,this.needGetInputOnShow=!1)},methods:o({},(0,c.mapMutations)(["setSublistItem"]),{bindTypeChange:function(t){this.item.jcjl=this.typeArray[t.detail.value],"正常"==this.item.jcjl&&(this.item.zgfs="")},bindRectifyChange:function(t){this.item.zgfs=this.rectifyTypes[t.detail.value]},jumpInput:function(e){this.needGetInputOnShow=!0,t.navigateTo({url:"../common/inputPage?text="+e+"&key=jcwtms&placeholder=请输入问题描述"})},saveItem:function(){var e=this,i={item:e.item,index:e.itemIndex};e.setSublistItem(i);for(var s=n.default.uploadImage+"?from=jc&yyid="+e.item.id+"&userid="+e.userInfo.userid,a=[],c=0;c<e.imageList.length;c++){var r=e.imageList[c];1!=r.type||r.src.startsWith("http:")||a.push(r.src)}0!=a.length?l.default.uploadImage(s,a,0,0,0,a.length,function(t){var i=JSON.parse(t.data),s=i.fj;e.item.fj=s},function(e){"200"==e&&t.showToast({title:"上传成功",complete:setTimeout(function(){t.navigateBack({delta:1})},1500)})}):t.navigateBack({delta:1})},deleteImage:function(e,i){var s=this;if(e.src.startsWith("http:")){var a={item:s.item,index:s.itemIndex};s.setSublistItem(a);var c={from:"jc",yyid:s.item.id,fileid:e.fileid,userid:s.userInfo.userid};l.default.requestLoading(n.default.deleteImage,c,"正在删除图片",function(t){console.log("删除成功："+JSON.stringify(t)),s.item.fj=t.fj,s.imageList.splice(i,1)},function(){t.showToast({icon:"none",title:"删除失败"})},function(){})}else s.imageList.splice(i,1)},viewPhoto:function(){for(var e=this,i=[],s=0;s<e.imageList.length;s++){var a=e.imageList[s];i.push(a.src)}t.previewImage({urls:i})},addPhoto:function(){var e=this;t.chooseImage({count:9,sizeType:["original","compressed"],sourceType:["album","camera"],success:function(t){console.log(JSON.stringify(t.tempFilePaths));for(var i=0;i<t.tempFilePaths.length;i++){var s={fileid:"",src:t.tempFilePaths[i],type:1};e.imageList.push(s)}}})}})};e.default=d}).call(this,i("649d")["default"])},c479:function(t,e,i){"use strict";i("de83");var s=n(i("b0ce")),a=n(i("2bc3"));function n(t){return t&&t.__esModule?t:{default:t}}Page((0,s.default)(a.default))},e7d1:function(t,e,i){"use strict";i.r(e);var s=i("b330"),a=i.n(s);for(var n in s)"default"!==n&&function(t){i.d(e,t,function(){return s[t]})}(n);e["default"]=a.a}},[["c479","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/pointAdd/pointCheckInfo"],{"2bc3":function(t,e,i){"use strict";i.r(e);var s=i("ca29"),a=i("e7d1");for(var n in a)"default"!==n&&function(t){i.d(e,t,function(){return a[t]})}(n);i("9e98");var l=i("2877"),c=Object(l["a"])(a["default"],s["a"],s["b"],!1,null,null,null);c.options.__file="pointCheckInfo.vue",e["default"]=c.exports},3571:function(t,e,i){},"9e98":function(t,e,i){"use strict";var s=i("3571"),a=i.n(s);a.a},b330:function(t,e,i){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var s=r(i("7c03")),a=r(i("4b9c")),n=r(i("17f7")),l=r(i("3731")),c=i("2f62");function r(t){return t&&t.__esModule?t:{default:t}}function o(t){for(var e=1;e<arguments.length;e++){var i=null!=arguments[e]?arguments[e]:{},s=Object.keys(i);"function"===typeof Object.getOwnPropertySymbols&&(s=s.concat(Object.getOwnPropertySymbols(i).filter(function(t){return Object.getOwnPropertyDescriptor(i,t).enumerable}))),s.forEach(function(e){u(t,e,i[e])})}return t}function u(t,e,i){return e in t?Object.defineProperty(t,e,{value:i,enumerable:!0,configurable:!0,writable:!0}):t[e]=i,t}var d={computed:(0,c.mapState)(["inputPageText","key","userInfo"]),components:{uniList:s.default,uniListItem:a.default},data:function(){return{needGetInputOnShow:!1,typeArray:["正常","未检","异常"],rectifyTypes:["发起整改","查看整改"],item:"",itemIndex:0,imageViewHeight:100,imageList:[],littleImageWidth:0}},onLoad:function(e){if(console.log("测试："+e.item),this.item=JSON.parse(e.item),this.itemIndex=JSON.parse(e.index),this.littleImageWidth=(t.getSystemInfoSync().windowWidth-50)/4,null!=this.item.fj&&""!=this.item.fj){console.log("FJ:"+this.item.fj);for(var i=JSON.parse(this.item.fj),s=0;s<i.length;s++){var a=i[s],l=n.default.host+n.default.loadImage+a.fileId+"&userid="+this.userInfo.userid,c={fileid:a.fileId,src:l,type:2};this.imageList.push(c)}}},onShow:function(){1==this.needGetInputOnShow&&(this.item[this.key]=this.inputPageText,this.needGetInputOnShow=!1)},methods:o({},(0,c.mapMutations)(["setSublistItem"]),{bindTypeChange:function(t){this.item.jcjl=this.typeArray[t.detail.value],"正常"==this.item.jcjl&&(this.item.zgfs="")},bindRectifyChange:function(t){this.item.zgfs=this.rectifyTypes[t.detail.value]},jumpInput:function(e){this.needGetInputOnShow=!0,t.navigateTo({url:"../common/inputPage?text="+e+"&key=jcwtms&placeholder=请输入问题描述"})},saveItem:function(){var e=this,i={item:e.item,index:e.itemIndex};e.setSublistItem(i);for(var s=n.default.uploadImage+"?from=jc&yyid="+e.item.id+"&userid="+e.userInfo.userid,a=[],c=0;c<e.imageList.length;c++){var r=e.imageList[c];1!=r.type||r.src.startsWith("http:")||a.push(r.src)}0!=a.length?l.default.uploadImage(s,a,0,0,0,a.length,function(t){var i=JSON.parse(t.data),s=i.fj;e.item.fj=s},function(e){"200"==e&&t.showToast({title:"上传成功",complete:setTimeout(function(){t.navigateBack({delta:1})},1500)})}):t.navigateBack({delta:1})},deleteImage:function(e,i){var s=this;if(e.src.startsWith("http:")){var a={item:s.item,index:s.itemIndex};s.setSublistItem(a);var c={from:"jc",yyid:s.item.id,fileid:e.fileid,userid:s.userInfo.userid};l.default.requestLoading(n.default.deleteImage,c,"正在删除图片",function(t){console.log("删除成功："+JSON.stringify(t)),s.item.fj=t.fj,s.imageList.splice(i,1)},function(){t.showToast({icon:"none",title:"删除失败"})},function(){})}else s.imageList.splice(i,1)},viewPhoto:function(){for(var e=this,i=[],s=0;s<e.imageList.length;s++){var a=e.imageList[s];i.push(a.src)}t.previewImage({urls:i})},addPhoto:function(){var e=this;t.chooseImage({count:9,sizeType:["original","compressed"],sourceType:["album","camera"],success:function(t){console.log(JSON.stringify(t.tempFilePaths));for(var i=0;i<t.tempFilePaths.length;i++){var s={fileid:"",src:t.tempFilePaths[i],type:1};e.imageList.push(s)}}})}})};e.default=d}).call(this,i("649d")["default"])},c479:function(t,e,i){"use strict";i("de83");var s=n(i("b0ce")),a=n(i("2bc3"));function n(t){return t&&t.__esModule?t:{default:t}}Page((0,s.default)(a.default))},ca29:function(t,e,i){"use strict";var s=function(){var t=this,e=t.$createElement,i=t._self._c||e;return i("view",{staticClass:"baseView"},[i("view",{staticClass:"cellTitleView"},[i("text",{staticClass:"cellTitle"},[t._v(t._s(t.item.jcbz))])]),i("view",{staticClass:"cellInfoView"},[i("picker",{attrs:{value:t.index,range:t.typeArray,eventid:"4bd08622-0"},on:{change:t.bindTypeChange}},[i("view",{staticClass:"cellView"},[i("view",{staticClass:"cellSubView"},[i("text",{staticClass:"leftText"},[t._v("检查结论")]),i("view",{staticClass:"rightText"},[t._v(t._s(t.item.jcjl))])]),i("image",{staticClass:"arrow",attrs:{src:"../../static/img/rightArrow.png"}})])]),i("view",{staticClass:"line"}),i("view",{staticClass:"cellView",attrs:{eventid:"4bd08622-1"},on:{click:function(e){t.jumpInput(t.item.jcwtms)}}},[i("view",{staticClass:"cellSubView"},[i("text",{staticClass:"leftText"},[t._v("问题描述")]),i("view",{staticClass:"rightText"},[t._v(t._s(t.item.jcwtms))])]),i("image",{staticClass:"arrow",attrs:{src:"../../static/img/rightArrow.png"}})]),i("view",{staticClass:"line"}),"异常"==t.item.jcjl?i("picker",{attrs:{value:t.index,range:t.rectifyTypes,eventid:"4bd08622-2"},on:{change:t.bindRectifyChange}},[i("view",{staticClass:"cellView"},[i("view",{staticClass:"cellSubView"},[i("text",{staticClass:"leftText"},[t._v("整改方式")]),i("view",{staticClass:"rightText"},[t._v(t._s(t.item.zgfs))])]),i("image",{staticClass:"arrow",attrs:{src:"../../static/img/rightArrow.png"}})])]):t._e(),i("view",{staticClass:"line"}),""!=t.item.id?i("view",{staticClass:"imageBaseView"},[i("view",{staticClass:"cellSubViewRow"},[i("text",{staticClass:"leftTextRow"},[t._v("隐患照片")]),i("text",{staticClass:"rightTextRow"},[t._v(t._s(t.imageList.length))])]),i("view",{staticClass:"imageView",attrs:{id:"imageView"}},[t._l(t.imageList,function(e,s){return i("block",{key:s},[i("view",{staticClass:"littleImageView",style:{width:t.littleImageWidth+"px",height:t.littleImageWidth+"px"}},[i("image",{staticClass:"littleImage",attrs:{id:s,src:e.src,mode:"aspectFit",eventid:"4bd08622-3-"+s},on:{click:t.viewPhoto}}),i("image",{staticClass:"littleImageDelete",attrs:{src:"../../static/img/delete.png",id:s,mode:"aspectFit",eventid:"4bd08622-4-"+s},on:{click:function(i){t.deleteImage(e,s)}}})])])}),i("view",{staticClass:"littleImageView",style:{width:t.littleImageWidth+"px",height:t.littleImageWidth+"px"},attrs:{eventid:"4bd08622-5"},on:{click:t.addPhoto}},[i("image",{staticClass:"littleImage",attrs:{src:"../../static/img/addImage.png"}})])],2)]):t._e()],1),i("view",{staticClass:"btn-row"},[i("button",{staticClass:"primary",attrs:{type:"primary",eventid:"4bd08622-6"},on:{tap:t.saveItem}},[t._v("确定")])],1)])},a=[];i.d(e,"a",function(){return s}),i.d(e,"b",function(){return a})},e7d1:function(t,e,i){"use strict";i.r(e);var s=i("b330"),a=i.n(s);for(var n in s)"default"!==n&&function(t){i.d(e,t,function(){return s[t]})}(n);e["default"]=a.a}},[["c479","common/runtime","common/vendor"]]]);
 });
 require('pages/pointAdd/pointCheckInfo.js');
 __wxRoute = 'pages/mpvue-echarts/chartList';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/mpvue-echarts/chartList.js';

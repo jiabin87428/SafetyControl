@@ -42,7 +42,7 @@
 				</view>
 			</picker>
 			<view class="line"></view>
-			<view class='imageBaseView'> 
+			<view class='imageBaseView' v-if="item.id != ''"> 
 				<view class='cellSubViewRow'>
 				  <text class='leftTextRow'>隐患照片</text>
 				  <text class='rightTextRow'>{{imageList.length}}</text>
@@ -95,9 +95,13 @@
 		    }
 		},
 		onLoad(option) {
+			console.log('测试：' + option.item)
 			this.item = JSON.parse(option.item);
 			this.itemIndex = JSON.parse(option.index);
 			this.littleImageWidth = (uni.getSystemInfoSync().windowWidth -50) / 4;
+			if(this.item.fj == null) {
+				return;
+			}
 			if (this.item.fj != "") {
 				console.log('FJ:' + this.item.fj);
 				let imgList = JSON.parse(this.item.fj);
