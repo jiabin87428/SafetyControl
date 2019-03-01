@@ -1061,41 +1061,83 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'58792338-default-58792338-10'])
-Z([3,'7be27b0c-default-7be27b0c-6'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'21b694de-default-21b694de-6'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'30c48a99'])
 Z([3,'false'])
 Z([3,'true'])
 Z([3,'点位编号'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z(z[4])
 Z([3,'检查人'])
 Z([3,'handleProxy'])
-Z([3,'_picker 7be27b0c'])
+Z([3,'_picker 21b694de'])
 Z([[7],[3,'$k']])
-Z([1,'7be27b0c-0'])
+Z([1,'21b694de-0'])
 Z([3,'date'])
 Z([[6],[[7],[3,'obj']],[3,'jcrq']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z([3,'检查日期'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z(z[4])
 Z([3,'责任部门'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z(z[4])
 Z([3,'楼层'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[3])
 Z(z[4])
 Z([3,'位置'])
-Z([3,'7be27b0c-default-7be27b0c-11'])
+Z([3,'21b694de-default-21b694de-11'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[6],[[7],[3,'obj']],[3,'sublist']])
+Z(z[33])
+Z(z[11])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[13])
+Z([[2,'+'],[1,'21b694de-1-'],[[7],[3,'index']]])
+Z(z[3])
+Z(z[5])
+Z([3,'7be27b0c-default-7be27b0c-6'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[4])
+Z(z[5])
+Z(z[6])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[4])
+Z(z[10])
+Z(z[11])
+Z([3,'_picker 7be27b0c'])
+Z(z[13])
+Z([1,'7be27b0c-0'])
+Z(z[15])
+Z(z[16])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[19])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[4])
+Z(z[23])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[4])
+Z(z[27])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[4])
+Z(z[31])
+Z([3,'7be27b0c-default-7be27b0c-11'])
+Z(z[33])
+Z(z[34])
+Z(z[35])
 Z(z[33])
 Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
@@ -1192,48 +1234,6 @@ Z([1,'72ed35ad-10'])
 Z(z[3])
 Z(z[5])
 Z(z[23])
-Z([3,'21b694de-default-21b694de-6'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z(z[4])
-Z(z[5])
-Z(z[6])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z(z[4])
-Z(z[10])
-Z(z[11])
-Z([3,'_picker 21b694de'])
-Z(z[13])
-Z([1,'21b694de-0'])
-Z(z[15])
-Z(z[16])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z(z[19])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z(z[4])
-Z(z[23])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z(z[4])
-Z(z[27])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z(z[4])
-Z(z[31])
-Z([3,'21b694de-default-21b694de-11'])
-Z(z[33])
-Z(z[34])
-Z(z[35])
-Z(z[33])
-Z(z[11])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
-Z([[2,'+'],[1,'21b694de-1-'],[[7],[3,'index']]])
-Z(z[3])
-Z(z[5])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
@@ -1824,7 +1824,7 @@ __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/drawer/uni-drawer.vue.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','/components/drawer/hj-dragabledrawer.vue.wxml','/components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','/common/slots.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/drawer/hj-dragabledrawer.vue.wxml','./components/drawer/uni-drawer.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/danger/addDanger.vue.wxml','./pages/danger/addDanger.wxml','./addDanger.vue.wxml','./pages/login/diyHost.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pointList/pointList.vue.wxml','./pages/pointList/pointList.wxml','./pointList.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+var x=['./common/slots.wxml','/components/drawer/uni-drawer.vue.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','/components/drawer/hj-dragabledrawer.vue.wxml','./components/drawer/hj-dragabledrawer.vue.wxml','/common/slots.wxml','./components/drawer/uni-drawer.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/danger/addDanger.vue.wxml','./pages/danger/addDanger.wxml','./addDanger.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pointList/pointList.vue.wxml','./pages/pointList/pointList.wxml','./pointList.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
 d_[x[0]]["58792338-default-58792338-10"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':58792338-default-58792338-10'
@@ -1833,6 +1833,147 @@ gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["21b694de-default-21b694de-6"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':21b694de-default-21b694de-6'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:10:47")
+var xC=_oz(z,3,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,2,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],10,176)
+cs.pop()
+var cF=_v()
+_(r,cF)
+cs.push("./common/slots.wxml:template:10:199")
+var hG=_oz(z,8,e,s,gg)
+var oH=_gd(x[0],hG,e_,d_)
+if(oH){
+var cI=_1z(z,7,e,s,gg) || {}
+var cur_globalf=gg.f
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
+gg.f=cur_globalf
+}
+else _w(hG,x[0],10,307)
+cs.pop()
+cs.push("./common/slots.wxml:picker:10:330")
+var oJ=_mz(z,'picker',['bindchange',11,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var lK=_v()
+_(oJ,lK)
+cs.push("./common/slots.wxml:template:10:474")
+var aL=_oz(z,18,e,s,gg)
+var tM=_gd(x[0],aL,e_,d_)
+if(tM){
+var eN=_1z(z,17,e,s,gg) || {}
+var cur_globalf=gg.f
+lK.wxXCkey=3
+tM(eN,eN,lK,gg)
+gg.f=cur_globalf
+}
+else _w(aL,x[0],10,566)
+cs.pop()
+cs.pop()
+_(r,oJ)
+var bO=_v()
+_(r,bO)
+cs.push("./common/slots.wxml:template:10:598")
+var oP=_oz(z,21,e,s,gg)
+var xQ=_gd(x[0],oP,e_,d_)
+if(xQ){
+var oR=_1z(z,20,e,s,gg) || {}
+var cur_globalf=gg.f
+bO.wxXCkey=3
+xQ(oR,oR,bO,gg)
+gg.f=cur_globalf
+}
+else _w(oP,x[0],10,709)
+cs.pop()
+var fS=_v()
+_(r,fS)
+cs.push("./common/slots.wxml:template:10:732")
+var cT=_oz(z,25,e,s,gg)
+var hU=_gd(x[0],cT,e_,d_)
+if(hU){
+var oV=_1z(z,24,e,s,gg) || {}
+var cur_globalf=gg.f
+fS.wxXCkey=3
+hU(oV,oV,fS,gg)
+gg.f=cur_globalf
+}
+else _w(cT,x[0],10,837)
+cs.pop()
+var cW=_v()
+_(r,cW)
+cs.push("./common/slots.wxml:template:10:860")
+var oX=_oz(z,29,e,s,gg)
+var lY=_gd(x[0],oX,e_,d_)
+if(lY){
+var aZ=_1z(z,28,e,s,gg) || {}
+var cur_globalf=gg.f
+cW.wxXCkey=3
+lY(aZ,aZ,cW,gg)
+gg.f=cur_globalf
+}
+else _w(oX,x[0],10,965)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["21b694de-default-21b694de-11"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':21b694de-default-21b694de-11'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:12:48")
+var xC=function(fE,oD,cF,gg){
+var oH=_v()
+_(cF,oH)
+cs.push("./common/slots.wxml:template:12:48")
+var cI=_oz(z,41,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,38,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],12,247)
+cs.pop()
+return cF
+}
+oB.wxXCkey=2
+_2z(z,35,xC,e,s,gg,oB,'item','index','index')
+cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -1851,10 +1992,10 @@ try{
 var oB=_v()
 _(r,oB)
 cs.push("./common/slots.wxml:template:14:47")
-var xC=_oz(z,3,e,s,gg)
+var xC=_oz(z,45,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,2,e,s,gg) || {}
+var fE=_1z(z,44,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
@@ -1865,10 +2006,10 @@ cs.pop()
 var cF=_v()
 _(r,cF)
 cs.push("./common/slots.wxml:template:14:199")
-var hG=_oz(z,8,e,s,gg)
+var hG=_oz(z,50,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,7,e,s,gg) || {}
+var cI=_1z(z,49,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
@@ -1877,14 +2018,14 @@ gg.f=cur_globalf
 else _w(hG,x[0],14,307)
 cs.pop()
 cs.push("./common/slots.wxml:picker:14:330")
-var oJ=_mz(z,'picker',['bindchange',11,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var oJ=_mz(z,'picker',['bindchange',53,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
 cs.push("./common/slots.wxml:template:14:474")
-var aL=_oz(z,18,e,s,gg)
+var aL=_oz(z,60,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
-var eN=_1z(z,17,e,s,gg) || {}
+var eN=_1z(z,59,e,s,gg) || {}
 var cur_globalf=gg.f
 lK.wxXCkey=3
 tM(eN,eN,lK,gg)
@@ -1897,10 +2038,10 @@ _(r,oJ)
 var bO=_v()
 _(r,bO)
 cs.push("./common/slots.wxml:template:14:598")
-var oP=_oz(z,21,e,s,gg)
+var oP=_oz(z,63,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,20,e,s,gg) || {}
+var oR=_1z(z,62,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
@@ -1911,10 +2052,10 @@ cs.pop()
 var fS=_v()
 _(r,fS)
 cs.push("./common/slots.wxml:template:14:732")
-var cT=_oz(z,25,e,s,gg)
+var cT=_oz(z,67,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
-var oV=_1z(z,24,e,s,gg) || {}
+var oV=_1z(z,66,e,s,gg) || {}
 var cur_globalf=gg.f
 fS.wxXCkey=3
 hU(oV,oV,fS,gg)
@@ -1925,10 +2066,10 @@ cs.pop()
 var cW=_v()
 _(r,cW)
 cs.push("./common/slots.wxml:template:14:860")
-var oX=_oz(z,29,e,s,gg)
+var oX=_oz(z,71,e,s,gg)
 var lY=_gd(x[0],oX,e_,d_)
 if(lY){
-var aZ=_1z(z,28,e,s,gg) || {}
+var aZ=_1z(z,70,e,s,gg) || {}
 var cur_globalf=gg.f
 cW.wxXCkey=3
 lY(aZ,aZ,cW,gg)
@@ -1958,10 +2099,10 @@ var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
 cs.push("./common/slots.wxml:template:16:48")
-var cI=_oz(z,41,fE,oD,gg)
+var cI=_oz(z,83,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,38,fE,oD,gg) || {}
+var lK=_1z(z,80,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
@@ -1972,7 +2113,7 @@ cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,35,xC,e,s,gg,oB,'item','index','index')
+_2z(z,77,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2026,10 +2167,10 @@ var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
 cs.push("./common/slots.wxml:template:22:47")
-var cI=_oz(z,51,fE,oD,gg)
+var cI=_oz(z,93,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,50,fE,oD,gg) || {}
+var lK=_1z(z,92,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
@@ -2040,7 +2181,7 @@ cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,48,xC,e,s,gg,oB,'name','index','index')
+_2z(z,90,xC,e,s,gg,oB,'name','index','index')
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2075,10 +2216,10 @@ try{
 var oB=_v()
 _(r,oB)
 cs.push("./common/slots.wxml:template:26:48")
-var xC=_oz(z,59,e,s,gg)
+var xC=_oz(z,101,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,56,e,s,gg) || {}
+var fE=_1z(z,98,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
@@ -2089,10 +2230,10 @@ cs.pop()
 var cF=_v()
 _(r,cF)
 cs.push("./common/slots.wxml:template:26:256")
-var hG=_oz(z,66,e,s,gg)
+var hG=_oz(z,108,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,63,e,s,gg) || {}
+var cI=_1z(z,105,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
@@ -2103,10 +2244,10 @@ cs.pop()
 var oJ=_v()
 _(r,oJ)
 cs.push("./common/slots.wxml:template:26:464")
-var lK=_oz(z,73,e,s,gg)
+var lK=_oz(z,115,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
-var tM=_1z(z,70,e,s,gg) || {}
+var tM=_1z(z,112,e,s,gg) || {}
 var cur_globalf=gg.f
 oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
@@ -2117,10 +2258,10 @@ cs.pop()
 var eN=_v()
 _(r,eN)
 cs.push("./common/slots.wxml:template:26:678")
-var bO=_oz(z,80,e,s,gg)
+var bO=_oz(z,122,e,s,gg)
 var oP=_gd(x[0],bO,e_,d_)
 if(oP){
-var xQ=_1z(z,77,e,s,gg) || {}
+var xQ=_1z(z,119,e,s,gg) || {}
 var cur_globalf=gg.f
 eN.wxXCkey=3
 oP(xQ,xQ,eN,gg)
@@ -2131,10 +2272,10 @@ cs.pop()
 var oR=_v()
 _(r,oR)
 cs.push("./common/slots.wxml:template:26:886")
-var fS=_oz(z,87,e,s,gg)
+var fS=_oz(z,129,e,s,gg)
 var cT=_gd(x[0],fS,e_,d_)
 if(cT){
-var hU=_1z(z,84,e,s,gg) || {}
+var hU=_1z(z,126,e,s,gg) || {}
 var cur_globalf=gg.f
 oR.wxXCkey=3
 cT(hU,hU,oR,gg)
@@ -2145,10 +2286,10 @@ cs.pop()
 var oV=_v()
 _(r,oV)
 cs.push("./common/slots.wxml:template:26:1094")
-var cW=_oz(z,94,e,s,gg)
+var cW=_oz(z,136,e,s,gg)
 var oX=_gd(x[0],cW,e_,d_)
 if(oX){
-var lY=_1z(z,91,e,s,gg) || {}
+var lY=_1z(z,133,e,s,gg) || {}
 var cur_globalf=gg.f
 oV.wxXCkey=3
 oX(lY,lY,oV,gg)
@@ -2159,10 +2300,10 @@ cs.pop()
 var aZ=_v()
 _(r,aZ)
 cs.push("./common/slots.wxml:template:26:1305")
-var t1=_oz(z,101,e,s,gg)
+var t1=_oz(z,143,e,s,gg)
 var e2=_gd(x[0],t1,e_,d_)
 if(e2){
-var b3=_1z(z,98,e,s,gg) || {}
+var b3=_1z(z,140,e,s,gg) || {}
 var cur_globalf=gg.f
 aZ.wxXCkey=3
 e2(b3,b3,aZ,gg)
@@ -2173,10 +2314,10 @@ cs.pop()
 var o4=_v()
 _(r,o4)
 cs.push("./common/slots.wxml:template:26:1513")
-var x5=_oz(z,108,e,s,gg)
+var x5=_oz(z,150,e,s,gg)
 var o6=_gd(x[0],x5,e_,d_)
 if(o6){
-var f7=_1z(z,105,e,s,gg) || {}
+var f7=_1z(z,147,e,s,gg) || {}
 var cur_globalf=gg.f
 o4.wxXCkey=3
 o6(f7,f7,o4,gg)
@@ -2187,10 +2328,10 @@ cs.pop()
 var c8=_v()
 _(r,c8)
 cs.push("./common/slots.wxml:template:26:1724")
-var h9=_oz(z,115,e,s,gg)
+var h9=_oz(z,157,e,s,gg)
 var o0=_gd(x[0],h9,e_,d_)
 if(o0){
-var cAB=_1z(z,112,e,s,gg) || {}
+var cAB=_1z(z,154,e,s,gg) || {}
 var cur_globalf=gg.f
 c8.wxXCkey=3
 o0(cAB,cAB,c8,gg)
@@ -2201,10 +2342,10 @@ cs.pop()
 var oBB=_v()
 _(r,oBB)
 cs.push("./common/slots.wxml:template:26:1938")
-var lCB=_oz(z,122,e,s,gg)
+var lCB=_oz(z,164,e,s,gg)
 var aDB=_gd(x[0],lCB,e_,d_)
 if(aDB){
-var tEB=_1z(z,119,e,s,gg) || {}
+var tEB=_1z(z,161,e,s,gg) || {}
 var cur_globalf=gg.f
 oBB.wxXCkey=3
 aDB(tEB,tEB,oBB,gg)
@@ -2215,157 +2356,16 @@ cs.pop()
 var eFB=_v()
 _(r,eFB)
 cs.push("./common/slots.wxml:template:26:2149")
-var bGB=_oz(z,129,e,s,gg)
+var bGB=_oz(z,171,e,s,gg)
 var oHB=_gd(x[0],bGB,e_,d_)
 if(oHB){
-var xIB=_1z(z,126,e,s,gg) || {}
+var xIB=_1z(z,168,e,s,gg) || {}
 var cur_globalf=gg.f
 eFB.wxXCkey=3
 oHB(xIB,xIB,eFB,gg)
 gg.f=cur_globalf
 }
 else _w(bGB,x[0],26,2336)
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["21b694de-default-21b694de-6"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':21b694de-default-21b694de-6'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:28:47")
-var xC=_oz(z,134,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,133,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],28,176)
-cs.pop()
-var cF=_v()
-_(r,cF)
-cs.push("./common/slots.wxml:template:28:199")
-var hG=_oz(z,139,e,s,gg)
-var oH=_gd(x[0],hG,e_,d_)
-if(oH){
-var cI=_1z(z,138,e,s,gg) || {}
-var cur_globalf=gg.f
-cF.wxXCkey=3
-oH(cI,cI,cF,gg)
-gg.f=cur_globalf
-}
-else _w(hG,x[0],28,307)
-cs.pop()
-cs.push("./common/slots.wxml:picker:28:330")
-var oJ=_mz(z,'picker',['bindchange',142,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
-var lK=_v()
-_(oJ,lK)
-cs.push("./common/slots.wxml:template:28:474")
-var aL=_oz(z,149,e,s,gg)
-var tM=_gd(x[0],aL,e_,d_)
-if(tM){
-var eN=_1z(z,148,e,s,gg) || {}
-var cur_globalf=gg.f
-lK.wxXCkey=3
-tM(eN,eN,lK,gg)
-gg.f=cur_globalf
-}
-else _w(aL,x[0],28,566)
-cs.pop()
-cs.pop()
-_(r,oJ)
-var bO=_v()
-_(r,bO)
-cs.push("./common/slots.wxml:template:28:598")
-var oP=_oz(z,152,e,s,gg)
-var xQ=_gd(x[0],oP,e_,d_)
-if(xQ){
-var oR=_1z(z,151,e,s,gg) || {}
-var cur_globalf=gg.f
-bO.wxXCkey=3
-xQ(oR,oR,bO,gg)
-gg.f=cur_globalf
-}
-else _w(oP,x[0],28,709)
-cs.pop()
-var fS=_v()
-_(r,fS)
-cs.push("./common/slots.wxml:template:28:732")
-var cT=_oz(z,156,e,s,gg)
-var hU=_gd(x[0],cT,e_,d_)
-if(hU){
-var oV=_1z(z,155,e,s,gg) || {}
-var cur_globalf=gg.f
-fS.wxXCkey=3
-hU(oV,oV,fS,gg)
-gg.f=cur_globalf
-}
-else _w(cT,x[0],28,837)
-cs.pop()
-var cW=_v()
-_(r,cW)
-cs.push("./common/slots.wxml:template:28:860")
-var oX=_oz(z,160,e,s,gg)
-var lY=_gd(x[0],oX,e_,d_)
-if(lY){
-var aZ=_1z(z,159,e,s,gg) || {}
-var cur_globalf=gg.f
-cW.wxXCkey=3
-lY(aZ,aZ,cW,gg)
-gg.f=cur_globalf
-}
-else _w(oX,x[0],28,965)
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["21b694de-default-21b694de-11"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':21b694de-default-21b694de-11'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:30:48")
-var xC=function(fE,oD,cF,gg){
-var oH=_v()
-_(cF,oH)
-cs.push("./common/slots.wxml:template:30:48")
-var cI=_oz(z,172,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,169,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],30,247)
-cs.pop()
-return cF
-}
-oB.wxXCkey=2
-_2z(z,166,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2383,14 +2383,6 @@ _ai(oB,x[3],e_,x[0],3,2)
 _ai(oB,x[4],e_,x[0],4,2)
 _ai(oB,x[5],e_,x[0],5,2)
 _ai(oB,x[6],e_,x[0],6,2)
-_ai(oB,x[7],e_,x[0],7,2)
-_ai(oB,x[8],e_,x[0],8,2)
-_ai(oB,x[9],e_,x[0],9,2)
-_ai(oB,x[10],e_,x[0],10,2)
-oB.pop()
-oB.pop()
-oB.pop()
-oB.pop()
 oB.pop()
 oB.pop()
 oB.pop()
@@ -2399,14 +2391,14 @@ oB.pop()
 oB.pop()
 return r
 }
-e_[x[0]]={f:m0,j:[],i:[],ti:[x[1],x[2],x[3],x[4],x[5],x[6],x[7],x[8],x[9],x[10]],ic:[]}
-d_[x[11]]={}
-d_[x[11]]["3c97b91b"]=function(e,s,r,gg){
+e_[x[0]]={f:m0,j:[],i:[],ti:[x[1],x[2],x[3],x[4],x[5],x[6]],ic:[]}
+d_[x[7]]={}
+d_[x[7]]["3c97b91b"]=function(e,s,r,gg){
 var z=gz$gwx_2()
-var b=x[11]+':3c97b91b'
+var b=x[7]+':3c97b91b'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/drawer/hj-dragabledrawer.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[11]);return}
+if(p_[b]){_wl(b,x[7]);return}
 p_[b]=true
 try{
 cs.push("./components/drawer/hj-dragabledrawer.vue.wxml:view:1:62")
@@ -2423,7 +2415,7 @@ var fE=_v()
 _(oD,fE)
 cs.push("./components/drawer/hj-dragabledrawer.vue.wxml:template:1:673")
 var cF=_oz(z,13,e,s,gg)
-var hG=_gd(x[11],cF,e_,d_)
+var hG=_gd(x[7],cF,e_,d_)
 if(hG){
 var oH=_1z(z,12,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2431,7 +2423,7 @@ fE.wxXCkey=3
 hG(oH,oH,fE,gg)
 gg.f=cur_globalf
 }
-else _w(cF,x[11],1,731)
+else _w(cF,x[7],1,731)
 cs.pop()
 cs.pop()
 _(oB,oD)
@@ -2445,12 +2437,12 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[11]]["default"]=function(e,s,r,gg){
+d_[x[7]]["default"]=function(e,s,r,gg){
 var z=gz$gwx_2()
-var b=x[11]+':default'
+var b=x[7]+':default'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/drawer/hj-dragabledrawer.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[11]);return}
+if(p_[b]){_wl(b,x[7]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2462,19 +2454,19 @@ return r
 }
 var m1=function(e,s,r,gg){
 var z=gz$gwx_2()
-var oD=e_[x[11]].i
-_ai(oD,x[9],e_,x[11],1,1)
+var oD=e_[x[7]].i
+_ai(oD,x[8],e_,x[7],1,1)
 oD.pop()
 return r
 }
-e_[x[11]]={f:m1,j:[],i:[],ti:[x[9]],ic:[]}
-d_[x[12]]={}
-d_[x[12]]["590c6f9d"]=function(e,s,r,gg){
+e_[x[7]]={f:m1,j:[],i:[],ti:[x[8]],ic:[]}
+d_[x[9]]={}
+d_[x[9]]["590c6f9d"]=function(e,s,r,gg){
 var z=gz$gwx_3()
-var b=x[12]+':590c6f9d'
+var b=x[9]+':590c6f9d'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/drawer/uni-drawer.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[12]);return}
+if(p_[b]){_wl(b,x[9]);return}
 p_[b]=true
 try{
 var oB=_v()
@@ -2487,7 +2479,7 @@ var oD=_v()
 _(xC,oD)
 cs.push("./components/drawer/uni-drawer.vue.wxml:template:1:459")
 var fE=_oz(z,6,e,s,gg)
-var cF=_gd(x[12],fE,e_,d_)
+var cF=_gd(x[9],fE,e_,d_)
 if(cF){
 var hG=_1z(z,5,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2495,7 +2487,7 @@ oD.wxXCkey=3
 cF(hG,hG,oD,gg)
 gg.f=cur_globalf
 }
-else _w(fE,x[12],1,517)
+else _w(fE,x[9],1,517)
 cs.pop()
 cs.pop()
 _(oB,xC)
@@ -2509,12 +2501,12 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[12]]["default"]=function(e,s,r,gg){
+d_[x[9]]["default"]=function(e,s,r,gg){
 var z=gz$gwx_3()
-var b=x[12]+':default'
+var b=x[9]+':default'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/drawer/uni-drawer.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[12]);return}
+if(p_[b]){_wl(b,x[9]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2526,19 +2518,19 @@ return r
 }
 var m2=function(e,s,r,gg){
 var z=gz$gwx_3()
-var cF=e_[x[12]].i
-_ai(cF,x[9],e_,x[12],1,1)
+var cF=e_[x[9]].i
+_ai(cF,x[8],e_,x[9],1,1)
 cF.pop()
 return r
 }
-e_[x[12]]={f:m2,j:[],i:[],ti:[x[9]],ic:[]}
-d_[x[13]]={}
-d_[x[13]]["68dcfa4a"]=function(e,s,r,gg){
+e_[x[9]]={f:m2,j:[],i:[],ti:[x[8]],ic:[]}
+d_[x[10]]={}
+d_[x[10]]["68dcfa4a"]=function(e,s,r,gg){
 var z=gz$gwx_4()
-var b=x[13]+':68dcfa4a'
+var b=x[10]+':68dcfa4a'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-badge/uni-badge.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[13]);return}
+if(p_[b]){_wl(b,x[10]);return}
 p_[b]=true
 try{
 var oB=_v()
@@ -2559,14 +2551,14 @@ var m3=function(e,s,r,gg){
 var z=gz$gwx_4()
 return r
 }
-e_[x[13]]={f:m3,j:[],i:[],ti:[],ic:[]}
-d_[x[14]]={}
-d_[x[14]]["346bda0d"]=function(e,s,r,gg){
+e_[x[10]]={f:m3,j:[],i:[],ti:[],ic:[]}
+d_[x[11]]={}
+d_[x[11]]["346bda0d"]=function(e,s,r,gg){
 var z=gz$gwx_5()
-var b=x[14]+':346bda0d'
+var b=x[11]+':346bda0d'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-icon/uni-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[14]);return}
+if(p_[b]){_wl(b,x[11]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2580,14 +2572,14 @@ var m4=function(e,s,r,gg){
 var z=gz$gwx_5()
 return r
 }
-e_[x[14]]={f:m4,j:[],i:[],ti:[],ic:[]}
-d_[x[15]]={}
-d_[x[15]]["30c48a99"]=function(e,s,r,gg){
+e_[x[11]]={f:m4,j:[],i:[],ti:[],ic:[]}
+d_[x[12]]={}
+d_[x[12]]["30c48a99"]=function(e,s,r,gg){
 var z=gz$gwx_6()
-var b=x[15]+':30c48a99'
+var b=x[12]+':30c48a99'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list-item/uni-list-item.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[15]);return}
+if(p_[b]){_wl(b,x[12]);return}
 p_[b]=true
 try{
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:view:1:149")
@@ -2607,7 +2599,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:805")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[15],oH,e_,d_)
+var cI=_gd(x[12],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,9,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2615,7 +2607,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[15],1,876)
+else _w(oH,x[12],1,876)
 cs.pop()
 cs.pop()
 }
@@ -2646,7 +2638,7 @@ var oP=_v()
 _(tM,oP)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1431")
 var xQ=_oz(z,17,e,s,gg)
-var oR=_gd(x[15],xQ,e_,d_)
+var oR=_gd(x[12],xQ,e_,d_)
 if(oR){
 var fS=_1z(z,16,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2654,7 +2646,7 @@ oP.wxXCkey=3
 oR(fS,fS,oP,gg)
 gg.f=cur_globalf
 }
-else _w(xQ,x[15],1,1557)
+else _w(xQ,x[12],1,1557)
 cs.pop()
 cs.pop()
 }
@@ -2672,7 +2664,7 @@ var cT=_v()
 _(bO,cT)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1802")
 var hU=_oz(z,22,e,s,gg)
-var oV=_gd(x[15],hU,e_,d_)
+var oV=_gd(x[12],hU,e_,d_)
 if(oV){
 var cW=_1z(z,21,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2680,7 +2672,7 @@ cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[15],1,1969)
+else _w(hU,x[12],1,1969)
 cs.pop()
 cs.pop()
 }
@@ -2708,21 +2700,21 @@ return r
 }
 var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
-var oJ=e_[x[15]].i
-_ai(oJ,x[4],e_,x[15],1,1)
-_ai(oJ,x[10],e_,x[15],1,61)
+var oJ=e_[x[12]].i
+_ai(oJ,x[4],e_,x[12],1,1)
+_ai(oJ,x[13],e_,x[12],1,61)
 oJ.pop()
 oJ.pop()
 return r
 }
-e_[x[15]]={f:m5,j:[],i:[],ti:[x[4],x[10]],ic:[]}
-d_[x[16]]={}
-d_[x[16]]["3b6bb3ad"]=function(e,s,r,gg){
+e_[x[12]]={f:m5,j:[],i:[],ti:[x[4],x[13]],ic:[]}
+d_[x[14]]={}
+d_[x[14]]["3b6bb3ad"]=function(e,s,r,gg){
 var z=gz$gwx_7()
-var b=x[16]+':3b6bb3ad'
+var b=x[14]+':3b6bb3ad'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list/uni-list.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[16]);return}
+if(p_[b]){_wl(b,x[14]);return}
 p_[b]=true
 try{
 cs.push("./components/list/uni-list/uni-list.vue.wxml:view:1:62")
@@ -2732,7 +2724,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./components/list/uni-list/uni-list.vue.wxml:template:1:136")
 var oD=_oz(z,4,e,s,gg)
-var fE=_gd(x[16],oD,e_,d_)
+var fE=_gd(x[14],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2740,7 +2732,7 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[16],1,194)
+else _w(oD,x[14],1,194)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -2751,12 +2743,12 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[16]]["default"]=function(e,s,r,gg){
+d_[x[14]]["default"]=function(e,s,r,gg){
 var z=gz$gwx_7()
-var b=x[16]+':default'
+var b=x[14]+':default'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list/uni-list.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[16]);return}
+if(p_[b]){_wl(b,x[14]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2768,19 +2760,19 @@ return r
 }
 var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
-var aL=e_[x[16]].i
-_ai(aL,x[9],e_,x[16],1,1)
+var aL=e_[x[14]].i
+_ai(aL,x[8],e_,x[14],1,1)
 aL.pop()
 return r
 }
-e_[x[16]]={f:m6,j:[],i:[],ti:[x[9]],ic:[]}
-d_[x[17]]={}
-d_[x[17]]["2241d2a0"]=function(e,s,r,gg){
+e_[x[14]]={f:m6,j:[],i:[],ti:[x[8]],ic:[]}
+d_[x[15]]={}
+d_[x[15]]["2241d2a0"]=function(e,s,r,gg){
 var z=gz$gwx_8()
-var b=x[17]+':2241d2a0'
+var b=x[15]+':2241d2a0'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/m-icon/m-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[17]);return}
+if(p_[b]){_wl(b,x[15]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2794,14 +2786,14 @@ var m7=function(e,s,r,gg){
 var z=gz$gwx_8()
 return r
 }
-e_[x[17]]={f:m7,j:[],i:[],ti:[],ic:[]}
-d_[x[18]]={}
-d_[x[18]]["7dcb1efb"]=function(e,s,r,gg){
+e_[x[15]]={f:m7,j:[],i:[],ti:[],ic:[]}
+d_[x[16]]={}
+d_[x[16]]["7dcb1efb"]=function(e,s,r,gg){
 var z=gz$gwx_9()
-var b=x[18]+':7dcb1efb'
+var b=x[16]+':7dcb1efb'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/m-input.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[18]);return}
+if(p_[b]){_wl(b,x[16]);return}
 p_[b]=true
 try{
 cs.push("./components/m-input.vue.wxml:view:1:78")
@@ -2815,7 +2807,7 @@ var fE=_v()
 _(xC,fE)
 cs.push("./components/m-input.vue.wxml:template:1:521")
 var cF=_oz(z,8,e,s,gg)
-var hG=_gd(x[18],cF,e_,d_)
+var hG=_gd(x[16],cF,e_,d_)
 if(hG){
 var oH=_1z(z,5,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2823,7 +2815,7 @@ fE.wxXCkey=3
 hG(oH,oH,fE,gg)
 gg.f=cur_globalf
 }
-else _w(cF,x[18],1,706)
+else _w(cF,x[16],1,706)
 cs.pop()
 cs.pop()
 }
@@ -2835,7 +2827,7 @@ var cI=_v()
 _(oD,cI)
 cs.push("./components/m-input.vue.wxml:template:1:803")
 var oJ=_oz(z,16,e,s,gg)
-var lK=_gd(x[18],oJ,e_,d_)
+var lK=_gd(x[16],oJ,e_,d_)
 if(lK){
 var aL=_1z(z,13,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2843,7 +2835,7 @@ cI.wxXCkey=3
 lK(aL,aL,cI,gg)
 gg.f=cur_globalf
 }
-else _w(oJ,x[18],1,970)
+else _w(oJ,x[16],1,970)
 cs.pop()
 cs.pop()
 }
@@ -2860,19 +2852,19 @@ return r
 }
 var m8=function(e,s,r,gg){
 var z=gz$gwx_9()
-var bO=e_[x[18]].i
-_ai(bO,x[8],e_,x[18],1,1)
+var bO=e_[x[16]].i
+_ai(bO,x[17],e_,x[16],1,1)
 bO.pop()
 return r
 }
-e_[x[18]]={f:m8,j:[],i:[],ti:[x[8]],ic:[]}
-d_[x[19]]={}
-d_[x[19]]["53499e7e"]=function(e,s,r,gg){
+e_[x[16]]={f:m8,j:[],i:[],ti:[x[17]],ic:[]}
+d_[x[18]]={}
+d_[x[18]]["53499e7e"]=function(e,s,r,gg){
 var z=gz$gwx_10()
-var b=x[19]+':53499e7e'
+var b=x[18]+':53499e7e'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/mpvue-echarts/src/echarts.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[19]);return}
+if(p_[b]){_wl(b,x[18]);return}
 p_[b]=true
 try{
 var oB=_v()
@@ -2893,14 +2885,14 @@ var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
 return r
 }
-e_[x[19]]={f:m9,j:[],i:[],ti:[],ic:[]}
-d_[x[20]]={}
-d_[x[20]]["ab7aaa6c"]=function(e,s,r,gg){
+e_[x[18]]={f:m9,j:[],i:[],ti:[],ic:[]}
+d_[x[19]]={}
+d_[x[19]]["ab7aaa6c"]=function(e,s,r,gg){
 var z=gz$gwx_11()
-var b=x[20]+':ab7aaa6c'
+var b=x[19]+':ab7aaa6c'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/inputPage.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[20]);return}
+if(p_[b]){_wl(b,x[19]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2914,17 +2906,17 @@ var m10=function(e,s,r,gg){
 var z=gz$gwx_11()
 return r
 }
-e_[x[20]]={f:m10,j:[],i:[],ti:[],ic:[]}
-d_[x[21]]={}
+e_[x[19]]={f:m10,j:[],i:[],ti:[],ic:[]}
+d_[x[20]]={}
 var m11=function(e,s,r,gg){
 var z=gz$gwx_12()
-var fS=e_[x[21]].i
-_ai(fS,x[22],e_,x[21],1,1)
+var fS=e_[x[20]].i
+_ai(fS,x[21],e_,x[20],1,1)
 var cT=_v()
 _(r,cT)
 cs.push("./pages/common/inputPage.wxml:template:2:6")
 var hU=_oz(z,1,e,s,gg)
-var oV=_gd(x[21],hU,e_,d_)
+var oV=_gd(x[20],hU,e_,d_)
 if(oV){
 var cW=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2932,26 +2924,26 @@ cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[21],2,18)
+else _w(hU,x[20],2,18)
 cs.pop()
 fS.pop()
 return r
 }
-e_[x[21]]={f:m11,j:[],i:[],ti:[x[22]],ic:[]}
-d_[x[23]]={}
-d_[x[23]]["72ed35ad"]=function(e,s,r,gg){
+e_[x[20]]={f:m11,j:[],i:[],ti:[x[21]],ic:[]}
+d_[x[22]]={}
+d_[x[22]]["72ed35ad"]=function(e,s,r,gg){
 var z=gz$gwx_13()
-var b=x[23]+':72ed35ad'
+var b=x[22]+':72ed35ad'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/danger/addDanger.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[23]);return}
+if(p_[b]){_wl(b,x[22]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
 cs.push("./pages/danger/addDanger.vue.wxml:template:1:345")
 var xC=_oz(z,2,e,s,gg)
-var oD=_gd(x[23],xC,e_,d_)
+var oD=_gd(x[22],xC,e_,d_)
 if(oD){
 var fE=_1z(z,1,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2959,7 +2951,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[23],1,462)
+else _w(xC,x[22],1,462)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2970,24 +2962,24 @@ return r
 }
 var m12=function(e,s,r,gg){
 var z=gz$gwx_13()
-var lY=e_[x[23]].i
-_ai(lY,x[2],e_,x[23],1,1)
-_ai(lY,x[3],e_,x[23],1,61)
+var lY=e_[x[22]].i
+_ai(lY,x[2],e_,x[22],1,1)
+_ai(lY,x[3],e_,x[22],1,61)
 lY.pop()
 lY.pop()
 return r
 }
-e_[x[23]]={f:m12,j:[],i:[],ti:[x[2],x[3]],ic:[]}
-d_[x[24]]={}
+e_[x[22]]={f:m12,j:[],i:[],ti:[x[2],x[3]],ic:[]}
+d_[x[23]]={}
 var m13=function(e,s,r,gg){
 var z=gz$gwx_14()
-var t1=e_[x[24]].i
-_ai(t1,x[25],e_,x[24],1,1)
+var t1=e_[x[23]].i
+_ai(t1,x[24],e_,x[23],1,1)
 var e2=_v()
 _(r,e2)
 cs.push("./pages/danger/addDanger.wxml:template:2:6")
 var b3=_oz(z,1,e,s,gg)
-var o4=_gd(x[24],b3,e_,d_)
+var o4=_gd(x[23],b3,e_,d_)
 if(o4){
 var x5=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2995,26 +2987,26 @@ e2.wxXCkey=3
 o4(x5,x5,e2,gg)
 gg.f=cur_globalf
 }
-else _w(b3,x[24],2,18)
+else _w(b3,x[23],2,18)
 cs.pop()
 t1.pop()
 return r
 }
-e_[x[24]]={f:m13,j:[],i:[],ti:[x[25]],ic:[]}
-d_[x[26]]={}
-d_[x[26]]["4ef7e761"]=function(e,s,r,gg){
+e_[x[23]]={f:m13,j:[],i:[],ti:[x[24]],ic:[]}
+d_[x[25]]={}
+d_[x[25]]["4ef7e761"]=function(e,s,r,gg){
 var z=gz$gwx_15()
-var b=x[26]+':4ef7e761'
+var b=x[25]+':4ef7e761'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/login/diyHost.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[26]);return}
+if(p_[b]){_wl(b,x[25]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
 cs.push("./pages/login/diyHost.vue.wxml:template:1:247")
 var xC=_oz(z,5,e,s,gg)
-var oD=_gd(x[26],xC,e_,d_)
+var oD=_gd(x[25],xC,e_,d_)
 if(oD){
 var fE=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3022,7 +3014,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[26],1,471)
+else _w(xC,x[25],1,471)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -3033,12 +3025,12 @@ return r
 }
 var m14=function(e,s,r,gg){
 var z=gz$gwx_15()
-var f7=e_[x[26]].i
-_ai(f7,x[7],e_,x[26],1,1)
+var f7=e_[x[25]].i
+_ai(f7,x[26],e_,x[25],1,1)
 f7.pop()
 return r
 }
-e_[x[26]]={f:m14,j:[],i:[],ti:[x[7]],ic:[]}
+e_[x[25]]={f:m14,j:[],i:[],ti:[x[26]],ic:[]}
 d_[x[27]]={}
 var m15=function(e,s,r,gg){
 var z=gz$gwx_16()
@@ -3126,11 +3118,11 @@ return r
 var m16=function(e,s,r,gg){
 var z=gz$gwx_17()
 var tEB=e_[x[29]].i
-_ai(tEB,x[7],e_,x[29],1,1)
+_ai(tEB,x[26],e_,x[29],1,1)
 tEB.pop()
 return r
 }
-e_[x[29]]={f:m16,j:[],i:[],ti:[x[7]],ic:[]}
+e_[x[29]]={f:m16,j:[],i:[],ti:[x[26]],ic:[]}
 d_[x[30]]={}
 var m17=function(e,s,r,gg){
 var z=gz$gwx_18()
@@ -4161,11 +4153,11 @@ return r
 var m40=function(e,s,r,gg){
 var z=gz$gwx_41()
 var hYD=e_[x[65]].i
-_ai(hYD,x[7],e_,x[65],1,1)
+_ai(hYD,x[26],e_,x[65],1,1)
 hYD.pop()
 return r
 }
-e_[x[65]]={f:m40,j:[],i:[],ti:[x[7]],ic:[]}
+e_[x[65]]={f:m40,j:[],i:[],ti:[x[26]],ic:[]}
 d_[x[66]]={}
 var m41=function(e,s,r,gg){
 var z=gz$gwx_42()
@@ -4255,11 +4247,11 @@ return r
 var m42=function(e,s,r,gg){
 var z=gz$gwx_43()
 var b7D=e_[x[68]].i
-_ai(b7D,x[7],e_,x[68],1,1)
+_ai(b7D,x[26],e_,x[68],1,1)
 b7D.pop()
 return r
 }
-e_[x[68]]={f:m42,j:[],i:[],ti:[x[7]],ic:[]}
+e_[x[68]]={f:m42,j:[],i:[],ti:[x[26]],ic:[]}
 d_[x[69]]={}
 var m43=function(e,s,r,gg){
 var z=gz$gwx_44()
@@ -5149,7 +5141,7 @@ eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  * http://222.223.19.166:10012/boeb9，外网\n  * http://10.57.167.214:8080/boeb9，内网\n  */\nvar host = \"http://222.223.19.166:10012/boeb9\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n\n  // 点位检查扫码接口\n  scan: '/mobile/dwsm.do',\n\n  // 扫码新增检查\n  UpdatePoint: '/mobile/updateJcjl.do',\n\n  // 获取Tab页上的数量\n  getTabCounts: '/mobile/getTabCount.do',\n\n  // 获取检查详情\n  getPointDetail: '/mobile/getJcjl.do',\n\n  // 首页统计\n  getMainPageCount: '/mobile/getSytj.do',\n\n  // 报警设备类型统计\n  alertDeviceCount: '/mobile/bjsblx.do',\n\n  // 报警事件类型统计\n  alertEventCount: '/mobile/bjsjlx.do',\n\n  // 阀组压力统计\n  alertValveCount: '/mobile/ylfz.do',\n  // 阀组压力统计 - 根据楼层获取阀组编号\n  getValveDataByFloor: '/mobile/getfz.do',\n\n  // 上传图片\n  uploadImage: '/uploadImg' };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?a0b7");
+eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  * http://222.223.19.166:10012/boeb9，外网\n  * http://10.57.167.214:8080/boeb9，内网\n  */\nvar host = \"http://222.223.19.166:10012/boeb9\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n\n  // 点位检查扫码接口\n  scan: '/mobile/dwsm.do',\n\n  // 扫码新增检查\n  UpdatePoint: '/mobile/updateJcjl.do',\n\n  // 获取Tab页上的数量\n  getTabCounts: '/mobile/getTabCount.do',\n\n  // 获取检查详情\n  getPointDetail: '/mobile/getJcjl.do',\n\n  // 首页统计\n  getMainPageCount: '/mobile/getSytj.do',\n\n  // 报警设备类型统计\n  alertDeviceCount: '/mobile/bjsblx.do',\n\n  // 报警事件类型统计\n  alertEventCount: '/mobile/bjsjlx.do',\n\n  // 阀组压力统计\n  alertValveCount: '/mobile/ylfz.do',\n  // 阀组压力统计 - 根据楼层获取阀组编号\n  getValveDataByFloor: '/mobile/getfz.do',\n\n  // 上传图片\n  uploadImage: '/uploadImg',\n\n  // 加载图片\n  loadImage: '/mobile/loadYhzp.do?fileid=',\n\n  // 删除图片\n  deleteImage: '/mobile/delZp.do' };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?a0b7");
 
 /***/ }),
 
@@ -5161,7 +5153,7 @@ eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  * http://222.
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var config = __webpack_require__(/*! ./config */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\");\n// 展示进度条的网络请求\n// url:网络请求的url\n// params:请求参数\n// message:进度条的提示信息\n// success:成功的回调函数\n// fail：失败的回调\nvar requestLoading = function requestLoading(url, params, message, _success, _fail, _complete) {\n  // \twx.showNavigationBarLoading()\n  if (message != \"\") {\n    uni.showLoading({\n      title: message });\n\n  }\n  console.log('request.js :' + url);\n  uni.request({\n    url: config.host + url,\n    data: params,\n    header: {\n      // 'Content-Type': 'application/json'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'POST',\n    success: function success(res) {\n      // \t\t\t\t\twx.hideNavigationBarLoading()\n      if (message != \"\") {\n        uni.hideLoading();\n      }\n\n      // console.log('' + JSON.stringify(res));\n      if (res.data.success == 'true') {\n        _success(res.data);\n      } else {\n        _fail();\n      }\n    },\n    fail: function fail(res) {\n      // console.log('' + JSON.stringify(res))\n      if (message != \"\") {\n        uni.hideLoading();\n      }\n      _fail();\n    },\n    complete: function complete() {\n      if (message != \"\") {\n        uni.hideLoading();\n      }\n      _complete();\n    } });\n\n};\nvar request = function request(url, message, _success2, _fail2) {\n  //   wx.showNavigationBarLoading()\n  //   if (message != \"\") {\n  //     wx.showLoading({\n  //       title: message,\n  //     })\n  //   }\n  uni.request({\n    url: url,\n    header: {\n      // 'Content-Type': 'application/json'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'GET',\n    success: function success(res) {\n      // \t\t\t\t\twx.hideNavigationBarLoading()\n      // \t\t\t\t\tif (message != \"\") {\n      // \t\t\t\t\t  wx.hideLoading()\n      // \t\t\t\t\t}\n      if (res.success == 'true') {\n        _success2(res.data);\n      } else {\n        _fail2();\n      }\n    },\n    fail: function fail(res) {\n      _fail2();\n    } });\n\n};\n// 上传图片\nvar uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, length, cb) {var _this = this;\n  uni.uploadFile({\n    url: config.host + url,\n    filePath: filePaths[i],\n    name: 'fileData',\n    formData: {},\n\n\n    success: function success(resp) {\n      successUp++;\n    },\n    fail: function fail(res) {\n      failUp++;\n    },\n    complete: function complete() {\n      i++;\n      if (i == length) {\n        uni.showToast({\n          title: '总共' + successUp + '张上传成功,' + failUp + '张上传失败！',\n          icon: 'none',\n          duration: 2000 });\n\n        typeof cb == \"function\" && cb('200');\n      } else\n      {//递归调用uploadImage函数\n        _this.uploadImage(url, filePaths, successUp, failUp, i, length);\n      }\n    } });\n\n};var _default =\n{\n  request: request,\n  requestLoading: requestLoading,\n  uploadImage: uploadImage };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///util/request.js?e22c");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;var config = __webpack_require__(/*! ./config */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\");\n// 展示进度条的网络请求\n// url:网络请求的url\n// params:请求参数\n// message:进度条的提示信息\n// success:成功的回调函数\n// fail：失败的回调\nvar requestLoading = function requestLoading(url, params, message, _success, _fail, _complete) {\n  // \twx.showNavigationBarLoading()\n  if (message != \"\") {\n    uni.showLoading({\n      title: message });\n\n  }\n  console.log('request.js :' + url);\n  uni.request({\n    url: config.host + url,\n    data: params,\n    header: {\n      // 'Content-Type': 'application/json'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'POST',\n    success: function success(res) {\n      // \t\t\t\t\twx.hideNavigationBarLoading()\n      if (message != \"\") {\n        uni.hideLoading();\n      }\n\n      // console.log('' + JSON.stringify(res));\n      if (res.data.success == 'true') {\n        _success(res.data);\n      } else {\n        _fail();\n      }\n    },\n    fail: function fail(res) {\n      // console.log('' + JSON.stringify(res))\n      if (message != \"\") {\n        uni.hideLoading();\n      }\n      _fail();\n    },\n    complete: function complete() {\n      if (message != \"\") {\n        uni.hideLoading();\n      }\n      _complete();\n    } });\n\n};\nvar request = function request(url, message, _success2, _fail2) {\n  //   wx.showNavigationBarLoading()\n  //   if (message != \"\") {\n  //     wx.showLoading({\n  //       title: message,\n  //     })\n  //   }\n  uni.request({\n    url: url,\n    header: {\n      // 'Content-Type': 'application/json'\n      'Content-type': 'application/x-www-form-urlencoded' },\n\n    method: 'GET',\n    success: function success(res) {\n      // \t\t\t\t\twx.hideNavigationBarLoading()\n      // \t\t\t\t\tif (message != \"\") {\n      // \t\t\t\t\t  wx.hideLoading()\n      // \t\t\t\t\t}\n      if (res.success == 'true') {\n        _success2(res.data);\n      } else {\n        _fail2();\n      }\n    },\n    fail: function fail(res) {\n      _fail2();\n    } });\n\n};\n// 上传图片\nvar uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, length, _success3, _complete2) {var _this = this;\n  uni.uploadFile({\n    url: config.host + url,\n    filePath: filePaths[i],\n    name: 'fileData',\n    formData: {},\n\n\n    success: function success(resp) {\n      successUp++;\n      _success3(resp);\n    },\n    fail: function fail(res) {\n      failUp++;\n    },\n    complete: function complete() {\n      i++;\n      if (i == length) {\n        uni.showToast({\n          title: '总共' + successUp + '张上传成功,' + failUp + '张上传失败！',\n          icon: 'none',\n          duration: 2000 });\n\n        _complete2('200');\n      } else\n      {//递归调用uploadImage函数\n        _this.uploadImage(url, filePaths, successUp, failUp, i, length);\n      }\n    } });\n\n};var _default =\n{\n  request: request,\n  requestLoading: requestLoading,\n  uploadImage: uploadImage };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///util/request.js?e22c");
 
 /***/ }),
 
@@ -6698,7 +6690,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: (0, _vuex.mapState)(['inputPageText', 'key', 'userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default },\n  data: function data() {\n    return {\n      // 当页面OnShow的时候是否需要从state里去拿输入的内容\n      needGetInputOnShow: false,\n\n      typeArray: ['正常', '未检', '异常'],\n      rectifyTypes: ['发起整改', '查看整改'],\n      item: '',\n      itemIndex: 0,\n\n      // 上传照片相关\n      imageViewHeight: 100,\n      imageList: [],\n      littleImageWidth: 0 };\n\n  },\n  onLoad: function onLoad(option) {\n    this.item = JSON.parse(option.item);\n    this.itemIndex = JSON.parse(option.index);\n    this.littleImageWidth = (uni.getSystemInfoSync().windowWidth - 50) / 4;\n  },\n  onShow: function onShow() {\n    if (this.needGetInputOnShow == true) {\n      this.item[this.key] = this.inputPageText;\n      this.needGetInputOnShow = false;\n    }\n  },\n  methods: _objectSpread({},\n  (0, _vuex.mapMutations)(['setSublistItem']), {\n    bindTypeChange: function bindTypeChange(e) {\n      this.item.jcjl = this.typeArray[e.detail.value];\n      if (this.item.jcjl == \"正常\") {\n        this.item.zgfs = \"\";\n      }\n    },\n    bindRectifyChange: function bindRectifyChange(e) {\n      this.item.zgfs = this.rectifyTypes[e.detail.value];\n    },\n    jumpInput: function jumpInput(text) {\n      this.needGetInputOnShow = true;\n      uni.navigateTo({\n        url: '../common/inputPage?text=' + text + '&key=jcwtms&placeholder=请输入问题描述' });\n\n    },\n    saveItem: function saveItem() {\n      var that = this;\n      var obj = {\n        item: that.item,\n        index: that.itemIndex };\n\n      that.setSublistItem(obj);\n\n      // 上传照片\n      var url = _config.default.uploadImage + '?from=jc&yyid=' + that.item.id + '&userid=' + that.userInfo.userid;\n      var imgList = [];\n      for (var i = 0; i < that.imageList.length; i++) {\n        var item = that.imageList[i];\n        if (item.type == 1) {\n          imgList.push(item.src);\n        }\n      }\n      _request.default.uploadImage(url, imgList, 0, 0, 0, imgList.length, function (success) {\n        if (success == 'true') {\n          uni.showToast({\n            title: '上传成功',\n            complete: setTimeout(function () {\n              uni.navigateBack({\n                delta: 1 });\n\n            }, 1500) });\n\n        }\n      });\n    },\n\n    // 上传照片功能-添加照片\n    addPhoto: function addPhoto() {\n      var that = this;\n      uni.chooseImage({\n        count: 9, //默认9\n        sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有\n        sourceType: ['album', 'camera'], //从相册选择\n        success: function success(res) {\n          console.log(JSON.stringify(res.tempFilePaths));\n          for (var i = 0; i < res.tempFilePaths.length; i++) {\n            var imgObj = { //\ttype：1为新增需要上传，2为加载的，不需要上传\n              src: res.tempFilePaths[i],\n              type: 1 };\n\n            that.imageList.push(imgObj);\n          }\n        } });\n\n    } }) };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointAdd/pointCheckInfo.vue?vue&type=script&lang=js&?58ac");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: (0, _vuex.mapState)(['inputPageText', 'key', 'userInfo']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default },\n  data: function data() {\n    return {\n      // 当页面OnShow的时候是否需要从state里去拿输入的内容\n      needGetInputOnShow: false,\n\n      typeArray: ['正常', '未检', '异常'],\n      rectifyTypes: ['发起整改', '查看整改'],\n      item: '', // subList中的对象\n      itemIndex: 0, // subList中的第几个数据，用于确定后替换原数据\n\n      // 上传照片相关\n      imageViewHeight: 100,\n      imageList: [],\n      littleImageWidth: 0 };\n\n  },\n  onLoad: function onLoad(option) {\n    this.item = JSON.parse(option.item);\n    this.itemIndex = JSON.parse(option.index);\n    this.littleImageWidth = (uni.getSystemInfoSync().windowWidth - 50) / 4;\n    if (this.item.fj != \"\") {\n      console.log('FJ:' + this.item.fj);\n      var imgList = JSON.parse(this.item.fj);\n      for (var i = 0; i < imgList.length; i++) {\n        var imgObj = imgList[i];\n        var imgUrl = _config.default.host + _config.default.loadImage + imgObj.fileId + \"&userid=\" + this.userInfo.userid;\n        var imgItem = {\n          fileid: imgObj.fileId,\n          src: imgUrl,\n          type: 2 };\n\n        this.imageList.push(imgItem);\n      }\n    }\n  },\n  onShow: function onShow() {\n    if (this.needGetInputOnShow == true) {\n      this.item[this.key] = this.inputPageText;\n      this.needGetInputOnShow = false;\n    }\n  },\n  methods: _objectSpread({},\n  (0, _vuex.mapMutations)(['setSublistItem']), {\n    bindTypeChange: function bindTypeChange(e) {\n      this.item.jcjl = this.typeArray[e.detail.value];\n      if (this.item.jcjl == \"正常\") {\n        this.item.zgfs = \"\";\n      }\n    },\n    bindRectifyChange: function bindRectifyChange(e) {\n      this.item.zgfs = this.rectifyTypes[e.detail.value];\n    },\n    jumpInput: function jumpInput(text) {\n      this.needGetInputOnShow = true;\n      uni.navigateTo({\n        url: '../common/inputPage?text=' + text + '&key=jcwtms&placeholder=请输入问题描述' });\n\n    },\n    saveItem: function saveItem() {\n      var that = this;\n      var obj = {\n        item: that.item,\n        index: that.itemIndex };\n\n      that.setSublistItem(obj);\n\n      // 上传照片，需要分两种情况，如是从后台加载的，不需要调用上传接口，如果是本地读取还未上传的，需要调上传接口\n\n      var url = _config.default.uploadImage + '?from=jc&yyid=' + that.item.id + '&userid=' + that.userInfo.userid;\n      var imgList = [];\n      for (var i = 0; i < that.imageList.length; i++) {\n        var item = that.imageList[i];\n        if (item.type == 1 && !item.src.startsWith('http:')) {\n          imgList.push(item.src);\n        }\n      }\n\n      if (imgList.length == 0) {\n        uni.navigateBack({\n          delta: 1 });\n\n        return;\n      }\n\n      _request.default.uploadImage(url, imgList, 0, 0, 0, imgList.length, function (res) {\n        var data = JSON.parse(res.data);\n        var fj = data.fj;\n        that.item.fj = fj;\n      }, function (result) {\n        if (result == '200') {\n          uni.showToast({\n            title: '上传成功',\n            complete: setTimeout(function () {\n              uni.navigateBack({\n                delta: 1 });\n\n            }, 1500) });\n\n        }\n      });\n    },\n\n    // 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口\n    deleteImage: function deleteImage(imgObj, index) {\n      var that = this;\n      if (imgObj.src.startsWith('http:')) {// 网络图片\n        var obj = {\n          item: that.item,\n          index: that.itemIndex };\n\n        that.setSublistItem(obj);\n\n        var param = {\n          from: 'jc',\n          yyid: that.item.id,\n          fileid: imgObj.fileid,\n          userid: that.userInfo.userid };\n\n        _request.default.requestLoading(_config.default.deleteImage, param, '正在删除图片',\n        function (res) {\n          console.log('删除成功：' + JSON.stringify(res));\n          that.item.fj = res.fj;\n          that.imageList.splice(index, 1);\n        }, function () {\n          uni.showToast({\n            icon: 'none',\n            title: '删除失败' });\n\n        }, function () {\n\n        });\n\n      } else {// 刚选择好，还未上传，非网络图片\n        that.imageList.splice(index, 1);\n      }\n    },\n\n    // 浏览照片\n    viewPhoto: function viewPhoto() {\n      var that = this;\n      var imgList = [];\n      for (var i = 0; i < that.imageList.length; i++) {\n        var item = that.imageList[i];\n        imgList.push(item.src);\n      }\n      // 预览图片\n      uni.previewImage({\n        urls: imgList });\n\n    },\n\n    // 上传照片功能-添加照片\n    addPhoto: function addPhoto() {\n      var that = this;\n      uni.chooseImage({\n        count: 9, //默认9\n        sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有\n        sourceType: ['album', 'camera'], //从相册选择\n        success: function success(res) {\n          console.log(JSON.stringify(res.tempFilePaths));\n          for (var i = 0; i < res.tempFilePaths.length; i++) {\n            var imgObj = { //\ttype：1为新增需要上传，2为加载的，不需要上传\n              fileid: '',\n              src: res.tempFilePaths[i],\n              type: 1 };\n\n            that.imageList.push(imgObj);\n          }\n        } });\n\n    } }) };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointAdd/pointCheckInfo.vue?vue&type=script&lang=js&?58ac");
 
 /***/ }),
 
@@ -6721,7 +6713,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(_vm._s(_vm.item.jcbz))])\n    ]),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"picker\",\n          {\n            attrs: {\n              value: _vm.index,\n              range: _vm.typeArray,\n              eventid: \"4bd08622-0\"\n            },\n            on: { change: _vm.bindTypeChange }\n          },\n          [\n            _c(\"view\", { staticClass: \"cellView\" }, [\n              _c(\"view\", { staticClass: \"cellSubView\" }, [\n                _c(\"text\", { staticClass: \"leftText\" }, [_vm._v(\"检查结论\")]),\n                _c(\"view\", { staticClass: \"rightText\" }, [\n                  _vm._v(_vm._s(_vm.item.jcjl))\n                ])\n              ]),\n              _c(\"image\", {\n                staticClass: \"arrow\",\n                attrs: { src: \"../../static/img/rightArrow.png\" }\n              })\n            ])\n          ]\n        ),\n        _c(\"view\", { staticClass: \"line\" }),\n        _c(\n          \"view\",\n          {\n            staticClass: \"cellView\",\n            attrs: { eventid: \"4bd08622-1\" },\n            on: {\n              click: function($event) {\n                _vm.jumpInput(_vm.item.jcwtms)\n              }\n            }\n          },\n          [\n            _c(\"view\", { staticClass: \"cellSubView\" }, [\n              _c(\"text\", { staticClass: \"leftText\" }, [_vm._v(\"问题描述\")]),\n              _c(\"view\", { staticClass: \"rightText\" }, [\n                _vm._v(_vm._s(_vm.item.jcwtms))\n              ])\n            ]),\n            _c(\"image\", {\n              staticClass: \"arrow\",\n              attrs: { src: \"../../static/img/rightArrow.png\" }\n            })\n          ]\n        ),\n        _c(\"view\", { staticClass: \"line\" }),\n        _vm.item.jcjl == \"异常\"\n          ? _c(\n              \"picker\",\n              {\n                attrs: {\n                  value: _vm.index,\n                  range: _vm.rectifyTypes,\n                  eventid: \"4bd08622-2\"\n                },\n                on: { change: _vm.bindRectifyChange }\n              },\n              [\n                _c(\"view\", { staticClass: \"cellView\" }, [\n                  _c(\"view\", { staticClass: \"cellSubView\" }, [\n                    _c(\"text\", { staticClass: \"leftText\" }, [\n                      _vm._v(\"整改方式\")\n                    ]),\n                    _c(\"view\", { staticClass: \"rightText\" }, [\n                      _vm._v(_vm._s(_vm.item.zgfs))\n                    ])\n                  ]),\n                  _c(\"image\", {\n                    staticClass: \"arrow\",\n                    attrs: { src: \"../../static/img/rightArrow.png\" }\n                  })\n                ])\n              ]\n            )\n          : _vm._e(),\n        _c(\"view\", { staticClass: \"line\" }),\n        _c(\n          \"view\",\n          {\n            staticClass: \"imageBaseView\",\n            style: { height: 58 + _vm.imageViewHeight + \"px\" }\n          },\n          [\n            _c(\"view\", { staticClass: \"cellSubViewRow\" }, [\n              _c(\"text\", { staticClass: \"leftTextRow\" }, [_vm._v(\"隐患照片\")]),\n              _c(\"text\", { staticClass: \"rightTextRow\" }, [\n                _vm._v(_vm._s(_vm.imageList.length))\n              ])\n            ]),\n            _c(\n              \"view\",\n              {\n                staticClass: \"imageView\",\n                style: { height: _vm.imageViewHeight + \"px\" },\n                attrs: { id: \"imageView\" }\n              },\n              [\n                _vm._l(_vm.imageList, function(imgObj, idx) {\n                  return _c(\"block\", { key: idx }, [\n                    _c(\n                      \"view\",\n                      {\n                        staticClass: \"littleImageView\",\n                        style: {\n                          width: _vm.littleImageWidth + \"px\",\n                          height: _vm.littleImageWidth + \"px\"\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"littleImage\",\n                          attrs: {\n                            bindtap: \"viewPhoto\",\n                            id: idx,\n                            src: imgObj.src,\n                            mode: \"aspectFit\"\n                          }\n                        }),\n                        _c(\"image\", {\n                          staticClass: \"littleImageDelete\",\n                          attrs: {\n                            src: \"../../static/img/delete.png\",\n                            id: idx,\n                            mode: \"aspectFit\",\n                            eventid: \"4bd08622-3-\" + idx\n                          },\n                          on: { click: _vm.deleteImage }\n                        })\n                      ]\n                    )\n                  ])\n                }),\n                _c(\n                  \"view\",\n                  {\n                    staticClass: \"littleImageView\",\n                    style: {\n                      width: _vm.littleImageWidth + \"px\",\n                      height: _vm.littleImageWidth + \"px\"\n                    },\n                    attrs: { eventid: \"4bd08622-4\" },\n                    on: { click: _vm.addPhoto }\n                  },\n                  [\n                    _c(\"image\", {\n                      staticClass: \"littleImage\",\n                      attrs: { src: \"../../static/img/addImage.png\" }\n                    })\n                  ]\n                )\n              ],\n              2\n            )\n          ]\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"btn-row\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"primary\",\n            attrs: { type: \"primary\", eventid: \"4bd08622-5\" },\n            on: { tap: _vm.saveItem }\n          },\n          [_vm._v(\"确定\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointAdd/pointCheckInfo.vue?vue&type=template&id=2c8a1874&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(_vm._s(_vm.item.jcbz))])\n    ]),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"picker\",\n          {\n            attrs: {\n              value: _vm.index,\n              range: _vm.typeArray,\n              eventid: \"4bd08622-0\"\n            },\n            on: { change: _vm.bindTypeChange }\n          },\n          [\n            _c(\"view\", { staticClass: \"cellView\" }, [\n              _c(\"view\", { staticClass: \"cellSubView\" }, [\n                _c(\"text\", { staticClass: \"leftText\" }, [_vm._v(\"检查结论\")]),\n                _c(\"view\", { staticClass: \"rightText\" }, [\n                  _vm._v(_vm._s(_vm.item.jcjl))\n                ])\n              ]),\n              _c(\"image\", {\n                staticClass: \"arrow\",\n                attrs: { src: \"../../static/img/rightArrow.png\" }\n              })\n            ])\n          ]\n        ),\n        _c(\"view\", { staticClass: \"line\" }),\n        _c(\n          \"view\",\n          {\n            staticClass: \"cellView\",\n            attrs: { eventid: \"4bd08622-1\" },\n            on: {\n              click: function($event) {\n                _vm.jumpInput(_vm.item.jcwtms)\n              }\n            }\n          },\n          [\n            _c(\"view\", { staticClass: \"cellSubView\" }, [\n              _c(\"text\", { staticClass: \"leftText\" }, [_vm._v(\"问题描述\")]),\n              _c(\"view\", { staticClass: \"rightText\" }, [\n                _vm._v(_vm._s(_vm.item.jcwtms))\n              ])\n            ]),\n            _c(\"image\", {\n              staticClass: \"arrow\",\n              attrs: { src: \"../../static/img/rightArrow.png\" }\n            })\n          ]\n        ),\n        _c(\"view\", { staticClass: \"line\" }),\n        _vm.item.jcjl == \"异常\"\n          ? _c(\n              \"picker\",\n              {\n                attrs: {\n                  value: _vm.index,\n                  range: _vm.rectifyTypes,\n                  eventid: \"4bd08622-2\"\n                },\n                on: { change: _vm.bindRectifyChange }\n              },\n              [\n                _c(\"view\", { staticClass: \"cellView\" }, [\n                  _c(\"view\", { staticClass: \"cellSubView\" }, [\n                    _c(\"text\", { staticClass: \"leftText\" }, [\n                      _vm._v(\"整改方式\")\n                    ]),\n                    _c(\"view\", { staticClass: \"rightText\" }, [\n                      _vm._v(_vm._s(_vm.item.zgfs))\n                    ])\n                  ]),\n                  _c(\"image\", {\n                    staticClass: \"arrow\",\n                    attrs: { src: \"../../static/img/rightArrow.png\" }\n                  })\n                ])\n              ]\n            )\n          : _vm._e(),\n        _c(\"view\", { staticClass: \"line\" }),\n        _c(\"view\", { staticClass: \"imageBaseView\" }, [\n          _c(\"view\", { staticClass: \"cellSubViewRow\" }, [\n            _c(\"text\", { staticClass: \"leftTextRow\" }, [_vm._v(\"隐患照片\")]),\n            _c(\"text\", { staticClass: \"rightTextRow\" }, [\n              _vm._v(_vm._s(_vm.imageList.length))\n            ])\n          ]),\n          _c(\n            \"view\",\n            { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n            [\n              _vm._l(_vm.imageList, function(imgObj, idx) {\n                return _c(\"block\", { key: idx }, [\n                  _c(\n                    \"view\",\n                    {\n                      staticClass: \"littleImageView\",\n                      style: {\n                        width: _vm.littleImageWidth + \"px\",\n                        height: _vm.littleImageWidth + \"px\"\n                      }\n                    },\n                    [\n                      _c(\"image\", {\n                        staticClass: \"littleImage\",\n                        attrs: {\n                          id: idx,\n                          src: imgObj.src,\n                          mode: \"aspectFit\",\n                          eventid: \"4bd08622-3-\" + idx\n                        },\n                        on: { click: _vm.viewPhoto }\n                      }),\n                      _c(\"image\", {\n                        staticClass: \"littleImageDelete\",\n                        attrs: {\n                          src: \"../../static/img/delete.png\",\n                          id: idx,\n                          mode: \"aspectFit\",\n                          eventid: \"4bd08622-4-\" + idx\n                        },\n                        on: {\n                          click: function($event) {\n                            _vm.deleteImage(imgObj, idx)\n                          }\n                        }\n                      })\n                    ]\n                  )\n                ])\n              }),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"littleImageView\",\n                  style: {\n                    width: _vm.littleImageWidth + \"px\",\n                    height: _vm.littleImageWidth + \"px\"\n                  },\n                  attrs: { eventid: \"4bd08622-5\" },\n                  on: { click: _vm.addPhoto }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"littleImage\",\n                    attrs: { src: \"../../static/img/addImage.png\" }\n                  })\n                ]\n              )\n            ],\n            2\n          )\n        ])\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"btn-row\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"primary\",\n            attrs: { type: \"primary\", eventid: \"4bd08622-6\" },\n            on: { tap: _vm.saveItem }\n          },\n          [_vm._v(\"确定\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointAdd/pointCheckInfo.vue?vue&type=template&id=2c8a1874&");
 
 /***/ })
 

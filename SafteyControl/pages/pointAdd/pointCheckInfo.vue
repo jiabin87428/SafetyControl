@@ -42,16 +42,16 @@
 				</view>
 			</picker>
 			<view class="line"></view>
-			<view class='imageBaseView' v-bind:style="{height:58+imageViewHeight + 'px'}"> 
+			<view class='imageBaseView'> 
 				<view class='cellSubViewRow'>
 				  <text class='leftTextRow'>隐患照片</text>
 				  <text class='rightTextRow'>{{imageList.length}}</text>
 				</view>
-				<view id='imageView' v-bind:style="{height:imageViewHeight + 'px'}" class='imageView'>
+				<view id='imageView' class='imageView'>
 				  <block v-for="(imgObj,idx) in imageList" :key="idx">
 					<view class="littleImageView" v-bind:style="{width:littleImageWidth + 'px', height:littleImageWidth + 'px'}">
-					  <image class="littleImage" bindtap='viewPhoto' :id="idx" :src="imgObj.src" mode="aspectFit"></image>
-					  <image class='littleImageDelete' src='../../static/img/delete.png' @click="deleteImage" :id='idx' mode="aspectFit"></image>
+					  <image class="littleImage" @click="viewPhoto" :id="idx" :src="imgObj.src" mode="aspectFit"></image>
+					  <image class='littleImageDelete' src='../../static/img/delete.png' @click="deleteImage(imgObj,idx)" :id='idx' mode="aspectFit"></image>
 					</view>
 				  </block>
 				  <view class="littleImageView" @click='addPhoto' v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
@@ -85,8 +85,8 @@
 				
 				typeArray: ['正常', '未检', '异常'],
 				rectifyTypes: ['发起整改', '查看整改'],
-		        item: '',
-				itemIndex: 0,
+		        item: '',		// subList中的对象
+				itemIndex: 0,	// subList中的第几个数据，用于确定后替换原数据
 				
 				// 上传照片相关
 				imageViewHeight: 100,
@@ -98,6 +98,20 @@
 			this.item = JSON.parse(option.item);
 			this.itemIndex = JSON.parse(option.index);
 			this.littleImageWidth = (uni.getSystemInfoSync().windowWidth -50) / 4;
+			if (this.item.fj != "") {
+				console.log('FJ:' + this.item.fj);
+				let imgList = JSON.parse(this.item.fj);
+				for(var i=0; i<imgList.length; i++) {
+					let imgObj = imgList[i];
+					let imgUrl = config.host + config.loadImage + imgObj.fileId + "&userid=" + this.userInfo.userid;
+					let imgItem = {
+						fileid: imgObj.fileId,
+						src: imgUrl,
+						type: 2
+					}
+					this.imageList.push(imgItem);
+				}
+			}
 		},
 		onShow() {
 			if (this.needGetInputOnShow == true) {
@@ -130,26 +144,88 @@
 				}
 				that.setSublistItem(obj);
 				
-				// 上传照片
+				// 上传照片，需要分两种情况，如是从后台加载的，不需要调用上传接口，如果是本地读取还未上传的，需要调上传接口
+				
 				let url = config.uploadImage + '?from=jc&yyid=' + that.item.id + '&userid=' + that.userInfo.userid
 				var imgList = []
 				for (var i=0 ; i<that.imageList.length; i++) {
 					let item = that.imageList[i]
-					if (item.type == 1) {
+					if (item.type == 1 && !item.src.startsWith('http:')) {
 						imgList.push(item.src);
 					}
 				}
-				request.uploadImage(url, imgList, 0, 0, 0, imgList.length, function (success) {
-				  if (success == 'true') {
-					uni.showToast({
-					  title: '上传成功',
-					  complete: setTimeout(function () {
-						uni.navigateBack({
-							delta: 1
-						})
-					  }, 1500)
+				
+				if(imgList.length == 0) {
+					uni.navigateBack({
+						delta: 1
 					})
-				  }
+					return;
+				}
+				
+				request.uploadImage(url, imgList, 0, 0, 0, imgList.length, function (res) {
+					let data = JSON.parse(res.data);
+					let fj = data.fj;
+					that.item.fj = fj;
+				}, function(result){
+					if (result == '200') {
+						uni.showToast({
+						  title: '上传成功',
+						  complete: setTimeout(function () {
+							uni.navigateBack({
+								delta: 1
+							})
+						  }, 1500)
+						})
+					}
+				});
+			},
+			
+			// 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口
+			deleteImage(imgObj, index) {
+				var that = this;
+				if (imgObj.src.startsWith('http:')) {// 网络图片
+					let obj = {
+						item: that.item,
+						index: that.itemIndex
+					}
+					that.setSublistItem(obj);
+					
+					let param = {
+						from: 'jc',
+						yyid: that.item.id,
+						fileid: imgObj.fileid,
+						userid: that.userInfo.userid
+					};
+					request.requestLoading(config.deleteImage, param, '正在删除图片', 
+						function(res){
+							console.log('删除成功：' + JSON.stringify(res));
+							that.item.fj = res.fj
+							that.imageList.splice(index,1);
+						},function(){
+							uni.showToast({
+								icon: 'none',
+								title: '删除失败'
+							});
+						}, function(){
+							
+						}
+					);
+				}else {// 刚选择好，还未上传，非网络图片
+					that.imageList.splice(index,1);
+				}
+			},
+			
+			// 浏览照片
+			viewPhoto() {
+				var that = this;
+				var imgList = []
+				for (var i=0 ; i<that.imageList.length; i++) {
+					let item = that.imageList[i]
+					imgList.push(item.src);
+				}
+				// 预览图片
+				uni.previewImage({
+					urls: imgList
 				});
 			},
 			
@@ -164,6 +240,7 @@
 						console.log(JSON.stringify(res.tempFilePaths));
 						for (var i=0;i<res.tempFilePaths.length;i++) {
 							var imgObj = {//	type：1为新增需要上传，2为加载的，不需要上传
+								fileid: '',
 								src: res.tempFilePaths[i],
 								type: 1
 							}
@@ -272,7 +349,6 @@
 	  display:flex;
 	  flex-direction:column;
 	  width: 100%;
-	  height: 100%;
 	  background-color: white;
 	  /* margin-bottom: 10px; */
 	  border-bottom: 1rpx solid #D3D3D3;
@@ -288,16 +364,18 @@
 	  align-items: flex-start;/*垂直居中*/
 	  /* justify-content: space-between; */
 	  flex-wrap: wrap;
+	  margin-bottom: 10upx;
 	}
 	
 	.littleImageView {
 	  display:flex;
 	  flex-direction:row;
-	  margin: 5px 0px 0px 10px;
+	  margin: 20px 5px 5px 20px;
 	}
 	
 	.littleImageDelete {
-	  position: absolute;
+	  /* position: absolute; */
+	  position: relative;
 	  margin-left: -50upx;
 	  margin-top: -15upx;
 	  width: 60upx;

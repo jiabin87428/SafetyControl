@@ -416,7 +416,13 @@ var config = {
   getValveDataByFloor: '/mobile/getfz.do',
 
   // 上传图片
-  uploadImage: '/uploadImg' };
+  uploadImage: '/uploadImg',
+
+  // 加载图片
+  loadImage: '/mobile/loadYhzp.do?fileid=',
+
+  // 删除图片
+  deleteImage: '/mobile/delZp.do' };
 
 //对外把对象config返回
 module.exports = config;
@@ -513,7 +519,7 @@ var request = function request(url, message, _success2, _fail2) {
 
 };
 // 上传图片
-var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, length, cb) {var _this = this;
+var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, length, _success3, _complete2) {var _this = this;
   uni.uploadFile({
     url: config.host + url,
     filePath: filePaths[i],
@@ -523,6 +529,7 @@ var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, len
 
     success: function success(resp) {
       successUp++;
+      _success3(resp);
     },
     fail: function fail(res) {
       failUp++;
@@ -535,7 +542,7 @@ var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, len
           icon: 'none',
           duration: 2000 });
 
-        typeof cb == "function" && cb('200');
+        _complete2('200');
       } else
       {//递归调用uploadImage函数
         _this.uploadImage(url, filePaths, successUp, failUp, i, length);

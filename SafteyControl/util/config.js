@@ -42,6 +42,12 @@ var config = {
 	
 	// 上传图片
 	uploadImage: '/uploadImg',
+	
+	// 加载图片
+	loadImage: '/mobile/loadYhzp.do?fileid=',
+	
+	// 删除图片
+	deleteImage: '/mobile/delZp.do',
 };
 //对外把对象config返回
 module.exports = config
