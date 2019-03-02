@@ -38,7 +38,16 @@
         }, {
             "path": "pages/pointCheck/pointCheck",
             "style": {
-                "navigationBarTitleText": "应用"
+                "navigationBarTitleText": "应用中心",
+				"app-plus": {  
+					"titleNView": {  
+						"buttons": [{  
+							"text": "\ue60b",
+							"fontSrc": "/static/aliIcon/iconfont.ttf",
+							"fontSize": "22px"
+						}]  
+					}  
+				}
             }
         }, {
             "path": "pages/pointList/uni-tabs",
@@ -47,7 +56,7 @@
 				"app-plus": {  
 					"titleNView": {  
 						"buttons": [{  
-							"text": "\ue64d",
+							"text": "\ue671",
 							"fontSrc": "/static/aliIcon/iconfont.ttf",
 							"fontSize": "22px"
 						}]  
@@ -62,7 +71,7 @@
 				"app-plus": {  
 					"titleNView": {  
 						"buttons": [{  
-							"text": "\ue64d",
+							"text": "\ue671",
 							"fontSrc": "/static/aliIcon/iconfont.ttf",
 							"fontSize": "22px"
 						}]  
@@ -106,7 +115,7 @@
 				"app-plus": {  
 					"titleNView": {  
 						"buttons": [{  
-							"text": "\ue64d",
+							"text": "\ue671",
 							"fontSrc": "/static/aliIcon/iconfont.ttf",
 							"fontSize": "22px"
 						}]  
@@ -120,7 +129,7 @@
 				"app-plus": {  
 					"titleNView": {  
 						"buttons": [{  
-							"text": "\ue64d",
+							"text": "\ue671",
 							"fontSrc": "/static/aliIcon/iconfont.ttf",
 							"fontSize": "22px"
 						}]  
@@ -134,7 +143,7 @@
 				"app-plus": {  
 					"titleNView": {  
 						"buttons": [{  
-							"text": "\ue64d",
+							"text": "\ue671",
 							"fontSrc": "/static/aliIcon/iconfont.ttf",
 							"fontSize": "22px"
 						}]  

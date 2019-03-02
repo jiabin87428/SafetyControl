@@ -10,7 +10,7 @@ var requirePlugin = requirePlugin || function() {};
 var Behavior = Behavior || function() {};
 var $gwx;
   
-/*v0.5vv_20181116_syb_scopedata*/global.__wcc_version__='v0.5vv_20181116_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
+/*v0.5vv_20181221_syb_scopedata*/global.__wcc_version__='v0.5vv_20181221_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
 var $gwxc
 var $gaic={}
 $gwx=function(path,global){
@@ -650,34 +650,32 @@ return false;
 function _da( node, attrname, opindex, raw, o )
 {
 var isaffected = false;
+var value = $gdc( raw, "", 2 );
+if ( o.ap && value && value.constructor===Function ) 
+{
+attrname = "$wxs:" + attrname; 
+node.attr["$gdc"] = $gdc;
+}
 if ( o.is_affected || _ca(raw) ) 
 {
 node.n.push( attrname );
 node.raw[attrname] = raw;
-var value = $gdc( raw, "", 2 );
-return value;
 }
-else
-{
-var value = $gdc( raw, "", 2 );
-return value;
-}
+node.attr[attrname] = value;
 }
 function _r( node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _rz( z, node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-a = _da( node, attrname, opindex, a, o );
-node.attr[attrname] = a;
+_da( node, attrname, opindex, a, o );
 }
 function _o( opindex, env, scope, global )
 {
@@ -1060,7 +1058,6 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'58792338-default-58792338-10'])
 Z([3,'21b694de-default-21b694de-6'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'30c48a99'])
@@ -1068,8 +1065,8 @@ Z([3,'false'])
 Z([3,'true'])
 Z([3,'点位编号'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
 Z([3,'检查人'])
 Z([3,'handleProxy'])
 Z([3,'_picker 21b694de'])
@@ -1078,162 +1075,163 @@ Z([1,'21b694de-0'])
 Z([3,'date'])
 Z([[6],[[7],[3,'obj']],[3,'jcrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[2])
 Z([3,'检查日期'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
 Z([3,'责任部门'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
 Z([3,'楼层'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
 Z([3,'位置'])
 Z([3,'21b694de-default-21b694de-11'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[6],[[7],[3,'obj']],[3,'sublist']])
-Z(z[33])
-Z(z[11])
+Z(z[32])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([[2,'+'],[1,'21b694de-1-'],[[7],[3,'index']]])
-Z(z[3])
-Z(z[5])
+Z(z[2])
+Z(z[4])
+Z([3,'58792338-default-58792338-10'])
 Z([3,'7be27b0c-default-7be27b0c-6'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
 Z(z[4])
 Z(z[5])
-Z(z[6])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
+Z(z[9])
 Z(z[10])
-Z(z[11])
 Z([3,'_picker 7be27b0c'])
-Z(z[13])
+Z(z[12])
 Z([1,'7be27b0c-0'])
+Z(z[14])
 Z(z[15])
-Z(z[16])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z(z[19])
+Z(z[2])
+Z(z[18])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
-Z(z[23])
+Z(z[22])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
-Z(z[27])
+Z(z[26])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
-Z(z[31])
+Z(z[30])
 Z([3,'7be27b0c-default-7be27b0c-11'])
+Z(z[32])
 Z(z[33])
 Z(z[34])
-Z(z[35])
-Z(z[33])
-Z(z[11])
+Z(z[32])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([[2,'+'],[1,'7be27b0c-1-'],[[7],[3,'index']]])
-Z(z[3])
-Z(z[5])
-Z([3,'00eed4f4-default-00eed4f4-1'])
-Z([3,'1b853e3c-default-1b853e3c-2'])
-Z(z[33])
-Z([3,'name'])
-Z([[7],[3,'xLine']])
-Z(z[33])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'1b853e3c-1-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[2])
 Z(z[4])
-Z([3,'1b853e3c-default-1b853e3c-3'])
+Z([3,'00eed4f4-default-00eed4f4-1'])
 Z([3,'7e389618-default-7e389618-1'])
 Z([3,'72ed35ad-default-72ed35ad-11'])
-Z(z[11])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([1,'72ed35ad-0'])
-Z(z[3])
-Z(z[5])
+Z(z[2])
+Z(z[4])
 Z([3,'隐患描述'])
-Z(z[11])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([1,'72ed35ad-1'])
-Z(z[3])
-Z(z[5])
+Z(z[2])
+Z(z[4])
 Z([3,'整改要求'])
-Z(z[11])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([1,'72ed35ad-2'])
-Z(z[3])
-Z(z[5])
+Z(z[2])
+Z(z[4])
 Z([3,'临时预防措施'])
-Z(z[11])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([1,'72ed35ad-3'])
-Z(z[3])
-Z(z[5])
+Z(z[2])
+Z(z[4])
 Z([3,'隐患等级'])
-Z(z[11])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([1,'72ed35ad-4'])
-Z(z[3])
-Z(z[5])
+Z(z[2])
+Z(z[4])
 Z([3,'隐患类型'])
-Z(z[11])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([1,'72ed35ad-5'])
-Z(z[3])
-Z(z[5])
+Z(z[2])
+Z(z[4])
 Z([3,'整改负责人'])
-Z(z[11])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([1,'72ed35ad-6'])
-Z(z[3])
-Z(z[5])
+Z(z[2])
+Z(z[4])
 Z([3,'整改期限'])
-Z(z[11])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([1,'72ed35ad-7'])
-Z(z[3])
-Z(z[5])
+Z(z[2])
+Z(z[4])
 Z([3,'隐患发现人'])
-Z(z[11])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-8']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([1,'72ed35ad-8'])
-Z(z[3])
-Z(z[5])
+Z(z[2])
+Z(z[4])
 Z([3,'隐患发现部门'])
-Z(z[11])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-9']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([1,'72ed35ad-9'])
-Z(z[3])
-Z(z[5])
+Z(z[2])
+Z(z[4])
 Z([3,'隐患发现日'])
-Z(z[11])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-10']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([1,'72ed35ad-10'])
+Z(z[2])
+Z(z[4])
+Z(z[22])
+Z([3,'1b853e3c-default-1b853e3c-2'])
+Z(z[32])
+Z([3,'name'])
+Z([[7],[3,'xLine']])
+Z(z[32])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'1b853e3c-1-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[5])
-Z(z[23])
+Z([3,'1b853e3c-default-1b853e3c-3'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
@@ -1648,12 +1646,14 @@ Z([3,'10bbdf1a'])
 Z([3,'_view 10bbdf1a part2'])
 Z([[2,'!='],[[7],[3,'userType']],[1,1]])
 Z([[2,'=='],[[7],[3,'userType']],[1,1]])
-Z(z[3])
+Z([[2,'=='],[[7],[3,'currentTemplate']],[1,0]])
 Z([3,'_view 10bbdf1a menuBlockView'])
 Z(z[3])
 Z(z[3])
 Z(z[3])
 Z(z[3])
+Z([[2,'=='],[[7],[3,'currentTemplate']],[1,1]])
+Z([[2,'=='],[[7],[3,'currentTemplate']],[1,2]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_35);return __WXML_GLOBAL__.ops_cached.$gwx_35
 }
 function gz$gwx_36(){
@@ -1826,22 +1826,7 @@ __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/drawer/uni-drawer.vue.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','/components/drawer/hj-dragabledrawer.vue.wxml','/components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','/common/slots.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/drawer/hj-dragabledrawer.vue.wxml','./components/drawer/uni-drawer.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/danger/addDanger.vue.wxml','./pages/danger/addDanger.wxml','./addDanger.vue.wxml','./pages/login/diyHost.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pointList/pointList.vue.wxml','./pages/pointList/pointList.wxml','./pointList.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
-d_[x[0]]["58792338-default-58792338-10"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':58792338-default-58792338-10'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
+var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/drawer/uni-drawer.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','/components/drawer/hj-dragabledrawer.vue.wxml','/components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','/common/slots.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/drawer/hj-dragabledrawer.vue.wxml','./components/drawer/uni-drawer.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/danger/addDanger.vue.wxml','./pages/danger/addDanger.wxml','./addDanger.vue.wxml','./pages/login/diyHost.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pointList/pointList.vue.wxml','./pages/pointList/pointList.wxml','./pointList.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
 d_[x[0]]["21b694de-default-21b694de-6"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':21b694de-default-21b694de-6'
@@ -1852,91 +1837,91 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:14:47")
-var xC=_oz(z,3,e,s,gg)
+cs.push("./common/slots.wxml:template:12:47")
+var xC=_oz(z,2,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,2,e,s,gg) || {}
+var fE=_1z(z,1,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],14,176)
+else _w(xC,x[0],12,176)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:14:199")
-var hG=_oz(z,8,e,s,gg)
+cs.push("./common/slots.wxml:template:12:199")
+var hG=_oz(z,7,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,7,e,s,gg) || {}
+var cI=_1z(z,6,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],14,307)
+else _w(hG,x[0],12,307)
 cs.pop()
-cs.push("./common/slots.wxml:picker:14:330")
-var oJ=_mz(z,'picker',['bindchange',11,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:12:330")
+var oJ=_mz(z,'picker',['bindchange',10,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:14:474")
-var aL=_oz(z,18,e,s,gg)
+cs.push("./common/slots.wxml:template:12:474")
+var aL=_oz(z,17,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
-var eN=_1z(z,17,e,s,gg) || {}
+var eN=_1z(z,16,e,s,gg) || {}
 var cur_globalf=gg.f
 lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],14,566)
+else _w(aL,x[0],12,566)
 cs.pop()
 cs.pop()
 _(r,oJ)
 var bO=_v()
 _(r,bO)
-cs.push("./common/slots.wxml:template:14:598")
-var oP=_oz(z,21,e,s,gg)
+cs.push("./common/slots.wxml:template:12:598")
+var oP=_oz(z,20,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,20,e,s,gg) || {}
+var oR=_1z(z,19,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],14,709)
+else _w(oP,x[0],12,709)
 cs.pop()
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:14:732")
-var cT=_oz(z,25,e,s,gg)
+cs.push("./common/slots.wxml:template:12:732")
+var cT=_oz(z,24,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
-var oV=_1z(z,24,e,s,gg) || {}
+var oV=_1z(z,23,e,s,gg) || {}
 var cur_globalf=gg.f
 fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],14,837)
+else _w(cT,x[0],12,837)
 cs.pop()
 var cW=_v()
 _(r,cW)
-cs.push("./common/slots.wxml:template:14:860")
-var oX=_oz(z,29,e,s,gg)
+cs.push("./common/slots.wxml:template:12:860")
+var oX=_oz(z,28,e,s,gg)
 var lY=_gd(x[0],oX,e_,d_)
 if(lY){
-var aZ=_1z(z,28,e,s,gg) || {}
+var aZ=_1z(z,27,e,s,gg) || {}
 var cur_globalf=gg.f
 cW.wxXCkey=3
 lY(aZ,aZ,cW,gg)
 gg.f=cur_globalf
 }
-else _w(oX,x[0],14,965)
+else _w(oX,x[0],12,965)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -1955,27 +1940,42 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:16:48")
+cs.push("./common/slots.wxml:template:14:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:16:48")
-var cI=_oz(z,41,fE,oD,gg)
+cs.push("./common/slots.wxml:template:14:48")
+var cI=_oz(z,40,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,38,fE,oD,gg) || {}
+var lK=_1z(z,37,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],16,247)
+else _w(cI,x[0],14,247)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,35,xC,e,s,gg,oB,'item','index','index')
+_2z(z,34,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["58792338-default-58792338-10"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':58792338-default-58792338-10'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
 }catch(err){
 p_[b]=false
 throw err
@@ -2139,59 +2139,6 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[0]]["1b853e3c-default-1b853e3c-2"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':1b853e3c-default-1b853e3c-2'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:24:47")
-var xC=function(fE,oD,cF,gg){
-var oH=_v()
-_(cF,oH)
-cs.push("./common/slots.wxml:template:24:47")
-var cI=_oz(z,92,fE,oD,gg)
-var oJ=_gd(x[0],cI,e_,d_)
-if(oJ){
-var lK=_1z(z,91,fE,oD,gg) || {}
-var cur_globalf=gg.f
-oH.wxXCkey=3
-oJ(lK,lK,oH,gg)
-gg.f=cur_globalf
-}
-else _w(cI,x[0],24,159)
-cs.pop()
-return cF
-}
-oB.wxXCkey=2
-_2z(z,89,xC,e,s,gg,oB,'name','index','index')
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["1b853e3c-default-1b853e3c-3"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':1b853e3c-default-1b853e3c-3'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
 d_[x[0]]["7e389618-default-7e389618-1"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':7e389618-default-7e389618-1'
@@ -2217,158 +2164,211 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:30:48")
-var xC=_oz(z,101,e,s,gg)
+cs.push("./common/slots.wxml:template:26:48")
+var xC=_oz(z,92,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,98,e,s,gg) || {}
+var fE=_1z(z,89,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],30,233)
+else _w(xC,x[0],26,233)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:30:256")
-var hG=_oz(z,108,e,s,gg)
+cs.push("./common/slots.wxml:template:26:256")
+var hG=_oz(z,99,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,105,e,s,gg) || {}
+var cI=_1z(z,96,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],30,441)
+else _w(hG,x[0],26,441)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:30:464")
-var lK=_oz(z,115,e,s,gg)
+cs.push("./common/slots.wxml:template:26:464")
+var lK=_oz(z,106,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
-var tM=_1z(z,112,e,s,gg) || {}
+var tM=_1z(z,103,e,s,gg) || {}
 var cur_globalf=gg.f
 oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],30,655)
+else _w(lK,x[0],26,655)
 cs.pop()
 var eN=_v()
 _(r,eN)
-cs.push("./common/slots.wxml:template:30:678")
-var bO=_oz(z,122,e,s,gg)
+cs.push("./common/slots.wxml:template:26:678")
+var bO=_oz(z,113,e,s,gg)
 var oP=_gd(x[0],bO,e_,d_)
 if(oP){
-var xQ=_1z(z,119,e,s,gg) || {}
+var xQ=_1z(z,110,e,s,gg) || {}
 var cur_globalf=gg.f
 eN.wxXCkey=3
 oP(xQ,xQ,eN,gg)
 gg.f=cur_globalf
 }
-else _w(bO,x[0],30,863)
+else _w(bO,x[0],26,863)
 cs.pop()
 var oR=_v()
 _(r,oR)
-cs.push("./common/slots.wxml:template:30:886")
-var fS=_oz(z,129,e,s,gg)
+cs.push("./common/slots.wxml:template:26:886")
+var fS=_oz(z,120,e,s,gg)
 var cT=_gd(x[0],fS,e_,d_)
 if(cT){
-var hU=_1z(z,126,e,s,gg) || {}
+var hU=_1z(z,117,e,s,gg) || {}
 var cur_globalf=gg.f
 oR.wxXCkey=3
 cT(hU,hU,oR,gg)
 gg.f=cur_globalf
 }
-else _w(fS,x[0],30,1071)
+else _w(fS,x[0],26,1071)
 cs.pop()
 var oV=_v()
 _(r,oV)
-cs.push("./common/slots.wxml:template:30:1094")
-var cW=_oz(z,136,e,s,gg)
+cs.push("./common/slots.wxml:template:26:1094")
+var cW=_oz(z,127,e,s,gg)
 var oX=_gd(x[0],cW,e_,d_)
 if(oX){
-var lY=_1z(z,133,e,s,gg) || {}
+var lY=_1z(z,124,e,s,gg) || {}
 var cur_globalf=gg.f
 oV.wxXCkey=3
 oX(lY,lY,oV,gg)
 gg.f=cur_globalf
 }
-else _w(cW,x[0],30,1282)
+else _w(cW,x[0],26,1282)
 cs.pop()
 var aZ=_v()
 _(r,aZ)
-cs.push("./common/slots.wxml:template:30:1305")
-var t1=_oz(z,143,e,s,gg)
+cs.push("./common/slots.wxml:template:26:1305")
+var t1=_oz(z,134,e,s,gg)
 var e2=_gd(x[0],t1,e_,d_)
 if(e2){
-var b3=_1z(z,140,e,s,gg) || {}
+var b3=_1z(z,131,e,s,gg) || {}
 var cur_globalf=gg.f
 aZ.wxXCkey=3
 e2(b3,b3,aZ,gg)
 gg.f=cur_globalf
 }
-else _w(t1,x[0],30,1490)
+else _w(t1,x[0],26,1490)
 cs.pop()
 var o4=_v()
 _(r,o4)
-cs.push("./common/slots.wxml:template:30:1513")
-var x5=_oz(z,150,e,s,gg)
+cs.push("./common/slots.wxml:template:26:1513")
+var x5=_oz(z,141,e,s,gg)
 var o6=_gd(x[0],x5,e_,d_)
 if(o6){
-var f7=_1z(z,147,e,s,gg) || {}
+var f7=_1z(z,138,e,s,gg) || {}
 var cur_globalf=gg.f
 o4.wxXCkey=3
 o6(f7,f7,o4,gg)
 gg.f=cur_globalf
 }
-else _w(x5,x[0],30,1701)
+else _w(x5,x[0],26,1701)
 cs.pop()
 var c8=_v()
 _(r,c8)
-cs.push("./common/slots.wxml:template:30:1724")
-var h9=_oz(z,157,e,s,gg)
+cs.push("./common/slots.wxml:template:26:1724")
+var h9=_oz(z,148,e,s,gg)
 var o0=_gd(x[0],h9,e_,d_)
 if(o0){
-var cAB=_1z(z,154,e,s,gg) || {}
+var cAB=_1z(z,145,e,s,gg) || {}
 var cur_globalf=gg.f
 c8.wxXCkey=3
 o0(cAB,cAB,c8,gg)
 gg.f=cur_globalf
 }
-else _w(h9,x[0],30,1915)
+else _w(h9,x[0],26,1915)
 cs.pop()
 var oBB=_v()
 _(r,oBB)
-cs.push("./common/slots.wxml:template:30:1938")
-var lCB=_oz(z,164,e,s,gg)
+cs.push("./common/slots.wxml:template:26:1938")
+var lCB=_oz(z,155,e,s,gg)
 var aDB=_gd(x[0],lCB,e_,d_)
 if(aDB){
-var tEB=_1z(z,161,e,s,gg) || {}
+var tEB=_1z(z,152,e,s,gg) || {}
 var cur_globalf=gg.f
 oBB.wxXCkey=3
 aDB(tEB,tEB,oBB,gg)
 gg.f=cur_globalf
 }
-else _w(lCB,x[0],30,2126)
+else _w(lCB,x[0],26,2126)
 cs.pop()
 var eFB=_v()
 _(r,eFB)
-cs.push("./common/slots.wxml:template:30:2149")
-var bGB=_oz(z,171,e,s,gg)
+cs.push("./common/slots.wxml:template:26:2149")
+var bGB=_oz(z,162,e,s,gg)
 var oHB=_gd(x[0],bGB,e_,d_)
 if(oHB){
-var xIB=_1z(z,168,e,s,gg) || {}
+var xIB=_1z(z,159,e,s,gg) || {}
 var cur_globalf=gg.f
 eFB.wxXCkey=3
 oHB(xIB,xIB,eFB,gg)
 gg.f=cur_globalf
 }
-else _w(bGB,x[0],30,2336)
+else _w(bGB,x[0],26,2336)
 cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["1b853e3c-default-1b853e3c-2"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':1b853e3c-default-1b853e3c-2'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:28:47")
+var xC=function(fE,oD,cF,gg){
+var oH=_v()
+_(cF,oH)
+cs.push("./common/slots.wxml:template:28:47")
+var cI=_oz(z,171,fE,oD,gg)
+var oJ=_gd(x[0],cI,e_,d_)
+if(oJ){
+var lK=_1z(z,170,fE,oD,gg) || {}
+var cur_globalf=gg.f
+oH.wxXCkey=3
+oJ(lK,lK,oH,gg)
+gg.f=cur_globalf
+}
+else _w(cI,x[0],28,159)
+cs.pop()
+return cF
+}
+oB.wxXCkey=2
+_2z(z,168,xC,e,s,gg,oB,'name','index','index')
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["1b853e3c-default-1b853e3c-3"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':1b853e3c-default-1b853e3c-3'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
 }catch(err){
 p_[b]=false
 throw err
@@ -2711,13 +2711,13 @@ return r
 var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
 var oJ=e_[x[15]].i
-_ai(oJ,x[4],e_,x[15],1,1)
+_ai(oJ,x[3],e_,x[15],1,1)
 _ai(oJ,x[10],e_,x[15],1,61)
 oJ.pop()
 oJ.pop()
 return r
 }
-e_[x[15]]={f:m5,j:[],i:[],ti:[x[4],x[10]],ic:[]}
+e_[x[15]]={f:m5,j:[],i:[],ti:[x[3],x[10]],ic:[]}
 d_[x[16]]={}
 d_[x[16]]["3b6bb3ad"]=function(e,s,r,gg){
 var z=gz$gwx_7()
@@ -2973,13 +2973,13 @@ return r
 var m12=function(e,s,r,gg){
 var z=gz$gwx_13()
 var lY=e_[x[23]].i
-_ai(lY,x[2],e_,x[23],1,1)
-_ai(lY,x[3],e_,x[23],1,61)
+_ai(lY,x[1],e_,x[23],1,1)
+_ai(lY,x[2],e_,x[23],1,61)
 lY.pop()
 lY.pop()
 return r
 }
-e_[x[23]]={f:m12,j:[],i:[],ti:[x[2],x[3]],ic:[]}
+e_[x[23]]={f:m12,j:[],i:[],ti:[x[1],x[2]],ic:[]}
 d_[x[24]]={}
 var m13=function(e,s,r,gg){
 var z=gz$gwx_14()
@@ -3593,8 +3593,8 @@ var m28=function(e,s,r,gg){
 var z=gz$gwx_29()
 var xOC=e_[x[47]].i
 _ai(xOC,x[5],e_,x[47],1,1)
-_ai(xOC,x[2],e_,x[47],1,64)
-_ai(xOC,x[3],e_,x[47],1,124)
+_ai(xOC,x[1],e_,x[47],1,64)
+_ai(xOC,x[2],e_,x[47],1,124)
 _ai(xOC,x[6],e_,x[47],1,194)
 xOC.pop()
 xOC.pop()
@@ -3602,7 +3602,7 @@ xOC.pop()
 xOC.pop()
 return r
 }
-e_[x[47]]={f:m28,j:[],i:[],ti:[x[5],x[2],x[3],x[6]],ic:[]}
+e_[x[47]]={f:m28,j:[],i:[],ti:[x[5],x[1],x[2],x[6]],ic:[]}
 d_[x[48]]={}
 var m29=function(e,s,r,gg){
 var z=gz$gwx_30()
@@ -3744,15 +3744,15 @@ return r
 var m30=function(e,s,r,gg){
 var z=gz$gwx_31()
 var lWC=e_[x[50]].i
-_ai(lWC,x[2],e_,x[50],1,1)
-_ai(lWC,x[3],e_,x[50],1,61)
-_ai(lWC,x[4],e_,x[50],1,131)
+_ai(lWC,x[1],e_,x[50],1,1)
+_ai(lWC,x[2],e_,x[50],1,61)
+_ai(lWC,x[3],e_,x[50],1,131)
 lWC.pop()
 lWC.pop()
 lWC.pop()
 return r
 }
-e_[x[50]]={f:m30,j:[],i:[],ti:[x[2],x[3],x[4]],ic:[]}
+e_[x[50]]={f:m30,j:[],i:[],ti:[x[1],x[2],x[3]],ic:[]}
 d_[x[51]]={}
 var m31=function(e,s,r,gg){
 var z=gz$gwx_32()
@@ -3866,45 +3866,59 @@ cs.pop()
 var fE=_v()
 _(oB,fE)
 if(_oz(z,4,e,s,gg)){fE.wxVkey=1
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:648")
-cs.pop()
-}
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:1385")
-var hG=_n('view')
-_rz(z,hG,'class',5,e,s,gg)
-var oH=_v()
-_(hG,oH)
-if(_oz(z,6,e,s,gg)){oH.wxVkey=1
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:2081")
-cs.pop()
-}
-var cI=_v()
-_(hG,cI)
-if(_oz(z,7,e,s,gg)){cI.wxVkey=1
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:2428")
-cs.pop()
-}
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:block:1:1181")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:1331")
+var cI=_n('view')
+_rz(z,cI,'class',5,e,s,gg)
 var oJ=_v()
-_(hG,oJ)
-if(_oz(z,8,e,s,gg)){oJ.wxVkey=1
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:2781")
+_(cI,oJ)
+if(_oz(z,6,e,s,gg)){oJ.wxVkey=1
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:2027")
+cs.pop()
+}
+var lK=_v()
+_(cI,lK)
+if(_oz(z,7,e,s,gg)){lK.wxVkey=1
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:2374")
+cs.pop()
+}
+var aL=_v()
+_(cI,aL)
+if(_oz(z,8,e,s,gg)){aL.wxVkey=1
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:2727")
+cs.pop()
+}
+oJ.wxXCkey=1
+lK.wxXCkey=1
+aL.wxXCkey=1
+cs.pop()
+_(fE,cI)
+var oH=_v()
+_(fE,oH)
+if(_oz(z,9,e,s,gg)){oH.wxVkey=1
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:block:1:3132")
 cs.pop()
 }
 oH.wxXCkey=1
-cI.wxXCkey=1
-oJ.wxXCkey=1
 cs.pop()
-_(oB,hG)
+}
 var cF=_v()
 _(oB,cF)
-if(_oz(z,9,e,s,gg)){cF.wxVkey=1
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:block:1:3186")
+if(_oz(z,10,e,s,gg)){cF.wxVkey=1
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:block:1:9010")
+cs.pop()
+}
+var hG=_v()
+_(oB,hG)
+if(_oz(z,11,e,s,gg)){hG.wxVkey=1
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:block:1:18415")
 cs.pop()
 }
 xC.wxXCkey=1
 oD.wxXCkey=1
 fE.wxXCkey=1
 cF.wxXCkey=1
+hG.wxXCkey=1
 cs.pop()
 _(r,oB)
 }catch(err){
@@ -4041,15 +4055,15 @@ return r
 var m36=function(e,s,r,gg){
 var z=gz$gwx_37()
 var fID=e_[x[59]].i
-_ai(fID,x[2],e_,x[59],1,1)
-_ai(fID,x[3],e_,x[59],1,61)
-_ai(fID,x[4],e_,x[59],1,131)
+_ai(fID,x[1],e_,x[59],1,1)
+_ai(fID,x[2],e_,x[59],1,61)
+_ai(fID,x[3],e_,x[59],1,131)
 fID.pop()
 fID.pop()
 fID.pop()
 return r
 }
-e_[x[59]]={f:m36,j:[],i:[],ti:[x[2],x[3],x[4]],ic:[]}
+e_[x[59]]={f:m36,j:[],i:[],ti:[x[1],x[2],x[3]],ic:[]}
 d_[x[60]]={}
 var m37=function(e,s,r,gg){
 var z=gz$gwx_38()
@@ -4114,11 +4128,11 @@ return r
 var m38=function(e,s,r,gg){
 var z=gz$gwx_39()
 var tQD=e_[x[62]].i
-_ai(tQD,x[1],e_,x[62],1,1)
+_ai(tQD,x[4],e_,x[62],1,1)
 tQD.pop()
 return r
 }
-e_[x[62]]={f:m38,j:[],i:[],ti:[x[1]],ic:[]}
+e_[x[62]]={f:m38,j:[],i:[],ti:[x[4]],ic:[]}
 d_[x[63]]={}
 var m39=function(e,s,r,gg){
 var z=gz$gwx_40()
@@ -4424,7 +4438,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/login/diyHost","pages/reg/reg","pages/pwd/pwd","pages/user/accountEdit","pages/user/user","pages/pointCheck/pointCheck","pages/pointList/pointList","pages/pointDetail/pointDetail","pages/pointAdd/pointAdd","pages/pointAdd/pointCheckInfo","pages/mpvue-echarts/chartList","pages/mpvue-echarts/deviceChart","pages/mpvue-echarts/eventChart","pages/mpvue-echarts/valveChart","pages/mpvue-echarts/mpvue-echarts","pages/common/inputPage","pages/danger/addDanger"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/pointCheck/pointCheck","text":"应用","iconPath":"static/img/point.png","selectedIconPath":"static/img/pointHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"networkTimeout":{"request":60000},"nvue":{"pages":{"pages/danger/dangerList.html":{"window":{"navigationBarTitleText":"隐患审批"}},"pages/uni-tabs/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查11"}},"pages/pointList/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}}}},"splashscreen":{"autoclose":true},"appname":"京东方消防安全"};
+__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/login/diyHost","pages/reg/reg","pages/pwd/pwd","pages/user/accountEdit","pages/user/user","pages/pointCheck/pointCheck","pages/pointList/pointList","pages/pointDetail/pointDetail","pages/pointAdd/pointAdd","pages/pointAdd/pointCheckInfo","pages/mpvue-echarts/chartList","pages/mpvue-echarts/deviceChart","pages/mpvue-echarts/eventChart","pages/mpvue-echarts/valveChart","pages/mpvue-echarts/mpvue-echarts","pages/common/inputPage","pages/danger/addDanger"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/pointCheck/pointCheck","text":"应用","iconPath":"static/img/point.png","selectedIconPath":"static/img/pointHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"networkTimeout":{"request":60000},"nvue":{"pages":{"pages/danger/dangerList.html":{"window":{"navigationBarTitleText":"隐患审批"}},"pages/uni-tabs/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查11"}},"pages/pointList/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}}}},"splashscreen":{"autoclose":true},"appname":"京东方消防安全"};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 
@@ -4498,7 +4512,7 @@ require('pages/user/user.js');
 __wxRoute = 'pages/pointCheck/pointCheck';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/pointCheck/pointCheck.js';
 
 define('pages/pointCheck/pointCheck.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/pointCheck/pointCheck"],{"0927":function(t,e,a){"use strict";a.r(e);var s=a("0ad6"),i=a.n(s);for(var n in s)"default"!==n&&function(t){a.d(e,t,function(){return s[t]})}(n);e["default"]=i.a},"0ad6":function(t,e,a){"use strict";(function(t){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var s=n(a("6cfe")),i=a("2f62");function n(t){return t&&t.__esModule?t:{default:t}}function c(t){for(var e=1;e<arguments.length;e++){var a=null!=arguments[e]?arguments[e]:{},s=Object.keys(a);"function"===typeof Object.getOwnPropertySymbols&&(s=s.concat(Object.getOwnPropertySymbols(a).filter(function(t){return Object.getOwnPropertyDescriptor(a,t).enumerable}))),s.forEach(function(e){r(t,e,a[e])})}return t}function r(t,e,a){return e in t?Object.defineProperty(t,e,{value:a,enumerable:!0,configurable:!0,writable:!0}):t[e]=a,t}var d={computed:c({},(0,i.mapState)(["hasLogin","forcedLogin","userType","userInfo"])),components:{uniDrawer:s.default},data:function(){return{showDrawer:!1}},onLoad:function(){var t={name:"当月未检查",id:"/mobile/xhsdywjclb.do"};this.saveTabInfo("消火栓",t);var e={name:"本周未检查",id:"/mobile/fzzwjclb.do"};this.saveTabInfo("阀组",e);var a={name:"当天未检查",id:"/mobile/jtwjclb.do"};this.saveTabInfo("高位水箱",a),this.saveTabInfo("消防泵",a)},onNavigationBarButtonTap:function(){var t=this;1==t.showDrawer?t.showDrawer=!1:t.showDrawer=!0},methods:{jumpListPage:function(e){this.saveTabInfo("currentLx",e),t.navigateTo({url:"../pointList/uni-tabs"})},jumpPage:function(e){t.showToast({icon:"none",title:"敬请期待～"})},saveTabInfo:function(e,a){t.setStorage({key:e,data:a,success:function(){console.log("保存成功")}})}}};e.default=d}).call(this,a("649d")["default"])},"2dc8":function(t,e,a){},"30eb":function(t,e,a){"use strict";var s=function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"part2"},[1!=t.userType?a("swiper",{staticClass:"banner-box",attrs:{"indicator-dots":"",autoplay:"","indicator-active-color":"#169bd5",circular:"",interval:5e3,duration:300,"indicator-color":"rgba(0,0,0,.3)"}},[a("swiper-item",{attrs:{mpcomid:"10bbdf1a-0"}},[a("image",{staticClass:"banner-image",attrs:{src:"../../static/img/fgBG.png",mode:"aspectFill","lazy-load":""}})])],1):t._e(),1==t.userType?a("view",{staticClass:"titleView_pc"},[a("text",{staticClass:"titleText_pc"},[t._v("数据统计")]),a("text",{staticClass:"titleSubText_pc"},[t._v("查看更多")])]):t._e(),1==t.userType?a("view",{staticClass:"topView_pc",attrs:{eventid:"10bbdf1a-0"},on:{tap:function(e){t.getCount("正在获取统计数据")}}},[t._m(0),t._m(1),t._m(2)]):t._e(),t._m(3),a("view",{staticClass:"menuBlockView"},[a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-1"},on:{tap:function(e){t.jumpListPage("所有记录")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_all.png",mode:"widthFix"}}),t._m(4)]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-2"},on:{tap:function(e){t.jumpListPage("消火栓")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_xhs.png",mode:"widthFix"}}),t._m(5)]),1==t.userType?a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-3"},on:{tap:function(e){t.jumpListPage("阀组")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_fz.png",mode:"widthFix"}}),t._m(6)]):t._e(),1==t.userType?a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-4"},on:{tap:function(e){t.jumpListPage("高位水箱")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_sx.png",mode:"widthFix"}}),t._m(7)]):t._e(),1==t.userType?a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-5"},on:{tap:function(e){t.jumpListPage("消防泵")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_xfb.png",mode:"widthFix"}}),t._m(8)]):t._e(),a("view",{staticClass:"dangerView"})]),1==t.userType?a("block",[a("view",{staticClass:"titleView_pc"},[a("text",{staticClass:"titleText_pc"},[t._v("隐患排查")])]),a("view",{staticClass:"menuBlockView"},[a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-6"},on:{tap:function(e){t.jumpPage("../danger/addDanger")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/yhsb.png",mode:"widthFix"}}),a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("隐患上报")])])]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-7"},on:{tap:function(e){t.jumpPage("../danger/dangerList")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/yhsp.png",mode:"widthFix"}}),a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("隐患审批")])])]),a("view",{staticClass:"dangerView"})]),a("view",{staticClass:"titleView_pc"},[a("text",{staticClass:"titleText_pc"},[t._v("事故管理")])]),a("view",{staticClass:"menuBlockView"},[a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-8"},on:{tap:function(e){t.jumpPage("../danger/addDanger")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/sgkb.png",mode:"widthFix"}}),a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("事故快报")])])]),a("view",{staticClass:"dangerView"}),a("view",{staticClass:"dangerView"})]),a("view",{staticClass:"titleView_pc"},[a("text",{staticClass:"titleText_pc"},[t._v("作业管理")])]),a("view",{staticClass:"menuBlockView"},[a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-9"},on:{tap:function(e){t.jumpPage("../danger/addDanger")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/zyfxpg.png",mode:"widthFix"}}),a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("作业风险评估")])])]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-10"},on:{tap:function(e){t.jumpPage("../danger/addDanger")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/zysp.png",mode:"widthFix"}}),a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("作业审批")])])]),a("view",{staticClass:"dangerView"})]),a("view",{staticClass:"titleView_pc"},[a("text",{staticClass:"titleText_pc"},[t._v("安全培训")])]),a("view",{staticClass:"menuBlockView"},[a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-11"},on:{tap:function(e){t.jumpPage("../danger/addDanger")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pxzl.png",mode:"widthFix"}}),a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("培训资料")])])]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-12"},on:{tap:function(e){t.jumpPage("../danger/addDanger")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/zxks.png",mode:"widthFix"}}),a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("在线考试")])])]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-13"},on:{tap:function(e){t.jumpPage("../danger/addDanger")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pxjh.png",mode:"widthFix"}}),a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("培训计划")])])]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-14"},on:{tap:function(e){t.jumpPage("../danger/addDanger")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pxkc.png",mode:"widthFix"}}),a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("培训课程")])])]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-15"},on:{tap:function(e){t.jumpPage("../danger/addDanger")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/zwcs.png",mode:"widthFix"}}),a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("自我测试")])])]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-16"},on:{tap:function(e){t.jumpPage("../danger/addDanger")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/tyks.png",mode:"widthFix"}}),a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("统一考试")])])])]),a("view",{staticClass:"titleView_pc"},[a("text",{staticClass:"titleText_pc"},[t._v("法律法规")])]),a("view",{staticClass:"menuBlockView"},[a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-17"},on:{tap:function(e){t.jumpPage("../danger/addDanger")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/fgqd.png",mode:"widthFix"}}),a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("法规清单")])])]),a("view",{staticClass:"dangerView"}),a("view",{staticClass:"dangerView"})]),a("view",{staticClass:"titleView_pc"},[a("text",{staticClass:"titleText_pc"},[t._v("环保管理")])]),a("view",{staticClass:"menuBlockView"},[a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-18"},on:{tap:function(e){t.jumpPage("../danger/addDanger")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/sfpf.png",mode:"widthFix"}}),a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("三废排放")])])]),a("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-19"},on:{tap:function(e){t.jumpPage("../danger/addDanger")}}},[a("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/jcjl.png",mode:"widthFix"}}),a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("监测记录")])])]),a("view",{staticClass:"dangerView"})])]):t._e()],1)},i=[function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"topItemView"},[a("text",{staticClass:"topTextTitle"},[t._v("隐患总数")]),a("text",{staticClass:"topTextNum"},[t._v("1005")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"topItemView"},[a("text",{staticClass:"topTextTitle"},[t._v("事故总数")]),a("text",{staticClass:"topTextNum"},[t._v("600")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"topItemView"},[a("text",{staticClass:"topTextTitle"},[t._v("检查次数")]),a("text",{staticClass:"topTextNum"},[t._v("2000")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"titleView_pc"},[a("text",{staticClass:"titleText_pc"},[t._v("检查管理")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("所有记录")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("消火栓")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("阀组")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("高位水箱")])])},function(){var t=this,e=t.$createElement,a=t._self._c||e;return a("view",{staticClass:"subView"},[a("text",{staticClass:"dangerText"},[t._v("消防泵")])])}];a.d(e,"a",function(){return s}),a.d(e,"b",function(){return i})},a36f:function(t,e,a){"use strict";var s=a("2dc8"),i=a.n(s);i.a},ab69:function(t,e,a){"use strict";a.r(e);var s=a("30eb"),i=a("0927");for(var n in i)"default"!==n&&function(t){a.d(e,t,function(){return i[t]})}(n);a("a36f");var c=a("2877"),r=Object(c["a"])(i["default"],s["a"],s["b"],!1,null,null,null);r.options.__file="pointCheck.vue",e["default"]=r.exports},be2a:function(t,e,a){"use strict";a("de83");var s=n(a("b0ce")),i=n(a("ab69"));function n(t){return t&&t.__esModule?t:{default:t}}Page((0,s.default)(i.default))}},[["be2a","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/pointCheck/pointCheck"],{"0927":function(t,a,s){"use strict";s.r(a);var e=s("0ad6"),i=s.n(e);for(var n in e)"default"!==n&&function(t){s.d(a,t,function(){return e[t]})}(n);a["default"]=i.a},"0ad6":function(t,a,s){"use strict";(function(t){Object.defineProperty(a,"__esModule",{value:!0}),a.default=void 0;var e=n(s("6cfe")),i=s("2f62");function n(t){return t&&t.__esModule?t:{default:t}}function c(t){for(var a=1;a<arguments.length;a++){var s=null!=arguments[a]?arguments[a]:{},e=Object.keys(s);"function"===typeof Object.getOwnPropertySymbols&&(e=e.concat(Object.getOwnPropertySymbols(s).filter(function(t){return Object.getOwnPropertyDescriptor(s,t).enumerable}))),e.forEach(function(a){r(t,a,s[a])})}return t}function r(t,a,s){return a in t?Object.defineProperty(t,a,{value:s,enumerable:!0,configurable:!0,writable:!0}):t[a]=s,t}var d={computed:c({},(0,i.mapState)(["hasLogin","forcedLogin","userType","userInfo"])),components:{uniDrawer:e.default},data:function(){return{navBtnMuen:[],currentTemplate:0}},onLoad:function(){var t={name:"当月未检查",id:"/mobile/xhsdywjclb.do"};this.saveTabInfo("消火栓",t);var a={name:"本周未检查",id:"/mobile/fzzwjclb.do"};this.saveTabInfo("阀组",a);var s={name:"当天未检查",id:"/mobile/jtwjclb.do"};this.saveTabInfo("高位水箱",s),this.saveTabInfo("消防泵",s),this.setCurrentTemp()},onNavigationBarButtonTap:function(){var a=this;t.showActionSheet({itemList:a.navBtnMuen,success:function(s){console.log("选中了第"+(s.tapIndex+1)+"个按钮"),t.showLoading({title:"正在切换主题..."}),setTimeout(function(){t.hideLoading(),a.currentTemplate=s.tapIndex,a.setCurrentTemp()},1e3)},fail:function(t){console.log(t.errMsg)}})},methods:{setCurrentTemp:function(){this.navBtnMuen=["默认主题","安全标准化主题","ISO45001主题"],this.navBtnMuen[this.currentTemplate]+="[当前]"},jumpListPage:function(a){this.saveTabInfo("currentLx",a),t.navigateTo({url:"../pointList/uni-tabs"})},jumpPage:function(a){t.showToast({icon:"none",title:"敬请期待～"})},saveTabInfo:function(a,s){t.setStorage({key:a,data:s,success:function(){console.log("保存成功")}})}}};a.default=d}).call(this,s("649d")["default"])},1484:function(t,a,s){"use strict";var e=function(){var t=this,a=t.$createElement,s=t._self._c||a;return s("view",{staticClass:"part2"},[1!=t.userType?s("swiper",{staticClass:"banner-box",attrs:{"indicator-dots":"",autoplay:"","indicator-active-color":"#169bd5",circular:"",interval:5e3,duration:300,"indicator-color":"rgba(0,0,0,.3)"}},[s("swiper-item",{attrs:{mpcomid:"10bbdf1a-0"}},[s("image",{staticClass:"banner-image",attrs:{src:"../../static/img/fgBG.png",mode:"aspectFill","lazy-load":""}})])],1):t._e(),1==t.userType?s("view",{staticClass:"topView_pc",attrs:{eventid:"10bbdf1a-0"},on:{tap:function(a){t.jumpPage("")}}},[t._m(0),t._m(1),t._m(2),s("image",{staticClass:"arrow",attrs:{src:"../../static/img/rightArrow_white.png",mode:"aspectFit"}})]):t._e(),0==t.currentTemplate?s("block",[s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("检查管理")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-1"},on:{tap:function(a){t.jumpListPage("所有记录")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_all.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("所有记录")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-2"},on:{tap:function(a){t.jumpListPage("消火栓")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_xhs.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("消火栓")])])]),1==t.userType?s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-3"},on:{tap:function(a){t.jumpListPage("阀组")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_fz.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("阀组")])])]):t._e(),1==t.userType?s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-4"},on:{tap:function(a){t.jumpListPage("高位水箱")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_sx.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("高位水箱")])])]):t._e(),1==t.userType?s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-5"},on:{tap:function(a){t.jumpListPage("消防泵")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_xfb.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("消防泵")])])]):t._e(),s("view",{staticClass:"dangerView"})]),1==t.userType?s("block",[s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("隐患排查")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-6"},on:{tap:function(a){t.jumpPage("../danger/addDanger")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/yhsb.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("隐患上报")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-7"},on:{tap:function(a){t.jumpPage("../danger/dangerList")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/yhsp.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("隐患审批")])])]),s("view",{staticClass:"dangerView"})]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("事故管理")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-8"},on:{tap:function(a){t.jumpPage("../danger/addDanger")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/sgkb.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("事故快报")])])]),s("view",{staticClass:"dangerView"}),s("view",{staticClass:"dangerView"})]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("作业管理")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-9"},on:{tap:function(a){t.jumpPage("../danger/addDanger")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/zyfxpg.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("作业风险评估")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-10"},on:{tap:function(a){t.jumpPage("../danger/addDanger")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/zysp.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("作业审批")])])]),s("view",{staticClass:"dangerView"})]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("安全培训")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-11"},on:{tap:function(a){t.jumpPage("../danger/addDanger")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pxzl.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("培训资料")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-12"},on:{tap:function(a){t.jumpPage("../danger/addDanger")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/zxks.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("在线考试")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-13"},on:{tap:function(a){t.jumpPage("../danger/addDanger")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pxjh.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("培训计划")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-14"},on:{tap:function(a){t.jumpPage("../danger/addDanger")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pxkc.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("培训课程")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-15"},on:{tap:function(a){t.jumpPage("../danger/addDanger")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/zwcs.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("自我测试")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-16"},on:{tap:function(a){t.jumpPage("../danger/addDanger")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/tyks.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("统一考试")])])])]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("法律法规")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-17"},on:{tap:function(a){t.jumpPage("../danger/addDanger")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/fgqd.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("法规清单")])])]),s("view",{staticClass:"dangerView"}),s("view",{staticClass:"dangerView"})]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("环保管理")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-18"},on:{tap:function(a){t.jumpPage("../danger/addDanger")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/sfpf.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("三废排放")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-19"},on:{tap:function(a){t.jumpPage("../danger/addDanger")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/jcjl.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("监测记录")])])]),s("view",{staticClass:"dangerView"})])]):t._e()],1):t._e(),1==t.currentTemplate?s("block",[s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("目标指责")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-20"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/mb.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("目标")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-21"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/jghzz.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("机构和职责")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-22"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/qycy.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("全员参与")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-23"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/aqtr.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("安全投入")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-24"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/aqwh.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("安全文化")])])]),s("view",{staticClass:"dangerView"})]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("制度化管理")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-25"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/fgqd.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("法律法规")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-26"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/gzzd.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("规章制度")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-27"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/czlc.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("操作流程")])])])]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("教育培训")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-28"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/jypx.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("教育培训")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-29"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/rypx.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("人员培训")])])]),s("view",{staticClass:"dangerView"})]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("现场管理")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-30"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/point_all.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("设备设施")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-31"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/zyaq.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("作业安全")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-32"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/zyjk.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("职业健康")])])])]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("安全风险管理")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-33"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/aqfxgl.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("安全风险管理")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-34"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/zdwxy.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("重大危险源")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-35"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/yhpc.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("隐患排查")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-36"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/ycyj.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("预测预警")])])]),s("view",{staticClass:"dangerView"}),s("view",{staticClass:"dangerView"})]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("应急管理")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-37"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/yjzb.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("应急准备")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-38"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/yjcz.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("应急处置")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-39"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/yjpg.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("应急评估")])])])]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("事故查处")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-40"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/sgkb.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("报告")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-41"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/zxks.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("调查和处理")])])]),s("view",{staticClass:"dangerView"})]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("持续改进")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-42"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/jxpd.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("绩效评定")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-43"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/jcjl.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("持续改进")])])]),s("view",{staticClass:"dangerView"})])]):t._e(),2==t.currentTemplate?s("block",[s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("组织环境")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-44"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/txgl.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("体系管理")])])]),s("view",{staticClass:"dangerView"}),s("view",{staticClass:"dangerView"})]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("领导作用与工作人员参与")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-45"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/cn.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("承诺")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-46"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/jghzz.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("组织职责")])])]),s("view",{staticClass:"dangerView"})]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("策划")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-47"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/wxy.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("危险源")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-48"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/flfg.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("法律法规")])])]),s("view",{staticClass:"dangerView"})]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("支持")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-49"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/nl.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("能力")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-50"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/ys.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("意识")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-51"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/gt.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("沟通")])])])]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("运行")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-52"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/wxy.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("危险源")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-53"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/bg.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("变更")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-54"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/cg.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("采购")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-55"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/ycyj.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("应急响应")])])]),s("view",{staticClass:"dangerView"}),s("view",{staticClass:"dangerView"})]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("绩效评定")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-56"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/jxpd.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("绩效评价")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-57"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/yjcz.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("内部审核")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-58"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/ygyh.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("管理评审")])])])]),s("view",{staticClass:"titleView_pc"},[s("text",{staticClass:"titleText_pc"},[t._v("改进")])]),s("view",{staticClass:"menuBlockView"},[s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-59"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/pxzl.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("总则")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-60"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/zysp.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("纠正措施")])])]),s("view",{staticClass:"dangerView",attrs:{eventid:"10bbdf1a-61"},on:{tap:function(a){t.jumpPage("")}}},[s("image",{staticClass:"dangerIcon",attrs:{src:"../../static/img/cxgj.png",mode:"widthFix"}}),s("view",{staticClass:"subView"},[s("text",{staticClass:"dangerText"},[t._v("持续改进")])])])])]):t._e()],1)},i=[function(){var t=this,a=t.$createElement,s=t._self._c||a;return s("view",{staticClass:"topItemView"},[s("text",{staticClass:"topTextTitle"},[t._v("隐患总数")]),s("text",{staticClass:"topTextNum"},[t._v("1005")])])},function(){var t=this,a=t.$createElement,s=t._self._c||a;return s("view",{staticClass:"topItemView"},[s("text",{staticClass:"topTextTitle"},[t._v("事故总数")]),s("text",{staticClass:"topTextNum"},[t._v("600")])])},function(){var t=this,a=t.$createElement,s=t._self._c||a;return s("view",{staticClass:"topItemView"},[s("text",{staticClass:"topTextTitle"},[t._v("检查次数")]),s("text",{staticClass:"topTextNum"},[t._v("2000")])])}];s.d(a,"a",function(){return e}),s.d(a,"b",function(){return i})},"2dc8":function(t,a,s){},a36f:function(t,a,s){"use strict";var e=s("2dc8"),i=s.n(e);i.a},ab69:function(t,a,s){"use strict";s.r(a);var e=s("1484"),i=s("0927");for(var n in i)"default"!==n&&function(t){s.d(a,t,function(){return i[t]})}(n);s("a36f");var c=s("2877"),r=Object(c["a"])(i["default"],e["a"],e["b"],!1,null,null,null);r.options.__file="pointCheck.vue",a["default"]=r.exports},be2a:function(t,a,s){"use strict";s("de83");var e=n(s("b0ce")),i=n(s("ab69"));function n(t){return t&&t.__esModule?t:{default:t}}Page((0,e.default)(i.default))}},[["be2a","common/runtime","common/vendor"]]]);
 });
 require('pages/pointCheck/pointCheck.js');
 __wxRoute = 'pages/pointList/pointList';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/pointList/pointList.js';

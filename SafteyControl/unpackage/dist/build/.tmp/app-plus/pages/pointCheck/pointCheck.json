@@ -1,3 +1,12 @@
 {
-  "navigationBarTitleText": "应用"
+  "navigationBarTitleText": "应用中心",
+  "titleNView": {
+    "buttons": [
+      {
+        "text": "",
+        "fontSrc": "/static/aliIcon/iconfont.ttf",
+        "fontSize": "22px"
+      }
+    ]
+  }
 }
