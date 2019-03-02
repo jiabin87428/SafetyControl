@@ -12,7 +12,7 @@
 			<text class="titleText_pc">数据统计</text>
 			<text class="titleSubText_pc">查看更多</text>
 		</view> -->
-		<view class="topView_pc" @tap="jumpPage('')"  v-if="userType == 1">
+		<view class="topView_pc" @tap="jumpPage('../statistics/statistics')"  v-if="userType == 1">
 			<view class="topItemView">
 				<text class="topTextTitle">隐患总数</text>
 				<text class="topTextNum">1005</text>
@@ -662,14 +662,17 @@
 				});
 			},
 			jumpPage(url) {
-				uni.showToast({
-					icon: 'none',
-					title: '敬请期待～',
-				})
-				return;
-				uni.navigateTo({
-					url: url
-				});
+				if (url == '') {
+					uni.showToast({
+						icon: 'none',
+						title: '敬请期待～',
+					})
+					return;
+				}else {
+					uni.navigateTo({
+						url: url
+					});
+				}
 			},
 			saveTabInfo(key, data){
 				uni.setStorage({

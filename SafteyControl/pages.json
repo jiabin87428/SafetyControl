@@ -175,7 +175,12 @@
 			"style": {
 				"navigationBarTitleText": "隐患上报"
 			}
-		}
+		},{
+            "path": "pages/statistics/statistics",
+            "style": {
+                "navigationBarTitleText": "数据统计"
+            }
+        }
     ],
     "tabBar": {
         "color": "#7a7e83",

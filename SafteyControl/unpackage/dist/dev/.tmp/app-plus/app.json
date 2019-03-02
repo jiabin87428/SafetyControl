@@ -18,7 +18,8 @@
     "pages/mpvue-echarts/valveChart",
     "pages/mpvue-echarts/mpvue-echarts",
     "pages/common/inputPage",
-    "pages/danger/addDanger"
+    "pages/danger/addDanger",
+    "pages/statistics/statistics"
   ],
   "subPackages": [],
   "window": {
@@ -84,7 +85,8 @@
     }
   },
   "splashscreen": {
-    "autoclose": true
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
   },
   "appname": "京东方消防安全"
 }
