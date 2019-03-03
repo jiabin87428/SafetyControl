@@ -46,11 +46,11 @@
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
+	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 .btnView {
 	display: -webkit-box;
@@ -129,14 +129,49 @@
       -ms-flex-direction:column;
           flex-direction:column;
   width: 100%;
-  height: 100%;
   background-color: white;
   /* margin-bottom: 10px; */
-  border-bottom: 1rpx solid #D3D3D3;
+  border-bottom: 0.5rpx solid #D3D3D3;
   -webkit-box-align:center;
   -webkit-align-items:center;
       -ms-flex-align:center;
           align-items:center;/*垂直居中*/
+}
+.cellSubViewRow {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	/* justify-content: center; */
+}
+.leftTextRow {
+	width: 100%;
+	margin-left: 30rpx;
+	font-size: 32rpx;
+}
+.rightTextRow {
+	margin-top: 20rpx;
+	margin-bottom: 20rpx;
+	margin-right: 50rpx;
+	text-align: right;
+	font-size: 28rpx;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
+	white-space: normal;
+	color: inherit;
+	line-height: 1.5;
+	overflow: hidden;
+	color: #BBBBBB;
 }
 .imageView {
   display:-webkit-box;
@@ -159,25 +194,7 @@
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-}
-.titleView {
-  display:-webkit-box;
-  display:-webkit-flex;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:horizontal;
-  -webkit-box-direction:normal;
-  -webkit-flex-direction:row;
-      -ms-flex-direction:row;
-          flex-direction:row;
-  width: 100%;
-  height: 48rpx;
-  background-color: white;
-  /* margin-bottom: 10px; */
-  -webkit-box-align:center;
-  -webkit-align-items:center;
-      -ms-flex-align:center;
-          align-items:center;/*垂直居中*/
+  margin-bottom: 10rpx;
 }
 .littleImageView {
   display:-webkit-box;
@@ -189,36 +206,18 @@
   -webkit-flex-direction:row;
       -ms-flex-direction:row;
           flex-direction:row;
-  margin: 5rpx 0rpx 0rpx 10rpx;
+  margin: 20rpx 5rpx 5rpx 20rpx;
 }
 .littleImageDelete {
-  position: absolute;
-  width: 20rpx;
-  height: 20rpx;
+  /* position: absolute; */
+  position: relative;
+  margin-left: -50rpx;
+  margin-top: -15rpx;
+  width: 60rpx;
+  height: 60rpx;
 }
 .littleImage {
   width: 100%;
   height: 100%;
-}
-.cellText1 {
-  font-size: 14rpx;
-  color: #060606;
-  margin-left: 10rpx;
-  width: 90rpx;
-}
-.cellText2 {
-  font-size: 14rpx;
-  color: #696969;
-  margin-left: 20rpx;
-  margin-right: 5rpx;
-  width: 100%;
-  display: -webkit-box;
-  line-height: 40rpx;
-  word-break: break-all;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp:10;
-  overflow: hidden;
-  -o-text-overflow:ellipsis;
-     text-overflow:ellipsis;
 }
 

@@ -413,6 +413,18 @@ globalEvent.addEventListener('plusMessage', function (e) {
     if (typeof onNavigationBarButtonTapCallback === 'function') {
       onNavigationBarButtonTapCallback(e.data.data);
     }
+  } else if (e.data.type === 'onNavigationBarSearchInputChanged') {
+    if (typeof onNavigationBarSearchInputChangedCallback === 'function') {
+      onNavigationBarSearchInputChangedCallback(e.data.data);
+    }
+  } else if (e.data.type === 'onNavigationBarSearchInputConfirmed') {
+    if (typeof onNavigationBarSearchInputConfirmedCallback === 'function') {
+      onNavigationBarSearchInputConfirmedCallback(e.data.data);
+    }
+  } else if (e.data.type === 'onNavigationBarSearchInputClicked') {
+    if (typeof onNavigationBarSearchInputClickedCallback === 'function') {
+      onNavigationBarSearchInputClickedCallback(e.data.data);
+    }
   }
 });
 
@@ -483,8 +495,20 @@ var createPublish = function createPublish(name) {
 };
 
 var onNavigationBarButtonTapCallback = void 0;
+var onNavigationBarSearchInputChangedCallback = void 0;
+var onNavigationBarSearchInputConfirmedCallback = void 0;
+var onNavigationBarSearchInputClickedCallback = void 0;
 function onNavigationBarButtonTap(callback) {
   onNavigationBarButtonTapCallback = callback;
+}
+function onNavigationBarSearchInputChanged(callback) {
+  onNavigationBarSearchInputChangedCallback = callback;
+}
+function onNavigationBarSearchInputConfirmed(callback) {
+  onNavigationBarSearchInputConfirmedCallback = callback;
+}
+function onNavigationBarSearchInputClicked(callback) {
+  onNavigationBarSearchInputClickedCallback = callback;
 }
 
 function requireNativePlugin(pluginName) {
@@ -863,6 +887,15 @@ if (typeof Proxy !== 'undefined') {
       if (name === 'onNavigationBarButtonTap') {
         return onNavigationBarButtonTap;
       }
+      if (name === 'onNavigationBarSearchInputChanged') {
+        return onNavigationBarSearchInputChanged;
+      }
+      if (name === 'onNavigationBarSearchInputConfirmed') {
+        return onNavigationBarSearchInputConfirmed;
+      }
+      if (name === 'onNavigationBarSearchInputClicked') {
+        return onNavigationBarSearchInputClicked;
+      }
       var method = api[name];
       if (!method) {
         method = createPublish(name);
@@ -881,6 +914,14 @@ if (typeof Proxy !== 'undefined') {
   uni.postMessage = postMessage;
 
   uni.requireNativePlugin = requireNativePlugin;
+
+  uni.onNavigationBarButtonTap = onNavigationBarButtonTap;
+
+  uni.onNavigationBarSearchInputChanged = onNavigationBarSearchInputChanged;
+
+  uni.onNavigationBarSearchInputConfirmed = onNavigationBarSearchInputConfirmed;
+
+  uni.onNavigationBarSearchInputClicked = onNavigationBarSearchInputClicked;
 
   Object.keys(wx).forEach(function (name) {
     var method = api[name];

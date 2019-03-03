@@ -53,6 +53,11 @@ const store = new Vuex.Store({
 		removeSublistItem(state) {
 			state.sublistItem = null;
 		},
+		// 删除输入内容，每次取完值后最好删除，以防出错
+		removeInputItem(state) {
+			state.inputPageText = "";
+			state.key = "";
+		},
     }
 })
 

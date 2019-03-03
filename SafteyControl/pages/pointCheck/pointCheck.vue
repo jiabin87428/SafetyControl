@@ -99,7 +99,7 @@
 					<text class="titleText_pc">事故管理</text>
 				</view>
 				<view class="menuBlockView">
-				  <view class='dangerView' @tap="jumpPage('../danger/addDanger')">
+				  <view class='dangerView' @tap="jumpPage('')">
 				    <image class="dangerIcon" src="../../static/img/sgkb.png" mode="widthFix"></image>
 				    <view class='subView'>
 				      <text class='dangerText'>事故快报</text>
@@ -115,13 +115,13 @@
 					<text class="titleText_pc">作业管理</text>
 				</view>
 				<view class="menuBlockView">
-				  <view class='dangerView' @tap="jumpPage('../danger/addDanger')">
+				  <view class='dangerView' @tap="jumpPage('')">
 				    <image class="dangerIcon" src="../../static/img/zyfxpg.png" mode="widthFix"></image>
 				    <view class='subView'>
 				      <text class='dangerText'>作业风险评估</text>
 				    </view>
 				  </view>
-				  <view class='dangerView' @tap="jumpPage('../danger/addDanger')">
+				  <view class='dangerView' @tap="jumpPage('')">
 				    <image class="dangerIcon" src="../../static/img/zysp.png" mode="widthFix"></image>
 				    <view class='subView'>
 				      <text class='dangerText'>作业审批</text>
@@ -135,37 +135,37 @@
 					<text class="titleText_pc">安全培训</text>
 				</view>
 				<view class="menuBlockView">
-				  <view class='dangerView' @tap="jumpPage('../danger/addDanger')">
+				  <view class='dangerView' @tap="jumpPage('')">
 				    <image class="dangerIcon" src="../../static/img/pxzl.png" mode="widthFix"></image>
 				    <view class='subView'>
 				      <text class='dangerText'>培训资料</text>
 				    </view>
 				  </view>
-				  <view class='dangerView' @tap="jumpPage('../danger/addDanger')">
+				  <view class='dangerView' @tap="jumpPage('')">
 				    <image class="dangerIcon" src="../../static/img/zxks.png" mode="widthFix"></image>
 				    <view class='subView'>
 				      <text class='dangerText'>在线考试</text>
 				    </view>
 				  </view>
-				  <view class='dangerView' @tap="jumpPage('../danger/addDanger')">
+				  <view class='dangerView' @tap="jumpPage('')">
 				    <image class="dangerIcon" src="../../static/img/pxjh.png" mode="widthFix"></image>
 				    <view class='subView'>
 				      <text class='dangerText'>培训计划</text>
 				    </view>
 				  </view>
-				  <view class='dangerView' @tap="jumpPage('../danger/addDanger')">
+				  <view class='dangerView' @tap="jumpPage('')">
 				    <image class="dangerIcon" src="../../static/img/pxkc.png" mode="widthFix"></image>
 				    <view class='subView'>
 				      <text class='dangerText'>培训课程</text>
 				    </view>
 				  </view>
-				  <view class='dangerView' @tap="jumpPage('../danger/addDanger')">
+				  <view class='dangerView' @tap="jumpPage('')">
 				    <image class="dangerIcon" src="../../static/img/zwcs.png" mode="widthFix"></image>
 				    <view class='subView'>
 				      <text class='dangerText'>自我测试</text>
 				    </view>
 				  </view>
-				  <view class='dangerView' @tap="jumpPage('../danger/addDanger')">
+				  <view class='dangerView' @tap="jumpPage('')">
 				    <image class="dangerIcon" src="../../static/img/tyks.png" mode="widthFix"></image>
 				    <view class='subView'>
 				      <text class='dangerText'>统一考试</text>
@@ -177,7 +177,7 @@
 					<text class="titleText_pc">法律法规</text>
 				</view>
 				<view class="menuBlockView">
-				  <view class='dangerView' @tap="jumpPage('../danger/addDanger')">
+				  <view class='dangerView' @tap="jumpPage('')">
 				    <image class="dangerIcon" src="../../static/img/fgqd.png" mode="widthFix"></image>
 				    <view class='subView'>
 				      <text class='dangerText'>法规清单</text>
@@ -193,13 +193,13 @@
 					<text class="titleText_pc">环保管理</text>
 				</view>
 				<view class="menuBlockView">
-				  <view class='dangerView' @tap="jumpPage('../danger/addDanger')">
+				  <view class='dangerView' @tap="jumpPage('')">
 				    <image class="dangerIcon" src="../../static/img/sfpf.png" mode="widthFix"></image>
 				    <view class='subView'>
 				      <text class='dangerText'>三废排放</text>
 				    </view>
 				  </view>
-				  <view class='dangerView' @tap="jumpPage('../danger/addDanger')">
+				  <view class='dangerView' @tap="jumpPage('')">
 				    <image class="dangerIcon" src="../../static/img/jcjl.png" mode="widthFix"></image>
 				    <view class='subView'>
 				      <text class='dangerText'>监测记录</text>

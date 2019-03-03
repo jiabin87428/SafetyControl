@@ -48,6 +48,10 @@ var config = {
 	
 	// 删除图片
 	deleteImage: '/mobile/delZp.do',
+	
+	// ------隐患相关-------
+	// 添加/修改隐患
+	editDanger: '/mobile/updateYhzg.do',
 };
 //对外把对象config返回
 module.exports = config

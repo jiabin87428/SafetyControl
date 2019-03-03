@@ -84,7 +84,7 @@
 				needGetInputOnShow: false,
 				
 				typeArray: ['正常', '未检', '异常'],
-				rectifyTypes: ['发起整改', '查看整改'],
+				rectifyTypes: ['发起隐患整改单'],
 		        item: '',		// subList中的对象
 				itemIndex: 0,	// subList中的第几个数据，用于确定后替换原数据
 				
@@ -161,13 +161,16 @@
 					})
 					return;
 				}
-				
+				uni.showLoading({
+					title: '正在上传图片'
+				})
 				request.uploadImage(url, imgList, 0, 0, 0, imgList.length, function (res) {
 					let data = JSON.parse(res.data);
 					let fj = data.fj;
 					that.item.fj = fj;
 					console.log('Item:',JSON.stringify(that.item));
 				}, function(result){
+					uni.hideLoading();
 					if (result == '200') {
 						that.saveLocalItem();
 						uni.showToast({

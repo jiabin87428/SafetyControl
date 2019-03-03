@@ -33,6 +33,7 @@
 				key: this.key
 			}
 			this.setInputPageText(obj)
+			
 			uni.navigateBack({
 				delta: 1
 			})

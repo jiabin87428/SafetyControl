@@ -417,7 +417,11 @@ var config = {
   loadImage: '/mobile/loadYhzp.do?fileid=',
 
   // 删除图片
-  deleteImage: '/mobile/delZp.do' };
+  deleteImage: '/mobile/delZp.do',
+
+  // ------隐患相关-------
+  // 添加/修改隐患
+  editDanger: '/mobile/updateYhzg.do' };
 
 //对外把对象config返回
 module.exports = config;
@@ -514,7 +518,7 @@ var request = function request(url, message, _success2, _fail2) {
 
 };
 // 上传图片
-var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, length, _success3, _complete2) {var _this = this;
+var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, length, successFun, completeFun) {var _this = this;
   uni.uploadFile({
     url: config.host + url,
     filePath: filePaths[i],
@@ -524,7 +528,7 @@ var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, len
 
     success: function success(resp) {
       successUp++;
-      _success3(resp);
+      successFun(resp);
     },
     fail: function fail(res) {
       failUp++;
@@ -537,10 +541,12 @@ var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, len
           icon: 'none',
           duration: 2000 });
 
-        _complete2('200');
+        if (completeFun != null) {
+          completeFun('200');
+        }
       } else
       {//递归调用uploadImage函数
-        _this.uploadImage(url, filePaths, successUp, failUp, i, length);
+        _this.uploadImage(url, filePaths, successUp, failUp, i, length, successFun, completeFun);
       }
     } });
 
@@ -656,6 +662,18 @@ globalEvent.addEventListener('plusMessage', function (e) {
     if (typeof onNavigationBarButtonTapCallback === 'function') {
       onNavigationBarButtonTapCallback(e.data.data);
     }
+  } else if (e.data.type === 'onNavigationBarSearchInputChanged') {
+    if (typeof onNavigationBarSearchInputChangedCallback === 'function') {
+      onNavigationBarSearchInputChangedCallback(e.data.data);
+    }
+  } else if (e.data.type === 'onNavigationBarSearchInputConfirmed') {
+    if (typeof onNavigationBarSearchInputConfirmedCallback === 'function') {
+      onNavigationBarSearchInputConfirmedCallback(e.data.data);
+    }
+  } else if (e.data.type === 'onNavigationBarSearchInputClicked') {
+    if (typeof onNavigationBarSearchInputClickedCallback === 'function') {
+      onNavigationBarSearchInputClickedCallback(e.data.data);
+    }
   }
 });
 
@@ -726,8 +744,20 @@ var createPublish = function createPublish(name) {
 };
 
 var onNavigationBarButtonTapCallback = void 0;
+var onNavigationBarSearchInputChangedCallback = void 0;
+var onNavigationBarSearchInputConfirmedCallback = void 0;
+var onNavigationBarSearchInputClickedCallback = void 0;
 function onNavigationBarButtonTap(callback) {
   onNavigationBarButtonTapCallback = callback;
+}
+function onNavigationBarSearchInputChanged(callback) {
+  onNavigationBarSearchInputChangedCallback = callback;
+}
+function onNavigationBarSearchInputConfirmed(callback) {
+  onNavigationBarSearchInputConfirmedCallback = callback;
+}
+function onNavigationBarSearchInputClicked(callback) {
+  onNavigationBarSearchInputClickedCallback = callback;
 }
 
 function requireNativePlugin(pluginName) {
@@ -1106,6 +1136,15 @@ if (typeof Proxy !== 'undefined') {
       if (name === 'onNavigationBarButtonTap') {
         return onNavigationBarButtonTap;
       }
+      if (name === 'onNavigationBarSearchInputChanged') {
+        return onNavigationBarSearchInputChanged;
+      }
+      if (name === 'onNavigationBarSearchInputConfirmed') {
+        return onNavigationBarSearchInputConfirmed;
+      }
+      if (name === 'onNavigationBarSearchInputClicked') {
+        return onNavigationBarSearchInputClicked;
+      }
       var method = api[name];
       if (!method) {
         method = createPublish(name);
@@ -1124,6 +1163,14 @@ if (typeof Proxy !== 'undefined') {
   uni.postMessage = postMessage;
 
   uni.requireNativePlugin = requireNativePlugin;
+
+  uni.onNavigationBarButtonTap = onNavigationBarButtonTap;
+
+  uni.onNavigationBarSearchInputChanged = onNavigationBarSearchInputChanged;
+
+  uni.onNavigationBarSearchInputConfirmed = onNavigationBarSearchInputConfirmed;
+
+  uni.onNavigationBarSearchInputClicked = onNavigationBarSearchInputClicked;
 
   Object.keys(wx).forEach(function (name) {
     var method = api[name];

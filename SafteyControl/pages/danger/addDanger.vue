@@ -5,28 +5,30 @@
 		</view>
 		<view class="cellInfoView">
 			<uni-list>
-				<uni-list-item title="隐患描述" show-arrow="true" @click="jumpInput('')"></uni-list-item>
-				<uni-list-item title="整改要求" show-arrow="true" @click="jumpInput('')"></uni-list-item>
-				<uni-list-item title="临时预防措施" show-arrow="true" @click="jumpInput('')"></uni-list-item>
-				<uni-list-item title="隐患等级" show-arrow="true" @click="jumpInput('')"></uni-list-item>
-				<uni-list-item title="隐患类型" show-arrow="true" @click="jumpInput('')"></uni-list-item>
-				<uni-list-item title="整改负责人" show-arrow="true" @click="jumpInput('')"></uni-list-item>
-				<uni-list-item title="整改期限" show-arrow="true" @click="jumpInput('')"></uni-list-item>
-				<uni-list-item title="隐患发现人" show-arrow="true" @click="jumpInput('')"></uni-list-item>
-				<uni-list-item title="隐患发现部门" show-arrow="true" @click="jumpInput('')"></uni-list-item>
-				<uni-list-item title="隐患发现日" show-arrow="true" @click="jumpInput('')"></uni-list-item>
-				<uni-list-item title="责任部门" show-arrow="true" @click="jumpInput('')"></uni-list-item>
+				<uni-list-item title="隐患级别" :subnote="dangerLevel" show-arrow="true" @click="selectedDangerLevel"></uni-list-item>
+				<uni-list-item title="隐患分类" :subnote="dangerType" show-arrow="true" @click="selectedDangerType"></uni-list-item>
+				<uni-list-item title="隐患描述" :subnote="dangerDesc" show-arrow="true" @click="selectedDangerDesc"></uni-list-item>
+				<uni-list-item title="对应条款" :subnote="dangerClause" show-arrow="true" @click="selectedDangerClause"></uni-list-item>
+				<uni-list-item title="整改建议" :subnote="dangerAdvise" show-arrow="true" @click="jumpInput(dangerAdvise, 'dangerAdvise', '请输入整改建议')"></uni-list-item>
+				<picker mode="date" :value="checkDate" @change="checkDateChange">
+					<uni-list-item title="检查日期" :subnote="checkDate"></uni-list-item>
+				</picker>
+				<uni-list-item title="检查人" :subnote="checkPeople" show-arrow="true"></uni-list-item>
+				<picker mode="date" :value="deadLine" @change="deadLineChange">
+					<uni-list-item title="整改期限" :subnote="deadLine"></uni-list-item>
+				</picker>
+				<!-- <uni-list-item title="隐患位置" show-arrow="true" @click="jumpInput('')"></uni-list-item> -->
 			</uni-list>
-			<view class='imageBaseView' v-bind:style="{height:58+imageViewHeight + 'px'}"> 
-				<view class='titleView'>
-				  <text class='cellText1'>隐患照片</text>
-				  <text class='cellText3'>{{imageList.length}}</text>
+			<view class='imageBaseView'> 
+				<view class='cellSubViewRow'>
+				  <text class='leftTextRow'>隐患照片</text>
+				  <text class='rightTextRow'>{{imageList.length}}</text>
 				</view>
-				<view id='imageView' v-bind:style="{height:imageViewHeight + 'px'}" class='imageView'>
-				  <block v-for="(image,idx) in imageList" :key="idx">
+				<view id='imageView' class='imageView'>
+				  <block v-for="(imgObj,idx) in imageList" :key="idx">
 					<view class="littleImageView" v-bind:style="{width:littleImageWidth + 'px', height:littleImageWidth + 'px'}">
-					  <image class="littleImage" bindtap='viewPhoto' :id="idx" :src="image"></image>
-					  <image class='littleImageDelete' src='../../static/img/delete.png' @click="deleteImage" :id='idx'></image>
+					  <image class="littleImage" @click="viewPhoto" :id="idx" :src="imgObj.src" mode="aspectFit"></image>
+					  <image class='littleImageDelete' src='../../static/img/delete.png' @click="deleteImage(imgObj,idx)" :id='idx' mode="aspectFit"></image>
 					</view>
 				  </block>
 				  <view class="littleImageView" @click='addPhoto' v-bind:style="{width:littleImageWidth + 'px', height: littleImageWidth + 'px'}">
@@ -49,179 +51,175 @@
 	import request from '../../util/request.js';
 	import service from '../../service.js';
 	import {
-	    mapState
+	    mapState,
+		mapMutations
 	} from 'vuex'
 	export default {
-		computed: mapState(['sublistItem', 'sublistIndex', 'userInfo']),
+		computed: mapState(['sublistItem', 'sublistIndex', 'userInfo', 'inputPageText', 'key']),
 		components: {uniList,uniListItem,uniIcon},
 		data() {
 		    return {
-				// 当页面OnShow的时候是否需要从state里去拿Item对象 - 用于页面反传参数
-				needGetItemOnShow: false,
 				// 当页面OnShow的时候是否需要从state里去拿输入的内容
 				needGetInputOnShow: false,
-				// 是否显示关单按钮-扫码后是没id的，所以只能显示一个保存按钮,只有有id并且status=1的情况下，才显示保存和关单按钮
-				showClose: false,
-				showSave: false,
-				// 是否可编辑
-				editable: false,
-				
+				// 上传照片相关
 				imageViewHeight: 100,
 				imageList: [],
-				newaddImagelist: [],
 				littleImageWidth: 0,
 				
-				obj: '',
-					normal: {// 正常图标
-						color: '#24BE41',
-						size: '22',
-						type: 'checkbox-filled'
-					},
-					undetected: {// 未检图标
-						color: '#FFDE52',
-						size: '22',
-						type: 'info-filled'
-					},
-					abnormal: {// 异常图标
-						color: '#C11E1E',
-						size: '22',
-						type: 'clear'
-					},
-				}
+				// 页面参数，接口需要的参数
+				dangerId: '',		// 隐患id
+				dangerLevel: '',	// 隐患级别
+				dangerType:	'',		// 隐患分类
+				dangerDesc: '',		// 隐患描述
+				dangerClause: '',	// 对应条款
+				dangerAdvise: '',	// 整改建议
+				checkDate: '',		// 检查时间
+				checkPeople: '',	// 检查人
+				deadLine: '',		// 整改期限
+				
+				
+				// --------数据模板---------
+				// 隐患级别
+				dangerLevelData: ['一般隐患', '重大隐患'],
+				// 隐患分类
+				dangerTypeData: ['自行输入分类','从分类库选择'],
+				// 隐患描述
+				dangerDescData: ['从隐患库选择/检索','自行输入问题', '从常用隐患库选择'],
+				// 对应条款
+				dangerClauseData: ['从隐患库选择/检索','自行输入问题', '从法规库选择'],
+			}
 		},
-		onLoad(option) {
-// 			this.obj = JSON.parse(option.obj);
-// 			this.checkShowClose();
+		onLoad() {
+			this.littleImageWidth = (uni.getSystemInfoSync().windowWidth -50) / 4;
+			this.checkPeople = this.userInfo.fullname;
 		},
 		onNavigationBarButtonTap() {
-			var that = this;
-			if (that.editable == false) {
-				uni.showToast({
-					icon: 'none',
-					title: '已关单 无法编辑',
-					duration: 1000,
-				})
-				return;
-			}
-			uni.showModal({
-				title: '提示',
-				content: '确认要设置所有的检查点都正常吗？',
-				success: function (res) {
-					if (res.confirm) {
-						// console.log('用户点击确定');
-						for (var i = 0; i < that.obj.sublist.length; i++) {
-							var item = that.obj.sublist[i];
-							item["jcjl"] = "正常";
-							item["jcwtms"] = "";
-							item["zgfs"] = "";
-						}
-					} else if (res.cancel) {
-						// console.log('用户点击取消');
-					}
-				}
-			});
+			
 		},
 		onShow() {
-			if (this.needGetItemOnShow == true && this.sublistIndex != null && this.sublistItem != null) {
-				console.log('' + JSON.stringify(this.sublistItem));
-				this.obj.sublist[this.sublistIndex] = this.sublistItem;
+			if (this.needGetInputOnShow == true) {
+				this.$data[this.key] = this.inputPageText;
+				this.needGetInputOnShow = false;
+				this.removeInputItem();
 			}
-			this.needGetItemOnShow = false;
 		},
 		methods:{
-			bindDateChange: function(e) {
-				this.obj.jcrq = e.target.value
-			},
-			jumpEdit: function(item, index) {
-				if (this.editable == false) {
-					return;
-				}
-				this.needGetItemOnShow = true;
-				uni.navigateTo({
-					url: './pointCheckInfo?item=' + JSON.stringify(item) + '&index=' + index
+			...mapMutations(['removeInputItem']),
+			// 选择隐患级别
+			selectedDangerLevel: function(e) {
+				var that = this;
+				uni.showActionSheet({
+					itemList: that.dangerLevelData,
+					success: function (res) {
+						that.dangerLevel = that.dangerLevelData[res.tapIndex];
+					},
+					fail: function (res) {
+						console.log(res.errMsg);
+					}
 				});
 			},
-			getIcon(item) {
-				if (item.jcjl == '正常') {
-					return this.normal;
-				}else if (item.jcjl == '异常') {
-					return this.abnormal;
-				}else {
-					return this.undetected;
-				}
+			// 选择隐患分类
+			selectedDangerType: function(e) {
+				var that = this;
+				uni.showActionSheet({
+					itemList: that.dangerTypeData,
+					success: function (res) {
+						if (res.tapIndex == 0) {// 自行输入
+							this.needGetInputOnShow = true;
+							that.jumpInput(that.dangerType, 'dangerType', '请输入隐患分类')
+						}else {// 从分类库选择
+							
+						}
+					},
+					fail: function (res) {
+						console.log(res.errMsg);
+					}
+				});
+			},
+			// 选择隐患描述
+			selectedDangerDesc: function(e) {
+				var that = this;
+				uni.showActionSheet({
+					itemList: that.dangerDescData,
+					success: function (res) {
+						if (res.tapIndex == 0) {// 从隐患库选择/检索
+							
+						}else if(res.tapIndex == 1) {// 自行输入
+							this.needGetInputOnShow = true;
+							that.jumpInput(that.dangerDesc, 'dangerDesc', '请输入隐患描述')
+						}else {// 从常用隐患库选择
+							
+						}
+					},
+					fail: function (res) {
+						console.log(res.errMsg);
+					}
+				});
+			},
+			// 选择对应条款
+			selectedDangerClause: function(e) {
+				var that = this;
+				uni.showActionSheet({
+					itemList: that.dangerClauseData,
+					success: function (res) {
+						if (res.tapIndex == 0) {// 从隐患库选择/检索
+							
+						}else if(res.tapIndex == 1) {// 自行输入
+							this.needGetInputOnShow = true;
+							that.jumpInput(that.dangerClause, 'dangerClause', '请输入对应条款')
+						}else {// 从法规库选择
+							
+						}
+					},
+					fail: function (res) {
+						console.log(res.errMsg);
+					}
+				});
+			},
+			// 选择检查日期
+			checkDateChange: function(e) {
+				this.checkDate = e.target.value;
+			},
+			// 选择整改期限
+			deadLineChange: function(e) {
+				this.deadLine = e.target.value;
 			},
 			// 保存
 			saveClick() {
-// 				var that = this;
-// 				var param = service.copyObj(that.obj);
-// 				param['userid'] = that.userInfo.userid;
-// 				param['sublist'] = JSON.stringify(param['sublist']);
-// 				request.requestLoading(config.UpdatePoint, param, '正在加载', 
-// 					function(res){
-// 						uni.showToast({
-// 							icon: 'none',
-// 							title: '保存成功',
-// 							duration: 1000,
-// 						});
-// 						// that.obj.status = res.status;
-// 						that.obj.id = res.id;
-// 						that.checkShowClose();
-// 					},function(){
-// 						uni.showToast({
-// 							icon: 'none',
-// 							title: '保存失败'
-// 						});
-// 					},function() {
-// 						
-// 					});
-			},
-			// 关单
-			closeClick(){
 				var that = this;
-				var param = service.copyObj(that.obj);
-				param['userid'] = that.userInfo.userid;
-				param['sublist'] = JSON.stringify(param['sublist']);
-				param['status'] = '2';
-				request.requestLoading(config.UpdatePoint, param, '正在加载', 
+				let param = {
+					refid: that.dangerId,
+					yhjb: that.dangerLevel,
+					yhfl: that.dangerType,
+					yhms: that.dangerDesc,
+					dytk: that.dangerClause,
+					zgjy: that.dangerAdvise,
+					jcsj: that.checkDate,
+					jcr: that.checkPeople,
+					zgqx: that.deadLine,
+					userid: that.userInfo.userid
+				}
+				request.requestLoading(config.editDanger, param, '正在加载', 
 					function(res){
 						uni.showToast({
 							icon: 'none',
-							title: '关单成功',
+							title: '保存成功',
 							duration: 1000,
 						});
-						that.obj.status = res.status;
-						that.obj.id = res.id;
-						that.checkShowClose();
+						that.dangerId = res.id;
 					},function(){
 						uni.showToast({
 							icon: 'none',
-							title: '关单失败'
+							title: '保存失败'
 						});
 					},function() {
 						
-					});
+				});
 			},
-			// 判断是否显示关单按钮
-			checkShowClose() {
-				if (this.obj.status == '1' && this.obj.id != null && this.obj.id != '') {
-					this.showClose = true;
-				}else {
-					this.showClose = false;
-				}
-				
-				// status为2，已关单，不能编辑
-				if (this.obj.status == '2') {
-					this.showSave = false;
-					this.editable = false;
-				}else {
-					this.showSave = true;
-					this.editable = true;
-				}
-			},
-			jumpInput(text) {
+			jumpInput(text, key, placeholder = '请输入描述') {
 				this.needGetInputOnShow = true;
 				uni.navigateTo({
-					url: '../common/inputPage?text=' + text + '&key=jcwtms&placeholder=请输入问题描述',
+					url: '../common/inputPage?text=' + text + '&key=' + key + '&placeholder=' + placeholder + '',
 				})
 			},
 		}
@@ -253,7 +251,7 @@
 		width: 100%;
 		background-color: #FFFFFF;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 	}
 	.btnView {
 		display: flex;
@@ -298,13 +296,36 @@
 	  display:flex;
 	  flex-direction:column;
 	  width: 100%;
-	  height: 100%;
 	  background-color: white;
 	  /* margin-bottom: 10px; */
-	  border-bottom: 1rpx solid #D3D3D3;
+	  border-bottom: 0.5rpx solid #D3D3D3;
 	  align-items:center;/*垂直居中*/
 	}
-
+	.cellSubViewRow {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		/* justify-content: center; */
+	}
+	.leftTextRow {
+		width: 100%;
+		margin-left: 30upx;
+		font-size: 32upx;
+	}
+	.rightTextRow {
+		margin-top: 20upx;
+		margin-bottom: 20upx;
+		margin-right: 50upx;
+		text-align: right;
+		font-size: 28upx;
+		text-overflow: ellipsis;
+		white-space: normal;
+		color: inherit;
+		line-height: 1.5;
+		overflow: hidden;
+		color: #BBBBBB;
+	}
 	.imageView {
 	  display:flex;
 	  flex-direction:row;
@@ -314,52 +335,26 @@
 	  align-items: flex-start;/*垂直居中*/
 	  /* justify-content: space-between; */
 	  flex-wrap: wrap;
+	  margin-bottom: 10upx;
 	}
-
-	.titleView {
-	  display:flex;
-	  flex-direction:row;
-	  width: 100%;
-	  height: 48px;
-	  background-color: white;
-	  /* margin-bottom: 10px; */
-	  align-items:center;/*垂直居中*/
-	}
-
+	
 	.littleImageView {
 	  display:flex;
 	  flex-direction:row;
-	  margin: 5px 0px 0px 10px;
+	  margin: 20px 5px 5px 20px;
 	}
-
+	
 	.littleImageDelete {
-	  position: absolute;
-	  width: 20px;
-	  height: 20px;
+	  /* position: absolute; */
+	  position: relative;
+	  margin-left: -50upx;
+	  margin-top: -15upx;
+	  width: 60upx;
+	  height: 60upx;
 	}
-
+	
 	.littleImage {
 	  width: 100%;
 	  height: 100%; 
-	}
-	.cellText1 {
-	  font-size: 14px;
-	  color: #060606;
-	  margin-left: 10px;
-	  width: 90px;
-	}
-	.cellText2 {
-	  font-size: 14px;
-	  color: #696969;
-	  margin-left: 20px;
-	  margin-right: 5px;
-	  width: 100%;
-	  display: -webkit-box;
-	  line-height: 40rpx;
-	  word-break: break-all;
-	  -webkit-box-orient: vertical;
-	  -webkit-line-clamp:10;
-	  overflow: hidden;
-	  text-overflow:ellipsis;
 	}
 </style>
