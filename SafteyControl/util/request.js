@@ -80,7 +80,7 @@ const request = function(url, message, success, fail) {
 	});
 }
 // 上传图片
-const uploadImage = function(url, filePaths, successUp, failUp, i, length, success, complete) {
+const uploadImage = function(url, filePaths, successUp, failUp, i, length, successFun, completeFun) {
 	uni.uploadFile({
 	  url: config.host + url,
 	  filePath: filePaths[i],
@@ -89,25 +89,27 @@ const uploadImage = function(url, filePaths, successUp, failUp, i, length, succe
 
 	  },
 	  success: (resp) => {
-		successUp++;
-		success(resp)
+			successUp++;
+			successFun(resp);
 	  },
 	  fail: (res) => {
-		failUp++;
+			failUp++;
 	  },
 	  complete: () => {
-		i++;
-		if (i == length) {
-		  uni.showToast({
-		    title: '总共' + successUp + '张上传成功,' + failUp + '张上传失败！',
-		    icon: 'none',
-		    duration: 2000
-		  })
-		  complete('200')
-		}
-		else {  //递归调用uploadImage函数
-		  this.uploadImage(url,filePaths, successUp, failUp, i, length);
-		}
+			i++;
+			if (i == length) {
+				uni.showToast({
+					title: '总共' + successUp + '张上传成功,' + failUp + '张上传失败！',
+					icon: 'none',
+					duration: 2000
+				})
+				if (completeFun != null) {
+					completeFun('200');
+				}
+			}
+			else {  //递归调用uploadImage函数
+				this.uploadImage(url,filePaths, successUp, failUp, i, length, successFun, completeFun);
+			}
 	  },
 	});
 }

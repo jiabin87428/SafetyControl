@@ -49,6 +49,10 @@ const store = new Vuex.Store({
 			state.sublistItem = obj.item;
 			state.sublistIndex = obj.index;
 		},
+		
+		removeSublistItem(state) {
+			state.sublistItem = null;
+		},
     }
 })
 

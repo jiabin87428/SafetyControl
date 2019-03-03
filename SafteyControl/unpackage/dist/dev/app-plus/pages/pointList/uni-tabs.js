@@ -83,15 +83,15 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue?entry");
+/******/ 	return __webpack_require__(__webpack_require__.s = "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue?entry");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue":
-/*!*****************************************************************************************************************!*\
-  !*** /Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue ***!
-  \*****************************************************************************************************************/
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue":
+/*!******************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -99,14 +99,14 @@ var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-rewriter?id=data-v-1f91acb7!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=styles&index=0!./uni-media-list.nvue */ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-1f91acb7!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue")
+__vue_styles__.push(__webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-rewriter?id=data-v-39404bb6!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=styles&index=0!./uni-media-list.nvue */ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-39404bb6!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue")
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/script-loader!babel-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-media-list.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue")
+__vue_exports__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/script-loader!babel-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-media-list.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue")
 
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/template-compiler?id=data-v-1f91acb7!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=template&index=0!./uni-media-list.nvue */ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-1f91acb7!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue")
+var __vue_template__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/template-compiler?id=data-v-39404bb6!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=template&index=0!./uni-media-list.nvue */ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-39404bb6!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue")
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -118,10 +118,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue"
+__vue_options__.__file = "/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-1f91acb7"
+__vue_options__._scopeId = "data-v-39404bb6"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -137,10 +137,10 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue":
-/*!***********************************************************************************************************!*\
-  !*** /Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
-  \***********************************************************************************************************/
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue":
+/*!************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
+  \************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -148,14 +148,14 @@ var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-rewriter?id=data-v-5fb32d79!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=styles&index=0!./uni-tab-bar.nvue */ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-5fb32d79!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue")
+__vue_styles__.push(__webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-rewriter?id=data-v-2158f532!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=styles&index=0!./uni-tab-bar.nvue */ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-2158f532!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue")
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/script-loader!babel-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tab-bar.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue")
+__vue_exports__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/script-loader!babel-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tab-bar.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue")
 
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/template-compiler?id=data-v-5fb32d79!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=template&index=0!./uni-tab-bar.nvue */ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-5fb32d79!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue")
+var __vue_template__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/template-compiler?id=data-v-2158f532!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=template&index=0!./uni-tab-bar.nvue */ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-2158f532!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue")
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -167,10 +167,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue"
+__vue_options__.__file = "/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-5fb32d79"
+__vue_options__._scopeId = "data-v-2158f532"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -186,10 +186,10 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue":
-/*!*******************************************************************************************************************!*\
-  !*** /Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue ***!
-  \*******************************************************************************************************************/
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue":
+/*!********************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue ***!
+  \********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -197,7 +197,7 @@ var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* script */
-__vue_exports__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/script-loader!babel-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tab-content.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue")
+__vue_exports__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/script-loader!babel-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tab-content.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue")
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -209,7 +209,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue"
+__vue_options__.__file = "/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -225,10 +225,10 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue":
-/*!*****************************************************************************************************!*\
-  !*** /Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue ***!
-  \*****************************************************************************************************/
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue":
+/*!******************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -236,7 +236,7 @@ var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* script */
-__vue_exports__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/script-loader!babel-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue")
+__vue_exports__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/script-loader!babel-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue")
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -248,7 +248,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue"
+__vue_options__.__file = "/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -264,10 +264,10 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue?entry":
-/*!*******************************************************************************************************!*\
-  !*** /Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue?entry ***!
-  \*******************************************************************************************************/
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue?entry":
+/*!********************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue?entry ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -275,14 +275,14 @@ var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-rewriter?id=data-v-2181dc86!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=styles&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-2181dc86!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue")
+__vue_styles__.push(__webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-rewriter?id=data-v-2104a5f4!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=styles&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-2104a5f4!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue")
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/script-loader!babel-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue")
+__vue_exports__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/script-loader!babel-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue")
 
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/template-compiler?id=data-v-2181dc86!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=template&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-2181dc86!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue")
+var __vue_template__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/template-compiler?id=data-v-2104a5f4!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=template&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-2104a5f4!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue")
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -294,10 +294,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue"
+__vue_options__.__file = "/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-2181dc86"
+__vue_options__._scopeId = "data-v-2104a5f4"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -315,10 +315,10 @@ new Vue(module.exports)
 
 /***/ }),
 
-/***/ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/service.js":
-/*!******************************************************************************!*\
-  !*** /Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/service.js ***!
-  \******************************************************************************/
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js":
+/*!*******************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -365,10 +365,10 @@ var copyObj = function copyObj(a) {
 
 /***/ }),
 
-/***/ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/util/config.js":
-/*!**********************************************************************************!*\
-  !*** /Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/util/config.js ***!
-  \**********************************************************************************/
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js":
+/*!***********************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -429,15 +429,15 @@ module.exports = config;
 
 /***/ }),
 
-/***/ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/util/request.js":
-/*!***********************************************************************************!*\
-  !*** /Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/util/request.js ***!
-  \***********************************************************************************/
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js":
+/*!************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var config = __webpack_require__(/*! ./config */ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/util/config.js");
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var config = __webpack_require__(/*! ./config */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js");
 // 展示进度条的网络请求
 // url:网络请求的url
 // params:请求参数
@@ -519,7 +519,7 @@ var request = function request(url, message, _success2, _fail2) {
 
 };
 // 上传图片
-var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, length, _success3, _complete2) {var _this = this;
+var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, length, successFun, completeFun) {var _this = this;
   uni.uploadFile({
     url: config.host + url,
     filePath: filePaths[i],
@@ -529,7 +529,7 @@ var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, len
 
     success: function success(resp) {
       successUp++;
-      _success3(resp);
+      successFun(resp);
     },
     fail: function fail(res) {
       failUp++;
@@ -542,10 +542,12 @@ var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, len
           icon: 'none',
           duration: 2000 });
 
-        _complete2('200');
+        if (completeFun != null) {
+          completeFun('200');
+        }
       } else
       {//递归调用uploadImage函数
-        _this.uploadImage(url, filePaths, successUp, failUp, i, length);
+        _this.uploadImage(url, filePaths, successUp, failUp, i, length, successFun, completeFun);
       }
     } });
 
@@ -1971,10 +1973,10 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue":
-/*!************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue ***!
-  \************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue":
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2039,10 +2041,10 @@ var _default2 =
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue":
-/*!******************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
-  \******************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue":
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2139,10 +2141,10 @@ var dom = weex.requireModule('dom');var _default2 =
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue":
-/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue":
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2163,16 +2165,16 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue":
-/*!************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue ***!
-  \************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue":
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-content/uni-tab-content.nvue */ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-content/uni-tab-content.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
 {
   props: {
     index: {
@@ -2258,10 +2260,10 @@ var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-c
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue":
-/*!********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue ***!
-  \********************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue":
+/*!*********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue ***!
+  \*********************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2309,13 +2311,13 @@ var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-c
 
 
 
-var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-content/uni-tab-content.nvue */ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue"));
-var _uniTabBar = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-bar/uni-tab-bar.nvue */ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue"));
-var _uniTabs = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tabs/uni-tabs.nvue */ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue"));
-var _uniMediaList = _interopRequireDefault(__webpack_require__(/*! @/components/uni-media-list/uni-media-list.nvue */ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue"));
-var _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/service.js"));
-var _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/util/config.js"));
-var _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ "../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/util/request.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
+var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-content/uni-tab-content.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue"));
+var _uniTabBar = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-bar/uni-tab-bar.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue"));
+var _uniTabs = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tabs/uni-tabs.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue"));
+var _uniMediaList = _interopRequireDefault(__webpack_require__(/*! @/components/uni-media-list/uni-media-list.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue"));
+var _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js"));
+var _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js"));
+var _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
 
 var dom = weex.requireModule('dom');
 var animation = weex.requireModule('animation');var _default =
@@ -2661,123 +2663,10 @@ var animation = weex.requireModule('animation');var _default =
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-1f91acb7!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue":
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-1f91acb7!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = {
-  "list-cell": {
-    "width": "750",
-    "paddingTop": 0,
-    "paddingRight": "30",
-    "paddingBottom": 0,
-    "paddingLeft": "30",
-    "backgroundColor:active": "#eeeeee"
-  },
-  "media-list": {
-    "flex": 1,
-    "flexDirection": "column",
-    "borderBottomWidth": "1",
-    "borderBottomStyle": "solid",
-    "borderBottomColor": "#c8c7cc",
-    "paddingTop": "20",
-    "paddingRight": 0,
-    "paddingBottom": "20",
-    "paddingLeft": 0
-  },
-  "media-image-right": {
-    "flexDirection": "row"
-  },
-  "media-image-left": {
-    "flexDirection": "row-reverse"
-  },
-  "media-title": {
-    "flex": 1,
-    "lines": 3,
-    "textOverflow": "ellipsis",
-    "fontSize": "32",
-    "color": "#555555"
-  },
-  "media-title2": {
-    "flex": 1,
-    "marginTop": "6",
-    "lineHeight": "40"
-  },
-  "image-section": {
-    "marginTop": "20",
-    "flexDirection": "row",
-    "justifyContent": "space-between"
-  },
-  "image-section-right": {
-    "marginTop": "0",
-    "marginLeft": "10",
-    "width": "225",
-    "height": "146"
-  },
-  "image-section-left": {
-    "marginTop": "0",
-    "marginRight": "10",
-    "width": "225",
-    "height": "146"
-  },
-  "image-list1": {
-    "width": "690",
-    "height": "481"
-  },
-  "image-list2": {
-    "width": "225",
-    "height": "146"
-  },
-  "image-list3": {
-    "width": "225",
-    "height": "146"
-  },
-  "media-info": {
-    "flexDirection": "row"
-  },
-  "info-text": {
-    "marginRight": "20",
-    "color": "#999999",
-    "fontSize": "24"
-  },
-  "media-foot": {
-    "marginTop": "20",
-    "flexDirection": "row",
-    "justifyContent": "space-between"
-  },
-  "max-close-view": {
-    "alignItems": "center",
-    "justifyContent": "flex-end",
-    "flexDirection": "row",
-    "height": "40",
-    "width": "80"
-  },
-  "close-view": {
-    "borderStyle": "solid",
-    "borderWidth": "1",
-    "borderColor": "#999999",
-    "borderRadius": "10",
-    "justifyContent": "center",
-    "height": "30",
-    "width": "40",
-    "lineHeight": "30"
-  },
-  "close": {
-    "textAlign": "center",
-    "color": "#999999",
-    "fontSize": "28"
-  }
-}
-
-/***/ }),
-
-/***/ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-2181dc86!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue":
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-2181dc86!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-2104a5f4!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-2104a5f4!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -2892,10 +2781,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-5fb32d79!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue":
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-5fb32d79!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-2158f532!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-2158f532!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -2939,60 +2828,123 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-1f91acb7!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue":
-/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-1f91acb7!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-39404bb6!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-39404bb6!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', {
-    staticClass: ["list-cell"],
-    on: {
-      "click": _vm.bindClick
-    }
-  }, [(_vm.data.title) ? _c('div', {
-    staticClass: ["media-list"]
-  }, [_c('div', {
-    class: [_vm.isImgRight ? 'media-image-right' : '', _vm.isImgLeft ? 'media-image-left' : '']
-  }, [_c('text', {
-    class: ['media-title', _vm.isImgRight || _vm.isImgLeft ? 'media-title2' : '']
-  }, [_vm._v(_vm._s(_vm.data.title))]), (_vm.showImg) ? _c('div', {
-    class: ['image-section', _vm.isImgRight ? 'image-section-right' : '', _vm.isImgLeft ? 'image-section-left' : '']
-  }, [(_vm.data.image_url) ? _c('image', {
-    class: ['image-list1', _vm.isImgRight || _vm.isImgLeft ? 'image-list2' : ''],
-    attrs: {
-      "src": _vm.data.image_url
-    }
-  }) : _vm._e(), _vm._l((_vm.data.image_list), function(source, i) {
-    return (_vm.data.image_list) ? _c('image', {
-      key: i,
-      staticClass: ["image-list3"],
-      attrs: {
-        "src": source.url
-      }
-    }) : _vm._e()
-  })], 2) : _vm._e()]), _c('div', {
-    staticClass: ["media-foot"]
-  }, [_c('div', {
-    staticClass: ["media-info"]
-  }, [_c('text', {
-    staticClass: ["info-text"]
-  }, [_vm._v(_vm._s(_vm.data.source))]), _c('text', {
-    staticClass: ["info-text"]
-  }, [_vm._v(_vm._s(_vm.data.comment_count))]), _c('text', {
-    staticClass: ["info-text"]
-  }, [_vm._v(_vm._s(_vm.data.datetime))])])])]) : _vm._e()])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
+module.exports = {
+  "list-cell": {
+    "width": "750",
+    "paddingTop": 0,
+    "paddingRight": "30",
+    "paddingBottom": 0,
+    "paddingLeft": "30",
+    "backgroundColor:active": "#eeeeee"
+  },
+  "media-list": {
+    "flex": 1,
+    "flexDirection": "column",
+    "borderBottomWidth": "1",
+    "borderBottomStyle": "solid",
+    "borderBottomColor": "#c8c7cc",
+    "paddingTop": "20",
+    "paddingRight": 0,
+    "paddingBottom": "20",
+    "paddingLeft": 0
+  },
+  "media-image-right": {
+    "flexDirection": "row"
+  },
+  "media-image-left": {
+    "flexDirection": "row-reverse"
+  },
+  "media-title": {
+    "flex": 1,
+    "lines": 3,
+    "textOverflow": "ellipsis",
+    "fontSize": "32",
+    "color": "#555555"
+  },
+  "media-title2": {
+    "flex": 1,
+    "marginTop": "6",
+    "lineHeight": "40"
+  },
+  "image-section": {
+    "marginTop": "20",
+    "flexDirection": "row",
+    "justifyContent": "space-between"
+  },
+  "image-section-right": {
+    "marginTop": "0",
+    "marginLeft": "10",
+    "width": "225",
+    "height": "146"
+  },
+  "image-section-left": {
+    "marginTop": "0",
+    "marginRight": "10",
+    "width": "225",
+    "height": "146"
+  },
+  "image-list1": {
+    "width": "690",
+    "height": "481"
+  },
+  "image-list2": {
+    "width": "225",
+    "height": "146"
+  },
+  "image-list3": {
+    "width": "225",
+    "height": "146"
+  },
+  "media-info": {
+    "flexDirection": "row"
+  },
+  "info-text": {
+    "marginRight": "20",
+    "color": "#999999",
+    "fontSize": "24"
+  },
+  "media-foot": {
+    "marginTop": "20",
+    "flexDirection": "row",
+    "justifyContent": "space-between"
+  },
+  "max-close-view": {
+    "alignItems": "center",
+    "justifyContent": "flex-end",
+    "flexDirection": "row",
+    "height": "40",
+    "width": "80"
+  },
+  "close-view": {
+    "borderStyle": "solid",
+    "borderWidth": "1",
+    "borderColor": "#999999",
+    "borderRadius": "10",
+    "justifyContent": "center",
+    "height": "30",
+    "width": "40",
+    "lineHeight": "30"
+  },
+  "close": {
+    "textAlign": "center",
+    "color": "#999999",
+    "fontSize": "28"
+  }
+}
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-2181dc86!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue":
-/*!*************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-2181dc86!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue ***!
-  \*************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-2104a5f4!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue":
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-2104a5f4!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -3158,10 +3110,10 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-5fb32d79!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue":
-/*!***********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-5fb32d79!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!/Users/AndyLee/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
-  \***********************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-2158f532!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue":
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-2158f532!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -3207,6 +3159,56 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       class: [_vm.tabIndex === t ? 'active' : '']
     }, [_vm._v(_vm._s(tabBar.name))])])
   }))])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+
+/***/ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-39404bb6!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue":
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-39404bb6!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
+    staticClass: ["list-cell"],
+    on: {
+      "click": _vm.bindClick
+    }
+  }, [(_vm.data.title) ? _c('div', {
+    staticClass: ["media-list"]
+  }, [_c('div', {
+    class: [_vm.isImgRight ? 'media-image-right' : '', _vm.isImgLeft ? 'media-image-left' : '']
+  }, [_c('text', {
+    class: ['media-title', _vm.isImgRight || _vm.isImgLeft ? 'media-title2' : '']
+  }, [_vm._v(_vm._s(_vm.data.title))]), (_vm.showImg) ? _c('div', {
+    class: ['image-section', _vm.isImgRight ? 'image-section-right' : '', _vm.isImgLeft ? 'image-section-left' : '']
+  }, [(_vm.data.image_url) ? _c('image', {
+    class: ['image-list1', _vm.isImgRight || _vm.isImgLeft ? 'image-list2' : ''],
+    attrs: {
+      "src": _vm.data.image_url
+    }
+  }) : _vm._e(), _vm._l((_vm.data.image_list), function(source, i) {
+    return (_vm.data.image_list) ? _c('image', {
+      key: i,
+      staticClass: ["image-list3"],
+      attrs: {
+        "src": source.url
+      }
+    }) : _vm._e()
+  })], 2) : _vm._e()]), _c('div', {
+    staticClass: ["media-foot"]
+  }, [_c('div', {
+    staticClass: ["media-info"]
+  }, [_c('text', {
+    staticClass: ["info-text"]
+  }, [_vm._v(_vm._s(_vm.data.source))]), _c('text', {
+    staticClass: ["info-text"]
+  }, [_vm._v(_vm._s(_vm.data.comment_count))]), _c('text', {
+    staticClass: ["info-text"]
+  }, [_vm._v(_vm._s(_vm.data.datetime))])])])]) : _vm._e()])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

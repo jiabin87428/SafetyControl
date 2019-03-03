@@ -214,7 +214,7 @@
 		<!-- 安全标准化主题 -->
 		<block v-if="currentTemplate == 1">
 			<view class="titleView_pc">
-				<text class="titleText_pc">目标指责</text>
+				<text class="titleText_pc">目标职责</text>
 			</view>
 			<view class="menuBlockView">
 			  <view class='dangerView' @tap="jumpPage('')">

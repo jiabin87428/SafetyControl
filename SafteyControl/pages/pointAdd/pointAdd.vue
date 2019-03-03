@@ -47,7 +47,8 @@
 	import request from '../../util/request.js';
 	import service from '../../service.js';
 	import {
-	    mapState
+	    mapState,
+		mapMutations
 	} from 'vuex'
 	export default {
 		computed: mapState(['sublistItem', 'sublistIndex', 'userInfo']),
@@ -61,6 +62,8 @@
 				showSave: false,
 				// 是否可编辑
 				editable: false,
+				// 页面返回标志 true是不能返回，false是可以返回，很奇怪
+				backPressFlag: true,
 				
 		    obj: '',
 				normal: {// 正常图标
@@ -112,14 +115,41 @@
 				}
 			});
 		},
+		onBackPress() {
+			var that = this;
+			if (that.backPressFlag == true) {
+				uni.showModal({
+					title: '请确认是否有修改需要保存',
+					content: '如果直接返回，所有修改将不作保存。',
+					confirmText: '保存一下',
+					cancelText: '直接返回',
+					success: function (res) {
+						if (res.confirm) {
+							that.saveClick();
+						} else if (res.cancel) {
+							that.backPressFlag = false;
+							console.log('backPressFlag2: ' + that.backPressFlag);
+							uni.navigateBack({
+								delta: 1
+							})
+						}
+					}
+				});
+				console.log('backPressFlag1: ' + that.backPressFlag);
+				return that.backPressFlag;
+			}
+		},
 		onShow() {
 			if (this.needGetItemOnShow == true && this.sublistIndex != null && this.sublistItem != null) {
 				console.log('' + JSON.stringify(this.sublistItem));
 				this.obj.sublist[this.sublistIndex] = this.sublistItem;
+				this.removeSublistItem();
+				console.log('1111111')
 			}
 			this.needGetItemOnShow = false;
 		},
 		methods:{
+			...mapMutations(['removeSublistItem']),
 			bindDateChange: function(e) {
 				this.obj.jcrq = e.target.value
 			},

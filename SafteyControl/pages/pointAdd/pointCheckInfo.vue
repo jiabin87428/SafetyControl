@@ -142,11 +142,6 @@
 			},
 			saveItem() {
 				var that = this;
-				let obj = {
-					item: that.item,
-					index: that.itemIndex
-				}
-				that.setSublistItem(obj);
 				
 				// 上传照片，需要分两种情况，如是从后台加载的，不需要调用上传接口，如果是本地读取还未上传的，需要调上传接口
 				
@@ -160,6 +155,7 @@
 				}
 				
 				if(imgList.length == 0) {
+					that.saveLocalItem();
 					uni.navigateBack({
 						delta: 1
 					})
@@ -170,8 +166,10 @@
 					let data = JSON.parse(res.data);
 					let fj = data.fj;
 					that.item.fj = fj;
+					console.log('Item:',JSON.stringify(that.item));
 				}, function(result){
 					if (result == '200') {
+						that.saveLocalItem();
 						uni.showToast({
 						  title: '上传成功',
 						  complete: setTimeout(function () {
@@ -182,6 +180,15 @@
 						})
 					}
 				});
+			},
+			
+			// 缓存Item，给上一个页面获取
+			saveLocalItem() {
+				let obj = {
+					item: this.item,
+					index: this.itemIndex
+				}
+				this.setSublistItem(obj);
 			},
 			
 			// 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口
