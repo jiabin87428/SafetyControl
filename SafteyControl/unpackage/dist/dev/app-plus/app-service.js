@@ -1058,7 +1058,6 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'58792338-default-58792338-10'])
 Z([3,'7be27b0c-default-7be27b0c-6'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'30c48a99'])
@@ -1066,8 +1065,8 @@ Z([3,'false'])
 Z([3,'true'])
 Z([3,'点位编号'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
 Z([3,'检查人'])
 Z([3,'handleProxy'])
 Z([3,'_picker 7be27b0c'])
@@ -1076,142 +1075,143 @@ Z([1,'7be27b0c-0'])
 Z([3,'date'])
 Z([[6],[[7],[3,'obj']],[3,'jcrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[2])
 Z([3,'检查日期'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
 Z([3,'责任部门'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
 Z([3,'楼层'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
 Z([3,'位置'])
 Z([3,'7be27b0c-default-7be27b0c-11'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[6],[[7],[3,'obj']],[3,'sublist']])
-Z(z[33])
-Z(z[11])
+Z(z[32])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([[2,'+'],[1,'7be27b0c-1-'],[[7],[3,'index']]])
-Z(z[3])
-Z(z[5])
+Z(z[2])
+Z(z[4])
+Z([3,'58792338-default-58792338-10'])
+Z([3,'00eed4f4-default-00eed4f4-1'])
 Z([3,'21b694de-default-21b694de-6'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
 Z(z[4])
 Z(z[5])
-Z(z[6])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
+Z(z[9])
 Z(z[10])
-Z(z[11])
 Z([3,'_picker 21b694de'])
-Z(z[13])
+Z(z[12])
 Z([1,'21b694de-0'])
+Z(z[14])
 Z(z[15])
-Z(z[16])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z(z[19])
+Z(z[2])
+Z(z[18])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
-Z(z[23])
+Z(z[22])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
-Z(z[27])
+Z(z[26])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
 Z(z[3])
-Z(z[4])
-Z(z[31])
+Z(z[30])
 Z([3,'21b694de-default-21b694de-11'])
+Z(z[32])
 Z(z[33])
 Z(z[34])
-Z(z[35])
-Z(z[33])
-Z(z[11])
+Z(z[32])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([[2,'+'],[1,'21b694de-1-'],[[7],[3,'index']]])
-Z(z[3])
-Z(z[5])
-Z([3,'00eed4f4-default-00eed4f4-1'])
-Z([3,'7e389618-default-7e389618-1'])
-Z([3,'1b853e3c-default-1b853e3c-2'])
-Z(z[33])
-Z([3,'name'])
-Z([[7],[3,'xLine']])
-Z(z[33])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'1b853e3c-1-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[2])
 Z(z[4])
-Z([3,'1b853e3c-default-1b853e3c-3'])
 Z([3,'72ed35ad-default-72ed35ad-8'])
-Z(z[11])
+Z(z[10])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
-Z([1,'72ed35ad-0'])
-Z(z[3])
-Z(z[5])
-Z([3,'隐患级别'])
-Z(z[11])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
-Z([1,'72ed35ad-1'])
-Z(z[3])
-Z(z[5])
-Z([3,'隐患分类'])
-Z(z[11])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
-Z([1,'72ed35ad-2'])
-Z(z[3])
-Z(z[5])
-Z([3,'隐患描述'])
-Z(z[11])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[12])
 Z([1,'72ed35ad-3'])
-Z(z[3])
-Z(z[5])
-Z([3,'对应条款'])
-Z(z[11])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[13])
+Z(z[2])
+Z(z[4])
+Z([3,'隐患级别'])
+Z(z[10])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[12])
 Z([1,'72ed35ad-4'])
-Z(z[3])
-Z(z[5])
-Z([3,'整改建议'])
-Z(z[11])
-Z([3,'_picker 72ed35ad'])
-Z(z[13])
+Z(z[2])
+Z(z[4])
+Z([3,'隐患分类'])
+Z(z[10])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[12])
 Z([1,'72ed35ad-5'])
-Z(z[15])
+Z(z[2])
+Z(z[4])
+Z([3,'隐患描述'])
+Z(z[10])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[12])
+Z([1,'72ed35ad-6'])
+Z(z[2])
+Z(z[4])
+Z([3,'对应条款'])
+Z(z[10])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[12])
+Z([1,'72ed35ad-7'])
+Z(z[2])
+Z(z[4])
+Z([3,'整改建议'])
+Z(z[10])
+Z([3,'_picker 72ed35ad'])
+Z(z[12])
+Z([1,'72ed35ad-8'])
+Z(z[14])
 Z([[7],[3,'checkDate']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z(z[19])
+Z(z[2])
+Z(z[18])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
-Z(z[5])
+Z(z[2])
+Z(z[4])
+Z(z[9])
 Z(z[10])
-Z(z[11])
-Z(z[133])
-Z(z[13])
-Z([1,'72ed35ad-6'])
-Z(z[15])
+Z(z[123])
+Z(z[12])
+Z([1,'72ed35ad-9'])
+Z(z[14])
 Z([[7],[3,'deadLine']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[3])
+Z(z[2])
 Z([3,'整改期限'])
+Z([3,'7e389618-default-7e389618-1'])
+Z([3,'1b853e3c-default-1b853e3c-2'])
+Z(z[32])
+Z([3,'name'])
+Z([[7],[3,'xLine']])
+Z(z[32])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'1b853e3c-1-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[2])
+Z(z[3])
+Z([3,'1b853e3c-default-1b853e3c-3'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
@@ -1821,22 +1821,7 @@ __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/drawer/uni-drawer.vue.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','/components/drawer/hj-dragabledrawer.vue.wxml','./components/drawer/hj-dragabledrawer.vue.wxml','/common/slots.wxml','./components/drawer/uni-drawer.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/danger/addDanger.vue.wxml','./pages/danger/addDanger.wxml','./addDanger.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pointList/pointList.vue.wxml','./pages/pointList/pointList.wxml','./pointList.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/statistics/statistics.vue.wxml','./pages/statistics/statistics.wxml','./statistics.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
-d_[x[0]]["58792338-default-58792338-10"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':58792338-default-58792338-10'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
+var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/drawer/uni-drawer.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','/components/drawer/hj-dragabledrawer.vue.wxml','./components/drawer/hj-dragabledrawer.vue.wxml','/common/slots.wxml','./components/drawer/uni-drawer.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/danger/addDanger.vue.wxml','./pages/danger/addDanger.wxml','./addDanger.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pointList/pointList.vue.wxml','./pages/pointList/pointList.wxml','./pointList.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/statistics/statistics.vue.wxml','./pages/statistics/statistics.wxml','./statistics.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
 d_[x[0]]["7be27b0c-default-7be27b0c-6"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':7be27b0c-default-7be27b0c-6'
@@ -1847,91 +1832,91 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:10:47")
-var xC=_oz(z,3,e,s,gg)
+cs.push("./common/slots.wxml:template:8:47")
+var xC=_oz(z,2,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,2,e,s,gg) || {}
+var fE=_1z(z,1,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],10,176)
+else _w(xC,x[0],8,176)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:10:199")
-var hG=_oz(z,8,e,s,gg)
+cs.push("./common/slots.wxml:template:8:199")
+var hG=_oz(z,7,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,7,e,s,gg) || {}
+var cI=_1z(z,6,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],10,307)
+else _w(hG,x[0],8,307)
 cs.pop()
-cs.push("./common/slots.wxml:picker:10:330")
-var oJ=_mz(z,'picker',['bindchange',11,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:8:330")
+var oJ=_mz(z,'picker',['bindchange',10,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:10:474")
-var aL=_oz(z,18,e,s,gg)
+cs.push("./common/slots.wxml:template:8:474")
+var aL=_oz(z,17,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
-var eN=_1z(z,17,e,s,gg) || {}
+var eN=_1z(z,16,e,s,gg) || {}
 var cur_globalf=gg.f
 lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],10,566)
+else _w(aL,x[0],8,566)
 cs.pop()
 cs.pop()
 _(r,oJ)
 var bO=_v()
 _(r,bO)
-cs.push("./common/slots.wxml:template:10:598")
-var oP=_oz(z,21,e,s,gg)
+cs.push("./common/slots.wxml:template:8:598")
+var oP=_oz(z,20,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,20,e,s,gg) || {}
+var oR=_1z(z,19,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],10,709)
+else _w(oP,x[0],8,709)
 cs.pop()
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:10:732")
-var cT=_oz(z,25,e,s,gg)
+cs.push("./common/slots.wxml:template:8:732")
+var cT=_oz(z,24,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
-var oV=_1z(z,24,e,s,gg) || {}
+var oV=_1z(z,23,e,s,gg) || {}
 var cur_globalf=gg.f
 fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],10,837)
+else _w(cT,x[0],8,837)
 cs.pop()
 var cW=_v()
 _(r,cW)
-cs.push("./common/slots.wxml:template:10:860")
-var oX=_oz(z,29,e,s,gg)
+cs.push("./common/slots.wxml:template:8:860")
+var oX=_oz(z,28,e,s,gg)
 var lY=_gd(x[0],oX,e_,d_)
 if(lY){
-var aZ=_1z(z,28,e,s,gg) || {}
+var aZ=_1z(z,27,e,s,gg) || {}
 var cur_globalf=gg.f
 cW.wxXCkey=3
 lY(aZ,aZ,cW,gg)
 gg.f=cur_globalf
 }
-else _w(oX,x[0],10,965)
+else _w(oX,x[0],8,965)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -1950,27 +1935,57 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:12:48")
+cs.push("./common/slots.wxml:template:10:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:12:48")
-var cI=_oz(z,41,fE,oD,gg)
+cs.push("./common/slots.wxml:template:10:48")
+var cI=_oz(z,40,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,38,fE,oD,gg) || {}
+var lK=_1z(z,37,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],12,247)
+else _w(cI,x[0],10,247)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,35,xC,e,s,gg,oB,'item','index','index')
+_2z(z,34,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["58792338-default-58792338-10"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':58792338-default-58792338-10'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["00eed4f4-default-00eed4f4-1"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':00eed4f4-default-00eed4f4-1'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
 }catch(err){
 p_[b]=false
 throw err
@@ -1988,91 +2003,91 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:14:47")
-var xC=_oz(z,45,e,s,gg)
+cs.push("./common/slots.wxml:template:16:47")
+var xC=_oz(z,46,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,44,e,s,gg) || {}
+var fE=_1z(z,45,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],14,176)
+else _w(xC,x[0],16,176)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:14:199")
-var hG=_oz(z,50,e,s,gg)
+cs.push("./common/slots.wxml:template:16:199")
+var hG=_oz(z,51,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,49,e,s,gg) || {}
+var cI=_1z(z,50,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],14,307)
+else _w(hG,x[0],16,307)
 cs.pop()
-cs.push("./common/slots.wxml:picker:14:330")
-var oJ=_mz(z,'picker',['bindchange',53,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:16:330")
+var oJ=_mz(z,'picker',['bindchange',54,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:14:474")
-var aL=_oz(z,60,e,s,gg)
+cs.push("./common/slots.wxml:template:16:474")
+var aL=_oz(z,61,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
-var eN=_1z(z,59,e,s,gg) || {}
+var eN=_1z(z,60,e,s,gg) || {}
 var cur_globalf=gg.f
 lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],14,566)
+else _w(aL,x[0],16,566)
 cs.pop()
 cs.pop()
 _(r,oJ)
 var bO=_v()
 _(r,bO)
-cs.push("./common/slots.wxml:template:14:598")
-var oP=_oz(z,63,e,s,gg)
+cs.push("./common/slots.wxml:template:16:598")
+var oP=_oz(z,64,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,62,e,s,gg) || {}
+var oR=_1z(z,63,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],14,709)
+else _w(oP,x[0],16,709)
 cs.pop()
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:14:732")
-var cT=_oz(z,67,e,s,gg)
+cs.push("./common/slots.wxml:template:16:732")
+var cT=_oz(z,68,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
-var oV=_1z(z,66,e,s,gg) || {}
+var oV=_1z(z,67,e,s,gg) || {}
 var cur_globalf=gg.f
 fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],14,837)
+else _w(cT,x[0],16,837)
 cs.pop()
 var cW=_v()
 _(r,cW)
-cs.push("./common/slots.wxml:template:14:860")
-var oX=_oz(z,71,e,s,gg)
+cs.push("./common/slots.wxml:template:16:860")
+var oX=_oz(z,72,e,s,gg)
 var lY=_gd(x[0],oX,e_,d_)
 if(lY){
-var aZ=_1z(z,70,e,s,gg) || {}
+var aZ=_1z(z,71,e,s,gg) || {}
 var cur_globalf=gg.f
 cW.wxXCkey=3
 lY(aZ,aZ,cW,gg)
 gg.f=cur_globalf
 }
-else _w(oX,x[0],14,965)
+else _w(oX,x[0],16,965)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2091,26 +2106,26 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:16:48")
+cs.push("./common/slots.wxml:template:18:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:16:48")
-var cI=_oz(z,83,fE,oD,gg)
+cs.push("./common/slots.wxml:template:18:48")
+var cI=_oz(z,84,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,80,fE,oD,gg) || {}
+var lK=_1z(z,81,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],16,247)
+else _w(cI,x[0],18,247)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,77,xC,e,s,gg,oB,'item','index','index')
+_2z(z,78,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2119,14 +2134,134 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[0]]["00eed4f4-default-00eed4f4-1"]=function(e,s,r,gg){
+d_[x[0]]["72ed35ad-default-72ed35ad-8"]=function(e,s,r,gg){
 var z=gz$gwx_1()
-var b=x[0]+':00eed4f4-default-00eed4f4-1'
+var b=x[0]+':72ed35ad-default-72ed35ad-8'
 r.wxVkey=b
 gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:20:47")
+var xC=_oz(z,91,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,88,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],20,232)
+cs.pop()
+var cF=_v()
+_(r,cF)
+cs.push("./common/slots.wxml:template:20:255")
+var hG=_oz(z,98,e,s,gg)
+var oH=_gd(x[0],hG,e_,d_)
+if(oH){
+var cI=_1z(z,95,e,s,gg) || {}
+var cur_globalf=gg.f
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
+gg.f=cur_globalf
+}
+else _w(hG,x[0],20,440)
+cs.pop()
+var oJ=_v()
+_(r,oJ)
+cs.push("./common/slots.wxml:template:20:463")
+var lK=_oz(z,105,e,s,gg)
+var aL=_gd(x[0],lK,e_,d_)
+if(aL){
+var tM=_1z(z,102,e,s,gg) || {}
+var cur_globalf=gg.f
+oJ.wxXCkey=3
+aL(tM,tM,oJ,gg)
+gg.f=cur_globalf
+}
+else _w(lK,x[0],20,648)
+cs.pop()
+var eN=_v()
+_(r,eN)
+cs.push("./common/slots.wxml:template:20:671")
+var bO=_oz(z,112,e,s,gg)
+var oP=_gd(x[0],bO,e_,d_)
+if(oP){
+var xQ=_1z(z,109,e,s,gg) || {}
+var cur_globalf=gg.f
+eN.wxXCkey=3
+oP(xQ,xQ,eN,gg)
+gg.f=cur_globalf
+}
+else _w(bO,x[0],20,856)
+cs.pop()
+var oR=_v()
+_(r,oR)
+cs.push("./common/slots.wxml:template:20:879")
+var fS=_oz(z,119,e,s,gg)
+var cT=_gd(x[0],fS,e_,d_)
+if(cT){
+var hU=_1z(z,116,e,s,gg) || {}
+var cur_globalf=gg.f
+oR.wxXCkey=3
+cT(hU,hU,oR,gg)
+gg.f=cur_globalf
+}
+else _w(fS,x[0],20,1064)
+cs.pop()
+cs.push("./common/slots.wxml:picker:20:1087")
+var oV=_mz(z,'picker',['bindchange',122,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var cW=_v()
+_(oV,cW)
+cs.push("./common/slots.wxml:template:20:1232")
+var oX=_oz(z,129,e,s,gg)
+var lY=_gd(x[0],oX,e_,d_)
+if(lY){
+var aZ=_1z(z,128,e,s,gg) || {}
+var cur_globalf=gg.f
+cW.wxXCkey=3
+lY(aZ,aZ,cW,gg)
+gg.f=cur_globalf
+}
+else _w(oX,x[0],20,1324)
+cs.pop()
+cs.pop()
+_(r,oV)
+var t1=_v()
+_(r,t1)
+cs.push("./common/slots.wxml:template:20:1356")
+var e2=_oz(z,132,e,s,gg)
+var b3=_gd(x[0],e2,e_,d_)
+if(b3){
+var o4=_1z(z,131,e,s,gg) || {}
+var cur_globalf=gg.f
+t1.wxXCkey=3
+b3(o4,o4,t1,gg)
+gg.f=cur_globalf
+}
+else _w(e2,x[0],20,1463)
+cs.pop()
+cs.push("./common/slots.wxml:picker:20:1486")
+var x5=_mz(z,'picker',['bindchange',135,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var o6=_v()
+_(x5,o6)
+cs.push("./common/slots.wxml:template:20:1630")
+var f7=_oz(z,142,e,s,gg)
+var c8=_gd(x[0],f7,e_,d_)
+if(c8){
+var h9=_1z(z,141,e,s,gg) || {}
+var cur_globalf=gg.f
+o6.wxXCkey=3
+c8(h9,h9,o6,gg)
+gg.f=cur_globalf
+}
+else _w(f7,x[0],20,1722)
+cs.pop()
+cs.pop()
+_(r,x5)
 }catch(err){
 p_[b]=false
 throw err
@@ -2159,26 +2294,26 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:22:47")
+cs.push("./common/slots.wxml:template:24:47")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:22:47")
-var cI=_oz(z,93,fE,oD,gg)
+cs.push("./common/slots.wxml:template:24:47")
+var cI=_oz(z,151,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,92,fE,oD,gg) || {}
+var lK=_1z(z,150,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],22,159)
+else _w(cI,x[0],24,159)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,90,xC,e,s,gg,oB,'name','index','index')
+_2z(z,148,xC,e,s,gg,oB,'name','index','index')
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2195,141 +2330,6 @@ gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["72ed35ad-default-72ed35ad-8"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':72ed35ad-default-72ed35ad-8'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:26:47")
-var xC=_oz(z,101,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,98,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],26,232)
-cs.pop()
-var cF=_v()
-_(r,cF)
-cs.push("./common/slots.wxml:template:26:255")
-var hG=_oz(z,108,e,s,gg)
-var oH=_gd(x[0],hG,e_,d_)
-if(oH){
-var cI=_1z(z,105,e,s,gg) || {}
-var cur_globalf=gg.f
-cF.wxXCkey=3
-oH(cI,cI,cF,gg)
-gg.f=cur_globalf
-}
-else _w(hG,x[0],26,440)
-cs.pop()
-var oJ=_v()
-_(r,oJ)
-cs.push("./common/slots.wxml:template:26:463")
-var lK=_oz(z,115,e,s,gg)
-var aL=_gd(x[0],lK,e_,d_)
-if(aL){
-var tM=_1z(z,112,e,s,gg) || {}
-var cur_globalf=gg.f
-oJ.wxXCkey=3
-aL(tM,tM,oJ,gg)
-gg.f=cur_globalf
-}
-else _w(lK,x[0],26,648)
-cs.pop()
-var eN=_v()
-_(r,eN)
-cs.push("./common/slots.wxml:template:26:671")
-var bO=_oz(z,122,e,s,gg)
-var oP=_gd(x[0],bO,e_,d_)
-if(oP){
-var xQ=_1z(z,119,e,s,gg) || {}
-var cur_globalf=gg.f
-eN.wxXCkey=3
-oP(xQ,xQ,eN,gg)
-gg.f=cur_globalf
-}
-else _w(bO,x[0],26,856)
-cs.pop()
-var oR=_v()
-_(r,oR)
-cs.push("./common/slots.wxml:template:26:879")
-var fS=_oz(z,129,e,s,gg)
-var cT=_gd(x[0],fS,e_,d_)
-if(cT){
-var hU=_1z(z,126,e,s,gg) || {}
-var cur_globalf=gg.f
-oR.wxXCkey=3
-cT(hU,hU,oR,gg)
-gg.f=cur_globalf
-}
-else _w(fS,x[0],26,1064)
-cs.pop()
-cs.push("./common/slots.wxml:picker:26:1087")
-var oV=_mz(z,'picker',['bindchange',132,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
-var cW=_v()
-_(oV,cW)
-cs.push("./common/slots.wxml:template:26:1232")
-var oX=_oz(z,139,e,s,gg)
-var lY=_gd(x[0],oX,e_,d_)
-if(lY){
-var aZ=_1z(z,138,e,s,gg) || {}
-var cur_globalf=gg.f
-cW.wxXCkey=3
-lY(aZ,aZ,cW,gg)
-gg.f=cur_globalf
-}
-else _w(oX,x[0],26,1324)
-cs.pop()
-cs.pop()
-_(r,oV)
-var t1=_v()
-_(r,t1)
-cs.push("./common/slots.wxml:template:26:1356")
-var e2=_oz(z,142,e,s,gg)
-var b3=_gd(x[0],e2,e_,d_)
-if(b3){
-var o4=_1z(z,141,e,s,gg) || {}
-var cur_globalf=gg.f
-t1.wxXCkey=3
-b3(o4,o4,t1,gg)
-gg.f=cur_globalf
-}
-else _w(e2,x[0],26,1463)
-cs.pop()
-cs.push("./common/slots.wxml:picker:26:1486")
-var x5=_mz(z,'picker',['bindchange',145,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
-var o6=_v()
-_(x5,o6)
-cs.push("./common/slots.wxml:template:26:1630")
-var f7=_oz(z,152,e,s,gg)
-var c8=_gd(x[0],f7,e_,d_)
-if(c8){
-var h9=_1z(z,151,e,s,gg) || {}
-var cur_globalf=gg.f
-o6.wxXCkey=3
-c8(h9,h9,o6,gg)
-gg.f=cur_globalf
-}
-else _w(f7,x[0],26,1722)
-cs.pop()
-cs.pop()
-_(r,x5)
 }catch(err){
 p_[b]=false
 throw err
@@ -2664,13 +2664,13 @@ return r
 var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
 var oJ=e_[x[12]].i
-_ai(oJ,x[4],e_,x[12],1,1)
+_ai(oJ,x[3],e_,x[12],1,1)
 _ai(oJ,x[13],e_,x[12],1,61)
 oJ.pop()
 oJ.pop()
 return r
 }
-e_[x[12]]={f:m5,j:[],i:[],ti:[x[4],x[13]],ic:[]}
+e_[x[12]]={f:m5,j:[],i:[],ti:[x[3],x[13]],ic:[]}
 d_[x[14]]={}
 d_[x[14]]["3b6bb3ad"]=function(e,s,r,gg){
 var z=gz$gwx_7()
@@ -2904,7 +2904,7 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./pages/danger/addDanger.vue.wxml:template:1:345")
+cs.push("./pages/danger/addDanger.vue.wxml:template:1:1504")
 var xC=_oz(z,2,e,s,gg)
 var oD=_gd(x[22],xC,e_,d_)
 if(oD){
@@ -2914,7 +2914,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[22],1,460)
+else _w(xC,x[22],1,1619)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2926,13 +2926,13 @@ return r
 var m12=function(e,s,r,gg){
 var z=gz$gwx_13()
 var lY=e_[x[22]].i
-_ai(lY,x[2],e_,x[22],1,1)
-_ai(lY,x[3],e_,x[22],1,61)
+_ai(lY,x[1],e_,x[22],1,1)
+_ai(lY,x[2],e_,x[22],1,61)
 lY.pop()
 lY.pop()
 return r
 }
-e_[x[22]]={f:m12,j:[],i:[],ti:[x[2],x[3]],ic:[]}
+e_[x[22]]={f:m12,j:[],i:[],ti:[x[1],x[2]],ic:[]}
 d_[x[23]]={}
 var m13=function(e,s,r,gg){
 var z=gz$gwx_14()
@@ -3546,8 +3546,8 @@ var m28=function(e,s,r,gg){
 var z=gz$gwx_29()
 var xOC=e_[x[47]].i
 _ai(xOC,x[5],e_,x[47],1,1)
-_ai(xOC,x[2],e_,x[47],1,64)
-_ai(xOC,x[3],e_,x[47],1,124)
+_ai(xOC,x[1],e_,x[47],1,64)
+_ai(xOC,x[2],e_,x[47],1,124)
 _ai(xOC,x[6],e_,x[47],1,194)
 xOC.pop()
 xOC.pop()
@@ -3555,7 +3555,7 @@ xOC.pop()
 xOC.pop()
 return r
 }
-e_[x[47]]={f:m28,j:[],i:[],ti:[x[5],x[2],x[3],x[6]],ic:[]}
+e_[x[47]]={f:m28,j:[],i:[],ti:[x[5],x[1],x[2],x[6]],ic:[]}
 d_[x[48]]={}
 var m29=function(e,s,r,gg){
 var z=gz$gwx_30()
@@ -3697,15 +3697,15 @@ return r
 var m30=function(e,s,r,gg){
 var z=gz$gwx_31()
 var lWC=e_[x[50]].i
-_ai(lWC,x[2],e_,x[50],1,1)
-_ai(lWC,x[3],e_,x[50],1,61)
-_ai(lWC,x[4],e_,x[50],1,131)
+_ai(lWC,x[1],e_,x[50],1,1)
+_ai(lWC,x[2],e_,x[50],1,61)
+_ai(lWC,x[3],e_,x[50],1,131)
 lWC.pop()
 lWC.pop()
 lWC.pop()
 return r
 }
-e_[x[50]]={f:m30,j:[],i:[],ti:[x[2],x[3],x[4]],ic:[]}
+e_[x[50]]={f:m30,j:[],i:[],ti:[x[1],x[2],x[3]],ic:[]}
 d_[x[51]]={}
 var m31=function(e,s,r,gg){
 var z=gz$gwx_32()
@@ -4008,15 +4008,15 @@ return r
 var m36=function(e,s,r,gg){
 var z=gz$gwx_37()
 var fID=e_[x[59]].i
-_ai(fID,x[2],e_,x[59],1,1)
-_ai(fID,x[3],e_,x[59],1,61)
-_ai(fID,x[4],e_,x[59],1,131)
+_ai(fID,x[1],e_,x[59],1,1)
+_ai(fID,x[2],e_,x[59],1,61)
+_ai(fID,x[3],e_,x[59],1,131)
 fID.pop()
 fID.pop()
 fID.pop()
 return r
 }
-e_[x[59]]={f:m36,j:[],i:[],ti:[x[2],x[3],x[4]],ic:[]}
+e_[x[59]]={f:m36,j:[],i:[],ti:[x[1],x[2],x[3]],ic:[]}
 d_[x[60]]={}
 var m37=function(e,s,r,gg){
 var z=gz$gwx_38()
@@ -4081,11 +4081,11 @@ return r
 var m38=function(e,s,r,gg){
 var z=gz$gwx_39()
 var tQD=e_[x[62]].i
-_ai(tQD,x[1],e_,x[62],1,1)
+_ai(tQD,x[4],e_,x[62],1,1)
 tQD.pop()
 return r
 }
-e_[x[62]]={f:m38,j:[],i:[],ti:[x[1]],ic:[]}
+e_[x[62]]={f:m38,j:[],i:[],ti:[x[4]],ic:[]}
 d_[x[63]]={}
 var m39=function(e,s,r,gg){
 var z=gz$gwx_40()
@@ -5174,7 +5174,7 @@ eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  * http://222.223.19.166:10012/boeb9，外网\n  * http://10.57.167.214:8080/boeb9，内网\n  */\nvar host = \"http://222.223.19.166:10012/boeb9\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n\n  // 点位检查扫码接口\n  scan: '/mobile/dwsm.do',\n\n  // 扫码新增检查\n  UpdatePoint: '/mobile/updateJcjl.do',\n\n  // 获取Tab页上的数量\n  getTabCounts: '/mobile/getTabCount.do',\n\n  // 获取检查详情\n  getPointDetail: '/mobile/getJcjl.do',\n\n  // 首页统计\n  getMainPageCount: '/mobile/getSytj.do',\n\n  // 报警设备类型统计\n  alertDeviceCount: '/mobile/bjsblx.do',\n\n  // 报警事件类型统计\n  alertEventCount: '/mobile/bjsjlx.do',\n\n  // 阀组压力统计\n  alertValveCount: '/mobile/ylfz.do',\n  // 阀组压力统计 - 根据楼层获取阀组编号\n  getValveDataByFloor: '/mobile/getfz.do',\n\n  // 上传图片\n  uploadImage: '/uploadImg',\n\n  // 加载图片\n  loadImage: '/mobile/loadYhzp.do?fileid=',\n\n  // 删除图片\n  deleteImage: '/mobile/delZp.do',\n\n  // ------隐患相关-------\n  // 添加/修改隐患\n  editDanger: '/mobile/updateYhzg.do' };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?a0b7");
+eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  * http://222.223.19.166:10012/boeb9，外网\n  * http://10.57.167.214:8080/boeb9，内网\n  */\nvar host = \"http://10.57.167.214:8080/boeb9\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n\n  // 点位检查扫码接口\n  scan: '/mobile/dwsm.do',\n\n  // 扫码新增检查\n  UpdatePoint: '/mobile/updateJcjl.do',\n\n  // 获取Tab页上的数量\n  getTabCounts: '/mobile/getTabCount.do',\n\n  // 获取检查详情\n  getPointDetail: '/mobile/getJcjl.do',\n\n  // 首页统计\n  getMainPageCount: '/mobile/getSytj.do',\n\n  // 报警设备类型统计\n  alertDeviceCount: '/mobile/bjsblx.do',\n\n  // 报警事件类型统计\n  alertEventCount: '/mobile/bjsjlx.do',\n\n  // 阀组压力统计\n  alertValveCount: '/mobile/ylfz.do',\n  // 阀组压力统计 - 根据楼层获取阀组编号\n  getValveDataByFloor: '/mobile/getfz.do',\n\n  // 上传图片\n  uploadImage: '/uploadImg',\n\n  // 加载图片\n  loadImage: '/mobile/loadYhzp.do?fileid=',\n\n  // 删除图片\n  deleteImage: '/mobile/delZp.do',\n\n  // ------隐患相关-------\n  // 添加/修改隐患\n  editDanger: '/mobile/updateYhzg.do' };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?a0b7");
 
 /***/ }),
 
@@ -7444,7 +7444,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: (0, _vuex.mapState)(['sublistItem', 'sublistIndex', 'userInfo', 'inputPageText', 'key']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      // 当页面OnShow的时候是否需要从state里去拿输入的内容\n      needGetInputOnShow: false,\n      // 上传照片相关\n      imageViewHeight: 100,\n      imageList: [],\n      littleImageWidth: 0,\n\n      // 页面参数，接口需要的参数\n      dangerId: '', // 隐患id\n      dangerLevel: '', // 隐患级别\n      dangerType: '', // 隐患分类\n      dangerDesc: '', // 隐患描述\n      dangerClause: '', // 对应条款\n      dangerAdvise: '', // 整改建议\n      checkDate: '', // 检查时间\n      checkPeople: '', // 检查人\n      deadLine: '', // 整改期限\n\n\n      // --------数据模板---------\n      // 隐患级别\n      dangerLevelData: ['一般隐患', '重大隐患'],\n      // 隐患分类\n      dangerTypeData: ['自行输入分类', '从分类库选择'],\n      // 隐患描述\n      dangerDescData: ['从隐患库选择/检索', '自行输入问题', '从常用隐患库选择'],\n      // 对应条款\n      dangerClauseData: ['从隐患库选择/检索', '自行输入问题', '从法规库选择'] };\n\n  },\n  onLoad: function onLoad() {\n    this.littleImageWidth = (uni.getSystemInfoSync().windowWidth - 50) / 4;\n    this.checkPeople = this.userInfo.fullname;\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onShow: function onShow() {\n    if (this.needGetInputOnShow == true) {\n      this.$data[this.key] = this.inputPageText;\n      this.needGetInputOnShow = false;\n      this.removeInputItem();\n    }\n  },\n  methods: _objectSpread({},\n  (0, _vuex.mapMutations)(['removeInputItem']), {\n    // 选择隐患级别\n    selectedDangerLevel: function selectedDangerLevel(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.dangerLevelData,\n        success: function success(res) {\n          that.dangerLevel = that.dangerLevelData[res.tapIndex];\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择隐患分类\n    selectedDangerType: function selectedDangerType(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.dangerTypeData,\n        success: function success(res) {\n          if (res.tapIndex == 0) {// 自行输入\n            this.needGetInputOnShow = true;\n            that.jumpInput(that.dangerType, 'dangerType', '请输入隐患分类');\n          } else {// 从分类库选择\n\n          }\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择隐患描述\n    selectedDangerDesc: function selectedDangerDesc(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.dangerDescData,\n        success: function success(res) {\n          if (res.tapIndex == 0) {// 从隐患库选择/检索\n\n          } else if (res.tapIndex == 1) {// 自行输入\n            this.needGetInputOnShow = true;\n            that.jumpInput(that.dangerDesc, 'dangerDesc', '请输入隐患描述');\n          } else {// 从常用隐患库选择\n\n          }\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择对应条款\n    selectedDangerClause: function selectedDangerClause(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.dangerClauseData,\n        success: function success(res) {\n          if (res.tapIndex == 0) {// 从隐患库选择/检索\n\n          } else if (res.tapIndex == 1) {// 自行输入\n            this.needGetInputOnShow = true;\n            that.jumpInput(that.dangerClause, 'dangerClause', '请输入对应条款');\n          } else {// 从法规库选择\n\n          }\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择检查日期\n    checkDateChange: function checkDateChange(e) {\n      this.checkDate = e.target.value;\n    },\n    // 选择整改期限\n    deadLineChange: function deadLineChange(e) {\n      this.deadLine = e.target.value;\n    },\n    // 保存\n    saveClick: function saveClick() {\n      var that = this;\n      var param = {\n        refid: that.dangerId,\n        yhjb: that.dangerLevel,\n        yhfl: that.dangerType,\n        yhms: that.dangerDesc,\n        dytk: that.dangerClause,\n        zgjy: that.dangerAdvise,\n        jcsj: that.checkDate,\n        jcr: that.checkPeople,\n        zgqx: that.deadLine,\n        userid: that.userInfo.userid };\n\n      _request.default.requestLoading(_config.default.editDanger, param, '正在加载',\n      function (res) {\n        uni.showToast({\n          icon: 'none',\n          title: '保存成功',\n          duration: 1000 });\n\n        that.dangerId = res.id;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '保存失败' });\n\n      }, function () {\n\n      });\n    },\n    jumpInput: function jumpInput(text, key) {var placeholder = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '请输入描述';\n      this.needGetInputOnShow = true;\n      uni.navigateTo({\n        url: '../common/inputPage?text=' + text + '&key=' + key + '&placeholder=' + placeholder + '' });\n\n    } }) };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/danger/addDanger.vue?vue&type=script&lang=js&?ff08");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: (0, _vuex.mapState)(['sublistItem', 'sublistIndex', 'userInfo', 'inputPageText', 'key']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      // 当页面OnShow的时候是否需要从state里去拿输入的内容\n      needGetInputOnShow: false,\n      // 上传照片相关\n      imageViewHeight: 100,\n      imageList: [],\n      littleImageWidth: 0,\n\n      // 页面参数，接口需要的参数\n      dangerId: '', // 隐患id\n      dangerLevel: '', // 隐患级别\n      dangerType: '', // 隐患分类\n      dangerDesc: '', // 隐患描述\n      dangerClause: '', // 对应条款\n      dangerAdvise: '', // 整改建议\n      checkDate: '', // 检查时间\n      checkPeople: '', // 检查人\n      deadLine: '', // 整改期限\n\n\n      // --------数据模板---------\n      // 隐患级别\n      dangerLevelData: ['一般隐患', '重大隐患'],\n      // 隐患分类\n      dangerTypeData: ['自行输入分类', '从分类库选择'],\n      // 隐患描述\n      dangerDescData: ['从隐患库选择/检索', '自行输入问题', '从常用隐患库选择'],\n      // 对应条款\n      dangerClauseData: ['从隐患库选择/检索', '自行输入问题', '从法规库选择'] };\n\n  },\n  onLoad: function onLoad() {\n    this.littleImageWidth = (uni.getSystemInfoSync().windowWidth - 50) / 4;\n    this.checkPeople = this.userInfo.fullname;\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onShow: function onShow() {\n    if (this.needGetInputOnShow == true) {\n      this.$data[this.key] = this.inputPageText;\n      this.needGetInputOnShow = false;\n      this.removeInputItem();\n    }\n  },\n  methods: _objectSpread({},\n  (0, _vuex.mapMutations)(['removeInputItem']), {\n    // 选择隐患级别\n    selectedDangerLevel: function selectedDangerLevel(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.dangerLevelData,\n        success: function success(res) {\n          that.dangerLevel = that.dangerLevelData[res.tapIndex];\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择隐患分类\n    selectedDangerType: function selectedDangerType(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.dangerTypeData,\n        success: function success(res) {\n          if (res.tapIndex == 0) {// 自行输入\n            this.needGetInputOnShow = true;\n            that.jumpInput(that.dangerType, 'dangerType', '请输入隐患分类');\n          } else {// 从分类库选择\n\n          }\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择隐患描述\n    selectedDangerDesc: function selectedDangerDesc(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.dangerDescData,\n        success: function success(res) {\n          if (res.tapIndex == 0) {// 从隐患库选择/检索\n\n          } else if (res.tapIndex == 1) {// 自行输入\n            this.needGetInputOnShow = true;\n            that.jumpInput(that.dangerDesc, 'dangerDesc', '请输入隐患描述');\n          } else {// 从常用隐患库选择\n\n          }\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择对应条款\n    selectedDangerClause: function selectedDangerClause(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.dangerClauseData,\n        success: function success(res) {\n          if (res.tapIndex == 0) {// 从隐患库选择/检索\n\n          } else if (res.tapIndex == 1) {// 自行输入\n            this.needGetInputOnShow = true;\n            that.jumpInput(that.dangerClause, 'dangerClause', '请输入对应条款');\n          } else {// 从法规库选择\n\n          }\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择检查日期\n    checkDateChange: function checkDateChange(e) {\n      this.checkDate = e.target.value;\n    },\n    // 选择整改期限\n    deadLineChange: function deadLineChange(e) {\n      this.deadLine = e.target.value;\n    },\n    // 保存\n    saveClick: function saveClick() {\n      var that = this;\n      var param = {\n        refid: that.dangerId,\n        yhjb: that.dangerLevel,\n        yhfl: that.dangerType,\n        yhms: that.dangerDesc,\n        dytk: that.dangerClause,\n        zgjy: that.dangerAdvise,\n        jcsj: that.checkDate,\n        jcr: that.checkPeople,\n        zgqx: that.deadLine,\n        userid: that.userInfo.userid };\n\n      _request.default.requestLoading(_config.default.editDanger, param, '正在加载',\n      function (res) {\n        uni.showToast({\n          icon: 'none',\n          title: '保存成功',\n          duration: 1000 });\n\n        that.dangerId = res.id;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '保存失败' });\n\n      }, function () {\n\n      });\n    },\n    jumpInput: function jumpInput(text, key) {var placeholder = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '请输入描述';\n      this.needGetInputOnShow = true;\n      uni.navigateTo({\n        url: '../common/inputPage?text=' + text + '&key=' + key + '&placeholder=' + placeholder + '' });\n\n    },\n    // 上传照片功能-添加照片\n    addPhoto: function addPhoto() {\n      var that = this;\n      uni.chooseImage({\n        count: 9, //默认9\n        sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有\n        sourceType: ['album', 'camera'], //从相册选择\n        success: function success(res) {\n          console.log(JSON.stringify(res.tempFilePaths));\n          for (var i = 0; i < res.tempFilePaths.length; i++) {\n            var imgObj = { //\ttype：1为新增需要上传，2为加载的，不需要上传\n              fileid: '',\n              src: res.tempFilePaths[i],\n              type: 1 };\n\n            that.imageList.push(imgObj);\n          }\n        } });\n\n    },\n    // 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口\n    deleteImage: function deleteImage(imgObj, index) {\n      var that = this;\n      if (imgObj.src.startsWith('http:')) {// 网络图片\n        var obj = {\n          item: that.item,\n          index: that.itemIndex };\n\n        that.setSublistItem(obj);\n\n        var param = {\n          from: 'jc',\n          yyid: that.item.id,\n          fileid: imgObj.fileid,\n          userid: that.userInfo.userid };\n\n        _request.default.requestLoading(_config.default.deleteImage, param, '正在删除图片',\n        function (res) {\n          console.log('删除成功：' + JSON.stringify(res));\n          that.item.fj = res.fj;\n          that.imageList.splice(index, 1);\n        }, function () {\n          uni.showToast({\n            icon: 'none',\n            title: '删除失败' });\n\n        }, function () {\n\n        });\n\n      } else {// 刚选择好，还未上传，非网络图片\n        that.imageList.splice(index, 1);\n      }\n    },\n    // 浏览照片\n    viewPhoto: function viewPhoto() {\n      var that = this;\n      var imgList = [];\n      for (var i = 0; i < that.imageList.length; i++) {\n        var item = that.imageList[i];\n        imgList.push(item.src);\n      }\n      // 预览图片\n      uni.previewImage({\n        urls: imgList });\n\n    } }) };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/danger/addDanger.vue?vue&type=script&lang=js&?ff08");
 
 /***/ }),
 
@@ -7467,7 +7467,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _vm._m(0),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"72ed35ad-8\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患级别\",\n                subnote: _vm.dangerLevel,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-0\",\n                mpcomid: \"72ed35ad-0\"\n              },\n              on: { click: _vm.selectedDangerLevel }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患分类\",\n                subnote: _vm.dangerType,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-1\",\n                mpcomid: \"72ed35ad-1\"\n              },\n              on: { click: _vm.selectedDangerType }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患描述\",\n                subnote: _vm.dangerDesc,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-2\",\n                mpcomid: \"72ed35ad-2\"\n              },\n              on: { click: _vm.selectedDangerDesc }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"对应条款\",\n                subnote: _vm.dangerClause,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-3\",\n                mpcomid: \"72ed35ad-3\"\n              },\n              on: { click: _vm.selectedDangerClause }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"整改建议\",\n                subnote: _vm.dangerAdvise,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-4\",\n                mpcomid: \"72ed35ad-4\"\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpInput(\n                    _vm.dangerAdvise,\n                    \"dangerAdvise\",\n                    \"请输入整改建议\"\n                  )\n                }\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  mode: \"date\",\n                  value: _vm.checkDate,\n                  eventid: \"72ed35ad-5\"\n                },\n                on: { change: _vm.checkDateChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"检查日期\",\n                    subnote: _vm.checkDate,\n                    mpcomid: \"72ed35ad-5\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"检查人\",\n                subnote: _vm.checkPeople,\n                \"show-arrow\": \"true\",\n                mpcomid: \"72ed35ad-6\"\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  mode: \"date\",\n                  value: _vm.deadLine,\n                  eventid: \"72ed35ad-6\"\n                },\n                on: { change: _vm.deadLineChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"整改期限\",\n                    subnote: _vm.deadLine,\n                    mpcomid: \"72ed35ad-7\"\n                  }\n                })\n              ],\n              1\n            )\n          ],\n          1\n        ),\n        _c(\"view\", { staticClass: \"imageBaseView\" }, [\n          _c(\"view\", { staticClass: \"cellSubViewRow\" }, [\n            _c(\"text\", { staticClass: \"leftTextRow\" }, [_vm._v(\"隐患照片\")]),\n            _c(\"text\", { staticClass: \"rightTextRow\" }, [\n              _vm._v(_vm._s(_vm.imageList.length))\n            ])\n          ]),\n          _c(\n            \"view\",\n            { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n            [\n              _vm._l(_vm.imageList, function(imgObj, idx) {\n                return _c(\"block\", { key: idx }, [\n                  _c(\n                    \"view\",\n                    {\n                      staticClass: \"littleImageView\",\n                      style: {\n                        width: _vm.littleImageWidth + \"px\",\n                        height: _vm.littleImageWidth + \"px\"\n                      }\n                    },\n                    [\n                      _c(\"image\", {\n                        staticClass: \"littleImage\",\n                        attrs: {\n                          id: idx,\n                          src: imgObj.src,\n                          mode: \"aspectFit\",\n                          eventid: \"72ed35ad-7-\" + idx\n                        },\n                        on: { click: _vm.viewPhoto }\n                      }),\n                      _c(\"image\", {\n                        staticClass: \"littleImageDelete\",\n                        attrs: {\n                          src: \"../../static/img/delete.png\",\n                          id: idx,\n                          mode: \"aspectFit\",\n                          eventid: \"72ed35ad-8-\" + idx\n                        },\n                        on: {\n                          click: function($event) {\n                            _vm.deleteImage(imgObj, idx)\n                          }\n                        }\n                      })\n                    ]\n                  )\n                ])\n              }),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"littleImageView\",\n                  style: {\n                    width: _vm.littleImageWidth + \"px\",\n                    height: _vm.littleImageWidth + \"px\"\n                  },\n                  attrs: { eventid: \"72ed35ad-9\" },\n                  on: { click: _vm.addPhoto }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"littleImage\",\n                    attrs: { src: \"../../static/img/addImage.png\" }\n                  })\n                ]\n              )\n            ],\n            2\n          )\n        ])\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"btnView\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"saveBtn\",\n            attrs: { eventid: \"72ed35ad-10\" },\n            on: { tap: _vm.saveClick }\n          },\n          [_vm._v(\"保存\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"隐患信息\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/danger/addDanger.vue?vue&type=template&id=bdac4234&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\"view\", { staticClass: \"imageBaseView\" }, [\n          _c(\"view\", { staticClass: \"cellSubViewRow\" }, [\n            _c(\"text\", { staticClass: \"leftTextRow\" }, [_vm._v(\"隐患照片\")]),\n            _c(\"text\", { staticClass: \"rightTextRow\" }, [\n              _vm._v(_vm._s(_vm.imageList.length))\n            ])\n          ]),\n          _c(\n            \"view\",\n            { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n            [\n              _vm._l(_vm.imageList, function(imgObj, idx) {\n                return _c(\"block\", { key: idx }, [\n                  _c(\n                    \"view\",\n                    {\n                      staticClass: \"littleImageView\",\n                      style: {\n                        width: _vm.littleImageWidth + \"px\",\n                        height: _vm.littleImageWidth + \"px\"\n                      }\n                    },\n                    [\n                      _c(\"image\", {\n                        staticClass: \"littleImage\",\n                        attrs: {\n                          id: idx,\n                          src: imgObj.src,\n                          mode: \"aspectFit\",\n                          eventid: \"72ed35ad-0-\" + idx\n                        },\n                        on: { click: _vm.viewPhoto }\n                      }),\n                      _c(\"image\", {\n                        staticClass: \"littleImageDelete\",\n                        attrs: {\n                          src: \"../../static/img/delete.png\",\n                          id: idx,\n                          mode: \"aspectFit\",\n                          eventid: \"72ed35ad-1-\" + idx\n                        },\n                        on: {\n                          click: function($event) {\n                            _vm.deleteImage(imgObj, idx)\n                          }\n                        }\n                      })\n                    ]\n                  )\n                ])\n              }),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"littleImageView\",\n                  style: {\n                    width: _vm.littleImageWidth + \"px\",\n                    height: _vm.littleImageWidth + \"px\"\n                  },\n                  attrs: { eventid: \"72ed35ad-2\" },\n                  on: { click: _vm.addPhoto }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"littleImage\",\n                    attrs: { src: \"../../static/img/addImage.png\" }\n                  })\n                ]\n              )\n            ],\n            2\n          )\n        ]),\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"72ed35ad-8\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患级别\",\n                subnote: _vm.dangerLevel,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-3\",\n                mpcomid: \"72ed35ad-0\"\n              },\n              on: { click: _vm.selectedDangerLevel }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患分类\",\n                subnote: _vm.dangerType,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-4\",\n                mpcomid: \"72ed35ad-1\"\n              },\n              on: { click: _vm.selectedDangerType }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患描述\",\n                subnote: _vm.dangerDesc,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-5\",\n                mpcomid: \"72ed35ad-2\"\n              },\n              on: { click: _vm.selectedDangerDesc }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"对应条款\",\n                subnote: _vm.dangerClause,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-6\",\n                mpcomid: \"72ed35ad-3\"\n              },\n              on: { click: _vm.selectedDangerClause }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"整改建议\",\n                subnote: _vm.dangerAdvise,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-7\",\n                mpcomid: \"72ed35ad-4\"\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpInput(\n                    _vm.dangerAdvise,\n                    \"dangerAdvise\",\n                    \"请输入整改建议\"\n                  )\n                }\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  mode: \"date\",\n                  value: _vm.checkDate,\n                  eventid: \"72ed35ad-8\"\n                },\n                on: { change: _vm.checkDateChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"检查日期\",\n                    subnote: _vm.checkDate,\n                    mpcomid: \"72ed35ad-5\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"检查人\",\n                subnote: _vm.checkPeople,\n                \"show-arrow\": \"true\",\n                mpcomid: \"72ed35ad-6\"\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  mode: \"date\",\n                  value: _vm.deadLine,\n                  eventid: \"72ed35ad-9\"\n                },\n                on: { change: _vm.deadLineChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"整改期限\",\n                    subnote: _vm.deadLine,\n                    mpcomid: \"72ed35ad-7\"\n                  }\n                })\n              ],\n              1\n            )\n          ],\n          1\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"btnView\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"saveBtn\",\n            attrs: { eventid: \"72ed35ad-10\" },\n            on: { tap: _vm.saveClick }\n          },\n          [_vm._v(\"保存\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/danger/addDanger.vue?vue&type=template&id=bdac4234&");
 
 /***/ })
 

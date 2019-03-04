@@ -1,24 +1,9 @@
 <template>
 	<view class="baseView">
-		<view class="cellTitleView">
+<!-- 		<view class="cellTitleView">
 			<text class="cellTitle">隐患信息</text>
-		</view>
+		</view> -->
 		<view class="cellInfoView">
-			<uni-list>
-				<uni-list-item title="隐患级别" :subnote="dangerLevel" show-arrow="true" @click="selectedDangerLevel"></uni-list-item>
-				<uni-list-item title="隐患分类" :subnote="dangerType" show-arrow="true" @click="selectedDangerType"></uni-list-item>
-				<uni-list-item title="隐患描述" :subnote="dangerDesc" show-arrow="true" @click="selectedDangerDesc"></uni-list-item>
-				<uni-list-item title="对应条款" :subnote="dangerClause" show-arrow="true" @click="selectedDangerClause"></uni-list-item>
-				<uni-list-item title="整改建议" :subnote="dangerAdvise" show-arrow="true" @click="jumpInput(dangerAdvise, 'dangerAdvise', '请输入整改建议')"></uni-list-item>
-				<picker mode="date" :value="checkDate" @change="checkDateChange">
-					<uni-list-item title="检查日期" :subnote="checkDate"></uni-list-item>
-				</picker>
-				<uni-list-item title="检查人" :subnote="checkPeople" show-arrow="true"></uni-list-item>
-				<picker mode="date" :value="deadLine" @change="deadLineChange">
-					<uni-list-item title="整改期限" :subnote="deadLine"></uni-list-item>
-				</picker>
-				<!-- <uni-list-item title="隐患位置" show-arrow="true" @click="jumpInput('')"></uni-list-item> -->
-			</uni-list>
 			<view class='imageBaseView'> 
 				<view class='cellSubViewRow'>
 				  <text class='leftTextRow'>隐患照片</text>
@@ -36,6 +21,21 @@
 				  </view>
 				</view>
 			</view>
+			<uni-list>
+				<uni-list-item title="隐患级别" :subnote="dangerLevel" show-arrow="true" @click="selectedDangerLevel"></uni-list-item>
+				<uni-list-item title="隐患分类" :subnote="dangerType" show-arrow="true" @click="selectedDangerType"></uni-list-item>
+				<uni-list-item title="隐患描述" :subnote="dangerDesc" show-arrow="true" @click="selectedDangerDesc"></uni-list-item>
+				<uni-list-item title="对应条款" :subnote="dangerClause" show-arrow="true" @click="selectedDangerClause"></uni-list-item>
+				<uni-list-item title="整改建议" :subnote="dangerAdvise" show-arrow="true" @click="jumpInput(dangerAdvise, 'dangerAdvise', '请输入整改建议')"></uni-list-item>
+				<picker mode="date" :value="checkDate" @change="checkDateChange">
+					<uni-list-item title="检查日期" :subnote="checkDate"></uni-list-item>
+				</picker>
+				<uni-list-item title="检查人" :subnote="checkPeople" show-arrow="true"></uni-list-item>
+				<picker mode="date" :value="deadLine" @change="deadLineChange">
+					<uni-list-item title="整改期限" :subnote="deadLine"></uni-list-item>
+				</picker>
+				<!-- <uni-list-item title="隐患位置" show-arrow="true" @click="jumpInput('')"></uni-list-item> -->
+			</uni-list>
 		</view>
 		<view class="btnView">
 		    <button class="saveBtn" @tap="saveClick">保存</button>
@@ -222,6 +222,73 @@
 					url: '../common/inputPage?text=' + text + '&key=' + key + '&placeholder=' + placeholder + '',
 				})
 			},
+			// 上传照片功能-添加照片
+			addPhoto() {
+				var that = this;
+				uni.chooseImage({
+					count: 9, //默认9
+					sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
+					sourceType: ['album', 'camera'], //从相册选择
+					success: function (res) {
+						console.log(JSON.stringify(res.tempFilePaths));
+						for (var i=0;i<res.tempFilePaths.length;i++) {
+							var imgObj = {//	type：1为新增需要上传，2为加载的，不需要上传
+								fileid: '',
+								src: res.tempFilePaths[i],
+								type: 1
+							}
+							that.imageList.push(imgObj);
+						}
+					}
+				});
+			},
+			// 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口
+			deleteImage(imgObj, index) {
+				var that = this;
+				if (imgObj.src.startsWith('http:')) {// 网络图片
+					let obj = {
+						item: that.item,
+						index: that.itemIndex
+					}
+					that.setSublistItem(obj);
+					
+					let param = {
+						from: 'jc',
+						yyid: that.item.id,
+						fileid: imgObj.fileid,
+						userid: that.userInfo.userid
+					};
+					request.requestLoading(config.deleteImage, param, '正在删除图片', 
+						function(res){
+							console.log('删除成功：' + JSON.stringify(res));
+							that.item.fj = res.fj
+							that.imageList.splice(index,1);
+						},function(){
+							uni.showToast({
+								icon: 'none',
+								title: '删除失败'
+							});
+						}, function(){
+							
+						}
+					);
+				}else {// 刚选择好，还未上传，非网络图片
+					that.imageList.splice(index,1);
+				}
+			},
+			// 浏览照片
+			viewPhoto() {
+				var that = this;
+				var imgList = []
+				for (var i=0 ; i<that.imageList.length; i++) {
+					let item = that.imageList[i]
+					imgList.push(item.src);
+				}
+				// 预览图片
+				uni.previewImage({
+					urls: imgList
+				});
+			},
 		}
 	}
 </script>
@@ -274,7 +341,7 @@
 		margin-top: 20px;
 		margin-left: 20px;
 		margin-bottom: 20px;
-		margin-right: 10px;
+		margin-right: 20px;
 	}
 	.closeBtn {
 		display: flex;
@@ -298,7 +365,7 @@
 	  width: 100%;
 	  background-color: white;
 	  /* margin-bottom: 10px; */
-	  border-bottom: 0.5rpx solid #D3D3D3;
+	  border-bottom: 0.5rpx solid #E2E2E2;
 	  align-items:center;/*垂直居中*/
 	}
 	.cellSubViewRow {
@@ -311,7 +378,8 @@
 	.leftTextRow {
 		width: 100%;
 		margin-left: 30upx;
-		font-size: 32upx;
+		font-size: 28upx;
+		color: #333333;
 	}
 	.rightTextRow {
 		margin-top: 20upx;

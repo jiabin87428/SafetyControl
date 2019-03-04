@@ -136,12 +136,12 @@
 				z-index: 3;
 				right: 0;
 				bottom: 0;
-				left: 30upx;
+				left: 0upx;
 				height: 1px;
 				content: '';
-				-webkit-transform: scaleY(.5);
-				transform: scaleY(.5);
-				background-color: $uni-border-color;
+				// -webkit-transform: scaleY(.5);
+				// transform: scaleY(.5);
+				background-color: #E2E2E2;
 			}
 		}
 
@@ -152,11 +152,11 @@
 			flex-direction: column;
 
 			&-title {
-				font-size: $uni-font-size-lg;
+				font-size: 28upx;
 				text-overflow: ellipsis;
 				white-space: normal;
-				color: inherit;
-				line-height: 1.5;
+				color: #333333; 
+				line-height: 2.5;
 				overflow: hidden;
 			}
 
@@ -165,7 +165,7 @@
 				font-size: $uni-font-size-base;
 				text-overflow: ellipsis;
 				white-space: normal;
-				line-height: 1.5;
+				line-height: 2.5;
 				display: -webkit-box;
 // 				-webkit-box-orient: vertical;
 // 				-webkit-line-clamp: 2;
