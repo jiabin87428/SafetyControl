@@ -376,10 +376,10 @@ var copyObj = function copyObj(a) {
  // config.js
 /**
   * 小程序后端接口配置文件
-  * http://222.223.19.166:10012/boeb9，外网
-  * http://10.57.167.214:8080/boeb9，内网
+  * http://222.223.19.166:10012/ehsq，外网
+  * http://10.57.167.214:8080/ehsq，内网
   */
-var host = "http://10.57.167.214:8080/boeb9"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
+var host = "http://192.168.1.100:8080/boeb9"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
 
 
 var config = {
@@ -426,7 +426,15 @@ var config = {
 
   // ------隐患相关-------
   // 添加/修改隐患
-  editDanger: '/mobile/updateYhzg.do' };
+  editDanger: '/mobile/updateYhzg.do',
+  //获取隐患审批数据
+  getYhzgListByType: '/mobile/getYhzgListByType.do',
+  //获取隐患整改数目
+  getYhzgTabCounts: '/mobile/getYhzgTabCounts.do',
+  //获取隐患整改详情信息
+  getYhzgDetail: '/mobile/getYhzgDetail.do',
+  //隐患整改审批
+  updateYhzgFlow: '/mobile/updateYhzgFlow.do' };
 
 //对外把对象config返回
 module.exports = config;
@@ -492,7 +500,49 @@ var requestLoading = function requestLoading(url, params, message, _success, _fa
     } });
 
 };
-var request = function request(url, message, _success2, _fail2) {
+
+
+
+// 展示进度条的网络请求(新版)
+// url:网络请求的url
+// params:请求参数
+// message:进度条的提示信息 
+// success:成功的回调函数
+// fail：失败的回调
+var requestLoadingNew = function requestLoadingNew(url, params, message, _success2, _fail2, _complete2) {
+  if (message != "") {
+    uni.showLoading({
+      title: message });
+
+  }
+  uni.request({
+    url: config.host + url,
+    data: params,
+    header: {
+      'Content-type': 'application/x-www-form-urlencoded' },
+
+    method: 'POST',
+    success: function success(res) {
+      uni.hideLoading();
+      if (res.statusCode == '200') {
+        _success2(res.data);
+      } else {
+        _fail2();
+      }
+    },
+    fail: function fail(res) {
+      uni.hideLoading();
+      _fail2();
+    },
+    complete: function complete() {
+      uni.hideLoading();
+      _complete2();
+    } });
+
+};
+
+
+var request = function request(url, message, _success3, _fail3) {
   //   wx.showNavigationBarLoading()
   //   if (message != "") {
   //     wx.showLoading({
@@ -512,13 +562,13 @@ var request = function request(url, message, _success2, _fail2) {
       // 					  wx.hideLoading()
       // 					}
       if (res.success == 'true') {
-        _success2(res.data);
+        _success3(res.data);
       } else {
-        _fail2();
+        _fail3();
       }
     },
     fail: function fail(res) {
-      _fail2();
+      _fail3();
     } });
 
 };
@@ -559,6 +609,7 @@ var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, len
 {
   request: request,
   requestLoading: requestLoading,
+  requestLoadingNew: requestLoadingNew,
   uploadImage: uploadImage };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
 

@@ -1,0 +1,513 @@
+<template>
+    <div>
+        <uni-tabs @change="changeTab" :index="tabIndex">
+            <uni-tab-bar :drag="false" :tab-bars="tabBars" :tab-index="tabIndex"></uni-tab-bar>
+            <uni-tab-content>
+                <list class="list" @loadmore="loadMore(index1)" loadmoreoffset="10" v-for="(tab,index1) in newsitems"
+                    :key="index1">
+                    <refresh class="refresh" @refresh="onrefresh(index1)" @pullingdown="onpullingdown" :display="refreshing ? 'show' : 'hide'">
+                        <text class="refresh-text">{{refreshText}}</text>
+                    </refresh>
+                    <cell v-for="(newsitem,index2) in tab.data" :key="index2">
+                        <uni-media-list :data="newsitem" @close="close(index1,index2)" @click="goDetail(newsitem)"></uni-media-list>
+                    </cell>
+                    <cell class="loadmore">
+                        <text class="loadmore-text">{{tab.loadingText}}</text>
+                    </cell>
+                </list> 
+            </uni-tab-content>
+        </uni-tabs>
+		
+		<div class="mask" v-if="platform == 'ios'" v-bind:style="{height:screenHeight / screenWidth*750, width: rightViewOpen ? 750 : 0}" ref="mask" @touchstart="maskViewClick"></div>
+		<div class="mask" v-if="platform == 'android'" v-bind:style="{height:screenHeight / screenWidth*750, width: rightViewOpen ? 750 : 0}" ref="mask" @touchstart="maskViewClick"></div>
+		<div class="rightView" v-if="platform != ''" v-bind:style="{height:screenHeight / screenWidth*750}" ref="rightView">
+			<text class="tipText">楼层</text>
+			<input ref="floor" type="text" placeholder="请输入楼层" class="input" :value="newsitems[tabIndex] == null ? '':newsitems[tabIndex].searchLC" @change="onchange" @input="oninput"/>
+			<text class="tipText">部门</text>
+			<input ref="depart" type="text" placeholder="请输入部门" class="input" :value="newsitems[tabIndex] == null ? '':newsitems[tabIndex].searchBM" @change="onchange" @input="oninput"/>
+			<text class="tipText">位置</text>
+			<input ref="position" type="text" placeholder="请输入位置" class="input" :value="newsitems[tabIndex] == null ? '':newsitems[tabIndex].searchWZ" @change="onchange" @input="oninput"/>
+			
+			<div class="fliterButtonView">
+				<div class="resetButton" @click="resetClick(tabIndex)">
+					<text class="resetText">重置</text>
+				</div>
+				<div class="searchButton" @click="submitClick(tabIndex)">
+					<text class="submitText">确定</text>
+				</div>
+			</div>
+		</div>
+    </div>
+</template>
+
+<script>
+    import uniTabContent from '@/components/uni-tab-content/uni-tab-content.nvue'
+    import uniTabBar from '@/components/uni-tab-bar/uni-tab-bar.nvue'
+    import uniTabs from '@/components/uni-tabs/uni-tabs.nvue'
+    import uniMediaList from '@/components/uni-media-list/uni-media-list.nvue'
+	import service from '../../service.js';
+	import config from '../../util/config.js';
+	import request from '../../util/request.js';
+
+    const dom = weex.requireModule('dom')
+	const animation = weex.requireModule('animation')
+	
+    export default {
+        components: {
+            uniTabContent,
+            uniTabBar,
+            uniTabs,
+            uniMediaList
+        },
+        data() {
+            return {
+				userid: "",
+				pageRows: 15,
+				lx: "点位检查", // 类型&导航栏标题
+                refreshing: false,
+                refreshText: "下拉可以刷新",
+                tabIndex: 0,
+				tabType: 0,	//0-基础（待整改、已完成、未检查），1-扩展（月中检查、周末检查、当天检查等）
+                newsitems: [],
+                tabBars: [{
+                    name: '全部',
+                    id: '/mobile/dzglb.do'
+                }, {
+                    name: '未整改',
+                    id: '/mobile/ywclb.do'
+                }, {
+                    name: '已整改',
+                    id: '/mobile/wjclb.do'
+                },{
+                    name: '草稿',
+                    id: '/mobile/wjclb.do'
+                }],
+				rightViewOpen: false,
+				screenWidth: 0,
+				screenHeight: 0,
+				platform: '',	//平台-ios，android
+            }
+        },
+        created() {
+			var that = this
+			// 获取该页面显示的类型
+			uni.getStorage({
+				key: 'currentLx',
+				success: function (res) {
+					that.lx = res.data;
+					uni.getStorage({
+						key: res.data,
+						success: function (result) {
+							that.tabBars.push(JSON.parse(result.data));
+						},
+						complete() {
+							that.getTabCounts();
+						}
+					})
+				}
+			});
+			uni.getStorage({
+				key: 'userInfo',
+				success: function (res) {
+					that.userid = JSON.parse(res.data).userid;
+				}
+			})
+			setTimeout(() => {
+				uni.setNavigationBarTitle({
+					title: that.lx
+				});
+				// 获取窗口高度
+				uni.getSystemInfo({
+					success(res) {
+						that.platform = res.platform
+						that.screenWidth = res.screenWidth;
+						that.screenHeight = res.screenHeight;
+					}
+				});
+			    that.newsitems = that.randomfn();
+				that.onrefresh(that.tabIndex);
+			}, 50)
+			uni.onNavigationBarButtonTap((e) => {
+				if (that.rightViewOpen == true) {
+					that.move('close');
+				}else {
+					that.move('open');
+				}
+			})
+        },
+        methods: {
+			// 搜索提交
+			submitClick(index) {
+				console.log('搜索');
+				this.newsitems[index].pageNum = 0;
+				this.getListData(index, true);
+			},
+			// 搜索重置
+			resetClick(index) {
+				console.log('重置');
+				this.newsitems[index].searchLC = "";
+				this.newsitems[index].searchBM = "";
+				this.newsitems[index].searchWZ = "";
+			},
+			// type: open/close，开或关
+			move (type = 'open') {
+				var that = this;
+				var testEl = that.$refs.rightView;
+				var num = -500;
+				if (type == 'close') {
+					that.rightViewOpen = false;
+					num = 500;
+				}else {
+					that.rightViewOpen = true;
+				}
+				animation.transition(testEl, {
+					styles: {
+					transform: 'translateX(' + num + 'px)',
+				},
+				duration: 300, //ms
+				timingFunction: 'ease',
+				delay: 0 //ms
+				}, function () {
+					console.log("message: 'animation finished.'");
+				})
+			},
+			// 筛选输入完成
+			onchange(e) {
+				if (e.target.ref == this.$refs.floor.ref) {
+					this.newsitems[this.tabIndex].searchLC = e.value;
+					console.log('searchLC' + this.newsitems[this.tabIndex].searchLC);
+				}else if (e.target.ref == this.$refs.depart.ref) {
+					this.newsitems[this.tabIndex].searchBM = e.value;
+					console.log('searchBM' + this.newsitems[this.tabIndex].searchBM);
+				}else if (e.target.ref == this.$refs.position.ref) {
+					this.newsitems[this.tabIndex].searchWZ = e.value;
+					console.log('searchWZ' + this.newsitems[this.tabIndex].searchWZ);
+				}
+			},
+			// 筛选正在输入
+			oninput(e) {
+				// console.log('' + JSON.stringify(e));
+			},
+			// 点击mask隐藏键盘
+			maskViewClick(e) {
+				uni.hideKeyboard();
+				this.move('close');
+			},
+			
+			// 获取检查详情
+            goDetail(e) {
+				var that = this;
+				let params = {
+					id: e.id,
+					userid: that.userid
+				};
+				request.requestLoading(config.getPointDetail, params, "正在加载详情", function(res){
+					console.log('' + JSON.stringify(res));
+					uni.navigateTo({
+						// url: '../pointDetail/pointDetail?obj=' + JSON.stringify(res)
+						url: '../pointAdd/pointAdd?obj=' + JSON.stringify(res)
+					});
+				}, function(){
+					uni.showToast({
+						icon: 'none',
+						title: '请求失败'
+					});
+				},function(){
+					
+				});
+            },
+            close(index1, index2) {
+                uni.showModal({
+                    content: '是否删除本条信息？',
+                    success: (res) => {
+                        if (res.confirm) {
+                            this.newsitems[index1].data.splice(index2, 1);
+                        }
+                    }
+                })
+            },
+            loadMore(index) {
+                setTimeout(() => {
+                    this.addData(index);
+                }, 50);
+            },
+            addData(index) {
+				var that = this
+				that.getListData(index, false);
+            },
+            async changeTab(e) {
+                this.tabIndex = e.index;
+				// console.log(e.index)
+				this.onrefresh(this.tabIndex);
+            },
+            getElSize(el) { //得到元素的size
+                return new Promise((res, rej) => {
+                    const result = dom.getComponentRect(el, option => {
+                        res(option.size);
+                    })
+                })
+            },
+			// 首先生成3个Tab页对应的空模型
+			randomfn() {
+			    let ary = [];
+			    for (let i = 0, length = this.tabBars.length; i < length; i++) {
+			        let aryItem = {
+			            loadingText: "加载更多...",
+			            data: [],
+						pageNum: 0,
+						searchLC: '',
+						searchBM: '',
+						searchWZ: '',
+						
+			        };
+					ary.push(aryItem);
+			    }
+			    return ary;
+			},
+			// 格式化接口数据，让数据变成组件需要的内容
+			formatData(list, index, isRefresh){
+				if (isRefresh) {
+					this.newsitems[index].data = [];
+				}
+				if(index > 2) { // 如果前三个Tab页，说明是基础Tab，否则是扩展Tab
+					this.tabType = 1;
+				}else {
+					this.tabType = 0
+				}
+				for(var i = 0; i < list.length; i++){					
+					var obj = {};
+					var item = list[i];
+					obj['title'] = item.dwbh;
+					obj['source'] = this.tabType == 0 ? '检查人：' + item.zrrmc : '责任部门：' + item.zrbm;
+					obj['datetime'] = this.tabType == 0 ? '检查日期：' + item.jcrq : '';
+					obj['id'] = this.tabType == 0 ? item.id : '';
+					obj['article_type'] = 0;
+					obj['comment_count'] = '';
+					this.newsitems[index].data.push(obj);
+				}
+				if (!isRefresh) {// 上拉加载更多结束后改回加载更多，增加体验
+					this.newsitems[index].loadingText = '加载更多...';
+				}
+				if (this.newsitems[index].data.length <= 0) {
+					uni.showToast({
+						icon: 'none',
+						title: '暂无数据'
+					});
+				}
+			},
+            onrefresh(index) {
+				var that = this
+				that.newsitems[index].pageNum = 0;
+				
+                that.refreshText = "正在刷新...";
+                that.refreshing = true;
+				
+				that.newsitems[index].searchLC = "";
+				that.newsitems[index].searchBM = "";
+				that.newsitems[index].searchWZ = "";
+								
+				that.getListData(index, true);
+            },
+			// 请求Tab页数量
+			getTabCounts(){
+				var that = this;
+				let param = {
+					lx: that.lx == '所有记录' ? '' : that.lx,
+					userid: that.userid
+				}
+				request.requestLoading(config.getTabCounts, param, '正在加载', 
+					function(res){
+						console.log('Tab页数量：' + JSON.stringify(res));
+						for (var i=0; i<that.tabBars.length; i++) {
+							var tab = that.tabBars[i];
+							if (tab.name == "待整改") {
+								tab.name = "待整改(" + res.dzgsl + ")"
+							}else if (tab.name == "已完成") {
+								tab.name = "已完成(" + res.ywcsl + ")"
+							}else if (tab.name == "未检查") {
+								tab.name = "未检查(" + res.wjcsl + ")"
+							}else if (tab.name == "当月未检查") {
+								tab.name = "当月未检查(" + res.dywjcsl + ")"
+							}else if (tab.name == "本周未检查") {
+								tab.name = "本周未检查(" + res.bzwjcsl + ")"
+							}else if (tab.name == "当天未检查") {
+								tab.name = "当天未检查(" + res.dtwjcsl + ")"
+							}
+						}
+					},function(){
+						uni.showToast({
+							icon: 'none',
+							title: '请求失败'
+						});
+					}, function(){
+					}
+				);
+			},
+			// 请求列表数据
+			getListData(index, isRefresh){
+				var that = this;
+				var url = config.host + that.tabBars[index].id;	// 拼接接口
+				const data = {
+				    pageNum: that.newsitems[index].pageNum,
+				    pageRows: that.pageRows,
+					lx: that.lx == '所有记录' ? '' : that.lx,
+					userid: that.userid,
+					search_lc: that.newsitems[index].searchLC,
+					search_bm: that.newsitems[index].searchBM,
+					search_wz: that.newsitems[index].searchWZ
+				};
+				if (!isRefresh) {// 上拉加载更多，改变文字，增加体验
+					that.newsitems[index].loadingText = '正在加载...';
+				}
+				
+				request.requestLoading(url, data, '正在加载', 
+					function(res){
+						that.refreshing = false;
+						
+						that.rightViewOpen = false;
+						that.move('close');
+						
+						that.newsitems[index].pageNum++;
+						that.formatData(res.list, index, isRefresh);
+					},function(){
+						that.refreshing = false
+						
+						uni.showToast({
+							icon: 'none',
+							title: '请求失败'
+						});
+					}, function(){
+						
+					}
+				);
+			},
+			
+            onpullingdown(event) {
+                if (this.refreshing) {
+                    return;
+                }
+                if (Math.abs(event.pullingDistance) > Math.abs(event.viewHeight)) {
+                    this.refreshText = "释放立即刷新";
+                } else {
+                    this.refreshText = "下拉可以刷新";
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    .tab-bar-item {
+        width: 150px;
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tab-bar-title {
+        height: 100px;
+        line-height: 100px;
+        font-size: 30px;
+        color: #555;
+    }
+
+    .active {
+        color: #007AFF;
+    }
+
+    .loadmore {
+        height: 70px;
+        width: 750px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .loadmore-text {
+        font-size: 30px;
+        text-align: center;
+        color: #999999;
+    }
+
+    .refresh {
+        width: 750px;
+        height: 70px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .refresh-text {
+        text-align: center;
+        font-size: 28px;
+        color: #999999;
+    }
+	
+	.mask {
+		position: fixed;
+		opacity: 0.5;
+		background-color: #232323;
+	}
+	.rightView {
+		position: fixed;
+		margin-left: 750px;
+		display: flex;
+		flex-direction: column;
+		width: 750px;
+		background-color: #FFFFFF;
+	},
+	.input {
+		margin-left: 20px;
+		margin-top: 20px;
+		font-size: 30px;
+		height: 80px;
+		width: 460px;
+		border-radius: 10px;
+		color: #232323;
+		background-color: #F3F3F5;
+	}
+	.tipText {
+		margin-left: 20px;
+		margin-top: 30px;
+		width: 460px;
+		font-size: 28px;
+		color: #888888;
+	}
+	.fliterButtonView {
+		display: flex;
+		flex-direction: row;
+		margin-top: 100px;
+		width: 500px;
+	}
+	.resetButton {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-width: 1;
+		border-bottom-color: #F1F1F1;
+		border-top-color: #F1F1F1;
+		border-left-width: 0px;
+		border-right-width: 0px;
+		width: 200px;
+		height: 90px;
+		text-align: center;
+	}
+	.searchButton {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 300px;
+		height: 90px;
+		background-color: #2D68AA;
+		color: #FFFFFF;
+		text-align: center;
+	}
+	.resetText {
+		font-size: 28px;
+		color: #232323;
+	}
+	.submitText {
+		font-size: 28px;
+		color: #FFFFFF;
+	}
+</style>

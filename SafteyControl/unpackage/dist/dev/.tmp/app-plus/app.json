@@ -19,7 +19,8 @@
     "pages/mpvue-echarts/mpvue-echarts",
     "pages/common/inputPage",
     "pages/danger/addDanger",
-    "pages/statistics/statistics"
+    "pages/statistics/statistics",
+    "pages/danger/detailDanger"
   ],
   "subPackages": [],
   "window": {
@@ -88,5 +89,5 @@
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
-  "appname": "京东方消防安全"
+  "appname": "移动安全管家"
 }
