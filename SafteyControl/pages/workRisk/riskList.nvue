@@ -1,0 +1,404 @@
+<template>
+    <div>
+        <uni-tabs @change="changeTab" :index="tabIndex">
+            <uni-tab-bar :drag="false" :tab-bars="tabBars" :tab-index="tabIndex"></uni-tab-bar>
+            <uni-tab-content>
+                <list class="list" @loadmore="loadMore(index1)" loadmoreoffset="10" v-for="(tab,index1) in newsitems" :key="index1">
+                    <refresh class="refresh" @refresh="onrefresh(index1)" @pullingdown="onpullingdown" :display="refreshing ? 'show' : 'hide'">
+                        <text class="refresh-text">{{refreshText}}</text>
+                    </refresh>
+                    <cell v-for="(newsitem,index2) in tab.data" :key="index2">
+                        <uni-media-list :data="newsitem" @close="close(index1,index2)" @click="goDetail(newsitem)"></uni-media-list>
+                    </cell>
+                    <cell class="loadmore">
+                        <text class="loadmore-text">{{tab.loadingText}}</text>
+                    </cell>
+                </list> 
+            </uni-tab-content>
+        </uni-tabs>
+		
+		<div class="mask" v-if="platform == 'ios'" v-bind:style="{height:screenHeight / screenWidth*750, width: rightViewOpen ? 750 : 0}" ref="mask" @touchstart="maskViewClick"></div>
+		<div class="mask" v-if="platform == 'android'" v-bind:style="{height:screenHeight / screenWidth*750, width: rightViewOpen ? 750 : 0}" ref="mask" @touchstart="maskViewClick"></div>
+    </div>
+</template>
+
+<script>
+    import uniTabContent from '@/components/uni-tab-content/uni-tab-content.nvue'
+    import uniTabBar from '@/components/uni-tab-bar/uni-tab-bar.nvue'
+    import uniTabs from '@/components/uni-tabs/uni-tabs.nvue'
+    import uniMediaList from '@/components/uni-media-list/uni-media-list.nvue'
+	import service from '../../service.js';
+	import config from '../../util/config.js';
+	import request from '../../util/request.js';
+
+    const dom = weex.requireModule('dom')
+	const animation = weex.requireModule('animation')
+	
+    export default {
+        components: {
+            uniTabContent,
+            uniTabBar,
+            uniTabs,
+            uniMediaList
+        },
+        data() {
+            return {
+				userid: "",
+				pageRows: 15,
+				lx: "隐患整改", // 类型&导航栏标题
+                refreshing: false,
+                refreshText: "下拉可以刷新",
+                tabIndex: 0,
+				tabType: 0,	//0-基础（待整改、已完成、未检查），1-扩展（月中检查、周末检查、当天检查等）
+                newsitems: [],
+                tabBars: [{
+                    name: '待审批'
+                },{
+                    name: '审批中'
+                }, {
+                    name: '已审批'
+                }],
+				rightViewOpen: false,
+				screenWidth: 0,
+				screenHeight: 0,
+				platform: '',	//平台-ios，android
+            }
+        },
+		created() {
+			console.log('执行了created。。。');
+			var that = this
+			uni.getStorage({
+				key: 'userInfo',
+				success: function (res) {
+					that.userid = JSON.parse(res.data).userid;
+				},
+				complete() {
+					that.getYhzgTabCounts();
+				}
+			})
+			setTimeout(() => {
+				uni.setNavigationBarTitle({
+					title: that.lx
+				});
+				// 获取窗口高度
+				uni.getSystemInfo({
+					success(res) {
+						that.platform = res.platform
+						that.screenWidth = res.screenWidth;
+						that.screenHeight = res.screenHeight;
+					}
+				});
+			    that.newsitems = that.randomfn();
+				that.onrefresh(that.tabIndex);
+			}, 50)
+			uni.onNavigationBarButtonTap((e) => {
+				if (that.rightViewOpen == true) {
+					that.move('close');
+				}else {
+					that.move('open');
+				}
+			})
+		},
+        methods: {
+			// type: open/close，开或关
+			move (type = 'open') {
+				var that = this;
+				var testEl = that.$refs.rightView;
+				var num = -500;
+				if (type == 'close') {
+					that.rightViewOpen = false;
+					num = 500;
+				}else {
+					that.rightViewOpen = true;
+				}
+				animation.transition(testEl, {
+					styles: {
+					transform: 'translateX(' + num + 'px)',
+				},
+				duration: 300, //ms
+				timingFunction: 'ease',
+				delay: 0 //ms
+				}, function () {
+					console.log("message: 'animation finished.'");
+				})
+			},
+			// 获取检查详情
+            goDetail(e) {
+				var that = this;
+				let params = {
+					instId: e.instId,
+					userid: that.userid,
+					taskDefKey: e.taskDefKey,
+					name: e.name
+				};
+				//console.log(params);
+				//跳转到详情页面
+				uni.navigateTo({
+					url:'../danger/detailDanger?params='+JSON.stringify(params)
+				});
+            },
+            close(index1, index2) {
+                uni.showModal({
+                    content: '是否删除本条信息？',
+                    success: (res) => {
+                        if (res.confirm) {
+                            this.newsitems[index1].data.splice(index2, 1);
+                        }
+                    }
+                })
+            },
+            loadMore(index) {
+                setTimeout(() => {
+                    this.addData(index);
+                }, 50);
+            },
+            addData(index) {
+				var that = this
+				that.getListData(index, false);
+            },
+            async changeTab(e) {
+                this.tabIndex = e.index;
+				// console.log(e.index)
+				this.onrefresh(this.tabIndex);
+            },
+            getElSize(el) { //得到元素的size
+                return new Promise((res, rej) => {
+                    const result = dom.getComponentRect(el, option => {
+                        res(option.size);
+                    })
+                })
+            },
+			// 首先生成3个Tab页对应的空模型
+			randomfn() {
+			    let ary = [];
+			    for (let i = 0, length = this.tabBars.length; i < length; i++) {
+			        let aryItem = {
+			            loadingText: "加载更多...",
+			            data: [],
+						pageNum: 0,
+						searchLC: '',
+						searchBM: '',
+						searchWZ: '',
+						
+			        };
+					ary.push(aryItem);
+			    }
+			    return ary;
+			},
+			// 格式化接口数据，让数据变成组件需要的内容
+			formatData(list, index, isRefresh){
+				if (isRefresh) {
+					this.newsitems[index].data = [];
+				}
+				if(index > 5) { // 如果前五个Tab页，说明是基础Tab，否则是扩展Tab
+					this.tabType = 1;
+				}else {
+					this.tabType = 0
+				}
+				console.log(list.list);
+				for(var i = 0; i < list.length; i++){					
+					var obj = {};
+					var item = list[i];
+					//console.log(item);
+					obj['title'] = "当前任务由"+item.description.split('-由')[1];
+					obj['source'] = '当前节点：' + item.name + (item.stayTime?('     已持续：'+item.stayTime):('           操作人：'+item.owner));
+					obj['id'] = this.tabType == 0 ? item.id : '';
+					obj['article_type'] = 0;
+					obj['comment_count'] = '';
+					obj['instId'] = item.procInstId; //实例id
+					obj['taskDefKey'] = item.taskDefKey;//节点id
+					obj['name'] = item.name;//节点id
+					
+					this.newsitems[index].data.push(obj);
+				}
+				if (!isRefresh) {// 上拉加载更多结束后改回加载更多，增加体验
+					this.newsitems[index].loadingText = '加载更多...';
+				}
+				if (this.newsitems[index].data.length <= 0) {
+					uni.showToast({
+						icon: 'none',
+						title: '暂无数据'
+					});
+				}
+			},
+            onrefresh(index) {
+				var that = this
+				that.newsitems[index].pageNum = 0;
+				
+                that.refreshText = "正在刷新...";
+                that.refreshing = true;
+				that.getListData(index, true);
+            },
+			// 请求Tab页数量
+			getYhzgTabCounts(){
+				var that = this;
+				let param = {
+					lx: that.lx == '隐患整改' ? '待审批' : that.lx,
+					userid: that.userid
+				}
+				request.requestLoading(config.getYhzgTabCounts, param, '正在加载', 
+					function(res){
+						console.log('Tab页数量：' + JSON.stringify(res));
+						for (var i=0; i<that.tabBars.length; i++) {
+							var tab = that.tabBars[i];
+							if (tab.name == "待审批") {
+								tab.name = "待审批(" + res.dspsl + ")"
+							}else if (tab.name == "审批中") {
+								tab.name = "审批中(" + res.spzsl + ")"
+							}else if (tab.name == "已审批") {
+								tab.name = "已审批(" + res.yspsl + ")"
+							}
+						}
+					},function(){
+						uni.showToast({
+							icon: 'none',
+							title: '请求失败'
+						});
+					}, function(){
+					}
+				);
+			},
+			// 请求列表数据
+			getListData(index, isRefresh){
+				var that = this;
+				//var url = that.tabBars[index].id;	// 拼接接口
+				//console.log(index);
+				//console.log(that.tabBars[index].name);
+				that.lx = that.tabBars[index].name.split('(')[0];//获取类型
+				const data = {
+				    pageNum: that.newsitems[index].pageNum,
+				    pageRows: that.pageRows, 
+					lx: that.lx == '隐患整改' ? '待整改' : that.lx,
+					userid: that.userid
+				};
+				if (!isRefresh) {// 上拉加载更多，改变文字，增加体验
+					that.newsitems[index].loadingText = '正在加载...';
+				}
+				request.requestLoading(config.getYhzgListByType, data, '正在加载', function(res){
+						uni.showToast({
+							icon: 'success',
+							title: '获取数据成功'
+						});
+						that.refreshing = false;
+						that.rightViewOpen = false;
+						that.move('close');
+						that.newsitems[index].pageNum++;
+						that.formatData(res.list, index, isRefresh);
+					},function(){//fail function
+						that.refreshing = false
+						uni.showToast({
+							icon: 'none',
+							title: '请求失败'
+						});
+					}, function(){//complete function
+						
+					}
+				);
+			},
+            onpullingdown(event) {
+                if (this.refreshing) {
+                    return;
+                }
+                if (Math.abs(event.pullingDistance) > Math.abs(event.viewHeight)) {
+                    this.refreshText = "释放立即刷新";
+                } else {
+                    this.refreshText = "下拉可以刷新";
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    .tab-bar-item {
+        width: 150px;
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tab-bar-title {
+        height: 100px;
+        line-height: 100px;
+        font-size: 30px;
+        color: #555;
+    }
+
+    .active {
+        color: #007AFF;
+    }
+
+    .loadmore {
+        height: 70px;
+        width: 750px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .loadmore-text {
+        font-size: 30px;
+        text-align: center;
+        color: #999999;
+    }
+
+    .refresh {
+        width: 750px;
+        height: 70px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .refresh-text {
+        text-align: center;
+        font-size: 28px;
+        color: #999999;
+    }
+	
+	.mask {
+		position: fixed;
+		opacity: 0.5;
+		background-color: #232323;
+	}
+	.input {
+		margin-left: 20px;
+		margin-top: 20px;
+		font-size: 30px;
+		height: 80px;
+		width: 460px;
+		border-radius: 10px;
+		color: #232323;
+		background-color: #F3F3F5;
+	}
+	.tipText {
+		margin-left: 20px;
+		margin-top: 30px;
+		width: 460px;
+		font-size: 28px;
+		color: #888888;
+	}
+	.fliterButtonView {
+		display: flex;
+		flex-direction: row;
+		margin-top: 100px;
+		width: 500px;
+	}
+	.resetButton {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-width: 1;
+		border-bottom-color: #F1F1F1;
+		border-top-color: #F1F1F1;
+		border-left-width: 0px;
+		border-right-width: 0px;
+		width: 200px;
+		height: 90px;
+		text-align: center;
+	}
+	.submitText {
+		font-size: 28px;
+		color: #FFFFFF;
+	}
+</style>

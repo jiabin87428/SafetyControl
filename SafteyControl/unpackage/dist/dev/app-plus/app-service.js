@@ -1902,7 +1902,7 @@ __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/drawer/uni-drawer.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','/components/drawer/hj-dragabledrawer.vue.wxml','/components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','/common/slots.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/drawer/hj-dragabledrawer.vue.wxml','./components/drawer/uni-drawer.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/danger/addDanger.vue.wxml','./pages/danger/addDanger.wxml','./addDanger.vue.wxml','./pages/danger/detailDanger.vue.wxml','./pages/danger/detailDanger.wxml','./detailDanger.vue.wxml','./pages/login/diyHost.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pointList/pointList.vue.wxml','./pages/pointList/pointList.wxml','./pointList.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/statistics/statistics.vue.wxml','./pages/statistics/statistics.wxml','./statistics.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/drawer/uni-drawer.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','/components/drawer/hj-dragabledrawer.vue.wxml','./components/drawer/hj-dragabledrawer.vue.wxml','/common/slots.wxml','./components/drawer/uni-drawer.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/danger/addDanger.vue.wxml','./pages/danger/addDanger.wxml','./addDanger.vue.wxml','./pages/danger/detailDanger.vue.wxml','./pages/danger/detailDanger.wxml','./detailDanger.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pointList/pointList.vue.wxml','./pages/pointList/pointList.wxml','./pointList.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/statistics/statistics.vue.wxml','./pages/statistics/statistics.wxml','./statistics.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
 d_[x[0]]["21b694de-default-21b694de-6"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':21b694de-default-21b694de-6'
@@ -1913,7 +1913,7 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:12:47")
+cs.push("./common/slots.wxml:template:8:47")
 var xC=_oz(z,2,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
@@ -1923,11 +1923,11 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],12,176)
+else _w(xC,x[0],8,176)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:12:199")
+cs.push("./common/slots.wxml:template:8:199")
 var hG=_oz(z,7,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
@@ -1937,13 +1937,13 @@ cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],12,307)
+else _w(hG,x[0],8,307)
 cs.pop()
-cs.push("./common/slots.wxml:picker:12:330")
+cs.push("./common/slots.wxml:picker:8:330")
 var oJ=_mz(z,'picker',['bindchange',10,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:12:474")
+cs.push("./common/slots.wxml:template:8:474")
 var aL=_oz(z,17,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
@@ -1953,13 +1953,13 @@ lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],12,566)
+else _w(aL,x[0],8,566)
 cs.pop()
 cs.pop()
 _(r,oJ)
 var bO=_v()
 _(r,bO)
-cs.push("./common/slots.wxml:template:12:598")
+cs.push("./common/slots.wxml:template:8:598")
 var oP=_oz(z,20,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
@@ -1969,11 +1969,11 @@ bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],12,709)
+else _w(oP,x[0],8,709)
 cs.pop()
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:12:732")
+cs.push("./common/slots.wxml:template:8:732")
 var cT=_oz(z,24,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
@@ -1983,11 +1983,11 @@ fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],12,837)
+else _w(cT,x[0],8,837)
 cs.pop()
 var cW=_v()
 _(r,cW)
-cs.push("./common/slots.wxml:template:12:860")
+cs.push("./common/slots.wxml:template:8:860")
 var oX=_oz(z,28,e,s,gg)
 var lY=_gd(x[0],oX,e_,d_)
 if(lY){
@@ -1997,7 +1997,7 @@ cW.wxXCkey=3
 lY(aZ,aZ,cW,gg)
 gg.f=cur_globalf
 }
-else _w(oX,x[0],12,965)
+else _w(oX,x[0],8,965)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2016,11 +2016,11 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:14:48")
+cs.push("./common/slots.wxml:template:10:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:14:48")
+cs.push("./common/slots.wxml:template:10:48")
 var cI=_oz(z,40,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
@@ -2030,7 +2030,7 @@ oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],14,247)
+else _w(cI,x[0],10,247)
 cs.pop()
 return cF
 }
@@ -2054,7 +2054,7 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:16:47")
+cs.push("./common/slots.wxml:template:12:47")
 var xC=_oz(z,44,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
@@ -2064,11 +2064,11 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],16,176)
+else _w(xC,x[0],12,176)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:16:199")
+cs.push("./common/slots.wxml:template:12:199")
 var hG=_oz(z,49,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
@@ -2078,13 +2078,13 @@ cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],16,307)
+else _w(hG,x[0],12,307)
 cs.pop()
-cs.push("./common/slots.wxml:picker:16:330")
+cs.push("./common/slots.wxml:picker:12:330")
 var oJ=_mz(z,'picker',['bindchange',52,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:16:474")
+cs.push("./common/slots.wxml:template:12:474")
 var aL=_oz(z,59,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
@@ -2094,13 +2094,13 @@ lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],16,566)
+else _w(aL,x[0],12,566)
 cs.pop()
 cs.pop()
 _(r,oJ)
 var bO=_v()
 _(r,bO)
-cs.push("./common/slots.wxml:template:16:598")
+cs.push("./common/slots.wxml:template:12:598")
 var oP=_oz(z,62,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
@@ -2110,11 +2110,11 @@ bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],16,709)
+else _w(oP,x[0],12,709)
 cs.pop()
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:16:732")
+cs.push("./common/slots.wxml:template:12:732")
 var cT=_oz(z,66,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
@@ -2124,11 +2124,11 @@ fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],16,837)
+else _w(cT,x[0],12,837)
 cs.pop()
 var cW=_v()
 _(r,cW)
-cs.push("./common/slots.wxml:template:16:860")
+cs.push("./common/slots.wxml:template:12:860")
 var oX=_oz(z,70,e,s,gg)
 var lY=_gd(x[0],oX,e_,d_)
 if(lY){
@@ -2138,7 +2138,7 @@ cW.wxXCkey=3
 lY(aZ,aZ,cW,gg)
 gg.f=cur_globalf
 }
-else _w(oX,x[0],16,965)
+else _w(oX,x[0],12,965)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2157,11 +2157,11 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:18:48")
+cs.push("./common/slots.wxml:template:14:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:18:48")
+cs.push("./common/slots.wxml:template:14:48")
 var cI=_oz(z,82,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
@@ -2171,7 +2171,7 @@ oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],18,247)
+else _w(cI,x[0],14,247)
 cs.pop()
 return cF
 }
@@ -2240,11 +2240,11 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:26:47")
+cs.push("./common/slots.wxml:template:22:47")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:26:47")
+cs.push("./common/slots.wxml:template:22:47")
 var cI=_oz(z,93,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
@@ -2254,7 +2254,7 @@ oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],26,159)
+else _w(cI,x[0],22,159)
 cs.pop()
 return cF
 }
@@ -2293,7 +2293,7 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:30:47")
+cs.push("./common/slots.wxml:template:26:47")
 var xC=_oz(z,101,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
@@ -2303,11 +2303,11 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],30,232)
+else _w(xC,x[0],26,232)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:30:255")
+cs.push("./common/slots.wxml:template:26:255")
 var hG=_oz(z,108,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
@@ -2317,11 +2317,11 @@ cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],30,440)
+else _w(hG,x[0],26,440)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:30:463")
+cs.push("./common/slots.wxml:template:26:463")
 var lK=_oz(z,115,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
@@ -2331,11 +2331,11 @@ oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],30,648)
+else _w(lK,x[0],26,648)
 cs.pop()
 var eN=_v()
 _(r,eN)
-cs.push("./common/slots.wxml:template:30:671")
+cs.push("./common/slots.wxml:template:26:671")
 var bO=_oz(z,122,e,s,gg)
 var oP=_gd(x[0],bO,e_,d_)
 if(oP){
@@ -2345,11 +2345,11 @@ eN.wxXCkey=3
 oP(xQ,xQ,eN,gg)
 gg.f=cur_globalf
 }
-else _w(bO,x[0],30,859)
+else _w(bO,x[0],26,859)
 cs.pop()
 var oR=_v()
 _(r,oR)
-cs.push("./common/slots.wxml:template:30:882")
+cs.push("./common/slots.wxml:template:26:882")
 var fS=_oz(z,129,e,s,gg)
 var cT=_gd(x[0],fS,e_,d_)
 if(cT){
@@ -2359,11 +2359,11 @@ oR.wxXCkey=3
 cT(hU,hU,oR,gg)
 gg.f=cur_globalf
 }
-else _w(fS,x[0],30,1067)
+else _w(fS,x[0],26,1067)
 cs.pop()
 var oV=_v()
 _(r,oV)
-cs.push("./common/slots.wxml:template:30:1090")
+cs.push("./common/slots.wxml:template:26:1090")
 var cW=_oz(z,136,e,s,gg)
 var oX=_gd(x[0],cW,e_,d_)
 if(oX){
@@ -2373,7 +2373,7 @@ oV.wxXCkey=3
 oX(lY,lY,oV,gg)
 gg.f=cur_globalf
 }
-else _w(cW,x[0],30,1275)
+else _w(cW,x[0],26,1275)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2392,7 +2392,7 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:32:47")
+cs.push("./common/slots.wxml:template:28:47")
 var xC=_oz(z,141,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
@@ -2402,11 +2402,11 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],32,158)
+else _w(xC,x[0],28,158)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:32:181")
+cs.push("./common/slots.wxml:template:28:181")
 var hG=_oz(z,145,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
@@ -2416,11 +2416,11 @@ cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],32,292)
+else _w(hG,x[0],28,292)
 cs.pop()
 var oJ=_v()
 _(r,oJ)
-cs.push("./common/slots.wxml:template:32:315")
+cs.push("./common/slots.wxml:template:28:315")
 var lK=_oz(z,149,e,s,gg)
 var aL=_gd(x[0],lK,e_,d_)
 if(aL){
@@ -2430,11 +2430,11 @@ oJ.wxXCkey=3
 aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(lK,x[0],32,426)
+else _w(lK,x[0],28,426)
 cs.pop()
 var eN=_v()
 _(r,eN)
-cs.push("./common/slots.wxml:template:32:449")
+cs.push("./common/slots.wxml:template:28:449")
 var bO=_oz(z,153,e,s,gg)
 var oP=_gd(x[0],bO,e_,d_)
 if(oP){
@@ -2444,11 +2444,11 @@ eN.wxXCkey=3
 oP(xQ,xQ,eN,gg)
 gg.f=cur_globalf
 }
-else _w(bO,x[0],32,563)
+else _w(bO,x[0],28,563)
 cs.pop()
 var oR=_v()
 _(r,oR)
-cs.push("./common/slots.wxml:template:32:586")
+cs.push("./common/slots.wxml:template:28:586")
 var fS=_oz(z,157,e,s,gg)
 var cT=_gd(x[0],fS,e_,d_)
 if(cT){
@@ -2458,11 +2458,11 @@ oR.wxXCkey=3
 cT(hU,hU,oR,gg)
 gg.f=cur_globalf
 }
-else _w(fS,x[0],32,697)
+else _w(fS,x[0],28,697)
 cs.pop()
 var oV=_v()
 _(r,oV)
-cs.push("./common/slots.wxml:template:32:720")
+cs.push("./common/slots.wxml:template:28:720")
 var cW=_oz(z,161,e,s,gg)
 var oX=_gd(x[0],cW,e_,d_)
 if(oX){
@@ -2472,7 +2472,7 @@ oV.wxXCkey=3
 oX(lY,lY,oV,gg)
 gg.f=cur_globalf
 }
-else _w(cW,x[0],32,840)
+else _w(cW,x[0],28,840)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2489,11 +2489,11 @@ gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
-cs.push("./common/slots.wxml:picker:34:48")
+cs.push("./common/slots.wxml:picker:30:48")
 var oB=_mz(z,'picker',['bindchange',165,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var xC=_v()
 _(oB,xC)
-cs.push("./common/slots.wxml:template:34:193")
+cs.push("./common/slots.wxml:template:30:193")
 var oD=_oz(z,172,e,s,gg)
 var fE=_gd(x[0],oD,e_,d_)
 if(fE){
@@ -2503,13 +2503,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[0],34,285)
+else _w(oD,x[0],30,285)
 cs.pop()
 cs.pop()
 _(r,oB)
 var hG=_v()
 _(r,hG)
-cs.push("./common/slots.wxml:template:34:317")
+cs.push("./common/slots.wxml:template:30:317")
 var oH=_oz(z,175,e,s,gg)
 var cI=_gd(x[0],oH,e_,d_)
 if(cI){
@@ -2519,13 +2519,13 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[0],34,428)
+else _w(oH,x[0],30,428)
 cs.pop()
-cs.push("./common/slots.wxml:picker:34:451")
+cs.push("./common/slots.wxml:picker:30:451")
 var lK=_mz(z,'picker',['bindchange',178,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var aL=_v()
 _(lK,aL)
-cs.push("./common/slots.wxml:template:34:591")
+cs.push("./common/slots.wxml:template:30:591")
 var tM=_oz(z,185,e,s,gg)
 var eN=_gd(x[0],tM,e_,d_)
 if(eN){
@@ -2535,13 +2535,13 @@ aL.wxXCkey=3
 eN(bO,bO,aL,gg)
 gg.f=cur_globalf
 }
-else _w(tM,x[0],34,683)
+else _w(tM,x[0],30,683)
 cs.pop()
 cs.pop()
 _(r,lK)
 var oP=_v()
 _(r,oP)
-cs.push("./common/slots.wxml:template:34:715")
+cs.push("./common/slots.wxml:template:30:715")
 var xQ=_oz(z,188,e,s,gg)
 var oR=_gd(x[0],xQ,e_,d_)
 if(oR){
@@ -2551,13 +2551,13 @@ oP.wxXCkey=3
 oR(fS,fS,oP,gg)
 gg.f=cur_globalf
 }
-else _w(xQ,x[0],34,827)
+else _w(xQ,x[0],30,827)
 cs.pop()
-cs.push("./common/slots.wxml:picker:34:850")
+cs.push("./common/slots.wxml:picker:30:850")
 var cT=_mz(z,'picker',['bindchange',191,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'showSwitch',5,'value',6],[],e,s,gg)
 var hU=_v()
 _(cT,hU)
-cs.push("./common/slots.wxml:template:34:1026")
+cs.push("./common/slots.wxml:template:30:1026")
 var oV=_oz(z,199,e,s,gg)
 var cW=_gd(x[0],oV,e_,d_)
 if(cW){
@@ -2567,13 +2567,13 @@ hU.wxXCkey=3
 cW(oX,oX,hU,gg)
 gg.f=cur_globalf
 }
-else _w(oV,x[0],34,1125)
+else _w(oV,x[0],30,1125)
 cs.pop()
 cs.pop()
 _(r,cT)
 var lY=_v()
 _(r,lY)
-cs.push("./common/slots.wxml:template:34:1157")
+cs.push("./common/slots.wxml:template:30:1157")
 var aZ=_oz(z,202,e,s,gg)
 var t1=_gd(x[0],aZ,e_,d_)
 if(t1){
@@ -2583,11 +2583,11 @@ lY.wxXCkey=3
 t1(e2,e2,lY,gg)
 gg.f=cur_globalf
 }
-else _w(aZ,x[0],34,1269)
+else _w(aZ,x[0],30,1269)
 cs.pop()
 var b3=_v()
 _(r,b3)
-cs.push("./common/slots.wxml:template:34:1292")
+cs.push("./common/slots.wxml:template:30:1292")
 var o4=_oz(z,206,e,s,gg)
 var x5=_gd(x[0],o4,e_,d_)
 if(x5){
@@ -2597,11 +2597,11 @@ b3.wxXCkey=3
 x5(o6,o6,b3,gg)
 gg.f=cur_globalf
 }
-else _w(o4,x[0],34,1404)
+else _w(o4,x[0],30,1404)
 cs.pop()
 var f7=_v()
 _(r,f7)
-cs.push("./common/slots.wxml:template:34:1427")
+cs.push("./common/slots.wxml:template:30:1427")
 var c8=_oz(z,210,e,s,gg)
 var h9=_gd(x[0],c8,e_,d_)
 if(h9){
@@ -2611,7 +2611,7 @@ f7.wxXCkey=3
 h9(o0,o0,f7,gg)
 gg.f=cur_globalf
 }
-else _w(c8,x[0],34,1539)
+else _w(c8,x[0],30,1539)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2629,14 +2629,6 @@ _ai(oB,x[3],e_,x[0],3,2)
 _ai(oB,x[4],e_,x[0],4,2)
 _ai(oB,x[5],e_,x[0],5,2)
 _ai(oB,x[6],e_,x[0],6,2)
-_ai(oB,x[7],e_,x[0],7,2)
-_ai(oB,x[8],e_,x[0],8,2)
-_ai(oB,x[9],e_,x[0],9,2)
-_ai(oB,x[10],e_,x[0],10,2)
-oB.pop()
-oB.pop()
-oB.pop()
-oB.pop()
 oB.pop()
 oB.pop()
 oB.pop()
@@ -2645,14 +2637,14 @@ oB.pop()
 oB.pop()
 return r
 }
-e_[x[0]]={f:m0,j:[],i:[],ti:[x[1],x[2],x[3],x[4],x[5],x[6],x[7],x[8],x[9],x[10]],ic:[]}
-d_[x[11]]={}
-d_[x[11]]["3c97b91b"]=function(e,s,r,gg){
+e_[x[0]]={f:m0,j:[],i:[],ti:[x[1],x[2],x[3],x[4],x[5],x[6]],ic:[]}
+d_[x[7]]={}
+d_[x[7]]["3c97b91b"]=function(e,s,r,gg){
 var z=gz$gwx_2()
-var b=x[11]+':3c97b91b'
+var b=x[7]+':3c97b91b'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/drawer/hj-dragabledrawer.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[11]);return}
+if(p_[b]){_wl(b,x[7]);return}
 p_[b]=true
 try{
 cs.push("./components/drawer/hj-dragabledrawer.vue.wxml:view:1:62")
@@ -2669,7 +2661,7 @@ var fE=_v()
 _(oD,fE)
 cs.push("./components/drawer/hj-dragabledrawer.vue.wxml:template:1:673")
 var cF=_oz(z,13,e,s,gg)
-var hG=_gd(x[11],cF,e_,d_)
+var hG=_gd(x[7],cF,e_,d_)
 if(hG){
 var oH=_1z(z,12,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2677,7 +2669,7 @@ fE.wxXCkey=3
 hG(oH,oH,fE,gg)
 gg.f=cur_globalf
 }
-else _w(cF,x[11],1,731)
+else _w(cF,x[7],1,731)
 cs.pop()
 cs.pop()
 _(oB,oD)
@@ -2691,12 +2683,12 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[11]]["default"]=function(e,s,r,gg){
+d_[x[7]]["default"]=function(e,s,r,gg){
 var z=gz$gwx_2()
-var b=x[11]+':default'
+var b=x[7]+':default'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/drawer/hj-dragabledrawer.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[11]);return}
+if(p_[b]){_wl(b,x[7]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2708,19 +2700,19 @@ return r
 }
 var m1=function(e,s,r,gg){
 var z=gz$gwx_2()
-var oD=e_[x[11]].i
-_ai(oD,x[9],e_,x[11],1,1)
+var oD=e_[x[7]].i
+_ai(oD,x[8],e_,x[7],1,1)
 oD.pop()
 return r
 }
-e_[x[11]]={f:m1,j:[],i:[],ti:[x[9]],ic:[]}
-d_[x[12]]={}
-d_[x[12]]["590c6f9d"]=function(e,s,r,gg){
+e_[x[7]]={f:m1,j:[],i:[],ti:[x[8]],ic:[]}
+d_[x[9]]={}
+d_[x[9]]["590c6f9d"]=function(e,s,r,gg){
 var z=gz$gwx_3()
-var b=x[12]+':590c6f9d'
+var b=x[9]+':590c6f9d'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/drawer/uni-drawer.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[12]);return}
+if(p_[b]){_wl(b,x[9]);return}
 p_[b]=true
 try{
 var oB=_v()
@@ -2733,7 +2725,7 @@ var oD=_v()
 _(xC,oD)
 cs.push("./components/drawer/uni-drawer.vue.wxml:template:1:459")
 var fE=_oz(z,6,e,s,gg)
-var cF=_gd(x[12],fE,e_,d_)
+var cF=_gd(x[9],fE,e_,d_)
 if(cF){
 var hG=_1z(z,5,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2741,7 +2733,7 @@ oD.wxXCkey=3
 cF(hG,hG,oD,gg)
 gg.f=cur_globalf
 }
-else _w(fE,x[12],1,517)
+else _w(fE,x[9],1,517)
 cs.pop()
 cs.pop()
 _(oB,xC)
@@ -2755,12 +2747,12 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[12]]["default"]=function(e,s,r,gg){
+d_[x[9]]["default"]=function(e,s,r,gg){
 var z=gz$gwx_3()
-var b=x[12]+':default'
+var b=x[9]+':default'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/drawer/uni-drawer.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[12]);return}
+if(p_[b]){_wl(b,x[9]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2772,19 +2764,19 @@ return r
 }
 var m2=function(e,s,r,gg){
 var z=gz$gwx_3()
-var cF=e_[x[12]].i
-_ai(cF,x[9],e_,x[12],1,1)
+var cF=e_[x[9]].i
+_ai(cF,x[8],e_,x[9],1,1)
 cF.pop()
 return r
 }
-e_[x[12]]={f:m2,j:[],i:[],ti:[x[9]],ic:[]}
-d_[x[13]]={}
-d_[x[13]]["68dcfa4a"]=function(e,s,r,gg){
+e_[x[9]]={f:m2,j:[],i:[],ti:[x[8]],ic:[]}
+d_[x[10]]={}
+d_[x[10]]["68dcfa4a"]=function(e,s,r,gg){
 var z=gz$gwx_4()
-var b=x[13]+':68dcfa4a'
+var b=x[10]+':68dcfa4a'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-badge/uni-badge.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[13]);return}
+if(p_[b]){_wl(b,x[10]);return}
 p_[b]=true
 try{
 var oB=_v()
@@ -2805,14 +2797,14 @@ var m3=function(e,s,r,gg){
 var z=gz$gwx_4()
 return r
 }
-e_[x[13]]={f:m3,j:[],i:[],ti:[],ic:[]}
-d_[x[14]]={}
-d_[x[14]]["346bda0d"]=function(e,s,r,gg){
+e_[x[10]]={f:m3,j:[],i:[],ti:[],ic:[]}
+d_[x[11]]={}
+d_[x[11]]["346bda0d"]=function(e,s,r,gg){
 var z=gz$gwx_5()
-var b=x[14]+':346bda0d'
+var b=x[11]+':346bda0d'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-icon/uni-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[14]);return}
+if(p_[b]){_wl(b,x[11]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -2826,14 +2818,14 @@ var m4=function(e,s,r,gg){
 var z=gz$gwx_5()
 return r
 }
-e_[x[14]]={f:m4,j:[],i:[],ti:[],ic:[]}
-d_[x[15]]={}
-d_[x[15]]["30c48a99"]=function(e,s,r,gg){
+e_[x[11]]={f:m4,j:[],i:[],ti:[],ic:[]}
+d_[x[12]]={}
+d_[x[12]]["30c48a99"]=function(e,s,r,gg){
 var z=gz$gwx_6()
-var b=x[15]+':30c48a99'
+var b=x[12]+':30c48a99'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list-item/uni-list-item.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[15]);return}
+if(p_[b]){_wl(b,x[12]);return}
 p_[b]=true
 try{
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:view:1:149")
@@ -2853,7 +2845,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:805")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[15],oH,e_,d_)
+var cI=_gd(x[12],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,9,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2861,7 +2853,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[15],1,876)
+else _w(oH,x[12],1,876)
 cs.pop()
 cs.pop()
 }
@@ -2892,7 +2884,7 @@ var oP=_v()
 _(tM,oP)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1431")
 var xQ=_oz(z,17,e,s,gg)
-var oR=_gd(x[15],xQ,e_,d_)
+var oR=_gd(x[12],xQ,e_,d_)
 if(oR){
 var fS=_1z(z,16,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2900,7 +2892,7 @@ oP.wxXCkey=3
 oR(fS,fS,oP,gg)
 gg.f=cur_globalf
 }
-else _w(xQ,x[15],1,1557)
+else _w(xQ,x[12],1,1557)
 cs.pop()
 cs.pop()
 }
@@ -2918,7 +2910,7 @@ var cT=_v()
 _(bO,cT)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1802")
 var hU=_oz(z,22,e,s,gg)
-var oV=_gd(x[15],hU,e_,d_)
+var oV=_gd(x[12],hU,e_,d_)
 if(oV){
 var cW=_1z(z,21,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2926,7 +2918,7 @@ cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[15],1,1969)
+else _w(hU,x[12],1,1969)
 cs.pop()
 cs.pop()
 }
@@ -2954,21 +2946,21 @@ return r
 }
 var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
-var oJ=e_[x[15]].i
-_ai(oJ,x[3],e_,x[15],1,1)
-_ai(oJ,x[10],e_,x[15],1,61)
+var oJ=e_[x[12]].i
+_ai(oJ,x[3],e_,x[12],1,1)
+_ai(oJ,x[13],e_,x[12],1,61)
 oJ.pop()
 oJ.pop()
 return r
 }
-e_[x[15]]={f:m5,j:[],i:[],ti:[x[3],x[10]],ic:[]}
-d_[x[16]]={}
-d_[x[16]]["3b6bb3ad"]=function(e,s,r,gg){
+e_[x[12]]={f:m5,j:[],i:[],ti:[x[3],x[13]],ic:[]}
+d_[x[14]]={}
+d_[x[14]]["3b6bb3ad"]=function(e,s,r,gg){
 var z=gz$gwx_7()
-var b=x[16]+':3b6bb3ad'
+var b=x[14]+':3b6bb3ad'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list/uni-list.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[16]);return}
+if(p_[b]){_wl(b,x[14]);return}
 p_[b]=true
 try{
 cs.push("./components/list/uni-list/uni-list.vue.wxml:view:1:62")
@@ -2978,7 +2970,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./components/list/uni-list/uni-list.vue.wxml:template:1:136")
 var oD=_oz(z,4,e,s,gg)
-var fE=_gd(x[16],oD,e_,d_)
+var fE=_gd(x[14],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -2986,7 +2978,7 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[16],1,194)
+else _w(oD,x[14],1,194)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -2997,12 +2989,12 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[16]]["default"]=function(e,s,r,gg){
+d_[x[14]]["default"]=function(e,s,r,gg){
 var z=gz$gwx_7()
-var b=x[16]+':default'
+var b=x[14]+':default'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list/uni-list.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[16]);return}
+if(p_[b]){_wl(b,x[14]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -3014,19 +3006,19 @@ return r
 }
 var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
-var aL=e_[x[16]].i
-_ai(aL,x[9],e_,x[16],1,1)
+var aL=e_[x[14]].i
+_ai(aL,x[8],e_,x[14],1,1)
 aL.pop()
 return r
 }
-e_[x[16]]={f:m6,j:[],i:[],ti:[x[9]],ic:[]}
-d_[x[17]]={}
-d_[x[17]]["2241d2a0"]=function(e,s,r,gg){
+e_[x[14]]={f:m6,j:[],i:[],ti:[x[8]],ic:[]}
+d_[x[15]]={}
+d_[x[15]]["2241d2a0"]=function(e,s,r,gg){
 var z=gz$gwx_8()
-var b=x[17]+':2241d2a0'
+var b=x[15]+':2241d2a0'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/m-icon/m-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[17]);return}
+if(p_[b]){_wl(b,x[15]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -3040,14 +3032,14 @@ var m7=function(e,s,r,gg){
 var z=gz$gwx_8()
 return r
 }
-e_[x[17]]={f:m7,j:[],i:[],ti:[],ic:[]}
-d_[x[18]]={}
-d_[x[18]]["7dcb1efb"]=function(e,s,r,gg){
+e_[x[15]]={f:m7,j:[],i:[],ti:[],ic:[]}
+d_[x[16]]={}
+d_[x[16]]["7dcb1efb"]=function(e,s,r,gg){
 var z=gz$gwx_9()
-var b=x[18]+':7dcb1efb'
+var b=x[16]+':7dcb1efb'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/m-input.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[18]);return}
+if(p_[b]){_wl(b,x[16]);return}
 p_[b]=true
 try{
 cs.push("./components/m-input.vue.wxml:view:1:78")
@@ -3061,7 +3053,7 @@ var fE=_v()
 _(xC,fE)
 cs.push("./components/m-input.vue.wxml:template:1:521")
 var cF=_oz(z,8,e,s,gg)
-var hG=_gd(x[18],cF,e_,d_)
+var hG=_gd(x[16],cF,e_,d_)
 if(hG){
 var oH=_1z(z,5,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3069,7 +3061,7 @@ fE.wxXCkey=3
 hG(oH,oH,fE,gg)
 gg.f=cur_globalf
 }
-else _w(cF,x[18],1,706)
+else _w(cF,x[16],1,706)
 cs.pop()
 cs.pop()
 }
@@ -3081,7 +3073,7 @@ var cI=_v()
 _(oD,cI)
 cs.push("./components/m-input.vue.wxml:template:1:803")
 var oJ=_oz(z,16,e,s,gg)
-var lK=_gd(x[18],oJ,e_,d_)
+var lK=_gd(x[16],oJ,e_,d_)
 if(lK){
 var aL=_1z(z,13,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3089,7 +3081,7 @@ cI.wxXCkey=3
 lK(aL,aL,cI,gg)
 gg.f=cur_globalf
 }
-else _w(oJ,x[18],1,970)
+else _w(oJ,x[16],1,970)
 cs.pop()
 cs.pop()
 }
@@ -3106,19 +3098,19 @@ return r
 }
 var m8=function(e,s,r,gg){
 var z=gz$gwx_9()
-var bO=e_[x[18]].i
-_ai(bO,x[8],e_,x[18],1,1)
+var bO=e_[x[16]].i
+_ai(bO,x[17],e_,x[16],1,1)
 bO.pop()
 return r
 }
-e_[x[18]]={f:m8,j:[],i:[],ti:[x[8]],ic:[]}
-d_[x[19]]={}
-d_[x[19]]["53499e7e"]=function(e,s,r,gg){
+e_[x[16]]={f:m8,j:[],i:[],ti:[x[17]],ic:[]}
+d_[x[18]]={}
+d_[x[18]]["53499e7e"]=function(e,s,r,gg){
 var z=gz$gwx_10()
-var b=x[19]+':53499e7e'
+var b=x[18]+':53499e7e'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/mpvue-echarts/src/echarts.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[19]);return}
+if(p_[b]){_wl(b,x[18]);return}
 p_[b]=true
 try{
 var oB=_v()
@@ -3139,14 +3131,14 @@ var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
 return r
 }
-e_[x[19]]={f:m9,j:[],i:[],ti:[],ic:[]}
-d_[x[20]]={}
-d_[x[20]]["ab7aaa6c"]=function(e,s,r,gg){
+e_[x[18]]={f:m9,j:[],i:[],ti:[],ic:[]}
+d_[x[19]]={}
+d_[x[19]]["ab7aaa6c"]=function(e,s,r,gg){
 var z=gz$gwx_11()
-var b=x[20]+':ab7aaa6c'
+var b=x[19]+':ab7aaa6c'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/inputPage.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[20]);return}
+if(p_[b]){_wl(b,x[19]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -3160,17 +3152,17 @@ var m10=function(e,s,r,gg){
 var z=gz$gwx_11()
 return r
 }
-e_[x[20]]={f:m10,j:[],i:[],ti:[],ic:[]}
-d_[x[21]]={}
+e_[x[19]]={f:m10,j:[],i:[],ti:[],ic:[]}
+d_[x[20]]={}
 var m11=function(e,s,r,gg){
 var z=gz$gwx_12()
-var fS=e_[x[21]].i
-_ai(fS,x[22],e_,x[21],1,1)
+var fS=e_[x[20]].i
+_ai(fS,x[21],e_,x[20],1,1)
 var cT=_v()
 _(r,cT)
 cs.push("./pages/common/inputPage.wxml:template:2:6")
 var hU=_oz(z,1,e,s,gg)
-var oV=_gd(x[21],hU,e_,d_)
+var oV=_gd(x[20],hU,e_,d_)
 if(oV){
 var cW=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3178,26 +3170,26 @@ cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[21],2,18)
+else _w(hU,x[20],2,18)
 cs.pop()
 fS.pop()
 return r
 }
-e_[x[21]]={f:m11,j:[],i:[],ti:[x[22]],ic:[]}
-d_[x[23]]={}
-d_[x[23]]["72ed35ad"]=function(e,s,r,gg){
+e_[x[20]]={f:m11,j:[],i:[],ti:[x[21]],ic:[]}
+d_[x[22]]={}
+d_[x[22]]["72ed35ad"]=function(e,s,r,gg){
 var z=gz$gwx_13()
-var b=x[23]+':72ed35ad'
+var b=x[22]+':72ed35ad'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/danger/addDanger.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[23]);return}
+if(p_[b]){_wl(b,x[22]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
 cs.push("./pages/danger/addDanger.vue.wxml:template:1:1504")
 var xC=_oz(z,2,e,s,gg)
-var oD=_gd(x[23],xC,e_,d_)
+var oD=_gd(x[22],xC,e_,d_)
 if(oD){
 var fE=_1z(z,1,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3205,7 +3197,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[23],1,1619)
+else _w(xC,x[22],1,1619)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -3216,24 +3208,24 @@ return r
 }
 var m12=function(e,s,r,gg){
 var z=gz$gwx_13()
-var lY=e_[x[23]].i
-_ai(lY,x[1],e_,x[23],1,1)
-_ai(lY,x[2],e_,x[23],1,61)
+var lY=e_[x[22]].i
+_ai(lY,x[1],e_,x[22],1,1)
+_ai(lY,x[2],e_,x[22],1,61)
 lY.pop()
 lY.pop()
 return r
 }
-e_[x[23]]={f:m12,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[24]]={}
+e_[x[22]]={f:m12,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[23]]={}
 var m13=function(e,s,r,gg){
 var z=gz$gwx_14()
-var t1=e_[x[24]].i
-_ai(t1,x[25],e_,x[24],1,1)
+var t1=e_[x[23]].i
+_ai(t1,x[24],e_,x[23],1,1)
 var e2=_v()
 _(r,e2)
 cs.push("./pages/danger/addDanger.wxml:template:2:6")
 var b3=_oz(z,1,e,s,gg)
-var o4=_gd(x[24],b3,e_,d_)
+var o4=_gd(x[23],b3,e_,d_)
 if(o4){
 var x5=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3241,19 +3233,19 @@ e2.wxXCkey=3
 o4(x5,x5,e2,gg)
 gg.f=cur_globalf
 }
-else _w(b3,x[24],2,18)
+else _w(b3,x[23],2,18)
 cs.pop()
 t1.pop()
 return r
 }
-e_[x[24]]={f:m13,j:[],i:[],ti:[x[25]],ic:[]}
-d_[x[26]]={}
-d_[x[26]]["77f549ab"]=function(e,s,r,gg){
+e_[x[23]]={f:m13,j:[],i:[],ti:[x[24]],ic:[]}
+d_[x[25]]={}
+d_[x[25]]["77f549ab"]=function(e,s,r,gg){
 var z=gz$gwx_15()
-var b=x[26]+':77f549ab'
+var b=x[25]+':77f549ab'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/danger/detailDanger.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[26]);return}
+if(p_[b]){_wl(b,x[25]);return}
 p_[b]=true
 try{
 cs.push("./pages/danger/detailDanger.vue.wxml:view:1:157")
@@ -3263,7 +3255,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/danger/detailDanger.vue.wxml:template:1:345")
 var oD=_oz(z,3,e,s,gg)
-var fE=_gd(x[26],oD,e_,d_)
+var fE=_gd(x[25],oD,e_,d_)
 if(fE){
 var cF=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3271,13 +3263,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[26],1,460)
+else _w(oD,x[25],1,460)
 cs.pop()
 var hG=_v()
 _(oB,hG)
 cs.push("./pages/danger/detailDanger.vue.wxml:template:1:640")
 var oH=_oz(z,5,e,s,gg)
-var cI=_gd(x[26],oH,e_,d_)
+var cI=_gd(x[25],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,4,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3285,7 +3277,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[26],1,757)
+else _w(oH,x[25],1,757)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -3298,24 +3290,24 @@ return r
 }
 var m14=function(e,s,r,gg){
 var z=gz$gwx_15()
-var f7=e_[x[26]].i
-_ai(f7,x[1],e_,x[26],1,1)
-_ai(f7,x[2],e_,x[26],1,61)
+var f7=e_[x[25]].i
+_ai(f7,x[1],e_,x[25],1,1)
+_ai(f7,x[2],e_,x[25],1,61)
 f7.pop()
 f7.pop()
 return r
 }
-e_[x[26]]={f:m14,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[27]]={}
+e_[x[25]]={f:m14,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+d_[x[26]]={}
 var m15=function(e,s,r,gg){
 var z=gz$gwx_16()
-var h9=e_[x[27]].i
-_ai(h9,x[28],e_,x[27],1,1)
+var h9=e_[x[26]].i
+_ai(h9,x[27],e_,x[26],1,1)
 var o0=_v()
 _(r,o0)
 cs.push("./pages/danger/detailDanger.wxml:template:2:6")
 var cAB=_oz(z,1,e,s,gg)
-var oBB=_gd(x[27],cAB,e_,d_)
+var oBB=_gd(x[26],cAB,e_,d_)
 if(oBB){
 var lCB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3323,26 +3315,26 @@ o0.wxXCkey=3
 oBB(lCB,lCB,o0,gg)
 gg.f=cur_globalf
 }
-else _w(cAB,x[27],2,18)
+else _w(cAB,x[26],2,18)
 cs.pop()
 h9.pop()
 return r
 }
-e_[x[27]]={f:m15,j:[],i:[],ti:[x[28]],ic:[]}
-d_[x[29]]={}
-d_[x[29]]["4ef7e761"]=function(e,s,r,gg){
+e_[x[26]]={f:m15,j:[],i:[],ti:[x[27]],ic:[]}
+d_[x[28]]={}
+d_[x[28]]["4ef7e761"]=function(e,s,r,gg){
 var z=gz$gwx_17()
-var b=x[29]+':4ef7e761'
+var b=x[28]+':4ef7e761'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/login/diyHost.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[29]);return}
+if(p_[b]){_wl(b,x[28]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
 cs.push("./pages/login/diyHost.vue.wxml:template:1:247")
 var xC=_oz(z,5,e,s,gg)
-var oD=_gd(x[29],xC,e_,d_)
+var oD=_gd(x[28],xC,e_,d_)
 if(oD){
 var fE=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3350,7 +3342,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[29],1,471)
+else _w(xC,x[28],1,471)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -3361,12 +3353,12 @@ return r
 }
 var m16=function(e,s,r,gg){
 var z=gz$gwx_17()
-var tEB=e_[x[29]].i
-_ai(tEB,x[7],e_,x[29],1,1)
+var tEB=e_[x[28]].i
+_ai(tEB,x[29],e_,x[28],1,1)
 tEB.pop()
 return r
 }
-e_[x[29]]={f:m16,j:[],i:[],ti:[x[7]],ic:[]}
+e_[x[28]]={f:m16,j:[],i:[],ti:[x[29]],ic:[]}
 d_[x[30]]={}
 var m17=function(e,s,r,gg){
 var z=gz$gwx_18()
@@ -3454,11 +3446,11 @@ return r
 var m18=function(e,s,r,gg){
 var z=gz$gwx_19()
 var hMB=e_[x[32]].i
-_ai(hMB,x[7],e_,x[32],1,1)
+_ai(hMB,x[29],e_,x[32],1,1)
 hMB.pop()
 return r
 }
-e_[x[32]]={f:m18,j:[],i:[],ti:[x[7]],ic:[]}
+e_[x[32]]={f:m18,j:[],i:[],ti:[x[29]],ic:[]}
 d_[x[33]]={}
 var m19=function(e,s,r,gg){
 var z=gz$gwx_20()
@@ -4231,13 +4223,13 @@ cs.pop()
 var cF=_v()
 _(oB,cF)
 if(_oz(z,10,e,s,gg)){cF.wxVkey=1
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:block:1:9010")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:block:1:8725")
 cs.pop()
 }
 var hG=_v()
 _(oB,hG)
 if(_oz(z,11,e,s,gg)){hG.wxVkey=1
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:block:1:18415")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:block:1:18130")
 cs.pop()
 }
 xC.wxXCkey=1
@@ -4515,11 +4507,11 @@ return r
 var m42=function(e,s,r,gg){
 var z=gz$gwx_43()
 var b7D=e_[x[68]].i
-_ai(b7D,x[7],e_,x[68],1,1)
+_ai(b7D,x[29],e_,x[68],1,1)
 b7D.pop()
 return r
 }
-e_[x[68]]={f:m42,j:[],i:[],ti:[x[7]],ic:[]}
+e_[x[68]]={f:m42,j:[],i:[],ti:[x[29]],ic:[]}
 d_[x[69]]={}
 var m43=function(e,s,r,gg){
 var z=gz$gwx_44()
@@ -4609,11 +4601,11 @@ return r
 var m44=function(e,s,r,gg){
 var z=gz$gwx_45()
 var cEE=e_[x[71]].i
-_ai(cEE,x[7],e_,x[71],1,1)
+_ai(cEE,x[29],e_,x[71],1,1)
 cEE.pop()
 return r
 }
-e_[x[71]]={f:m44,j:[],i:[],ti:[x[7]],ic:[]}
+e_[x[71]]={f:m44,j:[],i:[],ti:[x[29]],ic:[]}
 d_[x[72]]={}
 var m45=function(e,s,r,gg){
 var z=gz$gwx_46()
@@ -6684,7 +6676,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniDrawer = _interopRequireDefault(__webpack_require__(/*! @/components/drawer/uni-drawer.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/drawer/uni-drawer.vue\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: _objectSpread({},\n  (0, _vuex.mapState)(['hasLogin', 'forcedLogin', 'userType', 'userInfo'])),\n\n  components: { uniDrawer: _uniDrawer.default },\n  data: function data() {\n    return {\n      // 右上角的按钮菜单\n      navBtnMuen: [],\n      // 当前主题: 0、默认主题 1、安全标准化主题 2、ISO45001主题\n      currentTemplate: 0 };\n\n  },\n  onLoad: function onLoad() {\n    var hydrantTab = {\n      name: '当月未检查',\n      id: '/mobile/xhsdywjclb.do' };\n\n    this.saveTabInfo('消火栓', hydrantTab);\n\n    var valveTab = {\n      name: '本周未检查',\n      id: '/mobile/fzzwjclb.do' };\n\n    this.saveTabInfo('阀组', valveTab);\n\n    var waterTab = {\n      name: '当天未检查',\n      id: '/mobile/jtwjclb.do' };\n\n    this.saveTabInfo('高位水箱', waterTab);\n    this.saveTabInfo('消防泵', waterTab);\n\n    this.setCurrentTemp();\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n    var that = this;\n    uni.showActionSheet({\n      itemList: that.navBtnMuen,\n      success: function success(res) {\n        console.log('选中了第' + (res.tapIndex + 1) + '个按钮');\n        uni.showLoading({\n          title: '正在切换主题...' });\n\n        setTimeout(function () {\n          uni.hideLoading();\n          that.currentTemplate = res.tapIndex;\n          that.setCurrentTemp();\n        }, 1000);\n      },\n      fail: function fail(res) {\n        console.log(res.errMsg);\n      } });\n\n  },\n  methods: {\n    // 设定当前选择的主题\n    setCurrentTemp: function setCurrentTemp() {\n      this.navBtnMuen = ['默认主题', '安全标准化主题', 'ISO45001主题'];\n      this.navBtnMuen[this.currentTemplate] += '[当前]';\n    },\n    jumpListPage: function jumpListPage(lx) {\n      this.saveTabInfo('currentLx', lx); // 保存当前类型名称\n      // \t\t\t\tuni.navigateTo({\n      // \t\t\t\t\turl: '../pointList/pointList?lx=' + lx,\n      // \t\t\t\t});\n      uni.navigateTo({\n        url: '../pointList/uni-tabs' });\n\n    },\n    jumpPage: function jumpPage(url) {\n      if (url == '') {\n        uni.showToast({\n          icon: 'none',\n          title: '敬请期待～' });\n\n        return;\n      } else {\n        uni.navigateTo({\n          url: url });\n\n      }\n    },\n    saveTabInfo: function saveTabInfo(key, data) {\n      uni.setStorage({\n        key: key,\n        data: data,\n        success: function success() {\n          console.log('保存成功');\n        } });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointCheck/pointCheck.vue?vue&type=script&lang=js&?f61e");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniDrawer = _interopRequireDefault(__webpack_require__(/*! @/components/drawer/uni-drawer.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/drawer/uni-drawer.vue\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: _objectSpread({},\n  (0, _vuex.mapState)(['hasLogin', 'forcedLogin', 'userType', 'userInfo'])),\n\n  components: { uniDrawer: _uniDrawer.default },\n  data: function data() {\n    return {\n      // 右上角的按钮菜单\n      navBtnMuen: [],\n      // 当前主题: 0、默认主题 1、安全标准化主题 2、ISO45001主题\n      currentTemplate: 0 };\n\n  },\n  onLoad: function onLoad() {\n    var hydrantTab = {\n      name: '当月未检查',\n      id: '/mobile/xhsdywjclb.do' };\n\n    this.saveTabInfo('消火栓', hydrantTab);\n\n    var valveTab = {\n      name: '本周未检查',\n      id: '/mobile/fzzwjclb.do' };\n\n    this.saveTabInfo('阀组', valveTab);\n\n    var waterTab = {\n      name: '当天未检查',\n      id: '/mobile/jtwjclb.do' };\n\n    this.saveTabInfo('高位水箱', waterTab);\n    this.saveTabInfo('消防泵', waterTab);\n\n    this.setCurrentTemp();\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n    var that = this;\n    uni.showActionSheet({\n      itemList: that.navBtnMuen,\n      success: function success(res) {\n        console.log('选中了第' + (res.tapIndex + 1) + '个按钮');\n        uni.showLoading({\n          title: '正在切换主题...' });\n\n        setTimeout(function () {\n          uni.hideLoading();\n          that.currentTemplate = res.tapIndex;\n          that.setCurrentTemp();\n        }, 1000);\n      },\n      fail: function fail(res) {\n        console.log(res.errMsg);\n      } });\n\n  },\n  methods: {\n    // 设定当前选择的主题\n    setCurrentTemp: function setCurrentTemp() {\n      this.navBtnMuen = ['默认主题', '安全标准化主题', 'ISO45001主题'];\n      this.navBtnMuen[this.currentTemplate] += '[当前]';\n    },\n    jumpListPage: function jumpListPage(lx) {\n      this.saveTabInfo('currentLx', lx); // 保存当前类型名称\n      // \t\t\t\tuni.navigateTo({\n      // \t\t\t\t\turl: '../pointList/pointList?lx=' + lx,\n      // \t\t\t\t});\n      uni.navigateTo({\n        url: '../pointList/uni-tabs' });\n\n    },\n    jumpPage: function jumpPage(url) {\n      if (url == '') {\n        uni.showToast({\n          icon: 'none',\n          title: '敬请期待～' });\n\n        return;\n      } else {\n        uni.navigateTo({\n          url: url });\n\n      }\n    },\n    saveTabInfo: function saveTabInfo(key, data) {\n      uni.setStorage({\n        key: key,\n        data: data,\n        success: function success() {\n          console.log('保存成功');\n        } });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointCheck/pointCheck.vue?vue&type=script&lang=js&?f61e");
 
 /***/ }),
 
@@ -6707,7 +6699,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"part2\" },\n    [\n      _vm.userType != 1\n        ? _c(\n            \"swiper\",\n            {\n              staticClass: \"banner-box\",\n              attrs: {\n                \"indicator-dots\": \"\",\n                autoplay: \"\",\n                \"indicator-active-color\": \"#169bd5\",\n                circular: \"\",\n                interval: 5000,\n                duration: 300,\n                \"indicator-color\": \"rgba(0,0,0,.3)\"\n              }\n            },\n            [\n              _c(\"swiper-item\", { attrs: { mpcomid: \"10bbdf1a-0\" } }, [\n                _c(\"image\", {\n                  staticClass: \"banner-image\",\n                  attrs: {\n                    src: \"../../static/img/fgBG.png\",\n                    mode: \"aspectFill\",\n                    \"lazy-load\": \"\"\n                  }\n                })\n              ])\n            ],\n            1\n          )\n        : _vm._e(),\n      _vm.userType == 1\n        ? _c(\n            \"view\",\n            {\n              staticClass: \"topView_pc\",\n              attrs: { eventid: \"10bbdf1a-0\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"../statistics/statistics\")\n                }\n              }\n            },\n            [\n              _vm._m(0),\n              _vm._m(1),\n              _vm._m(2),\n              _c(\"image\", {\n                staticClass: \"arrow\",\n                attrs: {\n                  src: \"../../static/img/rightArrow_white.png\",\n                  mode: \"aspectFit\"\n                }\n              })\n            ]\n          )\n        : _vm._e(),\n      _vm.currentTemplate == 0\n        ? _c(\n            \"block\",\n            [\n              _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                  _vm._v(\"检查管理\")\n                ])\n              ]),\n              _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                _c(\n                  \"view\",\n                  {\n                    staticClass: \"dangerView\",\n                    attrs: { eventid: \"10bbdf1a-1\" },\n                    on: {\n                      tap: function($event) {\n                        _vm.jumpListPage(\"所有记录\")\n                      }\n                    }\n                  },\n                  [\n                    _c(\"image\", {\n                      staticClass: \"dangerIcon\",\n                      attrs: {\n                        src: \"../../static/img/point_all.png\",\n                        mode: \"widthFix\"\n                      }\n                    }),\n                    _c(\"view\", { staticClass: \"subView\" }, [\n                      _c(\"text\", { staticClass: \"dangerText\" }, [\n                        _vm._v(\"所有记录\")\n                      ])\n                    ])\n                  ]\n                ),\n                _c(\n                  \"view\",\n                  {\n                    staticClass: \"dangerView\",\n                    attrs: { eventid: \"10bbdf1a-2\" },\n                    on: {\n                      tap: function($event) {\n                        _vm.jumpListPage(\"消火栓\")\n                      }\n                    }\n                  },\n                  [\n                    _c(\"image\", {\n                      staticClass: \"dangerIcon\",\n                      attrs: {\n                        src: \"../../static/img/point_xhs.png\",\n                        mode: \"widthFix\"\n                      }\n                    }),\n                    _c(\"view\", { staticClass: \"subView\" }, [\n                      _c(\"text\", { staticClass: \"dangerText\" }, [\n                        _vm._v(\"消火栓\")\n                      ])\n                    ])\n                  ]\n                ),\n                _vm.userType == 1\n                  ? _c(\n                      \"view\",\n                      {\n                        staticClass: \"dangerView\",\n                        attrs: { eventid: \"10bbdf1a-3\" },\n                        on: {\n                          tap: function($event) {\n                            _vm.jumpListPage(\"阀组\")\n                          }\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"dangerIcon\",\n                          attrs: {\n                            src: \"../../static/img/point_fz.png\",\n                            mode: \"widthFix\"\n                          }\n                        }),\n                        _c(\"view\", { staticClass: \"subView\" }, [\n                          _c(\"text\", { staticClass: \"dangerText\" }, [\n                            _vm._v(\"阀组\")\n                          ])\n                        ])\n                      ]\n                    )\n                  : _vm._e(),\n                _vm.userType == 1\n                  ? _c(\n                      \"view\",\n                      {\n                        staticClass: \"dangerView\",\n                        attrs: { eventid: \"10bbdf1a-4\" },\n                        on: {\n                          tap: function($event) {\n                            _vm.jumpListPage(\"高位水箱\")\n                          }\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"dangerIcon\",\n                          attrs: {\n                            src: \"../../static/img/point_sx.png\",\n                            mode: \"widthFix\"\n                          }\n                        }),\n                        _c(\"view\", { staticClass: \"subView\" }, [\n                          _c(\"text\", { staticClass: \"dangerText\" }, [\n                            _vm._v(\"高位水箱\")\n                          ])\n                        ])\n                      ]\n                    )\n                  : _vm._e(),\n                _vm.userType == 1\n                  ? _c(\n                      \"view\",\n                      {\n                        staticClass: \"dangerView\",\n                        attrs: { eventid: \"10bbdf1a-5\" },\n                        on: {\n                          tap: function($event) {\n                            _vm.jumpListPage(\"消防泵\")\n                          }\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"dangerIcon\",\n                          attrs: {\n                            src: \"../../static/img/point_xfb.png\",\n                            mode: \"widthFix\"\n                          }\n                        }),\n                        _c(\"view\", { staticClass: \"subView\" }, [\n                          _c(\"text\", { staticClass: \"dangerText\" }, [\n                            _vm._v(\"消防泵\")\n                          ])\n                        ])\n                      ]\n                    )\n                  : _vm._e(),\n                _c(\"view\", { staticClass: \"dangerView\" })\n              ]),\n              _vm.userType == 1\n                ? _c(\"block\", [\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"隐患排查\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-6\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"../danger/addDanger\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/yhsb.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"隐患上报\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-7\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"../danger/dangerList\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/yhsp.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"隐患审批\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"事故管理\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-8\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/sgkb.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"事故快报\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" }),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"作业管理\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-9\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/zyfxpg.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"作业风险评估\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-10\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/zysp.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"作业审批\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"安全培训\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-11\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/pxzl.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"培训资料\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-12\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/zxks.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"在线考试\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-13\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/pxjh.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"培训计划\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-14\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/pxkc.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"培训课程\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-15\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/zwcs.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"自我测试\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-16\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/tyks.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"统一考试\")\n                            ])\n                          ])\n                        ]\n                      )\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"法律法规\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-17\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/fgqd.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"法规清单\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" }),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"环保管理\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-18\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/sfpf.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"三废排放\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-19\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/jcjl.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"监测记录\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ])\n                  ])\n                : _vm._e()\n            ],\n            1\n          )\n        : _vm._e(),\n      _vm.currentTemplate == 1\n        ? _c(\"block\", [\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"目标职责\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-20\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/mb.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"目标\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-21\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jghzz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"机构和职责\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-22\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/qycy.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"全员参与\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-23\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/aqtr.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"安全投入\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-24\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/aqwh.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"安全文化\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                _vm._v(\"制度化管理\")\n              ])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-25\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/fgqd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"法律法规\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-26\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/gzzd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"规章制度\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-27\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/czlc.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"操作流程\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"教育培训\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-28\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jypx.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"教育培训\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-29\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/rypx.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"人员培训\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"现场管理\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-30\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/point_all.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"设备设施\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-31\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zyaq.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"作业安全\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-32\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zyjk.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"职业健康\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                _vm._v(\"安全风险管理\")\n              ])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-33\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/aqfxgl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"安全风险管理\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-34\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zdwxy.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"重大危险源\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-35\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yhpc.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"隐患排查\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-36\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/ycyj.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"预测预警\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" }),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"应急管理\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-37\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjzb.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急准备\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-38\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjcz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急处置\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-39\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjpg.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急评估\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"事故查处\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-40\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/sgkb.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"报告\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-41\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zxks.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"调查和处理\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"持续改进\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-42\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jxpd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"绩效评定\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-43\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jcjl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"持续改进\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ])\n          ])\n        : _vm._e(),\n      _vm.currentTemplate == 2\n        ? _c(\"block\", [\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"组织环境\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-44\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/txgl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"体系管理\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" }),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                _vm._v(\"领导作用与工作人员参与\")\n              ])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-45\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/cn.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"承诺\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-46\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jghzz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"组织职责\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"策划\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-47\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/wxy.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"危险源\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-48\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/flfg.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"法律法规\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"支持\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-49\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/nl.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"能力\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-50\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/ys.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"意识\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-51\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/gt.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"沟通\")])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"运行\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-52\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/wxy.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"危险源\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-53\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/bg.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"变更\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-54\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/cg.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"采购\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-55\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/ycyj.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急响应\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" }),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"绩效评定\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-56\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jxpd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"绩效评价\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-57\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjcz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"内部审核\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-58\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/ygyh.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"管理评审\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"改进\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-59\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/pxzl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"总则\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-60\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zysp.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"纠正措施\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-61\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/cxgj.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"持续改进\")\n                    ])\n                  ])\n                ]\n              )\n            ])\n          ])\n        : _vm._e()\n    ],\n    1\n  )\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"隐患总数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"1005\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"事故总数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"600\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"检查次数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"2000\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointCheck/pointCheck.vue?vue&type=template&id=5e9bec31&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"part2\" },\n    [\n      _vm.userType != 1\n        ? _c(\n            \"swiper\",\n            {\n              staticClass: \"banner-box\",\n              attrs: {\n                \"indicator-dots\": \"\",\n                autoplay: \"\",\n                \"indicator-active-color\": \"#169bd5\",\n                circular: \"\",\n                interval: 5000,\n                duration: 300,\n                \"indicator-color\": \"rgba(0,0,0,.3)\"\n              }\n            },\n            [\n              _c(\"swiper-item\", { attrs: { mpcomid: \"10bbdf1a-0\" } }, [\n                _c(\"image\", {\n                  staticClass: \"banner-image\",\n                  attrs: {\n                    src: \"../../static/img/fgBG.png\",\n                    mode: \"aspectFill\",\n                    \"lazy-load\": \"\"\n                  }\n                })\n              ])\n            ],\n            1\n          )\n        : _vm._e(),\n      _vm.userType == 1\n        ? _c(\n            \"view\",\n            {\n              staticClass: \"topView_pc\",\n              attrs: { eventid: \"10bbdf1a-0\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"../statistics/statistics\")\n                }\n              }\n            },\n            [\n              _vm._m(0),\n              _vm._m(1),\n              _vm._m(2),\n              _c(\"image\", {\n                staticClass: \"arrow\",\n                attrs: {\n                  src: \"../../static/img/rightArrow_white.png\",\n                  mode: \"aspectFit\"\n                }\n              })\n            ]\n          )\n        : _vm._e(),\n      _vm.currentTemplate == 0\n        ? _c(\n            \"block\",\n            [\n              _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                  _vm._v(\"检查管理\")\n                ])\n              ]),\n              _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                _c(\n                  \"view\",\n                  {\n                    staticClass: \"dangerView\",\n                    attrs: { eventid: \"10bbdf1a-1\" },\n                    on: {\n                      tap: function($event) {\n                        _vm.jumpListPage(\"所有记录\")\n                      }\n                    }\n                  },\n                  [\n                    _c(\"image\", {\n                      staticClass: \"dangerIcon\",\n                      attrs: {\n                        src: \"../../static/img/point_all.png\",\n                        mode: \"widthFix\"\n                      }\n                    }),\n                    _c(\"view\", { staticClass: \"subView\" }, [\n                      _c(\"text\", { staticClass: \"dangerText\" }, [\n                        _vm._v(\"所有记录\")\n                      ])\n                    ])\n                  ]\n                ),\n                _c(\n                  \"view\",\n                  {\n                    staticClass: \"dangerView\",\n                    attrs: { eventid: \"10bbdf1a-2\" },\n                    on: {\n                      tap: function($event) {\n                        _vm.jumpListPage(\"消火栓\")\n                      }\n                    }\n                  },\n                  [\n                    _c(\"image\", {\n                      staticClass: \"dangerIcon\",\n                      attrs: {\n                        src: \"../../static/img/point_xhs.png\",\n                        mode: \"widthFix\"\n                      }\n                    }),\n                    _c(\"view\", { staticClass: \"subView\" }, [\n                      _c(\"text\", { staticClass: \"dangerText\" }, [\n                        _vm._v(\"消火栓\")\n                      ])\n                    ])\n                  ]\n                ),\n                _vm.userType == 1\n                  ? _c(\n                      \"view\",\n                      {\n                        staticClass: \"dangerView\",\n                        attrs: { eventid: \"10bbdf1a-3\" },\n                        on: {\n                          tap: function($event) {\n                            _vm.jumpListPage(\"阀组\")\n                          }\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"dangerIcon\",\n                          attrs: {\n                            src: \"../../static/img/point_fz.png\",\n                            mode: \"widthFix\"\n                          }\n                        }),\n                        _c(\"view\", { staticClass: \"subView\" }, [\n                          _c(\"text\", { staticClass: \"dangerText\" }, [\n                            _vm._v(\"阀组\")\n                          ])\n                        ])\n                      ]\n                    )\n                  : _vm._e(),\n                _vm.userType == 1\n                  ? _c(\n                      \"view\",\n                      {\n                        staticClass: \"dangerView\",\n                        attrs: { eventid: \"10bbdf1a-4\" },\n                        on: {\n                          tap: function($event) {\n                            _vm.jumpListPage(\"高位水箱\")\n                          }\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"dangerIcon\",\n                          attrs: {\n                            src: \"../../static/img/point_sx.png\",\n                            mode: \"widthFix\"\n                          }\n                        }),\n                        _c(\"view\", { staticClass: \"subView\" }, [\n                          _c(\"text\", { staticClass: \"dangerText\" }, [\n                            _vm._v(\"高位水箱\")\n                          ])\n                        ])\n                      ]\n                    )\n                  : _vm._e(),\n                _vm.userType == 1\n                  ? _c(\n                      \"view\",\n                      {\n                        staticClass: \"dangerView\",\n                        attrs: { eventid: \"10bbdf1a-5\" },\n                        on: {\n                          tap: function($event) {\n                            _vm.jumpListPage(\"消防泵\")\n                          }\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"dangerIcon\",\n                          attrs: {\n                            src: \"../../static/img/point_xfb.png\",\n                            mode: \"widthFix\"\n                          }\n                        }),\n                        _c(\"view\", { staticClass: \"subView\" }, [\n                          _c(\"text\", { staticClass: \"dangerText\" }, [\n                            _vm._v(\"消防泵\")\n                          ])\n                        ])\n                      ]\n                    )\n                  : _vm._e(),\n                _c(\"view\", { staticClass: \"dangerView\" })\n              ]),\n              _vm.userType == 1\n                ? _c(\"block\", [\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"隐患排查\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-6\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"../danger/addDanger\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/yhsb.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"隐患上报\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-7\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"../danger/dangerList\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/yhsp.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"隐患审批\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"事故管理\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-8\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/sgkb.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"事故快报\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" }),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"作业管理\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-9\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"../workRisk/riskList\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/zysp.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"作业审批\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" }),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"安全培训\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-10\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/pxzl.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"培训资料\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-11\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/zxks.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"在线考试\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-12\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/pxjh.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"培训计划\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-13\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/pxkc.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"培训课程\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-14\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/zwcs.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"自我测试\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-15\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/tyks.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"统一考试\")\n                            ])\n                          ])\n                        ]\n                      )\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"法律法规\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-16\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/fgqd.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"法规清单\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" }),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"环保管理\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-17\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/sfpf.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"三废排放\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-18\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/jcjl.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"监测记录\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ])\n                  ])\n                : _vm._e()\n            ],\n            1\n          )\n        : _vm._e(),\n      _vm.currentTemplate == 1\n        ? _c(\"block\", [\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"目标职责\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-19\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/mb.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"目标\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-20\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jghzz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"机构和职责\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-21\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/qycy.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"全员参与\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-22\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/aqtr.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"安全投入\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-23\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/aqwh.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"安全文化\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                _vm._v(\"制度化管理\")\n              ])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-24\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/fgqd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"法律法规\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-25\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/gzzd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"规章制度\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-26\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/czlc.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"操作流程\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"教育培训\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-27\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jypx.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"教育培训\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-28\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/rypx.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"人员培训\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"现场管理\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-29\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/point_all.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"设备设施\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-30\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zyaq.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"作业安全\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-31\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zyjk.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"职业健康\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                _vm._v(\"安全风险管理\")\n              ])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-32\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/aqfxgl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"安全风险管理\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-33\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zdwxy.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"重大危险源\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-34\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yhpc.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"隐患排查\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-35\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/ycyj.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"预测预警\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" }),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"应急管理\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-36\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjzb.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急准备\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-37\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjcz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急处置\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-38\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjpg.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急评估\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"事故查处\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-39\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/sgkb.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"报告\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-40\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zxks.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"调查和处理\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"持续改进\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-41\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jxpd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"绩效评定\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-42\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jcjl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"持续改进\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ])\n          ])\n        : _vm._e(),\n      _vm.currentTemplate == 2\n        ? _c(\"block\", [\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"组织环境\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-43\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/txgl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"体系管理\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" }),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                _vm._v(\"领导作用与工作人员参与\")\n              ])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-44\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/cn.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"承诺\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-45\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jghzz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"组织职责\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"策划\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-46\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/wxy.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"危险源\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-47\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/flfg.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"法律法规\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"支持\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-48\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/nl.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"能力\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-49\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/ys.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"意识\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-50\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/gt.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"沟通\")])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"运行\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-51\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/wxy.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"危险源\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-52\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/bg.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"变更\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-53\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/cg.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"采购\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-54\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/ycyj.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急响应\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" }),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"绩效评定\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-55\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jxpd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"绩效评价\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-56\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjcz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"内部审核\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-57\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/ygyh.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"管理评审\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"改进\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-58\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/pxzl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"总则\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-59\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zysp.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"纠正措施\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-60\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/cxgj.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"持续改进\")\n                    ])\n                  ])\n                ]\n              )\n            ])\n          ])\n        : _vm._e()\n    ],\n    1\n  )\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"隐患总数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"1005\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"事故总数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"600\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"检查次数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"2000\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointCheck/pointCheck.vue?vue&type=template&id=5e9bec31&");
 
 /***/ })
 
@@ -8053,6 +8045,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 },[["../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/main.js?{\"page\":\"pages%2Fdanger%2FdetailDanger\"}","common/runtime","common/vendor"]]]);
 });
 require('pages/danger/detailDanger.js');
+__wxRoute = 'pages/workRisk/riskList';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/workRisk/riskList.js';
+
+define('pages/workRisk/riskList.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
+
+    Page({
+            onShow: function() {}
+        })
+    
+});
+require('pages/workRisk/riskList.js');
 __wxRoute = 'pages/danger/dangerList';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/danger/dangerList.js';
 
 define('pages/danger/dangerList.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){

@@ -115,13 +115,13 @@
 					<text class="titleText_pc">作业管理</text>
 				</view>
 				<view class="menuBlockView">
-				  <view class='dangerView' @tap="jumpPage('')">
+				  <!-- <view class='dangerView' @tap="jumpPage('')">
 				    <image class="dangerIcon" src="../../static/img/zyfxpg.png" mode="widthFix"></image>
 				    <view class='subView'>
 				      <text class='dangerText'>作业风险评估</text>
 				    </view>
-				  </view>
-				  <view class='dangerView' @tap="jumpPage('')">
+				  </view> -->
+				  <view class='dangerView' @tap="jumpPage('../workRisk/riskList')">
 				    <image class="dangerIcon" src="../../static/img/zysp.png" mode="widthFix"></image>
 				    <view class='subView'>
 				      <text class='dangerText'>作业审批</text>
@@ -129,6 +129,8 @@
 				  </view>
 				  <view class='dangerView'>
 				  </view>
+					<view class='dangerView'>
+					</view>
 				</view>
 				
 				<view class="titleView_pc">

@@ -185,6 +185,20 @@
             "style": {
                 "navigationBarTitleText": "隐患整改审批"
             }
+        },{
+            "path": "pages/workRisk/riskList",
+            "style": {
+                "navigationBarTitleText": "作业审批",
+				"app-plus": {  
+					"titleNView": {  
+						"buttons": [{  
+							"text": "\ue605",
+							"fontSrc": "/static/aliIcon/iconfont.ttf",
+							"fontSize": "22px"
+						}]  
+					}  
+				}
+            }
         }
     ],
     "tabBar": {
