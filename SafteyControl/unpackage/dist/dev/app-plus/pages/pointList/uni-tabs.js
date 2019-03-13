@@ -379,7 +379,7 @@ var copyObj = function copyObj(a) {
   * http://222.223.19.166:10012/ehsq，外网
   * http://10.57.167.214:8080/ehsq，内网
   */
-var host = "http://192.168.1.100:8080/boeb9"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
+var host = "http://222.223.19.166:10012/ehsq"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
 
 
 var config = {
@@ -425,16 +425,26 @@ var config = {
   deleteImage: '/mobile/delZp.do',
 
   // ------隐患相关-------
-  // 添加/修改隐患
-  editDanger: '/mobile/updateYhzg.do',
+  // 添加隐患并发起流程
+  addYhzgToFlow: '/mobile/addYhzgToFlow.do',
   //获取隐患审批数据
   getYhzgListByType: '/mobile/getYhzgListByType.do',
   //获取隐患整改数目
   getYhzgTabCounts: '/mobile/getYhzgTabCounts.do',
   //获取隐患整改详情信息
   getYhzgDetail: '/mobile/getYhzgDetail.do',
-  //隐患整改审批
-  updateYhzgFlow: '/mobile/updateYhzgFlow.do' };
+  //隐患整改流程流转
+  updateAndSendFlowForMobile: '/mobile/updateAndSendFlowForMobile.do',
+  //查看流程图
+  showFlowPic: '/mobile/showFlowPic.do',
+  //根据用户id查询当前用户所在部门
+  getUserDeptName: '/mobile/getUserDeptName.do',
+  //获取流转日志的接口
+  getActNodeInsts: '/mobile/getActNodeInsts.do',
+  //获取审批记录的接口
+  listForInst: '/mobile/listForInst.do',
+  //获取预警指数统计结果的接口
+  getYjzsStatics: '/mobile/getYjzsStatics.do' };
 
 //对外把对象config返回
 module.exports = config;

@@ -1060,6 +1060,7 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'58792338-default-58792338-10'])
 Z([3,'21b694de-default-21b694de-6'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'30c48a99'])
@@ -1067,8 +1068,8 @@ Z([3,'false'])
 Z([3,'true'])
 Z([3,'点位编号'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
 Z([3,'检查人'])
 Z([3,'handleProxy'])
 Z([3,'_picker 21b694de'])
@@ -1077,202 +1078,247 @@ Z([1,'21b694de-0'])
 Z([3,'date'])
 Z([[6],[[7],[3,'obj']],[3,'jcrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
+Z(z[3])
 Z([3,'检查日期'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
 Z([3,'责任部门'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
 Z([3,'楼层'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
 Z([3,'位置'])
 Z([3,'21b694de-default-21b694de-11'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[6],[[7],[3,'obj']],[3,'sublist']])
-Z(z[32])
-Z(z[10])
+Z(z[33])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
+Z(z[13])
 Z([[2,'+'],[1,'21b694de-1-'],[[7],[3,'index']]])
-Z(z[2])
-Z(z[4])
+Z(z[3])
+Z(z[5])
 Z([3,'7be27b0c-default-7be27b0c-6'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
 Z(z[4])
 Z(z[5])
+Z(z[6])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
-Z(z[9])
+Z(z[4])
 Z(z[10])
+Z(z[11])
 Z([3,'_picker 7be27b0c'])
-Z(z[12])
+Z(z[13])
 Z([1,'7be27b0c-0'])
-Z(z[14])
 Z(z[15])
+Z(z[16])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
-Z(z[18])
+Z(z[3])
+Z(z[19])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
-Z(z[22])
+Z(z[4])
+Z(z[23])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
-Z(z[26])
+Z(z[4])
+Z(z[27])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
-Z(z[30])
+Z(z[4])
+Z(z[31])
 Z([3,'7be27b0c-default-7be27b0c-11'])
-Z(z[32])
 Z(z[33])
 Z(z[34])
-Z(z[32])
-Z(z[10])
+Z(z[35])
+Z(z[33])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
+Z(z[13])
 Z([[2,'+'],[1,'7be27b0c-1-'],[[7],[3,'index']]])
-Z(z[2])
-Z(z[4])
-Z([3,'58792338-default-58792338-10'])
+Z(z[3])
+Z(z[5])
 Z([3,'00eed4f4-default-00eed4f4-1'])
 Z([3,'7e389618-default-7e389618-1'])
-Z([3,'1b853e3c-default-1b853e3c-2'])
-Z(z[32])
-Z([3,'name'])
-Z([[7],[3,'xLine']])
-Z(z[32])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'1b853e3c-1-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
-Z(z[3])
-Z([3,'1b853e3c-default-1b853e3c-3'])
-Z([3,'72ed35ad-default-72ed35ad-6'])
-Z(z[10])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
-Z([1,'72ed35ad-3'])
-Z(z[2])
-Z(z[4])
-Z(z[22])
-Z(z[10])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
-Z([1,'72ed35ad-4'])
-Z(z[2])
-Z(z[4])
-Z([3,'隐患级别'])
-Z(z[10])
+Z([3,'72ed35ad-default-72ed35ad-7'])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
-Z([1,'72ed35ad-5'])
-Z(z[2])
+Z(z[13])
+Z([1,'72ed35ad-0'])
+Z(z[3])
+Z(z[5])
+Z([3,'隐患描述'])
+Z(z[11])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[13])
+Z([1,'72ed35ad-1'])
+Z(z[3])
+Z(z[5])
+Z([3,'隐患级别'])
+Z(z[11])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[13])
+Z([1,'72ed35ad-2'])
+Z(z[3])
+Z(z[5])
+Z([3,'隐患分类'])
+Z(z[11])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[13])
+Z([1,'72ed35ad-3'])
+Z(z[3])
+Z(z[5])
+Z([3,'对应条款'])
+Z(z[11])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[13])
+Z([1,'72ed35ad-4'])
+Z(z[3])
+Z(z[5])
+Z([3,'整改建议'])
+Z([3,'77f549ab-default-77f549ab-7'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[4])
+Z([3,'发现人'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[4])
+Z(z[23])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[4])
+Z(z[101])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
 Z(z[4])
 Z([3,'隐患后果'])
-Z(z[10])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
-Z([1,'72ed35ad-6'])
-Z(z[2])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
 Z(z[4])
 Z([3,'不合格因素'])
-Z(z[10])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
-Z([1,'72ed35ad-7'])
-Z(z[2])
-Z(z[4])
-Z([3,'对应条款'])
-Z(z[10])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
-Z([1,'72ed35ad-8'])
-Z(z[2])
-Z(z[4])
-Z([3,'整改建议'])
-Z([3,'77f549ab-default-77f549ab-6'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
-Z(z[3])
-Z(z[22])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
-Z(z[3])
-Z(z[110])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
-Z(z[3])
-Z(z[117])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
-Z(z[3])
-Z(z[124])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
-Z(z[3])
-Z(z[131])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
+Z(z[115])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[4])
 Z([3,'整改要求及建议'])
-Z([3,'77f549ab-default-77f549ab-15'])
-Z(z[10])
-Z([3,'_picker 77f549ab'])
-Z(z[12])
-Z([1,'77f549ab-0'])
-Z(z[14])
-Z([[7],[3,'checkDate']])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-7']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
-Z(z[18])
+Z([3,'77f549ab-default-77f549ab-12'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-8']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
-Z([3,'整改意见'])
-Z(z[10])
-Z(z[166])
-Z(z[12])
-Z([1,'77f549ab-1'])
-Z(z[14])
+Z(z[4])
+Z([3,'填报人'])
+Z(z[11])
+Z([3,'_picker 77f549ab'])
+Z(z[13])
+Z([1,'77f549ab-3'])
+Z(z[15])
 Z([[7],[3,'zgqx']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-9']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
-Z([3,'整改期限'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-10']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
-Z([3,'整改情况'])
-Z(z[10])
-Z(z[166])
-Z(z[12])
-Z([1,'77f549ab-2'])
-Z(z[14])
-Z([[6],[[7],[3,'styleFlag']],[3,'zgwcrq']])
-Z([[7],[3,'zgwcrq']])
+Z([3,'整改期限'])
+Z(z[11])
+Z(z[158])
+Z(z[13])
+Z([1,'77f549ab-4'])
+Z(z[15])
+Z([[7],[3,'txrq']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-10']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z([3,'填写日期'])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-11']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
+Z(z[13])
+Z([1,'77f549ab-5'])
+Z(z[3])
+Z([3,'整改意见'])
+Z([3,'77f549ab-default-77f549ab-18'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-13']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[4])
+Z([3,'整改人'])
+Z(z[11])
+Z(z[158])
+Z(z[13])
+Z([1,'77f549ab-6'])
+Z(z[15])
+Z([[7],[3,'zgwcrq']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-14']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
 Z([3,'整改完成日期'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-12']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
+Z(z[11])
+Z(z[158])
+Z(z[13])
+Z([1,'77f549ab-7'])
+Z(z[15])
+Z([[7],[3,'tbrq']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-15']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z([3,'填报日期'])
+Z(z[11])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-16']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[13])
+Z([1,'77f549ab-8'])
 Z(z[3])
 Z([3,'治理资金'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-13']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
+Z(z[11])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-17']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[13])
+Z([1,'77f549ab-9'])
+Z(z[3])
+Z([3,'整改情况'])
+Z([3,'77f549ab-default-77f549ab-23'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-19']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[4])
+Z([3,'验证人'])
+Z(z[11])
+Z(z[158])
+Z(z[13])
+Z([1,'77f549ab-13'])
+Z(z[15])
+Z([[7],[3,'tbrq2']])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-20']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[203])
+Z(z[11])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-21']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[13])
+Z([1,'77f549ab-14'])
 Z(z[3])
 Z([3,'原因分析'])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-14']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
+Z(z[11])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-22']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[13])
+Z([1,'77f549ab-15'])
 Z(z[3])
 Z([3,'验证情况'])
+Z([3,'77f549ab-default-77f549ab-25'])
+Z(z[11])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-24']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[13])
+Z([1,'77f549ab-19'])
+Z(z[3])
+Z(z[5])
+Z([3,'请选择即将跳转节点'])
+Z([3,'1b853e3c-default-1b853e3c-2'])
+Z(z[33])
+Z([3,'name'])
+Z([[7],[3,'xLine']])
+Z(z[33])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'1b853e3c-1-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[4])
+Z([3,'1b853e3c-default-1b853e3c-3'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
@@ -1425,7 +1471,16 @@ if( __WXML_GLOBAL__.ops_cached.$gwx_13)return __WXML_GLOBAL__.ops_cached.$gwx_13
 __WXML_GLOBAL__.ops_cached.$gwx_13=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'72ed35ad'])
-Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-6']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'72ed35ad-default-72ed35ad-6']]])
+Z([3,'_view 72ed35ad cellInfoView'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'30c48a99'])
+Z([3,'false'])
+Z([3,'发现人'])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[4])
+Z([3,'责任部门'])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-7']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'72ed35ad-default-72ed35ad-7']]])
 Z([3,'3b6bb3ad'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_13);return __WXML_GLOBAL__.ops_cached.$gwx_13
 }
@@ -1443,9 +1498,15 @@ __WXML_GLOBAL__.ops_cached.$gwx_15=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'77f549ab'])
 Z([3,'_view 77f549ab baseView'])
-Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-6']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'77f549ab-default-77f549ab-6']]])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-7']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'77f549ab-default-77f549ab-7']]])
 Z([3,'3b6bb3ad'])
-Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-15']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'77f549ab-default-77f549ab-15']]])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-12']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'77f549ab-default-77f549ab-12']]])
+Z(z[3])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-18']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'77f549ab-default-77f549ab-18']]])
+Z(z[3])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-23']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'77f549ab-default-77f549ab-23']]])
+Z(z[3])
+Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-25']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'77f549ab-default-77f549ab-25']]])
 Z(z[3])
 })(__WXML_GLOBAL__.ops_cached.$gwx_15);return __WXML_GLOBAL__.ops_cached.$gwx_15
 }
@@ -1902,7 +1963,22 @@ __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/drawer/uni-drawer.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','/components/drawer/hj-dragabledrawer.vue.wxml','./components/drawer/hj-dragabledrawer.vue.wxml','/common/slots.wxml','./components/drawer/uni-drawer.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/danger/addDanger.vue.wxml','./pages/danger/addDanger.wxml','./addDanger.vue.wxml','./pages/danger/detailDanger.vue.wxml','./pages/danger/detailDanger.wxml','./detailDanger.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pointList/pointList.vue.wxml','./pages/pointList/pointList.wxml','./pointList.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/statistics/statistics.vue.wxml','./pages/statistics/statistics.wxml','./statistics.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+var x=['./common/slots.wxml','/components/drawer/uni-drawer.vue.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','/components/drawer/hj-dragabledrawer.vue.wxml','./components/drawer/hj-dragabledrawer.vue.wxml','/common/slots.wxml','./components/drawer/uni-drawer.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/danger/addDanger.vue.wxml','./pages/danger/addDanger.wxml','./addDanger.vue.wxml','./pages/danger/detailDanger.vue.wxml','./pages/danger/detailDanger.wxml','./detailDanger.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pointList/pointList.vue.wxml','./pages/pointList/pointList.wxml','./pointList.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/statistics/statistics.vue.wxml','./pages/statistics/statistics.wxml','./statistics.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+d_[x[0]]["58792338-default-58792338-10"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':58792338-default-58792338-10'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
 d_[x[0]]["21b694de-default-21b694de-6"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':21b694de-default-21b694de-6'
@@ -1913,91 +1989,91 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:8:47")
-var xC=_oz(z,2,e,s,gg)
+cs.push("./common/slots.wxml:template:10:47")
+var xC=_oz(z,3,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,1,e,s,gg) || {}
+var fE=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],8,176)
+else _w(xC,x[0],10,176)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:8:199")
-var hG=_oz(z,7,e,s,gg)
+cs.push("./common/slots.wxml:template:10:199")
+var hG=_oz(z,8,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,6,e,s,gg) || {}
+var cI=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],8,307)
+else _w(hG,x[0],10,307)
 cs.pop()
-cs.push("./common/slots.wxml:picker:8:330")
-var oJ=_mz(z,'picker',['bindchange',10,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:10:330")
+var oJ=_mz(z,'picker',['bindchange',11,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:8:474")
-var aL=_oz(z,17,e,s,gg)
+cs.push("./common/slots.wxml:template:10:474")
+var aL=_oz(z,18,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
-var eN=_1z(z,16,e,s,gg) || {}
+var eN=_1z(z,17,e,s,gg) || {}
 var cur_globalf=gg.f
 lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],8,566)
+else _w(aL,x[0],10,566)
 cs.pop()
 cs.pop()
 _(r,oJ)
 var bO=_v()
 _(r,bO)
-cs.push("./common/slots.wxml:template:8:598")
-var oP=_oz(z,20,e,s,gg)
+cs.push("./common/slots.wxml:template:10:598")
+var oP=_oz(z,21,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,19,e,s,gg) || {}
+var oR=_1z(z,20,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],8,709)
+else _w(oP,x[0],10,709)
 cs.pop()
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:8:732")
-var cT=_oz(z,24,e,s,gg)
+cs.push("./common/slots.wxml:template:10:732")
+var cT=_oz(z,25,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
-var oV=_1z(z,23,e,s,gg) || {}
+var oV=_1z(z,24,e,s,gg) || {}
 var cur_globalf=gg.f
 fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],8,837)
+else _w(cT,x[0],10,837)
 cs.pop()
 var cW=_v()
 _(r,cW)
-cs.push("./common/slots.wxml:template:8:860")
-var oX=_oz(z,28,e,s,gg)
+cs.push("./common/slots.wxml:template:10:860")
+var oX=_oz(z,29,e,s,gg)
 var lY=_gd(x[0],oX,e_,d_)
 if(lY){
-var aZ=_1z(z,27,e,s,gg) || {}
+var aZ=_1z(z,28,e,s,gg) || {}
 var cur_globalf=gg.f
 cW.wxXCkey=3
 lY(aZ,aZ,cW,gg)
 gg.f=cur_globalf
 }
-else _w(oX,x[0],8,965)
+else _w(oX,x[0],10,965)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2016,26 +2092,26 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:10:48")
+cs.push("./common/slots.wxml:template:12:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:10:48")
-var cI=_oz(z,40,fE,oD,gg)
+cs.push("./common/slots.wxml:template:12:48")
+var cI=_oz(z,41,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,37,fE,oD,gg) || {}
+var lK=_1z(z,38,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],10,247)
+else _w(cI,x[0],12,247)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,34,xC,e,s,gg,oB,'item','index','index')
+_2z(z,35,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2054,91 +2130,91 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:12:47")
-var xC=_oz(z,44,e,s,gg)
+cs.push("./common/slots.wxml:template:14:47")
+var xC=_oz(z,45,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,43,e,s,gg) || {}
+var fE=_1z(z,44,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],12,176)
+else _w(xC,x[0],14,176)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:12:199")
-var hG=_oz(z,49,e,s,gg)
+cs.push("./common/slots.wxml:template:14:199")
+var hG=_oz(z,50,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,48,e,s,gg) || {}
+var cI=_1z(z,49,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],12,307)
+else _w(hG,x[0],14,307)
 cs.pop()
-cs.push("./common/slots.wxml:picker:12:330")
-var oJ=_mz(z,'picker',['bindchange',52,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:14:330")
+var oJ=_mz(z,'picker',['bindchange',53,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:12:474")
-var aL=_oz(z,59,e,s,gg)
+cs.push("./common/slots.wxml:template:14:474")
+var aL=_oz(z,60,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
-var eN=_1z(z,58,e,s,gg) || {}
+var eN=_1z(z,59,e,s,gg) || {}
 var cur_globalf=gg.f
 lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],12,566)
+else _w(aL,x[0],14,566)
 cs.pop()
 cs.pop()
 _(r,oJ)
 var bO=_v()
 _(r,bO)
-cs.push("./common/slots.wxml:template:12:598")
-var oP=_oz(z,62,e,s,gg)
+cs.push("./common/slots.wxml:template:14:598")
+var oP=_oz(z,63,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,61,e,s,gg) || {}
+var oR=_1z(z,62,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],12,709)
+else _w(oP,x[0],14,709)
 cs.pop()
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:12:732")
-var cT=_oz(z,66,e,s,gg)
+cs.push("./common/slots.wxml:template:14:732")
+var cT=_oz(z,67,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
-var oV=_1z(z,65,e,s,gg) || {}
+var oV=_1z(z,66,e,s,gg) || {}
 var cur_globalf=gg.f
 fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],12,837)
+else _w(cT,x[0],14,837)
 cs.pop()
 var cW=_v()
 _(r,cW)
-cs.push("./common/slots.wxml:template:12:860")
-var oX=_oz(z,70,e,s,gg)
+cs.push("./common/slots.wxml:template:14:860")
+var oX=_oz(z,71,e,s,gg)
 var lY=_gd(x[0],oX,e_,d_)
 if(lY){
-var aZ=_1z(z,69,e,s,gg) || {}
+var aZ=_1z(z,70,e,s,gg) || {}
 var cur_globalf=gg.f
 cW.wxXCkey=3
 lY(aZ,aZ,cW,gg)
 gg.f=cur_globalf
 }
-else _w(oX,x[0],12,965)
+else _w(oX,x[0],14,965)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2157,42 +2233,27 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:14:48")
+cs.push("./common/slots.wxml:template:16:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:14:48")
-var cI=_oz(z,82,fE,oD,gg)
+cs.push("./common/slots.wxml:template:16:48")
+var cI=_oz(z,83,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,79,fE,oD,gg) || {}
+var lK=_1z(z,80,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],14,247)
+else _w(cI,x[0],16,247)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,76,xC,e,s,gg,oB,'item','index','index')
+_2z(z,77,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["58792338-default-58792338-10"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':58792338-default-58792338-10'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
 }catch(err){
 p_[b]=false
 throw err
@@ -2230,6 +2291,480 @@ throw err
 p_[b]=false
 return r
 }
+d_[x[0]]["72ed35ad-default-72ed35ad-7"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':72ed35ad-default-72ed35ad-7'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:22:47")
+var xC=_oz(z,92,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,89,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],22,232)
+cs.pop()
+var cF=_v()
+_(r,cF)
+cs.push("./common/slots.wxml:template:22:255")
+var hG=_oz(z,99,e,s,gg)
+var oH=_gd(x[0],hG,e_,d_)
+if(oH){
+var cI=_1z(z,96,e,s,gg) || {}
+var cur_globalf=gg.f
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
+gg.f=cur_globalf
+}
+else _w(hG,x[0],22,440)
+cs.pop()
+var oJ=_v()
+_(r,oJ)
+cs.push("./common/slots.wxml:template:22:463")
+var lK=_oz(z,106,e,s,gg)
+var aL=_gd(x[0],lK,e_,d_)
+if(aL){
+var tM=_1z(z,103,e,s,gg) || {}
+var cur_globalf=gg.f
+oJ.wxXCkey=3
+aL(tM,tM,oJ,gg)
+gg.f=cur_globalf
+}
+else _w(lK,x[0],22,648)
+cs.pop()
+var eN=_v()
+_(r,eN)
+cs.push("./common/slots.wxml:template:22:671")
+var bO=_oz(z,113,e,s,gg)
+var oP=_gd(x[0],bO,e_,d_)
+if(oP){
+var xQ=_1z(z,110,e,s,gg) || {}
+var cur_globalf=gg.f
+eN.wxXCkey=3
+oP(xQ,xQ,eN,gg)
+gg.f=cur_globalf
+}
+else _w(bO,x[0],22,856)
+cs.pop()
+var oR=_v()
+_(r,oR)
+cs.push("./common/slots.wxml:template:22:879")
+var fS=_oz(z,120,e,s,gg)
+var cT=_gd(x[0],fS,e_,d_)
+if(cT){
+var hU=_1z(z,117,e,s,gg) || {}
+var cur_globalf=gg.f
+oR.wxXCkey=3
+cT(hU,hU,oR,gg)
+gg.f=cur_globalf
+}
+else _w(fS,x[0],22,1064)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["77f549ab-default-77f549ab-7"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':77f549ab-default-77f549ab-7'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:24:47")
+var xC=_oz(z,125,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,124,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],24,155)
+cs.pop()
+var cF=_v()
+_(r,cF)
+cs.push("./common/slots.wxml:template:24:178")
+var hG=_oz(z,129,e,s,gg)
+var oH=_gd(x[0],hG,e_,d_)
+if(oH){
+var cI=_1z(z,128,e,s,gg) || {}
+var cur_globalf=gg.f
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
+gg.f=cur_globalf
+}
+else _w(hG,x[0],24,289)
+cs.pop()
+var oJ=_v()
+_(r,oJ)
+cs.push("./common/slots.wxml:template:24:312")
+var lK=_oz(z,133,e,s,gg)
+var aL=_gd(x[0],lK,e_,d_)
+if(aL){
+var tM=_1z(z,132,e,s,gg) || {}
+var cur_globalf=gg.f
+oJ.wxXCkey=3
+aL(tM,tM,oJ,gg)
+gg.f=cur_globalf
+}
+else _w(lK,x[0],24,423)
+cs.pop()
+var eN=_v()
+_(r,eN)
+cs.push("./common/slots.wxml:template:24:446")
+var bO=_oz(z,137,e,s,gg)
+var oP=_gd(x[0],bO,e_,d_)
+if(oP){
+var xQ=_1z(z,136,e,s,gg) || {}
+var cur_globalf=gg.f
+eN.wxXCkey=3
+oP(xQ,xQ,eN,gg)
+gg.f=cur_globalf
+}
+else _w(bO,x[0],24,557)
+cs.pop()
+var oR=_v()
+_(r,oR)
+cs.push("./common/slots.wxml:template:24:580")
+var fS=_oz(z,141,e,s,gg)
+var cT=_gd(x[0],fS,e_,d_)
+if(cT){
+var hU=_1z(z,140,e,s,gg) || {}
+var cur_globalf=gg.f
+oR.wxXCkey=3
+cT(hU,hU,oR,gg)
+gg.f=cur_globalf
+}
+else _w(fS,x[0],24,694)
+cs.pop()
+var oV=_v()
+_(r,oV)
+cs.push("./common/slots.wxml:template:24:717")
+var cW=_oz(z,145,e,s,gg)
+var oX=_gd(x[0],cW,e_,d_)
+if(oX){
+var lY=_1z(z,144,e,s,gg) || {}
+var cur_globalf=gg.f
+oV.wxXCkey=3
+oX(lY,lY,oV,gg)
+gg.f=cur_globalf
+}
+else _w(cW,x[0],24,828)
+cs.pop()
+var aZ=_v()
+_(r,aZ)
+cs.push("./common/slots.wxml:template:24:851")
+var t1=_oz(z,149,e,s,gg)
+var e2=_gd(x[0],t1,e_,d_)
+if(e2){
+var b3=_1z(z,148,e,s,gg) || {}
+var cur_globalf=gg.f
+aZ.wxXCkey=3
+e2(b3,b3,aZ,gg)
+gg.f=cur_globalf
+}
+else _w(t1,x[0],24,971)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["77f549ab-default-77f549ab-12"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':77f549ab-default-77f549ab-12'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:26:48")
+var xC=_oz(z,154,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,153,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],26,156)
+cs.pop()
+cs.push("./common/slots.wxml:picker:26:179")
+var cF=_mz(z,'picker',['bindchange',157,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var hG=_v()
+_(cF,hG)
+cs.push("./common/slots.wxml:template:26:319")
+var oH=_oz(z,164,e,s,gg)
+var cI=_gd(x[0],oH,e_,d_)
+if(cI){
+var oJ=_1z(z,163,e,s,gg) || {}
+var cur_globalf=gg.f
+hG.wxXCkey=3
+cI(oJ,oJ,hG,gg)
+gg.f=cur_globalf
+}
+else _w(oH,x[0],26,411)
+cs.pop()
+cs.pop()
+_(r,cF)
+cs.push("./common/slots.wxml:picker:26:443")
+var lK=_mz(z,'picker',['bindchange',166,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var aL=_v()
+_(lK,aL)
+cs.push("./common/slots.wxml:template:26:583")
+var tM=_oz(z,173,e,s,gg)
+var eN=_gd(x[0],tM,e_,d_)
+if(eN){
+var bO=_1z(z,172,e,s,gg) || {}
+var cur_globalf=gg.f
+aL.wxXCkey=3
+eN(bO,bO,aL,gg)
+gg.f=cur_globalf
+}
+else _w(tM,x[0],26,676)
+cs.pop()
+cs.pop()
+_(r,lK)
+var oP=_v()
+_(r,oP)
+cs.push("./common/slots.wxml:template:26:708")
+var xQ=_oz(z,179,e,s,gg)
+var oR=_gd(x[0],xQ,e_,d_)
+if(oR){
+var fS=_1z(z,176,e,s,gg) || {}
+var cur_globalf=gg.f
+oP.wxXCkey=3
+oR(fS,fS,oP,gg)
+gg.f=cur_globalf
+}
+else _w(xQ,x[0],26,876)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["77f549ab-default-77f549ab-18"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':77f549ab-default-77f549ab-18'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:28:48")
+var xC=_oz(z,183,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,182,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],28,157)
+cs.pop()
+cs.push("./common/slots.wxml:picker:28:180")
+var cF=_mz(z,'picker',['bindchange',186,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var hG=_v()
+_(cF,hG)
+cs.push("./common/slots.wxml:template:28:322")
+var oH=_oz(z,193,e,s,gg)
+var cI=_gd(x[0],oH,e_,d_)
+if(cI){
+var oJ=_1z(z,192,e,s,gg) || {}
+var cur_globalf=gg.f
+hG.wxXCkey=3
+cI(oJ,oJ,hG,gg)
+gg.f=cur_globalf
+}
+else _w(oH,x[0],28,421)
+cs.pop()
+cs.pop()
+_(r,cF)
+cs.push("./common/slots.wxml:picker:28:453")
+var lK=_mz(z,'picker',['bindchange',195,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var aL=_v()
+_(lK,aL)
+cs.push("./common/slots.wxml:template:28:593")
+var tM=_oz(z,202,e,s,gg)
+var eN=_gd(x[0],tM,e_,d_)
+if(eN){
+var bO=_1z(z,201,e,s,gg) || {}
+var cur_globalf=gg.f
+aL.wxXCkey=3
+eN(bO,bO,aL,gg)
+gg.f=cur_globalf
+}
+else _w(tM,x[0],28,686)
+cs.pop()
+cs.pop()
+_(r,lK)
+var oP=_v()
+_(r,oP)
+cs.push("./common/slots.wxml:template:28:718")
+var xQ=_oz(z,208,e,s,gg)
+var oR=_gd(x[0],xQ,e_,d_)
+if(oR){
+var fS=_1z(z,205,e,s,gg) || {}
+var cur_globalf=gg.f
+oP.wxXCkey=3
+oR(fS,fS,oP,gg)
+gg.f=cur_globalf
+}
+else _w(xQ,x[0],28,886)
+cs.pop()
+var cT=_v()
+_(r,cT)
+cs.push("./common/slots.wxml:template:28:909")
+var hU=_oz(z,214,e,s,gg)
+var oV=_gd(x[0],hU,e_,d_)
+if(oV){
+var cW=_1z(z,211,e,s,gg) || {}
+var cur_globalf=gg.f
+cT.wxXCkey=3
+oV(cW,cW,cT,gg)
+gg.f=cur_globalf
+}
+else _w(hU,x[0],28,1077)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["77f549ab-default-77f549ab-23"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':77f549ab-default-77f549ab-23'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:30:48")
+var xC=_oz(z,218,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,217,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],30,157)
+cs.pop()
+cs.push("./common/slots.wxml:picker:30:180")
+var cF=_mz(z,'picker',['bindchange',221,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var hG=_v()
+_(cF,hG)
+cs.push("./common/slots.wxml:template:30:322")
+var oH=_oz(z,228,e,s,gg)
+var cI=_gd(x[0],oH,e_,d_)
+if(cI){
+var oJ=_1z(z,227,e,s,gg) || {}
+var cur_globalf=gg.f
+hG.wxXCkey=3
+cI(oJ,oJ,hG,gg)
+gg.f=cur_globalf
+}
+else _w(oH,x[0],30,415)
+cs.pop()
+cs.pop()
+_(r,cF)
+var lK=_v()
+_(r,lK)
+cs.push("./common/slots.wxml:template:30:447")
+var aL=_oz(z,234,e,s,gg)
+var tM=_gd(x[0],aL,e_,d_)
+if(tM){
+var eN=_1z(z,231,e,s,gg) || {}
+var cur_globalf=gg.f
+lK.wxXCkey=3
+tM(eN,eN,lK,gg)
+gg.f=cur_globalf
+}
+else _w(aL,x[0],30,616)
+cs.pop()
+var bO=_v()
+_(r,bO)
+cs.push("./common/slots.wxml:template:30:639")
+var oP=_oz(z,240,e,s,gg)
+var xQ=_gd(x[0],oP,e_,d_)
+if(xQ){
+var oR=_1z(z,237,e,s,gg) || {}
+var cur_globalf=gg.f
+bO.wxXCkey=3
+xQ(oR,oR,bO,gg)
+gg.f=cur_globalf
+}
+else _w(oP,x[0],30,808)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["77f549ab-default-77f549ab-25"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':77f549ab-default-77f549ab-25'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:32:48")
+var xC=_oz(z,247,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,244,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],32,250)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
 d_[x[0]]["1b853e3c-default-1b853e3c-2"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':1b853e3c-default-1b853e3c-2'
@@ -2240,26 +2775,26 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:22:47")
+cs.push("./common/slots.wxml:template:34:47")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:22:47")
-var cI=_oz(z,93,fE,oD,gg)
+cs.push("./common/slots.wxml:template:34:47")
+var cI=_oz(z,256,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,92,fE,oD,gg) || {}
+var lK=_1z(z,255,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],22,159)
+else _w(cI,x[0],34,159)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,90,xC,e,s,gg,oB,'name','index','index')
+_2z(z,253,xC,e,s,gg,oB,'name','index','index')
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2276,343 +2811,6 @@ gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["72ed35ad-default-72ed35ad-6"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':72ed35ad-default-72ed35ad-6'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:26:47")
-var xC=_oz(z,101,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,98,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],26,232)
-cs.pop()
-var cF=_v()
-_(r,cF)
-cs.push("./common/slots.wxml:template:26:255")
-var hG=_oz(z,108,e,s,gg)
-var oH=_gd(x[0],hG,e_,d_)
-if(oH){
-var cI=_1z(z,105,e,s,gg) || {}
-var cur_globalf=gg.f
-cF.wxXCkey=3
-oH(cI,cI,cF,gg)
-gg.f=cur_globalf
-}
-else _w(hG,x[0],26,440)
-cs.pop()
-var oJ=_v()
-_(r,oJ)
-cs.push("./common/slots.wxml:template:26:463")
-var lK=_oz(z,115,e,s,gg)
-var aL=_gd(x[0],lK,e_,d_)
-if(aL){
-var tM=_1z(z,112,e,s,gg) || {}
-var cur_globalf=gg.f
-oJ.wxXCkey=3
-aL(tM,tM,oJ,gg)
-gg.f=cur_globalf
-}
-else _w(lK,x[0],26,648)
-cs.pop()
-var eN=_v()
-_(r,eN)
-cs.push("./common/slots.wxml:template:26:671")
-var bO=_oz(z,122,e,s,gg)
-var oP=_gd(x[0],bO,e_,d_)
-if(oP){
-var xQ=_1z(z,119,e,s,gg) || {}
-var cur_globalf=gg.f
-eN.wxXCkey=3
-oP(xQ,xQ,eN,gg)
-gg.f=cur_globalf
-}
-else _w(bO,x[0],26,859)
-cs.pop()
-var oR=_v()
-_(r,oR)
-cs.push("./common/slots.wxml:template:26:882")
-var fS=_oz(z,129,e,s,gg)
-var cT=_gd(x[0],fS,e_,d_)
-if(cT){
-var hU=_1z(z,126,e,s,gg) || {}
-var cur_globalf=gg.f
-oR.wxXCkey=3
-cT(hU,hU,oR,gg)
-gg.f=cur_globalf
-}
-else _w(fS,x[0],26,1067)
-cs.pop()
-var oV=_v()
-_(r,oV)
-cs.push("./common/slots.wxml:template:26:1090")
-var cW=_oz(z,136,e,s,gg)
-var oX=_gd(x[0],cW,e_,d_)
-if(oX){
-var lY=_1z(z,133,e,s,gg) || {}
-var cur_globalf=gg.f
-oV.wxXCkey=3
-oX(lY,lY,oV,gg)
-gg.f=cur_globalf
-}
-else _w(cW,x[0],26,1275)
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["77f549ab-default-77f549ab-6"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':77f549ab-default-77f549ab-6'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:28:47")
-var xC=_oz(z,141,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,140,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],28,158)
-cs.pop()
-var cF=_v()
-_(r,cF)
-cs.push("./common/slots.wxml:template:28:181")
-var hG=_oz(z,145,e,s,gg)
-var oH=_gd(x[0],hG,e_,d_)
-if(oH){
-var cI=_1z(z,144,e,s,gg) || {}
-var cur_globalf=gg.f
-cF.wxXCkey=3
-oH(cI,cI,cF,gg)
-gg.f=cur_globalf
-}
-else _w(hG,x[0],28,292)
-cs.pop()
-var oJ=_v()
-_(r,oJ)
-cs.push("./common/slots.wxml:template:28:315")
-var lK=_oz(z,149,e,s,gg)
-var aL=_gd(x[0],lK,e_,d_)
-if(aL){
-var tM=_1z(z,148,e,s,gg) || {}
-var cur_globalf=gg.f
-oJ.wxXCkey=3
-aL(tM,tM,oJ,gg)
-gg.f=cur_globalf
-}
-else _w(lK,x[0],28,426)
-cs.pop()
-var eN=_v()
-_(r,eN)
-cs.push("./common/slots.wxml:template:28:449")
-var bO=_oz(z,153,e,s,gg)
-var oP=_gd(x[0],bO,e_,d_)
-if(oP){
-var xQ=_1z(z,152,e,s,gg) || {}
-var cur_globalf=gg.f
-eN.wxXCkey=3
-oP(xQ,xQ,eN,gg)
-gg.f=cur_globalf
-}
-else _w(bO,x[0],28,563)
-cs.pop()
-var oR=_v()
-_(r,oR)
-cs.push("./common/slots.wxml:template:28:586")
-var fS=_oz(z,157,e,s,gg)
-var cT=_gd(x[0],fS,e_,d_)
-if(cT){
-var hU=_1z(z,156,e,s,gg) || {}
-var cur_globalf=gg.f
-oR.wxXCkey=3
-cT(hU,hU,oR,gg)
-gg.f=cur_globalf
-}
-else _w(fS,x[0],28,697)
-cs.pop()
-var oV=_v()
-_(r,oV)
-cs.push("./common/slots.wxml:template:28:720")
-var cW=_oz(z,161,e,s,gg)
-var oX=_gd(x[0],cW,e_,d_)
-if(oX){
-var lY=_1z(z,160,e,s,gg) || {}
-var cur_globalf=gg.f
-oV.wxXCkey=3
-oX(lY,lY,oV,gg)
-gg.f=cur_globalf
-}
-else _w(cW,x[0],28,840)
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["77f549ab-default-77f549ab-15"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':77f549ab-default-77f549ab-15'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-cs.push("./common/slots.wxml:picker:30:48")
-var oB=_mz(z,'picker',['bindchange',165,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
-var xC=_v()
-_(oB,xC)
-cs.push("./common/slots.wxml:template:30:193")
-var oD=_oz(z,172,e,s,gg)
-var fE=_gd(x[0],oD,e_,d_)
-if(fE){
-var cF=_1z(z,171,e,s,gg) || {}
-var cur_globalf=gg.f
-xC.wxXCkey=3
-fE(cF,cF,xC,gg)
-gg.f=cur_globalf
-}
-else _w(oD,x[0],30,285)
-cs.pop()
-cs.pop()
-_(r,oB)
-var hG=_v()
-_(r,hG)
-cs.push("./common/slots.wxml:template:30:317")
-var oH=_oz(z,175,e,s,gg)
-var cI=_gd(x[0],oH,e_,d_)
-if(cI){
-var oJ=_1z(z,174,e,s,gg) || {}
-var cur_globalf=gg.f
-hG.wxXCkey=3
-cI(oJ,oJ,hG,gg)
-gg.f=cur_globalf
-}
-else _w(oH,x[0],30,428)
-cs.pop()
-cs.push("./common/slots.wxml:picker:30:451")
-var lK=_mz(z,'picker',['bindchange',178,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
-var aL=_v()
-_(lK,aL)
-cs.push("./common/slots.wxml:template:30:591")
-var tM=_oz(z,185,e,s,gg)
-var eN=_gd(x[0],tM,e_,d_)
-if(eN){
-var bO=_1z(z,184,e,s,gg) || {}
-var cur_globalf=gg.f
-aL.wxXCkey=3
-eN(bO,bO,aL,gg)
-gg.f=cur_globalf
-}
-else _w(tM,x[0],30,683)
-cs.pop()
-cs.pop()
-_(r,lK)
-var oP=_v()
-_(r,oP)
-cs.push("./common/slots.wxml:template:30:715")
-var xQ=_oz(z,188,e,s,gg)
-var oR=_gd(x[0],xQ,e_,d_)
-if(oR){
-var fS=_1z(z,187,e,s,gg) || {}
-var cur_globalf=gg.f
-oP.wxXCkey=3
-oR(fS,fS,oP,gg)
-gg.f=cur_globalf
-}
-else _w(xQ,x[0],30,827)
-cs.pop()
-cs.push("./common/slots.wxml:picker:30:850")
-var cT=_mz(z,'picker',['bindchange',191,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'showSwitch',5,'value',6],[],e,s,gg)
-var hU=_v()
-_(cT,hU)
-cs.push("./common/slots.wxml:template:30:1026")
-var oV=_oz(z,199,e,s,gg)
-var cW=_gd(x[0],oV,e_,d_)
-if(cW){
-var oX=_1z(z,198,e,s,gg) || {}
-var cur_globalf=gg.f
-hU.wxXCkey=3
-cW(oX,oX,hU,gg)
-gg.f=cur_globalf
-}
-else _w(oV,x[0],30,1125)
-cs.pop()
-cs.pop()
-_(r,cT)
-var lY=_v()
-_(r,lY)
-cs.push("./common/slots.wxml:template:30:1157")
-var aZ=_oz(z,202,e,s,gg)
-var t1=_gd(x[0],aZ,e_,d_)
-if(t1){
-var e2=_1z(z,201,e,s,gg) || {}
-var cur_globalf=gg.f
-lY.wxXCkey=3
-t1(e2,e2,lY,gg)
-gg.f=cur_globalf
-}
-else _w(aZ,x[0],30,1269)
-cs.pop()
-var b3=_v()
-_(r,b3)
-cs.push("./common/slots.wxml:template:30:1292")
-var o4=_oz(z,206,e,s,gg)
-var x5=_gd(x[0],o4,e_,d_)
-if(x5){
-var o6=_1z(z,205,e,s,gg) || {}
-var cur_globalf=gg.f
-b3.wxXCkey=3
-x5(o6,o6,b3,gg)
-gg.f=cur_globalf
-}
-else _w(o4,x[0],30,1404)
-cs.pop()
-var f7=_v()
-_(r,f7)
-cs.push("./common/slots.wxml:template:30:1427")
-var c8=_oz(z,210,e,s,gg)
-var h9=_gd(x[0],c8,e_,d_)
-if(h9){
-var o0=_1z(z,209,e,s,gg) || {}
-var cur_globalf=gg.f
-f7.wxXCkey=3
-h9(o0,o0,f7,gg)
-gg.f=cur_globalf
-}
-else _w(c8,x[0],30,1539)
-cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -2947,13 +3145,13 @@ return r
 var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
 var oJ=e_[x[12]].i
-_ai(oJ,x[3],e_,x[12],1,1)
+_ai(oJ,x[4],e_,x[12],1,1)
 _ai(oJ,x[13],e_,x[12],1,61)
 oJ.pop()
 oJ.pop()
 return r
 }
-e_[x[12]]={f:m5,j:[],i:[],ti:[x[3],x[13]],ic:[]}
+e_[x[12]]={f:m5,j:[],i:[],ti:[x[4],x[13]],ic:[]}
 d_[x[14]]={}
 d_[x[14]]["3b6bb3ad"]=function(e,s,r,gg){
 var z=gz$gwx_7()
@@ -3185,20 +3383,53 @@ gg.f=$gdc(f_["./pages/danger/addDanger.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[22]);return}
 p_[b]=true
 try{
-var oB=_v()
-_(r,oB)
-cs.push("./pages/danger/addDanger.vue.wxml:template:1:1504")
-var xC=_oz(z,2,e,s,gg)
-var oD=_gd(x[22],xC,e_,d_)
-if(oD){
-var fE=_1z(z,1,e,s,gg) || {}
+cs.push("./pages/danger/addDanger.vue.wxml:view:1:195")
+var oB=_n('view')
+_rz(z,oB,'class',1,e,s,gg)
+var xC=_v()
+_(oB,xC)
+cs.push("./pages/danger/addDanger.vue.wxml:template:1:237")
+var oD=_oz(z,3,e,s,gg)
+var fE=_gd(x[22],oD,e_,d_)
+if(fE){
+var cF=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
+xC.wxXCkey=3
+fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[22],1,1619)
+else _w(oD,x[22],1,345)
 cs.pop()
+var hG=_v()
+_(oB,hG)
+cs.push("./pages/danger/addDanger.vue.wxml:template:1:368")
+var oH=_oz(z,7,e,s,gg)
+var cI=_gd(x[22],oH,e_,d_)
+if(cI){
+var oJ=_1z(z,6,e,s,gg) || {}
+var cur_globalf=gg.f
+hG.wxXCkey=3
+cI(oJ,oJ,hG,gg)
+gg.f=cur_globalf
+}
+else _w(oH,x[22],1,479)
+cs.pop()
+var lK=_v()
+_(oB,lK)
+cs.push("./pages/danger/addDanger.vue.wxml:template:1:502")
+var aL=_oz(z,11,e,s,gg)
+var tM=_gd(x[22],aL,e_,d_)
+if(tM){
+var eN=_1z(z,10,e,s,gg) || {}
+var cur_globalf=gg.f
+lK.wxXCkey=3
+tM(eN,eN,lK,gg)
+gg.f=cur_globalf
+}
+else _w(aL,x[22],1,617)
+cs.pop()
+cs.pop()
+_(r,oB)
 }catch(err){
 p_[b]=false
 throw err
@@ -3209,13 +3440,13 @@ return r
 var m12=function(e,s,r,gg){
 var z=gz$gwx_13()
 var lY=e_[x[22]].i
-_ai(lY,x[1],e_,x[22],1,1)
-_ai(lY,x[2],e_,x[22],1,61)
+_ai(lY,x[3],e_,x[22],1,1)
+_ai(lY,x[2],e_,x[22],1,71)
 lY.pop()
 lY.pop()
 return r
 }
-e_[x[22]]={f:m12,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+e_[x[22]]={f:m12,j:[],i:[],ti:[x[3],x[2]],ic:[]}
 d_[x[23]]={}
 var m13=function(e,s,r,gg){
 var z=gz$gwx_14()
@@ -3267,7 +3498,7 @@ else _w(oD,x[25],1,460)
 cs.pop()
 var hG=_v()
 _(oB,hG)
-cs.push("./pages/danger/detailDanger.vue.wxml:template:1:640")
+cs.push("./pages/danger/detailDanger.vue.wxml:template:1:1955")
 var oH=_oz(z,5,e,s,gg)
 var cI=_gd(x[25],oH,e_,d_)
 if(cI){
@@ -3277,7 +3508,49 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[25],1,757)
+else _w(oH,x[25],1,2072)
+cs.pop()
+var lK=_v()
+_(oB,lK)
+cs.push("./pages/danger/detailDanger.vue.wxml:template:1:2300")
+var aL=_oz(z,7,e,s,gg)
+var tM=_gd(x[25],aL,e_,d_)
+if(tM){
+var eN=_1z(z,6,e,s,gg) || {}
+var cur_globalf=gg.f
+lK.wxXCkey=3
+tM(eN,eN,lK,gg)
+gg.f=cur_globalf
+}
+else _w(aL,x[25],1,2417)
+cs.pop()
+var bO=_v()
+_(oB,bO)
+cs.push("./pages/danger/detailDanger.vue.wxml:template:1:3923")
+var oP=_oz(z,9,e,s,gg)
+var xQ=_gd(x[25],oP,e_,d_)
+if(xQ){
+var oR=_1z(z,8,e,s,gg) || {}
+var cur_globalf=gg.f
+bO.wxXCkey=3
+xQ(oR,oR,bO,gg)
+gg.f=cur_globalf
+}
+else _w(oP,x[25],1,4040)
+cs.pop()
+var fS=_v()
+_(oB,fS)
+cs.push("./pages/danger/detailDanger.vue.wxml:template:1:5406")
+var cT=_oz(z,11,e,s,gg)
+var hU=_gd(x[25],cT,e_,d_)
+if(hU){
+var oV=_1z(z,10,e,s,gg) || {}
+var cur_globalf=gg.f
+fS.wxXCkey=3
+hU(oV,oV,fS,gg)
+gg.f=cur_globalf
+}
+else _w(cT,x[25],1,5523)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -3291,13 +3564,13 @@ return r
 var m14=function(e,s,r,gg){
 var z=gz$gwx_15()
 var f7=e_[x[25]].i
-_ai(f7,x[1],e_,x[25],1,1)
-_ai(f7,x[2],e_,x[25],1,61)
+_ai(f7,x[2],e_,x[25],1,1)
+_ai(f7,x[3],e_,x[25],1,61)
 f7.pop()
 f7.pop()
 return r
 }
-e_[x[25]]={f:m14,j:[],i:[],ti:[x[1],x[2]],ic:[]}
+e_[x[25]]={f:m14,j:[],i:[],ti:[x[2],x[3]],ic:[]}
 d_[x[26]]={}
 var m15=function(e,s,r,gg){
 var z=gz$gwx_16()
@@ -3911,8 +4184,8 @@ var m30=function(e,s,r,gg){
 var z=gz$gwx_31()
 var lWC=e_[x[50]].i
 _ai(lWC,x[5],e_,x[50],1,1)
-_ai(lWC,x[1],e_,x[50],1,64)
-_ai(lWC,x[2],e_,x[50],1,124)
+_ai(lWC,x[2],e_,x[50],1,64)
+_ai(lWC,x[3],e_,x[50],1,124)
 _ai(lWC,x[6],e_,x[50],1,194)
 lWC.pop()
 lWC.pop()
@@ -3920,7 +4193,7 @@ lWC.pop()
 lWC.pop()
 return r
 }
-e_[x[50]]={f:m30,j:[],i:[],ti:[x[5],x[1],x[2],x[6]],ic:[]}
+e_[x[50]]={f:m30,j:[],i:[],ti:[x[5],x[2],x[3],x[6]],ic:[]}
 d_[x[51]]={}
 var m31=function(e,s,r,gg){
 var z=gz$gwx_32()
@@ -4062,15 +4335,15 @@ return r
 var m32=function(e,s,r,gg){
 var z=gz$gwx_33()
 var f5C=e_[x[53]].i
-_ai(f5C,x[1],e_,x[53],1,1)
-_ai(f5C,x[2],e_,x[53],1,61)
-_ai(f5C,x[3],e_,x[53],1,131)
+_ai(f5C,x[2],e_,x[53],1,1)
+_ai(f5C,x[3],e_,x[53],1,61)
+_ai(f5C,x[4],e_,x[53],1,131)
 f5C.pop()
 f5C.pop()
 f5C.pop()
 return r
 }
-e_[x[53]]={f:m32,j:[],i:[],ti:[x[1],x[2],x[3]],ic:[]}
+e_[x[53]]={f:m32,j:[],i:[],ti:[x[2],x[3],x[4]],ic:[]}
 d_[x[54]]={}
 var m33=function(e,s,r,gg){
 var z=gz$gwx_34()
@@ -4223,13 +4496,13 @@ cs.pop()
 var cF=_v()
 _(oB,cF)
 if(_oz(z,10,e,s,gg)){cF.wxVkey=1
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:block:1:8725")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:block:1:9010")
 cs.pop()
 }
 var hG=_v()
 _(oB,hG)
 if(_oz(z,11,e,s,gg)){hG.wxVkey=1
-cs.push("./pages/pointCheck/pointCheck.vue.wxml:block:1:18130")
+cs.push("./pages/pointCheck/pointCheck.vue.wxml:block:1:18415")
 cs.pop()
 }
 xC.wxXCkey=1
@@ -4373,15 +4646,15 @@ return r
 var m38=function(e,s,r,gg){
 var z=gz$gwx_39()
 var tQD=e_[x[62]].i
-_ai(tQD,x[1],e_,x[62],1,1)
-_ai(tQD,x[2],e_,x[62],1,61)
-_ai(tQD,x[3],e_,x[62],1,131)
+_ai(tQD,x[2],e_,x[62],1,1)
+_ai(tQD,x[3],e_,x[62],1,61)
+_ai(tQD,x[4],e_,x[62],1,131)
 tQD.pop()
 tQD.pop()
 tQD.pop()
 return r
 }
-e_[x[62]]={f:m38,j:[],i:[],ti:[x[1],x[2],x[3]],ic:[]}
+e_[x[62]]={f:m38,j:[],i:[],ti:[x[2],x[3],x[4]],ic:[]}
 d_[x[63]]={}
 var m39=function(e,s,r,gg){
 var z=gz$gwx_40()
@@ -4446,11 +4719,11 @@ return r
 var m40=function(e,s,r,gg){
 var z=gz$gwx_41()
 var hYD=e_[x[65]].i
-_ai(hYD,x[4],e_,x[65],1,1)
+_ai(hYD,x[1],e_,x[65],1,1)
 hYD.pop()
 return r
 }
-e_[x[65]]={f:m40,j:[],i:[],ti:[x[4]],ic:[]}
+e_[x[65]]={f:m40,j:[],i:[],ti:[x[1]],ic:[]}
 d_[x[66]]={}
 var m41=function(e,s,r,gg){
 var z=gz$gwx_42()
@@ -4800,7 +5073,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/login/diyHost","pages/reg/reg","pages/pwd/pwd","pages/user/accountEdit","pages/user/user","pages/pointCheck/pointCheck","pages/pointList/pointList","pages/pointDetail/pointDetail","pages/pointAdd/pointAdd","pages/pointAdd/pointCheckInfo","pages/mpvue-echarts/chartList","pages/mpvue-echarts/deviceChart","pages/mpvue-echarts/eventChart","pages/mpvue-echarts/valveChart","pages/mpvue-echarts/mpvue-echarts","pages/common/inputPage","pages/danger/addDanger","pages/statistics/statistics","pages/danger/detailDanger"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/pointCheck/pointCheck","text":"应用","iconPath":"static/img/point.png","selectedIconPath":"static/img/pointHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"networkTimeout":{"request":60000},"nvue":{"pages":{"pages/danger/dangerList.html":{"window":{"navigationBarTitleText":"隐患审批"}},"pages/uni-tabs/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查11"}},"pages/pointList/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}}}},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"移动安全管家"};
+__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/login/diyHost","pages/reg/reg","pages/pwd/pwd","pages/user/accountEdit","pages/user/user","pages/pointCheck/pointCheck","pages/pointList/pointList","pages/pointDetail/pointDetail","pages/pointAdd/pointAdd","pages/pointAdd/pointCheckInfo","pages/mpvue-echarts/chartList","pages/mpvue-echarts/deviceChart","pages/mpvue-echarts/eventChart","pages/mpvue-echarts/valveChart","pages/mpvue-echarts/mpvue-echarts","pages/common/inputPage","pages/danger/addDanger","pages/statistics/statistics","pages/danger/detailDanger"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/pointCheck/pointCheck","text":"应用","iconPath":"static/img/point.png","selectedIconPath":"static/img/pointHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"networkTimeout":{"request":60000},"nvue":{"pages":{"pages/danger/readHistory.html":{"window":{"navigationBarTitleText":"审批阅读历史列表"}},"pages/danger/dangerList.html":{"window":{"navigationBarTitleText":"隐患审批"}},"pages/uni-tabs/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查11"}},"pages/pointList/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}}}},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"移动安全管家"};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 
@@ -5539,7 +5812,7 @@ eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  * http://222.223.19.166:10012/ehsq，外网\n  * http://10.57.167.214:8080/ehsq，内网\n  */\nvar host = \"http://192.168.1.100:8080/boeb9\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n\n  // 点位检查扫码接口\n  scan: '/mobile/dwsm.do',\n\n  // 扫码新增检查\n  UpdatePoint: '/mobile/updateJcjl.do',\n\n  // 获取Tab页上的数量\n  getTabCounts: '/mobile/getTabCount.do',\n\n  // 获取检查详情\n  getPointDetail: '/mobile/getJcjl.do',\n\n  // 首页统计\n  getMainPageCount: '/mobile/getSytj.do',\n\n  // 报警设备类型统计\n  alertDeviceCount: '/mobile/bjsblx.do',\n\n  // 报警事件类型统计\n  alertEventCount: '/mobile/bjsjlx.do',\n\n  // 阀组压力统计\n  alertValveCount: '/mobile/ylfz.do',\n  // 阀组压力统计 - 根据楼层获取阀组编号\n  getValveDataByFloor: '/mobile/getfz.do',\n\n  // 上传图片\n  uploadImage: '/uploadImg',\n\n  // 加载图片\n  loadImage: '/mobile/loadYhzp.do?fileid=',\n\n  // 删除图片\n  deleteImage: '/mobile/delZp.do',\n\n  // ------隐患相关-------\n  // 添加/修改隐患\n  editDanger: '/mobile/updateYhzg.do',\n  //获取隐患审批数据\n  getYhzgListByType: '/mobile/getYhzgListByType.do',\n  //获取隐患整改数目\n  getYhzgTabCounts: '/mobile/getYhzgTabCounts.do',\n  //获取隐患整改详情信息\n  getYhzgDetail: '/mobile/getYhzgDetail.do',\n  //隐患整改审批\n  updateYhzgFlow: '/mobile/updateYhzgFlow.do' };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?a0b7");
+eval(" // config.js\n/**\n  * 小程序后端接口配置文件\n  * http://222.223.19.166:10012/ehsq，外网\n  * http://10.57.167.214:8080/ehsq，内网\n  */\nvar host = \"http://222.223.19.166:10012/ehsq\"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新\n\n\nvar config = {\n\n  // 下面的地址配合 Server 工作\n  host: host,\n  // 登录\n  login: '/mobile/system/login.do',\n\n  // 点位检查扫码接口\n  scan: '/mobile/dwsm.do',\n\n  // 扫码新增检查\n  UpdatePoint: '/mobile/updateJcjl.do',\n\n  // 获取Tab页上的数量\n  getTabCounts: '/mobile/getTabCount.do',\n\n  // 获取检查详情\n  getPointDetail: '/mobile/getJcjl.do',\n\n  // 首页统计\n  getMainPageCount: '/mobile/getSytj.do',\n\n  // 报警设备类型统计\n  alertDeviceCount: '/mobile/bjsblx.do',\n\n  // 报警事件类型统计\n  alertEventCount: '/mobile/bjsjlx.do',\n\n  // 阀组压力统计\n  alertValveCount: '/mobile/ylfz.do',\n  // 阀组压力统计 - 根据楼层获取阀组编号\n  getValveDataByFloor: '/mobile/getfz.do',\n\n  // 上传图片\n  uploadImage: '/uploadImg',\n\n  // 加载图片\n  loadImage: '/mobile/loadYhzp.do?fileid=',\n\n  // 删除图片\n  deleteImage: '/mobile/delZp.do',\n\n  // ------隐患相关-------\n  // 添加隐患并发起流程\n  addYhzgToFlow: '/mobile/addYhzgToFlow.do',\n  //获取隐患审批数据\n  getYhzgListByType: '/mobile/getYhzgListByType.do',\n  //获取隐患整改数目\n  getYhzgTabCounts: '/mobile/getYhzgTabCounts.do',\n  //获取隐患整改详情信息\n  getYhzgDetail: '/mobile/getYhzgDetail.do',\n  //隐患整改流程流转\n  updateAndSendFlowForMobile: '/mobile/updateAndSendFlowForMobile.do',\n  //查看流程图\n  showFlowPic: '/mobile/showFlowPic.do',\n  //根据用户id查询当前用户所在部门\n  getUserDeptName: '/mobile/getUserDeptName.do',\n  //获取流转日志的接口\n  getActNodeInsts: '/mobile/getActNodeInsts.do',\n  //获取审批记录的接口\n  listForInst: '/mobile/listForInst.do',\n  //获取预警指数统计结果的接口\n  getYjzsStatics: '/mobile/getYjzsStatics.do' };\n\n//对外把对象config返回\nmodule.exports = config;\n\n//# sourceURL=uni-app:///util/config.js?a0b7");
 
 /***/ }),
 
@@ -6676,7 +6949,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniDrawer = _interopRequireDefault(__webpack_require__(/*! @/components/drawer/uni-drawer.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/drawer/uni-drawer.vue\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: _objectSpread({},\n  (0, _vuex.mapState)(['hasLogin', 'forcedLogin', 'userType', 'userInfo'])),\n\n  components: { uniDrawer: _uniDrawer.default },\n  data: function data() {\n    return {\n      // 右上角的按钮菜单\n      navBtnMuen: [],\n      // 当前主题: 0、默认主题 1、安全标准化主题 2、ISO45001主题\n      currentTemplate: 0 };\n\n  },\n  onLoad: function onLoad() {\n    var hydrantTab = {\n      name: '当月未检查',\n      id: '/mobile/xhsdywjclb.do' };\n\n    this.saveTabInfo('消火栓', hydrantTab);\n\n    var valveTab = {\n      name: '本周未检查',\n      id: '/mobile/fzzwjclb.do' };\n\n    this.saveTabInfo('阀组', valveTab);\n\n    var waterTab = {\n      name: '当天未检查',\n      id: '/mobile/jtwjclb.do' };\n\n    this.saveTabInfo('高位水箱', waterTab);\n    this.saveTabInfo('消防泵', waterTab);\n\n    this.setCurrentTemp();\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n    var that = this;\n    uni.showActionSheet({\n      itemList: that.navBtnMuen,\n      success: function success(res) {\n        console.log('选中了第' + (res.tapIndex + 1) + '个按钮');\n        uni.showLoading({\n          title: '正在切换主题...' });\n\n        setTimeout(function () {\n          uni.hideLoading();\n          that.currentTemplate = res.tapIndex;\n          that.setCurrentTemp();\n        }, 1000);\n      },\n      fail: function fail(res) {\n        console.log(res.errMsg);\n      } });\n\n  },\n  methods: {\n    // 设定当前选择的主题\n    setCurrentTemp: function setCurrentTemp() {\n      this.navBtnMuen = ['默认主题', '安全标准化主题', 'ISO45001主题'];\n      this.navBtnMuen[this.currentTemplate] += '[当前]';\n    },\n    jumpListPage: function jumpListPage(lx) {\n      this.saveTabInfo('currentLx', lx); // 保存当前类型名称\n      // \t\t\t\tuni.navigateTo({\n      // \t\t\t\t\turl: '../pointList/pointList?lx=' + lx,\n      // \t\t\t\t});\n      uni.navigateTo({\n        url: '../pointList/uni-tabs' });\n\n    },\n    jumpPage: function jumpPage(url) {\n      if (url == '') {\n        uni.showToast({\n          icon: 'none',\n          title: '敬请期待～' });\n\n        return;\n      } else {\n        uni.navigateTo({\n          url: url });\n\n      }\n    },\n    saveTabInfo: function saveTabInfo(key, data) {\n      uni.setStorage({\n        key: key,\n        data: data,\n        success: function success() {\n          console.log('保存成功');\n        } });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointCheck/pointCheck.vue?vue&type=script&lang=js&?f61e");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniDrawer = _interopRequireDefault(__webpack_require__(/*! @/components/drawer/uni-drawer.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/drawer/uni-drawer.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: _objectSpread({},\n  (0, _vuex.mapState)(['hasLogin', 'forcedLogin', 'userType', 'userInfo'])),\n\n  components: { uniDrawer: _uniDrawer.default },\n  data: function data() {\n    return {\n      // 右上角的按钮菜单\n      navBtnMuen: [],\n      // 当前主题: 0、默认主题 1、安全标准化主题 2、ISO45001主题\n      currentTemplate: 0 };\n\n  },\n  onLoad: function onLoad() {\n    var hydrantTab = {\n      name: '当月未检查',\n      id: '/mobile/xhsdywjclb.do' };\n\n    this.saveTabInfo('消火栓', hydrantTab);\n\n    var valveTab = {\n      name: '本周未检查',\n      id: '/mobile/fzzwjclb.do' };\n\n    this.saveTabInfo('阀组', valveTab);\n\n    var waterTab = {\n      name: '当天未检查',\n      id: '/mobile/jtwjclb.do' };\n\n    this.saveTabInfo('高位水箱', waterTab);\n    this.saveTabInfo('消防泵', waterTab);\n\n    this.setCurrentTemp();\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n    var that = this;\n    uni.showActionSheet({\n      itemList: that.navBtnMuen,\n      success: function success(res) {\n        console.log('选中了第' + (res.tapIndex + 1) + '个按钮');\n        uni.showLoading({\n          title: '正在切换主题...' });\n\n        setTimeout(function () {\n          uni.hideLoading();\n          that.currentTemplate = res.tapIndex;\n          that.setCurrentTemp();\n        }, 1000);\n      },\n      fail: function fail(res) {\n        console.log(res.errMsg);\n      } });\n\n  },\n  methods: {\n    // 设定当前选择的主题\n    setCurrentTemp: function setCurrentTemp() {\n      this.navBtnMuen = ['默认主题', '安全标准化主题', 'ISO45001主题'];\n      this.navBtnMuen[this.currentTemplate] += '[当前]';\n    },\n    jumpListPage: function jumpListPage(lx) {\n      this.saveTabInfo('currentLx', lx); // 保存当前类型名称\n      // \t\t\t\tuni.navigateTo({\n      // \t\t\t\t\turl: '../pointList/pointList?lx=' + lx,\n      // \t\t\t\t});\n      uni.navigateTo({\n        url: '../pointList/uni-tabs' });\n\n    },\n    jumpPage: function jumpPage(url) {\n      if (url == '') {\n        uni.showToast({\n          icon: 'none',\n          title: '敬请期待～' });\n\n        return;\n      } else {\n        uni.navigateTo({\n          url: url });\n\n      }\n    },\n    jumpPageForYCYJ: function jumpPageForYCYJ() {\n      plus.runtime.openWeb(_config.default.host + _config.default.getYjzsStatics);\n    },\n    saveTabInfo: function saveTabInfo(key, data) {\n      uni.setStorage({\n        key: key,\n        data: data,\n        success: function success() {\n          console.log('保存成功');\n        } });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/pointCheck/pointCheck.vue?vue&type=script&lang=js&?f61e");
 
 /***/ }),
 
@@ -6699,7 +6972,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"part2\" },\n    [\n      _vm.userType != 1\n        ? _c(\n            \"swiper\",\n            {\n              staticClass: \"banner-box\",\n              attrs: {\n                \"indicator-dots\": \"\",\n                autoplay: \"\",\n                \"indicator-active-color\": \"#169bd5\",\n                circular: \"\",\n                interval: 5000,\n                duration: 300,\n                \"indicator-color\": \"rgba(0,0,0,.3)\"\n              }\n            },\n            [\n              _c(\"swiper-item\", { attrs: { mpcomid: \"10bbdf1a-0\" } }, [\n                _c(\"image\", {\n                  staticClass: \"banner-image\",\n                  attrs: {\n                    src: \"../../static/img/fgBG.png\",\n                    mode: \"aspectFill\",\n                    \"lazy-load\": \"\"\n                  }\n                })\n              ])\n            ],\n            1\n          )\n        : _vm._e(),\n      _vm.userType == 1\n        ? _c(\n            \"view\",\n            {\n              staticClass: \"topView_pc\",\n              attrs: { eventid: \"10bbdf1a-0\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"../statistics/statistics\")\n                }\n              }\n            },\n            [\n              _vm._m(0),\n              _vm._m(1),\n              _vm._m(2),\n              _c(\"image\", {\n                staticClass: \"arrow\",\n                attrs: {\n                  src: \"../../static/img/rightArrow_white.png\",\n                  mode: \"aspectFit\"\n                }\n              })\n            ]\n          )\n        : _vm._e(),\n      _vm.currentTemplate == 0\n        ? _c(\n            \"block\",\n            [\n              _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                  _vm._v(\"检查管理\")\n                ])\n              ]),\n              _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                _c(\n                  \"view\",\n                  {\n                    staticClass: \"dangerView\",\n                    attrs: { eventid: \"10bbdf1a-1\" },\n                    on: {\n                      tap: function($event) {\n                        _vm.jumpListPage(\"所有记录\")\n                      }\n                    }\n                  },\n                  [\n                    _c(\"image\", {\n                      staticClass: \"dangerIcon\",\n                      attrs: {\n                        src: \"../../static/img/point_all.png\",\n                        mode: \"widthFix\"\n                      }\n                    }),\n                    _c(\"view\", { staticClass: \"subView\" }, [\n                      _c(\"text\", { staticClass: \"dangerText\" }, [\n                        _vm._v(\"所有记录\")\n                      ])\n                    ])\n                  ]\n                ),\n                _c(\n                  \"view\",\n                  {\n                    staticClass: \"dangerView\",\n                    attrs: { eventid: \"10bbdf1a-2\" },\n                    on: {\n                      tap: function($event) {\n                        _vm.jumpListPage(\"消火栓\")\n                      }\n                    }\n                  },\n                  [\n                    _c(\"image\", {\n                      staticClass: \"dangerIcon\",\n                      attrs: {\n                        src: \"../../static/img/point_xhs.png\",\n                        mode: \"widthFix\"\n                      }\n                    }),\n                    _c(\"view\", { staticClass: \"subView\" }, [\n                      _c(\"text\", { staticClass: \"dangerText\" }, [\n                        _vm._v(\"消火栓\")\n                      ])\n                    ])\n                  ]\n                ),\n                _vm.userType == 1\n                  ? _c(\n                      \"view\",\n                      {\n                        staticClass: \"dangerView\",\n                        attrs: { eventid: \"10bbdf1a-3\" },\n                        on: {\n                          tap: function($event) {\n                            _vm.jumpListPage(\"阀组\")\n                          }\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"dangerIcon\",\n                          attrs: {\n                            src: \"../../static/img/point_fz.png\",\n                            mode: \"widthFix\"\n                          }\n                        }),\n                        _c(\"view\", { staticClass: \"subView\" }, [\n                          _c(\"text\", { staticClass: \"dangerText\" }, [\n                            _vm._v(\"阀组\")\n                          ])\n                        ])\n                      ]\n                    )\n                  : _vm._e(),\n                _vm.userType == 1\n                  ? _c(\n                      \"view\",\n                      {\n                        staticClass: \"dangerView\",\n                        attrs: { eventid: \"10bbdf1a-4\" },\n                        on: {\n                          tap: function($event) {\n                            _vm.jumpListPage(\"高位水箱\")\n                          }\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"dangerIcon\",\n                          attrs: {\n                            src: \"../../static/img/point_sx.png\",\n                            mode: \"widthFix\"\n                          }\n                        }),\n                        _c(\"view\", { staticClass: \"subView\" }, [\n                          _c(\"text\", { staticClass: \"dangerText\" }, [\n                            _vm._v(\"高位水箱\")\n                          ])\n                        ])\n                      ]\n                    )\n                  : _vm._e(),\n                _vm.userType == 1\n                  ? _c(\n                      \"view\",\n                      {\n                        staticClass: \"dangerView\",\n                        attrs: { eventid: \"10bbdf1a-5\" },\n                        on: {\n                          tap: function($event) {\n                            _vm.jumpListPage(\"消防泵\")\n                          }\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"dangerIcon\",\n                          attrs: {\n                            src: \"../../static/img/point_xfb.png\",\n                            mode: \"widthFix\"\n                          }\n                        }),\n                        _c(\"view\", { staticClass: \"subView\" }, [\n                          _c(\"text\", { staticClass: \"dangerText\" }, [\n                            _vm._v(\"消防泵\")\n                          ])\n                        ])\n                      ]\n                    )\n                  : _vm._e(),\n                _c(\"view\", { staticClass: \"dangerView\" })\n              ]),\n              _vm.userType == 1\n                ? _c(\"block\", [\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"隐患排查\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-6\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"../danger/addDanger\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/yhsb.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"隐患上报\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-7\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"../danger/dangerList\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/yhsp.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"隐患审批\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"事故管理\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-8\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/sgkb.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"事故快报\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" }),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"作业管理\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-9\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"../workRisk/riskList\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/zysp.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"作业审批\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" }),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"安全培训\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-10\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/pxzl.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"培训资料\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-11\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/zxks.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"在线考试\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-12\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/pxjh.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"培训计划\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-13\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/pxkc.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"培训课程\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-14\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/zwcs.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"自我测试\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-15\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/tyks.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"统一考试\")\n                            ])\n                          ])\n                        ]\n                      )\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"法律法规\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-16\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/fgqd.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"法规清单\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" }),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"环保管理\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-17\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/sfpf.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"三废排放\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-18\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/jcjl.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"监测记录\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ])\n                  ])\n                : _vm._e()\n            ],\n            1\n          )\n        : _vm._e(),\n      _vm.currentTemplate == 1\n        ? _c(\"block\", [\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"目标职责\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-19\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/mb.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"目标\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-20\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jghzz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"机构和职责\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-21\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/qycy.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"全员参与\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-22\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/aqtr.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"安全投入\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-23\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/aqwh.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"安全文化\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                _vm._v(\"制度化管理\")\n              ])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-24\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/fgqd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"法律法规\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-25\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/gzzd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"规章制度\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-26\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/czlc.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"操作流程\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"教育培训\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-27\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jypx.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"教育培训\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-28\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/rypx.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"人员培训\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"现场管理\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-29\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/point_all.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"设备设施\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-30\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zyaq.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"作业安全\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-31\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zyjk.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"职业健康\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                _vm._v(\"安全风险管理\")\n              ])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-32\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/aqfxgl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"安全风险管理\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-33\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zdwxy.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"重大危险源\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-34\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yhpc.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"隐患排查\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-35\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/ycyj.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"预测预警\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" }),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"应急管理\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-36\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjzb.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急准备\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-37\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjcz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急处置\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-38\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjpg.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急评估\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"事故查处\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-39\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/sgkb.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"报告\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-40\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zxks.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"调查和处理\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"持续改进\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-41\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jxpd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"绩效评定\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-42\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jcjl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"持续改进\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ])\n          ])\n        : _vm._e(),\n      _vm.currentTemplate == 2\n        ? _c(\"block\", [\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"组织环境\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-43\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/txgl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"体系管理\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" }),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                _vm._v(\"领导作用与工作人员参与\")\n              ])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-44\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/cn.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"承诺\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-45\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jghzz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"组织职责\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"策划\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-46\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/wxy.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"危险源\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-47\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/flfg.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"法律法规\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"支持\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-48\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/nl.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"能力\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-49\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/ys.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"意识\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-50\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/gt.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"沟通\")])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"运行\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-51\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/wxy.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"危险源\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-52\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/bg.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"变更\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-53\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/cg.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"采购\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-54\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/ycyj.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急响应\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" }),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"绩效评定\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-55\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jxpd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"绩效评价\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-56\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjcz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"内部审核\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-57\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/ygyh.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"管理评审\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"改进\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-58\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/pxzl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"总则\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-59\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zysp.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"纠正措施\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-60\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/cxgj.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"持续改进\")\n                    ])\n                  ])\n                ]\n              )\n            ])\n          ])\n        : _vm._e()\n    ],\n    1\n  )\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"隐患总数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"1005\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"事故总数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"600\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"检查次数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"2000\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointCheck/pointCheck.vue?vue&type=template&id=5e9bec31&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"part2\" },\n    [\n      _vm.userType != 1\n        ? _c(\n            \"swiper\",\n            {\n              staticClass: \"banner-box\",\n              attrs: {\n                \"indicator-dots\": \"\",\n                autoplay: \"\",\n                \"indicator-active-color\": \"#169bd5\",\n                circular: \"\",\n                interval: 5000,\n                duration: 300,\n                \"indicator-color\": \"rgba(0,0,0,.3)\"\n              }\n            },\n            [\n              _c(\"swiper-item\", { attrs: { mpcomid: \"10bbdf1a-0\" } }, [\n                _c(\"image\", {\n                  staticClass: \"banner-image\",\n                  attrs: {\n                    src: \"../../static/img/fgBG.png\",\n                    mode: \"aspectFill\",\n                    \"lazy-load\": \"\"\n                  }\n                })\n              ])\n            ],\n            1\n          )\n        : _vm._e(),\n      _vm.userType == 1\n        ? _c(\n            \"view\",\n            {\n              staticClass: \"topView_pc\",\n              attrs: { eventid: \"10bbdf1a-0\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"../statistics/statistics\")\n                }\n              }\n            },\n            [\n              _vm._m(0),\n              _vm._m(1),\n              _vm._m(2),\n              _c(\"image\", {\n                staticClass: \"arrow\",\n                attrs: {\n                  src: \"../../static/img/rightArrow_white.png\",\n                  mode: \"aspectFit\"\n                }\n              })\n            ]\n          )\n        : _vm._e(),\n      _vm.currentTemplate == 0\n        ? _c(\n            \"block\",\n            [\n              _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                  _vm._v(\"检查管理\")\n                ])\n              ]),\n              _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                _c(\n                  \"view\",\n                  {\n                    staticClass: \"dangerView\",\n                    attrs: { eventid: \"10bbdf1a-1\" },\n                    on: {\n                      tap: function($event) {\n                        _vm.jumpListPage(\"所有记录\")\n                      }\n                    }\n                  },\n                  [\n                    _c(\"image\", {\n                      staticClass: \"dangerIcon\",\n                      attrs: {\n                        src: \"../../static/img/point_all.png\",\n                        mode: \"widthFix\"\n                      }\n                    }),\n                    _c(\"view\", { staticClass: \"subView\" }, [\n                      _c(\"text\", { staticClass: \"dangerText\" }, [\n                        _vm._v(\"所有记录\")\n                      ])\n                    ])\n                  ]\n                ),\n                _c(\n                  \"view\",\n                  {\n                    staticClass: \"dangerView\",\n                    attrs: { eventid: \"10bbdf1a-2\" },\n                    on: {\n                      tap: function($event) {\n                        _vm.jumpListPage(\"消火栓\")\n                      }\n                    }\n                  },\n                  [\n                    _c(\"image\", {\n                      staticClass: \"dangerIcon\",\n                      attrs: {\n                        src: \"../../static/img/point_xhs.png\",\n                        mode: \"widthFix\"\n                      }\n                    }),\n                    _c(\"view\", { staticClass: \"subView\" }, [\n                      _c(\"text\", { staticClass: \"dangerText\" }, [\n                        _vm._v(\"消火栓\")\n                      ])\n                    ])\n                  ]\n                ),\n                _vm.userType == 1\n                  ? _c(\n                      \"view\",\n                      {\n                        staticClass: \"dangerView\",\n                        attrs: { eventid: \"10bbdf1a-3\" },\n                        on: {\n                          tap: function($event) {\n                            _vm.jumpListPage(\"阀组\")\n                          }\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"dangerIcon\",\n                          attrs: {\n                            src: \"../../static/img/point_fz.png\",\n                            mode: \"widthFix\"\n                          }\n                        }),\n                        _c(\"view\", { staticClass: \"subView\" }, [\n                          _c(\"text\", { staticClass: \"dangerText\" }, [\n                            _vm._v(\"阀组\")\n                          ])\n                        ])\n                      ]\n                    )\n                  : _vm._e(),\n                _vm.userType == 1\n                  ? _c(\n                      \"view\",\n                      {\n                        staticClass: \"dangerView\",\n                        attrs: { eventid: \"10bbdf1a-4\" },\n                        on: {\n                          tap: function($event) {\n                            _vm.jumpListPage(\"高位水箱\")\n                          }\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"dangerIcon\",\n                          attrs: {\n                            src: \"../../static/img/point_sx.png\",\n                            mode: \"widthFix\"\n                          }\n                        }),\n                        _c(\"view\", { staticClass: \"subView\" }, [\n                          _c(\"text\", { staticClass: \"dangerText\" }, [\n                            _vm._v(\"高位水箱\")\n                          ])\n                        ])\n                      ]\n                    )\n                  : _vm._e(),\n                _vm.userType == 1\n                  ? _c(\n                      \"view\",\n                      {\n                        staticClass: \"dangerView\",\n                        attrs: { eventid: \"10bbdf1a-5\" },\n                        on: {\n                          tap: function($event) {\n                            _vm.jumpListPage(\"消防泵\")\n                          }\n                        }\n                      },\n                      [\n                        _c(\"image\", {\n                          staticClass: \"dangerIcon\",\n                          attrs: {\n                            src: \"../../static/img/point_xfb.png\",\n                            mode: \"widthFix\"\n                          }\n                        }),\n                        _c(\"view\", { staticClass: \"subView\" }, [\n                          _c(\"text\", { staticClass: \"dangerText\" }, [\n                            _vm._v(\"消防泵\")\n                          ])\n                        ])\n                      ]\n                    )\n                  : _vm._e(),\n                _c(\"view\", { staticClass: \"dangerView\" })\n              ]),\n              _vm.userType == 1\n                ? _c(\"block\", [\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"隐患排查\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-6\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"../danger/addDanger\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/yhsb.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"隐患上报\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-7\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"../danger/dangerList\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/yhsp.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"隐患审批\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"事故管理\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-8\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/sgkb.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"事故快报\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" }),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"作业管理\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-9\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/zyfxpg.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"作业风险评估\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-10\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/zysp.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"作业审批\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"安全培训\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-11\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/pxzl.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"培训资料\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-12\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/zxks.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"在线考试\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-13\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/pxjh.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"培训计划\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-14\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/pxkc.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"培训课程\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-15\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/zwcs.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"自我测试\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-16\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/tyks.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"统一考试\")\n                            ])\n                          ])\n                        ]\n                      )\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"法律法规\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-17\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/fgqd.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"法规清单\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" }),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ]),\n                    _c(\"view\", { staticClass: \"titleView_pc\" }, [\n                      _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                        _vm._v(\"环保管理\")\n                      ])\n                    ]),\n                    _c(\"view\", { staticClass: \"menuBlockView\" }, [\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-18\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/sfpf.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"三废排放\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\n                        \"view\",\n                        {\n                          staticClass: \"dangerView\",\n                          attrs: { eventid: \"10bbdf1a-19\" },\n                          on: {\n                            tap: function($event) {\n                              _vm.jumpPage(\"\")\n                            }\n                          }\n                        },\n                        [\n                          _c(\"image\", {\n                            staticClass: \"dangerIcon\",\n                            attrs: {\n                              src: \"../../static/img/jcjl.png\",\n                              mode: \"widthFix\"\n                            }\n                          }),\n                          _c(\"view\", { staticClass: \"subView\" }, [\n                            _c(\"text\", { staticClass: \"dangerText\" }, [\n                              _vm._v(\"监测记录\")\n                            ])\n                          ])\n                        ]\n                      ),\n                      _c(\"view\", { staticClass: \"dangerView\" })\n                    ])\n                  ])\n                : _vm._e()\n            ],\n            1\n          )\n        : _vm._e(),\n      _vm.currentTemplate == 1\n        ? _c(\"block\", [\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"目标职责\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-20\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/mb.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"目标\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-21\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jghzz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"机构和职责\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-22\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/qycy.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"全员参与\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-23\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/aqtr.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"安全投入\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-24\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/aqwh.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"安全文化\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                _vm._v(\"制度化管理\")\n              ])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-25\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/fgqd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"法律法规\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-26\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/gzzd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"规章制度\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-27\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/czlc.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"操作流程\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"教育培训\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-28\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jypx.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"教育培训\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-29\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/rypx.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"人员培训\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"现场管理\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-30\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/point_all.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"设备设施\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-31\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zyaq.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"作业安全\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-32\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zyjk.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"职业健康\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                _vm._v(\"安全风险管理\")\n              ])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-33\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/aqfxgl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"安全风险管理\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-34\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zdwxy.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"重大危险源\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-35\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yhpc.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"隐患排查\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-36\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPageForYCYJ()\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/ycyj.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"预测预警\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" }),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"应急管理\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-37\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjzb.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急准备\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-38\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjcz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急处置\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-39\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjpg.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急评估\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"事故查处\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-40\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/sgkb.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"报告\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-41\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zxks.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"调查和处理\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"持续改进\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-42\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jxpd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"绩效评定\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-43\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jcjl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"持续改进\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ])\n          ])\n        : _vm._e(),\n      _vm.currentTemplate == 2\n        ? _c(\"block\", [\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"组织环境\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-44\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/txgl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"体系管理\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" }),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [\n                _vm._v(\"领导作用与工作人员参与\")\n              ])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-45\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/cn.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"承诺\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-46\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jghzz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"组织职责\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"策划\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-47\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/wxy.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"危险源\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-48\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/flfg.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"法律法规\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"支持\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-49\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/nl.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"能力\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-50\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/ys.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"意识\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-51\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/gt.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"沟通\")])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"运行\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-52\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/wxy.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"危险源\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-53\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/bg.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"变更\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-54\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: { src: \"../../static/img/cg.png\", mode: \"widthFix\" }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"采购\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-55\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/ycyj.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"应急响应\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\"view\", { staticClass: \"dangerView\" }),\n              _c(\"view\", { staticClass: \"dangerView\" })\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"绩效评定\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-56\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/jxpd.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"绩效评价\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-57\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/yjcz.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"内部审核\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-58\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/ygyh.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"管理评审\")\n                    ])\n                  ])\n                ]\n              )\n            ]),\n            _c(\"view\", { staticClass: \"titleView_pc\" }, [\n              _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"改进\")])\n            ]),\n            _c(\"view\", { staticClass: \"menuBlockView\" }, [\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-59\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/pxzl.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"总则\")])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-60\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/zysp.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"纠正措施\")\n                    ])\n                  ])\n                ]\n              ),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"dangerView\",\n                  attrs: { eventid: \"10bbdf1a-61\" },\n                  on: {\n                    tap: function($event) {\n                      _vm.jumpPage(\"\")\n                    }\n                  }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"dangerIcon\",\n                    attrs: {\n                      src: \"../../static/img/cxgj.png\",\n                      mode: \"widthFix\"\n                    }\n                  }),\n                  _c(\"view\", { staticClass: \"subView\" }, [\n                    _c(\"text\", { staticClass: \"dangerText\" }, [\n                      _vm._v(\"持续改进\")\n                    ])\n                  ])\n                ]\n              )\n            ])\n          ])\n        : _vm._e()\n    ],\n    1\n  )\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"隐患总数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"1005\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"事故总数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"600\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"topItemView\" }, [\n      _c(\"text\", { staticClass: \"topTextTitle\" }, [_vm._v(\"检查次数\")]),\n      _c(\"text\", { staticClass: \"topTextNum\" }, [_vm._v(\"2000\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointCheck/pointCheck.vue?vue&type=template&id=5e9bec31&");
 
 /***/ })
 
@@ -7809,7 +8082,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: (0, _vuex.mapState)(['sublistItem', 'sublistIndex', 'userInfo', 'inputPageText', 'key']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      // 当页面OnShow的时候是否需要从state里去拿输入的内容\n      needGetInputOnShow: false,\n      // 上传照片相关\n      imageViewHeight: 100,\n      imageList: [],\n      littleImageWidth: 0,\n\n      // 页面参数，接口需要的参数\n      dangerId: '', // 隐患id\n      dangerLevel: '', // 隐患级别\n      dangerType: '', // 隐患分类（隐患后果）\n      dangerDesc: '', // 隐患描述\n      dangerClause: '', // 对应条款\n      dangerAdvise: '', // 整改建议\n\n      checkDate: '', // 检查时间\n      checkPeople: '', // 检查人\n      deadLine: '', // 整改期限\n\n      dangerDept: '', //隐患责任部门\n\n      // --------数据模板---------\n      // 隐患级别\n      dangerLevelData: ['一般隐患', '重大隐患'],\n      // 隐患分类\n      //dangerTypeData: ['自行输入分类','从分类库选择'],\n      //隐患后果\n      dangerTypeData: ['人员伤害', '财产损失', '其他'],\n      // 隐患描述\n      dangerDescData: ['从隐患库选择/检索', '自行输入问题', '从常用隐患库选择'],\n      // 对应条款\n      dangerClauseData: ['从隐患库选择/检索', '自行输入问题', '从法规库选择'],\n      //隐患责任部门\n      dangerDeptData: ['从隐患库选择/检索', '自行输入问题', '从部门库选择'] };\n\n  },\n  onLoad: function onLoad() {\n    this.littleImageWidth = (uni.getSystemInfoSync().windowWidth - 50) / 4;\n    this.checkPeople = this.userInfo.fullname;\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onShow: function onShow() {\n    if (this.needGetInputOnShow == true) {\n      this.$data[this.key] = this.inputPageText;\n      this.needGetInputOnShow = false;\n      this.removeInputItem();\n    }\n  },\n  methods: _objectSpread({},\n  (0, _vuex.mapMutations)(['removeInputItem']), {\n    // 选择隐患级别\n    selectedDangerLevel: function selectedDangerLevel(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.dangerLevelData,\n        success: function success(res) {\n          that.dangerLevel = that.dangerLevelData[res.tapIndex];\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择隐患责任部门\n    selectedDept: function selectedDept(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.dangerDeptData,\n        success: function success(res) {\n          if (res.tapIndex == 0) {// 从隐患库选择/检索\n\n          } else if (res.tapIndex == 1) {// 自行输入\n            this.needGetInputOnShow = true;\n            that.jumpInput(that.dangerDept, 'dangerDept', '请输入隐患责任部门');\n          } else {// 从部门库选择\n\n          }\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择隐患分类\n    selectedDangerType: function selectedDangerType(e) {\n      var that = this;\n      /* uni.showActionSheet({\n                       \titemList: that.dangerTypeData,\n                       \tsuccess: function (res) {\n                       \t\tif (res.tapIndex == 0) {// 自行输入\n                       \t\t\tthis.needGetInputOnShow = true;\n                       \t\t\tthat.jumpInput(that.dangerType, 'dangerType', '请输入隐患分类')\n                       \t\t}else {// 从分类库选择\n                       \t\t\t\n                       \t\t}\n                       \t},\n                       \tfail: function (res) {\n                       \t\tconsole.log(res.errMsg);\n                       \t}\n                       }); */\n\n      uni.showActionSheet({\n        itemList: that.dangerTypeData,\n        success: function success(res) {\n          that.dangerType = that.dangerTypeData[res.tapIndex];\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择隐患描述\n    selectedDangerDesc: function selectedDangerDesc(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.dangerDescData,\n        success: function success(res) {\n          if (res.tapIndex == 0) {// 从隐患库选择/检索\n\n          } else if (res.tapIndex == 1) {// 自行输入\n            this.needGetInputOnShow = true;\n            that.jumpInput(that.dangerDesc, 'dangerDesc', '请输入隐患描述');\n          } else {// 从常用隐患库选择\n\n          }\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择对应条款\n    selectedDangerClause: function selectedDangerClause(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.dangerClauseData,\n        success: function success(res) {\n          if (res.tapIndex == 0) {// 从隐患库选择/检索\n\n          } else if (res.tapIndex == 1) {// 自行输入\n            this.needGetInputOnShow = true;\n            that.jumpInput(that.dangerClause, 'dangerClause', '请输入对应条款');\n          } else {// 从法规库选择\n\n          }\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择检查日期\n    checkDateChange: function checkDateChange(e) {\n      this.checkDate = e.target.value;\n    },\n    // 选择整改期限\n    deadLineChange: function deadLineChange(e) {\n      this.deadLine = e.target.value;\n    },\n    // 保存\n    saveClick: function saveClick() {\n      var that = this;\n      var param = {\n        refid: that.dangerId,\n        yhjb: that.dangerLevel,\n        yhfl: that.dangerType,\n        yhms: that.dangerDesc,\n        dytk: that.dangerClause,\n        zgjy: that.dangerAdvise,\n        jcsj: that.checkDate,\n        jcr: that.checkPeople,\n        zgqx: that.deadLine,\n        zrbm: that.dangerDept,\n        userid: that.userInfo.userid };\n\n      _request.default.requestLoading(_config.default.editDanger, param, '正在加载',\n      function (res) {\n        uni.showToast({\n          icon: 'none',\n          title: '保存成功',\n          duration: 1000 });\n\n        that.dangerId = res.id;\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '保存失败' });\n\n      }, function () {\n\n      });\n    },\n    jumpInput: function jumpInput(text, key) {var placeholder = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '请输入描述';\n      this.needGetInputOnShow = true;\n      uni.navigateTo({\n        url: '../common/inputPage?text=' + text + '&key=' + key + '&placeholder=' + placeholder + '' });\n\n    },\n    // 上传照片功能-添加照片\n    addPhoto: function addPhoto() {\n      var that = this;\n      uni.chooseImage({\n        count: 9, //默认9\n        sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有\n        sourceType: ['album', 'camera'], //从相册选择\n        success: function success(res) {\n          console.log(JSON.stringify(res.tempFilePaths));\n          for (var i = 0; i < res.tempFilePaths.length; i++) {\n            var imgObj = { //\ttype：1为新增需要上传，2为加载的，不需要上传\n              fileid: '',\n              src: res.tempFilePaths[i],\n              type: 1 };\n\n            that.imageList.push(imgObj);\n          }\n        } });\n\n    },\n    // 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口\n    deleteImage: function deleteImage(imgObj, index) {\n      var that = this;\n      if (imgObj.src.startsWith('http:')) {// 网络图片\n        var obj = {\n          item: that.item,\n          index: that.itemIndex };\n\n        that.setSublistItem(obj);\n\n        var param = {\n          from: 'jc',\n          yyid: that.item.id,\n          fileid: imgObj.fileid,\n          userid: that.userInfo.userid };\n\n        _request.default.requestLoading(_config.default.deleteImage, param, '正在删除图片',\n        function (res) {\n          console.log('删除成功：' + JSON.stringify(res));\n          that.item.fj = res.fj;\n          that.imageList.splice(index, 1);\n        }, function () {\n          uni.showToast({\n            icon: 'none',\n            title: '删除失败' });\n\n        }, function () {\n\n        });\n\n      } else {// 刚选择好，还未上传，非网络图片\n        that.imageList.splice(index, 1);\n      }\n    },\n    // 浏览照片\n    viewPhoto: function viewPhoto() {\n      var that = this;\n      var imgList = [];\n      for (var i = 0; i < that.imageList.length; i++) {\n        var item = that.imageList[i];\n        imgList.push(item.src);\n      }\n      // 预览图片\n      uni.previewImage({\n        urls: imgList });\n\n    } }) };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/danger/addDanger.vue?vue&type=script&lang=js&?ff08");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: (0, _vuex.mapState)(['sublistItem', 'sublistIndex', 'userInfo', 'inputPageText', 'key']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      // 当页面OnShow的时候是否需要从state里去拿输入的内容\n      needGetInputOnShow: false,\n      item: '', // subList中的对象\n      itemIndex: 0, // subList中的第几个数据，用于确定后替换原数据\n      // 上传照片相关\n      imageViewHeight: 100,\n      imageList: [],\n      littleImageWidth: 0,\n\n      // 页面参数，接口需要的参数\n      id: '', // 隐患id\n      yhdj: '', // 隐患级别\n      yhhg: '', // 隐患分类（隐患后果）\n      bhgys: '', // 隐患描述\n      wfflfgjtk: '', // 对应条款\n      gsyqjjy: '', // 整改建议\n      zrbm: '', //隐患责任部门\n      fqr: '', //发起人\n      fj: '', // 附件\n      // --------数据模板---------\n      // 隐患级别\n      yhdjData: ['一般隐患', '重大隐患'],\n      // 隐患分类\n      //yhhgData: ['自行输入分类','从分类库选择'],\n      //隐患后果\n      yhhgData: ['人员伤害', '财产损失', '其他'],\n      // 隐患描述\n      bhgysData: ['从隐患库选择/检索', '自行输入问题', '从常用隐患库选择'],\n      // 对应条款\n      wfflfgjtkData: ['从隐患库选择/检索', '自行输入问题', '从法规库选择'],\n      //隐患责任部门\n      zrbmData: ['从隐患库选择/检索', '自行输入问题', '从部门库选择'] };\n\n  },\n  onLoad: function onLoad() {\n    var that = this;\n    that.littleImageWidth = (uni.getSystemInfoSync().windowWidth - 50) / 4;\n    that.fqr = that.userInfo.fullname;\n    //根据用户id查询当前用户所在部门\n    _request.default.requestLoadingNew(_config.default.getUserDeptName, { userid: that.userInfo.userid }, '正在加载',\n    function (res) {\n      //console.log(JSON.stringify(that.userInfo));\n      that.zrbm = res.dept;\n    }, function () {\n    }, function () {\n    });\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onShow: function onShow() {\n    if (this.needGetInputOnShow == true) {\n      this.$data[this.key] = this.inputPageText;\n      this.needGetInputOnShow = false;\n      this.removeInputItem();\n    }\n  },\n  methods: _objectSpread({},\n  (0, _vuex.mapMutations)(['removeInputItem', 'setSublistItem']), {\n    // 选择隐患级别\n    selectedyhdj: function selectedyhdj(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.yhdjData,\n        success: function success(res) {\n          that.yhdj = that.yhdjData[res.tapIndex];\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择隐患分类\n    selectedyhhg: function selectedyhhg(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.yhhgData,\n        success: function success(res) {\n          that.yhhg = that.yhhgData[res.tapIndex];\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择隐患描述\n    selectedbhgys: function selectedbhgys(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.bhgysData,\n        success: function success(res) {\n          if (res.tapIndex == 0) {// 从隐患库选择/检索\n\n          } else if (res.tapIndex == 1) {// 自行输入\n            this.needGetInputOnShow = true;\n            that.jumpInput(that.bhgys, 'bhgys', '请输入隐患描述');\n          } else {// 从常用隐患库选择\n\n          }\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择对应条款\n    selectedwfflfgjtk: function selectedwfflfgjtk(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.wfflfgjtkData,\n        success: function success(res) {\n          if (res.tapIndex == 0) {// 从隐患库选择/检索\n\n          } else if (res.tapIndex == 1) {// 自行输入\n            this.needGetInputOnShow = true;\n            that.jumpInput(that.wfflfgjtk, 'wfflfgjtk', '请输入对应条款');\n          } else {// 从法规库选择\n\n          }\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 选择检查日期\n    checkDateChange: function checkDateChange(e) {\n      this.checkDate = e.target.value;\n    },\n    // 选择整改期限\n    deadLineChange: function deadLineChange(e) {\n      this.deadLine = e.target.value;\n    },\n    saveItem: function saveItem(e) {\n      var that = this;\n      // 上传照片，需要分两种情况，如是从后台加载的，不需要调用上传接口，如果是本地读取还未上传的，需要调上传接口\n      var url = _config.default.uploadImage + '?from=flowyh&yyid=' + that.id + '&fjlx=fj1&userid=' + that.userInfo.userid;\n      var imgList = [];\n      for (var i = 0; i < that.imageList.length; i++) {\n        var item = that.imageList[i];\n        if (item.type == 1 && !item.src.startsWith('http:')) {\n          imgList.push(item.src);\n        }\n      }\n\n      if (imgList.length == 0) {\n        that.saveLocalItem();\n        uni.navigateBack({\n          delta: 1 });\n\n        return;\n      }\n      uni.showLoading({\n        title: '正在上传图片' });\n\n      _request.default.uploadImage(url, imgList, 0, 0, 0, imgList.length, function (res) {\n        var data = JSON.parse(res.data);\n        var fj = data.fj;\n        that.fj = fj;\n        //console.log('Item:',JSON.stringify(that.item));\n      }, function (result) {\n        uni.hideLoading();\n        if (result == '200') {\n          that.saveLocalItem();\n          uni.showToast({\n            title: '上传成功',\n            complete: setTimeout(function () {\n              uni.navigateBack({\n                delta: 1 });\n\n            }, 1500) });\n\n        }\n      });\n    },\n\n    // 缓存Item，给上一个页面获取\n    saveLocalItem: function saveLocalItem() {\n      var obj = {\n        item: this.item,\n        index: this.itemIndex };\n\n      this.setSublistItem(obj);\n    },\n    // 保存\n    saveClick: function saveClick() {\n      var that = this;\n      var param = {\n        refid: that.id,\n        yhdj: that.yhdj,\n        yhhg: that.yhhg,\n        bhgys: that.bhgys,\n        wfflfgjtk: that.wfflfgjtk,\n        gsyqjjy: that.gsyqjjy,\n        zrbm: that.zrbm,\n        fqr: that.fqr,\n        userid: that.userInfo.userid };\n\n      _request.default.requestLoadingNew(_config.default.addYhzgToFlow, param, '正在加载',\n      function (res) {\n        uni.showToast({\n          icon: 'none',\n          title: '保存成功',\n          duration: 1000 });\n\n        console.log('' + JSON.stringify(res));\n        that.id = res.id;\n        console.log(that.id);\n        that.saveItem(); //保存图片\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '保存失败' });\n\n      }, function () {\n\n      });\n    },\n    jumpInput: function jumpInput(text, key) {var placeholder = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '请输入描述';\n      this.needGetInputOnShow = true;\n      uni.navigateTo({\n        url: '../common/inputPage?text=' + text + '&key=' + key + '&placeholder=' + placeholder + '' });\n\n    },\n    // 上传照片功能-添加照片\n    addPhoto: function addPhoto() {\n      var that = this;\n      uni.chooseImage({\n        count: 9, //默认9\n        sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有\n        sourceType: ['album', 'camera'], //从相册选择\n        success: function success(res) {\n          console.log(JSON.stringify(res.tempFilePaths));\n          for (var i = 0; i < res.tempFilePaths.length; i++) {\n            var imgObj = { //\ttype：1为新增需要上传，2为加载的，不需要上传\n              fileid: '',\n              src: res.tempFilePaths[i],\n              type: 1 };\n\n            that.imageList.push(imgObj);\n          }\n        } });\n\n    },\n    // 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口\n    deleteImage: function deleteImage(imgObj, index) {\n      var that = this;\n      if (imgObj.src.startsWith('http:')) {// 网络图片\n        var obj = {\n          item: that.item,\n          index: that.itemIndex };\n\n        that.setSublistItem(obj);\n\n        var param = {\n          from: 'jc',\n          yyid: that.item.id,\n          fileid: imgObj.fileid,\n          userid: that.userInfo.userid };\n\n        _request.default.requestLoading(_config.default.deleteImage, param, '正在删除图片',\n        function (res) {\n          console.log('删除成功：' + JSON.stringify(res));\n          that.item.fj = res.fj;\n          that.imageList.splice(index, 1);\n        }, function () {\n          uni.showToast({\n            icon: 'none',\n            title: '删除失败' });\n\n        }, function () {\n\n        });\n\n      } else {// 刚选择好，还未上传，非网络图片\n        that.imageList.splice(index, 1);\n      }\n    },\n    // 浏览照片\n    viewPhoto: function viewPhoto() {\n      var that = this;\n      var imgList = [];\n      for (var i = 0; i < that.imageList.length; i++) {\n        var item = that.imageList[i];\n        imgList.push(item.src);\n      }\n      // 预览图片\n      uni.previewImage({\n        urls: imgList });\n\n    } }) };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/danger/addDanger.vue?vue&type=script&lang=js&?ff08");
 
 /***/ }),
 
@@ -7832,7 +8105,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\"view\", { staticClass: \"imageBaseView\" }, [\n          _c(\"view\", { staticClass: \"cellSubViewRow\" }, [\n            _c(\"text\", { staticClass: \"leftTextRow\" }, [_vm._v(\"隐患照片\")]),\n            _c(\"text\", { staticClass: \"rightTextRow\" }, [\n              _vm._v(_vm._s(_vm.imageList.length))\n            ])\n          ]),\n          _c(\n            \"view\",\n            { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n            [\n              _vm._l(_vm.imageList, function(imgObj, idx) {\n                return _c(\"block\", { key: idx }, [\n                  _c(\n                    \"view\",\n                    {\n                      staticClass: \"littleImageView\",\n                      style: {\n                        width: _vm.littleImageWidth + \"px\",\n                        height: _vm.littleImageWidth + \"px\"\n                      }\n                    },\n                    [\n                      _c(\"image\", {\n                        staticClass: \"littleImage\",\n                        attrs: {\n                          id: idx,\n                          src: imgObj.src,\n                          mode: \"aspectFit\",\n                          eventid: \"72ed35ad-0-\" + idx\n                        },\n                        on: { click: _vm.viewPhoto }\n                      }),\n                      _c(\"image\", {\n                        staticClass: \"littleImageDelete\",\n                        attrs: {\n                          src: \"../../static/img/delete.png\",\n                          id: idx,\n                          mode: \"aspectFit\",\n                          eventid: \"72ed35ad-1-\" + idx\n                        },\n                        on: {\n                          click: function($event) {\n                            _vm.deleteImage(imgObj, idx)\n                          }\n                        }\n                      })\n                    ]\n                  )\n                ])\n              }),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"littleImageView\",\n                  style: {\n                    width: _vm.littleImageWidth + \"px\",\n                    height: _vm.littleImageWidth + \"px\"\n                  },\n                  attrs: { eventid: \"72ed35ad-2\" },\n                  on: { click: _vm.addPhoto }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"littleImage\",\n                    attrs: { src: \"../../static/img/addImage.png\" }\n                  })\n                ]\n              )\n            ],\n            2\n          )\n        ]),\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"72ed35ad-6\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"责任部门\",\n                subnote: _vm.dangerDept,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-3\",\n                mpcomid: \"72ed35ad-0\"\n              },\n              on: { click: _vm.selectedDept }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患级别\",\n                subnote: _vm.dangerLevel,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-4\",\n                mpcomid: \"72ed35ad-1\"\n              },\n              on: { click: _vm.selectedDangerLevel }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患后果\",\n                subnote: _vm.dangerType,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-5\",\n                mpcomid: \"72ed35ad-2\"\n              },\n              on: { click: _vm.selectedDangerType }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"不合格因素\",\n                subnote: _vm.dangerDesc,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-6\",\n                mpcomid: \"72ed35ad-3\"\n              },\n              on: { click: _vm.selectedDangerDesc }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"对应条款\",\n                subnote: _vm.dangerClause,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-7\",\n                mpcomid: \"72ed35ad-4\"\n              },\n              on: { click: _vm.selectedDangerClause }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"整改建议\",\n                subnote: _vm.dangerAdvise,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-8\",\n                mpcomid: \"72ed35ad-5\"\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpInput(\n                    _vm.dangerAdvise,\n                    \"dangerAdvise\",\n                    \"请输入整改建议\"\n                  )\n                }\n              }\n            })\n          ],\n          1\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"btnView\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"saveBtn\",\n            attrs: { eventid: \"72ed35ad-9\" },\n            on: { tap: _vm.saveClick }\n          },\n          [_vm._v(\"保存\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/danger/addDanger.vue?vue&type=template&id=bdac4234&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\"uni-list-item\", {\n          attrs: {\n            title: \"发现人\",\n            subnote: _vm.fqr,\n            \"show-arrow\": \"false\",\n            mpcomid: \"72ed35ad-0\"\n          }\n        }),\n        _c(\"uni-list-item\", {\n          attrs: {\n            title: \"责任部门\",\n            subnote: _vm.zrbm,\n            \"show-arrow\": \"false\",\n            mpcomid: \"72ed35ad-1\"\n          }\n        }),\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"72ed35ad-7\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患描述\",\n                subnote: _vm.bhgys,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-0\",\n                mpcomid: \"72ed35ad-2\"\n              },\n              on: { click: _vm.selectedbhgys }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患级别\",\n                subnote: _vm.yhdj,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-1\",\n                mpcomid: \"72ed35ad-3\"\n              },\n              on: { click: _vm.selectedyhdj }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患分类\",\n                subnote: _vm.yhhg,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-2\",\n                mpcomid: \"72ed35ad-4\"\n              },\n              on: { click: _vm.selectedyhhg }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"对应条款\",\n                subnote: _vm.wfflfgjtk,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-3\",\n                mpcomid: \"72ed35ad-5\"\n              },\n              on: { click: _vm.selectedwfflfgjtk }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"整改建议\",\n                subnote: _vm.gsyqjjy,\n                \"show-arrow\": \"true\",\n                eventid: \"72ed35ad-4\",\n                mpcomid: \"72ed35ad-6\"\n              },\n              on: {\n                click: function($event) {\n                  _vm.jumpInput(_vm.gsyqjjy, \"gsyqjjy\", \"请输入整改要求及建议\")\n                }\n              }\n            })\n          ],\n          1\n        ),\n        _c(\"view\", { staticClass: \"imageBaseView\" }, [\n          _c(\"view\", { staticClass: \"cellSubViewRow\" }, [\n            _c(\"text\", { staticClass: \"leftTextRow\" }, [_vm._v(\"隐患照片\")]),\n            _c(\"text\", { staticClass: \"rightTextRow\" }, [\n              _vm._v(_vm._s(_vm.imageList.length))\n            ])\n          ]),\n          _c(\n            \"view\",\n            { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n            [\n              _vm._l(_vm.imageList, function(imgObj, idx) {\n                return _c(\"block\", { key: idx }, [\n                  _c(\n                    \"view\",\n                    {\n                      staticClass: \"littleImageView\",\n                      style: {\n                        width: _vm.littleImageWidth + \"px\",\n                        height: _vm.littleImageWidth + \"px\"\n                      }\n                    },\n                    [\n                      _c(\"image\", {\n                        staticClass: \"littleImage\",\n                        attrs: {\n                          id: idx,\n                          src: imgObj.src,\n                          mode: \"aspectFit\",\n                          eventid: \"72ed35ad-5-\" + idx\n                        },\n                        on: { click: _vm.viewPhoto }\n                      }),\n                      _c(\"image\", {\n                        staticClass: \"littleImageDelete\",\n                        attrs: {\n                          src: \"../../static/img/delete.png\",\n                          id: idx,\n                          mode: \"aspectFit\",\n                          eventid: \"72ed35ad-6-\" + idx\n                        },\n                        on: {\n                          click: function($event) {\n                            _vm.deleteImage(imgObj, idx)\n                          }\n                        }\n                      })\n                    ]\n                  )\n                ])\n              }),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"littleImageView\",\n                  style: {\n                    width: _vm.littleImageWidth + \"px\",\n                    height: _vm.littleImageWidth + \"px\"\n                  },\n                  attrs: { eventid: \"72ed35ad-7\" },\n                  on: { click: _vm.addPhoto }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"littleImage\",\n                    attrs: { src: \"../../static/img/addImage.png\" }\n                  })\n                ]\n              )\n            ],\n            2\n          )\n        ])\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"btnView\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"saveBtn\",\n            attrs: { eventid: \"72ed35ad-8\" },\n            on: { tap: _vm.saveClick }\n          },\n          [_vm._v(\"保存\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/danger/addDanger.vue?vue&type=template&id=bdac4234&");
 
 /***/ })
 
@@ -8015,7 +8288,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: (0, _vuex.mapState)(['sublistItem', 'sublistIndex', 'userInfo', 'inputPageText', 'key']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      // 当页面OnShow的时候是否需要从state里去拿输入的内容\n      needGetInputOnShow: false,\n      // 上传照片相关\n      imageViewHeight: 100,\n      imageList: [],\n      littleImageWidth: 0,\n\n      // 页面参数\n      dangerId: '', // 隐患id\n      dangerLevel: '', // 隐患级别\n      dangerType: '', // 隐患分类（隐患后果）\n      dangerDesc: '', // 隐患描述\n      dangerClause: '', // 对应条款\n      dangerAdvise: '', // 整改建议\n      dangerDept: '', //隐患责任部门\n      //接口需要的参数\n      checkDate: '', //检查日期\n      // --------数据模板---------\n      // 隐患级别\n      dangerLevelData: ['一般隐患', '重大隐患'],\n      // 隐患分类\n      //dangerTypeData: ['自行输入分类','从分类库选择'],\n      //隐患后果\n      dangerTypeData: ['人员伤害', '财产损失', '其他'],\n      // 隐患描述\n      dangerDescData: ['从隐患库选择/检索', '自行输入问题', '从常用隐患库选择'],\n      // 对应条款\n      dangerClauseData: ['从隐患库选择/检索', '自行输入问题', '从法规库选择'],\n      //隐患责任部门\n      dangerDeptData: ['从隐患库选择/检索', '自行输入问题', '从部门库选择'],\n      taskDefKey: '', //节点id\n      instId: '',\n      nodeName: '', //节点名称\n      obj: null,\n      styleFlag: {\n        checkDate: false } };\n\n\n  },\n  onLoad: function onLoad(option) {\n    console.log('加载页面...');\n    var that = this;\n    that.taskDefKey = JSON.parse(option.params).taskDefKey; //节点id\n    that.instId = JSON.parse(option.params).instId;\n    that.nodeName = JSON.parse(option.params).name;\n    _request.default.requestLoadingNew(_config.default.getYhzgDetail, JSON.parse(option.params), \"正在加载详情\", function (res) {\n      console.log('' + JSON.stringify(res));\n      var yhzgObj = res.data;\n      console.log(yhzgObj);\n      //基础赋值\t\t\t\t\n      that.dangerId = yhzgObj.id;\n      that.dangerLevel = yhzgObj.yhdj;\n      that.dangerType = yhzgObj.yhhg;\n      that.dangerDesc = yhzgObj.zgyj;\n      that.dangerClause = yhzgObj.wfflfgjtk;\n      that.dangerAdvise = yhzgObj.gsyqjjy;\n      that.dangerDept = yhzgObj.zrbm;\n      //that.imageList = yhzgObj.fj?yhzgObj.fj:yhzgObj.fj2?yhzgObj.fj2:yhzgObj.fj3;\n      //节点判断\n      console.log(\"当前节点：\" + that.taskDefKey + \"   节点名称：\" + that.nodeName);\n\n      //显示隐藏\n\n      //提交控制\n\n\n    }, function () {\n      uni.showToast({\n        icon: 'none',\n        title: '请求失败' });\n\n    }, function () {\n\n    });\n\n    this.littleImageWidth = (uni.getSystemInfoSync().windowWidth - 50) / 4;\n    this.checkPeople = this.userInfo.fullname;\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onShow: function onShow() {\n    if (this.needGetInputOnShow == true) {\n      this.$data[this.key] = this.inputPageText;\n      this.needGetInputOnShow = false;\n      this.removeInputItem();\n    }\n  },\n  methods: _objectSpread({},\n  (0, _vuex.mapMutations)(['removeInputItem']), {\n    // 选择整改期限\n    deadLineChange: function deadLineChange(e) {\n      this.deadLine = e.target.value;\n    },\n    bindDateChange: function bindDateChange(e) {\n      this.checkDate = e.target.value;\n    },\n    //审批历史\n    historyClick: function historyClick() {\n      uni.showToast({\n        icon: 'none',\n        title: '敬请期待！',\n        duration: 1000 });\n\n    },\n    //查看流程图\n    flowPicClick: function flowPicClick() {\n      uni.showToast({\n        icon: 'none',\n        title: '敬请期待！',\n        duration: 1000 });\n\n    },\n    //驳回\n    backFlowClick: function backFlowClick() {\n      uni.showToast({\n        icon: 'none',\n        title: '敬请期待！',\n        duration: 1000 });\n\n    },\n    // 保存\n    saveClick: function saveClick() {\n      var that = this;\n      var param = {\n        refid: that.dangerId,\n        id: that.dangerId,\n        userid: that.userInfo.userid,\n        taskDefKey: that.taskDefKey };\n\n      //判断节点\n      console.log(that.taskDefKey);\n      var nodeId = that.taskDefKey;\n      if (nodeId === \"sid-A0CE4647-CCC3-4A9A-81BF-09FCAB7CDCA4\" || nodeId === \"sid-3785D27C-9B73-4C6D-9C1C-6A4ECA6B8FFE\") {\n        //发起隐患 发起人关闭\n      } else if (nodeId === \"sid-41BC6E14-5C85-42A1-8E1B-3246FDEA682C\") {//整改人整改\n        param.yhjb = that.dangerLevel;\n        param.yhfl = that.dangerType;\n        param.yhms = that.dangerDesc;\n        param.dytk = that.dangerClause;\n        param.zgjy = that.dangerAdvise;\n        param.zgwcsj = that.checkDate; //整改完成时间\n        param.jcr = that.checkPeople;\n        param.zgqx = that.deadLine;\n        param.zgqx = that.deadLine;\n\n        /* yhzg.setZgwcrq(yhzgTemp.getZgwcrq());\n                                    yhzg.setZlzj(yhzgTemp.getZlzj());\n                                    yhzg.setZgr(yhzgTemp.getZgr());\n                                    yhzg.setZgrName(yhzgTemp.getZgrName());\n                                    yhzg.setTbrq(yhzgTemp.getTbrq());\n                                    yhzg.setZgqk(yhzgTemp.getZgqk());\n                                    yhzg.setFj2(yhzgTemp.getFj2()); */\n      } else if (nodeId === \"sid-F7A5E243-31D1-42DE-9D74-0C7323EFFAF8\") {//复核人复核\n        /* yhzg.setYyfx2(yhzgTemp.getYyfx2());\n        yhzg.setYzqk(yhzgTemp.getYzqk());\n        yhzg.setFj3(yhzgTemp.getFj3());\n        yhzg.setTbrq2(yhzgTemp.getTbrq2());\n        yhzg.setYzr(yhzgTemp.getYzr());\n        yhzg.setYzrName(yhzgTemp.getYzrName()); */\n      } else if (nodeId === \"sid-987522D1-34D6-45A4-8D16-CE1F2ACA0205\" || nodeId === \"sid-29BBC59F-F04B-47BF-9DE1-7C3299318DB8\") {//一级审批 二级审批\n        /* yhzg.setZgqx(yhzgTemp.getZgqx());\n        yhzg.setTbr(yhzgTemp.getTbr());\n        yhzg.setTxrq(yhzgTemp.getTxrq());\n        yhzg.setZgyj(yhzgTemp.getZgyj()); */\n      }\n      _request.default.requestLoadingNew(_config.default.updateYhzgFlow, param, '正在加载',\n      function (res) {\n        uni.showToast({\n          icon: 'none',\n          title: '保存成功',\n          duration: 1000 });\n\n        that.dangerId = res.id;\n        uni.navigateTo({\n          url: '../danger/detailList' });\n\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '保存失败' });\n\n      }, function () {\n\n      });\n    },\n    jumpInput: function jumpInput(text, key) {var placeholder = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '请输入描述';\n      this.needGetInputOnShow = true;\n      uni.navigateTo({\n        url: '../common/inputPage?text=' + text + '&key=' + key + '&placeholder=' + placeholder + '' });\n\n    },\n    // 上传照片功能-添加照片\n    addPhoto: function addPhoto() {\n      var that = this;\n      uni.chooseImage({\n        count: 9, //默认9\n        sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有\n        sourceType: ['album', 'camera'], //从相册选择\n        success: function success(res) {\n          console.log(JSON.stringify(res.tempFilePaths));\n          for (var i = 0; i < res.tempFilePaths.length; i++) {\n            var imgObj = { //\ttype：1为新增需要上传，2为加载的，不需要上传\n              fileid: '',\n              src: res.tempFilePaths[i],\n              type: 1 };\n\n            that.imageList.push(imgObj);\n          }\n        } });\n\n    },\n    // 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口\n    deleteImage: function deleteImage(imgObj, index) {\n      var that = this;\n      if (imgObj.src.startsWith('http:')) {// 网络图片\n        var obj = {\n          item: that.item,\n          index: that.itemIndex };\n\n        that.setSublistItem(obj);\n\n        var param = {\n          from: 'jc',\n          yyid: that.item.id,\n          fileid: imgObj.fileid,\n          userid: that.userInfo.userid };\n\n        _request.default.requestLoading(_config.default.deleteImage, param, '正在删除图片',\n        function (res) {\n          console.log('删除成功：' + JSON.stringify(res));\n          that.item.fj = res.fj;\n          that.imageList.splice(index, 1);\n        }, function () {\n          uni.showToast({\n            icon: 'none',\n            title: '删除失败' });\n\n        }, function () {\n\n        });\n\n      } else {// 刚选择好，还未上传，非网络图片\n        that.imageList.splice(index, 1);\n      }\n    },\n    // 浏览照片\n    viewPhoto: function viewPhoto() {\n      var that = this;\n      var imgList = [];\n      for (var i = 0; i < that.imageList.length; i++) {\n        var item = that.imageList[i];\n        imgList.push(item.src);\n      }\n      // 预览图片\n      uni.previewImage({\n        urls: imgList });\n\n    } }) };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/danger/detailDanger.vue?vue&type=script&lang=js&?2075");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniList = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list/uni-list.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list/uni-list.vue\"));\nvar _uniIcon = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-icon/uni-icon.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-icon/uni-icon.vue\"));\nvar _uniListItem = _interopRequireDefault(__webpack_require__(/*! @/components/list/uni-list-item/uni-list-item.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/list/uni-list-item/uni-list-item.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js\"));\nvar _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: (0, _vuex.mapState)(['sublistItem', 'sublistIndex', 'userInfo', 'inputPageText', 'key']),\n  components: { uniList: _uniList.default, uniListItem: _uniListItem.default, uniIcon: _uniIcon.default },\n  data: function data() {\n    return {\n      // 当页面OnShow的时候是否需要从state里去拿输入的内容\n      needGetInputOnShow: false,\n      // 上传照片相关\n      imageViewHeight: 100,\n      imageList: [],\n      imageList2: [],\n      imageList3: [],\n      littleImageWidth: 0,\n      fjflag: '', //附件编号 fj1 fj2 fj3\n      // 页面参数\n      id: '', // 隐患id\n      yhdj: '', // 隐患等级\n      yhhg: '', // 隐患分类（隐患后果）\n      bhgys: '', // 隐患描述\n      wfflfgjtk: '', // 对应条款\n      gsyqjjy: '', // 改善要求及建议\n      zrbm: '', //隐患责任部门\n      fqr: '', //发起人\n      //接口需要的参数\n      zgwcrq: '', //整改完成日期\n      zlzj: '', //治理资金\n      zgr: '', //整改人\n      tbrq: '', //填报日期\n      zgqk: '', //整改情况\n      tbr: '', //填报人\n\n      zgyj: '', //整改意见\n      zgqx: '', //整改期限\n      txrq: '', //填写日期\n\n      yyfx: '', //原因分析\n      yzqk: '', //验证情况\n      yzr: '', //验证人\n      tbrq2: '', //填报日期\n\n      taskDefKey: '', //节点id\n      instId: '',\n      nodeName: '', //节点名称 \n      actDefId: '', //用来预览流程图\n      obj: null,\n      taskId: '',\n      //只读权限 false 只读\n      zgFlag: false,\n      spFlag: false,\n      yzFlag: false,\n      //显示权限\n      zgReadFlag: true,\n      spReadFlag: true,\n      yzReadFlag: true,\n      commonFlow: true,\n      owner: '', //默认操作人\n      showFlow: '',\n      //即将流转相关\n      destNodeData: [], //展示集合\n      destNodeParam: [], //传参集合\n      nodeParam: '', //传参\n      destNode: '', //展示\n      // 整改情况\n      zgqkData: ['点击输入整改情况'],\n      zlzjData: ['点击输入治理资金'],\n      yzqkData: ['点击输入验证情况'],\n      yyfxData: ['人', '物', '环', '管'],\n      zgyjData: ['点击输入整改意见'],\n\n      nodeFlag: true };\n\n  },\n  onLoad: function onLoad(option) {\n    console.log('加载页面...');\n    var that = this;\n    var objParams = JSON.parse(option.params);\n    that.taskDefKey = objParams.taskDefKey; //节点id\n    that.instId = objParams.instId;\n    that.nodeName = objParams.name;\n    that.actDefId = objParams.actDefId;\n    that.taskId = objParams.taskId;\n    that.owner = objParams.owner;\n    that.showFlow = objParams.showFlow;\n    that.commonFlow = objParams.commonFlow;\n    _request.default.requestLoadingNew(_config.default.getYhzgDetail, objParams, \"正在加载详情\", function (res) {\n      var yhzgObj = res.data;\n      that.nodeFlag = res.lx ? false : true;\n      //初始化即将流向节点选择\n      //console.log(JSON.stringify(res.destNodeUserList));\n      var nodeList = res.destNodeUserList;\n      var resultList = [];\n      var destNodeParam = [];\n      var destNodeUser;\n      var taskNodeUser;\n      for (var i in nodeList) {\n        destNodeUser = nodeList[i];\n        taskNodeUser = destNodeUser.taskNodeUser;\n        destNodeParam.push(taskNodeUser.userIds + ':' + taskNodeUser.userFullnames + '@' + destNodeUser.nodeId + ':' + destNodeUser.nodeText);\n        resultList.push(destNodeUser.nodeText + (taskNodeUser.userFullnames ? '【' + taskNodeUser.userFullnames + '】' : ''));\n      }\n      that.destNodeParam = destNodeParam;\n      that.destNodeData = resultList;\n      var nodeId = that.taskDefKey;\n      //初始化数据\t\t\t\n      that.id = yhzgObj.id;\n      that.yhdj = yhzgObj.yhdj;\n      that.yhhg = yhzgObj.yhhg;\n      that.bhgys = yhzgObj.bhgys;\n      that.wfflfgjtk = yhzgObj.wfflfgjtk;\n      that.gsyqjjy = yhzgObj.gsyqjjy;\n      that.zrbm = yhzgObj.zrbm;\n      that.fqr = yhzgObj.fqr;\n\n      //节点判断\n      //console.log(\"当前节点：\"+that.taskDefKey + \"   节点名称：\"+that.nodeName);\n      //console.log('附件地址：：：'+yhzgObj.fj);\n      if (yhzgObj.fj) {\n        //console.log('FJ:' + yhzgObj.fj);\n        var imgList = JSON.parse(yhzgObj.fj);\n        for (var i = 0; i < imgList.length; i++) {\n          var imgObj = imgList[i];\n          var imgUrl = _config.default.host + _config.default.loadImage + imgObj.fileId + \"&userid=\" + that.userInfo.userid;\n          var imgItem = {\n            fileid: imgObj.fileId,\n            src: imgUrl,\n            type: 2 };\n\n          that.imageList.push(imgItem);\n        }\n      }\n      //判断节点初始化内容及控制元素的展示权限\n      if (nodeId === \"sid-A0CE4647-CCC3-4A9A-81BF-09FCAB7CDCA4\") {//发起隐患(不用填写，只需展示)\n\n      } else if (nodeId === \"sid-3785D27C-9B73-4C6D-9C1C-6A4ECA6B8FFE\") {//发起人关闭\n        //显示\n        that.zgReadFlag = false;\n        that.spReadFlag = false;\n        that.yzReadFlag = false;\n        //展示所有内容\n        //初始化值(审批数据)\n        that.zgqx = yhzgObj.zgqx; //整改期限\n        that.tbr = yhzgObj.tbr; //填报人\n        that.txrq = yhzgObj.txrq; //填写日期\n        that.zgyj = yhzgObj.zgyj; //整改意见\n        //整改数据\n        that.zgwcrq = yhzgObj.zgwcrq; //整改完成日期\n        that.zlzj = yhzgObj.zlzj; //治理资金\n        that.zgr = yhzgObj.zgr; //整改人\n        that.tbrq = yhzgObj.tbrq; //填报日期\n        that.zgqk = yhzgObj.zgqk; //整改情况\n        if (yhzgObj.fj2) {\n          console.log('FJ2:' + yhzgObj.fj2);\n          var imgList2 = JSON.parse(yhzgObj.fj2);\n          for (var i = 0; i < imgList2.length; i++) {\n            var _imgObj = imgList2[i];\n            var _imgUrl = _config.default.host + _config.default.loadImage + _imgObj.fileId + \"&userid=\" + that.userInfo.userid;\n            var _imgItem = {\n              fileid: _imgObj.fileId,\n              src: _imgUrl,\n              type: 2 };\n\n            that.imageList2.push(_imgItem);\n          }\n        }\n        //复核数据\n        that.yyfx = yhzgObj.yyfx; //原因分析\n        that.yzqk = yhzgObj.yzqk; //验证情况\n        that.yzr = yhzgObj.yzr; //验证人\n        that.tbrq2 = yhzgObj.tbrq2; //填报日期\n        if (yhzgObj.fj3) {\n          console.log('FJ3:' + yhzgObj.fj3);\n          var imgList3 = JSON.parse(yhzgObj.fj3);\n          for (var i = 0; i < imgList3.length; i++) {\n            var _imgObj2 = imgList3[i];\n            var _imgUrl2 = _config.default.host + _config.default.loadImage + _imgObj2.fileId + \"&userid=\" + that.userInfo.userid;\n            var _imgItem2 = {\n              fileid: _imgObj2.fileId,\n              src: _imgUrl2,\n              type: 2 };\n\n            that.imageList3.push(_imgItem2);\n          }\n        }\n      } else if (nodeId === \"sid-41BC6E14-5C85-42A1-8E1B-3246FDEA682C\") {//整改人整改(填写整改内容,可以查看反馈内容)\n        that.zgr = that.userInfo.fullname;\n\n        //权限\n        that.zgFlag = true;\n        that.zgReadFlag = false;\n        that.spReadFlag = false;\n        //初始化值(审批数据)\n        that.zgqx = yhzgObj.zgqx; //整改期限\n        that.tbr = yhzgObj.tbr; //填报人\n        that.txrq = yhzgObj.txrq; //填写日期\n        that.zgyj = yhzgObj.zgyj; //整改意见\n        that.fjflag = 'fj2';\n\n      } else if (nodeId === \"sid-F7A5E243-31D1-42DE-9D74-0C7323EFFAF8\") {//复核人复核\n        that.yzr = that.userInfo.fullname;\n\n        that.yzFlag = true;\n        that.zgReadFlag = false;\n        that.spReadFlag = false;\n        that.yzReadFlag = false;\n        that.fjflag = 'fj3';\n        //初始化值(审批数据)\n        that.zgqx = yhzgObj.zgqx; //整改期限\n        that.tbr = yhzgObj.tbr; //填报人\n        that.txrq = yhzgObj.txrq; //填写日期\n        that.zgyj = yhzgObj.zgyj; //整改意见\n        //整改数据\n        that.zgwcrq = yhzgObj.zgwcrq; //整改完成日期\n        that.zlzj = yhzgObj.zlzj; //治理资金\n        that.zgr = yhzgObj.zgr; //整改人\n        that.tbrq = yhzgObj.tbrq; //填报日期\n        that.zgqk = yhzgObj.zgqk; //整改情况\n        if (yhzgObj.fj2) {\n          console.log('FJ2:' + yhzgObj.fj2);\n          var _imgList = JSON.parse(yhzgObj.fj2);\n          for (var i = 0; i < _imgList.length; i++) {\n            var _imgObj3 = _imgList[i];\n            var _imgUrl3 = _config.default.host + _config.default.loadImage + _imgObj3.fileId + \"&userid=\" + that.userInfo.userid;\n            var _imgItem3 = {\n              fileid: _imgObj3.fileId,\n              src: _imgUrl3,\n              type: 2 };\n\n            that.imageList2.push(_imgItem3);\n          }\n        }\n      } else if (nodeId === \"sid-987522D1-34D6-45A4-8D16-CE1F2ACA0205\" || nodeId === \"sid-29BBC59F-F04B-47BF-9DE1-7C3299318DB8\") {//一级审批 二级审批\n        that.tbr = that.userInfo.fullname;\n        that.spFlag = true;\n        that.zgReadFlag = false;\n        that.spReadFlag = false;\n      }\n    }, function () {\n      uni.showToast({\n        icon: 'none',\n        title: '请求失败' });\n\n    }, function () {\n\n    });\n\n    this.littleImageWidth = (uni.getSystemInfoSync().windowWidth - 50) / 4;\n    this.checkPeople = this.userInfo.fullname;\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n\n  },\n  onShow: function onShow() {\n    if (this.needGetInputOnShow == true) {\n      this.$data[this.key] = this.inputPageText;\n      this.needGetInputOnShow = false;\n      this.removeInputItem();\n    }\n  },\n  methods: _objectSpread({},\n  (0, _vuex.mapMutations)(['removeInputItem', 'setSublistItem']), {\n    // 选择整改期限\n    deadLineChange: function deadLineChange(e) {\n      this.deadLine = e.target.value;\n    },\n    bindDateZgwcrq: function bindDateZgwcrq(e) {\n      this.zgwcrq = e.target.value;\n    },\n    bindDateTbrq: function bindDateTbrq(e) {\n      this.tbrq = e.target.value;\n    },\n    bindDateZgqx: function bindDateZgqx(e) {\n      this.zgqx = e.target.value;\n    },\n    bindDateTxrq: function bindDateTxrq(e) {\n      this.txrq = e.target.value;\n    },\n    bindDateTbrq2: function bindDateTbrq2(e) {\n      this.tbrq2 = e.target.value;\n    },\n    // 即将流向\n    selecteddestNode: function selecteddestNode(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.destNodeData,\n        success: function success(res) {\n          that.nodeParam = that.destNodeParam[res.tapIndex];\n          that.destNode = that.destNodeData[res.tapIndex];\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 治理资金\n    selectedzlzj: function selectedzlzj(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.zlzjData,\n        success: function success(res) {\n          if (res.tapIndex == 0) {\n            this.needGetInputOnShow = true;\n            that.jumpInput(that.zlzj, 'zlzj', '请输入治理资金');\n          }\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 整改意见\n    selectedzgyj: function selectedzgyj(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.zgyjData,\n        success: function success(res) {\n          if (res.tapIndex == 0) {\n            this.needGetInputOnShow = true;\n            that.jumpInput(that.zgyj, 'zgyj', '请输入整改意见');\n          }\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 整改情况\n    selectedzgqk: function selectedzgqk(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.zgqkData,\n        success: function success(res) {\n          if (res.tapIndex == 0) {\n            this.needGetInputOnShow = true;\n            that.jumpInput(that.zgqk, 'zgqk', '请输入整改情况');\n          }\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 原因分析\n    selectedyyfx: function selectedyyfx(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.yyfxData,\n        success: function success(res) {\n          that.yyfx = that.yyfxData[res.tapIndex];\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    // 验证情况\n    selectedyzqk: function selectedyzqk(e) {\n      var that = this;\n      uni.showActionSheet({\n        itemList: that.yzqkData,\n        success: function success(res) {\n          if (res.tapIndex == 0) {\n            this.needGetInputOnShow = true;\n            that.jumpInput(that.yzqk, 'yzqk', '请输入验证情况');\n          }\n        },\n        fail: function fail(res) {\n          console.log(res.errMsg);\n        } });\n\n    },\n    //审批历史\n    historyClick: function historyClick() {\n      var that = this;\n      //跳转到审批阅读历史列表页面\n      var params = {\n        instId: that.instId,\n        actDefId: that.actDefId };\n\n      uni.setStorageSync('params', JSON.stringify(params));\n      uni.navigateTo({\n        url: '../danger/readHistory' });\n\n    },\n    //查看流程图\n    flowPicClick: function flowPicClick() {\n      var that = this;\n      plus.runtime.openWeb(_config.default.host + _config.default.showFlowPic + '?actInstId=' + that.instId + '&host=' + _config.default.host);\n      /*\n                                                                                                                                                var param={actDefId:that.actDefId};\n                                                                                                                                                 request.requestLoading(config.showFlowPic, param, '正在加载', \n                                                                                                                                                \tfunction(res){\n                                                                                                                                                \t\tconsole.log('到开流程图');\n                                                                                                                                                \t\tconsole.log('' + JSON.stringify(res));\n                                                                                                                                                \t\tvar imageFlow = []; \n                                                                                                                                                \t\timageFlow.push(config.host+res.path);\n                                                                                                                                                \t\tuni.previewImage({\n                                                                                                                                                \t\t\turls: imageFlow\n                                                                                                                                                \t\t});\n                                                                                                                                                \t},function(){\n                                                                                                                                                \t\tuni.showToast({\n                                                                                                                                                \t\t\ticon: 'none', \n                                                                                                                                                \t\t\ttitle: '请求失败'\n                                                                                                                                                \t\t});\n                                                                                                                                                \t}, function(){\n                                                                                                                                                \t}\n                                                                                                                                                ); */\n    },\n    //驳回（BACK 驳回(上一节点)，BACK_TO_STARTOR 驳回(发起人)）\n    backFlowClick: function backFlowClick() {\n      this.jumpType = 'BACK';\n      this.saveClick();\n    },\n    //同意\n    agreeFlowClick: function agreeFlowClick() {\n      this.jumpType = 'AGREE';\n      if (!this.nodeParam) {\n        uni.showToast({\n          icon: 'none',\n          title: '请选择操作节点' });\n\n        return;\n      }\n      this.saveClick();\n    },\n    saveItem: function saveItem(e) {\n      var that = this;\n      var flag = that.fjflag;\n      console.log('flag:::' + flag);\n      if (flag) {\n        // 上传照片，需要分两种情况，如是从后台加载的，不需要调用上传接口，如果是本地读取还未上传的，需要调上传接口\n        var url = _config.default.uploadImage + '?from=flowyh&yyid=' + that.id + '&fjlx=' + flag + '&userid=' + that.userInfo.userid;\n        var imageList = flag === 'fj2' ? that.imageList2 : flag === 'fj3' ? that.imageList3 : [];\n\n        var imgList = [];\n        for (var i = 0; i < imageList.length; i++) {\n          var item = imageList[i];\n          if (item.type == 1 && !item.src.startsWith('http:')) {\n            imgList.push(item.src);\n          }\n        }\n\n        if (imgList.length == 0) {\n          that.saveLocalItem();\n          uni.navigateBack({\n            delta: 1 });\n\n          return;\n        }\n        uni.showLoading({\n          title: '正在上传图片' });\n\n        _request.default.uploadImage(url, imgList, 0, 0, 0, imgList.length, function (res) {\n          var data = JSON.parse(res.data);\n          var fj = data.fj;\n          that.fj = fj;\n          //console.log('Item:',JSON.stringify(that.item));\n        }, function (result) {\n          uni.hideLoading();\n          if (result == '200') {\n            that.saveLocalItem();\n            uni.showToast({\n              title: '上传成功',\n              complete: setTimeout(function () {\n                uni.navigateBack({\n                  delta: 1 });\n\n              }, 1500) });\n\n          }\n        });\n      } else {\n        that.saveLocalItem();\n      }\n    },\n\n    // 缓存Item，给上一个页面获取\n    saveLocalItem: function saveLocalItem() {\n      var obj = {\n        item: 0,\n        index: 0 };\n\n      this.setSublistItem(obj);\n    },\n    // 保存\n    saveClick: function saveClick() {\n      var that = this;\n      var param = {\n        refid: that.id,\n        id: that.id,\n        userid: that.userInfo.userid,\n        owner: that.owner,\n        destNode: that.nodeParam,\n\n        taskDefKey: that.taskDefKey,\n        jumpType: that.jumpType,\n        actDefId: that.actDefId,\n        taskId: that.taskId };\n\n      //判断节点\n      console.log(JSON.stringify(param));\n      var nodeId = that.taskDefKey;\n      if (nodeId === \"sid-A0CE4647-CCC3-4A9A-81BF-09FCAB7CDCA4\" || nodeId === \"sid-3785D27C-9B73-4C6D-9C1C-6A4ECA6B8FFE\") {\n        //发起隐患 发起人关闭\n      } else if (nodeId === \"sid-41BC6E14-5C85-42A1-8E1B-3246FDEA682C\") {//整改人整改\n        param.zgwcrq = that.zgwcrq; //整改完成日期\n        param.zlzj = that.zlzj; //治理资金\n        param.zgr = that.zgr; //整改人\n        param.tbrq = that.tbrq; //填报日期\n        param.zgqk = that.zgqk; //整改情况\n      } else if (nodeId === \"sid-F7A5E243-31D1-42DE-9D74-0C7323EFFAF8\") {//复核人复核\n        param.yyfx = that.yyfx; //原因分析\n        param.yzqk = that.yzqk; //验证情况\n        param.yzr = that.yzr; //验证人\n        param.tbrq2 = that.tbrq2; //填报日期\n      } else if (nodeId === \"sid-987522D1-34D6-45A4-8D16-CE1F2ACA0205\" || nodeId === \"sid-29BBC59F-F04B-47BF-9DE1-7C3299318DB8\") {//一级审批 二级审批\n        param.zgqx = that.zgqx; //整改期限\n        param.tbr = that.tbr; //填报人\n        param.txrq = that.txrq; //填写日期\n        param.zgyj = that.zgyj; //整改意见\n      }\n      //console.log(JSON.stringify(param));\n      _request.default.requestLoadingNew(_config.default.updateAndSendFlowForMobile, param, '正在加载',\n      function (res) {\n        uni.showToast({\n          icon: 'none',\n          title: '操作成功！',\n          duration: 1000 });\n\n        that.saveItem();\n      }, function () {\n        uni.showToast({\n          icon: 'none',\n          title: '保存失败' });\n\n      }, function () {\n        setTimeout(function () {\n          uni.navigateBack({\n            delta: 1 });\n\n        }, 1500);\n      });\n    },\n    jumpInput: function jumpInput(text, key) {var placeholder = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '请输入描述';\n      this.needGetInputOnShow = true;\n      uni.navigateTo({\n        url: '../common/inputPage?text=' + text + '&key=' + key + '&placeholder=' + placeholder + '' });\n\n    },\n    // 上传照片功能-添加照片\n    addPhoto: function addPhoto() {\n      var that = this;\n      uni.chooseImage({\n        count: 9, //默认9\n        sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有\n        sourceType: ['album', 'camera'], //从相册选择\n        success: function success(res) {\n          console.log(JSON.stringify(res.tempFilePaths));\n          var flag = that.fjflag;\n          if (flag) {\n            var imageList = flag === 'fj2' ? that.imageList2 : flag === 'fj3' ? that.imageList3 : [];\n            for (var i = 0; i < res.tempFilePaths.length; i++) {\n              var imgObj = { //\ttype：1为新增需要上传，2为加载的，不需要上传\n                fileid: '',\n                src: res.tempFilePaths[i],\n                type: 1 };\n\n              imageList.push(imgObj);\n            }\n          }\n        } });\n\n    },\n    // 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口\n    deleteImage: function deleteImage(imgObj, index) {\n      var that = this;\n      if (imgObj.src.startsWith('http:')) {// 网络图片\n        var obj = {\n          item: that.item,\n          index: that.itemIndex };\n\n        that.setSublistItem(obj);\n\n        var param = {\n          from: 'jc',\n          yyid: that.item.id,\n          fileid: imgObj.fileid,\n          userid: that.userInfo.userid };\n\n        _request.default.requestLoading(_config.default.deleteImage, param, '正在删除图片',\n        function (res) {\n          var flag = that.fjflag;\n          if (flag) {\n            var imageList = flag === 'fj2' ? that.imageList2 : flag === 'fj3' ? that.imageList3 : [];\n            console.log('删除成功：' + JSON.stringify(res));\n            that.item.fj = res.fj;\n            imageList.splice(index, 1);\n          }\n        }, function () {\n          uni.showToast({\n            icon: 'none',\n            title: '删除失败' });\n\n        }, function () {\n\n        });\n\n      } else {// 刚选择好，还未上传，非网络图片\n        var flag = that.fjflag;\n        if (flag) {\n          var imageList = flag === 'fj2' ? that.imageList2 : flag === 'fj3' ? that.imageList3 : [];\n          imageList.splice(index, 1);\n        }\n      }\n    },\n    // 浏览照片\n    viewPhoto: function viewPhoto() {\n      var that = this;\n      var imgList = [];\n      var imageList = that.imageList.length > 0 ? that.imageList : that.imageList2.length > 0 ? that.imageList2 : that.imageList3;\n      console.log(JSON.stringify(imageList));\n      for (var i = 0; i < imageList.length; i++) {\n        var item = imageList[i];\n        imgList.push(item.src);\n      }\n      // 预览图片\n      uni.previewImage({\n        urls: imgList });\n\n    } }) };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/danger/detailDanger.vue?vue&type=script&lang=js&?2075");
 
 /***/ }),
 
@@ -8038,23 +8311,23 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _vm._m(0),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"77f549ab-6\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"责任部门\",\n                subnote: _vm.dangerDept,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-0\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患级别\",\n                subnote: _vm.dangerLevel,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-1\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患后果\",\n                subnote: _vm.dangerType,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-2\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"不合格因素\",\n                subnote: _vm.dangerDesc,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-3\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"对应条款\",\n                subnote: _vm.dangerClause,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-4\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"整改要求及建议\",\n                subnote: _vm.dangerAdvise,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-5\"\n              }\n            })\n          ],\n          1\n        )\n      ],\n      1\n    ),\n    _vm._m(1),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"77f549ab-15\" } },\n          [\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  mode: \"date\",\n                  value: _vm.checkDate,\n                  eventid: \"77f549ab-0\"\n                },\n                on: { change: _vm.bindDateChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"检查日期\",\n                    subnote: _vm.checkDate,\n                    showSwitch: _vm.styleFlag.checkDate,\n                    mpcomid: \"77f549ab-7\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"整改意见\",\n                subnote: _vm.zgyj,\n                \"show-arrow\": \"false\",\n                showSwitch: _vm.styleFlag.zgyj,\n                mpcomid: \"77f549ab-8\"\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: { mode: \"date\", value: _vm.zgqx, eventid: \"77f549ab-1\" },\n                on: { change: _vm.bindDateChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"整改期限\",\n                    subnote: _vm.zgqx,\n                    showSwitch: _vm.styleFlag.zgqx,\n                    mpcomid: \"77f549ab-9\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"整改情况\",\n                subnote: _vm.zgqk,\n                \"show-arrow\": \"false\",\n                showSwitch: _vm.styleFlag.zgqk,\n                mpcomid: \"77f549ab-10\"\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  mode: \"date\",\n                  value: _vm.zgwcrq,\n                  showSwitch: _vm.styleFlag.zgwcrq,\n                  eventid: \"77f549ab-2\"\n                },\n                on: { change: _vm.bindDateChange }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"整改完成日期\",\n                    subnote: _vm.zgwcrq,\n                    showSwitch: _vm.styleFlag.zgwcrq,\n                    mpcomid: \"77f549ab-11\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"治理资金\",\n                subnote: _vm.zlzj,\n                \"show-arrow\": \"false\",\n                showSwitch: _vm.styleFlag.zlzj,\n                mpcomid: \"77f549ab-12\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"原因分析\",\n                subnote: _vm.yyfx,\n                \"show-arrow\": \"false\",\n                showSwitch: _vm.styleFlag.yyfx,\n                mpcomid: \"77f549ab-13\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"验证情况\",\n                subnote: _vm.yzqk,\n                \"show-arrow\": \"false\",\n                showSwitch: _vm.styleFlag.yzqk,\n                mpcomid: \"77f549ab-14\"\n              }\n            })\n          ],\n          1\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"btnView\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"saveBtn\",\n            attrs: { eventid: \"77f549ab-3\" },\n            on: { tap: _vm.saveClick }\n          },\n          [_vm._v(\"同意\")]\n        ),\n        _c(\n          \"button\",\n          {\n            staticClass: \"saveBtn\",\n            attrs: { eventid: \"77f549ab-4\" },\n            on: { tap: _vm.historyClick }\n          },\n          [_vm._v(\"审批历史\")]\n        ),\n        _c(\n          \"button\",\n          {\n            staticClass: \"saveBtn\",\n            attrs: { eventid: \"77f549ab-5\" },\n            on: { tap: _vm.flowPicClick }\n          },\n          [_vm._v(\"流程图\")]\n        ),\n        _c(\n          \"button\",\n          {\n            staticClass: \"saveBtn\",\n            attrs: { eventid: \"77f549ab-6\" },\n            on: { tap: _vm.backFlowClick }\n          },\n          [_vm._v(\"驳回\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"基础信息\")])\n    ])\n  },\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"审批信息\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/danger/detailDanger.vue?vue&type=template&id=4ff17a02&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"view\", { staticClass: \"baseView\" }, [\n    _vm._m(0),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\" },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"77f549ab-7\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"发现人\",\n                subnote: _vm.fqr,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-0\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"责任部门\",\n                subnote: _vm.zrbm,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-1\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患级别\",\n                subnote: _vm.yhdj,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-2\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"隐患后果\",\n                subnote: _vm.yhhg,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-3\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"不合格因素\",\n                subnote: _vm.bhgys,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-4\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"对应条款\",\n                subnote: _vm.wfflfgjtk,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-5\"\n              }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"整改要求及建议\",\n                subnote: _vm.gsyqjjy,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-6\"\n              }\n            })\n          ],\n          1\n        ),\n        _c(\"view\", { staticClass: \"imageBaseView\" }, [\n          _c(\"view\", { staticClass: \"cellSubViewRow\" }, [\n            _c(\"text\", { staticClass: \"leftTextRow\" }, [_vm._v(\"隐患照片\")]),\n            _c(\"text\", { staticClass: \"rightTextRow\" }, [\n              _vm._v(_vm._s(_vm.imageList.length))\n            ])\n          ]),\n          _c(\n            \"view\",\n            { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n            [\n              _vm._l(_vm.imageList, function(imgObj, idx) {\n                return _c(\"block\", { key: idx }, [\n                  _c(\n                    \"view\",\n                    {\n                      staticClass: \"littleImageView\",\n                      style: {\n                        width: _vm.littleImageWidth + \"px\",\n                        height: _vm.littleImageWidth + \"px\"\n                      }\n                    },\n                    [\n                      _c(\"image\", {\n                        staticClass: \"littleImage\",\n                        attrs: {\n                          id: idx,\n                          src: imgObj.src,\n                          mode: \"aspectFit\",\n                          eventid: \"77f549ab-0-\" + idx\n                        },\n                        on: { click: _vm.viewPhoto }\n                      }),\n                      _c(\"image\", {\n                        staticClass: \"littleImageDelete\",\n                        attrs: {\n                          src: \"../../static/img/delete.png\",\n                          id: idx,\n                          mode: \"aspectFit\",\n                          eventid: \"77f549ab-1-\" + idx\n                        },\n                        on: {\n                          click: function($event) {\n                            _vm.deleteImage(imgObj, idx)\n                          }\n                        }\n                      })\n                    ]\n                  )\n                ])\n              }),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"littleImageView\",\n                  style: {\n                    width: _vm.littleImageWidth + \"px\",\n                    height: _vm.littleImageWidth + \"px\"\n                  },\n                  attrs: { eventid: \"77f549ab-2\" },\n                  on: { click: _vm.addPhoto }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"littleImage\",\n                    attrs: { src: \"../../static/img/addImage.png\" }\n                  })\n                ]\n              )\n            ],\n            2\n          )\n        ])\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellTitleView\", attrs: { hidden: _vm.spReadFlag } },\n      [_c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"审批信息\")])]\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\", attrs: { hidden: _vm.spReadFlag } },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"77f549ab-12\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"填报人\",\n                subnote: _vm.tbr,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-8\"\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: { mode: \"date\", value: _vm.zgqx, eventid: \"77f549ab-3\" },\n                on: { change: _vm.bindDateZgqx }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"整改期限\",\n                    subnote: _vm.zgqx,\n                    \"show-arrow\": _vm.spFlag,\n                    mpcomid: \"77f549ab-9\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\n              \"picker\",\n              {\n                attrs: { mode: \"date\", value: _vm.txrq, eventid: \"77f549ab-4\" },\n                on: { change: _vm.bindDateTxrq }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"填写日期\",\n                    subnote: _vm.txrq,\n                    \"show-arrow\": _vm.spFlag,\n                    mpcomid: \"77f549ab-10\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"整改意见\",\n                subnote: _vm.zgyj,\n                \"show-arrow\": _vm.spFlag,\n                eventid: \"77f549ab-5\",\n                mpcomid: \"77f549ab-11\"\n              },\n              on: { click: _vm.selectedzgyj }\n            })\n          ],\n          1\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellTitleView\", attrs: { hidden: _vm.zgReadFlag } },\n      [_c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"整改信息\")])]\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\", attrs: { hidden: _vm.zgReadFlag } },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"77f549ab-18\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"整改人\",\n                subnote: _vm.zgr,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-13\"\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  mode: \"date\",\n                  value: _vm.zgwcrq,\n                  eventid: \"77f549ab-6\"\n                },\n                on: { change: _vm.bindDateZgwcrq }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"整改完成日期\",\n                    subnote: _vm.zgwcrq,\n                    \"show-arrow\": _vm.zgFlag,\n                    mpcomid: \"77f549ab-14\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\n              \"picker\",\n              {\n                attrs: { mode: \"date\", value: _vm.tbrq, eventid: \"77f549ab-7\" },\n                on: { change: _vm.bindDateTbrq }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"填报日期\",\n                    subnote: _vm.tbrq,\n                    \"show-arrow\": _vm.zgFlag,\n                    mpcomid: \"77f549ab-15\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"治理资金\",\n                subnote: _vm.zlzj,\n                \"show-arrow\": _vm.zgFlag,\n                eventid: \"77f549ab-8\",\n                mpcomid: \"77f549ab-16\"\n              },\n              on: { click: _vm.selectedzlzj }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"整改情况\",\n                subnote: _vm.zgqk,\n                \"show-arrow\": _vm.zgFlag,\n                eventid: \"77f549ab-9\",\n                mpcomid: \"77f549ab-17\"\n              },\n              on: { click: _vm.selectedzgqk }\n            })\n          ],\n          1\n        ),\n        _c(\"view\", { staticClass: \"imageBaseView\" }, [\n          _c(\"view\", { staticClass: \"cellSubViewRow\" }, [\n            _c(\"text\", { staticClass: \"leftTextRow\" }, [\n              _vm._v(\"隐患整改附件\")\n            ]),\n            _c(\"text\", { staticClass: \"rightTextRow\" }, [\n              _vm._v(_vm._s(_vm.imageList2.length))\n            ])\n          ]),\n          _c(\n            \"view\",\n            { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n            [\n              _vm._l(_vm.imageList2, function(imgObj, idx) {\n                return _c(\"block\", { key: idx }, [\n                  _c(\n                    \"view\",\n                    {\n                      staticClass: \"littleImageView\",\n                      style: {\n                        width: _vm.littleImageWidth + \"px\",\n                        height: _vm.littleImageWidth + \"px\"\n                      }\n                    },\n                    [\n                      _c(\"image\", {\n                        staticClass: \"littleImage\",\n                        attrs: {\n                          id: idx,\n                          src: imgObj.src,\n                          mode: \"aspectFit\",\n                          eventid: \"77f549ab-10-\" + idx\n                        },\n                        on: { click: _vm.viewPhoto }\n                      }),\n                      _c(\"image\", {\n                        staticClass: \"littleImageDelete\",\n                        attrs: {\n                          src: \"../../static/img/delete.png\",\n                          id: idx,\n                          mode: \"aspectFit\",\n                          eventid: \"77f549ab-11-\" + idx\n                        },\n                        on: {\n                          click: function($event) {\n                            _vm.deleteImage(imgObj, idx)\n                          }\n                        }\n                      })\n                    ]\n                  )\n                ])\n              }),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"littleImageView\",\n                  style: {\n                    width: _vm.littleImageWidth + \"px\",\n                    height: _vm.littleImageWidth + \"px\"\n                  },\n                  attrs: { eventid: \"77f549ab-12\" },\n                  on: { click: _vm.addPhoto }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"littleImage\",\n                    attrs: { src: \"../../static/img/addImage.png\" }\n                  })\n                ]\n              )\n            ],\n            2\n          )\n        ])\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellTitleView\", attrs: { hidden: _vm.yzReadFlag } },\n      [_c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"复核信息\")])]\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\", attrs: { hidden: _vm.yzReadFlag } },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"77f549ab-23\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"验证人\",\n                subnote: _vm.yzr,\n                \"show-arrow\": \"false\",\n                mpcomid: \"77f549ab-19\"\n              }\n            }),\n            _c(\n              \"picker\",\n              {\n                attrs: {\n                  mode: \"date\",\n                  value: _vm.tbrq2,\n                  eventid: \"77f549ab-13\"\n                },\n                on: { change: _vm.bindDateTbrq2 }\n              },\n              [\n                _c(\"uni-list-item\", {\n                  attrs: {\n                    title: \"填报日期\",\n                    subnote: _vm.tbrq2,\n                    \"show-arrow\": _vm.yzFlag,\n                    mpcomid: \"77f549ab-20\"\n                  }\n                })\n              ],\n              1\n            ),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"原因分析\",\n                subnote: _vm.yyfx,\n                \"show-arrow\": _vm.yzFlag,\n                eventid: \"77f549ab-14\",\n                mpcomid: \"77f549ab-21\"\n              },\n              on: { click: _vm.selectedyyfx }\n            }),\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"验证情况\",\n                subnote: _vm.yzqk,\n                \"show-arrow\": _vm.yzFlag,\n                eventid: \"77f549ab-15\",\n                mpcomid: \"77f549ab-22\"\n              },\n              on: { click: _vm.selectedyzqk }\n            })\n          ],\n          1\n        ),\n        _c(\"view\", { staticClass: \"imageBaseView\" }, [\n          _c(\"view\", { staticClass: \"cellSubViewRow\" }, [\n            _c(\"text\", { staticClass: \"leftTextRow\" }, [_vm._v(\"复核附件\")]),\n            _c(\"text\", { staticClass: \"rightTextRow\" }, [\n              _vm._v(_vm._s(_vm.imageList3.length))\n            ])\n          ]),\n          _c(\n            \"view\",\n            { staticClass: \"imageView\", attrs: { id: \"imageView\" } },\n            [\n              _vm._l(_vm.imageList3, function(imgObj, idx) {\n                return _c(\"block\", { key: idx }, [\n                  _c(\n                    \"view\",\n                    {\n                      staticClass: \"littleImageView\",\n                      style: {\n                        width: _vm.littleImageWidth + \"px\",\n                        height: _vm.littleImageWidth + \"px\"\n                      }\n                    },\n                    [\n                      _c(\"image\", {\n                        staticClass: \"littleImage\",\n                        attrs: {\n                          id: idx,\n                          src: imgObj.src,\n                          mode: \"aspectFit\",\n                          eventid: \"77f549ab-16-\" + idx\n                        },\n                        on: { click: _vm.viewPhoto }\n                      }),\n                      _c(\"image\", {\n                        staticClass: \"littleImageDelete\",\n                        attrs: {\n                          src: \"../../static/img/delete.png\",\n                          id: idx,\n                          mode: \"aspectFit\",\n                          eventid: \"77f549ab-17-\" + idx\n                        },\n                        on: {\n                          click: function($event) {\n                            _vm.deleteImage(imgObj, idx)\n                          }\n                        }\n                      })\n                    ]\n                  )\n                ])\n              }),\n              _c(\n                \"view\",\n                {\n                  staticClass: \"littleImageView\",\n                  style: {\n                    width: _vm.littleImageWidth + \"px\",\n                    height: _vm.littleImageWidth + \"px\"\n                  },\n                  attrs: { eventid: \"77f549ab-18\" },\n                  on: { click: _vm.addPhoto }\n                },\n                [\n                  _c(\"image\", {\n                    staticClass: \"littleImage\",\n                    attrs: { src: \"../../static/img/addImage.png\" }\n                  })\n                ]\n              )\n            ],\n            2\n          )\n        ])\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"cellInfoView\", attrs: { hidden: _vm.nodeFlag } },\n      [\n        _c(\n          \"uni-list\",\n          { attrs: { mpcomid: \"77f549ab-25\" } },\n          [\n            _c(\"uni-list-item\", {\n              attrs: {\n                title: \"请选择即将跳转节点\",\n                subnote: _vm.destNode,\n                \"show-arrow\": \"true\",\n                eventid: \"77f549ab-19\",\n                mpcomid: \"77f549ab-24\"\n              },\n              on: { click: _vm.selecteddestNode }\n            })\n          ],\n          1\n        )\n      ],\n      1\n    ),\n    _c(\n      \"view\",\n      { staticClass: \"btnView\" },\n      [\n        _c(\n          \"button\",\n          {\n            staticClass: \"saveBtn\",\n            attrs: { hidden: _vm.showFlow, eventid: \"77f549ab-20\" },\n            on: { tap: _vm.agreeFlowClick }\n          },\n          [_vm._v(\"同意\")]\n        ),\n        _c(\n          \"button\",\n          {\n            staticClass: \"saveBtn\",\n            attrs: { hidden: _vm.commonFlow, eventid: \"77f549ab-21\" },\n            on: { tap: _vm.historyClick }\n          },\n          [_vm._v(\"审批历史\")]\n        ),\n        _c(\n          \"button\",\n          {\n            staticClass: \"saveBtn\",\n            attrs: { hidden: _vm.commonFlow, eventid: \"77f549ab-22\" },\n            on: { tap: _vm.flowPicClick }\n          },\n          [_vm._v(\"流程图\")]\n        ),\n        _c(\n          \"button\",\n          {\n            staticClass: \"saveBtn\",\n            attrs: { hidden: _vm.showFlow, eventid: \"77f549ab-23\" },\n            on: { tap: _vm.backFlowClick }\n          },\n          [_vm._v(\"驳回\")]\n        )\n      ],\n      1\n    )\n  ])\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"view\", { staticClass: \"cellTitleView\" }, [\n      _c(\"text\", { staticClass: \"cellTitle\" }, [_vm._v(\"基础信息\")])\n    ])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/danger/detailDanger.vue?vue&type=template&id=4ff17a02&");
 
 /***/ })
 
 },[["../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/main.js?{\"page\":\"pages%2Fdanger%2FdetailDanger\"}","common/runtime","common/vendor"]]]);
 });
 require('pages/danger/detailDanger.js');
-__wxRoute = 'pages/workRisk/riskList';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/workRisk/riskList.js';
+__wxRoute = 'pages/danger/readHistory';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/danger/readHistory.js';
 
-define('pages/workRisk/riskList.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
+define('pages/danger/readHistory.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
 
     Page({
             onShow: function() {}
         })
     
 });
-require('pages/workRisk/riskList.js');
+require('pages/danger/readHistory.js');
 __wxRoute = 'pages/danger/dangerList';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/danger/dangerList.js';
 
 define('pages/danger/dangerList.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){

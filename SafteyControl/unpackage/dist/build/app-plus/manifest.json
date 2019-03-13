@@ -4,11 +4,11 @@
     "iPhone",
     "iPad"
   ],
-  "id": "__UNI__F7C5076",
+  "id": "__UNI__1A25690",
   "name": "移动安全管家",
   "version": {
     "name": "1.0.5",
-    "code": "2"
+    "code": 1
   },
   "description": "",
   "launch_path": "__uniappservice.html",
@@ -47,7 +47,7 @@
     "distribute": {
       "icons": {
         "ios": {
-          "appstore": "C:/Users/Administrator/Desktop/ehsq.png",
+          "appstore": "/Users/lijiabin/Documents/GitHub/SafetyControl/图标/logo_2014.png",
           "ipad": {
             "app": "unpackage/res/icons/76x76.png",
             "app@2x": "unpackage/res/icons/152x152.png",

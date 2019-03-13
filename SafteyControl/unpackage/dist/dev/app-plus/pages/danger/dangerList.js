@@ -379,7 +379,7 @@ var copyObj = function copyObj(a) {
   * http://222.223.19.166:10012/ehsq，外网
   * http://10.57.167.214:8080/ehsq，内网
   */
-var host = "http://192.168.1.100:8080/boeb9"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
+var host = "http://222.223.19.166:10012/ehsq"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
 
 
 var config = {
@@ -425,16 +425,26 @@ var config = {
   deleteImage: '/mobile/delZp.do',
 
   // ------隐患相关-------
-  // 添加/修改隐患
-  editDanger: '/mobile/updateYhzg.do',
+  // 添加隐患并发起流程
+  addYhzgToFlow: '/mobile/addYhzgToFlow.do',
   //获取隐患审批数据
   getYhzgListByType: '/mobile/getYhzgListByType.do',
   //获取隐患整改数目
   getYhzgTabCounts: '/mobile/getYhzgTabCounts.do',
   //获取隐患整改详情信息
   getYhzgDetail: '/mobile/getYhzgDetail.do',
-  //隐患整改审批
-  updateYhzgFlow: '/mobile/updateYhzgFlow.do' };
+  //隐患整改流程流转
+  updateAndSendFlowForMobile: '/mobile/updateAndSendFlowForMobile.do',
+  //查看流程图
+  showFlowPic: '/mobile/showFlowPic.do',
+  //根据用户id查询当前用户所在部门
+  getUserDeptName: '/mobile/getUserDeptName.do',
+  //获取流转日志的接口
+  getActNodeInsts: '/mobile/getActNodeInsts.do',
+  //获取审批记录的接口
+  listForInst: '/mobile/listForInst.do',
+  //获取预警指数统计结果的接口
+  getYjzsStatics: '/mobile/getYjzsStatics.do' };
 
 //对外把对象config返回
 module.exports = config;
@@ -2451,12 +2461,21 @@ var animation = weex.requireModule('animation');var _default =
     goDetail: function goDetail(e) {
       var that = this;
       var params = {
-        instId: e.instId,
+        id: e.id,
         userid: that.userid,
         taskDefKey: e.taskDefKey,
-        name: e.name };
-
-      //console.log(params);
+        name: e.name,
+        actDefId: e.actDefId,
+        taskId: e.id,
+        instId: e.instId,
+        owner: e.owner, //默认操作人
+        pkId: e.pkId,
+        solId: e.solId,
+        lx: that.lx,
+        showFlow: that.lx == '待审批' ? false : true, //按钮展示权限
+        commonFlow: that.lx == '已审批' ? true : false //流程图按钮展示权限
+      };
+      console.log(params);
       //跳转到详情页面
       uni.navigateTo({
         url: '../danger/detailDanger?params=' + JSON.stringify(params) });
@@ -2520,20 +2539,38 @@ var animation = weex.requireModule('animation');var _default =
       } else {
         this.tabType = 0;
       }
-      console.log(list.list);
+      //console.log(list.list);
       for (var i = 0; i < list.length; i++) {
         var obj = {};
         var item = list[i];
-        //console.log(item);
-        obj['title'] = "当前任务由" + item.description.split('-由')[1];
-        obj['source'] = '当前节点：' + item.name + (item.stayTime ? '     已持续：' + item.stayTime : '           操作人：' + item.owner);
-        obj['id'] = this.tabType == 0 ? item.id : '';
-        obj['article_type'] = 0;
-        obj['comment_count'] = '';
-        obj['instId'] = item.procInstId; //实例id
-        obj['taskDefKey'] = item.taskDefKey; //节点id
-        obj['name'] = item.name; //节点id
-
+        if (this.lx === '已审批') {
+          //console.log(item);
+          obj['title'] = item.bhgys;
+          obj['source'] = "责任部门：" + item.zrbmName + "     隐患级别：" + item.yhdjName;
+          obj['id'] = '';
+          obj['article_type'] = 0;
+          obj['comment_count'] = '';
+          obj['instId'] = ''; //实例id
+          obj['taskDefKey'] = ''; //节点id
+          obj['name'] = ''; //节点id
+          obj['actDefId'] = '';
+          obj['owner'] = '';
+          obj['pkId'] = item.pkId;
+        } else {
+          console.log(item);
+          obj['title'] = "当前任务由" + item.description.split('-由')[1];
+          obj['source'] = '当前节点：' + item.name + (item.stayTime ? '     已持续：' + item.stayTime : '           操作人：' + item.owner);
+          obj['id'] = item.id;
+          obj['article_type'] = 0;
+          obj['comment_count'] = '';
+          obj['instId'] = item.procInstId; //实例id
+          obj['taskDefKey'] = item.taskDefKey; //节点id
+          obj['name'] = item.name; //节点id
+          obj['actDefId'] = item.procDefId;
+          obj['owner'] = item.owner;
+          obj['solId'] = item.solId;
+          obj['pkid'] = '';
+        }
         this.newsitems[index].data.push(obj);
       }
       if (!isRefresh) {// 上拉加载更多结束后改回加载更多，增加体验
@@ -2577,7 +2614,7 @@ var animation = weex.requireModule('animation');var _default =
       }, function () {
         uni.showToast({
           icon: 'none',
-          title: '请求失败' });
+          title: '网络异常，请重试' });
 
       }, function () {
       });
@@ -2593,7 +2630,7 @@ var animation = weex.requireModule('animation');var _default =
       var data = {
         pageNum: that.newsitems[index].pageNum,
         pageRows: that.pageRows,
-        lx: that.lx == '隐患整改' ? '待整改' : that.lx,
+        lx: that.lx == '隐患整改' ? '待审批' : that.lx,
         userid: that.userid };
 
       if (!isRefresh) {// 上拉加载更多，改变文字，增加体验
@@ -2613,7 +2650,7 @@ var animation = weex.requireModule('animation');var _default =
         that.refreshing = false;
         uni.showToast({
           icon: 'none',
-          title: '请求失败' });
+          title: '网络异常，请重试' });
 
       }, function () {//complete function
 
@@ -2629,6 +2666,7 @@ var animation = weex.requireModule('animation');var _default =
       } else {
         this.refreshText = "下拉可以刷新";
       }
+      that.getYhzgTabCounts();
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
 

@@ -1,2 +1,2 @@
 <import src="./eventChart.vue.wxml" />
-    <template is="513ee1fe" data="{{ ...$root['0'], $root }}"/>
+    <template is="7e389618" data="{{ ...$root['0'], $root }}"/>

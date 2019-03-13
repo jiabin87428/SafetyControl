@@ -1,2 +1,2 @@
 <import src="./addDanger.vue.wxml" />
-    <template is="2898c793" data="{{ ...$root['0'], $root }}"/>
+    <template is="72ed35ad" data="{{ ...$root['0'], $root }}"/>

@@ -59,18 +59,9 @@
   },
   "nvue": {
     "pages": {
-      "pages/workRisk/riskList.html": {
+      "pages/danger/readHistory.html": {
         "window": {
-          "navigationBarTitleText": "作业审批",
-          "titleNView": {
-            "buttons": [
-              {
-                "text": "",
-                "fontSrc": "/static/aliIcon/iconfont.ttf",
-                "fontSize": "22px"
-              }
-            ]
-          }
+          "navigationBarTitleText": "审批阅读历史列表"
         }
       },
       "pages/danger/dangerList.html": {
