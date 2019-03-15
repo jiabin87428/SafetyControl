@@ -1,0 +1,2 @@
+<import src="./rapAdd.vue.wxml" />
+    <template is="11e63791" data="{{ ...$root['0'], $root }}"/>

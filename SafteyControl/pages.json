@@ -195,6 +195,40 @@
             "style": {
                 "navigationBarTitleText": "作业风险评估"
             }
+        },{
+            "path": "pages/ptw/rapSelected",
+            "style": {
+                "navigationBarTitleText": "安全措施",
+				"app-plus": {  
+					"titleNView": {  
+						"buttons": [{  
+							"text": "\ue613",
+							"fontSrc": "/static/aliIcon/iconfont.ttf",
+							"fontSize": "22px"
+						}]  
+					}  
+				} 
+            }
+        },{
+            "path": "pages/ptw/rapAdd",
+            "style": {
+                "navigationBarTitleText": "新增安全措施"
+            }
+        },{
+            "path": "pages/ptw/rapConsider",
+            "style": {
+                "navigationBarTitleText": "考虑因素"
+            }
+        },{
+            "path": "pages/ptw/rapHarm",
+            "style": {
+                "navigationBarTitleText": "危害"
+            }
+        },{
+            "path": "pages/ptw/rapSolution",
+            "style": {
+                "navigationBarTitleText": "参考措施"
+            }
         }
     ],
     "tabBar": {

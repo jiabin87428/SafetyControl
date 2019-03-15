@@ -214,17 +214,21 @@
 			},
 			//安全措施选择器
 			choiceICON(){
-				var that = this;
-				var recordid = that.id;
-				if(!recordid){
-					uni.showToast({
-						icon: 'none',
-						title: '请先保存作业'
-					});
-					return;
-				}else{
-					plus.runtime.openWeb(config.host+config.choiceICON+'?recordid='+recordid+'&host='+config.host);
-				}
+				uni.navigateTo({
+					url: 'rapSelected'
+				})
+				
+// 				var that = this;
+// 				var recordid = that.id;
+// 				if(!recordid){
+// 					uni.showToast({
+// 						icon: 'none',
+// 						title: '请先保存作业'
+// 					});
+// 					return;
+// 				}else{
+// 					plus.runtime.openWeb(config.host+config.choiceICON+'?recordid='+recordid+'&host='+config.host);
+// 				}
 			},
 			savePTW(){
 				this.saveClick(config.savePTW);
