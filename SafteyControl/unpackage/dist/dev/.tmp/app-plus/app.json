@@ -20,7 +20,8 @@
     "pages/common/inputPage",
     "pages/danger/addDanger",
     "pages/statistics/statistics",
-    "pages/danger/detailDanger"
+    "pages/danger/detailDanger",
+    "pages/ptw/addPtw"
   ],
   "subPackages": [],
   "window": {

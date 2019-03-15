@@ -47,7 +47,7 @@
     "distribute": {
       "icons": {
         "ios": {
-          "appstore": "/Users/lijiabin/Documents/GitHub/SafetyControl/图标/logo_2014.png",
+          "appstore": "C:/Users/Administrator/Desktop/ehsq.png",
           "ipad": {
             "app": "unpackage/res/icons/76x76.png",
             "app@2x": "unpackage/res/icons/152x152.png",

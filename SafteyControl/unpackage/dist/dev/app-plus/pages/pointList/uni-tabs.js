@@ -444,7 +444,15 @@ var config = {
   //获取审批记录的接口
   listForInst: '/mobile/listForInst.do',
   //获取预警指数统计结果的接口
-  getYjzsStatics: '/mobile/getYjzsStatics.do' };
+  getYjzsStatics: '/mobile/getYjzsStatics.do',
+  //----------作业相关-----------------------
+  //安全措施选择器页面跳转
+  choiceICON: '/mobile/choiceICON.do',
+  //保存作业
+  savePTW: '/mobile/savePTW.do',
+  //保存作业并发起工作流
+  savePTWFlow: '/mobile/savePTWFlow.do' };
+
 
 //对外把对象config返回
 module.exports = config;
