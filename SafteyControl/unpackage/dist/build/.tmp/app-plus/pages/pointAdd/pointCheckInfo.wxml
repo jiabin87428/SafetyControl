@@ -1,2 +1,2 @@
 <import src="./pointCheckInfo.vue.wxml" />
-    <template is="5cc55c49" data="{{ ...$root['0'], $root }}"/>
+    <template is="4bd08622" data="{{ ...$root['0'], $root }}"/>

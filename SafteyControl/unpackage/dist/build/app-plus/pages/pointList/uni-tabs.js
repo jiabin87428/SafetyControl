@@ -83,10 +83,550 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "F:\\HBuilderProjects\\SafetyControl\\pages\\pointList\\uni-tabs.nvue?entry");
+/******/ 	return __webpack_require__(__webpack_require__.s = "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue?entry");
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue":
+/*!******************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue ***!
+  \******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-rewriter?id=data-v-39404bb6!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=styles&index=0!./uni-media-list.nvue */ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-39404bb6!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue")
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/script-loader!babel-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-media-list.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue")
+
+/* template */
+var __vue_template__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/template-compiler?id=data-v-39404bb6!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=template&index=0!./uni-media-list.nvue */ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-39404bb6!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue")
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-39404bb6"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue":
+/*!************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-rewriter?id=data-v-2158f532!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=styles&index=0!./uni-tab-bar.nvue */ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-2158f532!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue")
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/script-loader!babel-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tab-bar.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue")
+
+/* template */
+var __vue_template__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/template-compiler?id=data-v-2158f532!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=template&index=0!./uni-tab-bar.nvue */ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-2158f532!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue")
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-2158f532"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue":
+/*!********************************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue ***!
+  \********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* script */
+__vue_exports__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/script-loader!babel-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tab-content.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue")
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue":
+/*!******************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* script */
+__vue_exports__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/script-loader!babel-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue")
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue?entry":
+/*!********************************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue?entry ***!
+  \********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/style-rewriter?id=data-v-2104a5f4!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=styles&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-2104a5f4!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue")
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/script-loader!babel-loader!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue")
+
+/* template */
+var __vue_template__ = __webpack_require__(/*! !../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/template-compiler?id=data-v-2104a5f4!../../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/weex-vue-loader/lib/selector?type=template&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-2104a5f4!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue")
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-2104a5f4"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+module.exports.el = 'true'
+new Vue(module.exports)
+
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js":
+/*!*******************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 管理账号信息
+var USERS_KEY = 'USERS_KEY';
+var STATE_KEY = 'STATE_KEY';
+
+var getUsers = function getUsers() {
+  var ret = '';
+  ret = uni.getStorageSync(USERS_KEY);
+  //     if (!ret) {
+  //         ret = '[]';
+  //     }
+  if (!ret) {
+    return null;
+  } else {
+    return JSON.parse(ret);
+  }
+};
+
+var addUser = function addUser(userInfo) {
+  uni.setStorageSync(USERS_KEY, JSON.stringify(userInfo));
+};
+
+var removeUser = function removeUser() {
+  uni.removeStorageSync(USERS_KEY);
+  //把给nvue文件用的另一份userInfo也清空
+  uni.removeStorageSync('userInfo');
+};
+
+var copyObj = function copyObj(a) {
+  var c = {};
+  c = JSON.parse(JSON.stringify(a));
+  return c;
+};var _default =
+
+{
+  getUsers: getUsers,
+  addUser: addUser,
+  removeUser: removeUser,
+  copyObj: copyObj };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js":
+/*!***********************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+ // config.js
+/**
+  * 小程序后端接口配置文件
+  * http://222.223.19.166:10012/ehsq，外网
+  * http://10.57.167.214:8080/ehsq，内网
+  */
+var host = "http://222.223.19.166:10012/ehsq"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
+
+
+var config = {
+
+  // 下面的地址配合 Server 工作
+  host: host,
+  // 登录
+  login: '/mobile/system/login.do',
+
+  // 点位检查扫码接口
+  scan: '/mobile/dwsm.do',
+
+  // 扫码新增检查
+  UpdatePoint: '/mobile/updateJcjl.do',
+
+  // 获取Tab页上的数量
+  getTabCounts: '/mobile/getTabCount.do',
+
+  // 获取检查详情
+  getPointDetail: '/mobile/getJcjl.do',
+
+  // 首页统计
+  getMainPageCount: '/mobile/getSytj.do',
+
+  // 报警设备类型统计
+  alertDeviceCount: '/mobile/bjsblx.do',
+
+  // 报警事件类型统计
+  alertEventCount: '/mobile/bjsjlx.do',
+
+  // 阀组压力统计
+  alertValveCount: '/mobile/ylfz.do',
+  // 阀组压力统计 - 根据楼层获取阀组编号
+  getValveDataByFloor: '/mobile/getfz.do',
+
+  // 上传图片
+  uploadImage: '/uploadImg',
+
+  // 加载图片
+  loadImage: '/mobile/loadYhzp.do?fileid=',
+
+  // 删除图片
+  deleteImage: '/mobile/delZp.do',
+
+  // ------隐患相关-------
+  // 添加隐患并发起流程
+  addYhzgToFlow: '/mobile/addYhzgToFlow.do',
+  //获取隐患审批数据
+  getYhzgListByType: '/mobile/getYhzgListByType.do',
+  //获取隐患整改数目
+  getYhzgTabCounts: '/mobile/getYhzgTabCounts.do',
+  //获取隐患整改详情信息
+  getYhzgDetail: '/mobile/getYhzgDetail.do',
+  //隐患整改流程流转
+  updateAndSendFlowForMobile: '/mobile/updateAndSendFlowForMobile.do',
+  //查看流程图
+  showFlowPic: '/mobile/showFlowPic.do',
+  //根据用户id查询当前用户所在部门
+  getUserDeptName: '/mobile/getUserDeptName.do',
+  //获取流转日志的接口
+  getActNodeInsts: '/mobile/getActNodeInsts.do',
+  //获取审批记录的接口
+  listForInst: '/mobile/listForInst.do',
+  //获取预警指数统计结果的接口
+  getYjzsStatics: '/mobile/getYjzsStatics.do',
+  //----------作业相关-----------------------
+  //安全措施选择器页面跳转
+  choiceICON: '/mobile/choiceICON.do',
+  //保存作业
+  savePTW: '/mobile/savePTW.do',
+  //保存作业并发起工作流
+  savePTWFlow: '/mobile/savePTWFlow.do' };
+
+
+//对外把对象config返回
+module.exports = config;
+
+/***/ }),
+
+/***/ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js":
+/*!************************************************************************************!*\
+  !*** /Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var config = __webpack_require__(/*! ./config */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js");
+// 展示进度条的网络请求
+// url:网络请求的url
+// params:请求参数
+// message:进度条的提示信息
+// success:成功的回调函数
+// fail：失败的回调
+var requestLoading = function requestLoading(url, params, message, _success, _fail, _complete) {
+  // 	wx.showNavigationBarLoading()
+  if (message != "") {
+    uni.showLoading({
+      title: message });
+
+  }
+  console.log('request.js :' + url);
+  uni.request({
+    url: config.host + url,
+    data: params,
+    header: {
+      // 'Content-Type': 'application/json'
+      'Content-type': 'application/x-www-form-urlencoded' },
+
+    method: 'POST',
+    success: function success(res) {
+      // 					wx.hideNavigationBarLoading()
+      if (message != "") {
+        uni.hideLoading();
+      }
+
+      // console.log('' + JSON.stringify(res));
+      if (res.data.success == 'true') {
+        _success(res.data);
+      } else {
+        _fail();
+      }
+    },
+    fail: function fail(res) {
+      // console.log('' + JSON.stringify(res))
+      if (message != "") {
+        uni.hideLoading();
+      }
+      _fail();
+    },
+    complete: function complete() {
+      if (message != "") {
+        uni.hideLoading();
+      }
+      _complete();
+    } });
+
+};
+
+
+
+// 展示进度条的网络请求(新版)
+// url:网络请求的url
+// params:请求参数
+// message:进度条的提示信息 
+// success:成功的回调函数
+// fail：失败的回调
+var requestLoadingNew = function requestLoadingNew(url, params, message, _success2, _fail2, _complete2) {
+  if (message != "") {
+    uni.showLoading({
+      title: message });
+
+  }
+  uni.request({
+    url: config.host + url,
+    data: params,
+    header: {
+      'Content-type': 'application/x-www-form-urlencoded' },
+
+    method: 'POST',
+    success: function success(res) {
+      uni.hideLoading();
+      if (res.statusCode == '200') {
+        _success2(res.data);
+      } else {
+        _fail2();
+      }
+    },
+    fail: function fail(res) {
+      uni.hideLoading();
+      _fail2();
+    },
+    complete: function complete() {
+      uni.hideLoading();
+      _complete2();
+    } });
+
+};
+
+
+var request = function request(url, message, _success3, _fail3) {
+  //   wx.showNavigationBarLoading()
+  //   if (message != "") {
+  //     wx.showLoading({
+  //       title: message,
+  //     })
+  //   }
+  uni.request({
+    url: url,
+    header: {
+      // 'Content-Type': 'application/json'
+      'Content-type': 'application/x-www-form-urlencoded' },
+
+    method: 'GET',
+    success: function success(res) {
+      // 					wx.hideNavigationBarLoading()
+      // 					if (message != "") {
+      // 					  wx.hideLoading()
+      // 					}
+      if (res.success == 'true') {
+        _success3(res.data);
+      } else {
+        _fail3();
+      }
+    },
+    fail: function fail(res) {
+      _fail3();
+    } });
+
+};
+// 上传图片
+var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, length, successFun, completeFun) {var _this = this;
+  uni.uploadFile({
+    url: config.host + url,
+    filePath: filePaths[i],
+    name: 'fileData',
+    formData: {},
+
+
+    success: function success(resp) {
+      successUp++;
+      successFun(resp);
+    },
+    fail: function fail(res) {
+      failUp++;
+    },
+    complete: function complete() {
+      i++;
+      if (i == length) {
+        uni.showToast({
+          title: '总共' + successUp + '张上传成功,' + failUp + '张上传失败！',
+          icon: 'none',
+          duration: 2000 });
+
+        if (completeFun != null) {
+          completeFun('200');
+        }
+      } else
+      {//递归调用uploadImage函数
+        _this.uploadImage(url, filePaths, successUp, failUp, i, length, successFun, completeFun);
+      }
+    } });
+
+};var _default =
+{
+  request: request,
+  requestLoading: requestLoading,
+  requestLoadingNew: requestLoadingNew,
+  uploadImage: uploadImage };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
+
+/***/ }),
 
 /***/ "./node_modules/@babel/runtime/regenerator/index.js":
 /*!**********************************************************!*\
@@ -1501,10 +2041,10 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-media-list\\uni-media-list.nvue":
-/*!**********************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!F:/HBuilderProjects/SafetyControl/components/uni-media-list/uni-media-list.nvue ***!
-  \**********************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue":
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1569,10 +2109,10 @@ var _default2 =
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-tab-bar\\uni-tab-bar.nvue":
-/*!****************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!F:/HBuilderProjects/SafetyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
-  \****************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue":
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1669,10 +2209,10 @@ var dom = weex.requireModule('dom');var _default2 =
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-tab-content\\uni-tab-content.nvue":
-/*!************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!F:/HBuilderProjects/SafetyControl/components/uni-tab-content/uni-tab-content.nvue ***!
-  \************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue":
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1693,16 +2233,16 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-tabs\\uni-tabs.nvue":
-/*!**********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!F:/HBuilderProjects/SafetyControl/components/uni-tabs/uni-tabs.nvue ***!
-  \**********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue":
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-content/uni-tab-content.nvue */ "F:\\HBuilderProjects\\SafetyControl\\components\\uni-tab-content\\uni-tab-content.nvue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-content/uni-tab-content.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
 {
   props: {
     index: {
@@ -1788,10 +2328,10 @@ var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-c
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!F:\\HBuilderProjects\\SafetyControl\\pages\\pointList\\uni-tabs.nvue":
-/*!******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!F:/HBuilderProjects/SafetyControl/pages/pointList/uni-tabs.nvue ***!
-  \******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue":
+/*!*********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue ***!
+  \*********************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1839,13 +2379,13 @@ var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! ../uni-tab-c
 
 
 
-var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-content/uni-tab-content.nvue */ "F:\\HBuilderProjects\\SafetyControl\\components\\uni-tab-content\\uni-tab-content.nvue"));
-var _uniTabBar = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-bar/uni-tab-bar.nvue */ "F:\\HBuilderProjects\\SafetyControl\\components\\uni-tab-bar\\uni-tab-bar.nvue"));
-var _uniTabs = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tabs/uni-tabs.nvue */ "F:\\HBuilderProjects\\SafetyControl\\components\\uni-tabs\\uni-tabs.nvue"));
-var _uniMediaList = _interopRequireDefault(__webpack_require__(/*! @/components/uni-media-list/uni-media-list.nvue */ "F:\\HBuilderProjects\\SafetyControl\\components\\uni-media-list\\uni-media-list.nvue"));
-var _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ "F:\\HBuilderProjects\\SafetyControl\\service.js"));
-var _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ "F:\\HBuilderProjects\\SafetyControl\\util\\config.js"));
-var _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ "F:\\HBuilderProjects\\SafetyControl\\util\\request.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
+var _uniTabContent = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-content/uni-tab-content.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-content/uni-tab-content.nvue"));
+var _uniTabBar = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tab-bar/uni-tab-bar.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue"));
+var _uniTabs = _interopRequireDefault(__webpack_require__(/*! @/components/uni-tabs/uni-tabs.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tabs/uni-tabs.nvue"));
+var _uniMediaList = _interopRequireDefault(__webpack_require__(/*! @/components/uni-media-list/uni-media-list.nvue */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue"));
+var _service = _interopRequireDefault(__webpack_require__(/*! ../../service.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/service.js"));
+var _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js"));
+var _request = _interopRequireDefault(__webpack_require__(/*! ../../util/request.js */ "../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/request.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
 
 var dom = weex.requireModule('dom');
 var animation = weex.requireModule('animation');var _default =
@@ -2191,170 +2731,10 @@ var animation = weex.requireModule('animation');var _default =
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-20541efc!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-media-list\\uni-media-list.nvue":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-20541efc!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!F:/HBuilderProjects/SafetyControl/components/uni-media-list/uni-media-list.nvue ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = {
-  "list-cell": {
-    "width": "750",
-    "paddingTop": 0,
-    "paddingRight": "30",
-    "paddingBottom": 0,
-    "paddingLeft": "30",
-    "backgroundColor:active": "#eeeeee"
-  },
-  "media-list": {
-    "flex": 1,
-    "flexDirection": "column",
-    "borderBottomWidth": "1",
-    "borderBottomStyle": "solid",
-    "borderBottomColor": "#c8c7cc",
-    "paddingTop": "20",
-    "paddingRight": 0,
-    "paddingBottom": "20",
-    "paddingLeft": 0
-  },
-  "media-image-right": {
-    "flexDirection": "row"
-  },
-  "media-image-left": {
-    "flexDirection": "row-reverse"
-  },
-  "media-title": {
-    "flex": 1,
-    "lines": 3,
-    "textOverflow": "ellipsis",
-    "fontSize": "32",
-    "color": "#555555"
-  },
-  "media-title2": {
-    "flex": 1,
-    "marginTop": "6",
-    "lineHeight": "40"
-  },
-  "image-section": {
-    "marginTop": "20",
-    "flexDirection": "row",
-    "justifyContent": "space-between"
-  },
-  "image-section-right": {
-    "marginTop": "0",
-    "marginLeft": "10",
-    "width": "225",
-    "height": "146"
-  },
-  "image-section-left": {
-    "marginTop": "0",
-    "marginRight": "10",
-    "width": "225",
-    "height": "146"
-  },
-  "image-list1": {
-    "width": "690",
-    "height": "481"
-  },
-  "image-list2": {
-    "width": "225",
-    "height": "146"
-  },
-  "image-list3": {
-    "width": "225",
-    "height": "146"
-  },
-  "media-info": {
-    "flexDirection": "row"
-  },
-  "info-text": {
-    "marginRight": "20",
-    "color": "#999999",
-    "fontSize": "24"
-  },
-  "media-foot": {
-    "marginTop": "20",
-    "flexDirection": "row",
-    "justifyContent": "space-between"
-  },
-  "max-close-view": {
-    "alignItems": "center",
-    "justifyContent": "flex-end",
-    "flexDirection": "row",
-    "height": "40",
-    "width": "80"
-  },
-  "close-view": {
-    "borderStyle": "solid",
-    "borderWidth": "1",
-    "borderColor": "#999999",
-    "borderRadius": "10",
-    "justifyContent": "center",
-    "height": "30",
-    "width": "40",
-    "lineHeight": "30"
-  },
-  "close": {
-    "textAlign": "center",
-    "color": "#999999",
-    "fontSize": "28"
-  }
-}
-
-/***/ }),
-
-/***/ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-97c70a84!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-tab-bar\\uni-tab-bar.nvue":
-/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-97c70a84!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!F:/HBuilderProjects/SafetyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = {
-  "wrap": {
-    "height": "100",
-    "width": "750",
-    "flexDirection": "row",
-    "borderWidth": "1",
-    "borderColor": "#c8c7cc",
-    "borderStyle": "solid",
-    "fontSize": "28"
-  },
-  "tab-bar": {
-    "justifyContent": "space-around"
-  },
-  "scroll": {
-    "height": "100",
-    "width": "750",
-    "flexDirection": "row"
-  },
-  "tab-bar-item": {
-    "height": "100",
-    "flexDirection": "column",
-    "alignItems": "center",
-    "justifyContent": "center"
-  },
-  "tab-bar-scroll-width": {
-    "width": "150"
-  },
-  "tab-bar-title": {
-    "height": "100",
-    "lineHeight": "100",
-    "fontSize": "30",
-    "color": "#555555"
-  },
-  "active": {
-    "color": "#007aff"
-  }
-}
-
-/***/ }),
-
-/***/ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-b03ffe52!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!F:\\HBuilderProjects\\SafetyControl\\pages\\pointList\\uni-tabs.nvue":
-/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-b03ffe52!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!F:/HBuilderProjects/SafetyControl/pages/pointList/uni-tabs.nvue ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-2104a5f4!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-2104a5f4!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -2469,112 +2849,170 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-20541efc!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-media-list\\uni-media-list.nvue":
-/*!***************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-20541efc!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!F:/HBuilderProjects/SafetyControl/components/uni-media-list/uni-media-list.nvue ***!
-  \***************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-2158f532!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-2158f532!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('div', {
-    staticClass: ["list-cell"],
-    on: {
-      "click": _vm.bindClick
-    }
-  }, [(_vm.data.title) ? _c('div', {
-    staticClass: ["media-list"]
-  }, [_c('div', {
-    class: [_vm.isImgRight ? 'media-image-right' : '', _vm.isImgLeft ? 'media-image-left' : '']
-  }, [_c('text', {
-    class: ['media-title', _vm.isImgRight || _vm.isImgLeft ? 'media-title2' : '']
-  }, [_vm._v(_vm._s(_vm.data.title))]), (_vm.showImg) ? _c('div', {
-    class: ['image-section', _vm.isImgRight ? 'image-section-right' : '', _vm.isImgLeft ? 'image-section-left' : '']
-  }, [(_vm.data.image_url) ? _c('image', {
-    class: ['image-list1', _vm.isImgRight || _vm.isImgLeft ? 'image-list2' : ''],
-    attrs: {
-      "src": _vm.data.image_url
-    }
-  }) : _vm._e(), _vm._l((_vm.data.image_list), function(source, i) {
-    return (_vm.data.image_list) ? _c('image', {
-      key: i,
-      staticClass: ["image-list3"],
-      attrs: {
-        "src": source.url
-      }
-    }) : _vm._e()
-  })], 2) : _vm._e()]), _c('div', {
-    staticClass: ["media-foot"]
-  }, [_c('div', {
-    staticClass: ["media-info"]
-  }, [_c('text', {
-    staticClass: ["info-text"]
-  }, [_vm._v(_vm._s(_vm.data.source))]), _c('text', {
-    staticClass: ["info-text"]
-  }, [_vm._v(_vm._s(_vm.data.comment_count))]), _c('text', {
-    staticClass: ["info-text"]
-  }, [_vm._v(_vm._s(_vm.data.datetime))])])])]) : _vm._e()])])
-},staticRenderFns: []}
+module.exports = {
+  "wrap": {
+    "height": "100",
+    "width": "750",
+    "flexDirection": "row",
+    "borderWidth": "1",
+    "borderColor": "#c8c7cc",
+    "borderStyle": "solid",
+    "fontSize": "28"
+  },
+  "tab-bar": {
+    "justifyContent": "space-around"
+  },
+  "scroll": {
+    "height": "100",
+    "width": "750",
+    "flexDirection": "row"
+  },
+  "tab-bar-item": {
+    "height": "100",
+    "flexDirection": "column",
+    "alignItems": "center",
+    "justifyContent": "center"
+  },
+  "tab-bar-scroll-width": {
+    "width": "150"
+  },
+  "tab-bar-title": {
+    "height": "100",
+    "lineHeight": "100",
+    "fontSize": "30",
+    "color": "#555555"
+  },
+  "active": {
+    "color": "#007aff"
+  }
+}
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-97c70a84!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-tab-bar\\uni-tab-bar.nvue":
-/*!*********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-97c70a84!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!F:/HBuilderProjects/SafetyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
-  \*********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-39404bb6!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-39404bb6!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [(_vm.drag) ? _c('div', {
-    staticClass: ["wrap", "tab-bar-scroll"]
-  }, [_c('scroller', {
-    staticClass: ["scroll"],
-    attrs: {
-      "scrollDirection": "horizontal",
-      "showScrollbar": "false"
-    }
-  }, _vm._l((_vm.tabBars), function(tabBar, t) {
-    return _c('div', {
-      key: t,
-      ref: tabBar.id + t,
-      refInFor: true,
-      staticClass: ["tab-bar-item", "tab-bar-scroll-width"],
-      on: {
-        "click": function($event) {
-          _vm.change(t)
-        }
-      }
-    }, [_c('text', {
-      staticClass: ["tab-bar-title"],
-      class: [_vm.tabIndex === t ? 'active' : '']
-    }, [_vm._v(_vm._s(tabBar.name))])])
-  }))]) : _c('div', {
-    staticClass: ["wrap", "tab-bar"]
-  }, _vm._l((_vm.tabBars), function(tabBar, t) {
-    return _c('div', {
-      key: t,
-      ref: tabBar.id + t,
-      refInFor: true,
-      staticClass: ["tab-bar-item"],
-      on: {
-        "click": function($event) {
-          _vm.change(t)
-        }
-      }
-    }, [_c('text', {
-      staticClass: ["tab-bar-title"],
-      class: [_vm.tabIndex === t ? 'active' : '']
-    }, [_vm._v(_vm._s(tabBar.name))])])
-  }))])
-},staticRenderFns: []}
+module.exports = {
+  "list-cell": {
+    "width": "750",
+    "paddingTop": 0,
+    "paddingRight": "30",
+    "paddingBottom": 0,
+    "paddingLeft": "30",
+    "backgroundColor:active": "#eeeeee"
+  },
+  "media-list": {
+    "flex": 1,
+    "flexDirection": "column",
+    "borderBottomWidth": "1",
+    "borderBottomStyle": "solid",
+    "borderBottomColor": "#c8c7cc",
+    "paddingTop": "20",
+    "paddingRight": 0,
+    "paddingBottom": "20",
+    "paddingLeft": 0
+  },
+  "media-image-right": {
+    "flexDirection": "row"
+  },
+  "media-image-left": {
+    "flexDirection": "row-reverse"
+  },
+  "media-title": {
+    "flex": 1,
+    "lines": 3,
+    "textOverflow": "ellipsis",
+    "fontSize": "32",
+    "color": "#555555"
+  },
+  "media-title2": {
+    "flex": 1,
+    "marginTop": "6",
+    "lineHeight": "40"
+  },
+  "image-section": {
+    "marginTop": "20",
+    "flexDirection": "row",
+    "justifyContent": "space-between"
+  },
+  "image-section-right": {
+    "marginTop": "0",
+    "marginLeft": "10",
+    "width": "225",
+    "height": "146"
+  },
+  "image-section-left": {
+    "marginTop": "0",
+    "marginRight": "10",
+    "width": "225",
+    "height": "146"
+  },
+  "image-list1": {
+    "width": "690",
+    "height": "481"
+  },
+  "image-list2": {
+    "width": "225",
+    "height": "146"
+  },
+  "image-list3": {
+    "width": "225",
+    "height": "146"
+  },
+  "media-info": {
+    "flexDirection": "row"
+  },
+  "info-text": {
+    "marginRight": "20",
+    "color": "#999999",
+    "fontSize": "24"
+  },
+  "media-foot": {
+    "marginTop": "20",
+    "flexDirection": "row",
+    "justifyContent": "space-between"
+  },
+  "max-close-view": {
+    "alignItems": "center",
+    "justifyContent": "flex-end",
+    "flexDirection": "row",
+    "height": "40",
+    "width": "80"
+  },
+  "close-view": {
+    "borderStyle": "solid",
+    "borderWidth": "1",
+    "borderColor": "#999999",
+    "borderRadius": "10",
+    "justifyContent": "center",
+    "height": "30",
+    "width": "40",
+    "lineHeight": "30"
+  },
+  "close": {
+    "textAlign": "center",
+    "color": "#999999",
+    "fontSize": "28"
+  }
+}
 
 /***/ }),
 
-/***/ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-b03ffe52!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!F:\\HBuilderProjects\\SafetyControl\\pages\\pointList\\uni-tabs.nvue":
-/*!***********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-b03ffe52!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!F:/HBuilderProjects/SafetyControl/pages/pointList/uni-tabs.nvue ***!
-  \***********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-2104a5f4!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue":
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-2104a5f4!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/pointList/uni-tabs.nvue ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -2739,543 +3177,105 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 /***/ }),
 
-/***/ "F:\\HBuilderProjects\\SafetyControl\\components\\uni-media-list\\uni-media-list.nvue":
-/*!***************************************************************************************!*\
-  !*** F:/HBuilderProjects/SafetyControl/components/uni-media-list/uni-media-list.nvue ***!
-  \***************************************************************************************/
+/***/ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-2158f532!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue":
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-2158f532!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(/*! !./node_modules/weex-vue-loader/lib/style-loader!./node_modules/weex-vue-loader/lib/style-rewriter?id=data-v-20541efc!./node_modules/weex-vue-loader/lib/selector?type=styles&index=0!./uni-media-list.nvue */ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-20541efc!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-media-list\\uni-media-list.nvue")
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(/*! !./node_modules/weex-vue-loader/lib/script-loader!babel-loader!./node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-media-list.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-media-list\\uni-media-list.nvue")
-
-/* template */
-var __vue_template__ = __webpack_require__(/*! !./node_modules/weex-vue-loader/lib/template-compiler?id=data-v-20541efc!./node_modules/weex-vue-loader/lib/selector?type=template&index=0!./uni-media-list.nvue */ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-20541efc!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-media-list\\uni-media-list.nvue")
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-20541efc"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ "F:\\HBuilderProjects\\SafetyControl\\components\\uni-tab-bar\\uni-tab-bar.nvue":
-/*!*********************************************************************************!*\
-  !*** F:/HBuilderProjects/SafetyControl/components/uni-tab-bar/uni-tab-bar.nvue ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(/*! !./node_modules/weex-vue-loader/lib/style-loader!./node_modules/weex-vue-loader/lib/style-rewriter?id=data-v-97c70a84!./node_modules/weex-vue-loader/lib/selector?type=styles&index=0!./uni-tab-bar.nvue */ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-97c70a84!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-tab-bar\\uni-tab-bar.nvue")
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(/*! !./node_modules/weex-vue-loader/lib/script-loader!babel-loader!./node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tab-bar.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-tab-bar\\uni-tab-bar.nvue")
-
-/* template */
-var __vue_template__ = __webpack_require__(/*! !./node_modules/weex-vue-loader/lib/template-compiler?id=data-v-97c70a84!./node_modules/weex-vue-loader/lib/selector?type=template&index=0!./uni-tab-bar.nvue */ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-97c70a84!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-tab-bar\\uni-tab-bar.nvue")
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-97c70a84"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ "F:\\HBuilderProjects\\SafetyControl\\components\\uni-tab-content\\uni-tab-content.nvue":
-/*!*****************************************************************************************!*\
-  !*** F:/HBuilderProjects/SafetyControl/components/uni-tab-content/uni-tab-content.nvue ***!
-  \*****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* script */
-__vue_exports__ = __webpack_require__(/*! !./node_modules/weex-vue-loader/lib/script-loader!babel-loader!./node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tab-content.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-tab-content\\uni-tab-content.nvue")
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ "F:\\HBuilderProjects\\SafetyControl\\components\\uni-tabs\\uni-tabs.nvue":
-/*!***************************************************************************!*\
-  !*** F:/HBuilderProjects/SafetyControl/components/uni-tabs/uni-tabs.nvue ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* script */
-__vue_exports__ = __webpack_require__(/*! !./node_modules/weex-vue-loader/lib/script-loader!babel-loader!./node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!F:\\HBuilderProjects\\SafetyControl\\components\\uni-tabs\\uni-tabs.nvue")
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-
-/***/ "F:\\HBuilderProjects\\SafetyControl\\pages\\pointList\\uni-tabs.nvue?entry":
-/*!*****************************************************************************!*\
-  !*** F:/HBuilderProjects/SafetyControl/pages/pointList/uni-tabs.nvue?entry ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(/*! !./node_modules/weex-vue-loader/lib/style-loader!./node_modules/weex-vue-loader/lib/style-rewriter?id=data-v-b03ffe52!./node_modules/weex-vue-loader/lib/selector?type=styles&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/style-loader.js!./node_modules/weex-vue-loader/lib/style-rewriter.js?id=data-v-b03ffe52!./node_modules/weex-vue-loader/lib/selector.js?type=styles&index=0!F:\\HBuilderProjects\\SafetyControl\\pages\\pointList\\uni-tabs.nvue")
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(/*! !./node_modules/weex-vue-loader/lib/script-loader!babel-loader!./node_modules/weex-vue-loader/lib/selector?type=script&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/script-loader.js!./node_modules/babel-loader/lib/index.js!./node_modules/weex-vue-loader/lib/selector.js?type=script&index=0!F:\\HBuilderProjects\\SafetyControl\\pages\\pointList\\uni-tabs.nvue")
-
-/* template */
-var __vue_template__ = __webpack_require__(/*! !./node_modules/weex-vue-loader/lib/template-compiler?id=data-v-b03ffe52!./node_modules/weex-vue-loader/lib/selector?type=template&index=0!./uni-tabs.nvue */ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-b03ffe52!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!F:\\HBuilderProjects\\SafetyControl\\pages\\pointList\\uni-tabs.nvue")
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-b03ffe52"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-module.exports.el = 'true'
-new Vue(module.exports)
-
-
-/***/ }),
-
-/***/ "F:\\HBuilderProjects\\SafetyControl\\service.js":
-/*!****************************************************!*\
-  !*** F:/HBuilderProjects/SafetyControl/service.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 管理账号信息
-var USERS_KEY = 'USERS_KEY';
-var STATE_KEY = 'STATE_KEY';
-
-var getUsers = function getUsers() {
-  var ret = '';
-  ret = uni.getStorageSync(USERS_KEY);
-  //     if (!ret) {
-  //         ret = '[]';
-  //     }
-  if (!ret) {
-    return null;
-  } else {
-    return JSON.parse(ret);
-  }
-};
-
-var addUser = function addUser(userInfo) {
-  uni.setStorageSync(USERS_KEY, JSON.stringify(userInfo));
-};
-
-var removeUser = function removeUser() {
-  uni.removeStorageSync(USERS_KEY);
-  //把给nvue文件用的另一份userInfo也清空
-  uni.removeStorageSync('userInfo');
-};
-
-var copyObj = function copyObj(a) {
-  var c = {};
-  c = JSON.parse(JSON.stringify(a));
-  return c;
-};var _default =
-
-{
-  getUsers: getUsers,
-  addUser: addUser,
-  removeUser: removeUser,
-  copyObj: copyObj };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
-
-/***/ }),
-
-/***/ "F:\\HBuilderProjects\\SafetyControl\\util\\config.js":
-/*!********************************************************!*\
-  !*** F:/HBuilderProjects/SafetyControl/util/config.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
- // config.js
-/**
-  * 小程序后端接口配置文件
-  * http://222.223.19.166:10012/ehsq，外网
-  * http://10.57.167.214:8080/ehsq，内网
-  */
-var host = "http://222.223.19.166:10012/ehsq"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
-
-
-var config = {
-
-  // 下面的地址配合 Server 工作
-  host: host,
-  // 登录
-  login: '/mobile/system/login.do',
-
-  // 点位检查扫码接口
-  scan: '/mobile/dwsm.do',
-
-  // 扫码新增检查
-  UpdatePoint: '/mobile/updateJcjl.do',
-
-  // 获取Tab页上的数量
-  getTabCounts: '/mobile/getTabCount.do',
-
-  // 获取检查详情
-  getPointDetail: '/mobile/getJcjl.do',
-
-  // 首页统计
-  getMainPageCount: '/mobile/getSytj.do',
-
-  // 报警设备类型统计
-  alertDeviceCount: '/mobile/bjsblx.do',
-
-  // 报警事件类型统计
-  alertEventCount: '/mobile/bjsjlx.do',
-
-  // 阀组压力统计
-  alertValveCount: '/mobile/ylfz.do',
-  // 阀组压力统计 - 根据楼层获取阀组编号
-  getValveDataByFloor: '/mobile/getfz.do',
-
-  // 上传图片
-  uploadImage: '/uploadImg',
-
-  // 加载图片
-  loadImage: '/mobile/loadYhzp.do?fileid=',
-
-  // 删除图片
-  deleteImage: '/mobile/delZp.do',
-
-  // ------隐患相关-------
-  // 添加隐患并发起流程
-  addYhzgToFlow: '/mobile/addYhzgToFlow.do',
-  //获取隐患审批数据
-  getYhzgListByType: '/mobile/getYhzgListByType.do',
-  //获取隐患整改数目
-  getYhzgTabCounts: '/mobile/getYhzgTabCounts.do',
-  //获取隐患整改详情信息
-  getYhzgDetail: '/mobile/getYhzgDetail.do',
-  //隐患整改流程流转
-  updateAndSendFlowForMobile: '/mobile/updateAndSendFlowForMobile.do',
-  //查看流程图
-  showFlowPic: '/mobile/showFlowPic.do',
-  //根据用户id查询当前用户所在部门
-  getUserDeptName: '/mobile/getUserDeptName.do',
-  //获取流转日志的接口
-  getActNodeInsts: '/mobile/getActNodeInsts.do',
-  //获取审批记录的接口
-  listForInst: '/mobile/listForInst.do',
-  //获取预警指数统计结果的接口
-  getYjzsStatics: '/mobile/getYjzsStatics.do',
-  //----------作业相关-----------------------
-  //安全措施选择器页面跳转
-  choiceICON: '/mobile/choiceICON.do',
-  //保存作业
-  savePTW: '/mobile/savePTW.do',
-  //保存作业并发起工作流
-  savePTWFlow: '/mobile/savePTWFlow.do' };
-
-
-//对外把对象config返回
-module.exports = config;
-
-/***/ }),
-
-/***/ "F:\\HBuilderProjects\\SafetyControl\\util\\request.js":
-/*!*********************************************************!*\
-  !*** F:/HBuilderProjects/SafetyControl/util/request.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var config = __webpack_require__(/*! ./config */ "F:\\HBuilderProjects\\SafetyControl\\util\\config.js");
-// 展示进度条的网络请求
-// url:网络请求的url
-// params:请求参数
-// message:进度条的提示信息
-// success:成功的回调函数
-// fail：失败的回调
-var requestLoading = function requestLoading(url, params, message, _success, _fail, _complete) {
-  // 	wx.showNavigationBarLoading()
-  if (message != "") {
-    uni.showLoading({
-      title: message });
-
-  }
-  console.log('request.js :' + url);
-  uni.request({
-    url: config.host + url,
-    data: params,
-    header: {
-      // 'Content-Type': 'application/json'
-      'Content-type': 'application/x-www-form-urlencoded' },
-
-    method: 'POST',
-    success: function success(res) {
-      // 					wx.hideNavigationBarLoading()
-      if (message != "") {
-        uni.hideLoading();
-      }
-
-      // console.log('' + JSON.stringify(res));
-      if (res.data.success == 'true') {
-        _success(res.data);
-      } else {
-        _fail();
-      }
-    },
-    fail: function fail(res) {
-      // console.log('' + JSON.stringify(res))
-      if (message != "") {
-        uni.hideLoading();
-      }
-      _fail();
-    },
-    complete: function complete() {
-      if (message != "") {
-        uni.hideLoading();
-      }
-      _complete();
-    } });
-
-};
-
-
-
-// 展示进度条的网络请求(新版)
-// url:网络请求的url
-// params:请求参数
-// message:进度条的提示信息 
-// success:成功的回调函数
-// fail：失败的回调
-var requestLoadingNew = function requestLoadingNew(url, params, message, _success2, _fail2, _complete2) {
-  if (message != "") {
-    uni.showLoading({
-      title: message });
-
-  }
-  uni.request({
-    url: config.host + url,
-    data: params,
-    header: {
-      'Content-type': 'application/x-www-form-urlencoded' },
-
-    method: 'POST',
-    success: function success(res) {
-      uni.hideLoading();
-      if (res.statusCode == '200') {
-        _success2(res.data);
-      } else {
-        _fail2();
-      }
-    },
-    fail: function fail(res) {
-      uni.hideLoading();
-      _fail2();
-    },
-    complete: function complete() {
-      uni.hideLoading();
-      _complete2();
-    } });
-
-};
-
-
-var request = function request(url, message, _success3, _fail3) {
-  //   wx.showNavigationBarLoading()
-  //   if (message != "") {
-  //     wx.showLoading({
-  //       title: message,
-  //     })
-  //   }
-  uni.request({
-    url: url,
-    header: {
-      // 'Content-Type': 'application/json'
-      'Content-type': 'application/x-www-form-urlencoded' },
-
-    method: 'GET',
-    success: function success(res) {
-      // 					wx.hideNavigationBarLoading()
-      // 					if (message != "") {
-      // 					  wx.hideLoading()
-      // 					}
-      if (res.success == 'true') {
-        _success3(res.data);
-      } else {
-        _fail3();
-      }
-    },
-    fail: function fail(res) {
-      _fail3();
-    } });
-
-};
-// 上传图片
-var uploadImage = function uploadImage(url, filePaths, successUp, failUp, i, length, successFun, completeFun) {var _this = this;
-  uni.uploadFile({
-    url: config.host + url,
-    filePath: filePaths[i],
-    name: 'fileData',
-    formData: {},
-
-
-    success: function success(resp) {
-      successUp++;
-      successFun(resp);
-    },
-    fail: function fail(res) {
-      failUp++;
-    },
-    complete: function complete() {
-      i++;
-      if (i == length) {
-        uni.showToast({
-          title: '总共' + successUp + '张上传成功,' + failUp + '张上传失败！',
-          icon: 'none',
-          duration: 2000 });
-
-        if (completeFun != null) {
-          completeFun('200');
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [(_vm.drag) ? _c('div', {
+    staticClass: ["wrap", "tab-bar-scroll"]
+  }, [_c('scroller', {
+    staticClass: ["scroll"],
+    attrs: {
+      "scrollDirection": "horizontal",
+      "showScrollbar": "false"
+    }
+  }, _vm._l((_vm.tabBars), function(tabBar, t) {
+    return _c('div', {
+      key: t,
+      ref: tabBar.id + t,
+      refInFor: true,
+      staticClass: ["tab-bar-item", "tab-bar-scroll-width"],
+      on: {
+        "click": function($event) {
+          _vm.change(t)
         }
-      } else
-      {//递归调用uploadImage函数
-        _this.uploadImage(url, filePaths, successUp, failUp, i, length, successFun, completeFun);
       }
-    } });
+    }, [_c('text', {
+      staticClass: ["tab-bar-title"],
+      class: [_vm.tabIndex === t ? 'active' : '']
+    }, [_vm._v(_vm._s(tabBar.name))])])
+  }))]) : _c('div', {
+    staticClass: ["wrap", "tab-bar"]
+  }, _vm._l((_vm.tabBars), function(tabBar, t) {
+    return _c('div', {
+      key: t,
+      ref: tabBar.id + t,
+      refInFor: true,
+      staticClass: ["tab-bar-item"],
+      on: {
+        "click": function($event) {
+          _vm.change(t)
+        }
+      }
+    }, [_c('text', {
+      staticClass: ["tab-bar-title"],
+      class: [_vm.tabIndex === t ? 'active' : '']
+    }, [_vm._v(_vm._s(tabBar.name))])])
+  }))])
+},staticRenderFns: []}
 
-};var _default =
-{
-  request: request,
-  requestLoading: requestLoading,
-  requestLoadingNew: requestLoadingNew,
-  uploadImage: uploadImage };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js */ "./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus-nvue/dist/index.js")["default"]))
+/***/ }),
+
+/***/ "./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-39404bb6!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue":
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/weex-vue-loader/lib/template-compiler.js?id=data-v-39404bb6!./node_modules/weex-vue-loader/lib/selector.js?type=template&index=0!/Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/uni-media-list/uni-media-list.nvue ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
+    staticClass: ["list-cell"],
+    on: {
+      "click": _vm.bindClick
+    }
+  }, [(_vm.data.title) ? _c('div', {
+    staticClass: ["media-list"]
+  }, [_c('div', {
+    class: [_vm.isImgRight ? 'media-image-right' : '', _vm.isImgLeft ? 'media-image-left' : '']
+  }, [_c('text', {
+    class: ['media-title', _vm.isImgRight || _vm.isImgLeft ? 'media-title2' : '']
+  }, [_vm._v(_vm._s(_vm.data.title))]), (_vm.showImg) ? _c('div', {
+    class: ['image-section', _vm.isImgRight ? 'image-section-right' : '', _vm.isImgLeft ? 'image-section-left' : '']
+  }, [(_vm.data.image_url) ? _c('image', {
+    class: ['image-list1', _vm.isImgRight || _vm.isImgLeft ? 'image-list2' : ''],
+    attrs: {
+      "src": _vm.data.image_url
+    }
+  }) : _vm._e(), _vm._l((_vm.data.image_list), function(source, i) {
+    return (_vm.data.image_list) ? _c('image', {
+      key: i,
+      staticClass: ["image-list3"],
+      attrs: {
+        "src": source.url
+      }
+    }) : _vm._e()
+  })], 2) : _vm._e()]), _c('div', {
+    staticClass: ["media-foot"]
+  }, [_c('div', {
+    staticClass: ["media-info"]
+  }, [_c('text', {
+    staticClass: ["info-text"]
+  }, [_vm._v(_vm._s(_vm.data.source))]), _c('text', {
+    staticClass: ["info-text"]
+  }, [_vm._v(_vm._s(_vm.data.comment_count))]), _c('text', {
+    staticClass: ["info-text"]
+  }, [_vm._v(_vm._s(_vm.data.datetime))])])])]) : _vm._e()])])
+},staticRenderFns: []}
 
 /***/ })
 
