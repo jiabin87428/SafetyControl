@@ -773,6 +773,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* 轮播图 */
 .part2{  
   display: -webkit-box;  
@@ -859,7 +869,7 @@
 }
 .dangerText {
 	width: 100%;
-	font-size: 16rpx;
+	font-size: 20rpx;
 	color: #898989;
 	text-align: center;
 }

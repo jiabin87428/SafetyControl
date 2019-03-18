@@ -457,6 +457,12 @@
 				</view>
 			  <view class='dangerView'>
 			  </view>
+				<view class='dangerView'>
+				</view>
+				<view class='dangerView'>
+				</view>
+				<view class='dangerView'>
+				</view>
 			</view>
 			
 			<view class="titleView_pc">
@@ -661,6 +667,10 @@
 				    <text class='dangerText'>特殊动火</text>
 				  </view>
 				</view>
+				<view class='dangerView'>
+				</view>
+				<view class='dangerView'>
+				</view>
 			</view>
 		</block>
 	</view>
@@ -819,7 +829,7 @@
 	}
 	.dangerText {
 		width: 100%;
-		font-size: 16upx;
+		font-size: 20upx;
 		color: #898989;
 		text-align: center;
 	}
