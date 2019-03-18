@@ -10,7 +10,7 @@ var requirePlugin = requirePlugin || function() {};
 var Behavior = Behavior || function() {};
 var $gwx;
   
-/*v0.5vv_20181221_syb_scopedata*/global.__wcc_version__='v0.5vv_20181221_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
+/*v0.5vv_20181116_syb_scopedata*/global.__wcc_version__='v0.5vv_20181116_syb_scopedata';global.__wcc_version_info__={"customComponents":true,"fixZeroRpx":true,"propValueDeepCopy":false};
 var $gwxc
 var $gaic={}
 $gwx=function(path,global){
@@ -650,32 +650,34 @@ return false;
 function _da( node, attrname, opindex, raw, o )
 {
 var isaffected = false;
-var value = $gdc( raw, "", 2 );
-if ( o.ap && value && value.constructor===Function ) 
-{
-attrname = "$wxs:" + attrname; 
-node.attr["$gdc"] = $gdc;
-}
 if ( o.is_affected || _ca(raw) ) 
 {
 node.n.push( attrname );
 node.raw[attrname] = raw;
+var value = $gdc( raw, "", 2 );
+return value;
 }
-node.attr[attrname] = value;
+else
+{
+var value = $gdc( raw, "", 2 );
+return value;
+}
 }
 function _r( node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-_da( node, attrname, opindex, a, o );
+a = _da( node, attrname, opindex, a, o );
+node.attr[attrname] = a;
 }
 function _rz( z, node, attrname, opindex, env, scope, global ) 
 {
 global.opindex=opindex;
 var o = {}, _env;
 var a = grb( z[opindex], env, scope, global, o );
-_da( node, attrname, opindex, a, o );
+a = _da( node, attrname, opindex, a, o );
+node.attr[attrname] = a;
 }
 function _o( opindex, env, scope, global )
 {
@@ -1058,6 +1060,7 @@ function gz$gwx_1(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_1)return __WXML_GLOBAL__.ops_cached.$gwx_1
 __WXML_GLOBAL__.ops_cached.$gwx_1=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'58792338-default-58792338-10'])
 Z([3,'21b694de-default-21b694de-6'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'30c48a99'])
@@ -1065,8 +1068,8 @@ Z([3,'false'])
 Z([3,'true'])
 Z([3,'点位编号'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
 Z([3,'检查人'])
 Z([3,'handleProxy'])
 Z([3,'_picker 21b694de'])
@@ -1075,260 +1078,252 @@ Z([1,'21b694de-0'])
 Z([3,'date'])
 Z([[6],[[7],[3,'obj']],[3,'jcrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
+Z(z[3])
 Z([3,'检查日期'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
 Z([3,'责任部门'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
 Z([3,'楼层'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
 Z([3,'位置'])
 Z([3,'21b694de-default-21b694de-11'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[6],[[7],[3,'obj']],[3,'sublist']])
-Z(z[32])
-Z(z[10])
+Z(z[33])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
+Z(z[13])
 Z([[2,'+'],[1,'21b694de-1-'],[[7],[3,'index']]])
-Z(z[2])
-Z(z[4])
-Z([3,'58792338-default-58792338-10'])
+Z(z[3])
+Z(z[5])
 Z([3,'7be27b0c-default-7be27b0c-6'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
 Z(z[4])
 Z(z[5])
+Z(z[6])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
-Z(z[9])
+Z(z[4])
 Z(z[10])
+Z(z[11])
 Z([3,'_picker 7be27b0c'])
-Z(z[12])
+Z(z[13])
 Z([1,'7be27b0c-0'])
-Z(z[14])
 Z(z[15])
+Z(z[16])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
-Z(z[18])
+Z(z[3])
+Z(z[19])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
-Z(z[22])
+Z(z[4])
+Z(z[23])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
-Z(z[26])
+Z(z[4])
+Z(z[27])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
-Z(z[30])
+Z(z[4])
+Z(z[31])
 Z([3,'7be27b0c-default-7be27b0c-11'])
-Z(z[32])
 Z(z[33])
 Z(z[34])
-Z(z[32])
-Z(z[10])
+Z(z[35])
+Z(z[33])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'7be27b0c-10-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
+Z(z[13])
 Z([[2,'+'],[1,'7be27b0c-1-'],[[7],[3,'index']]])
-Z(z[2])
-Z(z[4])
-Z([3,'00eed4f4-default-00eed4f4-1'])
-Z([3,'7e389618-default-7e389618-1'])
-Z([3,'1b853e3c-default-1b853e3c-2'])
-Z(z[32])
-Z([3,'name'])
-Z([[7],[3,'xLine']])
-Z(z[32])
-Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'1b853e3c-1-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
-Z([3,'1b853e3c-default-1b853e3c-3'])
+Z(z[5])
+Z([3,'00eed4f4-default-00eed4f4-1'])
 Z([3,'72ed35ad-default-72ed35ad-7'])
-Z(z[10])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
+Z(z[13])
 Z([1,'72ed35ad-0'])
-Z(z[2])
-Z(z[4])
+Z(z[3])
+Z(z[5])
 Z([3,'隐患描述'])
-Z(z[10])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
+Z(z[13])
 Z([1,'72ed35ad-1'])
-Z(z[2])
-Z(z[4])
+Z(z[3])
+Z(z[5])
 Z([3,'隐患级别'])
-Z(z[10])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
+Z(z[13])
 Z([1,'72ed35ad-2'])
-Z(z[2])
-Z(z[4])
+Z(z[3])
+Z(z[5])
 Z([3,'隐患分类'])
-Z(z[10])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
+Z(z[13])
 Z([1,'72ed35ad-3'])
-Z(z[2])
-Z(z[4])
+Z(z[3])
+Z(z[5])
 Z([3,'对应条款'])
-Z(z[10])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
+Z(z[13])
 Z([1,'72ed35ad-4'])
-Z(z[2])
-Z(z[4])
+Z(z[3])
+Z(z[5])
 Z([3,'整改建议'])
 Z([3,'77f549ab-default-77f549ab-7'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-0']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
 Z([3,'发现人'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
-Z(z[22])
+Z(z[4])
+Z(z[23])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-2']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
-Z(z[110])
+Z(z[4])
+Z(z[100])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-3']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
 Z([3,'隐患后果'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-4']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
 Z([3,'不合格因素'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-5']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
-Z(z[124])
+Z(z[4])
+Z(z[114])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-6']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
 Z([3,'整改要求及建议'])
 Z([3,'77f549ab-default-77f549ab-12'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-8']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
 Z([3,'填报人'])
-Z(z[10])
+Z(z[11])
 Z([3,'_picker 77f549ab'])
-Z(z[12])
+Z(z[13])
 Z([1,'77f549ab-3'])
-Z(z[14])
+Z(z[15])
 Z([[7],[3,'zgqx']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-9']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
+Z(z[3])
 Z([3,'整改期限'])
-Z(z[10])
-Z(z[167])
-Z(z[12])
+Z(z[11])
+Z(z[157])
+Z(z[13])
 Z([1,'77f549ab-4'])
-Z(z[14])
+Z(z[15])
 Z([[7],[3,'txrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-10']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
+Z(z[3])
 Z([3,'填写日期'])
-Z(z[10])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-11']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
+Z(z[13])
 Z([1,'77f549ab-5'])
-Z(z[2])
+Z(z[3])
 Z([3,'整改意见'])
 Z([3,'77f549ab-default-77f549ab-18'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-13']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
 Z([3,'整改人'])
-Z(z[10])
-Z(z[167])
-Z(z[12])
+Z(z[11])
+Z(z[157])
+Z(z[13])
 Z([1,'77f549ab-6'])
-Z(z[14])
+Z(z[15])
 Z([[7],[3,'zgwcrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-14']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
+Z(z[3])
 Z([3,'整改完成日期'])
-Z(z[10])
-Z(z[167])
-Z(z[12])
+Z(z[11])
+Z(z[157])
+Z(z[13])
 Z([1,'77f549ab-7'])
-Z(z[14])
+Z(z[15])
 Z([[7],[3,'tbrq']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-15']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
+Z(z[3])
 Z([3,'填报日期'])
-Z(z[10])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-16']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
+Z(z[13])
 Z([1,'77f549ab-8'])
-Z(z[2])
+Z(z[3])
 Z([3,'治理资金'])
-Z(z[10])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-17']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
+Z(z[13])
 Z([1,'77f549ab-9'])
-Z(z[2])
+Z(z[3])
 Z([3,'整改情况'])
 Z([3,'77f549ab-default-77f549ab-23'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-19']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
 Z(z[3])
+Z(z[4])
 Z([3,'验证人'])
-Z(z[10])
-Z(z[167])
-Z(z[12])
+Z(z[11])
+Z(z[157])
+Z(z[13])
 Z([1,'77f549ab-13'])
-Z(z[14])
+Z(z[15])
 Z([[7],[3,'tbrq2']])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-20']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[2])
-Z(z[212])
-Z(z[10])
+Z(z[3])
+Z(z[202])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-21']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
+Z(z[13])
 Z([1,'77f549ab-14'])
-Z(z[2])
+Z(z[3])
 Z([3,'原因分析'])
-Z(z[10])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-22']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
+Z(z[13])
 Z([1,'77f549ab-15'])
-Z(z[2])
+Z(z[3])
 Z([3,'验证情况'])
 Z([3,'77f549ab-default-77f549ab-25'])
-Z(z[10])
+Z(z[11])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-24']]]]],[[8],'$root',[[7],[3,'$root']]]])
-Z(z[12])
+Z(z[13])
 Z([1,'77f549ab-19'])
-Z(z[2])
-Z(z[4])
+Z(z[3])
+Z(z[5])
 Z([3,'请选择即将跳转节点'])
+Z([3,'7e389618-default-7e389618-1'])
+Z([3,'1b853e3c-default-1b853e3c-2'])
+Z(z[33])
+Z([3,'name'])
+Z([[7],[3,'xLine']])
+Z(z[33])
+Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[2,'+'],[[7],[3,'$kk']],[1,'1b853e3c-1-']],[[7],[3,'index']]]]]],[[8],'$root',[[7],[3,'$root']]]])
+Z(z[3])
+Z(z[4])
+Z([3,'1b853e3c-default-1b853e3c-3'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_1);return __WXML_GLOBAL__.ops_cached.$gwx_1
 }
 function gz$gwx_2(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_2)return __WXML_GLOBAL__.ops_cached.$gwx_2
 __WXML_GLOBAL__.ops_cached.$gwx_2=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'4dfb5300'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_2);return __WXML_GLOBAL__.ops_cached.$gwx_2
-}
-function gz$gwx_3(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_3)return __WXML_GLOBAL__.ops_cached.$gwx_3
-__WXML_GLOBAL__.ops_cached.$gwx_3=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'3c97b91b'])
 Z([[7],[3,'animationData']])
@@ -1344,11 +1339,11 @@ Z([1,'3c97b91b-1'])
 Z([a,[3,' '],[[2,'+'],[[2,'+'],[1,'width:'],[[2,'+'],[[6],[[7],[3,'option']],[3,'width']],[1,'%']]],[1,';']]])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[7],[3,'$k']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([[2,'||'],[[7],[3,'$slotdefault']],[1,'default']])
-})(__WXML_GLOBAL__.ops_cached.$gwx_3);return __WXML_GLOBAL__.ops_cached.$gwx_3
+})(__WXML_GLOBAL__.ops_cached.$gwx_2);return __WXML_GLOBAL__.ops_cached.$gwx_2
 }
-function gz$gwx_4(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_4)return __WXML_GLOBAL__.ops_cached.$gwx_4
-__WXML_GLOBAL__.ops_cached.$gwx_4=[];
+function gz$gwx_3(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_3)return __WXML_GLOBAL__.ops_cached.$gwx_3
+__WXML_GLOBAL__.ops_cached.$gwx_3=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'590c6f9d'])
 Z([[7],[3,'visibleSync']])
@@ -1357,26 +1352,26 @@ Z([a,[3,'_view 590c6f9d uni-drawer '],[[4],[[5],[[5],[[2,'?:'],[[7],[3,'showDraw
 Z([3,'default'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[7],[3,'$k']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([[2,'||'],[[7],[3,'$slotdefault']],[1,'default']])
+})(__WXML_GLOBAL__.ops_cached.$gwx_3);return __WXML_GLOBAL__.ops_cached.$gwx_3
+}
+function gz$gwx_4(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_4)return __WXML_GLOBAL__.ops_cached.$gwx_4
+__WXML_GLOBAL__.ops_cached.$gwx_4=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'68dcfa4a'])
+Z([[7],[3,'text']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_4);return __WXML_GLOBAL__.ops_cached.$gwx_4
 }
 function gz$gwx_5(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_5)return __WXML_GLOBAL__.ops_cached.$gwx_5
 __WXML_GLOBAL__.ops_cached.$gwx_5=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'68dcfa4a'])
-Z([[7],[3,'text']])
+Z([3,'346bda0d'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_5);return __WXML_GLOBAL__.ops_cached.$gwx_5
 }
 function gz$gwx_6(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_6)return __WXML_GLOBAL__.ops_cached.$gwx_6
 __WXML_GLOBAL__.ops_cached.$gwx_6=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'346bda0d'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_6);return __WXML_GLOBAL__.ops_cached.$gwx_6
-}
-function gz$gwx_7(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_7)return __WXML_GLOBAL__.ops_cached.$gwx_7
-__WXML_GLOBAL__.ops_cached.$gwx_7=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'30c48a99'])
 Z([3,'handleProxy'])
@@ -1403,29 +1398,29 @@ Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],
 Z(z[10])
 Z([3,'20'])
 Z([3,'arrowright'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_7);return __WXML_GLOBAL__.ops_cached.$gwx_7
+})(__WXML_GLOBAL__.ops_cached.$gwx_6);return __WXML_GLOBAL__.ops_cached.$gwx_6
 }
-function gz$gwx_8(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_8)return __WXML_GLOBAL__.ops_cached.$gwx_8
-__WXML_GLOBAL__.ops_cached.$gwx_8=[];
+function gz$gwx_7(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_7)return __WXML_GLOBAL__.ops_cached.$gwx_7
+__WXML_GLOBAL__.ops_cached.$gwx_7=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'3b6bb3ad'])
 Z([3,'_view 3b6bb3ad uni-list'])
 Z([3,'default'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[7],[3,'$k']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z([[2,'||'],[[7],[3,'$slotdefault']],[1,'default']])
+})(__WXML_GLOBAL__.ops_cached.$gwx_7);return __WXML_GLOBAL__.ops_cached.$gwx_7
+}
+function gz$gwx_8(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_8)return __WXML_GLOBAL__.ops_cached.$gwx_8
+__WXML_GLOBAL__.ops_cached.$gwx_8=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'2241d2a0'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_8);return __WXML_GLOBAL__.ops_cached.$gwx_8
 }
 function gz$gwx_9(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_9)return __WXML_GLOBAL__.ops_cached.$gwx_9
 __WXML_GLOBAL__.ops_cached.$gwx_9=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'2241d2a0'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_9);return __WXML_GLOBAL__.ops_cached.$gwx_9
-}
-function gz$gwx_10(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
-__WXML_GLOBAL__.ops_cached.$gwx_10=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'7dcb1efb'])
 Z([3,'_view 7dcb1efb m-input-view'])
@@ -1446,34 +1441,34 @@ Z([1,'7dcb1efb-2'])
 Z(z[8])
 Z(z[9])
 Z([3,'eye'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_9);return __WXML_GLOBAL__.ops_cached.$gwx_9
+}
+function gz$gwx_10(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
+__WXML_GLOBAL__.ops_cached.$gwx_10=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'53499e7e'])
+Z([[7],[3,'canvasId']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
 }
 function gz$gwx_11(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_11)return __WXML_GLOBAL__.ops_cached.$gwx_11
 __WXML_GLOBAL__.ops_cached.$gwx_11=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'53499e7e'])
-Z([[7],[3,'canvasId']])
+Z([3,'ab7aaa6c'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_11);return __WXML_GLOBAL__.ops_cached.$gwx_11
 }
 function gz$gwx_12(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_12)return __WXML_GLOBAL__.ops_cached.$gwx_12
 __WXML_GLOBAL__.ops_cached.$gwx_12=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'ab7aaa6c'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_12);return __WXML_GLOBAL__.ops_cached.$gwx_12
 }
 function gz$gwx_13(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_13)return __WXML_GLOBAL__.ops_cached.$gwx_13
 __WXML_GLOBAL__.ops_cached.$gwx_13=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'ab7aaa6c'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_13);return __WXML_GLOBAL__.ops_cached.$gwx_13
-}
-function gz$gwx_14(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_14)return __WXML_GLOBAL__.ops_cached.$gwx_14
-__WXML_GLOBAL__.ops_cached.$gwx_14=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'72ed35ad'])
 Z([3,'_view 72ed35ad cellInfoView'])
@@ -1487,19 +1482,19 @@ Z(z[4])
 Z([3,'责任部门'])
 Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'72ed35ad-7']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'72ed35ad-default-72ed35ad-7']]])
 Z([3,'3b6bb3ad'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_13);return __WXML_GLOBAL__.ops_cached.$gwx_13
+}
+function gz$gwx_14(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_14)return __WXML_GLOBAL__.ops_cached.$gwx_14
+__WXML_GLOBAL__.ops_cached.$gwx_14=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'72ed35ad'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_14);return __WXML_GLOBAL__.ops_cached.$gwx_14
 }
 function gz$gwx_15(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_15)return __WXML_GLOBAL__.ops_cached.$gwx_15
 __WXML_GLOBAL__.ops_cached.$gwx_15=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'72ed35ad'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_15);return __WXML_GLOBAL__.ops_cached.$gwx_15
-}
-function gz$gwx_16(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_16)return __WXML_GLOBAL__.ops_cached.$gwx_16
-__WXML_GLOBAL__.ops_cached.$gwx_16=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'77f549ab'])
 Z([3,'_view 77f549ab baseView'])
@@ -1513,19 +1508,19 @@ Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$roo
 Z(z[3])
 Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'77f549ab-25']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'77f549ab-default-77f549ab-25']]])
 Z(z[3])
+})(__WXML_GLOBAL__.ops_cached.$gwx_15);return __WXML_GLOBAL__.ops_cached.$gwx_15
+}
+function gz$gwx_16(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_16)return __WXML_GLOBAL__.ops_cached.$gwx_16
+__WXML_GLOBAL__.ops_cached.$gwx_16=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'77f549ab'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_16);return __WXML_GLOBAL__.ops_cached.$gwx_16
 }
 function gz$gwx_17(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_17)return __WXML_GLOBAL__.ops_cached.$gwx_17
 __WXML_GLOBAL__.ops_cached.$gwx_17=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'77f549ab'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_17);return __WXML_GLOBAL__.ops_cached.$gwx_17
-}
-function gz$gwx_18(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_18)return __WXML_GLOBAL__.ops_cached.$gwx_18
-__WXML_GLOBAL__.ops_cached.$gwx_18=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'4ef7e761'])
 Z([3,'handleProxy'])
@@ -1536,19 +1531,19 @@ Z([3,'7dcb1efb'])
 Z([3,'请输入域名'])
 Z([3,'text'])
 Z([[7],[3,'host']])
+})(__WXML_GLOBAL__.ops_cached.$gwx_17);return __WXML_GLOBAL__.ops_cached.$gwx_17
+}
+function gz$gwx_18(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_18)return __WXML_GLOBAL__.ops_cached.$gwx_18
+__WXML_GLOBAL__.ops_cached.$gwx_18=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'4ef7e761'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_18);return __WXML_GLOBAL__.ops_cached.$gwx_18
 }
 function gz$gwx_19(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_19)return __WXML_GLOBAL__.ops_cached.$gwx_19
 __WXML_GLOBAL__.ops_cached.$gwx_19=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'4ef7e761'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_19);return __WXML_GLOBAL__.ops_cached.$gwx_19
-}
-function gz$gwx_20(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_20)return __WXML_GLOBAL__.ops_cached.$gwx_20
-__WXML_GLOBAL__.ops_cached.$gwx_20=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'2d8d4fae'])
 Z([3,'_view 2d8d4fae content'])
@@ -1570,19 +1565,19 @@ Z([3,'请输入密码'])
 Z([3,'password'])
 Z([[7],[3,'password']])
 Z([[7],[3,'hasProvider']])
+})(__WXML_GLOBAL__.ops_cached.$gwx_19);return __WXML_GLOBAL__.ops_cached.$gwx_19
+}
+function gz$gwx_20(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_20)return __WXML_GLOBAL__.ops_cached.$gwx_20
+__WXML_GLOBAL__.ops_cached.$gwx_20=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'2d8d4fae'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_20);return __WXML_GLOBAL__.ops_cached.$gwx_20
 }
 function gz$gwx_21(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_21)return __WXML_GLOBAL__.ops_cached.$gwx_21
 __WXML_GLOBAL__.ops_cached.$gwx_21=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'2d8d4fae'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_21);return __WXML_GLOBAL__.ops_cached.$gwx_21
-}
-function gz$gwx_22(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_22)return __WXML_GLOBAL__.ops_cached.$gwx_22
-__WXML_GLOBAL__.ops_cached.$gwx_22=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'00cb397a'])
 Z([3,'_view 00cb397a baseView'])
@@ -1591,34 +1586,34 @@ Z([[2,'!='],[[7],[3,'userType']],[1,1]])
 Z([3,'_view 00cb397a middleView'])
 Z(z[2])
 Z(z[2])
+})(__WXML_GLOBAL__.ops_cached.$gwx_21);return __WXML_GLOBAL__.ops_cached.$gwx_21
+}
+function gz$gwx_22(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_22)return __WXML_GLOBAL__.ops_cached.$gwx_22
+__WXML_GLOBAL__.ops_cached.$gwx_22=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'00cb397a'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_22);return __WXML_GLOBAL__.ops_cached.$gwx_22
 }
 function gz$gwx_23(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_23)return __WXML_GLOBAL__.ops_cached.$gwx_23
 __WXML_GLOBAL__.ops_cached.$gwx_23=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'00cb397a'])
+Z([3,'47b16668'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_23);return __WXML_GLOBAL__.ops_cached.$gwx_23
 }
 function gz$gwx_24(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_24)return __WXML_GLOBAL__.ops_cached.$gwx_24
 __WXML_GLOBAL__.ops_cached.$gwx_24=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'47b16668'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_24);return __WXML_GLOBAL__.ops_cached.$gwx_24
 }
 function gz$gwx_25(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_25)return __WXML_GLOBAL__.ops_cached.$gwx_25
 __WXML_GLOBAL__.ops_cached.$gwx_25=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'47b16668'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_25);return __WXML_GLOBAL__.ops_cached.$gwx_25
-}
-function gz$gwx_26(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_26)return __WXML_GLOBAL__.ops_cached.$gwx_26
-__WXML_GLOBAL__.ops_cached.$gwx_26=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'00eed4f4'])
 Z([3,'_view 00eed4f4 container'])
@@ -1628,19 +1623,19 @@ Z([3,'53499e7e'])
 Z([3,'pieChart'])
 Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'00eed4f4-1']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'00eed4f4-default-00eed4f4-1']]])
 Z([3,'3c97b91b'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_25);return __WXML_GLOBAL__.ops_cached.$gwx_25
+}
+function gz$gwx_26(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_26)return __WXML_GLOBAL__.ops_cached.$gwx_26
+__WXML_GLOBAL__.ops_cached.$gwx_26=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'00eed4f4'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_26);return __WXML_GLOBAL__.ops_cached.$gwx_26
 }
 function gz$gwx_27(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_27)return __WXML_GLOBAL__.ops_cached.$gwx_27
 __WXML_GLOBAL__.ops_cached.$gwx_27=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'00eed4f4'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_27);return __WXML_GLOBAL__.ops_cached.$gwx_27
-}
-function gz$gwx_28(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_28)return __WXML_GLOBAL__.ops_cached.$gwx_28
-__WXML_GLOBAL__.ops_cached.$gwx_28=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'7e389618'])
 Z([3,'_view 7e389618 container'])
@@ -1650,19 +1645,19 @@ Z([3,'53499e7e'])
 Z([3,'pieChart'])
 Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'7e389618-1']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'7e389618-default-7e389618-1']]])
 Z([3,'3c97b91b'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_27);return __WXML_GLOBAL__.ops_cached.$gwx_27
+}
+function gz$gwx_28(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_28)return __WXML_GLOBAL__.ops_cached.$gwx_28
+__WXML_GLOBAL__.ops_cached.$gwx_28=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'7e389618'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_28);return __WXML_GLOBAL__.ops_cached.$gwx_28
 }
 function gz$gwx_29(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_29)return __WXML_GLOBAL__.ops_cached.$gwx_29
 __WXML_GLOBAL__.ops_cached.$gwx_29=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'7e389618'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_29);return __WXML_GLOBAL__.ops_cached.$gwx_29
-}
-function gz$gwx_30(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_30)return __WXML_GLOBAL__.ops_cached.$gwx_30
-__WXML_GLOBAL__.ops_cached.$gwx_30=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'18e9acfc'])
 Z([3,'_view 18e9acfc container'])
@@ -1674,19 +1669,19 @@ Z([3,'line'])
 Z([[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'18e9acfc-1']]]]],[[8],'$root',[[7],[3,'$root']]]])
 Z(z[4])
 Z([3,'lineChart'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_29);return __WXML_GLOBAL__.ops_cached.$gwx_29
+}
+function gz$gwx_30(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_30)return __WXML_GLOBAL__.ops_cached.$gwx_30
+__WXML_GLOBAL__.ops_cached.$gwx_30=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'18e9acfc'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_30);return __WXML_GLOBAL__.ops_cached.$gwx_30
 }
 function gz$gwx_31(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_31)return __WXML_GLOBAL__.ops_cached.$gwx_31
 __WXML_GLOBAL__.ops_cached.$gwx_31=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'18e9acfc'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_31);return __WXML_GLOBAL__.ops_cached.$gwx_31
-}
-function gz$gwx_32(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_32)return __WXML_GLOBAL__.ops_cached.$gwx_32
-__WXML_GLOBAL__.ops_cached.$gwx_32=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'1b853e3c'])
 Z([3,'_view 1b853e3c baseView'])
@@ -1698,19 +1693,19 @@ Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$roo
 Z([3,'3b6bb3ad'])
 Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'1b853e3c-3']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'1b853e3c-default-1b853e3c-3']]])
 Z([3,'3c97b91b'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_31);return __WXML_GLOBAL__.ops_cached.$gwx_31
+}
+function gz$gwx_32(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_32)return __WXML_GLOBAL__.ops_cached.$gwx_32
+__WXML_GLOBAL__.ops_cached.$gwx_32=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'1b853e3c'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_32);return __WXML_GLOBAL__.ops_cached.$gwx_32
 }
 function gz$gwx_33(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_33)return __WXML_GLOBAL__.ops_cached.$gwx_33
 __WXML_GLOBAL__.ops_cached.$gwx_33=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'1b853e3c'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_33);return __WXML_GLOBAL__.ops_cached.$gwx_33
-}
-function gz$gwx_34(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_34)return __WXML_GLOBAL__.ops_cached.$gwx_34
-__WXML_GLOBAL__.ops_cached.$gwx_34=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'7be27b0c'])
 Z([3,'_view 7be27b0c baseView'])
@@ -1737,37 +1732,37 @@ Z(z[3])
 Z([3,'_view 7be27b0c btnView'])
 Z([[7],[3,'showSave']])
 Z([[7],[3,'showClose']])
+})(__WXML_GLOBAL__.ops_cached.$gwx_33);return __WXML_GLOBAL__.ops_cached.$gwx_33
+}
+function gz$gwx_34(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_34)return __WXML_GLOBAL__.ops_cached.$gwx_34
+__WXML_GLOBAL__.ops_cached.$gwx_34=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'7be27b0c'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_34);return __WXML_GLOBAL__.ops_cached.$gwx_34
 }
 function gz$gwx_35(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_35)return __WXML_GLOBAL__.ops_cached.$gwx_35
 __WXML_GLOBAL__.ops_cached.$gwx_35=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'7be27b0c'])
+Z([3,'4bd08622'])
+Z([3,'_view 4bd08622 cellInfoView'])
+Z([[2,'=='],[[6],[[7],[3,'item']],[3,'jcjl']],[1,'异常']])
+Z([[2,'!='],[[6],[[7],[3,'item']],[3,'id']],[1,'']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_35);return __WXML_GLOBAL__.ops_cached.$gwx_35
 }
 function gz$gwx_36(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_36)return __WXML_GLOBAL__.ops_cached.$gwx_36
 __WXML_GLOBAL__.ops_cached.$gwx_36=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'4bd08622'])
-Z([3,'_view 4bd08622 cellInfoView'])
-Z([[2,'=='],[[6],[[7],[3,'item']],[3,'jcjl']],[1,'异常']])
-Z([[2,'!='],[[6],[[7],[3,'item']],[3,'id']],[1,'']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_36);return __WXML_GLOBAL__.ops_cached.$gwx_36
 }
 function gz$gwx_37(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_37)return __WXML_GLOBAL__.ops_cached.$gwx_37
 __WXML_GLOBAL__.ops_cached.$gwx_37=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'4bd08622'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_37);return __WXML_GLOBAL__.ops_cached.$gwx_37
-}
-function gz$gwx_38(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_38)return __WXML_GLOBAL__.ops_cached.$gwx_38
-__WXML_GLOBAL__.ops_cached.$gwx_38=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'10bbdf1a'])
 Z([3,'_view 10bbdf1a part2'])
@@ -1781,19 +1776,19 @@ Z(z[3])
 Z(z[3])
 Z([[2,'=='],[[7],[3,'currentTemplate']],[1,1]])
 Z([[2,'=='],[[7],[3,'currentTemplate']],[1,2]])
+})(__WXML_GLOBAL__.ops_cached.$gwx_37);return __WXML_GLOBAL__.ops_cached.$gwx_37
+}
+function gz$gwx_38(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_38)return __WXML_GLOBAL__.ops_cached.$gwx_38
+__WXML_GLOBAL__.ops_cached.$gwx_38=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'10bbdf1a'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_38);return __WXML_GLOBAL__.ops_cached.$gwx_38
 }
 function gz$gwx_39(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_39)return __WXML_GLOBAL__.ops_cached.$gwx_39
 __WXML_GLOBAL__.ops_cached.$gwx_39=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'10bbdf1a'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_39);return __WXML_GLOBAL__.ops_cached.$gwx_39
-}
-function gz$gwx_40(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_40)return __WXML_GLOBAL__.ops_cached.$gwx_40
-__WXML_GLOBAL__.ops_cached.$gwx_40=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'21b694de'])
 Z([3,'_view 21b694de baseView'])
@@ -1817,19 +1812,19 @@ Z(z[8])
 Z([3,'clear'])
 Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'21b694de-11']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'21b694de-default-21b694de-11']]])
 Z(z[3])
+})(__WXML_GLOBAL__.ops_cached.$gwx_39);return __WXML_GLOBAL__.ops_cached.$gwx_39
+}
+function gz$gwx_40(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_40)return __WXML_GLOBAL__.ops_cached.$gwx_40
+__WXML_GLOBAL__.ops_cached.$gwx_40=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'21b694de'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_40);return __WXML_GLOBAL__.ops_cached.$gwx_40
 }
 function gz$gwx_41(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_41)return __WXML_GLOBAL__.ops_cached.$gwx_41
 __WXML_GLOBAL__.ops_cached.$gwx_41=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'21b694de'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_41);return __WXML_GLOBAL__.ops_cached.$gwx_41
-}
-function gz$gwx_42(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_42)return __WXML_GLOBAL__.ops_cached.$gwx_42
-__WXML_GLOBAL__.ops_cached.$gwx_42=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'58792338'])
 Z([3,'handleProxy'])
@@ -1843,19 +1838,19 @@ Z([1,'58792338-11'])
 Z([3,'true'])
 Z([[9],[[9],[[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[10],[[6],[[7],[3,'$root']],[[2,'+'],[[7],[3,'$kk']],[1,'58792338-10']]]]],[[8],'$root',[[7],[3,'$root']]]],[[8],'$slotdefault',[1,'58792338-default-58792338-10']]])
 Z([3,'590c6f9d'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_41);return __WXML_GLOBAL__.ops_cached.$gwx_41
+}
+function gz$gwx_42(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_42)return __WXML_GLOBAL__.ops_cached.$gwx_42
+__WXML_GLOBAL__.ops_cached.$gwx_42=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'58792338'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_42);return __WXML_GLOBAL__.ops_cached.$gwx_42
 }
 function gz$gwx_43(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_43)return __WXML_GLOBAL__.ops_cached.$gwx_43
 __WXML_GLOBAL__.ops_cached.$gwx_43=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'58792338'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_43);return __WXML_GLOBAL__.ops_cached.$gwx_43
-}
-function gz$gwx_44(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_44)return __WXML_GLOBAL__.ops_cached.$gwx_44
-__WXML_GLOBAL__.ops_cached.$gwx_44=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'15ee3d3a'])
 Z([3,'_view 15ee3d3a baseView'])
@@ -2000,20 +1995,28 @@ Z([1,'15ee3d3a-21'])
 Z(z[7])
 Z([3,'false'])
 Z([3,'安全措施选择器'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_43);return __WXML_GLOBAL__.ops_cached.$gwx_43
+}
+function gz$gwx_44(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_44)return __WXML_GLOBAL__.ops_cached.$gwx_44
+__WXML_GLOBAL__.ops_cached.$gwx_44=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'15ee3d3a'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_44);return __WXML_GLOBAL__.ops_cached.$gwx_44
 }
 function gz$gwx_45(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_45)return __WXML_GLOBAL__.ops_cached.$gwx_45
 __WXML_GLOBAL__.ops_cached.$gwx_45=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'15ee3d3a'])
+Z([3,'11e63791'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_45);return __WXML_GLOBAL__.ops_cached.$gwx_45
 }
 function gz$gwx_46(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_46)return __WXML_GLOBAL__.ops_cached.$gwx_46
 __WXML_GLOBAL__.ops_cached.$gwx_46=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'11e63791'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_46);return __WXML_GLOBAL__.ops_cached.$gwx_46
 }
@@ -2021,14 +2024,14 @@ function gz$gwx_47(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_47)return __WXML_GLOBAL__.ops_cached.$gwx_47
 __WXML_GLOBAL__.ops_cached.$gwx_47=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'11e63791'])
+Z([3,'2d1004c9'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_47);return __WXML_GLOBAL__.ops_cached.$gwx_47
 }
 function gz$gwx_48(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_48)return __WXML_GLOBAL__.ops_cached.$gwx_48
 __WXML_GLOBAL__.ops_cached.$gwx_48=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'2d1004c9'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_48);return __WXML_GLOBAL__.ops_cached.$gwx_48
 }
@@ -2036,14 +2039,14 @@ function gz$gwx_49(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_49)return __WXML_GLOBAL__.ops_cached.$gwx_49
 __WXML_GLOBAL__.ops_cached.$gwx_49=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'2d1004c9'])
+Z([3,'2ae3e004'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_49);return __WXML_GLOBAL__.ops_cached.$gwx_49
 }
 function gz$gwx_50(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_50)return __WXML_GLOBAL__.ops_cached.$gwx_50
 __WXML_GLOBAL__.ops_cached.$gwx_50=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'2ae3e004'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_50);return __WXML_GLOBAL__.ops_cached.$gwx_50
 }
@@ -2051,14 +2054,14 @@ function gz$gwx_51(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_51)return __WXML_GLOBAL__.ops_cached.$gwx_51
 __WXML_GLOBAL__.ops_cached.$gwx_51=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'2ae3e004'])
+Z([3,'d419ecaa'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_51);return __WXML_GLOBAL__.ops_cached.$gwx_51
 }
 function gz$gwx_52(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_52)return __WXML_GLOBAL__.ops_cached.$gwx_52
 __WXML_GLOBAL__.ops_cached.$gwx_52=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'d419ecaa'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_52);return __WXML_GLOBAL__.ops_cached.$gwx_52
 }
@@ -2066,28 +2069,20 @@ function gz$gwx_53(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_53)return __WXML_GLOBAL__.ops_cached.$gwx_53
 __WXML_GLOBAL__.ops_cached.$gwx_53=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'d419ecaa'])
+Z([3,'b04b36ee'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_53);return __WXML_GLOBAL__.ops_cached.$gwx_53
 }
 function gz$gwx_54(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_54)return __WXML_GLOBAL__.ops_cached.$gwx_54
 __WXML_GLOBAL__.ops_cached.$gwx_54=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'b04b36ee'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_54);return __WXML_GLOBAL__.ops_cached.$gwx_54
 }
 function gz$gwx_55(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_55)return __WXML_GLOBAL__.ops_cached.$gwx_55
 __WXML_GLOBAL__.ops_cached.$gwx_55=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'b04b36ee'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_55);return __WXML_GLOBAL__.ops_cached.$gwx_55
-}
-function gz$gwx_56(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_56)return __WXML_GLOBAL__.ops_cached.$gwx_56
-__WXML_GLOBAL__.ops_cached.$gwx_56=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'6cbf6956'])
 Z([3,'handleProxy'])
@@ -2098,19 +2093,19 @@ Z([3,'7dcb1efb'])
 Z([3,'请输入邮箱'])
 Z([3,'text'])
 Z([[7],[3,'email']])
+})(__WXML_GLOBAL__.ops_cached.$gwx_55);return __WXML_GLOBAL__.ops_cached.$gwx_55
+}
+function gz$gwx_56(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_56)return __WXML_GLOBAL__.ops_cached.$gwx_56
+__WXML_GLOBAL__.ops_cached.$gwx_56=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'6cbf6956'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_56);return __WXML_GLOBAL__.ops_cached.$gwx_56
 }
 function gz$gwx_57(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_57)return __WXML_GLOBAL__.ops_cached.$gwx_57
 __WXML_GLOBAL__.ops_cached.$gwx_57=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'6cbf6956'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_57);return __WXML_GLOBAL__.ops_cached.$gwx_57
-}
-function gz$gwx_58(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_58)return __WXML_GLOBAL__.ops_cached.$gwx_58
-__WXML_GLOBAL__.ops_cached.$gwx_58=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'90021ef8'])
 Z([3,'_view 90021ef8 input-group'])
@@ -2138,20 +2133,28 @@ Z(z[6])
 Z([3,'请输入邮箱'])
 Z(z[8])
 Z([[7],[3,'email']])
+})(__WXML_GLOBAL__.ops_cached.$gwx_57);return __WXML_GLOBAL__.ops_cached.$gwx_57
+}
+function gz$gwx_58(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_58)return __WXML_GLOBAL__.ops_cached.$gwx_58
+__WXML_GLOBAL__.ops_cached.$gwx_58=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
+Z([3,'90021ef8'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_58);return __WXML_GLOBAL__.ops_cached.$gwx_58
 }
 function gz$gwx_59(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_59)return __WXML_GLOBAL__.ops_cached.$gwx_59
 __WXML_GLOBAL__.ops_cached.$gwx_59=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'90021ef8'])
+Z([3,'6a95a23a'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_59);return __WXML_GLOBAL__.ops_cached.$gwx_59
 }
 function gz$gwx_60(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_60)return __WXML_GLOBAL__.ops_cached.$gwx_60
 __WXML_GLOBAL__.ops_cached.$gwx_60=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'6a95a23a'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_60);return __WXML_GLOBAL__.ops_cached.$gwx_60
 }
@@ -2159,14 +2162,14 @@ function gz$gwx_61(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_61)return __WXML_GLOBAL__.ops_cached.$gwx_61
 __WXML_GLOBAL__.ops_cached.$gwx_61=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'6a95a23a'])
+Z([3,'d573abf0'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_61);return __WXML_GLOBAL__.ops_cached.$gwx_61
 }
 function gz$gwx_62(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_62)return __WXML_GLOBAL__.ops_cached.$gwx_62
 __WXML_GLOBAL__.ops_cached.$gwx_62=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'d573abf0'])
 })(__WXML_GLOBAL__.ops_cached.$gwx_62);return __WXML_GLOBAL__.ops_cached.$gwx_62
 }
@@ -2174,33 +2177,40 @@ function gz$gwx_63(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_63)return __WXML_GLOBAL__.ops_cached.$gwx_63
 __WXML_GLOBAL__.ops_cached.$gwx_63=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
-Z([3,'d573abf0'])
+Z([3,'240234ba'])
+Z([3,'_view 240234ba logo-title'])
+Z([[7],[3,'hasLogin']])
+Z([[2,'!'],[[7],[3,'hasLogin']]])
 })(__WXML_GLOBAL__.ops_cached.$gwx_63);return __WXML_GLOBAL__.ops_cached.$gwx_63
 }
 function gz$gwx_64(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_64)return __WXML_GLOBAL__.ops_cached.$gwx_64
 __WXML_GLOBAL__.ops_cached.$gwx_64=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'240234ba'])
-Z([3,'_view 240234ba logo-title'])
-Z([[7],[3,'hasLogin']])
-Z([[2,'!'],[[7],[3,'hasLogin']]])
-})(__WXML_GLOBAL__.ops_cached.$gwx_64);return __WXML_GLOBAL__.ops_cached.$gwx_64
-}
-function gz$gwx_65(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_65)return __WXML_GLOBAL__.ops_cached.$gwx_65
-__WXML_GLOBAL__.ops_cached.$gwx_65=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]])
 Z([3,'240234ba'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_65);return __WXML_GLOBAL__.ops_cached.$gwx_65
+})(__WXML_GLOBAL__.ops_cached.$gwx_64);return __WXML_GLOBAL__.ops_cached.$gwx_64
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./common/slots.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/drawer/uni-drawer.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','/components/drawer/hj-dragabledrawer.vue.wxml','./components/card/card.vue.wxml','./components/drawer/hj-dragabledrawer.vue.wxml','/common/slots.wxml','./components/drawer/uni-drawer.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/danger/addDanger.vue.wxml','./pages/danger/addDanger.wxml','./addDanger.vue.wxml','./pages/danger/detailDanger.vue.wxml','./pages/danger/detailDanger.wxml','./detailDanger.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pointList/pointList.vue.wxml','./pages/pointList/pointList.wxml','./pointList.vue.wxml','./pages/ptw/addPtw.vue.wxml','./pages/ptw/addPtw.wxml','./addPtw.vue.wxml','./pages/ptw/rapAdd.vue.wxml','./pages/ptw/rapAdd.wxml','./rapAdd.vue.wxml','./pages/ptw/rapConsider.vue.wxml','./pages/ptw/rapConsider.wxml','./rapConsider.vue.wxml','./pages/ptw/rapHarm.vue.wxml','./pages/ptw/rapHarm.wxml','./rapHarm.vue.wxml','./pages/ptw/rapSelected.vue.wxml','./pages/ptw/rapSelected.wxml','./rapSelected.vue.wxml','./pages/ptw/rapSolution.vue.wxml','./pages/ptw/rapSolution.wxml','./rapSolution.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/statistics/statistics.vue.wxml','./pages/statistics/statistics.wxml','./statistics.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+var x=['./common/slots.wxml','/components/drawer/uni-drawer.vue.wxml','/components/list/uni-list/uni-list.vue.wxml','/components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-icon/uni-icon.vue.wxml','/components/mpvue-echarts/src/echarts.vue.wxml','/components/drawer/hj-dragabledrawer.vue.wxml','./components/drawer/hj-dragabledrawer.vue.wxml','/common/slots.wxml','./components/drawer/uni-drawer.vue.wxml','./components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-icon/uni-icon.vue.wxml','./components/list/uni-list-item/uni-list-item.vue.wxml','/components/list/uni-badge/uni-badge.vue.wxml','./components/list/uni-list/uni-list.vue.wxml','./components/m-icon/m-icon.vue.wxml','./components/m-input.vue.wxml','/components/m-icon/m-icon.vue.wxml','./components/mpvue-echarts/src/echarts.vue.wxml','./pages/common/inputPage.vue.wxml','./pages/common/inputPage.wxml','./inputPage.vue.wxml','./pages/danger/addDanger.vue.wxml','./pages/danger/addDanger.wxml','./addDanger.vue.wxml','./pages/danger/detailDanger.vue.wxml','./pages/danger/detailDanger.wxml','./detailDanger.vue.wxml','./pages/login/diyHost.vue.wxml','/components/m-input.vue.wxml','./pages/login/diyHost.wxml','./diyHost.vue.wxml','./pages/login/login.vue.wxml','./pages/login/login.wxml','./login.vue.wxml','./pages/main/main.vue.wxml','./pages/main/main.wxml','./main.vue.wxml','./pages/mpvue-echarts/chartList.vue.wxml','./pages/mpvue-echarts/chartList.wxml','./chartList.vue.wxml','./pages/mpvue-echarts/deviceChart.vue.wxml','./pages/mpvue-echarts/deviceChart.wxml','./deviceChart.vue.wxml','./pages/mpvue-echarts/eventChart.vue.wxml','./pages/mpvue-echarts/eventChart.wxml','./eventChart.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.vue.wxml','./pages/mpvue-echarts/mpvue-echarts.wxml','./mpvue-echarts.vue.wxml','./pages/mpvue-echarts/valveChart.vue.wxml','./pages/mpvue-echarts/valveChart.wxml','./valveChart.vue.wxml','./pages/pointAdd/pointAdd.vue.wxml','./pages/pointAdd/pointAdd.wxml','./pointAdd.vue.wxml','./pages/pointAdd/pointCheckInfo.vue.wxml','./pages/pointAdd/pointCheckInfo.wxml','./pointCheckInfo.vue.wxml','./pages/pointCheck/pointCheck.vue.wxml','./pages/pointCheck/pointCheck.wxml','./pointCheck.vue.wxml','./pages/pointDetail/pointDetail.vue.wxml','./pages/pointDetail/pointDetail.wxml','./pointDetail.vue.wxml','./pages/pointList/pointList.vue.wxml','./pages/pointList/pointList.wxml','./pointList.vue.wxml','./pages/ptw/addPtw.vue.wxml','./pages/ptw/addPtw.wxml','./addPtw.vue.wxml','./pages/ptw/rapAdd.vue.wxml','./pages/ptw/rapAdd.wxml','./rapAdd.vue.wxml','./pages/ptw/rapConsider.vue.wxml','./pages/ptw/rapConsider.wxml','./rapConsider.vue.wxml','./pages/ptw/rapHarm.vue.wxml','./pages/ptw/rapHarm.wxml','./rapHarm.vue.wxml','./pages/ptw/rapSelected.vue.wxml','./pages/ptw/rapSelected.wxml','./rapSelected.vue.wxml','./pages/ptw/rapSolution.vue.wxml','./pages/ptw/rapSolution.wxml','./rapSolution.vue.wxml','./pages/pwd/pwd.vue.wxml','./pages/pwd/pwd.wxml','./pwd.vue.wxml','./pages/reg/reg.vue.wxml','./pages/reg/reg.wxml','./reg.vue.wxml','./pages/statistics/statistics.vue.wxml','./pages/statistics/statistics.wxml','./statistics.vue.wxml','./pages/user/accountEdit.vue.wxml','./pages/user/accountEdit.wxml','./accountEdit.vue.wxml','./pages/user/user.vue.wxml','./pages/user/user.wxml','./user.vue.wxml'];d_[x[0]]={}
+d_[x[0]]["58792338-default-58792338-10"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':58792338-default-58792338-10'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
 d_[x[0]]["21b694de-default-21b694de-6"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':21b694de-default-21b694de-6'
@@ -2211,91 +2221,91 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:8:47")
-var xC=_oz(z,2,e,s,gg)
+cs.push("./common/slots.wxml:template:10:47")
+var xC=_oz(z,3,e,s,gg)
 var oD=_gd(x[0],xC,e_,d_)
 if(oD){
-var fE=_1z(z,1,e,s,gg) || {}
+var fE=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
 oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[0],8,176)
+else _w(xC,x[0],10,176)
 cs.pop()
 var cF=_v()
 _(r,cF)
-cs.push("./common/slots.wxml:template:8:199")
-var hG=_oz(z,7,e,s,gg)
+cs.push("./common/slots.wxml:template:10:199")
+var hG=_oz(z,8,e,s,gg)
 var oH=_gd(x[0],hG,e_,d_)
 if(oH){
-var cI=_1z(z,6,e,s,gg) || {}
+var cI=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
 cF.wxXCkey=3
 oH(cI,cI,cF,gg)
 gg.f=cur_globalf
 }
-else _w(hG,x[0],8,307)
+else _w(hG,x[0],10,307)
 cs.pop()
-cs.push("./common/slots.wxml:picker:8:330")
-var oJ=_mz(z,'picker',['bindchange',10,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+cs.push("./common/slots.wxml:picker:10:330")
+var oJ=_mz(z,'picker',['bindchange',11,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
 var lK=_v()
 _(oJ,lK)
-cs.push("./common/slots.wxml:template:8:474")
-var aL=_oz(z,17,e,s,gg)
+cs.push("./common/slots.wxml:template:10:474")
+var aL=_oz(z,18,e,s,gg)
 var tM=_gd(x[0],aL,e_,d_)
 if(tM){
-var eN=_1z(z,16,e,s,gg) || {}
+var eN=_1z(z,17,e,s,gg) || {}
 var cur_globalf=gg.f
 lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[0],8,566)
+else _w(aL,x[0],10,566)
 cs.pop()
 cs.pop()
 _(r,oJ)
 var bO=_v()
 _(r,bO)
-cs.push("./common/slots.wxml:template:8:598")
-var oP=_oz(z,20,e,s,gg)
+cs.push("./common/slots.wxml:template:10:598")
+var oP=_oz(z,21,e,s,gg)
 var xQ=_gd(x[0],oP,e_,d_)
 if(xQ){
-var oR=_1z(z,19,e,s,gg) || {}
+var oR=_1z(z,20,e,s,gg) || {}
 var cur_globalf=gg.f
 bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[0],8,709)
+else _w(oP,x[0],10,709)
 cs.pop()
 var fS=_v()
 _(r,fS)
-cs.push("./common/slots.wxml:template:8:732")
-var cT=_oz(z,24,e,s,gg)
+cs.push("./common/slots.wxml:template:10:732")
+var cT=_oz(z,25,e,s,gg)
 var hU=_gd(x[0],cT,e_,d_)
 if(hU){
-var oV=_1z(z,23,e,s,gg) || {}
+var oV=_1z(z,24,e,s,gg) || {}
 var cur_globalf=gg.f
 fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[0],8,837)
+else _w(cT,x[0],10,837)
 cs.pop()
 var cW=_v()
 _(r,cW)
-cs.push("./common/slots.wxml:template:8:860")
-var oX=_oz(z,28,e,s,gg)
+cs.push("./common/slots.wxml:template:10:860")
+var oX=_oz(z,29,e,s,gg)
 var lY=_gd(x[0],oX,e_,d_)
 if(lY){
-var aZ=_1z(z,27,e,s,gg) || {}
+var aZ=_1z(z,28,e,s,gg) || {}
 var cur_globalf=gg.f
 cW.wxXCkey=3
 lY(aZ,aZ,cW,gg)
 gg.f=cur_globalf
 }
-else _w(oX,x[0],8,965)
+else _w(oX,x[0],10,965)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2314,42 +2324,27 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:10:48")
+cs.push("./common/slots.wxml:template:12:48")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:10:48")
-var cI=_oz(z,40,fE,oD,gg)
+cs.push("./common/slots.wxml:template:12:48")
+var cI=_oz(z,41,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,37,fE,oD,gg) || {}
+var lK=_1z(z,38,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],10,247)
+else _w(cI,x[0],12,247)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,34,xC,e,s,gg,oB,'item','index','index')
+_2z(z,35,xC,e,s,gg,oB,'item','index','index')
 cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["58792338-default-58792338-10"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':58792338-default-58792338-10'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
 }catch(err){
 p_[b]=false
 throw err
@@ -2513,6 +2508,480 @@ throw err
 p_[b]=false
 return r
 }
+d_[x[0]]["72ed35ad-default-72ed35ad-7"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':72ed35ad-default-72ed35ad-7'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:20:47")
+var xC=_oz(z,91,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,88,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],20,232)
+cs.pop()
+var cF=_v()
+_(r,cF)
+cs.push("./common/slots.wxml:template:20:255")
+var hG=_oz(z,98,e,s,gg)
+var oH=_gd(x[0],hG,e_,d_)
+if(oH){
+var cI=_1z(z,95,e,s,gg) || {}
+var cur_globalf=gg.f
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
+gg.f=cur_globalf
+}
+else _w(hG,x[0],20,440)
+cs.pop()
+var oJ=_v()
+_(r,oJ)
+cs.push("./common/slots.wxml:template:20:463")
+var lK=_oz(z,105,e,s,gg)
+var aL=_gd(x[0],lK,e_,d_)
+if(aL){
+var tM=_1z(z,102,e,s,gg) || {}
+var cur_globalf=gg.f
+oJ.wxXCkey=3
+aL(tM,tM,oJ,gg)
+gg.f=cur_globalf
+}
+else _w(lK,x[0],20,648)
+cs.pop()
+var eN=_v()
+_(r,eN)
+cs.push("./common/slots.wxml:template:20:671")
+var bO=_oz(z,112,e,s,gg)
+var oP=_gd(x[0],bO,e_,d_)
+if(oP){
+var xQ=_1z(z,109,e,s,gg) || {}
+var cur_globalf=gg.f
+eN.wxXCkey=3
+oP(xQ,xQ,eN,gg)
+gg.f=cur_globalf
+}
+else _w(bO,x[0],20,856)
+cs.pop()
+var oR=_v()
+_(r,oR)
+cs.push("./common/slots.wxml:template:20:879")
+var fS=_oz(z,119,e,s,gg)
+var cT=_gd(x[0],fS,e_,d_)
+if(cT){
+var hU=_1z(z,116,e,s,gg) || {}
+var cur_globalf=gg.f
+oR.wxXCkey=3
+cT(hU,hU,oR,gg)
+gg.f=cur_globalf
+}
+else _w(fS,x[0],20,1064)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["77f549ab-default-77f549ab-7"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':77f549ab-default-77f549ab-7'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:22:47")
+var xC=_oz(z,124,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,123,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],22,155)
+cs.pop()
+var cF=_v()
+_(r,cF)
+cs.push("./common/slots.wxml:template:22:178")
+var hG=_oz(z,128,e,s,gg)
+var oH=_gd(x[0],hG,e_,d_)
+if(oH){
+var cI=_1z(z,127,e,s,gg) || {}
+var cur_globalf=gg.f
+cF.wxXCkey=3
+oH(cI,cI,cF,gg)
+gg.f=cur_globalf
+}
+else _w(hG,x[0],22,289)
+cs.pop()
+var oJ=_v()
+_(r,oJ)
+cs.push("./common/slots.wxml:template:22:312")
+var lK=_oz(z,132,e,s,gg)
+var aL=_gd(x[0],lK,e_,d_)
+if(aL){
+var tM=_1z(z,131,e,s,gg) || {}
+var cur_globalf=gg.f
+oJ.wxXCkey=3
+aL(tM,tM,oJ,gg)
+gg.f=cur_globalf
+}
+else _w(lK,x[0],22,423)
+cs.pop()
+var eN=_v()
+_(r,eN)
+cs.push("./common/slots.wxml:template:22:446")
+var bO=_oz(z,136,e,s,gg)
+var oP=_gd(x[0],bO,e_,d_)
+if(oP){
+var xQ=_1z(z,135,e,s,gg) || {}
+var cur_globalf=gg.f
+eN.wxXCkey=3
+oP(xQ,xQ,eN,gg)
+gg.f=cur_globalf
+}
+else _w(bO,x[0],22,557)
+cs.pop()
+var oR=_v()
+_(r,oR)
+cs.push("./common/slots.wxml:template:22:580")
+var fS=_oz(z,140,e,s,gg)
+var cT=_gd(x[0],fS,e_,d_)
+if(cT){
+var hU=_1z(z,139,e,s,gg) || {}
+var cur_globalf=gg.f
+oR.wxXCkey=3
+cT(hU,hU,oR,gg)
+gg.f=cur_globalf
+}
+else _w(fS,x[0],22,694)
+cs.pop()
+var oV=_v()
+_(r,oV)
+cs.push("./common/slots.wxml:template:22:717")
+var cW=_oz(z,144,e,s,gg)
+var oX=_gd(x[0],cW,e_,d_)
+if(oX){
+var lY=_1z(z,143,e,s,gg) || {}
+var cur_globalf=gg.f
+oV.wxXCkey=3
+oX(lY,lY,oV,gg)
+gg.f=cur_globalf
+}
+else _w(cW,x[0],22,828)
+cs.pop()
+var aZ=_v()
+_(r,aZ)
+cs.push("./common/slots.wxml:template:22:851")
+var t1=_oz(z,148,e,s,gg)
+var e2=_gd(x[0],t1,e_,d_)
+if(e2){
+var b3=_1z(z,147,e,s,gg) || {}
+var cur_globalf=gg.f
+aZ.wxXCkey=3
+e2(b3,b3,aZ,gg)
+gg.f=cur_globalf
+}
+else _w(t1,x[0],22,971)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["77f549ab-default-77f549ab-12"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':77f549ab-default-77f549ab-12'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:24:48")
+var xC=_oz(z,153,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,152,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],24,156)
+cs.pop()
+cs.push("./common/slots.wxml:picker:24:179")
+var cF=_mz(z,'picker',['bindchange',156,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var hG=_v()
+_(cF,hG)
+cs.push("./common/slots.wxml:template:24:319")
+var oH=_oz(z,163,e,s,gg)
+var cI=_gd(x[0],oH,e_,d_)
+if(cI){
+var oJ=_1z(z,162,e,s,gg) || {}
+var cur_globalf=gg.f
+hG.wxXCkey=3
+cI(oJ,oJ,hG,gg)
+gg.f=cur_globalf
+}
+else _w(oH,x[0],24,411)
+cs.pop()
+cs.pop()
+_(r,cF)
+cs.push("./common/slots.wxml:picker:24:443")
+var lK=_mz(z,'picker',['bindchange',165,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var aL=_v()
+_(lK,aL)
+cs.push("./common/slots.wxml:template:24:583")
+var tM=_oz(z,172,e,s,gg)
+var eN=_gd(x[0],tM,e_,d_)
+if(eN){
+var bO=_1z(z,171,e,s,gg) || {}
+var cur_globalf=gg.f
+aL.wxXCkey=3
+eN(bO,bO,aL,gg)
+gg.f=cur_globalf
+}
+else _w(tM,x[0],24,676)
+cs.pop()
+cs.pop()
+_(r,lK)
+var oP=_v()
+_(r,oP)
+cs.push("./common/slots.wxml:template:24:708")
+var xQ=_oz(z,178,e,s,gg)
+var oR=_gd(x[0],xQ,e_,d_)
+if(oR){
+var fS=_1z(z,175,e,s,gg) || {}
+var cur_globalf=gg.f
+oP.wxXCkey=3
+oR(fS,fS,oP,gg)
+gg.f=cur_globalf
+}
+else _w(xQ,x[0],24,876)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["77f549ab-default-77f549ab-18"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':77f549ab-default-77f549ab-18'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:26:48")
+var xC=_oz(z,182,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,181,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],26,157)
+cs.pop()
+cs.push("./common/slots.wxml:picker:26:180")
+var cF=_mz(z,'picker',['bindchange',185,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var hG=_v()
+_(cF,hG)
+cs.push("./common/slots.wxml:template:26:322")
+var oH=_oz(z,192,e,s,gg)
+var cI=_gd(x[0],oH,e_,d_)
+if(cI){
+var oJ=_1z(z,191,e,s,gg) || {}
+var cur_globalf=gg.f
+hG.wxXCkey=3
+cI(oJ,oJ,hG,gg)
+gg.f=cur_globalf
+}
+else _w(oH,x[0],26,421)
+cs.pop()
+cs.pop()
+_(r,cF)
+cs.push("./common/slots.wxml:picker:26:453")
+var lK=_mz(z,'picker',['bindchange',194,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var aL=_v()
+_(lK,aL)
+cs.push("./common/slots.wxml:template:26:593")
+var tM=_oz(z,201,e,s,gg)
+var eN=_gd(x[0],tM,e_,d_)
+if(eN){
+var bO=_1z(z,200,e,s,gg) || {}
+var cur_globalf=gg.f
+aL.wxXCkey=3
+eN(bO,bO,aL,gg)
+gg.f=cur_globalf
+}
+else _w(tM,x[0],26,686)
+cs.pop()
+cs.pop()
+_(r,lK)
+var oP=_v()
+_(r,oP)
+cs.push("./common/slots.wxml:template:26:718")
+var xQ=_oz(z,207,e,s,gg)
+var oR=_gd(x[0],xQ,e_,d_)
+if(oR){
+var fS=_1z(z,204,e,s,gg) || {}
+var cur_globalf=gg.f
+oP.wxXCkey=3
+oR(fS,fS,oP,gg)
+gg.f=cur_globalf
+}
+else _w(xQ,x[0],26,886)
+cs.pop()
+var cT=_v()
+_(r,cT)
+cs.push("./common/slots.wxml:template:26:909")
+var hU=_oz(z,213,e,s,gg)
+var oV=_gd(x[0],hU,e_,d_)
+if(oV){
+var cW=_1z(z,210,e,s,gg) || {}
+var cur_globalf=gg.f
+cT.wxXCkey=3
+oV(cW,cW,cT,gg)
+gg.f=cur_globalf
+}
+else _w(hU,x[0],26,1077)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["77f549ab-default-77f549ab-23"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':77f549ab-default-77f549ab-23'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:28:48")
+var xC=_oz(z,217,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,216,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],28,157)
+cs.pop()
+cs.push("./common/slots.wxml:picker:28:180")
+var cF=_mz(z,'picker',['bindchange',220,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
+var hG=_v()
+_(cF,hG)
+cs.push("./common/slots.wxml:template:28:322")
+var oH=_oz(z,227,e,s,gg)
+var cI=_gd(x[0],oH,e_,d_)
+if(cI){
+var oJ=_1z(z,226,e,s,gg) || {}
+var cur_globalf=gg.f
+hG.wxXCkey=3
+cI(oJ,oJ,hG,gg)
+gg.f=cur_globalf
+}
+else _w(oH,x[0],28,415)
+cs.pop()
+cs.pop()
+_(r,cF)
+var lK=_v()
+_(r,lK)
+cs.push("./common/slots.wxml:template:28:447")
+var aL=_oz(z,233,e,s,gg)
+var tM=_gd(x[0],aL,e_,d_)
+if(tM){
+var eN=_1z(z,230,e,s,gg) || {}
+var cur_globalf=gg.f
+lK.wxXCkey=3
+tM(eN,eN,lK,gg)
+gg.f=cur_globalf
+}
+else _w(aL,x[0],28,616)
+cs.pop()
+var bO=_v()
+_(r,bO)
+cs.push("./common/slots.wxml:template:28:639")
+var oP=_oz(z,239,e,s,gg)
+var xQ=_gd(x[0],oP,e_,d_)
+if(xQ){
+var oR=_1z(z,236,e,s,gg) || {}
+var cur_globalf=gg.f
+bO.wxXCkey=3
+xQ(oR,oR,bO,gg)
+gg.f=cur_globalf
+}
+else _w(oP,x[0],28,808)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+d_[x[0]]["77f549ab-default-77f549ab-25"]=function(e,s,r,gg){
+var z=gz$gwx_1()
+var b=x[0]+':77f549ab-default-77f549ab-25'
+r.wxVkey=b
+gg.f=$gdc(f_["./common/slots.wxml"],"",1)
+if(p_[b]){_wl(b,x[0]);return}
+p_[b]=true
+try{
+var oB=_v()
+_(r,oB)
+cs.push("./common/slots.wxml:template:30:48")
+var xC=_oz(z,246,e,s,gg)
+var oD=_gd(x[0],xC,e_,d_)
+if(oD){
+var fE=_1z(z,243,e,s,gg) || {}
+var cur_globalf=gg.f
+oB.wxXCkey=3
+oD(fE,fE,oB,gg)
+gg.f=cur_globalf
+}
+else _w(xC,x[0],30,250)
+cs.pop()
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
 d_[x[0]]["7e389618-default-7e389618-1"]=function(e,s,r,gg){
 var z=gz$gwx_1()
 var b=x[0]+':7e389618-default-7e389618-1'
@@ -2538,26 +3007,26 @@ p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
-cs.push("./common/slots.wxml:template:22:47")
+cs.push("./common/slots.wxml:template:34:47")
 var xC=function(fE,oD,cF,gg){
 var oH=_v()
 _(cF,oH)
-cs.push("./common/slots.wxml:template:22:47")
-var cI=_oz(z,93,fE,oD,gg)
+cs.push("./common/slots.wxml:template:34:47")
+var cI=_oz(z,256,fE,oD,gg)
 var oJ=_gd(x[0],cI,e_,d_)
 if(oJ){
-var lK=_1z(z,92,fE,oD,gg) || {}
+var lK=_1z(z,255,fE,oD,gg) || {}
 var cur_globalf=gg.f
 oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[0],22,159)
+else _w(cI,x[0],34,159)
 cs.pop()
 return cF
 }
 oB.wxXCkey=2
-_2z(z,90,xC,e,s,gg,oB,'name','index','index')
+_2z(z,253,xC,e,s,gg,oB,'name','index','index')
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -2574,480 +3043,6 @@ gg.f=$gdc(f_["./common/slots.wxml"],"",1)
 if(p_[b]){_wl(b,x[0]);return}
 p_[b]=true
 try{
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["72ed35ad-default-72ed35ad-7"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':72ed35ad-default-72ed35ad-7'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:26:47")
-var xC=_oz(z,101,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,98,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],26,232)
-cs.pop()
-var cF=_v()
-_(r,cF)
-cs.push("./common/slots.wxml:template:26:255")
-var hG=_oz(z,108,e,s,gg)
-var oH=_gd(x[0],hG,e_,d_)
-if(oH){
-var cI=_1z(z,105,e,s,gg) || {}
-var cur_globalf=gg.f
-cF.wxXCkey=3
-oH(cI,cI,cF,gg)
-gg.f=cur_globalf
-}
-else _w(hG,x[0],26,440)
-cs.pop()
-var oJ=_v()
-_(r,oJ)
-cs.push("./common/slots.wxml:template:26:463")
-var lK=_oz(z,115,e,s,gg)
-var aL=_gd(x[0],lK,e_,d_)
-if(aL){
-var tM=_1z(z,112,e,s,gg) || {}
-var cur_globalf=gg.f
-oJ.wxXCkey=3
-aL(tM,tM,oJ,gg)
-gg.f=cur_globalf
-}
-else _w(lK,x[0],26,648)
-cs.pop()
-var eN=_v()
-_(r,eN)
-cs.push("./common/slots.wxml:template:26:671")
-var bO=_oz(z,122,e,s,gg)
-var oP=_gd(x[0],bO,e_,d_)
-if(oP){
-var xQ=_1z(z,119,e,s,gg) || {}
-var cur_globalf=gg.f
-eN.wxXCkey=3
-oP(xQ,xQ,eN,gg)
-gg.f=cur_globalf
-}
-else _w(bO,x[0],26,856)
-cs.pop()
-var oR=_v()
-_(r,oR)
-cs.push("./common/slots.wxml:template:26:879")
-var fS=_oz(z,129,e,s,gg)
-var cT=_gd(x[0],fS,e_,d_)
-if(cT){
-var hU=_1z(z,126,e,s,gg) || {}
-var cur_globalf=gg.f
-oR.wxXCkey=3
-cT(hU,hU,oR,gg)
-gg.f=cur_globalf
-}
-else _w(fS,x[0],26,1064)
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["77f549ab-default-77f549ab-7"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':77f549ab-default-77f549ab-7'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:28:47")
-var xC=_oz(z,134,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,133,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],28,155)
-cs.pop()
-var cF=_v()
-_(r,cF)
-cs.push("./common/slots.wxml:template:28:178")
-var hG=_oz(z,138,e,s,gg)
-var oH=_gd(x[0],hG,e_,d_)
-if(oH){
-var cI=_1z(z,137,e,s,gg) || {}
-var cur_globalf=gg.f
-cF.wxXCkey=3
-oH(cI,cI,cF,gg)
-gg.f=cur_globalf
-}
-else _w(hG,x[0],28,289)
-cs.pop()
-var oJ=_v()
-_(r,oJ)
-cs.push("./common/slots.wxml:template:28:312")
-var lK=_oz(z,142,e,s,gg)
-var aL=_gd(x[0],lK,e_,d_)
-if(aL){
-var tM=_1z(z,141,e,s,gg) || {}
-var cur_globalf=gg.f
-oJ.wxXCkey=3
-aL(tM,tM,oJ,gg)
-gg.f=cur_globalf
-}
-else _w(lK,x[0],28,423)
-cs.pop()
-var eN=_v()
-_(r,eN)
-cs.push("./common/slots.wxml:template:28:446")
-var bO=_oz(z,146,e,s,gg)
-var oP=_gd(x[0],bO,e_,d_)
-if(oP){
-var xQ=_1z(z,145,e,s,gg) || {}
-var cur_globalf=gg.f
-eN.wxXCkey=3
-oP(xQ,xQ,eN,gg)
-gg.f=cur_globalf
-}
-else _w(bO,x[0],28,557)
-cs.pop()
-var oR=_v()
-_(r,oR)
-cs.push("./common/slots.wxml:template:28:580")
-var fS=_oz(z,150,e,s,gg)
-var cT=_gd(x[0],fS,e_,d_)
-if(cT){
-var hU=_1z(z,149,e,s,gg) || {}
-var cur_globalf=gg.f
-oR.wxXCkey=3
-cT(hU,hU,oR,gg)
-gg.f=cur_globalf
-}
-else _w(fS,x[0],28,694)
-cs.pop()
-var oV=_v()
-_(r,oV)
-cs.push("./common/slots.wxml:template:28:717")
-var cW=_oz(z,154,e,s,gg)
-var oX=_gd(x[0],cW,e_,d_)
-if(oX){
-var lY=_1z(z,153,e,s,gg) || {}
-var cur_globalf=gg.f
-oV.wxXCkey=3
-oX(lY,lY,oV,gg)
-gg.f=cur_globalf
-}
-else _w(cW,x[0],28,828)
-cs.pop()
-var aZ=_v()
-_(r,aZ)
-cs.push("./common/slots.wxml:template:28:851")
-var t1=_oz(z,158,e,s,gg)
-var e2=_gd(x[0],t1,e_,d_)
-if(e2){
-var b3=_1z(z,157,e,s,gg) || {}
-var cur_globalf=gg.f
-aZ.wxXCkey=3
-e2(b3,b3,aZ,gg)
-gg.f=cur_globalf
-}
-else _w(t1,x[0],28,971)
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["77f549ab-default-77f549ab-12"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':77f549ab-default-77f549ab-12'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:30:48")
-var xC=_oz(z,163,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,162,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],30,156)
-cs.pop()
-cs.push("./common/slots.wxml:picker:30:179")
-var cF=_mz(z,'picker',['bindchange',166,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
-var hG=_v()
-_(cF,hG)
-cs.push("./common/slots.wxml:template:30:319")
-var oH=_oz(z,173,e,s,gg)
-var cI=_gd(x[0],oH,e_,d_)
-if(cI){
-var oJ=_1z(z,172,e,s,gg) || {}
-var cur_globalf=gg.f
-hG.wxXCkey=3
-cI(oJ,oJ,hG,gg)
-gg.f=cur_globalf
-}
-else _w(oH,x[0],30,411)
-cs.pop()
-cs.pop()
-_(r,cF)
-cs.push("./common/slots.wxml:picker:30:443")
-var lK=_mz(z,'picker',['bindchange',175,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
-var aL=_v()
-_(lK,aL)
-cs.push("./common/slots.wxml:template:30:583")
-var tM=_oz(z,182,e,s,gg)
-var eN=_gd(x[0],tM,e_,d_)
-if(eN){
-var bO=_1z(z,181,e,s,gg) || {}
-var cur_globalf=gg.f
-aL.wxXCkey=3
-eN(bO,bO,aL,gg)
-gg.f=cur_globalf
-}
-else _w(tM,x[0],30,676)
-cs.pop()
-cs.pop()
-_(r,lK)
-var oP=_v()
-_(r,oP)
-cs.push("./common/slots.wxml:template:30:708")
-var xQ=_oz(z,188,e,s,gg)
-var oR=_gd(x[0],xQ,e_,d_)
-if(oR){
-var fS=_1z(z,185,e,s,gg) || {}
-var cur_globalf=gg.f
-oP.wxXCkey=3
-oR(fS,fS,oP,gg)
-gg.f=cur_globalf
-}
-else _w(xQ,x[0],30,876)
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["77f549ab-default-77f549ab-18"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':77f549ab-default-77f549ab-18'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:32:48")
-var xC=_oz(z,192,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,191,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],32,157)
-cs.pop()
-cs.push("./common/slots.wxml:picker:32:180")
-var cF=_mz(z,'picker',['bindchange',195,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
-var hG=_v()
-_(cF,hG)
-cs.push("./common/slots.wxml:template:32:322")
-var oH=_oz(z,202,e,s,gg)
-var cI=_gd(x[0],oH,e_,d_)
-if(cI){
-var oJ=_1z(z,201,e,s,gg) || {}
-var cur_globalf=gg.f
-hG.wxXCkey=3
-cI(oJ,oJ,hG,gg)
-gg.f=cur_globalf
-}
-else _w(oH,x[0],32,421)
-cs.pop()
-cs.pop()
-_(r,cF)
-cs.push("./common/slots.wxml:picker:32:453")
-var lK=_mz(z,'picker',['bindchange',204,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
-var aL=_v()
-_(lK,aL)
-cs.push("./common/slots.wxml:template:32:593")
-var tM=_oz(z,211,e,s,gg)
-var eN=_gd(x[0],tM,e_,d_)
-if(eN){
-var bO=_1z(z,210,e,s,gg) || {}
-var cur_globalf=gg.f
-aL.wxXCkey=3
-eN(bO,bO,aL,gg)
-gg.f=cur_globalf
-}
-else _w(tM,x[0],32,686)
-cs.pop()
-cs.pop()
-_(r,lK)
-var oP=_v()
-_(r,oP)
-cs.push("./common/slots.wxml:template:32:718")
-var xQ=_oz(z,217,e,s,gg)
-var oR=_gd(x[0],xQ,e_,d_)
-if(oR){
-var fS=_1z(z,214,e,s,gg) || {}
-var cur_globalf=gg.f
-oP.wxXCkey=3
-oR(fS,fS,oP,gg)
-gg.f=cur_globalf
-}
-else _w(xQ,x[0],32,886)
-cs.pop()
-var cT=_v()
-_(r,cT)
-cs.push("./common/slots.wxml:template:32:909")
-var hU=_oz(z,223,e,s,gg)
-var oV=_gd(x[0],hU,e_,d_)
-if(oV){
-var cW=_1z(z,220,e,s,gg) || {}
-var cur_globalf=gg.f
-cT.wxXCkey=3
-oV(cW,cW,cT,gg)
-gg.f=cur_globalf
-}
-else _w(hU,x[0],32,1077)
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["77f549ab-default-77f549ab-23"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':77f549ab-default-77f549ab-23'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:34:48")
-var xC=_oz(z,227,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,226,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],34,157)
-cs.pop()
-cs.push("./common/slots.wxml:picker:34:180")
-var cF=_mz(z,'picker',['bindchange',230,'class',1,'data-comkey',2,'data-eventid',3,'mode',4,'value',5],[],e,s,gg)
-var hG=_v()
-_(cF,hG)
-cs.push("./common/slots.wxml:template:34:322")
-var oH=_oz(z,237,e,s,gg)
-var cI=_gd(x[0],oH,e_,d_)
-if(cI){
-var oJ=_1z(z,236,e,s,gg) || {}
-var cur_globalf=gg.f
-hG.wxXCkey=3
-cI(oJ,oJ,hG,gg)
-gg.f=cur_globalf
-}
-else _w(oH,x[0],34,415)
-cs.pop()
-cs.pop()
-_(r,cF)
-var lK=_v()
-_(r,lK)
-cs.push("./common/slots.wxml:template:34:447")
-var aL=_oz(z,243,e,s,gg)
-var tM=_gd(x[0],aL,e_,d_)
-if(tM){
-var eN=_1z(z,240,e,s,gg) || {}
-var cur_globalf=gg.f
-lK.wxXCkey=3
-tM(eN,eN,lK,gg)
-gg.f=cur_globalf
-}
-else _w(aL,x[0],34,616)
-cs.pop()
-var bO=_v()
-_(r,bO)
-cs.push("./common/slots.wxml:template:34:639")
-var oP=_oz(z,249,e,s,gg)
-var xQ=_gd(x[0],oP,e_,d_)
-if(xQ){
-var oR=_1z(z,246,e,s,gg) || {}
-var cur_globalf=gg.f
-bO.wxXCkey=3
-xQ(oR,oR,bO,gg)
-gg.f=cur_globalf
-}
-else _w(oP,x[0],34,808)
-cs.pop()
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-d_[x[0]]["77f549ab-default-77f549ab-25"]=function(e,s,r,gg){
-var z=gz$gwx_1()
-var b=x[0]+':77f549ab-default-77f549ab-25'
-r.wxVkey=b
-gg.f=$gdc(f_["./common/slots.wxml"],"",1)
-if(p_[b]){_wl(b,x[0]);return}
-p_[b]=true
-try{
-var oB=_v()
-_(r,oB)
-cs.push("./common/slots.wxml:template:36:48")
-var xC=_oz(z,256,e,s,gg)
-var oD=_gd(x[0],xC,e_,d_)
-if(oD){
-var fE=_1z(z,253,e,s,gg) || {}
-var cur_globalf=gg.f
-oB.wxXCkey=3
-oD(fE,fE,oB,gg)
-gg.f=cur_globalf
-}
-else _w(xC,x[0],36,250)
-cs.pop()
 }catch(err){
 p_[b]=false
 throw err
@@ -3074,33 +3069,12 @@ return r
 }
 e_[x[0]]={f:m0,j:[],i:[],ti:[x[1],x[2],x[3],x[4],x[5],x[6]],ic:[]}
 d_[x[7]]={}
-d_[x[7]]["4dfb5300"]=function(e,s,r,gg){
+d_[x[7]]["3c97b91b"]=function(e,s,r,gg){
 var z=gz$gwx_2()
-var b=x[7]+':4dfb5300'
-r.wxVkey=b
-gg.f=$gdc(f_["./components/card/card.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[7]);return}
-p_[b]=true
-try{
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-var m1=function(e,s,r,gg){
-var z=gz$gwx_2()
-return r
-}
-e_[x[7]]={f:m1,j:[],i:[],ti:[],ic:[]}
-d_[x[8]]={}
-d_[x[8]]["3c97b91b"]=function(e,s,r,gg){
-var z=gz$gwx_3()
-var b=x[8]+':3c97b91b'
+var b=x[7]+':3c97b91b'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/drawer/hj-dragabledrawer.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[8]);return}
+if(p_[b]){_wl(b,x[7]);return}
 p_[b]=true
 try{
 cs.push("./components/drawer/hj-dragabledrawer.vue.wxml:view:1:62")
@@ -3117,7 +3091,7 @@ var fE=_v()
 _(oD,fE)
 cs.push("./components/drawer/hj-dragabledrawer.vue.wxml:template:1:673")
 var cF=_oz(z,13,e,s,gg)
-var hG=_gd(x[8],cF,e_,d_)
+var hG=_gd(x[7],cF,e_,d_)
 if(hG){
 var oH=_1z(z,12,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3125,7 +3099,7 @@ fE.wxXCkey=3
 hG(oH,oH,fE,gg)
 gg.f=cur_globalf
 }
-else _w(cF,x[8],1,731)
+else _w(cF,x[7],1,731)
 cs.pop()
 cs.pop()
 _(oB,oD)
@@ -3139,12 +3113,12 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[8]]["default"]=function(e,s,r,gg){
-var z=gz$gwx_3()
-var b=x[8]+':default'
+d_[x[7]]["default"]=function(e,s,r,gg){
+var z=gz$gwx_2()
+var b=x[7]+':default'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/drawer/hj-dragabledrawer.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[8]);return}
+if(p_[b]){_wl(b,x[7]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -3154,21 +3128,21 @@ throw err
 p_[b]=false
 return r
 }
-var m2=function(e,s,r,gg){
-var z=gz$gwx_3()
-var fE=e_[x[8]].i
-_ai(fE,x[9],e_,x[8],1,1)
-fE.pop()
+var m1=function(e,s,r,gg){
+var z=gz$gwx_2()
+var oD=e_[x[7]].i
+_ai(oD,x[8],e_,x[7],1,1)
+oD.pop()
 return r
 }
-e_[x[8]]={f:m2,j:[],i:[],ti:[x[9]],ic:[]}
-d_[x[10]]={}
-d_[x[10]]["590c6f9d"]=function(e,s,r,gg){
-var z=gz$gwx_4()
-var b=x[10]+':590c6f9d'
+e_[x[7]]={f:m1,j:[],i:[],ti:[x[8]],ic:[]}
+d_[x[9]]={}
+d_[x[9]]["590c6f9d"]=function(e,s,r,gg){
+var z=gz$gwx_3()
+var b=x[9]+':590c6f9d'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/drawer/uni-drawer.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[10]);return}
+if(p_[b]){_wl(b,x[9]);return}
 p_[b]=true
 try{
 var oB=_v()
@@ -3181,7 +3155,7 @@ var oD=_v()
 _(xC,oD)
 cs.push("./components/drawer/uni-drawer.vue.wxml:template:1:459")
 var fE=_oz(z,6,e,s,gg)
-var cF=_gd(x[10],fE,e_,d_)
+var cF=_gd(x[9],fE,e_,d_)
 if(cF){
 var hG=_1z(z,5,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3189,7 +3163,7 @@ oD.wxXCkey=3
 cF(hG,hG,oD,gg)
 gg.f=cur_globalf
 }
-else _w(fE,x[10],1,517)
+else _w(fE,x[9],1,517)
 cs.pop()
 cs.pop()
 _(oB,xC)
@@ -3203,12 +3177,12 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[10]]["default"]=function(e,s,r,gg){
-var z=gz$gwx_4()
-var b=x[10]+':default'
+d_[x[9]]["default"]=function(e,s,r,gg){
+var z=gz$gwx_3()
+var b=x[9]+':default'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/drawer/uni-drawer.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[10]);return}
+if(p_[b]){_wl(b,x[9]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -3218,21 +3192,21 @@ throw err
 p_[b]=false
 return r
 }
-var m3=function(e,s,r,gg){
-var z=gz$gwx_4()
-var hG=e_[x[10]].i
-_ai(hG,x[9],e_,x[10],1,1)
-hG.pop()
+var m2=function(e,s,r,gg){
+var z=gz$gwx_3()
+var cF=e_[x[9]].i
+_ai(cF,x[8],e_,x[9],1,1)
+cF.pop()
 return r
 }
-e_[x[10]]={f:m3,j:[],i:[],ti:[x[9]],ic:[]}
-d_[x[11]]={}
-d_[x[11]]["68dcfa4a"]=function(e,s,r,gg){
-var z=gz$gwx_5()
-var b=x[11]+':68dcfa4a'
+e_[x[9]]={f:m2,j:[],i:[],ti:[x[8]],ic:[]}
+d_[x[10]]={}
+d_[x[10]]["68dcfa4a"]=function(e,s,r,gg){
+var z=gz$gwx_4()
+var b=x[10]+':68dcfa4a'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-badge/uni-badge.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[11]);return}
+if(p_[b]){_wl(b,x[10]);return}
 p_[b]=true
 try{
 var oB=_v()
@@ -3249,18 +3223,18 @@ throw err
 p_[b]=false
 return r
 }
-var m4=function(e,s,r,gg){
-var z=gz$gwx_5()
+var m3=function(e,s,r,gg){
+var z=gz$gwx_4()
 return r
 }
-e_[x[11]]={f:m4,j:[],i:[],ti:[],ic:[]}
-d_[x[12]]={}
-d_[x[12]]["346bda0d"]=function(e,s,r,gg){
-var z=gz$gwx_6()
-var b=x[12]+':346bda0d'
+e_[x[10]]={f:m3,j:[],i:[],ti:[],ic:[]}
+d_[x[11]]={}
+d_[x[11]]["346bda0d"]=function(e,s,r,gg){
+var z=gz$gwx_5()
+var b=x[11]+':346bda0d'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-icon/uni-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[12]);return}
+if(p_[b]){_wl(b,x[11]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -3270,18 +3244,18 @@ throw err
 p_[b]=false
 return r
 }
-var m5=function(e,s,r,gg){
-var z=gz$gwx_6()
+var m4=function(e,s,r,gg){
+var z=gz$gwx_5()
 return r
 }
-e_[x[12]]={f:m5,j:[],i:[],ti:[],ic:[]}
-d_[x[13]]={}
-d_[x[13]]["30c48a99"]=function(e,s,r,gg){
-var z=gz$gwx_7()
-var b=x[13]+':30c48a99'
+e_[x[11]]={f:m4,j:[],i:[],ti:[],ic:[]}
+d_[x[12]]={}
+d_[x[12]]["30c48a99"]=function(e,s,r,gg){
+var z=gz$gwx_6()
+var b=x[12]+':30c48a99'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list-item/uni-list-item.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[13]);return}
+if(p_[b]){_wl(b,x[12]);return}
 p_[b]=true
 try{
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:view:1:149")
@@ -3301,7 +3275,7 @@ var hG=_v()
 _(oD,hG)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:805")
 var oH=_oz(z,10,e,s,gg)
-var cI=_gd(x[13],oH,e_,d_)
+var cI=_gd(x[12],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,9,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3309,7 +3283,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[13],1,876)
+else _w(oH,x[12],1,876)
 cs.pop()
 cs.pop()
 }
@@ -3340,7 +3314,7 @@ var oP=_v()
 _(tM,oP)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1431")
 var xQ=_oz(z,17,e,s,gg)
-var oR=_gd(x[13],xQ,e_,d_)
+var oR=_gd(x[12],xQ,e_,d_)
 if(oR){
 var fS=_1z(z,16,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3348,7 +3322,7 @@ oP.wxXCkey=3
 oR(fS,fS,oP,gg)
 gg.f=cur_globalf
 }
-else _w(xQ,x[13],1,1557)
+else _w(xQ,x[12],1,1557)
 cs.pop()
 cs.pop()
 }
@@ -3366,7 +3340,7 @@ var cT=_v()
 _(bO,cT)
 cs.push("./components/list/uni-list-item/uni-list-item.vue.wxml:template:1:1802")
 var hU=_oz(z,22,e,s,gg)
-var oV=_gd(x[13],hU,e_,d_)
+var oV=_gd(x[12],hU,e_,d_)
 if(oV){
 var cW=_1z(z,21,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3374,7 +3348,7 @@ cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[13],1,1969)
+else _w(hU,x[12],1,1969)
 cs.pop()
 cs.pop()
 }
@@ -3400,23 +3374,23 @@ throw err
 p_[b]=false
 return r
 }
-var m6=function(e,s,r,gg){
-var z=gz$gwx_7()
-var lK=e_[x[13]].i
-_ai(lK,x[3],e_,x[13],1,1)
-_ai(lK,x[14],e_,x[13],1,61)
-lK.pop()
-lK.pop()
+var m5=function(e,s,r,gg){
+var z=gz$gwx_6()
+var oJ=e_[x[12]].i
+_ai(oJ,x[4],e_,x[12],1,1)
+_ai(oJ,x[13],e_,x[12],1,61)
+oJ.pop()
+oJ.pop()
 return r
 }
-e_[x[13]]={f:m6,j:[],i:[],ti:[x[3],x[14]],ic:[]}
-d_[x[15]]={}
-d_[x[15]]["3b6bb3ad"]=function(e,s,r,gg){
-var z=gz$gwx_8()
-var b=x[15]+':3b6bb3ad'
+e_[x[12]]={f:m5,j:[],i:[],ti:[x[4],x[13]],ic:[]}
+d_[x[14]]={}
+d_[x[14]]["3b6bb3ad"]=function(e,s,r,gg){
+var z=gz$gwx_7()
+var b=x[14]+':3b6bb3ad'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list/uni-list.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[15]);return}
+if(p_[b]){_wl(b,x[14]);return}
 p_[b]=true
 try{
 cs.push("./components/list/uni-list/uni-list.vue.wxml:view:1:62")
@@ -3426,7 +3400,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./components/list/uni-list/uni-list.vue.wxml:template:1:136")
 var oD=_oz(z,4,e,s,gg)
-var fE=_gd(x[15],oD,e_,d_)
+var fE=_gd(x[14],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3434,7 +3408,7 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[15],1,194)
+else _w(oD,x[14],1,194)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -3445,11 +3419,35 @@ throw err
 p_[b]=false
 return r
 }
-d_[x[15]]["default"]=function(e,s,r,gg){
-var z=gz$gwx_8()
-var b=x[15]+':default'
+d_[x[14]]["default"]=function(e,s,r,gg){
+var z=gz$gwx_7()
+var b=x[14]+':default'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/list/uni-list/uni-list.vue.wxml"],"",1)
+if(p_[b]){_wl(b,x[14]);return}
+p_[b]=true
+try{
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
+var m6=function(e,s,r,gg){
+var z=gz$gwx_7()
+var aL=e_[x[14]].i
+_ai(aL,x[8],e_,x[14],1,1)
+aL.pop()
+return r
+}
+e_[x[14]]={f:m6,j:[],i:[],ti:[x[8]],ic:[]}
+d_[x[15]]={}
+d_[x[15]]["2241d2a0"]=function(e,s,r,gg){
+var z=gz$gwx_8()
+var b=x[15]+':2241d2a0'
+r.wxVkey=b
+gg.f=$gdc(f_["./components/m-icon/m-icon.vue.wxml"],"",1)
 if(p_[b]){_wl(b,x[15]);return}
 p_[b]=true
 try{
@@ -3462,40 +3460,16 @@ return r
 }
 var m7=function(e,s,r,gg){
 var z=gz$gwx_8()
-var tM=e_[x[15]].i
-_ai(tM,x[9],e_,x[15],1,1)
-tM.pop()
 return r
 }
-e_[x[15]]={f:m7,j:[],i:[],ti:[x[9]],ic:[]}
+e_[x[15]]={f:m7,j:[],i:[],ti:[],ic:[]}
 d_[x[16]]={}
-d_[x[16]]["2241d2a0"]=function(e,s,r,gg){
+d_[x[16]]["7dcb1efb"]=function(e,s,r,gg){
 var z=gz$gwx_9()
-var b=x[16]+':2241d2a0'
-r.wxVkey=b
-gg.f=$gdc(f_["./components/m-icon/m-icon.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[16]);return}
-p_[b]=true
-try{
-}catch(err){
-p_[b]=false
-throw err
-}
-p_[b]=false
-return r
-}
-var m8=function(e,s,r,gg){
-var z=gz$gwx_9()
-return r
-}
-e_[x[16]]={f:m8,j:[],i:[],ti:[],ic:[]}
-d_[x[17]]={}
-d_[x[17]]["7dcb1efb"]=function(e,s,r,gg){
-var z=gz$gwx_10()
-var b=x[17]+':7dcb1efb'
+var b=x[16]+':7dcb1efb'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/m-input.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[17]);return}
+if(p_[b]){_wl(b,x[16]);return}
 p_[b]=true
 try{
 cs.push("./components/m-input.vue.wxml:view:1:78")
@@ -3509,7 +3483,7 @@ var fE=_v()
 _(xC,fE)
 cs.push("./components/m-input.vue.wxml:template:1:521")
 var cF=_oz(z,8,e,s,gg)
-var hG=_gd(x[17],cF,e_,d_)
+var hG=_gd(x[16],cF,e_,d_)
 if(hG){
 var oH=_1z(z,5,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3517,7 +3491,7 @@ fE.wxXCkey=3
 hG(oH,oH,fE,gg)
 gg.f=cur_globalf
 }
-else _w(cF,x[17],1,706)
+else _w(cF,x[16],1,706)
 cs.pop()
 cs.pop()
 }
@@ -3529,7 +3503,7 @@ var cI=_v()
 _(oD,cI)
 cs.push("./components/m-input.vue.wxml:template:1:803")
 var oJ=_oz(z,16,e,s,gg)
-var lK=_gd(x[17],oJ,e_,d_)
+var lK=_gd(x[16],oJ,e_,d_)
 if(lK){
 var aL=_1z(z,13,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3537,7 +3511,7 @@ cI.wxXCkey=3
 lK(aL,aL,cI,gg)
 gg.f=cur_globalf
 }
-else _w(oJ,x[17],1,970)
+else _w(oJ,x[16],1,970)
 cs.pop()
 cs.pop()
 }
@@ -3552,21 +3526,21 @@ throw err
 p_[b]=false
 return r
 }
-var m9=function(e,s,r,gg){
-var z=gz$gwx_10()
-var oP=e_[x[17]].i
-_ai(oP,x[18],e_,x[17],1,1)
-oP.pop()
+var m8=function(e,s,r,gg){
+var z=gz$gwx_9()
+var bO=e_[x[16]].i
+_ai(bO,x[17],e_,x[16],1,1)
+bO.pop()
 return r
 }
-e_[x[17]]={f:m9,j:[],i:[],ti:[x[18]],ic:[]}
-d_[x[19]]={}
-d_[x[19]]["53499e7e"]=function(e,s,r,gg){
-var z=gz$gwx_11()
-var b=x[19]+':53499e7e'
+e_[x[16]]={f:m8,j:[],i:[],ti:[x[17]],ic:[]}
+d_[x[18]]={}
+d_[x[18]]["53499e7e"]=function(e,s,r,gg){
+var z=gz$gwx_10()
+var b=x[18]+':53499e7e'
 r.wxVkey=b
 gg.f=$gdc(f_["./components/mpvue-echarts/src/echarts.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[19]);return}
+if(p_[b]){_wl(b,x[18]);return}
 p_[b]=true
 try{
 var oB=_v()
@@ -3583,18 +3557,18 @@ throw err
 p_[b]=false
 return r
 }
-var m10=function(e,s,r,gg){
-var z=gz$gwx_11()
+var m9=function(e,s,r,gg){
+var z=gz$gwx_10()
 return r
 }
-e_[x[19]]={f:m10,j:[],i:[],ti:[],ic:[]}
-d_[x[20]]={}
-d_[x[20]]["ab7aaa6c"]=function(e,s,r,gg){
-var z=gz$gwx_12()
-var b=x[20]+':ab7aaa6c'
+e_[x[18]]={f:m9,j:[],i:[],ti:[],ic:[]}
+d_[x[19]]={}
+d_[x[19]]["ab7aaa6c"]=function(e,s,r,gg){
+var z=gz$gwx_11()
+var b=x[19]+':ab7aaa6c'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/common/inputPage.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[20]);return}
+if(p_[b]){_wl(b,x[19]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -3604,41 +3578,41 @@ throw err
 p_[b]=false
 return r
 }
+var m10=function(e,s,r,gg){
+var z=gz$gwx_11()
+return r
+}
+e_[x[19]]={f:m10,j:[],i:[],ti:[],ic:[]}
+d_[x[20]]={}
 var m11=function(e,s,r,gg){
 var z=gz$gwx_12()
-return r
-}
-e_[x[20]]={f:m11,j:[],i:[],ti:[],ic:[]}
-d_[x[21]]={}
-var m12=function(e,s,r,gg){
-var z=gz$gwx_13()
-var cT=e_[x[21]].i
-_ai(cT,x[22],e_,x[21],1,1)
-var hU=_v()
-_(r,hU)
+var fS=e_[x[20]].i
+_ai(fS,x[21],e_,x[20],1,1)
+var cT=_v()
+_(r,cT)
 cs.push("./pages/common/inputPage.wxml:template:2:6")
-var oV=_oz(z,1,e,s,gg)
-var cW=_gd(x[21],oV,e_,d_)
-if(cW){
-var oX=_1z(z,0,e,s,gg) || {}
+var hU=_oz(z,1,e,s,gg)
+var oV=_gd(x[20],hU,e_,d_)
+if(oV){
+var cW=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-hU.wxXCkey=3
-cW(oX,oX,hU,gg)
+cT.wxXCkey=3
+oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(oV,x[21],2,18)
+else _w(hU,x[20],2,18)
 cs.pop()
-cT.pop()
+fS.pop()
 return r
 }
-e_[x[21]]={f:m12,j:[],i:[],ti:[x[22]],ic:[]}
-d_[x[23]]={}
-d_[x[23]]["72ed35ad"]=function(e,s,r,gg){
-var z=gz$gwx_14()
-var b=x[23]+':72ed35ad'
+e_[x[20]]={f:m11,j:[],i:[],ti:[x[21]],ic:[]}
+d_[x[22]]={}
+d_[x[22]]["72ed35ad"]=function(e,s,r,gg){
+var z=gz$gwx_13()
+var b=x[22]+':72ed35ad'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/danger/addDanger.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[23]);return}
+if(p_[b]){_wl(b,x[22]);return}
 p_[b]=true
 try{
 cs.push("./pages/danger/addDanger.vue.wxml:view:1:195")
@@ -3648,7 +3622,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/danger/addDanger.vue.wxml:template:1:237")
 var oD=_oz(z,3,e,s,gg)
-var fE=_gd(x[23],oD,e_,d_)
+var fE=_gd(x[22],oD,e_,d_)
 if(fE){
 var cF=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3656,13 +3630,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[23],1,345)
+else _w(oD,x[22],1,345)
 cs.pop()
 var hG=_v()
 _(oB,hG)
 cs.push("./pages/danger/addDanger.vue.wxml:template:1:368")
 var oH=_oz(z,7,e,s,gg)
-var cI=_gd(x[23],oH,e_,d_)
+var cI=_gd(x[22],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,6,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3670,13 +3644,13 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[23],1,479)
+else _w(oH,x[22],1,479)
 cs.pop()
 var lK=_v()
 _(oB,lK)
 cs.push("./pages/danger/addDanger.vue.wxml:template:1:502")
 var aL=_oz(z,11,e,s,gg)
-var tM=_gd(x[23],aL,e_,d_)
+var tM=_gd(x[22],aL,e_,d_)
 if(tM){
 var eN=_1z(z,10,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3684,7 +3658,7 @@ lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[23],1,617)
+else _w(aL,x[22],1,617)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -3695,46 +3669,46 @@ throw err
 p_[b]=false
 return r
 }
+var m12=function(e,s,r,gg){
+var z=gz$gwx_13()
+var lY=e_[x[22]].i
+_ai(lY,x[3],e_,x[22],1,1)
+_ai(lY,x[2],e_,x[22],1,71)
+lY.pop()
+lY.pop()
+return r
+}
+e_[x[22]]={f:m12,j:[],i:[],ti:[x[3],x[2]],ic:[]}
+d_[x[23]]={}
 var m13=function(e,s,r,gg){
 var z=gz$gwx_14()
-var aZ=e_[x[23]].i
-_ai(aZ,x[2],e_,x[23],1,1)
-_ai(aZ,x[1],e_,x[23],1,71)
-aZ.pop()
-aZ.pop()
-return r
-}
-e_[x[23]]={f:m13,j:[],i:[],ti:[x[2],x[1]],ic:[]}
-d_[x[24]]={}
-var m14=function(e,s,r,gg){
-var z=gz$gwx_15()
-var e2=e_[x[24]].i
-_ai(e2,x[25],e_,x[24],1,1)
-var b3=_v()
-_(r,b3)
+var t1=e_[x[23]].i
+_ai(t1,x[24],e_,x[23],1,1)
+var e2=_v()
+_(r,e2)
 cs.push("./pages/danger/addDanger.wxml:template:2:6")
-var o4=_oz(z,1,e,s,gg)
-var x5=_gd(x[24],o4,e_,d_)
-if(x5){
-var o6=_1z(z,0,e,s,gg) || {}
+var b3=_oz(z,1,e,s,gg)
+var o4=_gd(x[23],b3,e_,d_)
+if(o4){
+var x5=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-b3.wxXCkey=3
-x5(o6,o6,b3,gg)
+e2.wxXCkey=3
+o4(x5,x5,e2,gg)
 gg.f=cur_globalf
 }
-else _w(o4,x[24],2,18)
+else _w(b3,x[23],2,18)
 cs.pop()
-e2.pop()
+t1.pop()
 return r
 }
-e_[x[24]]={f:m14,j:[],i:[],ti:[x[25]],ic:[]}
-d_[x[26]]={}
-d_[x[26]]["77f549ab"]=function(e,s,r,gg){
-var z=gz$gwx_16()
-var b=x[26]+':77f549ab'
+e_[x[23]]={f:m13,j:[],i:[],ti:[x[24]],ic:[]}
+d_[x[25]]={}
+d_[x[25]]["77f549ab"]=function(e,s,r,gg){
+var z=gz$gwx_15()
+var b=x[25]+':77f549ab'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/danger/detailDanger.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[26]);return}
+if(p_[b]){_wl(b,x[25]);return}
 p_[b]=true
 try{
 cs.push("./pages/danger/detailDanger.vue.wxml:view:1:157")
@@ -3744,7 +3718,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/danger/detailDanger.vue.wxml:template:1:345")
 var oD=_oz(z,3,e,s,gg)
-var fE=_gd(x[26],oD,e_,d_)
+var fE=_gd(x[25],oD,e_,d_)
 if(fE){
 var cF=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3752,13 +3726,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[26],1,460)
+else _w(oD,x[25],1,460)
 cs.pop()
 var hG=_v()
 _(oB,hG)
 cs.push("./pages/danger/detailDanger.vue.wxml:template:1:1955")
 var oH=_oz(z,5,e,s,gg)
-var cI=_gd(x[26],oH,e_,d_)
+var cI=_gd(x[25],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,4,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3766,13 +3740,13 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[26],1,2072)
+else _w(oH,x[25],1,2072)
 cs.pop()
 var lK=_v()
 _(oB,lK)
 cs.push("./pages/danger/detailDanger.vue.wxml:template:1:2300")
 var aL=_oz(z,7,e,s,gg)
-var tM=_gd(x[26],aL,e_,d_)
+var tM=_gd(x[25],aL,e_,d_)
 if(tM){
 var eN=_1z(z,6,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3780,13 +3754,13 @@ lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[26],1,2417)
+else _w(aL,x[25],1,2417)
 cs.pop()
 var bO=_v()
 _(oB,bO)
 cs.push("./pages/danger/detailDanger.vue.wxml:template:1:3923")
 var oP=_oz(z,9,e,s,gg)
-var xQ=_gd(x[26],oP,e_,d_)
+var xQ=_gd(x[25],oP,e_,d_)
 if(xQ){
 var oR=_1z(z,8,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3794,13 +3768,13 @@ bO.wxXCkey=3
 xQ(oR,oR,bO,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[26],1,4040)
+else _w(oP,x[25],1,4040)
 cs.pop()
 var fS=_v()
 _(oB,fS)
 cs.push("./pages/danger/detailDanger.vue.wxml:template:1:5406")
 var cT=_oz(z,11,e,s,gg)
-var hU=_gd(x[26],cT,e_,d_)
+var hU=_gd(x[25],cT,e_,d_)
 if(hU){
 var oV=_1z(z,10,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3808,7 +3782,7 @@ fS.wxXCkey=3
 hU(oV,oV,fS,gg)
 gg.f=cur_globalf
 }
-else _w(cT,x[26],1,5523)
+else _w(cT,x[25],1,5523)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -3819,53 +3793,53 @@ throw err
 p_[b]=false
 return r
 }
+var m14=function(e,s,r,gg){
+var z=gz$gwx_15()
+var f7=e_[x[25]].i
+_ai(f7,x[2],e_,x[25],1,1)
+_ai(f7,x[3],e_,x[25],1,61)
+f7.pop()
+f7.pop()
+return r
+}
+e_[x[25]]={f:m14,j:[],i:[],ti:[x[2],x[3]],ic:[]}
+d_[x[26]]={}
 var m15=function(e,s,r,gg){
 var z=gz$gwx_16()
-var c8=e_[x[26]].i
-_ai(c8,x[1],e_,x[26],1,1)
-_ai(c8,x[2],e_,x[26],1,61)
-c8.pop()
-c8.pop()
-return r
-}
-e_[x[26]]={f:m15,j:[],i:[],ti:[x[1],x[2]],ic:[]}
-d_[x[27]]={}
-var m16=function(e,s,r,gg){
-var z=gz$gwx_17()
-var o0=e_[x[27]].i
-_ai(o0,x[28],e_,x[27],1,1)
-var cAB=_v()
-_(r,cAB)
+var h9=e_[x[26]].i
+_ai(h9,x[27],e_,x[26],1,1)
+var o0=_v()
+_(r,o0)
 cs.push("./pages/danger/detailDanger.wxml:template:2:6")
-var oBB=_oz(z,1,e,s,gg)
-var lCB=_gd(x[27],oBB,e_,d_)
-if(lCB){
-var aDB=_1z(z,0,e,s,gg) || {}
+var cAB=_oz(z,1,e,s,gg)
+var oBB=_gd(x[26],cAB,e_,d_)
+if(oBB){
+var lCB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-cAB.wxXCkey=3
-lCB(aDB,aDB,cAB,gg)
+o0.wxXCkey=3
+oBB(lCB,lCB,o0,gg)
 gg.f=cur_globalf
 }
-else _w(oBB,x[27],2,18)
+else _w(cAB,x[26],2,18)
 cs.pop()
-o0.pop()
+h9.pop()
 return r
 }
-e_[x[27]]={f:m16,j:[],i:[],ti:[x[28]],ic:[]}
-d_[x[29]]={}
-d_[x[29]]["4ef7e761"]=function(e,s,r,gg){
-var z=gz$gwx_18()
-var b=x[29]+':4ef7e761'
+e_[x[26]]={f:m15,j:[],i:[],ti:[x[27]],ic:[]}
+d_[x[28]]={}
+d_[x[28]]["4ef7e761"]=function(e,s,r,gg){
+var z=gz$gwx_17()
+var b=x[28]+':4ef7e761'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/login/diyHost.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[29]);return}
+if(p_[b]){_wl(b,x[28]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
 cs.push("./pages/login/diyHost.vue.wxml:template:1:247")
 var xC=_oz(z,5,e,s,gg)
-var oD=_gd(x[29],xC,e_,d_)
+var oD=_gd(x[28],xC,e_,d_)
 if(oD){
 var fE=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3873,7 +3847,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[29],1,471)
+else _w(xC,x[28],1,471)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -3882,44 +3856,44 @@ throw err
 p_[b]=false
 return r
 }
+var m16=function(e,s,r,gg){
+var z=gz$gwx_17()
+var tEB=e_[x[28]].i
+_ai(tEB,x[29],e_,x[28],1,1)
+tEB.pop()
+return r
+}
+e_[x[28]]={f:m16,j:[],i:[],ti:[x[29]],ic:[]}
+d_[x[30]]={}
 var m17=function(e,s,r,gg){
 var z=gz$gwx_18()
-var eFB=e_[x[29]].i
-_ai(eFB,x[30],e_,x[29],1,1)
-eFB.pop()
-return r
-}
-e_[x[29]]={f:m17,j:[],i:[],ti:[x[30]],ic:[]}
-d_[x[31]]={}
-var m18=function(e,s,r,gg){
-var z=gz$gwx_19()
-var oHB=e_[x[31]].i
-_ai(oHB,x[32],e_,x[31],1,1)
-var xIB=_v()
-_(r,xIB)
+var bGB=e_[x[30]].i
+_ai(bGB,x[31],e_,x[30],1,1)
+var oHB=_v()
+_(r,oHB)
 cs.push("./pages/login/diyHost.wxml:template:2:6")
-var oJB=_oz(z,1,e,s,gg)
-var fKB=_gd(x[31],oJB,e_,d_)
-if(fKB){
-var cLB=_1z(z,0,e,s,gg) || {}
+var xIB=_oz(z,1,e,s,gg)
+var oJB=_gd(x[30],xIB,e_,d_)
+if(oJB){
+var fKB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-xIB.wxXCkey=3
-fKB(cLB,cLB,xIB,gg)
+oHB.wxXCkey=3
+oJB(fKB,fKB,oHB,gg)
 gg.f=cur_globalf
 }
-else _w(oJB,x[31],2,18)
+else _w(xIB,x[30],2,18)
 cs.pop()
-oHB.pop()
+bGB.pop()
 return r
 }
-e_[x[31]]={f:m18,j:[],i:[],ti:[x[32]],ic:[]}
-d_[x[33]]={}
-d_[x[33]]["2d8d4fae"]=function(e,s,r,gg){
-var z=gz$gwx_20()
-var b=x[33]+':2d8d4fae'
+e_[x[30]]={f:m17,j:[],i:[],ti:[x[31]],ic:[]}
+d_[x[32]]={}
+d_[x[32]]["2d8d4fae"]=function(e,s,r,gg){
+var z=gz$gwx_19()
+var b=x[32]+':2d8d4fae'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/login/login.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[33]);return}
+if(p_[b]){_wl(b,x[32]);return}
 p_[b]=true
 try{
 cs.push("./pages/login/login.vue.wxml:view:1:72")
@@ -3932,7 +3906,7 @@ var fE=_v()
 _(oD,fE)
 cs.push("./pages/login/login.vue.wxml:template:1:247")
 var cF=_oz(z,7,e,s,gg)
-var hG=_gd(x[33],cF,e_,d_)
+var hG=_gd(x[32],cF,e_,d_)
 if(hG){
 var oH=_1z(z,4,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3940,13 +3914,13 @@ fE.wxXCkey=3
 hG(oH,oH,fE,gg)
 gg.f=cur_globalf
 }
-else _w(cF,x[33],1,474)
+else _w(cF,x[32],1,474)
 cs.pop()
 var cI=_v()
 _(oD,cI)
 cs.push("./pages/login/login.vue.wxml:template:1:594")
 var oJ=_oz(z,15,e,s,gg)
-var lK=_gd(x[33],oJ,e_,d_)
+var lK=_gd(x[32],oJ,e_,d_)
 if(lK){
 var aL=_1z(z,12,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -3954,7 +3928,7 @@ cI.wxXCkey=3
 lK(aL,aL,cI,gg)
 gg.f=cur_globalf
 }
-else _w(oJ,x[33],1,822)
+else _w(oJ,x[32],1,822)
 cs.pop()
 cs.pop()
 _(oB,oD)
@@ -3974,44 +3948,44 @@ throw err
 p_[b]=false
 return r
 }
+var m18=function(e,s,r,gg){
+var z=gz$gwx_19()
+var hMB=e_[x[32]].i
+_ai(hMB,x[29],e_,x[32],1,1)
+hMB.pop()
+return r
+}
+e_[x[32]]={f:m18,j:[],i:[],ti:[x[29]],ic:[]}
+d_[x[33]]={}
 var m19=function(e,s,r,gg){
 var z=gz$gwx_20()
-var oNB=e_[x[33]].i
-_ai(oNB,x[30],e_,x[33],1,1)
-oNB.pop()
-return r
-}
-e_[x[33]]={f:m19,j:[],i:[],ti:[x[30]],ic:[]}
-d_[x[34]]={}
-var m20=function(e,s,r,gg){
-var z=gz$gwx_21()
-var oPB=e_[x[34]].i
-_ai(oPB,x[35],e_,x[34],1,1)
-var lQB=_v()
-_(r,lQB)
+var cOB=e_[x[33]].i
+_ai(cOB,x[34],e_,x[33],1,1)
+var oPB=_v()
+_(r,oPB)
 cs.push("./pages/login/login.wxml:template:2:6")
-var aRB=_oz(z,1,e,s,gg)
-var tSB=_gd(x[34],aRB,e_,d_)
-if(tSB){
-var eTB=_1z(z,0,e,s,gg) || {}
+var lQB=_oz(z,1,e,s,gg)
+var aRB=_gd(x[33],lQB,e_,d_)
+if(aRB){
+var tSB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-lQB.wxXCkey=3
-tSB(eTB,eTB,lQB,gg)
+oPB.wxXCkey=3
+aRB(tSB,tSB,oPB,gg)
 gg.f=cur_globalf
 }
-else _w(aRB,x[34],2,18)
+else _w(lQB,x[33],2,18)
 cs.pop()
-oPB.pop()
+cOB.pop()
 return r
 }
-e_[x[34]]={f:m20,j:[],i:[],ti:[x[35]],ic:[]}
-d_[x[36]]={}
-d_[x[36]]["00cb397a"]=function(e,s,r,gg){
-var z=gz$gwx_22()
-var b=x[36]+':00cb397a'
+e_[x[33]]={f:m19,j:[],i:[],ti:[x[34]],ic:[]}
+d_[x[35]]={}
+d_[x[35]]["00cb397a"]=function(e,s,r,gg){
+var z=gz$gwx_21()
+var b=x[35]+':00cb397a'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/main/main.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[36]);return}
+if(p_[b]){_wl(b,x[35]);return}
 p_[b]=true
 try{
 cs.push("./pages/main/main.vue.wxml:view:1:27")
@@ -4059,41 +4033,41 @@ throw err
 p_[b]=false
 return r
 }
+var m20=function(e,s,r,gg){
+var z=gz$gwx_21()
+return r
+}
+e_[x[35]]={f:m20,j:[],i:[],ti:[],ic:[]}
+d_[x[36]]={}
 var m21=function(e,s,r,gg){
 var z=gz$gwx_22()
-return r
-}
-e_[x[36]]={f:m21,j:[],i:[],ti:[],ic:[]}
-d_[x[37]]={}
-var m22=function(e,s,r,gg){
-var z=gz$gwx_23()
-var xWB=e_[x[37]].i
-_ai(xWB,x[38],e_,x[37],1,1)
-var oXB=_v()
-_(r,oXB)
+var oVB=e_[x[36]].i
+_ai(oVB,x[37],e_,x[36],1,1)
+var xWB=_v()
+_(r,xWB)
 cs.push("./pages/main/main.wxml:template:2:6")
-var fYB=_oz(z,1,e,s,gg)
-var cZB=_gd(x[37],fYB,e_,d_)
-if(cZB){
-var h1B=_1z(z,0,e,s,gg) || {}
+var oXB=_oz(z,1,e,s,gg)
+var fYB=_gd(x[36],oXB,e_,d_)
+if(fYB){
+var cZB=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-oXB.wxXCkey=3
-cZB(h1B,h1B,oXB,gg)
+xWB.wxXCkey=3
+fYB(cZB,cZB,xWB,gg)
 gg.f=cur_globalf
 }
-else _w(fYB,x[37],2,18)
+else _w(oXB,x[36],2,18)
 cs.pop()
-xWB.pop()
+oVB.pop()
 return r
 }
-e_[x[37]]={f:m22,j:[],i:[],ti:[x[38]],ic:[]}
-d_[x[39]]={}
-d_[x[39]]["47b16668"]=function(e,s,r,gg){
-var z=gz$gwx_24()
-var b=x[39]+':47b16668'
+e_[x[36]]={f:m21,j:[],i:[],ti:[x[37]],ic:[]}
+d_[x[38]]={}
+d_[x[38]]["47b16668"]=function(e,s,r,gg){
+var z=gz$gwx_23()
+var b=x[38]+':47b16668'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/mpvue-echarts/chartList.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[39]);return}
+if(p_[b]){_wl(b,x[38]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -4103,41 +4077,41 @@ throw err
 p_[b]=false
 return r
 }
+var m22=function(e,s,r,gg){
+var z=gz$gwx_23()
+return r
+}
+e_[x[38]]={f:m22,j:[],i:[],ti:[],ic:[]}
+d_[x[39]]={}
 var m23=function(e,s,r,gg){
 var z=gz$gwx_24()
-return r
-}
-e_[x[39]]={f:m23,j:[],i:[],ti:[],ic:[]}
-d_[x[40]]={}
-var m24=function(e,s,r,gg){
-var z=gz$gwx_25()
-var o4B=e_[x[40]].i
-_ai(o4B,x[41],e_,x[40],1,1)
-var l5B=_v()
-_(r,l5B)
+var c3B=e_[x[39]].i
+_ai(c3B,x[40],e_,x[39],1,1)
+var o4B=_v()
+_(r,o4B)
 cs.push("./pages/mpvue-echarts/chartList.wxml:template:2:6")
-var a6B=_oz(z,1,e,s,gg)
-var t7B=_gd(x[40],a6B,e_,d_)
-if(t7B){
-var e8B=_1z(z,0,e,s,gg) || {}
+var l5B=_oz(z,1,e,s,gg)
+var a6B=_gd(x[39],l5B,e_,d_)
+if(a6B){
+var t7B=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-l5B.wxXCkey=3
-t7B(e8B,e8B,l5B,gg)
+o4B.wxXCkey=3
+a6B(t7B,t7B,o4B,gg)
 gg.f=cur_globalf
 }
-else _w(a6B,x[40],2,18)
+else _w(l5B,x[39],2,18)
 cs.pop()
-o4B.pop()
+c3B.pop()
 return r
 }
-e_[x[40]]={f:m24,j:[],i:[],ti:[x[41]],ic:[]}
-d_[x[42]]={}
-d_[x[42]]["00eed4f4"]=function(e,s,r,gg){
-var z=gz$gwx_26()
-var b=x[42]+':00eed4f4'
+e_[x[39]]={f:m23,j:[],i:[],ti:[x[40]],ic:[]}
+d_[x[41]]={}
+d_[x[41]]["00eed4f4"]=function(e,s,r,gg){
+var z=gz$gwx_25()
+var b=x[41]+':00eed4f4'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/mpvue-echarts/deviceChart.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[42]);return}
+if(p_[b]){_wl(b,x[41]);return}
 p_[b]=true
 try{
 cs.push("./pages/mpvue-echarts/deviceChart.vue.wxml:view:1:152")
@@ -4147,7 +4121,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/mpvue-echarts/deviceChart.vue.wxml:template:1:329")
 var oD=_oz(z,4,e,s,gg)
-var fE=_gd(x[42],oD,e_,d_)
+var fE=_gd(x[41],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4155,13 +4129,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[42],1,430)
+else _w(oD,x[41],1,430)
 cs.pop()
 var hG=_v()
 _(oB,hG)
 cs.push("./pages/mpvue-echarts/deviceChart.vue.wxml:template:1:460")
 var oH=_oz(z,7,e,s,gg)
-var cI=_gd(x[42],oH,e_,d_)
+var cI=_gd(x[41],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,6,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4169,7 +4143,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[42],1,575)
+else _w(oH,x[41],1,575)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -4180,46 +4154,46 @@ throw err
 p_[b]=false
 return r
 }
+var m24=function(e,s,r,gg){
+var z=gz$gwx_25()
+var b9B=e_[x[41]].i
+_ai(b9B,x[5],e_,x[41],1,1)
+_ai(b9B,x[6],e_,x[41],1,64)
+b9B.pop()
+b9B.pop()
+return r
+}
+e_[x[41]]={f:m24,j:[],i:[],ti:[x[5],x[6]],ic:[]}
+d_[x[42]]={}
 var m25=function(e,s,r,gg){
 var z=gz$gwx_26()
-var o0B=e_[x[42]].i
-_ai(o0B,x[5],e_,x[42],1,1)
-_ai(o0B,x[6],e_,x[42],1,64)
-o0B.pop()
-o0B.pop()
-return r
-}
-e_[x[42]]={f:m25,j:[],i:[],ti:[x[5],x[6]],ic:[]}
-d_[x[43]]={}
-var m26=function(e,s,r,gg){
-var z=gz$gwx_27()
-var oBC=e_[x[43]].i
-_ai(oBC,x[44],e_,x[43],1,1)
-var fCC=_v()
-_(r,fCC)
+var xAC=e_[x[42]].i
+_ai(xAC,x[43],e_,x[42],1,1)
+var oBC=_v()
+_(r,oBC)
 cs.push("./pages/mpvue-echarts/deviceChart.wxml:template:2:6")
-var cDC=_oz(z,1,e,s,gg)
-var hEC=_gd(x[43],cDC,e_,d_)
-if(hEC){
-var oFC=_1z(z,0,e,s,gg) || {}
+var fCC=_oz(z,1,e,s,gg)
+var cDC=_gd(x[42],fCC,e_,d_)
+if(cDC){
+var hEC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-fCC.wxXCkey=3
-hEC(oFC,oFC,fCC,gg)
+oBC.wxXCkey=3
+cDC(hEC,hEC,oBC,gg)
 gg.f=cur_globalf
 }
-else _w(cDC,x[43],2,18)
+else _w(fCC,x[42],2,18)
 cs.pop()
-oBC.pop()
+xAC.pop()
 return r
 }
-e_[x[43]]={f:m26,j:[],i:[],ti:[x[44]],ic:[]}
-d_[x[45]]={}
-d_[x[45]]["7e389618"]=function(e,s,r,gg){
-var z=gz$gwx_28()
-var b=x[45]+':7e389618'
+e_[x[42]]={f:m25,j:[],i:[],ti:[x[43]],ic:[]}
+d_[x[44]]={}
+d_[x[44]]["7e389618"]=function(e,s,r,gg){
+var z=gz$gwx_27()
+var b=x[44]+':7e389618'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/mpvue-echarts/eventChart.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[45]);return}
+if(p_[b]){_wl(b,x[44]);return}
 p_[b]=true
 try{
 cs.push("./pages/mpvue-echarts/eventChart.vue.wxml:view:1:152")
@@ -4229,7 +4203,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/mpvue-echarts/eventChart.vue.wxml:template:1:329")
 var oD=_oz(z,4,e,s,gg)
-var fE=_gd(x[45],oD,e_,d_)
+var fE=_gd(x[44],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4237,13 +4211,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[45],1,430)
+else _w(oD,x[44],1,430)
 cs.pop()
 var hG=_v()
 _(oB,hG)
 cs.push("./pages/mpvue-echarts/eventChart.vue.wxml:template:1:460")
 var oH=_oz(z,7,e,s,gg)
-var cI=_gd(x[45],oH,e_,d_)
+var cI=_gd(x[44],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,6,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4251,7 +4225,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[45],1,575)
+else _w(oH,x[44],1,575)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -4262,46 +4236,46 @@ throw err
 p_[b]=false
 return r
 }
+var m26=function(e,s,r,gg){
+var z=gz$gwx_27()
+var cGC=e_[x[44]].i
+_ai(cGC,x[5],e_,x[44],1,1)
+_ai(cGC,x[6],e_,x[44],1,64)
+cGC.pop()
+cGC.pop()
+return r
+}
+e_[x[44]]={f:m26,j:[],i:[],ti:[x[5],x[6]],ic:[]}
+d_[x[45]]={}
 var m27=function(e,s,r,gg){
 var z=gz$gwx_28()
-var oHC=e_[x[45]].i
-_ai(oHC,x[5],e_,x[45],1,1)
-_ai(oHC,x[6],e_,x[45],1,64)
-oHC.pop()
-oHC.pop()
-return r
-}
-e_[x[45]]={f:m27,j:[],i:[],ti:[x[5],x[6]],ic:[]}
-d_[x[46]]={}
-var m28=function(e,s,r,gg){
-var z=gz$gwx_29()
-var aJC=e_[x[46]].i
-_ai(aJC,x[47],e_,x[46],1,1)
-var tKC=_v()
-_(r,tKC)
+var lIC=e_[x[45]].i
+_ai(lIC,x[46],e_,x[45],1,1)
+var aJC=_v()
+_(r,aJC)
 cs.push("./pages/mpvue-echarts/eventChart.wxml:template:2:6")
-var eLC=_oz(z,1,e,s,gg)
-var bMC=_gd(x[46],eLC,e_,d_)
-if(bMC){
-var oNC=_1z(z,0,e,s,gg) || {}
+var tKC=_oz(z,1,e,s,gg)
+var eLC=_gd(x[45],tKC,e_,d_)
+if(eLC){
+var bMC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-tKC.wxXCkey=3
-bMC(oNC,oNC,tKC,gg)
+aJC.wxXCkey=3
+eLC(bMC,bMC,aJC,gg)
 gg.f=cur_globalf
 }
-else _w(eLC,x[46],2,18)
+else _w(tKC,x[45],2,18)
 cs.pop()
-aJC.pop()
+lIC.pop()
 return r
 }
-e_[x[46]]={f:m28,j:[],i:[],ti:[x[47]],ic:[]}
-d_[x[48]]={}
-d_[x[48]]["18e9acfc"]=function(e,s,r,gg){
-var z=gz$gwx_30()
-var b=x[48]+':18e9acfc'
+e_[x[45]]={f:m27,j:[],i:[],ti:[x[46]],ic:[]}
+d_[x[47]]={}
+d_[x[47]]["18e9acfc"]=function(e,s,r,gg){
+var z=gz$gwx_29()
+var b=x[47]+':18e9acfc'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/mpvue-echarts/mpvue-echarts.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[48]);return}
+if(p_[b]){_wl(b,x[47]);return}
 p_[b]=true
 try{
 cs.push("./pages/mpvue-echarts/mpvue-echarts.vue.wxml:view:1:90")
@@ -4311,7 +4285,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/mpvue-echarts/mpvue-echarts.vue.wxml:template:1:446")
 var oD=_oz(z,4,e,s,gg)
-var fE=_gd(x[48],oD,e_,d_)
+var fE=_gd(x[47],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4319,13 +4293,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[48],1,547)
+else _w(oD,x[47],1,547)
 cs.pop()
 var hG=_v()
 _(oB,hG)
 cs.push("./pages/mpvue-echarts/mpvue-echarts.vue.wxml:template:1:674")
 var oH=_oz(z,8,e,s,gg)
-var cI=_gd(x[48],oH,e_,d_)
+var cI=_gd(x[47],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,7,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4333,7 +4307,7 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[48],1,777)
+else _w(oH,x[47],1,777)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -4344,44 +4318,44 @@ throw err
 p_[b]=false
 return r
 }
+var m28=function(e,s,r,gg){
+var z=gz$gwx_29()
+var xOC=e_[x[47]].i
+_ai(xOC,x[5],e_,x[47],1,1)
+xOC.pop()
+return r
+}
+e_[x[47]]={f:m28,j:[],i:[],ti:[x[5]],ic:[]}
+d_[x[48]]={}
 var m29=function(e,s,r,gg){
 var z=gz$gwx_30()
-var oPC=e_[x[48]].i
-_ai(oPC,x[5],e_,x[48],1,1)
-oPC.pop()
-return r
-}
-e_[x[48]]={f:m29,j:[],i:[],ti:[x[5]],ic:[]}
-d_[x[49]]={}
-var m30=function(e,s,r,gg){
-var z=gz$gwx_31()
-var cRC=e_[x[49]].i
-_ai(cRC,x[50],e_,x[49],1,1)
-var hSC=_v()
-_(r,hSC)
+var fQC=e_[x[48]].i
+_ai(fQC,x[49],e_,x[48],1,1)
+var cRC=_v()
+_(r,cRC)
 cs.push("./pages/mpvue-echarts/mpvue-echarts.wxml:template:2:6")
-var oTC=_oz(z,1,e,s,gg)
-var cUC=_gd(x[49],oTC,e_,d_)
-if(cUC){
-var oVC=_1z(z,0,e,s,gg) || {}
+var hSC=_oz(z,1,e,s,gg)
+var oTC=_gd(x[48],hSC,e_,d_)
+if(oTC){
+var cUC=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-hSC.wxXCkey=3
-cUC(oVC,oVC,hSC,gg)
+cRC.wxXCkey=3
+oTC(cUC,cUC,cRC,gg)
 gg.f=cur_globalf
 }
-else _w(oTC,x[49],2,18)
+else _w(hSC,x[48],2,18)
 cs.pop()
-cRC.pop()
+fQC.pop()
 return r
 }
-e_[x[49]]={f:m30,j:[],i:[],ti:[x[50]],ic:[]}
-d_[x[51]]={}
-d_[x[51]]["1b853e3c"]=function(e,s,r,gg){
-var z=gz$gwx_32()
-var b=x[51]+':1b853e3c'
+e_[x[48]]={f:m29,j:[],i:[],ti:[x[49]],ic:[]}
+d_[x[50]]={}
+d_[x[50]]["1b853e3c"]=function(e,s,r,gg){
+var z=gz$gwx_31()
+var b=x[50]+':1b853e3c'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/mpvue-echarts/valveChart.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[51]);return}
+if(p_[b]){_wl(b,x[50]);return}
 p_[b]=true
 try{
 cs.push("./pages/mpvue-echarts/valveChart.vue.wxml:view:1:282")
@@ -4391,7 +4365,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/mpvue-echarts/valveChart.vue.wxml:template:1:411")
 var oD=_oz(z,4,e,s,gg)
-var fE=_gd(x[51],oD,e_,d_)
+var fE=_gd(x[50],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4399,13 +4373,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[51],1,514)
+else _w(oD,x[50],1,514)
 cs.pop()
 var hG=_v()
 _(oB,hG)
 cs.push("./pages/mpvue-echarts/valveChart.vue.wxml:template:1:586")
 var oH=_oz(z,7,e,s,gg)
-var cI=_gd(x[51],oH,e_,d_)
+var cI=_gd(x[50],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,6,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4413,13 +4387,13 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[51],1,701)
+else _w(oH,x[50],1,701)
 cs.pop()
 var lK=_v()
 _(oB,lK)
 cs.push("./pages/mpvue-echarts/valveChart.vue.wxml:template:1:731")
 var aL=_oz(z,9,e,s,gg)
-var tM=_gd(x[51],aL,e_,d_)
+var tM=_gd(x[50],aL,e_,d_)
 if(tM){
 var eN=_1z(z,8,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4427,7 +4401,7 @@ lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[51],1,846)
+else _w(aL,x[50],1,846)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -4438,50 +4412,50 @@ throw err
 p_[b]=false
 return r
 }
+var m30=function(e,s,r,gg){
+var z=gz$gwx_31()
+var lWC=e_[x[50]].i
+_ai(lWC,x[5],e_,x[50],1,1)
+_ai(lWC,x[2],e_,x[50],1,64)
+_ai(lWC,x[3],e_,x[50],1,124)
+_ai(lWC,x[6],e_,x[50],1,194)
+lWC.pop()
+lWC.pop()
+lWC.pop()
+lWC.pop()
+return r
+}
+e_[x[50]]={f:m30,j:[],i:[],ti:[x[5],x[2],x[3],x[6]],ic:[]}
+d_[x[51]]={}
 var m31=function(e,s,r,gg){
 var z=gz$gwx_32()
-var aXC=e_[x[51]].i
-_ai(aXC,x[5],e_,x[51],1,1)
-_ai(aXC,x[1],e_,x[51],1,64)
-_ai(aXC,x[2],e_,x[51],1,124)
-_ai(aXC,x[6],e_,x[51],1,194)
-aXC.pop()
-aXC.pop()
-aXC.pop()
-aXC.pop()
-return r
-}
-e_[x[51]]={f:m31,j:[],i:[],ti:[x[5],x[1],x[2],x[6]],ic:[]}
-d_[x[52]]={}
-var m32=function(e,s,r,gg){
-var z=gz$gwx_33()
-var eZC=e_[x[52]].i
-_ai(eZC,x[53],e_,x[52],1,1)
-var b1C=_v()
-_(r,b1C)
+var tYC=e_[x[51]].i
+_ai(tYC,x[52],e_,x[51],1,1)
+var eZC=_v()
+_(r,eZC)
 cs.push("./pages/mpvue-echarts/valveChart.wxml:template:2:6")
-var o2C=_oz(z,1,e,s,gg)
-var x3C=_gd(x[52],o2C,e_,d_)
-if(x3C){
-var o4C=_1z(z,0,e,s,gg) || {}
+var b1C=_oz(z,1,e,s,gg)
+var o2C=_gd(x[51],b1C,e_,d_)
+if(o2C){
+var x3C=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-b1C.wxXCkey=3
-x3C(o4C,o4C,b1C,gg)
+eZC.wxXCkey=3
+o2C(x3C,x3C,eZC,gg)
 gg.f=cur_globalf
 }
-else _w(o2C,x[52],2,18)
+else _w(b1C,x[51],2,18)
 cs.pop()
-eZC.pop()
+tYC.pop()
 return r
 }
-e_[x[52]]={f:m32,j:[],i:[],ti:[x[53]],ic:[]}
-d_[x[54]]={}
-d_[x[54]]["7be27b0c"]=function(e,s,r,gg){
-var z=gz$gwx_34()
-var b=x[54]+':7be27b0c'
+e_[x[51]]={f:m31,j:[],i:[],ti:[x[52]],ic:[]}
+d_[x[53]]={}
+d_[x[53]]["7be27b0c"]=function(e,s,r,gg){
+var z=gz$gwx_33()
+var b=x[53]+':7be27b0c'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/pointAdd/pointAdd.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[54]);return}
+if(p_[b]){_wl(b,x[53]);return}
 p_[b]=true
 try{
 cs.push("./pages/pointAdd/pointAdd.vue.wxml:view:1:217")
@@ -4491,7 +4465,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/pointAdd/pointAdd.vue.wxml:template:1:405")
 var oD=_oz(z,3,e,s,gg)
-var fE=_gd(x[54],oD,e_,d_)
+var fE=_gd(x[53],oD,e_,d_)
 if(fE){
 var cF=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4499,7 +4473,7 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[54],1,520)
+else _w(oD,x[53],1,520)
 cs.pop()
 cs.push("./pages/pointAdd/pointAdd.vue.wxml:view:1:550")
 var hG=_n('view')
@@ -4508,7 +4482,7 @@ var oH=_v()
 _(hG,oH)
 cs.push("./pages/pointAdd/pointAdd.vue.wxml:template:1:704")
 var cI=_oz(z,7,e,s,gg)
-var oJ=_gd(x[54],cI,e_,d_)
+var oJ=_gd(x[53],cI,e_,d_)
 if(oJ){
 var lK=_1z(z,6,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4516,13 +4490,13 @@ oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[54],1,824)
+else _w(cI,x[53],1,824)
 cs.pop()
 var aL=_v()
 _(hG,aL)
 cs.push("./pages/pointAdd/pointAdd.vue.wxml:template:1:900")
 var tM=_oz(z,12,e,s,gg)
-var eN=_gd(x[54],tM,e_,d_)
+var eN=_gd(x[53],tM,e_,d_)
 if(eN){
 var bO=_1z(z,11,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4530,13 +4504,13 @@ aL.wxXCkey=3
 eN(bO,bO,aL,gg)
 gg.f=cur_globalf
 }
-else _w(tM,x[54],1,1016)
+else _w(tM,x[53],1,1016)
 cs.pop()
 var oP=_v()
 _(hG,oP)
 cs.push("./pages/pointAdd/pointAdd.vue.wxml:template:1:1092")
 var xQ=_oz(z,17,e,s,gg)
-var oR=_gd(x[54],xQ,e_,d_)
+var oR=_gd(x[53],xQ,e_,d_)
 if(oR){
 var fS=_1z(z,16,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4544,7 +4518,7 @@ oP.wxXCkey=3
 oR(fS,fS,oP,gg)
 gg.f=cur_globalf
 }
-else _w(xQ,x[54],1,1202)
+else _w(xQ,x[53],1,1202)
 cs.pop()
 cs.pop()
 _(oB,hG)
@@ -4552,7 +4526,7 @@ var cT=_v()
 _(oB,cT)
 cs.push("./pages/pointAdd/pointAdd.vue.wxml:template:1:1274")
 var hU=_oz(z,21,e,s,gg)
-var oV=_gd(x[54],hU,e_,d_)
+var oV=_gd(x[53],hU,e_,d_)
 if(oV){
 var cW=_1z(z,20,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4560,7 +4534,7 @@ cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[54],1,1391)
+else _w(hU,x[53],1,1391)
 cs.pop()
 cs.push("./pages/pointAdd/pointAdd.vue.wxml:view:1:1421")
 var oX=_n('view')
@@ -4590,48 +4564,48 @@ throw err
 p_[b]=false
 return r
 }
+var m32=function(e,s,r,gg){
+var z=gz$gwx_33()
+var f5C=e_[x[53]].i
+_ai(f5C,x[2],e_,x[53],1,1)
+_ai(f5C,x[3],e_,x[53],1,61)
+_ai(f5C,x[4],e_,x[53],1,131)
+f5C.pop()
+f5C.pop()
+f5C.pop()
+return r
+}
+e_[x[53]]={f:m32,j:[],i:[],ti:[x[2],x[3],x[4]],ic:[]}
+d_[x[54]]={}
 var m33=function(e,s,r,gg){
 var z=gz$gwx_34()
-var c6C=e_[x[54]].i
-_ai(c6C,x[1],e_,x[54],1,1)
-_ai(c6C,x[2],e_,x[54],1,61)
-_ai(c6C,x[3],e_,x[54],1,131)
-c6C.pop()
-c6C.pop()
-c6C.pop()
-return r
-}
-e_[x[54]]={f:m33,j:[],i:[],ti:[x[1],x[2],x[3]],ic:[]}
-d_[x[55]]={}
-var m34=function(e,s,r,gg){
-var z=gz$gwx_35()
-var o8C=e_[x[55]].i
-_ai(o8C,x[56],e_,x[55],1,1)
-var c9C=_v()
-_(r,c9C)
+var h7C=e_[x[54]].i
+_ai(h7C,x[55],e_,x[54],1,1)
+var o8C=_v()
+_(r,o8C)
 cs.push("./pages/pointAdd/pointAdd.wxml:template:2:6")
-var o0C=_oz(z,1,e,s,gg)
-var lAD=_gd(x[55],o0C,e_,d_)
-if(lAD){
-var aBD=_1z(z,0,e,s,gg) || {}
+var c9C=_oz(z,1,e,s,gg)
+var o0C=_gd(x[54],c9C,e_,d_)
+if(o0C){
+var lAD=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-c9C.wxXCkey=3
-lAD(aBD,aBD,c9C,gg)
+o8C.wxXCkey=3
+o0C(lAD,lAD,o8C,gg)
 gg.f=cur_globalf
 }
-else _w(o0C,x[55],2,18)
+else _w(c9C,x[54],2,18)
 cs.pop()
-o8C.pop()
+h7C.pop()
 return r
 }
-e_[x[55]]={f:m34,j:[],i:[],ti:[x[56]],ic:[]}
-d_[x[57]]={}
-d_[x[57]]["4bd08622"]=function(e,s,r,gg){
-var z=gz$gwx_36()
-var b=x[57]+':4bd08622'
+e_[x[54]]={f:m33,j:[],i:[],ti:[x[55]],ic:[]}
+d_[x[56]]={}
+d_[x[56]]["4bd08622"]=function(e,s,r,gg){
+var z=gz$gwx_35()
+var b=x[56]+':4bd08622'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/pointAdd/pointCheckInfo.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[57]);return}
+if(p_[b]){_wl(b,x[56]);return}
 p_[b]=true
 try{
 cs.push("./pages/pointAdd/pointCheckInfo.vue.wxml:view:1:174")
@@ -4660,41 +4634,41 @@ throw err
 p_[b]=false
 return r
 }
+var m34=function(e,s,r,gg){
+var z=gz$gwx_35()
+return r
+}
+e_[x[56]]={f:m34,j:[],i:[],ti:[],ic:[]}
+d_[x[57]]={}
 var m35=function(e,s,r,gg){
 var z=gz$gwx_36()
-return r
-}
-e_[x[57]]={f:m35,j:[],i:[],ti:[],ic:[]}
-d_[x[58]]={}
-var m36=function(e,s,r,gg){
-var z=gz$gwx_37()
-var bED=e_[x[58]].i
-_ai(bED,x[59],e_,x[58],1,1)
-var oFD=_v()
-_(r,oFD)
+var eDD=e_[x[57]].i
+_ai(eDD,x[58],e_,x[57],1,1)
+var bED=_v()
+_(r,bED)
 cs.push("./pages/pointAdd/pointCheckInfo.wxml:template:2:6")
-var xGD=_oz(z,1,e,s,gg)
-var oHD=_gd(x[58],xGD,e_,d_)
-if(oHD){
-var fID=_1z(z,0,e,s,gg) || {}
+var oFD=_oz(z,1,e,s,gg)
+var xGD=_gd(x[57],oFD,e_,d_)
+if(xGD){
+var oHD=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-oFD.wxXCkey=3
-oHD(fID,fID,oFD,gg)
+bED.wxXCkey=3
+xGD(oHD,oHD,bED,gg)
 gg.f=cur_globalf
 }
-else _w(xGD,x[58],2,18)
+else _w(oFD,x[57],2,18)
 cs.pop()
-bED.pop()
+eDD.pop()
 return r
 }
-e_[x[58]]={f:m36,j:[],i:[],ti:[x[59]],ic:[]}
-d_[x[60]]={}
-d_[x[60]]["10bbdf1a"]=function(e,s,r,gg){
-var z=gz$gwx_38()
-var b=x[60]+':10bbdf1a'
+e_[x[57]]={f:m35,j:[],i:[],ti:[x[58]],ic:[]}
+d_[x[59]]={}
+d_[x[59]]["10bbdf1a"]=function(e,s,r,gg){
+var z=gz$gwx_37()
+var b=x[59]+':10bbdf1a'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/pointCheck/pointCheck.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[60]);return}
+if(p_[b]){_wl(b,x[59]);return}
 p_[b]=true
 try{
 cs.push("./pages/pointCheck/pointCheck.vue.wxml:view:1:27")
@@ -4777,41 +4751,41 @@ throw err
 p_[b]=false
 return r
 }
+var m36=function(e,s,r,gg){
+var z=gz$gwx_37()
+return r
+}
+e_[x[59]]={f:m36,j:[],i:[],ti:[],ic:[]}
+d_[x[60]]={}
 var m37=function(e,s,r,gg){
 var z=gz$gwx_38()
-return r
-}
-e_[x[60]]={f:m37,j:[],i:[],ti:[],ic:[]}
-d_[x[61]]={}
-var m38=function(e,s,r,gg){
-var z=gz$gwx_39()
-var oLD=e_[x[61]].i
-_ai(oLD,x[62],e_,x[61],1,1)
-var cMD=_v()
-_(r,cMD)
+var hKD=e_[x[60]].i
+_ai(hKD,x[61],e_,x[60],1,1)
+var oLD=_v()
+_(r,oLD)
 cs.push("./pages/pointCheck/pointCheck.wxml:template:2:6")
-var oND=_oz(z,1,e,s,gg)
-var lOD=_gd(x[61],oND,e_,d_)
-if(lOD){
-var aPD=_1z(z,0,e,s,gg) || {}
+var cMD=_oz(z,1,e,s,gg)
+var oND=_gd(x[60],cMD,e_,d_)
+if(oND){
+var lOD=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-cMD.wxXCkey=3
-lOD(aPD,aPD,cMD,gg)
+oLD.wxXCkey=3
+oND(lOD,lOD,oLD,gg)
 gg.f=cur_globalf
 }
-else _w(oND,x[61],2,18)
+else _w(cMD,x[60],2,18)
 cs.pop()
-oLD.pop()
+hKD.pop()
 return r
 }
-e_[x[61]]={f:m38,j:[],i:[],ti:[x[62]],ic:[]}
-d_[x[63]]={}
-d_[x[63]]["21b694de"]=function(e,s,r,gg){
-var z=gz$gwx_40()
-var b=x[63]+':21b694de'
+e_[x[60]]={f:m37,j:[],i:[],ti:[x[61]],ic:[]}
+d_[x[62]]={}
+d_[x[62]]["21b694de"]=function(e,s,r,gg){
+var z=gz$gwx_39()
+var b=x[62]+':21b694de'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/pointDetail/pointDetail.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[63]);return}
+if(p_[b]){_wl(b,x[62]);return}
 p_[b]=true
 try{
 cs.push("./pages/pointDetail/pointDetail.vue.wxml:view:1:217")
@@ -4821,7 +4795,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/pointDetail/pointDetail.vue.wxml:template:1:405")
 var oD=_oz(z,3,e,s,gg)
-var fE=_gd(x[63],oD,e_,d_)
+var fE=_gd(x[62],oD,e_,d_)
 if(fE){
 var cF=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4829,7 +4803,7 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[63],1,520)
+else _w(oD,x[62],1,520)
 cs.pop()
 cs.push("./pages/pointDetail/pointDetail.vue.wxml:view:1:550")
 var hG=_n('view')
@@ -4838,7 +4812,7 @@ var oH=_v()
 _(hG,oH)
 cs.push("./pages/pointDetail/pointDetail.vue.wxml:template:1:704")
 var cI=_oz(z,7,e,s,gg)
-var oJ=_gd(x[63],cI,e_,d_)
+var oJ=_gd(x[62],cI,e_,d_)
 if(oJ){
 var lK=_1z(z,6,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4846,13 +4820,13 @@ oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[63],1,824)
+else _w(cI,x[62],1,824)
 cs.pop()
 var aL=_v()
 _(hG,aL)
 cs.push("./pages/pointDetail/pointDetail.vue.wxml:template:1:900")
 var tM=_oz(z,12,e,s,gg)
-var eN=_gd(x[63],tM,e_,d_)
+var eN=_gd(x[62],tM,e_,d_)
 if(eN){
 var bO=_1z(z,11,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4860,13 +4834,13 @@ aL.wxXCkey=3
 eN(bO,bO,aL,gg)
 gg.f=cur_globalf
 }
-else _w(tM,x[63],1,1016)
+else _w(tM,x[62],1,1016)
 cs.pop()
 var oP=_v()
 _(hG,oP)
 cs.push("./pages/pointDetail/pointDetail.vue.wxml:template:1:1092")
 var xQ=_oz(z,17,e,s,gg)
-var oR=_gd(x[63],xQ,e_,d_)
+var oR=_gd(x[62],xQ,e_,d_)
 if(oR){
 var fS=_1z(z,16,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4874,7 +4848,7 @@ oP.wxXCkey=3
 oR(fS,fS,oP,gg)
 gg.f=cur_globalf
 }
-else _w(xQ,x[63],1,1202)
+else _w(xQ,x[62],1,1202)
 cs.pop()
 cs.pop()
 _(oB,hG)
@@ -4882,7 +4856,7 @@ var cT=_v()
 _(oB,cT)
 cs.push("./pages/pointDetail/pointDetail.vue.wxml:template:1:1274")
 var hU=_oz(z,21,e,s,gg)
-var oV=_gd(x[63],hU,e_,d_)
+var oV=_gd(x[62],hU,e_,d_)
 if(oV){
 var cW=_1z(z,20,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4890,7 +4864,7 @@ cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[63],1,1391)
+else _w(hU,x[62],1,1391)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -4901,48 +4875,48 @@ throw err
 p_[b]=false
 return r
 }
+var m38=function(e,s,r,gg){
+var z=gz$gwx_39()
+var tQD=e_[x[62]].i
+_ai(tQD,x[2],e_,x[62],1,1)
+_ai(tQD,x[3],e_,x[62],1,61)
+_ai(tQD,x[4],e_,x[62],1,131)
+tQD.pop()
+tQD.pop()
+tQD.pop()
+return r
+}
+e_[x[62]]={f:m38,j:[],i:[],ti:[x[2],x[3],x[4]],ic:[]}
+d_[x[63]]={}
 var m39=function(e,s,r,gg){
 var z=gz$gwx_40()
-var eRD=e_[x[63]].i
-_ai(eRD,x[1],e_,x[63],1,1)
-_ai(eRD,x[2],e_,x[63],1,61)
-_ai(eRD,x[3],e_,x[63],1,131)
-eRD.pop()
-eRD.pop()
-eRD.pop()
-return r
-}
-e_[x[63]]={f:m39,j:[],i:[],ti:[x[1],x[2],x[3]],ic:[]}
-d_[x[64]]={}
-var m40=function(e,s,r,gg){
-var z=gz$gwx_41()
-var oTD=e_[x[64]].i
-_ai(oTD,x[65],e_,x[64],1,1)
-var xUD=_v()
-_(r,xUD)
+var bSD=e_[x[63]].i
+_ai(bSD,x[64],e_,x[63],1,1)
+var oTD=_v()
+_(r,oTD)
 cs.push("./pages/pointDetail/pointDetail.wxml:template:2:6")
-var oVD=_oz(z,1,e,s,gg)
-var fWD=_gd(x[64],oVD,e_,d_)
-if(fWD){
-var cXD=_1z(z,0,e,s,gg) || {}
+var xUD=_oz(z,1,e,s,gg)
+var oVD=_gd(x[63],xUD,e_,d_)
+if(oVD){
+var fWD=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-xUD.wxXCkey=3
-fWD(cXD,cXD,xUD,gg)
+oTD.wxXCkey=3
+oVD(fWD,fWD,oTD,gg)
 gg.f=cur_globalf
 }
-else _w(oVD,x[64],2,18)
+else _w(xUD,x[63],2,18)
 cs.pop()
-oTD.pop()
+bSD.pop()
 return r
 }
-e_[x[64]]={f:m40,j:[],i:[],ti:[x[65]],ic:[]}
-d_[x[66]]={}
-d_[x[66]]["58792338"]=function(e,s,r,gg){
-var z=gz$gwx_42()
-var b=x[66]+':58792338'
+e_[x[63]]={f:m39,j:[],i:[],ti:[x[64]],ic:[]}
+d_[x[65]]={}
+d_[x[65]]["58792338"]=function(e,s,r,gg){
+var z=gz$gwx_41()
+var b=x[65]+':58792338'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/pointList/pointList.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[66]);return}
+if(p_[b]){_wl(b,x[65]);return}
 p_[b]=true
 try{
 cs.push("./pages/pointList/pointList.vue.wxml:view:1:82")
@@ -4953,7 +4927,7 @@ var oD=_v()
 _(xC,oD)
 cs.push("./pages/pointList/pointList.vue.wxml:template:1:4832")
 var fE=_oz(z,11,e,s,gg)
-var cF=_gd(x[66],fE,e_,d_)
+var cF=_gd(x[65],fE,e_,d_)
 if(cF){
 var hG=_1z(z,10,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -4961,7 +4935,7 @@ oD.wxXCkey=3
 cF(hG,hG,oD,gg)
 gg.f=cur_globalf
 }
-else _w(fE,x[66],1,4949)
+else _w(fE,x[65],1,4949)
 cs.pop()
 cs.pop()
 _(oB,xC)
@@ -4974,44 +4948,44 @@ throw err
 p_[b]=false
 return r
 }
+var m40=function(e,s,r,gg){
+var z=gz$gwx_41()
+var hYD=e_[x[65]].i
+_ai(hYD,x[1],e_,x[65],1,1)
+hYD.pop()
+return r
+}
+e_[x[65]]={f:m40,j:[],i:[],ti:[x[1]],ic:[]}
+d_[x[66]]={}
 var m41=function(e,s,r,gg){
 var z=gz$gwx_42()
-var oZD=e_[x[66]].i
-_ai(oZD,x[4],e_,x[66],1,1)
-oZD.pop()
-return r
-}
-e_[x[66]]={f:m41,j:[],i:[],ti:[x[4]],ic:[]}
-d_[x[67]]={}
-var m42=function(e,s,r,gg){
-var z=gz$gwx_43()
-var o2D=e_[x[67]].i
-_ai(o2D,x[68],e_,x[67],1,1)
-var l3D=_v()
-_(r,l3D)
+var c1D=e_[x[66]].i
+_ai(c1D,x[67],e_,x[66],1,1)
+var o2D=_v()
+_(r,o2D)
 cs.push("./pages/pointList/pointList.wxml:template:2:6")
-var a4D=_oz(z,1,e,s,gg)
-var t5D=_gd(x[67],a4D,e_,d_)
-if(t5D){
-var e6D=_1z(z,0,e,s,gg) || {}
+var l3D=_oz(z,1,e,s,gg)
+var a4D=_gd(x[66],l3D,e_,d_)
+if(a4D){
+var t5D=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-l3D.wxXCkey=3
-t5D(e6D,e6D,l3D,gg)
+o2D.wxXCkey=3
+a4D(t5D,t5D,o2D,gg)
 gg.f=cur_globalf
 }
-else _w(a4D,x[67],2,18)
+else _w(l3D,x[66],2,18)
 cs.pop()
-o2D.pop()
+c1D.pop()
 return r
 }
-e_[x[67]]={f:m42,j:[],i:[],ti:[x[68]],ic:[]}
-d_[x[69]]={}
-d_[x[69]]["15ee3d3a"]=function(e,s,r,gg){
-var z=gz$gwx_44()
-var b=x[69]+':15ee3d3a'
+e_[x[66]]={f:m41,j:[],i:[],ti:[x[67]],ic:[]}
+d_[x[68]]={}
+d_[x[68]]["15ee3d3a"]=function(e,s,r,gg){
+var z=gz$gwx_43()
+var b=x[68]+':15ee3d3a'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/ptw/addPtw.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[69]);return}
+if(p_[b]){_wl(b,x[68]);return}
 p_[b]=true
 try{
 cs.push("./pages/ptw/addPtw.vue.wxml:view:1:97")
@@ -5024,7 +4998,7 @@ var oD=_v()
 _(xC,oD)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:285")
 var fE=_oz(z,7,e,s,gg)
-var cF=_gd(x[69],fE,e_,d_)
+var cF=_gd(x[68],fE,e_,d_)
 if(cF){
 var hG=_1z(z,4,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5032,13 +5006,13 @@ oD.wxXCkey=3
 cF(hG,hG,oD,gg)
 gg.f=cur_globalf
 }
-else _w(fE,x[69],1,473)
+else _w(fE,x[68],1,473)
 cs.pop()
 var oH=_v()
 _(xC,oH)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:496")
 var cI=_oz(z,14,e,s,gg)
-var oJ=_gd(x[69],cI,e_,d_)
+var oJ=_gd(x[68],cI,e_,d_)
 if(oJ){
 var lK=_1z(z,11,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5046,13 +5020,13 @@ oH.wxXCkey=3
 oJ(lK,lK,oH,gg)
 gg.f=cur_globalf
 }
-else _w(cI,x[69],1,681)
+else _w(cI,x[68],1,681)
 cs.pop()
 var aL=_v()
 _(xC,aL)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:704")
 var tM=_oz(z,21,e,s,gg)
-var eN=_gd(x[69],tM,e_,d_)
+var eN=_gd(x[68],tM,e_,d_)
 if(eN){
 var bO=_1z(z,18,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5060,13 +5034,13 @@ aL.wxXCkey=3
 eN(bO,bO,aL,gg)
 gg.f=cur_globalf
 }
-else _w(tM,x[69],1,892)
+else _w(tM,x[68],1,892)
 cs.pop()
 var oP=_v()
 _(xC,oP)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:915")
 var xQ=_oz(z,28,e,s,gg)
-var oR=_gd(x[69],xQ,e_,d_)
+var oR=_gd(x[68],xQ,e_,d_)
 if(oR){
 var fS=_1z(z,25,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5074,13 +5048,13 @@ oP.wxXCkey=3
 oR(fS,fS,oP,gg)
 gg.f=cur_globalf
 }
-else _w(xQ,x[69],1,1100)
+else _w(xQ,x[68],1,1100)
 cs.pop()
 var cT=_v()
 _(xC,cT)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:1123")
 var hU=_oz(z,35,e,s,gg)
-var oV=_gd(x[69],hU,e_,d_)
+var oV=_gd(x[68],hU,e_,d_)
 if(oV){
 var cW=_1z(z,32,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5088,13 +5062,13 @@ cT.wxXCkey=3
 oV(cW,cW,cT,gg)
 gg.f=cur_globalf
 }
-else _w(hU,x[69],1,1308)
+else _w(hU,x[68],1,1308)
 cs.pop()
 var oX=_v()
 _(xC,oX)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:1331")
 var lY=_oz(z,42,e,s,gg)
-var aZ=_gd(x[69],lY,e_,d_)
+var aZ=_gd(x[68],lY,e_,d_)
 if(aZ){
 var t1=_1z(z,39,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5102,13 +5076,13 @@ oX.wxXCkey=3
 aZ(t1,t1,oX,gg)
 gg.f=cur_globalf
 }
-else _w(lY,x[69],1,1516)
+else _w(lY,x[68],1,1516)
 cs.pop()
 var e2=_v()
 _(xC,e2)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:1539")
 var b3=_oz(z,49,e,s,gg)
-var o4=_gd(x[69],b3,e_,d_)
+var o4=_gd(x[68],b3,e_,d_)
 if(o4){
 var x5=_1z(z,46,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5116,13 +5090,13 @@ e2.wxXCkey=3
 o4(x5,x5,e2,gg)
 gg.f=cur_globalf
 }
-else _w(b3,x[69],1,1724)
+else _w(b3,x[68],1,1724)
 cs.pop()
 var o6=_v()
 _(xC,o6)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:1747")
 var f7=_oz(z,56,e,s,gg)
-var c8=_gd(x[69],f7,e_,d_)
+var c8=_gd(x[68],f7,e_,d_)
 if(c8){
 var h9=_1z(z,53,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5130,13 +5104,13 @@ o6.wxXCkey=3
 c8(h9,h9,o6,gg)
 gg.f=cur_globalf
 }
-else _w(f7,x[69],1,1935)
+else _w(f7,x[68],1,1935)
 cs.pop()
 var o0=_v()
 _(xC,o0)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:1958")
 var cAB=_oz(z,63,e,s,gg)
-var oBB=_gd(x[69],cAB,e_,d_)
+var oBB=_gd(x[68],cAB,e_,d_)
 if(oBB){
 var lCB=_1z(z,60,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5144,13 +5118,13 @@ o0.wxXCkey=3
 oBB(lCB,lCB,o0,gg)
 gg.f=cur_globalf
 }
-else _w(cAB,x[69],1,2152)
+else _w(cAB,x[68],1,2152)
 cs.pop()
 var aDB=_v()
 _(xC,aDB)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:2175")
 var tEB=_oz(z,70,e,s,gg)
-var eFB=_gd(x[69],tEB,e_,d_)
+var eFB=_gd(x[68],tEB,e_,d_)
 if(eFB){
 var bGB=_1z(z,67,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5158,13 +5132,13 @@ aDB.wxXCkey=3
 eFB(bGB,bGB,aDB,gg)
 gg.f=cur_globalf
 }
-else _w(tEB,x[69],1,2363)
+else _w(tEB,x[68],1,2363)
 cs.pop()
 var oHB=_v()
 _(xC,oHB)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:2386")
 var xIB=_oz(z,77,e,s,gg)
-var oJB=_gd(x[69],xIB,e_,d_)
+var oJB=_gd(x[68],xIB,e_,d_)
 if(oJB){
 var fKB=_1z(z,74,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5172,13 +5146,13 @@ oHB.wxXCkey=3
 oJB(fKB,fKB,oHB,gg)
 gg.f=cur_globalf
 }
-else _w(xIB,x[69],1,2582)
+else _w(xIB,x[68],1,2582)
 cs.pop()
 var cLB=_v()
 _(xC,cLB)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:2605")
 var hMB=_oz(z,84,e,s,gg)
-var oNB=_gd(x[69],hMB,e_,d_)
+var oNB=_gd(x[68],hMB,e_,d_)
 if(oNB){
 var cOB=_1z(z,81,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5186,13 +5160,13 @@ cLB.wxXCkey=3
 oNB(cOB,cOB,cLB,gg)
 gg.f=cur_globalf
 }
-else _w(hMB,x[69],1,2792)
+else _w(hMB,x[68],1,2792)
 cs.pop()
 var oPB=_v()
 _(xC,oPB)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:2815")
 var lQB=_oz(z,91,e,s,gg)
-var aRB=_gd(x[69],lQB,e_,d_)
+var aRB=_gd(x[68],lQB,e_,d_)
 if(aRB){
 var tSB=_1z(z,88,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5200,13 +5174,13 @@ oPB.wxXCkey=3
 aRB(tSB,tSB,oPB,gg)
 gg.f=cur_globalf
 }
-else _w(lQB,x[69],1,3002)
+else _w(lQB,x[68],1,3002)
 cs.pop()
 var eTB=_v()
 _(xC,eTB)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:3025")
 var bUB=_oz(z,98,e,s,gg)
-var oVB=_gd(x[69],bUB,e_,d_)
+var oVB=_gd(x[68],bUB,e_,d_)
 if(oVB){
 var xWB=_1z(z,95,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5214,13 +5188,13 @@ eTB.wxXCkey=3
 oVB(xWB,xWB,eTB,gg)
 gg.f=cur_globalf
 }
-else _w(bUB,x[69],1,3212)
+else _w(bUB,x[68],1,3212)
 cs.pop()
 var oXB=_v()
 _(xC,oXB)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:3235")
 var fYB=_oz(z,105,e,s,gg)
-var cZB=_gd(x[69],fYB,e_,d_)
+var cZB=_gd(x[68],fYB,e_,d_)
 if(cZB){
 var h1B=_1z(z,102,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5228,13 +5202,13 @@ oXB.wxXCkey=3
 cZB(h1B,h1B,oXB,gg)
 gg.f=cur_globalf
 }
-else _w(fYB,x[69],1,3434)
+else _w(fYB,x[68],1,3434)
 cs.pop()
 var o2B=_v()
 _(xC,o2B)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:3457")
 var c3B=_oz(z,112,e,s,gg)
-var o4B=_gd(x[69],c3B,e_,d_)
+var o4B=_gd(x[68],c3B,e_,d_)
 if(o4B){
 var l5B=_1z(z,109,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5242,7 +5216,7 @@ o2B.wxXCkey=3
 o4B(l5B,l5B,o2B,gg)
 gg.f=cur_globalf
 }
-else _w(c3B,x[69],1,3647)
+else _w(c3B,x[68],1,3647)
 cs.pop()
 cs.pop()
 _(oB,xC)
@@ -5255,7 +5229,7 @@ var e8B=_v()
 _(t7B,e8B)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:5232")
 var b9B=_oz(z,123,e,s,gg)
-var o0B=_gd(x[69],b9B,e_,d_)
+var o0B=_gd(x[68],b9B,e_,d_)
 if(o0B){
 var xAC=_1z(z,122,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5263,7 +5237,7 @@ e8B.wxXCkey=3
 o0B(xAC,xAC,e8B,gg)
 gg.f=cur_globalf
 }
-else _w(b9B,x[69],1,5346)
+else _w(b9B,x[68],1,5346)
 cs.pop()
 cs.pop()
 _(a6B,t7B)
@@ -5273,7 +5247,7 @@ var fCC=_v()
 _(oBC,fCC)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:5520")
 var cDC=_oz(z,133,e,s,gg)
-var hEC=_gd(x[69],cDC,e_,d_)
+var hEC=_gd(x[68],cDC,e_,d_)
 if(hEC){
 var oFC=_1z(z,132,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5281,7 +5255,7 @@ fCC.wxXCkey=3
 hEC(oFC,oFC,fCC,gg)
 gg.f=cur_globalf
 }
-else _w(cDC,x[69],1,5634)
+else _w(cDC,x[68],1,5634)
 cs.pop()
 cs.pop()
 _(a6B,oBC)
@@ -5291,7 +5265,7 @@ var cGC=_v()
 _(oB,cGC)
 cs.push("./pages/ptw/addPtw.vue.wxml:template:1:5832")
 var oHC=_oz(z,140,e,s,gg)
-var lIC=_gd(x[69],oHC,e_,d_)
+var lIC=_gd(x[68],oHC,e_,d_)
 if(lIC){
 var aJC=_1z(z,137,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5299,7 +5273,7 @@ cGC.wxXCkey=3
 lIC(aJC,aJC,cGC,gg)
 gg.f=cur_globalf
 }
-else _w(oHC,x[69],1,6029)
+else _w(oHC,x[68],1,6029)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -5310,44 +5284,44 @@ throw err
 p_[b]=false
 return r
 }
+var m42=function(e,s,r,gg){
+var z=gz$gwx_43()
+var b7D=e_[x[68]].i
+_ai(b7D,x[3],e_,x[68],1,1)
+b7D.pop()
+return r
+}
+e_[x[68]]={f:m42,j:[],i:[],ti:[x[3]],ic:[]}
+d_[x[69]]={}
 var m43=function(e,s,r,gg){
 var z=gz$gwx_44()
-var o8D=e_[x[69]].i
-_ai(o8D,x[2],e_,x[69],1,1)
-o8D.pop()
-return r
-}
-e_[x[69]]={f:m43,j:[],i:[],ti:[x[2]],ic:[]}
-d_[x[70]]={}
-var m44=function(e,s,r,gg){
-var z=gz$gwx_45()
-var o0D=e_[x[70]].i
-_ai(o0D,x[71],e_,x[70],1,1)
-var fAE=_v()
-_(r,fAE)
+var x9D=e_[x[69]].i
+_ai(x9D,x[70],e_,x[69],1,1)
+var o0D=_v()
+_(r,o0D)
 cs.push("./pages/ptw/addPtw.wxml:template:2:6")
-var cBE=_oz(z,1,e,s,gg)
-var hCE=_gd(x[70],cBE,e_,d_)
-if(hCE){
-var oDE=_1z(z,0,e,s,gg) || {}
+var fAE=_oz(z,1,e,s,gg)
+var cBE=_gd(x[69],fAE,e_,d_)
+if(cBE){
+var hCE=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-fAE.wxXCkey=3
-hCE(oDE,oDE,fAE,gg)
+o0D.wxXCkey=3
+cBE(hCE,hCE,o0D,gg)
 gg.f=cur_globalf
 }
-else _w(cBE,x[70],2,18)
+else _w(fAE,x[69],2,18)
 cs.pop()
-o0D.pop()
+x9D.pop()
 return r
 }
-e_[x[70]]={f:m44,j:[],i:[],ti:[x[71]],ic:[]}
-d_[x[72]]={}
-d_[x[72]]["11e63791"]=function(e,s,r,gg){
-var z=gz$gwx_46()
-var b=x[72]+':11e63791'
+e_[x[69]]={f:m43,j:[],i:[],ti:[x[70]],ic:[]}
+d_[x[71]]={}
+d_[x[71]]["11e63791"]=function(e,s,r,gg){
+var z=gz$gwx_45()
+var b=x[71]+':11e63791'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/ptw/rapAdd.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[72]);return}
+if(p_[b]){_wl(b,x[71]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -5357,41 +5331,41 @@ throw err
 p_[b]=false
 return r
 }
+var m44=function(e,s,r,gg){
+var z=gz$gwx_45()
+return r
+}
+e_[x[71]]={f:m44,j:[],i:[],ti:[],ic:[]}
+d_[x[72]]={}
 var m45=function(e,s,r,gg){
 var z=gz$gwx_46()
-return r
-}
-e_[x[72]]={f:m45,j:[],i:[],ti:[],ic:[]}
-d_[x[73]]={}
-var m46=function(e,s,r,gg){
-var z=gz$gwx_47()
-var lGE=e_[x[73]].i
-_ai(lGE,x[74],e_,x[73],1,1)
-var aHE=_v()
-_(r,aHE)
+var oFE=e_[x[72]].i
+_ai(oFE,x[73],e_,x[72],1,1)
+var lGE=_v()
+_(r,lGE)
 cs.push("./pages/ptw/rapAdd.wxml:template:2:6")
-var tIE=_oz(z,1,e,s,gg)
-var eJE=_gd(x[73],tIE,e_,d_)
-if(eJE){
-var bKE=_1z(z,0,e,s,gg) || {}
+var aHE=_oz(z,1,e,s,gg)
+var tIE=_gd(x[72],aHE,e_,d_)
+if(tIE){
+var eJE=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-aHE.wxXCkey=3
-eJE(bKE,bKE,aHE,gg)
+lGE.wxXCkey=3
+tIE(eJE,eJE,lGE,gg)
 gg.f=cur_globalf
 }
-else _w(tIE,x[73],2,18)
+else _w(aHE,x[72],2,18)
 cs.pop()
-lGE.pop()
+oFE.pop()
 return r
 }
-e_[x[73]]={f:m46,j:[],i:[],ti:[x[74]],ic:[]}
-d_[x[75]]={}
-d_[x[75]]["2d1004c9"]=function(e,s,r,gg){
-var z=gz$gwx_48()
-var b=x[75]+':2d1004c9'
+e_[x[72]]={f:m45,j:[],i:[],ti:[x[73]],ic:[]}
+d_[x[74]]={}
+d_[x[74]]["2d1004c9"]=function(e,s,r,gg){
+var z=gz$gwx_47()
+var b=x[74]+':2d1004c9'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/ptw/rapConsider.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[75]);return}
+if(p_[b]){_wl(b,x[74]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -5401,41 +5375,41 @@ throw err
 p_[b]=false
 return r
 }
+var m46=function(e,s,r,gg){
+var z=gz$gwx_47()
+return r
+}
+e_[x[74]]={f:m46,j:[],i:[],ti:[],ic:[]}
+d_[x[75]]={}
 var m47=function(e,s,r,gg){
 var z=gz$gwx_48()
-return r
-}
-e_[x[75]]={f:m47,j:[],i:[],ti:[],ic:[]}
-d_[x[76]]={}
-var m48=function(e,s,r,gg){
-var z=gz$gwx_49()
-var oNE=e_[x[76]].i
-_ai(oNE,x[77],e_,x[76],1,1)
-var fOE=_v()
-_(r,fOE)
+var xME=e_[x[75]].i
+_ai(xME,x[76],e_,x[75],1,1)
+var oNE=_v()
+_(r,oNE)
 cs.push("./pages/ptw/rapConsider.wxml:template:2:6")
-var cPE=_oz(z,1,e,s,gg)
-var hQE=_gd(x[76],cPE,e_,d_)
-if(hQE){
-var oRE=_1z(z,0,e,s,gg) || {}
+var fOE=_oz(z,1,e,s,gg)
+var cPE=_gd(x[75],fOE,e_,d_)
+if(cPE){
+var hQE=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-fOE.wxXCkey=3
-hQE(oRE,oRE,fOE,gg)
+oNE.wxXCkey=3
+cPE(hQE,hQE,oNE,gg)
 gg.f=cur_globalf
 }
-else _w(cPE,x[76],2,18)
+else _w(fOE,x[75],2,18)
 cs.pop()
-oNE.pop()
+xME.pop()
 return r
 }
-e_[x[76]]={f:m48,j:[],i:[],ti:[x[77]],ic:[]}
-d_[x[78]]={}
-d_[x[78]]["2ae3e004"]=function(e,s,r,gg){
-var z=gz$gwx_50()
-var b=x[78]+':2ae3e004'
+e_[x[75]]={f:m47,j:[],i:[],ti:[x[76]],ic:[]}
+d_[x[77]]={}
+d_[x[77]]["2ae3e004"]=function(e,s,r,gg){
+var z=gz$gwx_49()
+var b=x[77]+':2ae3e004'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/ptw/rapHarm.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[78]);return}
+if(p_[b]){_wl(b,x[77]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -5445,41 +5419,41 @@ throw err
 p_[b]=false
 return r
 }
+var m48=function(e,s,r,gg){
+var z=gz$gwx_49()
+return r
+}
+e_[x[77]]={f:m48,j:[],i:[],ti:[],ic:[]}
+d_[x[78]]={}
 var m49=function(e,s,r,gg){
 var z=gz$gwx_50()
-return r
-}
-e_[x[78]]={f:m49,j:[],i:[],ti:[],ic:[]}
-d_[x[79]]={}
-var m50=function(e,s,r,gg){
-var z=gz$gwx_51()
-var lUE=e_[x[79]].i
-_ai(lUE,x[80],e_,x[79],1,1)
-var aVE=_v()
-_(r,aVE)
+var oTE=e_[x[78]].i
+_ai(oTE,x[79],e_,x[78],1,1)
+var lUE=_v()
+_(r,lUE)
 cs.push("./pages/ptw/rapHarm.wxml:template:2:6")
-var tWE=_oz(z,1,e,s,gg)
-var eXE=_gd(x[79],tWE,e_,d_)
-if(eXE){
-var bYE=_1z(z,0,e,s,gg) || {}
+var aVE=_oz(z,1,e,s,gg)
+var tWE=_gd(x[78],aVE,e_,d_)
+if(tWE){
+var eXE=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-aVE.wxXCkey=3
-eXE(bYE,bYE,aVE,gg)
+lUE.wxXCkey=3
+tWE(eXE,eXE,lUE,gg)
 gg.f=cur_globalf
 }
-else _w(tWE,x[79],2,18)
+else _w(aVE,x[78],2,18)
 cs.pop()
-lUE.pop()
+oTE.pop()
 return r
 }
-e_[x[79]]={f:m50,j:[],i:[],ti:[x[80]],ic:[]}
-d_[x[81]]={}
-d_[x[81]]["d419ecaa"]=function(e,s,r,gg){
-var z=gz$gwx_52()
-var b=x[81]+':d419ecaa'
+e_[x[78]]={f:m49,j:[],i:[],ti:[x[79]],ic:[]}
+d_[x[80]]={}
+d_[x[80]]["d419ecaa"]=function(e,s,r,gg){
+var z=gz$gwx_51()
+var b=x[80]+':d419ecaa'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/ptw/rapSelected.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[81]);return}
+if(p_[b]){_wl(b,x[80]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -5489,41 +5463,41 @@ throw err
 p_[b]=false
 return r
 }
+var m50=function(e,s,r,gg){
+var z=gz$gwx_51()
+return r
+}
+e_[x[80]]={f:m50,j:[],i:[],ti:[],ic:[]}
+d_[x[81]]={}
 var m51=function(e,s,r,gg){
 var z=gz$gwx_52()
-return r
-}
-e_[x[81]]={f:m51,j:[],i:[],ti:[],ic:[]}
-d_[x[82]]={}
-var m52=function(e,s,r,gg){
-var z=gz$gwx_53()
-var o2E=e_[x[82]].i
-_ai(o2E,x[83],e_,x[82],1,1)
-var f3E=_v()
-_(r,f3E)
+var x1E=e_[x[81]].i
+_ai(x1E,x[82],e_,x[81],1,1)
+var o2E=_v()
+_(r,o2E)
 cs.push("./pages/ptw/rapSelected.wxml:template:2:6")
-var c4E=_oz(z,1,e,s,gg)
-var h5E=_gd(x[82],c4E,e_,d_)
-if(h5E){
-var o6E=_1z(z,0,e,s,gg) || {}
+var f3E=_oz(z,1,e,s,gg)
+var c4E=_gd(x[81],f3E,e_,d_)
+if(c4E){
+var h5E=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-f3E.wxXCkey=3
-h5E(o6E,o6E,f3E,gg)
+o2E.wxXCkey=3
+c4E(h5E,h5E,o2E,gg)
 gg.f=cur_globalf
 }
-else _w(c4E,x[82],2,18)
+else _w(f3E,x[81],2,18)
 cs.pop()
-o2E.pop()
+x1E.pop()
 return r
 }
-e_[x[82]]={f:m52,j:[],i:[],ti:[x[83]],ic:[]}
-d_[x[84]]={}
-d_[x[84]]["b04b36ee"]=function(e,s,r,gg){
-var z=gz$gwx_54()
-var b=x[84]+':b04b36ee'
+e_[x[81]]={f:m51,j:[],i:[],ti:[x[82]],ic:[]}
+d_[x[83]]={}
+d_[x[83]]["b04b36ee"]=function(e,s,r,gg){
+var z=gz$gwx_53()
+var b=x[83]+':b04b36ee'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/ptw/rapSolution.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[84]);return}
+if(p_[b]){_wl(b,x[83]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -5533,48 +5507,48 @@ throw err
 p_[b]=false
 return r
 }
+var m52=function(e,s,r,gg){
+var z=gz$gwx_53()
+return r
+}
+e_[x[83]]={f:m52,j:[],i:[],ti:[],ic:[]}
+d_[x[84]]={}
 var m53=function(e,s,r,gg){
 var z=gz$gwx_54()
-return r
-}
-e_[x[84]]={f:m53,j:[],i:[],ti:[],ic:[]}
-d_[x[85]]={}
-var m54=function(e,s,r,gg){
-var z=gz$gwx_55()
-var l9E=e_[x[85]].i
-_ai(l9E,x[86],e_,x[85],1,1)
-var a0E=_v()
-_(r,a0E)
+var o8E=e_[x[84]].i
+_ai(o8E,x[85],e_,x[84],1,1)
+var l9E=_v()
+_(r,l9E)
 cs.push("./pages/ptw/rapSolution.wxml:template:2:6")
-var tAF=_oz(z,1,e,s,gg)
-var eBF=_gd(x[85],tAF,e_,d_)
-if(eBF){
-var bCF=_1z(z,0,e,s,gg) || {}
+var a0E=_oz(z,1,e,s,gg)
+var tAF=_gd(x[84],a0E,e_,d_)
+if(tAF){
+var eBF=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-a0E.wxXCkey=3
-eBF(bCF,bCF,a0E,gg)
+l9E.wxXCkey=3
+tAF(eBF,eBF,l9E,gg)
 gg.f=cur_globalf
 }
-else _w(tAF,x[85],2,18)
+else _w(a0E,x[84],2,18)
 cs.pop()
-l9E.pop()
+o8E.pop()
 return r
 }
-e_[x[85]]={f:m54,j:[],i:[],ti:[x[86]],ic:[]}
-d_[x[87]]={}
-d_[x[87]]["6cbf6956"]=function(e,s,r,gg){
-var z=gz$gwx_56()
-var b=x[87]+':6cbf6956'
+e_[x[84]]={f:m53,j:[],i:[],ti:[x[85]],ic:[]}
+d_[x[86]]={}
+d_[x[86]]["6cbf6956"]=function(e,s,r,gg){
+var z=gz$gwx_55()
+var b=x[86]+':6cbf6956'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/pwd/pwd.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[87]);return}
+if(p_[b]){_wl(b,x[86]);return}
 p_[b]=true
 try{
 var oB=_v()
 _(r,oB)
 cs.push("./pages/pwd/pwd.vue.wxml:template:1:240")
 var xC=_oz(z,5,e,s,gg)
-var oD=_gd(x[87],xC,e_,d_)
+var oD=_gd(x[86],xC,e_,d_)
 if(oD){
 var fE=_1z(z,2,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5582,7 +5556,7 @@ oB.wxXCkey=3
 oD(fE,fE,oB,gg)
 gg.f=cur_globalf
 }
-else _w(xC,x[87],1,465)
+else _w(xC,x[86],1,465)
 cs.pop()
 }catch(err){
 p_[b]=false
@@ -5591,44 +5565,44 @@ throw err
 p_[b]=false
 return r
 }
+var m54=function(e,s,r,gg){
+var z=gz$gwx_55()
+var oDF=e_[x[86]].i
+_ai(oDF,x[29],e_,x[86],1,1)
+oDF.pop()
+return r
+}
+e_[x[86]]={f:m54,j:[],i:[],ti:[x[29]],ic:[]}
+d_[x[87]]={}
 var m55=function(e,s,r,gg){
 var z=gz$gwx_56()
-var xEF=e_[x[87]].i
-_ai(xEF,x[30],e_,x[87],1,1)
-xEF.pop()
-return r
-}
-e_[x[87]]={f:m55,j:[],i:[],ti:[x[30]],ic:[]}
-d_[x[88]]={}
-var m56=function(e,s,r,gg){
-var z=gz$gwx_57()
-var fGF=e_[x[88]].i
-_ai(fGF,x[89],e_,x[88],1,1)
-var cHF=_v()
-_(r,cHF)
+var oFF=e_[x[87]].i
+_ai(oFF,x[88],e_,x[87],1,1)
+var fGF=_v()
+_(r,fGF)
 cs.push("./pages/pwd/pwd.wxml:template:2:6")
-var hIF=_oz(z,1,e,s,gg)
-var oJF=_gd(x[88],hIF,e_,d_)
-if(oJF){
-var cKF=_1z(z,0,e,s,gg) || {}
+var cHF=_oz(z,1,e,s,gg)
+var hIF=_gd(x[87],cHF,e_,d_)
+if(hIF){
+var oJF=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-cHF.wxXCkey=3
-oJF(cKF,cKF,cHF,gg)
+fGF.wxXCkey=3
+hIF(oJF,oJF,fGF,gg)
 gg.f=cur_globalf
 }
-else _w(hIF,x[88],2,18)
+else _w(cHF,x[87],2,18)
 cs.pop()
-fGF.pop()
+oFF.pop()
 return r
 }
-e_[x[88]]={f:m56,j:[],i:[],ti:[x[89]],ic:[]}
-d_[x[90]]={}
-d_[x[90]]["90021ef8"]=function(e,s,r,gg){
-var z=gz$gwx_58()
-var b=x[90]+':90021ef8'
+e_[x[87]]={f:m55,j:[],i:[],ti:[x[88]],ic:[]}
+d_[x[89]]={}
+d_[x[89]]["90021ef8"]=function(e,s,r,gg){
+var z=gz$gwx_57()
+var b=x[89]+':90021ef8'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/reg/reg.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[90]);return}
+if(p_[b]){_wl(b,x[89]);return}
 p_[b]=true
 try{
 cs.push("./pages/reg/reg.vue.wxml:view:1:109")
@@ -5638,7 +5612,7 @@ var xC=_v()
 _(oB,xC)
 cs.push("./pages/reg/reg.vue.wxml:template:1:247")
 var oD=_oz(z,6,e,s,gg)
-var fE=_gd(x[90],oD,e_,d_)
+var fE=_gd(x[89],oD,e_,d_)
 if(fE){
 var cF=_1z(z,3,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5646,13 +5620,13 @@ xC.wxXCkey=3
 fE(cF,cF,xC,gg)
 gg.f=cur_globalf
 }
-else _w(oD,x[90],1,474)
+else _w(oD,x[89],1,474)
 cs.pop()
 var hG=_v()
 _(oB,hG)
 cs.push("./pages/reg/reg.vue.wxml:template:1:601")
 var oH=_oz(z,14,e,s,gg)
-var cI=_gd(x[90],oH,e_,d_)
+var cI=_gd(x[89],oH,e_,d_)
 if(cI){
 var oJ=_1z(z,11,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5660,13 +5634,13 @@ hG.wxXCkey=3
 cI(oJ,oJ,hG,gg)
 gg.f=cur_globalf
 }
-else _w(oH,x[90],1,829)
+else _w(oH,x[89],1,829)
 cs.pop()
 var lK=_v()
 _(oB,lK)
 cs.push("./pages/reg/reg.vue.wxml:template:1:949")
 var aL=_oz(z,22,e,s,gg)
-var tM=_gd(x[90],aL,e_,d_)
+var tM=_gd(x[89],aL,e_,d_)
 if(tM){
 var eN=_1z(z,19,e,s,gg) || {}
 var cur_globalf=gg.f
@@ -5674,7 +5648,7 @@ lK.wxXCkey=3
 tM(eN,eN,lK,gg)
 gg.f=cur_globalf
 }
-else _w(aL,x[90],1,1168)
+else _w(aL,x[89],1,1168)
 cs.pop()
 cs.pop()
 _(r,oB)
@@ -5685,44 +5659,44 @@ throw err
 p_[b]=false
 return r
 }
+var m56=function(e,s,r,gg){
+var z=gz$gwx_57()
+var oLF=e_[x[89]].i
+_ai(oLF,x[29],e_,x[89],1,1)
+oLF.pop()
+return r
+}
+e_[x[89]]={f:m56,j:[],i:[],ti:[x[29]],ic:[]}
+d_[x[90]]={}
 var m57=function(e,s,r,gg){
 var z=gz$gwx_58()
-var lMF=e_[x[90]].i
-_ai(lMF,x[30],e_,x[90],1,1)
-lMF.pop()
-return r
-}
-e_[x[90]]={f:m57,j:[],i:[],ti:[x[30]],ic:[]}
-d_[x[91]]={}
-var m58=function(e,s,r,gg){
-var z=gz$gwx_59()
-var tOF=e_[x[91]].i
-_ai(tOF,x[92],e_,x[91],1,1)
-var ePF=_v()
-_(r,ePF)
+var aNF=e_[x[90]].i
+_ai(aNF,x[91],e_,x[90],1,1)
+var tOF=_v()
+_(r,tOF)
 cs.push("./pages/reg/reg.wxml:template:2:6")
-var bQF=_oz(z,1,e,s,gg)
-var oRF=_gd(x[91],bQF,e_,d_)
-if(oRF){
-var xSF=_1z(z,0,e,s,gg) || {}
+var ePF=_oz(z,1,e,s,gg)
+var bQF=_gd(x[90],ePF,e_,d_)
+if(bQF){
+var oRF=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-ePF.wxXCkey=3
-oRF(xSF,xSF,ePF,gg)
+tOF.wxXCkey=3
+bQF(oRF,oRF,tOF,gg)
 gg.f=cur_globalf
 }
-else _w(bQF,x[91],2,18)
+else _w(ePF,x[90],2,18)
 cs.pop()
-tOF.pop()
+aNF.pop()
 return r
 }
-e_[x[91]]={f:m58,j:[],i:[],ti:[x[92]],ic:[]}
-d_[x[93]]={}
-d_[x[93]]["6a95a23a"]=function(e,s,r,gg){
-var z=gz$gwx_60()
-var b=x[93]+':6a95a23a'
+e_[x[90]]={f:m57,j:[],i:[],ti:[x[91]],ic:[]}
+d_[x[92]]={}
+d_[x[92]]["6a95a23a"]=function(e,s,r,gg){
+var z=gz$gwx_59()
+var b=x[92]+':6a95a23a'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/statistics/statistics.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[93]);return}
+if(p_[b]){_wl(b,x[92]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -5732,41 +5706,41 @@ throw err
 p_[b]=false
 return r
 }
+var m58=function(e,s,r,gg){
+var z=gz$gwx_59()
+return r
+}
+e_[x[92]]={f:m58,j:[],i:[],ti:[],ic:[]}
+d_[x[93]]={}
 var m59=function(e,s,r,gg){
 var z=gz$gwx_60()
-return r
-}
-e_[x[93]]={f:m59,j:[],i:[],ti:[],ic:[]}
-d_[x[94]]={}
-var m60=function(e,s,r,gg){
-var z=gz$gwx_61()
-var cVF=e_[x[94]].i
-_ai(cVF,x[95],e_,x[94],1,1)
-var hWF=_v()
-_(r,hWF)
+var fUF=e_[x[93]].i
+_ai(fUF,x[94],e_,x[93],1,1)
+var cVF=_v()
+_(r,cVF)
 cs.push("./pages/statistics/statistics.wxml:template:2:6")
-var oXF=_oz(z,1,e,s,gg)
-var cYF=_gd(x[94],oXF,e_,d_)
-if(cYF){
-var oZF=_1z(z,0,e,s,gg) || {}
+var hWF=_oz(z,1,e,s,gg)
+var oXF=_gd(x[93],hWF,e_,d_)
+if(oXF){
+var cYF=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-hWF.wxXCkey=3
-cYF(oZF,oZF,hWF,gg)
+cVF.wxXCkey=3
+oXF(cYF,cYF,cVF,gg)
 gg.f=cur_globalf
 }
-else _w(oXF,x[94],2,18)
+else _w(hWF,x[93],2,18)
 cs.pop()
-cVF.pop()
+fUF.pop()
 return r
 }
-e_[x[94]]={f:m60,j:[],i:[],ti:[x[95]],ic:[]}
-d_[x[96]]={}
-d_[x[96]]["d573abf0"]=function(e,s,r,gg){
-var z=gz$gwx_62()
-var b=x[96]+':d573abf0'
+e_[x[93]]={f:m59,j:[],i:[],ti:[x[94]],ic:[]}
+d_[x[95]]={}
+d_[x[95]]["d573abf0"]=function(e,s,r,gg){
+var z=gz$gwx_61()
+var b=x[95]+':d573abf0'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/user/accountEdit.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[96]);return}
+if(p_[b]){_wl(b,x[95]);return}
 p_[b]=true
 try{
 }catch(err){
@@ -5776,41 +5750,41 @@ throw err
 p_[b]=false
 return r
 }
+var m60=function(e,s,r,gg){
+var z=gz$gwx_61()
+return r
+}
+e_[x[95]]={f:m60,j:[],i:[],ti:[],ic:[]}
+d_[x[96]]={}
 var m61=function(e,s,r,gg){
 var z=gz$gwx_62()
-return r
-}
-e_[x[96]]={f:m61,j:[],i:[],ti:[],ic:[]}
-d_[x[97]]={}
-var m62=function(e,s,r,gg){
-var z=gz$gwx_63()
-var t3F=e_[x[97]].i
-_ai(t3F,x[98],e_,x[97],1,1)
-var e4F=_v()
-_(r,e4F)
+var a2F=e_[x[96]].i
+_ai(a2F,x[97],e_,x[96],1,1)
+var t3F=_v()
+_(r,t3F)
 cs.push("./pages/user/accountEdit.wxml:template:2:6")
-var b5F=_oz(z,1,e,s,gg)
-var o6F=_gd(x[97],b5F,e_,d_)
-if(o6F){
-var x7F=_1z(z,0,e,s,gg) || {}
+var e4F=_oz(z,1,e,s,gg)
+var b5F=_gd(x[96],e4F,e_,d_)
+if(b5F){
+var o6F=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-e4F.wxXCkey=3
-o6F(x7F,x7F,e4F,gg)
+t3F.wxXCkey=3
+b5F(o6F,o6F,t3F,gg)
 gg.f=cur_globalf
 }
-else _w(b5F,x[97],2,18)
+else _w(e4F,x[96],2,18)
 cs.pop()
-t3F.pop()
+a2F.pop()
 return r
 }
-e_[x[97]]={f:m62,j:[],i:[],ti:[x[98]],ic:[]}
-d_[x[99]]={}
-d_[x[99]]["240234ba"]=function(e,s,r,gg){
-var z=gz$gwx_64()
-var b=x[99]+':240234ba'
+e_[x[96]]={f:m61,j:[],i:[],ti:[x[97]],ic:[]}
+d_[x[98]]={}
+d_[x[98]]["240234ba"]=function(e,s,r,gg){
+var z=gz$gwx_63()
+var b=x[98]+':240234ba'
 r.wxVkey=b
 gg.f=$gdc(f_["./pages/user/user.vue.wxml"],"",1)
-if(p_[b]){_wl(b,x[99]);return}
+if(p_[b]){_wl(b,x[98]);return}
 p_[b]=true
 try{
 cs.push("./pages/user/user.vue.wxml:view:1:194")
@@ -5839,34 +5813,34 @@ throw err
 p_[b]=false
 return r
 }
+var m62=function(e,s,r,gg){
+var z=gz$gwx_63()
+return r
+}
+e_[x[98]]={f:m62,j:[],i:[],ti:[],ic:[]}
+d_[x[99]]={}
 var m63=function(e,s,r,gg){
 var z=gz$gwx_64()
-return r
-}
-e_[x[99]]={f:m63,j:[],i:[],ti:[],ic:[]}
-d_[x[100]]={}
-var m64=function(e,s,r,gg){
-var z=gz$gwx_65()
-var c0F=e_[x[100]].i
-_ai(c0F,x[101],e_,x[100],1,1)
-var hAG=_v()
-_(r,hAG)
+var f9F=e_[x[99]].i
+_ai(f9F,x[100],e_,x[99],1,1)
+var c0F=_v()
+_(r,c0F)
 cs.push("./pages/user/user.wxml:template:2:6")
-var oBG=_oz(z,1,e,s,gg)
-var cCG=_gd(x[100],oBG,e_,d_)
-if(cCG){
-var oDG=_1z(z,0,e,s,gg) || {}
+var hAG=_oz(z,1,e,s,gg)
+var oBG=_gd(x[99],hAG,e_,d_)
+if(oBG){
+var cCG=_1z(z,0,e,s,gg) || {}
 var cur_globalf=gg.f
-hAG.wxXCkey=3
-cCG(oDG,oDG,hAG,gg)
+c0F.wxXCkey=3
+oBG(cCG,cCG,c0F,gg)
 gg.f=cur_globalf
 }
-else _w(oBG,x[100],2,18)
+else _w(hAG,x[99],2,18)
 cs.pop()
-c0F.pop()
+f9F.pop()
 return r
 }
-e_[x[100]]={f:m64,j:[],i:[],ti:[x[101]],ic:[]}
+e_[x[99]]={f:m63,j:[],i:[],ti:[x[100]],ic:[]}
 if(path&&e_[path]){
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
 var main=e_[path].f
@@ -5887,7 +5861,7 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/login/diyHost","pages/reg/reg","pages/pwd/pwd","pages/user/accountEdit","pages/user/user","pages/pointCheck/pointCheck","pages/pointList/pointList","pages/pointDetail/pointDetail","pages/pointAdd/pointAdd","pages/pointAdd/pointCheckInfo","pages/mpvue-echarts/chartList","pages/mpvue-echarts/deviceChart","pages/mpvue-echarts/eventChart","pages/mpvue-echarts/valveChart","pages/mpvue-echarts/mpvue-echarts","pages/common/inputPage","pages/danger/addDanger","pages/statistics/statistics","pages/danger/detailDanger","pages/ptw/addPtw"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/pointCheck/pointCheck","text":"应用","iconPath":"static/img/point.png","selectedIconPath":"static/img/pointHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"networkTimeout":{"request":60000},"nvue":{"pages":{"pages/danger/readHistory.html":{"window":{"navigationBarTitleText":"审批阅读历史列表"}},"pages/danger/dangerList.html":{"window":{"navigationBarTitleText":"隐患审批"}},"pages/uni-tabs/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查11"}},"pages/pointList/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}}}},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"移动安全管家"};
+__wxAppCode__['app.json']={"pages":["pages/main/main","pages/login/login","pages/login/diyHost","pages/reg/reg","pages/pwd/pwd","pages/user/accountEdit","pages/user/user","pages/pointCheck/pointCheck","pages/pointList/pointList","pages/pointDetail/pointDetail","pages/pointAdd/pointAdd","pages/pointAdd/pointCheckInfo","pages/mpvue-echarts/chartList","pages/mpvue-echarts/deviceChart","pages/mpvue-echarts/eventChart","pages/mpvue-echarts/valveChart","pages/mpvue-echarts/mpvue-echarts","pages/common/inputPage","pages/danger/addDanger","pages/statistics/statistics","pages/danger/detailDanger","pages/ptw/addPtw","pages/ptw/rapSelected","pages/ptw/rapAdd","pages/ptw/rapConsider","pages/ptw/rapHarm","pages/ptw/rapSolution"],"subPackages":[],"window":{"navigationBarTextStyle":"white","navigationBarBackgroundColor":"#2D68AA","backgroundColor":"#fbf9fe"},"usingComponents":{},"tabBar":{"color":"#7a7e83","selectedColor":"#0faeff","backgroundColor":"#ffffff","list":[{"pagePath":"pages/main/main","text":"首页","iconPath":"static/img/home.png","selectedIconPath":"static/img/homeHL.png"},{"pagePath":"pages/pointCheck/pointCheck","text":"应用","iconPath":"static/img/point.png","selectedIconPath":"static/img/pointHL.png"},{"pagePath":"pages/user/user","text":"我的","iconPath":"static/img/user.png","selectedIconPath":"static/img/userHL.png"}]},"networkTimeout":{"request":60000},"nvue":{"pages":{"pages/danger/readHistory.html":{"window":{"navigationBarTitleText":"审批阅读历史列表"}},"pages/danger/dangerList.html":{"window":{"navigationBarTitleText":"隐患审批"}},"pages/uni-tabs/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查11"}},"pages/pointList/uni-tabs.html":{"window":{"navigationBarTitleText":"点位检查","titleNView":{"buttons":[{"text":"","fontSrc":"/static/aliIcon/iconfont.ttf","fontSize":"22px"}]}}}}},"splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"移动安全管家"};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
 
@@ -6662,7 +6636,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar isFn = function isFn(v) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue/index.js\");\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);\n\n\nfunction callHook$1(vm, hook, params) {\n  var handlers = vm.$options[hook];\n  if (hook === 'onError' && handlers) {\n    handlers = [handlers];\n  }\n  if(typeof handlers === 'function'){\n    handlers = [handlers]\n  }\n\n  var ret;\n  if (handlers) {\n    for (var i = 0, j = handlers.length; i < j; i++) {\n//      try {\n        ret = handlers[i].call(vm, params);\n//       } catch (e) {//fixed by xxxxxx\n//         handleError(e, vm, (hook + \" hook\"));\n//       }\n    }\n  }\n  if (vm._hasHookEvent) {\n    vm.$emit('hook:' + hook);\n  }\n\n  // for child\n  if (vm.$children.length) {\n    vm.$children.forEach(function (v) {\n      return callHook$1(v, hook, params);\n    });\n  }\n\n  return ret\n}\n\nfunction getRootVueVm(page) {\n  return page.$vm.$root;\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (App) {\n  return {\n    // 页面的初始数据\n    data: {\n      $root: {}\n    },\n\n    // mp lifecycle for vue\n    // 生命周期函数--监听页面加载\n    onLoad:function onLoad(query) {\n      //页面加载的时候\n      var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a(App);\n      // 挂载Vue对象到page上\n      this.$vm = app;\n      var rootVueVM = app.$root;\n      rootVueVM.__wxWebviewId__ = this.__wxWebviewId__//fixed by xxxxxx(createIntersectionObserver)\r\n      \n      //初始化mp对象\n      if (!rootVueVM.$mp) {\n        rootVueVM.$mp = {};\n      }\n      var mp = rootVueVM.$mp;\n      mp.mpType = 'page';\n      mp.page = this;\n      mp.query = query;\n      mp.status = 'load';\n      //mount 要在 mp.status = 'load';赋值之后，不然mount方法会重复添加微信Page\n      //具体原因参考mpvue核心库源码，_initMP方法\n      app.$mount();\n    },\n\n    handleProxy: function handleProxy(e) {\n      var rootVueVM = getRootVueVm(this);\n      return rootVueVM.$handleProxyWithVue(e)\n    },\n\n    // 生命周期函数--监听页面显示\n    onShow:function onShow() {\n      var rootVueVM = getRootVueVm(this);\n      var mp = rootVueVM.$mp;\n      mp.status = 'show';\n      callHook$1(rootVueVM, 'onShow');\n      //   // 只有页面需要 setData\n      rootVueVM.$nextTick(function () {\n        rootVueVM._initDataToMP();\n      });\n    },\n\n    // 生命周期函数--监听页面初次渲染完成\n    onReady:function onReady() {\n      var rootVueVM = getRootVueVm(this);\n      var mp = rootVueVM.$mp;\n      mp.status = 'ready';\n      callHook$1(rootVueVM, 'onReady');\n    },\n\n    // 生命周期函数--监听页面隐藏\n    onHide: function onHide() {\n      var rootVueVM = getRootVueVm(this);\n      var mp = rootVueVM.$mp;\n      mp.status = 'hide';\n      callHook$1(rootVueVM, 'onHide');\n    },\n\n    // 生命周期函数--监听页面卸载\n    onUnload: function onUnload() {\n      var rootVueVM = getRootVueVm(this);\n      callHook$1(rootVueVM, 'onUnload');\n      rootVueVM.$destroy();\n    },\n\n    // 页面相关事件处理函数--监听用户下拉动作\n    onPullDownRefresh: function onPullDownRefresh() {\n      var rootVueVM = getRootVueVm(this);\n      callHook$1(rootVueVM, 'onPullDownRefresh');\n    },\n\n    // 页面上拉触底事件的处理函数\n    onReachBottom: function onReachBottom() {\n      var rootVueVM = getRootVueVm(this);\n      callHook$1(rootVueVM, 'onReachBottom');\n    },\n\n    // Do something when page scroll\n    onPageScroll: function onPageScroll(options) {\n      var rootVueVM = getRootVueVm(this);\n      callHook$1(rootVueVM, 'onPageScroll', options);\n    },\n\n    // 当前是 tab 页时，点击 tab 时触发\n    onTabItemTap: function onTabItemTap(options) {\n      var rootVueVM = getRootVueVm(this);\n      callHook$1(rootVueVM, 'onTabItemTap', options);\n    },\r\n\t\t\n    // // 用户点击右上角分享\n    onShareAppMessage: App.onShareAppMessage ?\n      function (options) {\n        var rootVueVM = getRootVueVm(this);\n        return callHook$1(rootVueVM, 'onShareAppMessage', options);\n      } : null,\n\n    //fixed by xxxxxx\n    onNavigationBarButtonTap: function onNavigationBarButtonTap(options) {\n        var rootVueVM = getRootVueVm(this);\n    \t\tcallHook$1(rootVueVM, \"onNavigationBarButtonTap\", options)\n    },\n    onNavigationBarSearchInputChanged: function onNavigationBarSearchInputChanged(options) {\n        var rootVueVM = getRootVueVm(this);\n    \t\tcallHook$1(rootVueVM, \"onNavigationBarSearchInputChanged\", options)\n    },\n    onNavigationBarSearchInputConfirmed: function onNavigationBarSearchInputConfirmed(options) {\n        var rootVueVM = getRootVueVm(this);\n    \t\tcallHook$1(rootVueVM, \"onNavigationBarSearchInputConfirmed\", options)\n    },\n    onNavigationBarSearchInputClicked: function onNavigationBarSearchInputClicked(options) {\n        var rootVueVM = getRootVueVm(this);\n    \t\tcallHook$1(rootVueVM, \"onNavigationBarSearchInputClicked\", options)\n    },\n    onBackPress: function onBackPress(options) {\n        var rootVueVM = getRootVueVm(this);\n    \t\treturn callHook$1(rootVueVM, \"onBackPress\",options)\n    },\r\n\t\t$getAppWebview:function (e) {\r\n\t\t\t\treturn plus.webview.getWebviewById('' + this.__wxWebviewId__)\r\n\t\t}\n  };\n});\n\n\n//# sourceURL=Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue-page-factory/index.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue/index.js\");\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);\n\n\nfunction callHook$1(vm, hook, params) {\n  var handlers = vm.$options[hook];\n  if (hook === 'onError' && handlers) {\n    handlers = [handlers];\n  }\n  if(typeof handlers === 'function'){\n    handlers = [handlers]\n  }\n\n  var ret;\n  if (handlers) {\n    for (var i = 0, j = handlers.length; i < j; i++) {\n//      try {\n        ret = handlers[i].call(vm, params);\n//       } catch (e) {//fixed by xxxxxx\n//         handleError(e, vm, (hook + \" hook\"));\n//       }\n    }\n  }\n  if (vm._hasHookEvent) {\n    vm.$emit('hook:' + hook);\n  }\n\n  // for child\n  if (vm.$children.length) {\n    vm.$children.forEach(function (v) {\n      return callHook$1(v, hook, params);\n    });\n  }\n\n  return ret\n}\n\nfunction getRootVueVm(page) {\n  return page.$vm.$root;\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (App) {\n  return {\n    // 页面的初始数据\n    data: {\n      $root: {}\n    },\n\n    // mp lifecycle for vue\n    // 生命周期函数--监听页面加载\n    onLoad:function onLoad(query) {\n      //页面加载的时候\n      var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a(App);\n      // 挂载Vue对象到page上\n      this.$vm = app;\n      var rootVueVM = app.$root;\n      rootVueVM.__wxExparserNodeId__ = this.__wxExparserNodeId__//fixed by xxxxxx(createIntersectionObserver)\n      rootVueVM.__wxWebviewId__ = this.__wxWebviewId__//fixed by xxxxxx(createIntersectionObserver)\r\n      \n      //初始化mp对象\n      if (!rootVueVM.$mp) {\n        rootVueVM.$mp = {};\n      }\n      var mp = rootVueVM.$mp;\n      mp.mpType = 'page';\n      mp.page = this;\n      mp.query = query;\n      mp.status = 'load';\n      //mount 要在 mp.status = 'load';赋值之后，不然mount方法会重复添加微信Page\n      //具体原因参考mpvue核心库源码，_initMP方法\n      app.$mount();\n    },\n\n    handleProxy: function handleProxy(e) {\n      var rootVueVM = getRootVueVm(this);\n      return rootVueVM.$handleProxyWithVue(e)\n    },\n\n    // 生命周期函数--监听页面显示\n    onShow:function onShow() {\n      var rootVueVM = getRootVueVm(this);\n      var mp = rootVueVM.$mp;\n      mp.status = 'show';\n      callHook$1(rootVueVM, 'onShow');\n      //   // 只有页面需要 setData\n      rootVueVM.$nextTick(function () {\n        rootVueVM._initDataToMP();\n      });\n    },\n\n    // 生命周期函数--监听页面初次渲染完成\n    onReady:function onReady() {\n      var rootVueVM = getRootVueVm(this);\n      var mp = rootVueVM.$mp;\n      mp.status = 'ready';\n      callHook$1(rootVueVM, 'onReady');\n    },\n\n    // 生命周期函数--监听页面隐藏\n    onHide: function onHide() {\n      var rootVueVM = getRootVueVm(this);\n      var mp = rootVueVM.$mp;\n      mp.status = 'hide';\n      callHook$1(rootVueVM, 'onHide');\n    },\n\n    // 生命周期函数--监听页面卸载\n    onUnload: function onUnload() {\n      var rootVueVM = getRootVueVm(this);\n      callHook$1(rootVueVM, 'onUnload');\n      rootVueVM.$destroy();\n    },\n\n    // 页面相关事件处理函数--监听用户下拉动作\n    onPullDownRefresh: function onPullDownRefresh() {\n      var rootVueVM = getRootVueVm(this);\n      callHook$1(rootVueVM, 'onPullDownRefresh');\n    },\n\n    // 页面上拉触底事件的处理函数\n    onReachBottom: function onReachBottom() {\n      var rootVueVM = getRootVueVm(this);\n      callHook$1(rootVueVM, 'onReachBottom');\n    },\n\n    // Do something when page scroll\n    onPageScroll: function onPageScroll(options) {\n      var rootVueVM = getRootVueVm(this);\n      callHook$1(rootVueVM, 'onPageScroll', options);\n    },\n\n    // 当前是 tab 页时，点击 tab 时触发\n    onTabItemTap: function onTabItemTap(options) {\n      var rootVueVM = getRootVueVm(this);\n      callHook$1(rootVueVM, 'onTabItemTap', options);\n    },\r\n\t\t\n    // // 用户点击右上角分享\n    onShareAppMessage: App.onShareAppMessage ?\n      function (options) {\n        var rootVueVM = getRootVueVm(this);\n        return callHook$1(rootVueVM, 'onShareAppMessage', options);\n      } : null,\n\n    //fixed by xxxxxx\n    onNavigationBarButtonTap: function onNavigationBarButtonTap(options) {\n        var rootVueVM = getRootVueVm(this);\n    \t\tcallHook$1(rootVueVM, \"onNavigationBarButtonTap\", options)\n    },\n    onNavigationBarSearchInputChanged: function onNavigationBarSearchInputChanged(options) {\n        var rootVueVM = getRootVueVm(this);\n    \t\tcallHook$1(rootVueVM, \"onNavigationBarSearchInputChanged\", options)\n    },\n    onNavigationBarSearchInputConfirmed: function onNavigationBarSearchInputConfirmed(options) {\n        var rootVueVM = getRootVueVm(this);\n    \t\tcallHook$1(rootVueVM, \"onNavigationBarSearchInputConfirmed\", options)\n    },\n    onNavigationBarSearchInputClicked: function onNavigationBarSearchInputClicked(options) {\n        var rootVueVM = getRootVueVm(this);\n    \t\tcallHook$1(rootVueVM, \"onNavigationBarSearchInputClicked\", options)\n    },\n    onBackPress: function onBackPress(options) {\n        var rootVueVM = getRootVueVm(this);\n    \t\treturn callHook$1(rootVueVM, \"onBackPress\",options)\n    },\r\n\t\t$getAppWebview:function (e) {\r\n\t\t\t\treturn plus.webview.getWebviewById('' + this.__wxWebviewId__)\r\n\t\t}\n  };\n});\n\n\n//# sourceURL=Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue-page-factory/index.js");
 
 /***/ }),
 
@@ -6673,7 +6647,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/* WEBPACK VAR INJECTION */(function(global) {// fix env\r\ntry {\r\n    if (!global) global = {}\r\n    global.process = global.process || {}\r\n    global.process.env = global.process.env || {}\r\n    global.App = global.App || App\r\n    global.Page = global.Page || Page\r\n    global.Component = global.Component || Component\r\n    global.getApp = global.getApp || getApp\r\n} catch (e) {}\r\n\r\n;(function(global, factory) {\r\n     true\r\n        ? (module.exports = factory())\r\n        : undefined\r\n})(this, function() {\r\n    \"use strict\"\r\n\r\n    //fixed by xxxxxx\r\n    function calcDiff(holder, key, newObj, oldObj) {\r\n        if (newObj === oldObj || newObj === undefined) {\r\n            return\r\n        }\r\n\r\n        if (newObj == null || oldObj == null || typeof newObj !== typeof oldObj) {\r\n            holder[key] = newObj\r\n        } else if (Array.isArray(newObj) && Array.isArray(oldObj)) {\r\n            if (newObj.length === oldObj.length) {\r\n                for (var i = 0, len = newObj.length; i < len; ++i) {\r\n                    calcDiff(holder, key + \"[\" + i + \"]\", newObj[i], oldObj[i])\r\n                }\r\n            } else {\r\n                holder[key] = newObj\r\n            }\r\n        } else if (typeof newObj === \"object\" && typeof oldObj === \"object\") {\r\n            var newKeys = Object.keys(newObj)\r\n            var oldKeys = Object.keys(oldObj)\r\n\r\n            if (newKeys.length !== oldKeys.length) {\r\n                holder[key] = newObj\r\n            } else {\r\n                var allKeysSet = Object.create(null)\r\n                for (var i = 0, len = newKeys.length; i < len; ++i) {\r\n                    allKeysSet[newKeys[i]] = true\r\n                    allKeysSet[oldKeys[i]] = true\r\n                }\r\n                if (Object.keys(allKeysSet).length !== newKeys.length) {\r\n                    holder[key] = newObj\r\n                } else {\r\n                    for (var i = 0, len = newKeys.length; i < len; ++i) {\r\n                        var k = newKeys[i]\r\n                        calcDiff(holder, key + \".\" + k, newObj[k], oldObj[k])\r\n                    }\r\n                }\r\n            }\r\n        } else if (newObj !== oldObj) {\r\n            holder[key] = newObj\r\n        }\r\n    }\r\n\r\n    function diff(newObj, oldObj) {\r\n        var keys = Object.keys(newObj)\r\n        var diffResult = {}\r\n        for (var i = 0, len = keys.length; i < len; ++i) {\r\n            var k = keys[i]\r\n            var oldKeyPath = k.split(\".\")\r\n            var oldValue = oldObj[oldKeyPath[0]]\r\n            for (var j = 1, jlen = oldKeyPath.length; j < jlen && oldValue !== undefined; ++j) {\r\n                oldValue = oldValue[oldKeyPath[j]]\r\n            }\r\n            calcDiff(diffResult, k, newObj[k], oldValue)\r\n        }\r\n        return diffResult\r\n    }\r\n\r\n    /*  */\r\n\r\n    // these helpers produces better vm code in JS engines due to their\r\n    // explicitness and function inlining\r\n    function isUndef(v) {\r\n        return v === undefined || v === null\r\n    }\r\n\r\n    function isDef(v) {\r\n        return v !== undefined && v !== null\r\n    }\r\n\r\n    function isTrue(v) {\r\n        return v === true\r\n    }\r\n\r\n    function isFalse(v) {\r\n        return v === false\r\n    }\r\n\r\n    /**\r\n     * Check if value is primitive\r\n     */\r\n    function isPrimitive(value) {\r\n        return typeof value === \"string\" || typeof value === \"number\"\r\n    }\r\n\r\n    /**\r\n     * Quick object check - this is primarily used to tell\r\n     * Objects from primitive values when we know the value\r\n     * is a JSON-compliant type.\r\n     */\r\n    function isObject(obj) {\r\n        return obj !== null && typeof obj === \"object\"\r\n    }\r\n\r\n    var _toString = Object.prototype.toString\r\n\r\n    /**\r\n     * Strict object type check. Only returns true\r\n     * for plain JavaScript objects.\r\n     */\r\n    function isPlainObject(obj) {\r\n        return _toString.call(obj) === \"[object Object]\"\r\n    }\r\n\r\n    function isRegExp(v) {\r\n        return _toString.call(v) === \"[object RegExp]\"\r\n    }\r\n\r\n    /**\r\n     * Check if val is a valid array index.\r\n     */\r\n    function isValidArrayIndex(val) {\r\n        var n = parseFloat(val)\r\n        return n >= 0 && Math.floor(n) === n && isFinite(val)\r\n    }\r\n\r\n    /**\r\n     * Convert a value to a string that is actually rendered.\r\n     */\r\n    function toString(val) {\r\n        return val == null\r\n            ? \"\"\r\n            : typeof val === \"object\"\r\n                ? JSON.stringify(val, null, 2)\r\n                : String(val)\r\n    }\r\n\r\n    /**\r\n     * Convert a input value to a number for persistence.\r\n     * If the conversion fails, return original string.\r\n     */\r\n    function toNumber(val) {\r\n        var n = parseFloat(val)\r\n        return isNaN(n) ? val : n\r\n    }\r\n\r\n    /**\r\n     * Make a map and return a function for checking if a key\r\n     * is in that map.\r\n     */\r\n    function makeMap(str, expectsLowerCase) {\r\n        var map = Object.create(null)\r\n        var list = str.split(\",\")\r\n        for (var i = 0; i < list.length; i++) {\r\n            map[list[i]] = true\r\n        }\r\n        return expectsLowerCase\r\n            ? function(val) {\r\n                  return map[val.toLowerCase()]\r\n              }\r\n            : function(val) {\r\n                  return map[val]\r\n              }\r\n    }\r\n\r\n    /**\r\n     * Check if a tag is a built-in tag.\r\n     */\r\n    var isBuiltInTag = makeMap(\"slot,component\", true)\r\n\r\n    /**\r\n     * Check if a attribute is a reserved attribute.\r\n     */\r\n    var isReservedAttribute = makeMap(\"key,ref,slot,is\")\r\n\r\n    /**\r\n     * Remove an item from an array\r\n     */\r\n    function remove(arr, item) {\r\n        if (arr.length) {\r\n            var index = arr.indexOf(item)\r\n            if (index > -1) {\r\n                return arr.splice(index, 1)\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Check whether the object has the property.\r\n     */\r\n    var hasOwnProperty = Object.prototype.hasOwnProperty\r\n\r\n    function hasOwn(obj, key) {\r\n        return hasOwnProperty.call(obj, key)\r\n    }\r\n\r\n    /**\r\n     * Create a cached version of a pure function.\r\n     */\r\n    function cached(fn) {\r\n        var cache = Object.create(null)\r\n        return function cachedFn(str) {\r\n            var hit = cache[str]\r\n            return hit || (cache[str] = fn(str))\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Camelize a hyphen-delimited string.\r\n     */\r\n    var camelizeRE = /-(\\w)/g\r\n    var camelize = cached(function(str) {\r\n        return str.replace(camelizeRE, function(_, c) {\r\n            return c ? c.toUpperCase() : \"\"\r\n        })\r\n    })\r\n\r\n    /**\r\n     * Capitalize a string.\r\n     */\r\n    var capitalize = cached(function(str) {\r\n        return str.charAt(0).toUpperCase() + str.slice(1)\r\n    })\r\n\r\n    /**\r\n     * Hyphenate a camelCase string.\r\n     */\r\n    var hyphenateRE = /([^-])([A-Z])/g\r\n    var hyphenate = cached(function(str) {\r\n        return str\r\n            .replace(hyphenateRE, \"$1-$2\")\r\n            .replace(hyphenateRE, \"$1-$2\")\r\n            .toLowerCase()\r\n    })\r\n\r\n    /**\r\n     * Simple bind, faster than native\r\n     */\r\n    function bind(fn, ctx) {\r\n        function boundFn(a) {\r\n            var l = arguments.length\r\n            return l ? (l > 1 ? fn.apply(ctx, arguments) : fn.call(ctx, a)) : fn.call(ctx)\r\n        }\r\n        // record original fn length\r\n        boundFn._length = fn.length\r\n        return boundFn\r\n    }\r\n\r\n    /**\r\n     * Convert an Array-like object to a real Array.\r\n     */\r\n    function toArray(list, start) {\r\n        start = start || 0\r\n        var i = list.length - start\r\n        var ret = new Array(i)\r\n        while (i--) {\r\n            ret[i] = list[i + start]\r\n        }\r\n        return ret\r\n    }\r\n\r\n    /**\r\n     * Mix properties into target object.\r\n     */\r\n    function extend(to, _from) {\r\n        for (var key in _from) {\r\n            to[key] = _from[key]\r\n        }\r\n        return to\r\n    }\r\n\r\n    /**\r\n     * Merge an Array of Objects into a single Object.\r\n     */\r\n    function toObject(arr) {\r\n        var res = {}\r\n        for (var i = 0; i < arr.length; i++) {\r\n            if (arr[i]) {\r\n                extend(res, arr[i])\r\n            }\r\n        }\r\n        return res\r\n    }\r\n\r\n    /**\r\n     * Perform no operation.\r\n     * Stubbing args to make Flow happy without leaving useless transpiled code\r\n     * with ...rest (https://flow.org/blog/2017/05/07/Strict-Function-Call-Arity/)\r\n     */\r\n    function noop(a, b, c) {}\r\n\r\n    /**\r\n     * Always return false.\r\n     */\r\n    var no = function(a, b, c) {\r\n        return false\r\n    }\r\n\r\n    /**\r\n     * Return same value\r\n     */\r\n    var identity = function(_) {\r\n        return _\r\n    }\r\n\r\n    /**\r\n     * Generate a static keys string from compiler modules.\r\n     */\r\n\r\n    /**\r\n     * Check if two values are loosely equal - that is,\r\n     * if they are plain objects, do they have the same shape?\r\n     */\r\n    function looseEqual(a, b) {\r\n        var isObjectA = isObject(a)\r\n        var isObjectB = isObject(b)\r\n        if (isObjectA && isObjectB) {\r\n            try {\r\n                return JSON.stringify(a) === JSON.stringify(b)\r\n            } catch (e) {\r\n                // possible circular reference\r\n                return a === b\r\n            }\r\n        } else if (!isObjectA && !isObjectB) {\r\n            return String(a) === String(b)\r\n        } else {\r\n            return false\r\n        }\r\n    }\r\n\r\n    function looseIndexOf(arr, val) {\r\n        for (var i = 0; i < arr.length; i++) {\r\n            if (looseEqual(arr[i], val)) {\r\n                return i\r\n            }\r\n        }\r\n        return -1\r\n    }\r\n\r\n    /**\r\n     * Ensure a function is called only once.\r\n     */\r\n    function once(fn) {\r\n        var called = false\r\n        return function() {\r\n            if (!called) {\r\n                called = true\r\n                fn.apply(this, arguments)\r\n            }\r\n        }\r\n    }\r\n\r\n    var SSR_ATTR = \"data-server-rendered\"\r\n\r\n    var ASSET_TYPES = [\"component\", \"directive\", \"filter\"]\r\n\r\n    var LIFECYCLE_HOOKS = [\r\n        \"beforeCreate\",\r\n        \"created\",\r\n        \"beforeMount\",\r\n        \"mounted\",\r\n        \"beforeUpdate\",\r\n        \"updated\",\r\n        \"beforeDestroy\",\r\n        \"destroyed\",\r\n        \"activated\",\r\n        \"deactivated\",\r\n        \"onLaunch\",\r\n        \"onLoad\",\r\n        \"onShow\",\r\n        \"onReady\",\r\n        \"onHide\",\r\n        \"onUnload\",\r\n        \"onPullDownRefresh\",\r\n        \"onReachBottom\",\r\n        \"onShareAppMessage\",\r\n        \"onPageScroll\",\r\n        \"onTabItemTap\",\r\n        \"attached\",\r\n        \"ready\",\r\n        \"moved\",\r\n        \"detached\",\r\n        \"onUniNViewMessage\", //fixed by xxxxxx\r\n        \"onNavigationBarButtonTap\", //fixed by xxxxxx\n        \"onBackPress\",//fixed by xxxxxx\r\n    ]\r\n\r\n    /*  */\r\n\r\n    var config = {\r\n        /**\r\n         * Option merge strategies (used in core/util/options)\r\n         */\r\n        optionMergeStrategies: Object.create(null),\r\n\r\n        /**\r\n         * Whether to suppress warnings.\r\n         */\r\n        silent: false,\r\n\r\n        /**\r\n         * Show production mode tip message on boot?\r\n         */\r\n        productionTip: \"production\" !== \"production\",\r\n\r\n        /**\r\n         * Whether to enable devtools\r\n         */\r\n        devtools: \"production\" !== \"production\",\r\n\r\n        /**\r\n         * Whether to record perf\r\n         */\r\n        performance: false,\r\n\r\n        /**\r\n         * Error handler for watcher errors\r\n         */\r\n        errorHandler: null,\r\n\r\n        /**\r\n         * Warn handler for watcher warns\r\n         */\r\n        warnHandler: null,\r\n\r\n        /**\r\n         * Ignore certain custom elements\r\n         */\r\n        ignoredElements: [],\r\n\r\n        /**\r\n         * Custom user key aliases for v-on\r\n         */\r\n        keyCodes: Object.create(null),\r\n\r\n        /**\r\n         * Check if a tag is reserved so that it cannot be registered as a\r\n         * component. This is platform-dependent and may be overwritten.\r\n         */\r\n        isReservedTag: no,\r\n\r\n        /**\r\n         * Check if an attribute is reserved so that it cannot be used as a component\r\n         * prop. This is platform-dependent and may be overwritten.\r\n         */\r\n        isReservedAttr: no,\r\n\r\n        /**\r\n         * Check if a tag is an unknown element.\r\n         * Platform-dependent.\r\n         */\r\n        isUnknownElement: no,\r\n\r\n        /**\r\n         * Get the namespace of an element\r\n         */\r\n        getTagNamespace: noop,\r\n\r\n        /**\r\n         * Parse the real tag name for the specific platform.\r\n         */\r\n        parsePlatformTagName: identity,\r\n\r\n        /**\r\n         * Check if an attribute must be bound using property, e.g. value\r\n         * Platform-dependent.\r\n         */\r\n        mustUseProp: no,\r\n\r\n        /**\r\n         * Exposed for legacy reasons\r\n         */\r\n        _lifecycleHooks: LIFECYCLE_HOOKS\r\n    }\r\n\r\n    /*  */\r\n\r\n    var emptyObject = Object.freeze({})\r\n\r\n    /**\r\n     * Check if a string starts with $ or _\r\n     */\r\n    function isReserved(str) {\r\n        var c = (str + \"\").charCodeAt(0)\r\n        return c === 0x24 || c === 0x5f\r\n    }\r\n\r\n    /**\r\n     * Define a property.\r\n     */\r\n    function def(obj, key, val, enumerable) {\r\n        Object.defineProperty(obj, key, {\r\n            value: val,\r\n            enumerable: !!enumerable,\r\n            writable: true,\r\n            configurable: true\r\n        })\r\n    }\r\n\r\n    /**\r\n     * Parse simple path.\r\n     */\r\n    var bailRE = /[^\\w.$]/\r\n\r\n    function parsePath(path) {\r\n        if (bailRE.test(path)) {\r\n            return\r\n        }\r\n        var segments = path.split(\".\")\r\n        return function(obj) {\r\n            for (var i = 0; i < segments.length; i++) {\r\n                if (!obj) {\r\n                    return\r\n                }\r\n                obj = obj[segments[i]]\r\n            }\r\n            return obj\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    var warn = noop\r\n\r\n    var formatComponentName = null // work around flow check\r\n\r\n    /*  */\r\n\r\n    function handleError(err, vm, info) {\r\n        if (config.errorHandler) {\r\n            config.errorHandler.call(null, err, vm, info)\r\n        } else {\r\n            if (inBrowser && typeof console !== \"undefined\") {\r\n                console.error(err)\r\n            } else {\r\n                throw err\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    // can we use __proto__?\r\n    var hasProto = \"__proto__\" in {}\r\n\r\n    // Browser environment sniffing\r\n    var inBrowser = typeof window !== \"undefined\"\r\n    var UA = [\"mpvue-runtime\"].join()\r\n    var isIE = UA && /msie|trident/.test(UA)\r\n    var isIE9 = UA && UA.indexOf(\"msie 9.0\") > 0\r\n    var isEdge = UA && UA.indexOf(\"edge/\") > 0\r\n    var isAndroid = UA && UA.indexOf(\"android\") > 0\r\n    var isIOS = UA && /iphone|ipad|ipod|ios/.test(UA)\r\n    var isChrome = UA && /chrome\\/\\d+/.test(UA) && !isEdge\r\n\r\n    // Firefix has a \"watch\" function on Object.prototype...\r\n    var nativeWatch = {}.watch\r\n\r\n    var supportsPassive = false\r\n    if (inBrowser) {\r\n        try {\r\n            var opts = {}\r\n            Object.defineProperty(opts, \"passive\", {\r\n                get: function get() {\r\n                    /* istanbul ignore next */\r\n                    supportsPassive = true\r\n                }\r\n            }) // https://github.com/facebook/flow/issues/285\r\n            window.addEventListener(\"test-passive\", null, opts)\r\n        } catch (e) {}\r\n    }\r\n\r\n    // this needs to be lazy-evaled because vue may be required before\r\n    // vue-server-renderer can set VUE_ENV\r\n    var _isServer\r\n    var isServerRendering = function() {\r\n        if (_isServer === undefined) {\r\n            /* istanbul ignore if */\r\n            if (!inBrowser && typeof global !== \"undefined\") {\r\n                // detect presence of vue-server-renderer and avoid\r\n                // Webpack shimming the process\r\n                _isServer = global[\"process\"].env.VUE_ENV === \"server\"\r\n            } else {\r\n                _isServer = false\r\n            }\r\n        }\r\n        return _isServer\r\n    }\r\n\r\n    // detect devtools\r\n    var devtools = inBrowser && window.__VUE_DEVTOOLS_GLOBAL_HOOK__\r\n\r\n    /* istanbul ignore next */\r\n    function isNative(Ctor) {\r\n        return typeof Ctor === \"function\" && /native code/.test(Ctor.toString())\r\n    }\r\n\r\n    var hasSymbol =\r\n        typeof Symbol !== \"undefined\" &&\r\n        isNative(Symbol) &&\r\n        typeof Reflect !== \"undefined\" &&\r\n        isNative(Reflect.ownKeys)\r\n\r\n    /**\r\n     * Defer a task to execute it asynchronously.\r\n     */\r\n    var nextTick = (function() {\r\n        var callbacks = []\r\n        var pending = false\r\n        var timerFunc\r\n\r\n        function nextTickHandler() {\r\n            pending = false\r\n            var copies = callbacks.slice(0)\r\n            callbacks.length = 0\r\n            for (var i = 0; i < copies.length; i++) {\r\n                copies[i]()\r\n            }\r\n        }\r\n\r\n        // the nextTick behavior leverages the microtask queue, which can be accessed\r\n        // via either native Promise.then or MutationObserver.\r\n        // MutationObserver has wider support, however it is seriously bugged in\r\n        // UIWebView in iOS >= 9.3.3 when triggered in touch event handlers. It\r\n        // completely stops working after triggering a few times... so, if native\r\n        // Promise is available, we will use it:\r\n        /* istanbul ignore if */\r\n        if (typeof Promise !== \"undefined\" && isNative(Promise)) {\r\n            var p = Promise.resolve()\r\n            var logError = function(err) {\r\n                console.error(err)\r\n            }\r\n            timerFunc = function() {\r\n                p.then(nextTickHandler).catch(logError)\r\n                // in problematic UIWebViews, Promise.then doesn't completely break, but\r\n                // it can get stuck in a weird state where callbacks are pushed into the\r\n                // microtask queue but the queue isn't being flushed, until the browser\r\n                // needs to do some other work, e.g. handle a timer. Therefore we can\r\n                // \"force\" the microtask queue to be flushed by adding an empty timer.\r\n                if (isIOS) {\r\n                    setTimeout(noop)\r\n                }\r\n            }\r\n            // } else if (typeof MutationObserver !== 'undefined' && (\r\n            //   isNative(MutationObserver) ||\r\n            //   // PhantomJS and iOS 7.x\r\n            //   MutationObserver.toString() === '[object MutationObserverConstructor]'\r\n            // )) {\r\n            //   // use MutationObserver where native Promise is not available,\r\n            //   // e.g. PhantomJS IE11, iOS7, Android 4.4\r\n            //   var counter = 1\r\n            //   var observer = new MutationObserver(nextTickHandler)\r\n            //   var textNode = document.createTextNode(String(counter))\r\n            //   observer.observe(textNode, {\r\n            //     characterData: true\r\n            //   })\r\n            //   timerFunc = () => {\r\n            //     counter = (counter + 1) % 2\r\n            //     textNode.data = String(counter)\r\n            //   }\r\n        } else {\r\n            // fallback to setTimeout\r\n            /* istanbul ignore next */\r\n            timerFunc = function() {\r\n                setTimeout(nextTickHandler, 0)\r\n            }\r\n        }\r\n\r\n        return function queueNextTick(cb, ctx) {\r\n            var _resolve\r\n            callbacks.push(function() {\r\n                if (cb) {\r\n                    try {\r\n                        cb.call(ctx)\r\n                    } catch (e) {\r\n                        handleError(e, ctx, \"nextTick\")\r\n                    }\r\n                } else if (_resolve) {\r\n                    _resolve(ctx)\r\n                }\r\n            })\r\n            if (!pending) {\r\n                pending = true\r\n                timerFunc()\r\n            }\r\n            if (!cb && typeof Promise !== \"undefined\") {\r\n                return new Promise(function(resolve, reject) {\r\n                    _resolve = resolve\r\n                })\r\n            }\r\n        }\r\n    })()\r\n\r\n    var _Set\r\n    /* istanbul ignore if */\r\n    if (typeof Set !== \"undefined\" && isNative(Set)) {\r\n        // use native Set when available.\r\n        _Set = Set\r\n    } else {\r\n        // a non-standard Set polyfill that only works with primitive keys.\r\n        _Set = (function() {\r\n            function Set() {\r\n                this.set = Object.create(null)\r\n            }\r\n            Set.prototype.has = function has(key) {\r\n                return this.set[key] === true\r\n            }\r\n            Set.prototype.add = function add(key) {\r\n                this.set[key] = true\r\n            }\r\n            Set.prototype.clear = function clear() {\r\n                this.set = Object.create(null)\r\n            }\r\n\r\n            return Set\r\n        })()\r\n    }\r\n\r\n    /*  */\r\n\r\n    var uid$1 = 0\r\n\r\n    /**\r\n     * A dep is an observable that can have multiple\r\n     * directives subscribing to it.\r\n     */\r\n    var Dep = function Dep() {\r\n        this.id = uid$1++\r\n        this.subs = []\r\n    }\r\n\r\n    Dep.prototype.addSub = function addSub(sub) {\r\n        this.subs.push(sub)\r\n    }\r\n\r\n    Dep.prototype.removeSub = function removeSub(sub) {\r\n        remove(this.subs, sub)\r\n    }\r\n\r\n    Dep.prototype.depend = function depend() {\r\n        if (Dep.target) {\r\n            Dep.target.addDep(this)\r\n        }\r\n    }\r\n\r\n    Dep.prototype.notify = function notify() {\r\n        // stabilize the subscriber list first\r\n        var subs = this.subs.slice()\r\n        for (var i = 0, l = subs.length; i < l; i++) {\r\n            subs[i].update()\r\n        }\r\n    }\r\n\r\n    // the current target watcher being evaluated.\r\n    // this is globally unique because there could be only one\r\n    // watcher being evaluated at any time.\r\n    Dep.target = null\r\n    var targetStack = []\r\n\r\n    function pushTarget(_target) {\r\n        if (Dep.target) {\r\n            targetStack.push(Dep.target)\r\n        }\r\n        Dep.target = _target\r\n    }\r\n\r\n    function popTarget() {\r\n        Dep.target = targetStack.pop()\r\n    }\r\n\r\n    /*\r\n     * not type checking this file because flow doesn't play well with\r\n     * dynamically accessing methods on Array prototype\r\n     */\r\n\r\n    var arrayProto = Array.prototype\r\n    var arrayMethods = Object.create(arrayProto)\r\n    ;[\"push\", \"pop\", \"shift\", \"unshift\", \"splice\", \"sort\", \"reverse\"].forEach(function(method) {\r\n        // cache original method\r\n        var original = arrayProto[method]\r\n        def(arrayMethods, method, function mutator() {\r\n            var args = [],\r\n                len = arguments.length\r\n            while (len--) args[len] = arguments[len]\r\n\r\n            var result = original.apply(this, args)\r\n            var ob = this.__ob__\r\n            var inserted\r\n            switch (method) {\r\n                case \"push\":\r\n                case \"unshift\":\r\n                    inserted = args\r\n                    break\r\n                case \"splice\":\r\n                    inserted = args.slice(2)\r\n                    break\r\n            }\r\n            if (inserted) {\r\n                ob.observeArray(inserted)\r\n            }\r\n            // notify change\r\n            ob.dep.notify()\r\n            return result\r\n        })\r\n    })\r\n\r\n    /*  */\r\n\r\n    var arrayKeys = Object.getOwnPropertyNames(arrayMethods)\r\n\r\n    /**\r\n     * By default, when a reactive property is set, the new value is\r\n     * also converted to become reactive. However when passing down props,\r\n     * we don't want to force conversion because the value may be a nested value\r\n     * under a frozen data structure. Converting it would defeat the optimization.\r\n     */\r\n    var observerState = {\r\n        shouldConvert: true\r\n    }\r\n\r\n    /**\r\n     * Observer class that are attached to each observed\r\n     * object. Once attached, the observer converts target\r\n     * object's property keys into getter/setters that\r\n     * collect dependencies and dispatches updates.\r\n     */\r\n    var Observer = function Observer(value) {\r\n        this.value = value\r\n        this.dep = new Dep()\r\n        this.vmCount = 0\r\n        def(value, \"__ob__\", this)\r\n        if (Array.isArray(value)) {\r\n            var augment = hasProto ? protoAugment : copyAugment\r\n            augment(value, arrayMethods, arrayKeys)\r\n            this.observeArray(value)\r\n        } else {\r\n            this.walk(value)\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Walk through each property and convert them into\r\n     * getter/setters. This method should only be called when\r\n     * value type is Object.\r\n     */\r\n    Observer.prototype.walk = function walk(obj) {\r\n        var keys = Object.keys(obj)\r\n        for (var i = 0; i < keys.length; i++) {\r\n            defineReactive$$1(obj, keys[i], obj[keys[i]])\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Observe a list of Array items.\r\n     */\r\n    Observer.prototype.observeArray = function observeArray(items) {\r\n        for (var i = 0, l = items.length; i < l; i++) {\r\n            observe(items[i])\r\n        }\r\n    }\r\n\r\n    // helpers\r\n\r\n    /**\r\n     * Augment an target Object or Array by intercepting\r\n     * the prototype chain using __proto__\r\n     */\r\n    function protoAugment(target, src, keys) {\r\n        /* eslint-disable no-proto */\r\n        target.__proto__ = src\r\n        /* eslint-enable no-proto */\r\n    }\r\n\r\n    /**\r\n     * Augment an target Object or Array by defining\r\n     * hidden properties.\r\n     */\r\n    /* istanbul ignore next */\r\n    function copyAugment(target, src, keys) {\r\n        for (var i = 0, l = keys.length; i < l; i++) {\r\n            var key = keys[i]\r\n            def(target, key, src[key])\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Attempt to create an observer instance for a value,\r\n     * returns the new observer if successfully observed,\r\n     * or the existing observer if the value already has one.\r\n     */\r\n    function observe(value, asRootData) {\r\n        if (!isObject(value)) {\r\n            return\r\n        }\r\n        var ob\r\n        if (hasOwn(value, \"__ob__\") && value.__ob__ instanceof Observer) {\r\n            ob = value.__ob__\r\n        } else if (\r\n            observerState.shouldConvert &&\r\n            !isServerRendering() &&\r\n            (Array.isArray(value) || isPlainObject(value)) &&\r\n            Object.isExtensible(value) &&\r\n            !value._isVue\r\n        ) {\r\n            ob = new Observer(value)\r\n        }\r\n        if (asRootData && ob) {\r\n            ob.vmCount++\r\n        }\r\n        return ob\r\n    }\r\n\r\n    /**\r\n     * Define a reactive property on an Object.\r\n     */\r\n    function defineReactive$$1(obj, key, val, customSetter, shallow) {\r\n        var dep = new Dep()\r\n\r\n        var property = Object.getOwnPropertyDescriptor(obj, key)\r\n        if (property && property.configurable === false) {\r\n            return\r\n        }\r\n\r\n        // cater for pre-defined getter/setters\r\n        var getter = property && property.get\r\n        var setter = property && property.set\r\n\r\n        var childOb = !shallow && observe(val)\r\n        Object.defineProperty(obj, key, {\r\n            enumerable: true,\r\n            configurable: true,\r\n            get: function reactiveGetter() {\r\n                var value = getter ? getter.call(obj) : val\r\n                if (Dep.target) {\r\n                    dep.depend()\r\n                    if (childOb) {\r\n                        childOb.dep.depend()\r\n                    }\r\n                    if (Array.isArray(value)) {\r\n                        dependArray(value)\r\n                    }\r\n                }\r\n                return value\r\n            },\r\n            set: function reactiveSetter(newVal) {\r\n                var value = getter ? getter.call(obj) : val\r\n                /* eslint-disable no-self-compare */\r\n                if (newVal === value || (newVal !== newVal && value !== value)) {\r\n                    return\r\n                }\r\n                /* eslint-enable no-self-compare */\r\n                if (false) {}\r\n                if (setter) {\r\n                    setter.call(obj, newVal)\r\n                } else {\r\n                    val = newVal\r\n                }\r\n                childOb = !shallow && observe(newVal)\r\n                dep.notify()\r\n            }\r\n        })\r\n    }\r\n\r\n    /**\r\n     * Set a property on an object. Adds the new property and\r\n     * triggers change notification if the property doesn't\r\n     * already exist.\r\n     */\r\n    function set(target, key, val) {\r\n        if (Array.isArray(target) && isValidArrayIndex(key)) {\r\n            target.length = Math.max(target.length, key)\r\n            target.splice(key, 1, val)\r\n            return val\r\n        }\r\n        if (hasOwn(target, key)) {\r\n            target[key] = val\r\n            return val\r\n        }\r\n        var ob = target.__ob__\r\n        if (target._isVue || (ob && ob.vmCount)) {\r\n             false &&\r\n                false\r\n            return val\r\n        }\r\n        if (!ob) {\r\n            target[key] = val\r\n            return val\r\n        }\r\n        defineReactive$$1(ob.value, key, val)\r\n        ob.dep.notify()\r\n        return val\r\n    }\r\n\r\n    /**\r\n     * Delete a property and trigger change if necessary.\r\n     */\r\n    function del(target, key) {\r\n        if (Array.isArray(target) && isValidArrayIndex(key)) {\r\n            target.splice(key, 1)\r\n            return\r\n        }\r\n        var ob = target.__ob__\r\n        if (target._isVue || (ob && ob.vmCount)) {\r\n             false &&\r\n                false\r\n            return\r\n        }\r\n        if (!hasOwn(target, key)) {\r\n            return\r\n        }\r\n        delete target[key]\r\n        if (!ob) {\r\n            return\r\n        }\r\n        ob.dep.notify()\r\n    }\r\n\r\n    /**\r\n     * Collect dependencies on array elements when the array is touched, since\r\n     * we cannot intercept array element access like property getters.\r\n     */\r\n    function dependArray(value) {\r\n        for (var e = void 0, i = 0, l = value.length; i < l; i++) {\r\n            e = value[i]\r\n            e && e.__ob__ && e.__ob__.dep.depend()\r\n            if (Array.isArray(e)) {\r\n                dependArray(e)\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Option overwriting strategies are functions that handle\r\n     * how to merge a parent option value and a child option\r\n     * value into the final value.\r\n     */\r\n    var strats = config.optionMergeStrategies\r\n\r\n    /**\r\n     * Options with restrictions\r\n     */\r\n    /**\r\n     * Helper that recursively merges two data objects together.\r\n     */\r\n    function mergeData(to, from) {\r\n        if (!from) {\r\n            return to\r\n        }\r\n        var key, toVal, fromVal\r\n        var keys = Object.keys(from)\r\n        for (var i = 0; i < keys.length; i++) {\r\n            key = keys[i]\r\n            toVal = to[key]\r\n            fromVal = from[key]\r\n            if (!hasOwn(to, key)) {\r\n                set(to, key, fromVal)\r\n            } else if (isPlainObject(toVal) && isPlainObject(fromVal)) {\r\n                mergeData(toVal, fromVal)\r\n            }\r\n        }\r\n        return to\r\n    }\r\n\r\n    /**\r\n     * Data\r\n     */\r\n    function mergeDataOrFn(parentVal, childVal, vm) {\r\n        if (!vm) {\r\n            // in a Vue.extend merge, both should be functions\r\n            if (!childVal) {\r\n                return parentVal\r\n            }\r\n            if (!parentVal) {\r\n                return childVal\r\n            }\r\n            // when parentVal & childVal are both present,\r\n            // we need to return a function that returns the\r\n            // merged result of both functions... no need to\r\n            // check if parentVal is a function here because\r\n            // it has to be a function to pass previous merges.\r\n            return function mergedDataFn() {\r\n                return mergeData(\r\n                    typeof childVal === \"function\" ? childVal.call(this) : childVal,\r\n                    parentVal.call(this)\r\n                )\r\n            }\r\n        } else if (parentVal || childVal) {\r\n            return function mergedInstanceDataFn() {\r\n                // instance merge\r\n                var instanceData = typeof childVal === \"function\" ? childVal.call(vm) : childVal\r\n                var defaultData = typeof parentVal === \"function\" ? parentVal.call(vm) : undefined\r\n                if (instanceData) {\r\n                    return mergeData(instanceData, defaultData)\r\n                } else {\r\n                    return defaultData\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    strats.data = function(parentVal, childVal, vm) {\r\n        if (!vm) {\r\n            if (childVal && typeof childVal !== \"function\") {\r\n                 false &&\r\n                    false\r\n\r\n                return parentVal\r\n            }\r\n            return mergeDataOrFn.call(this, parentVal, childVal)\r\n        }\r\n\r\n        return mergeDataOrFn(parentVal, childVal, vm)\r\n    }\r\n\r\n    /**\r\n     * Hooks and props are merged as arrays.\r\n     */\r\n    function mergeHook(parentVal, childVal) {\r\n        return childVal\r\n            ? parentVal\r\n                ? parentVal.concat(childVal)\r\n                : Array.isArray(childVal)\r\n                    ? childVal\r\n                    : [childVal]\r\n            : parentVal\r\n    }\r\n\r\n    LIFECYCLE_HOOKS.forEach(function(hook) {\r\n        strats[hook] = mergeHook\r\n    })\r\n\r\n    /**\r\n     * Assets\r\n     *\r\n     * When a vm is present (instance creation), we need to do\r\n     * a three-way merge between constructor options, instance\r\n     * options and parent options.\r\n     */\r\n    function mergeAssets(parentVal, childVal) {\r\n        var res = Object.create(parentVal || null)\r\n        return childVal ? extend(res, childVal) : res\r\n    }\r\n\r\n    ASSET_TYPES.forEach(function(type) {\r\n        strats[type + \"s\"] = mergeAssets\r\n    })\r\n\r\n    /**\r\n     * Watchers.\r\n     *\r\n     * Watchers hashes should not overwrite one\r\n     * another, so we merge them as arrays.\r\n     */\r\n    strats.watch = function(parentVal, childVal) {\r\n        // work around Firefox's Object.prototype.watch...\r\n        if (parentVal === nativeWatch) {\r\n            parentVal = undefined\r\n        }\r\n        if (childVal === nativeWatch) {\r\n            childVal = undefined\r\n        }\r\n        /* istanbul ignore if */\r\n        if (!childVal) {\r\n            return Object.create(parentVal || null)\r\n        }\r\n        if (!parentVal) {\r\n            return childVal\r\n        }\r\n        var ret = {}\r\n        extend(ret, parentVal)\r\n        for (var key in childVal) {\r\n            var parent = ret[key]\r\n            var child = childVal[key]\r\n            if (parent && !Array.isArray(parent)) {\r\n                parent = [parent]\r\n            }\r\n            ret[key] = parent ? parent.concat(child) : Array.isArray(child) ? child : [child]\r\n        }\r\n        return ret\r\n    }\r\n\r\n    /**\r\n     * Other object hashes.\r\n     */\r\n    strats.props = strats.methods = strats.inject = strats.computed = function(\r\n        parentVal,\r\n        childVal\r\n    ) {\r\n        if (!childVal) {\r\n            return Object.create(parentVal || null)\r\n        }\r\n        if (!parentVal) {\r\n            return childVal\r\n        }\r\n        var ret = Object.create(null)\r\n        extend(ret, parentVal)\r\n        extend(ret, childVal)\r\n        return ret\r\n    }\r\n    strats.provide = mergeDataOrFn\r\n\r\n    /**\r\n     * Default strategy.\r\n     */\r\n    var defaultStrat = function(parentVal, childVal) {\r\n        return childVal === undefined ? parentVal : childVal\r\n    }\r\n\r\n    /**\r\n     * Ensure all props option syntax are normalized into the\r\n     * Object-based format.\r\n     */\r\n    function normalizeProps(options) {\r\n        var props = options.props\r\n        if (!props) {\r\n            return\r\n        }\r\n        var res = {}\r\n        var i, val, name\r\n        if (Array.isArray(props)) {\r\n            i = props.length\r\n            while (i--) {\r\n                val = props[i]\r\n                if (typeof val === \"string\") {\r\n                    name = camelize(val)\r\n                    res[name] = {\r\n                        type: null\r\n                    }\r\n                } else {\r\n                }\r\n            }\r\n        } else if (isPlainObject(props)) {\r\n            for (var key in props) {\r\n                val = props[key]\r\n                name = camelize(key)\r\n                res[name] = isPlainObject(val)\r\n                    ? val\r\n                    : {\r\n                          type: val\r\n                      }\r\n            }\r\n        }\r\n        options.props = res\r\n    }\r\n\r\n    /**\r\n     * Normalize all injections into Object-based format\r\n     */\r\n    function normalizeInject(options) {\r\n        var inject = options.inject\r\n        if (Array.isArray(inject)) {\r\n            var normalized = (options.inject = {})\r\n            for (var i = 0; i < inject.length; i++) {\r\n                normalized[inject[i]] = inject[i]\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Normalize raw function directives into object format.\r\n     */\r\n    function normalizeDirectives(options) {\r\n        var dirs = options.directives\r\n        if (dirs) {\r\n            for (var key in dirs) {\r\n                var def = dirs[key]\r\n                if (typeof def === \"function\") {\r\n                    dirs[key] = {\r\n                        bind: def,\r\n                        update: def\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Merge two option objects into a new one.\r\n     * Core utility used in both instantiation and inheritance.\r\n     */\r\n    function mergeOptions(parent, child, vm) {\r\n        if (typeof child === \"function\") {\r\n            child = child.options\r\n        }\r\n\r\n        normalizeProps(child)\r\n        normalizeInject(child)\r\n        normalizeDirectives(child)\r\n        var extendsFrom = child.extends\r\n        if (extendsFrom) {\r\n            parent = mergeOptions(parent, extendsFrom, vm)\r\n        }\r\n        if (child.mixins) {\r\n            for (var i = 0, l = child.mixins.length; i < l; i++) {\r\n                parent = mergeOptions(parent, child.mixins[i], vm)\r\n            }\r\n        }\r\n        var options = {}\r\n        var key\r\n        for (key in parent) {\r\n            mergeField(key)\r\n        }\r\n        for (key in child) {\r\n            if (!hasOwn(parent, key)) {\r\n                mergeField(key)\r\n            }\r\n        }\r\n\r\n        function mergeField(key) {\r\n            var strat = strats[key] || defaultStrat\r\n            options[key] = strat(parent[key], child[key], vm, key)\r\n        }\r\n        return options\r\n    }\r\n\r\n    /**\r\n     * Resolve an asset.\r\n     * This function is used because child instances need access\r\n     * to assets defined in its ancestor chain.\r\n     */\r\n    function resolveAsset(options, type, id, warnMissing) {\r\n        /* istanbul ignore if */\r\n        if (typeof id !== \"string\") {\r\n            return\r\n        }\r\n        var assets = options[type]\r\n        // check local registration variations first\r\n        if (hasOwn(assets, id)) {\r\n            return assets[id]\r\n        }\r\n        var camelizedId = camelize(id)\r\n        if (hasOwn(assets, camelizedId)) {\r\n            return assets[camelizedId]\r\n        }\r\n        var PascalCaseId = capitalize(camelizedId)\r\n        if (hasOwn(assets, PascalCaseId)) {\r\n            return assets[PascalCaseId]\r\n        }\r\n        // fallback to prototype chain\r\n        var res = assets[id] || assets[camelizedId] || assets[PascalCaseId]\r\n        if (false) {}\r\n        return res\r\n    }\r\n\r\n    /*  */\r\n\r\n    function validateProp(key, propOptions, propsData, vm) {\r\n        var prop = propOptions[key]\r\n        var absent = !hasOwn(propsData, key)\r\n        var value = propsData[key]\r\n        // handle boolean props\r\n        if (isType(Boolean, prop.type)) {\r\n            if (absent && !hasOwn(prop, \"default\")) {\r\n                value = false\r\n            } else if (!isType(String, prop.type) && (value === \"\" || value === hyphenate(key))) {\r\n                value = true\r\n            }\r\n        }\r\n        // check default value\r\n        if (value === undefined) {\r\n            value = getPropDefaultValue(vm, prop, key)\r\n            // since the default value is a fresh copy,\r\n            // make sure to observe it.\r\n            var prevShouldConvert = observerState.shouldConvert\r\n            observerState.shouldConvert = true\r\n            observe(value)\r\n            observerState.shouldConvert = prevShouldConvert\r\n        }\r\n        return value\r\n    }\r\n\r\n    /**\r\n     * Get the default value of a prop.\r\n     */\r\n    function getPropDefaultValue(vm, prop, key) {\r\n        // no default, return undefined\r\n        if (!hasOwn(prop, \"default\")) {\r\n            return undefined\r\n        }\r\n        var def = prop.default\r\n        // warn against non-factory defaults for Object & Array\r\n        if (false) {}\r\n        // the raw prop value was also undefined from previous render,\r\n        // return previous default value to avoid unnecessary watcher trigger\r\n        if (\r\n            vm &&\r\n            vm.$options.propsData &&\r\n            vm.$options.propsData[key] === undefined &&\r\n            vm._props[key] !== undefined\r\n        ) {\r\n            return vm._props[key]\r\n        }\r\n        // call factory function for non-Function types\r\n        // a value is Function if its prototype is function even across different execution context\r\n        return typeof def === \"function\" && getType(prop.type) !== \"Function\" ? def.call(vm) : def\r\n    }\r\n\r\n    /**\r\n     * Use function string name to check built-in types,\r\n     * because a simple equality check will fail when running\r\n     * across different vms / iframes.\r\n     */\r\n    function getType(fn) {\r\n        var match = fn && fn.toString().match(/^\\s*function (\\w+)/)\r\n        return match ? match[1] : \"\"\r\n    }\r\n\r\n    function isType(type, fn) {\r\n        if (!Array.isArray(fn)) {\r\n            return getType(fn) === getType(type)\r\n        }\r\n        for (var i = 0, len = fn.length; i < len; i++) {\r\n            if (getType(fn[i]) === getType(type)) {\r\n                return true\r\n            }\r\n        }\r\n        /* istanbul ignore next */\r\n        return false\r\n    }\r\n\r\n    /*  */\r\n\r\n    /* not type checking this file because flow doesn't play well with Proxy */\r\n\r\n    var mark\r\n    var measure\r\n\r\n    /*  */\r\n\r\n    var VNode = function VNode(\r\n        tag,\r\n        data,\r\n        children,\r\n        text,\r\n        elm,\r\n        context,\r\n        componentOptions,\r\n        asyncFactory\r\n    ) {\r\n        this.tag = tag\r\n        this.data = data\r\n        this.children = children\r\n        this.text = text\r\n        this.elm = elm\r\n        this.ns = undefined\r\n        this.context = context\r\n        this.functionalContext = undefined\r\n        this.key = data && data.key\r\n        this.componentOptions = componentOptions\r\n        this.componentInstance = undefined\r\n        this.parent = undefined\r\n        this.raw = false\r\n        this.isStatic = false\r\n        this.isRootInsert = true\r\n        this.isComment = false\r\n        this.isCloned = false\r\n        this.isOnce = false\r\n        this.asyncFactory = asyncFactory\r\n        this.asyncMeta = undefined\r\n        this.isAsyncPlaceholder = false\r\n    }\r\n\r\n    var prototypeAccessors = {\r\n        child: {}\r\n    }\r\n\r\n    // DEPRECATED: alias for componentInstance for backwards compat.\r\n    /* istanbul ignore next */\r\n    prototypeAccessors.child.get = function() {\r\n        return this.componentInstance\r\n    }\r\n\r\n    Object.defineProperties(VNode.prototype, prototypeAccessors)\r\n\r\n    var createEmptyVNode = function(text) {\r\n        if (text === void 0) text = \"\"\r\n\r\n        var node = new VNode()\r\n        node.text = text\r\n        node.isComment = true\r\n        return node\r\n    }\r\n\r\n    function createTextVNode(val) {\r\n        return new VNode(undefined, undefined, undefined, String(val))\r\n    }\r\n\r\n    // optimized shallow clone\r\n    // used for static nodes and slot nodes because they may be reused across\r\n    // multiple renders, cloning them avoids errors when DOM manipulations rely\r\n    // on their elm reference.\r\n    function cloneVNode(vnode) {\r\n        var cloned = new VNode(\r\n            vnode.tag,\r\n            vnode.data,\r\n            vnode.children,\r\n            vnode.text,\r\n            vnode.elm,\r\n            vnode.context,\r\n            vnode.componentOptions,\r\n            vnode.asyncFactory\r\n        )\r\n        cloned.ns = vnode.ns\r\n        cloned.isStatic = vnode.isStatic\r\n        cloned.key = vnode.key\r\n        cloned.isComment = vnode.isComment\r\n        cloned.isCloned = true\r\n        return cloned\r\n    }\r\n\r\n    function cloneVNodes(vnodes) {\r\n        var len = vnodes.length\r\n        var res = new Array(len)\r\n        for (var i = 0; i < len; i++) {\r\n            res[i] = cloneVNode(vnodes[i])\r\n        }\r\n        return res\r\n    }\r\n\r\n    /*  */\r\n\r\n    var normalizeEvent = cached(function(name) {\r\n        var passive = name.charAt(0) === \"&\"\r\n        name = passive ? name.slice(1) : name\r\n        var once$$1 = name.charAt(0) === \"~\" // Prefixed last, checked first\r\n        name = once$$1 ? name.slice(1) : name\r\n        var capture = name.charAt(0) === \"!\"\r\n        name = capture ? name.slice(1) : name\r\n        return {\r\n            name: name,\r\n            once: once$$1,\r\n            capture: capture,\r\n            passive: passive\r\n        }\r\n    })\r\n\r\n    function createFnInvoker(fns) {\r\n        function invoker() {\r\n            var arguments$1 = arguments\r\n\r\n            var fns = invoker.fns\r\n            if (Array.isArray(fns)) {\r\n                var cloned = fns.slice()\r\n                for (var i = 0; i < cloned.length; i++) {\r\n                    cloned[i].apply(null, arguments$1)\r\n                }\r\n            } else {\r\n                // return handler return value for single handlers\r\n                return fns.apply(null, arguments)\r\n            }\r\n        }\r\n        invoker.fns = fns\r\n        return invoker\r\n    }\r\n\r\n    function updateListeners(on, oldOn, add, remove$$1, vm) {\r\n        var name, cur, old, event\r\n        for (name in on) {\r\n            cur = on[name]\r\n            old = oldOn[name]\r\n            event = normalizeEvent(name)\r\n            if (isUndef(cur)) {\r\n                 false &&\r\n                    false\r\n            } else if (isUndef(old)) {\r\n                if (isUndef(cur.fns)) {\r\n                    cur = on[name] = createFnInvoker(cur)\r\n                }\r\n                add(event.name, cur, event.once, event.capture, event.passive)\r\n            } else if (cur !== old) {\r\n                old.fns = cur\r\n                on[name] = old\r\n            }\r\n        }\r\n        for (name in oldOn) {\r\n            if (isUndef(on[name])) {\r\n                event = normalizeEvent(name)\r\n                remove$$1(event.name, oldOn[name], event.capture)\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    /*  */\r\n\r\n    function extractPropsFromVNodeData(data, Ctor, tag) {\r\n        // we are only extracting raw values here.\r\n        // validation and default values are handled in the child\r\n        // component itself.\r\n        var propOptions = Ctor.options.props\r\n        if (isUndef(propOptions)) {\r\n            return\r\n        }\r\n        var res = {}\r\n        var attrs = data.attrs\r\n        var props = data.props\r\n        if (isDef(attrs) || isDef(props)) {\r\n            for (var key in propOptions) {\r\n                var altKey = hyphenate(key)\r\n                checkProp(res, props, key, altKey, true) ||\r\n                    checkProp(res, attrs, key, altKey, false)\r\n            }\r\n        }\r\n        return res\r\n    }\r\n\r\n    function checkProp(res, hash, key, altKey, preserve) {\r\n        if (isDef(hash)) {\r\n            if (hasOwn(hash, key)) {\r\n                res[key] = hash[key]\r\n                if (!preserve) {\r\n                    delete hash[key]\r\n                }\r\n                return true\r\n            } else if (hasOwn(hash, altKey)) {\r\n                res[key] = hash[altKey]\r\n                if (!preserve) {\r\n                    delete hash[altKey]\r\n                }\r\n                return true\r\n            }\r\n        }\r\n        return false\r\n    }\r\n\r\n    /*  */\r\n\r\n    // The template compiler attempts to minimize the need for normalization by\r\n    // statically analyzing the template at compile time.\r\n    //\r\n    // For plain HTML markup, normalization can be completely skipped because the\r\n    // generated render function is guaranteed to return Array<VNode>. There are\r\n    // two cases where extra normalization is needed:\r\n\r\n    // 1. When the children contains components - because a functional component\r\n    // may return an Array instead of a single root. In this case, just a simple\r\n    // normalization is needed - if any child is an Array, we flatten the whole\r\n    // thing with Array.prototype.concat. It is guaranteed to be only 1-level deep\r\n    // because functional components already normalize their own children.\r\n    function simpleNormalizeChildren(children) {\r\n        for (var i = 0; i < children.length; i++) {\r\n            if (Array.isArray(children[i])) {\r\n                return Array.prototype.concat.apply([], children)\r\n            }\r\n        }\r\n        return children\r\n    }\r\n\r\n    // 2. When the children contains constructs that always generated nested Arrays,\r\n    // e.g. <template>, <slot>, v-for, or when the children is provided by user\r\n    // with hand-written render functions / JSX. In such cases a full normalization\r\n    // is needed to cater to all possible types of children values.\r\n    function normalizeChildren(children) {\r\n        return isPrimitive(children)\r\n            ? [createTextVNode(children)]\r\n            : Array.isArray(children)\r\n                ? normalizeArrayChildren(children)\r\n                : undefined\r\n    }\r\n\r\n    function isTextNode(node) {\r\n        return isDef(node) && isDef(node.text) && isFalse(node.isComment)\r\n    }\r\n\r\n    function normalizeArrayChildren(children, nestedIndex) {\r\n        var res = []\r\n        var i, c, last\r\n        for (i = 0; i < children.length; i++) {\r\n            c = children[i]\r\n            if (isUndef(c) || typeof c === \"boolean\") {\r\n                continue\r\n            }\r\n            last = res[res.length - 1]\r\n            //  nested\r\n            if (Array.isArray(c)) {\r\n                res.push.apply(res, normalizeArrayChildren(c, (nestedIndex || \"\") + \"_\" + i))\r\n            } else if (isPrimitive(c)) {\r\n                if (isTextNode(last)) {\r\n                    // merge adjacent text nodes\r\n                    // this is necessary for SSR hydration because text nodes are\r\n                    // essentially merged when rendered to HTML strings\r\n                    last.text += String(c)\r\n                } else if (c !== \"\") {\r\n                    // convert primitive to vnode\r\n                    res.push(createTextVNode(c))\r\n                }\r\n            } else {\r\n                if (isTextNode(c) && isTextNode(last)) {\r\n                    // merge adjacent text nodes\r\n                    res[res.length - 1] = createTextVNode(last.text + c.text)\r\n                } else {\r\n                    // default key for nested array children (likely generated by v-for)\r\n                    if (\r\n                        isTrue(children._isVList) &&\r\n                        isDef(c.tag) &&\r\n                        isUndef(c.key) &&\r\n                        isDef(nestedIndex)\r\n                    ) {\r\n                        c.key = \"__vlist\" + nestedIndex + \"_\" + i + \"__\"\r\n                    }\r\n                    res.push(c)\r\n                }\r\n            }\r\n        }\r\n        return res\r\n    }\r\n\r\n    /*  */\r\n\r\n    function ensureCtor(comp, base) {\r\n        if (comp.__esModule && comp.default) {\r\n            comp = comp.default\r\n        }\r\n        return isObject(comp) ? base.extend(comp) : comp\r\n    }\r\n\r\n    function createAsyncPlaceholder(factory, data, context, children, tag) {\r\n        var node = createEmptyVNode()\r\n        node.asyncFactory = factory\r\n        node.asyncMeta = {\r\n            data: data,\r\n            context: context,\r\n            children: children,\r\n            tag: tag\r\n        }\r\n        return node\r\n    }\r\n\r\n    function resolveAsyncComponent(factory, baseCtor, context) {\r\n        if (isTrue(factory.error) && isDef(factory.errorComp)) {\r\n            return factory.errorComp\r\n        }\r\n\r\n        if (isDef(factory.resolved)) {\r\n            return factory.resolved\r\n        }\r\n\r\n        if (isTrue(factory.loading) && isDef(factory.loadingComp)) {\r\n            return factory.loadingComp\r\n        }\r\n\r\n        if (isDef(factory.contexts)) {\r\n            // already pending\r\n            factory.contexts.push(context)\r\n        } else {\r\n            var contexts = (factory.contexts = [context])\r\n            var sync = true\r\n\r\n            var forceRender = function() {\r\n                for (var i = 0, l = contexts.length; i < l; i++) {\r\n                    contexts[i].$forceUpdate()\r\n                }\r\n            }\r\n\r\n            var resolve = once(function(res) {\r\n                // cache resolved\r\n                factory.resolved = ensureCtor(res, baseCtor)\r\n                // invoke callbacks only if this is not a synchronous resolve\r\n                // (async resolves are shimmed as synchronous during SSR)\r\n                if (!sync) {\r\n                    forceRender()\r\n                }\r\n            })\r\n\r\n            var reject = once(function(reason) {\r\n                 false &&\r\n                    false\r\n                if (isDef(factory.errorComp)) {\r\n                    factory.error = true\r\n                    forceRender()\r\n                }\r\n            })\r\n\r\n            var res = factory(resolve, reject)\r\n\r\n            if (isObject(res)) {\r\n                if (typeof res.then === \"function\") {\r\n                    // () => Promise\r\n                    if (isUndef(factory.resolved)) {\r\n                        res.then(resolve, reject)\r\n                    }\r\n                } else if (isDef(res.component) && typeof res.component.then === \"function\") {\r\n                    res.component.then(resolve, reject)\r\n\r\n                    if (isDef(res.error)) {\r\n                        factory.errorComp = ensureCtor(res.error, baseCtor)\r\n                    }\r\n\r\n                    if (isDef(res.loading)) {\r\n                        factory.loadingComp = ensureCtor(res.loading, baseCtor)\r\n                        if (res.delay === 0) {\r\n                            factory.loading = true\r\n                        } else {\r\n                            setTimeout(function() {\r\n                                if (isUndef(factory.resolved) && isUndef(factory.error)) {\r\n                                    factory.loading = true\r\n                                    forceRender()\r\n                                }\r\n                            }, res.delay || 200)\r\n                        }\r\n                    }\r\n\r\n                    if (isDef(res.timeout)) {\r\n                        setTimeout(function() {\r\n                            if (isUndef(factory.resolved)) {\r\n                                reject(null)\r\n                            }\r\n                        }, res.timeout)\r\n                    }\r\n                }\r\n            }\r\n\r\n            sync = false\r\n            // return in case resolved synchronously\r\n            return factory.loading ? factory.loadingComp : factory.resolved\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    function getFirstComponentChild(children) {\r\n        if (Array.isArray(children)) {\r\n            for (var i = 0; i < children.length; i++) {\r\n                var c = children[i]\r\n                if (isDef(c) && isDef(c.componentOptions)) {\r\n                    return c\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    /*  */\r\n\r\n    function initEvents(vm) {\r\n        vm._events = Object.create(null)\r\n        vm._hasHookEvent = false\r\n        // init parent attached events\r\n        var listeners = vm.$options._parentListeners\r\n        if (listeners) {\r\n            updateComponentListeners(vm, listeners)\r\n        }\r\n    }\r\n\r\n    var target\r\n\r\n    function add(event, fn, once$$1) {\r\n        if (once$$1) {\r\n            target.$once(event, fn)\r\n        } else {\r\n            target.$on(event, fn)\r\n        }\r\n    }\r\n\r\n    function remove$1(event, fn) {\r\n        target.$off(event, fn)\r\n    }\r\n\r\n    function updateComponentListeners(vm, listeners, oldListeners) {\r\n        target = vm\r\n        updateListeners(listeners, oldListeners || {}, add, remove$1, vm)\r\n    }\r\n\r\n    function eventsMixin(Vue) {\r\n        var hookRE = /^hook:/\r\n        Vue.prototype.$on = function(event, fn) {\r\n            var this$1 = this\r\n\r\n            var vm = this\r\n            if (Array.isArray(event)) {\r\n                for (var i = 0, l = event.length; i < l; i++) {\r\n                    this$1.$on(event[i], fn)\r\n                }\r\n            } else {\r\n                ;(vm._events[event] || (vm._events[event] = [])).push(fn)\r\n                // optimize hook:event cost by using a boolean flag marked at registration\r\n                // instead of a hash lookup\r\n                if (hookRE.test(event)) {\r\n                    vm._hasHookEvent = true\r\n                }\r\n            }\r\n            return vm\r\n        }\r\n\r\n        Vue.prototype.$once = function(event, fn) {\r\n            var vm = this\r\n\r\n            function on() {\r\n                vm.$off(event, on)\r\n                fn.apply(vm, arguments)\r\n            }\r\n            on.fn = fn\r\n            vm.$on(event, on)\r\n            return vm\r\n        }\r\n\r\n        Vue.prototype.$off = function(event, fn) {\r\n            var this$1 = this\r\n\r\n            var vm = this\r\n            // all\r\n            if (!arguments.length) {\r\n                vm._events = Object.create(null)\r\n                return vm\r\n            }\r\n            // array of events\r\n            if (Array.isArray(event)) {\r\n                for (var i$1 = 0, l = event.length; i$1 < l; i$1++) {\r\n                    this$1.$off(event[i$1], fn)\r\n                }\r\n                return vm\r\n            }\r\n            // specific event\r\n            var cbs = vm._events[event]\r\n            if (!cbs) {\r\n                return vm\r\n            }\r\n            if (arguments.length === 1) {\r\n                vm._events[event] = null\r\n                return vm\r\n            }\r\n            // specific handler\r\n            var cb\r\n            var i = cbs.length\r\n            while (i--) {\r\n                cb = cbs[i]\r\n                if (cb === fn || cb.fn === fn) {\r\n                    cbs.splice(i, 1)\r\n                    break\r\n                }\r\n            }\r\n            return vm\r\n        }\r\n\r\n        Vue.prototype.$emit = function(event) {\r\n            var vm = this\r\n            var cbs = vm._events[event]\r\n            if (cbs) {\r\n                cbs = cbs.length > 1 ? toArray(cbs) : cbs\r\n                var args = toArray(arguments, 1)\r\n                for (var i = 0, l = cbs.length; i < l; i++) {\r\n                    try {\r\n                        cbs[i].apply(vm, args)\r\n                    } catch (e) {\r\n                        handleError(e, vm, 'event handler for \"' + event + '\"')\r\n                    }\r\n                }\r\n            }\r\n            return vm\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Runtime helper for resolving raw children VNodes into a slot object.\r\n     */\r\n    function resolveSlots(children, context) {\r\n        var slots = {}\r\n        if (!children) {\r\n            return slots\r\n        }\r\n        var defaultSlot = []\r\n        for (var i = 0, l = children.length; i < l; i++) {\r\n            var child = children[i]\r\n            // named slots should only be respected if the vnode was rendered in the\r\n            // same context.\r\n            if (\r\n                (child.context === context || child.functionalContext === context) &&\r\n                child.data &&\r\n                child.data.slot != null\r\n            ) {\r\n                var name = child.data.slot\r\n                var slot = slots[name] || (slots[name] = [])\r\n                if (child.tag === \"template\") {\r\n                    slot.push.apply(slot, child.children)\r\n                } else {\r\n                    slot.push(child)\r\n                }\r\n            } else {\r\n                defaultSlot.push(child)\r\n            }\r\n        }\r\n        // ignore whitespace\r\n        if (!defaultSlot.every(isWhitespace)) {\r\n            slots.default = defaultSlot\r\n        }\r\n        return slots\r\n    }\r\n\r\n    function isWhitespace(node) {\r\n        return node.isComment || node.text === \" \"\r\n    }\r\n\r\n    function resolveScopedSlots(\r\n        fns, // see flow/vnode\r\n        res\r\n    ) {\r\n        res = res || {}\r\n        for (var i = 0; i < fns.length; i++) {\r\n            if (Array.isArray(fns[i])) {\r\n                resolveScopedSlots(fns[i], res)\r\n            } else {\r\n                res[fns[i].key] = fns[i].fn\r\n            }\r\n        }\r\n        return res\r\n    }\r\n\r\n    /*  */\r\n\r\n    var activeInstance = null\r\n\r\n    function initLifecycle(vm) {\r\n        var options = vm.$options\r\n\r\n        // locate first non-abstract parent\r\n        var parent = options.parent\r\n        if (parent && !options.abstract) {\r\n            while (parent.$options.abstract && parent.$parent) {\r\n                parent = parent.$parent\r\n            }\r\n            parent.$children.push(vm)\r\n        }\r\n\r\n        vm.$parent = parent\r\n        vm.$root = parent ? parent.$root : vm\r\n\r\n        vm.$children = []\r\n        vm.$refs = {}\r\n\r\n        vm._watcher = null\r\n        vm._inactive = null\r\n        vm._directInactive = false\r\n        vm._isMounted = false\r\n        vm._isDestroyed = false\r\n        vm._isBeingDestroyed = false\r\n    }\r\n\r\n    function lifecycleMixin(Vue) {\r\n        Vue.prototype._update = function(vnode, hydrating) {\r\n            var vm = this\r\n            if (vm._isMounted) {\r\n                callHook(vm, \"beforeUpdate\")\r\n            }\r\n            var prevEl = vm.$el\r\n            var prevVnode = vm._vnode\r\n            var prevActiveInstance = activeInstance\r\n            activeInstance = vm\r\n            vm._vnode = vnode\r\n            // Vue.prototype.__patch__ is injected in entry points\r\n            // based on the rendering backend used.\r\n            if (!prevVnode) {\r\n                // initial render\r\n                vm.$el = vm.__patch__(\r\n                    vm.$el,\r\n                    vnode,\r\n                    hydrating,\r\n                    false /* removeOnly */,\r\n                    vm.$options._parentElm,\r\n                    vm.$options._refElm\r\n                )\r\n                // no need for the ref nodes after initial patch\r\n                // this prevents keeping a detached DOM tree in memory (#5851)\r\n                vm.$options._parentElm = vm.$options._refElm = null\r\n            } else {\r\n                // updates\r\n                vm.$el = vm.__patch__(prevVnode, vnode)\r\n            }\r\n            activeInstance = prevActiveInstance\r\n            // update __vue__ reference\r\n            if (prevEl) {\r\n                prevEl.__vue__ = null\r\n            }\r\n            if (vm.$el) {\r\n                vm.$el.__vue__ = vm\r\n            }\r\n            // if parent is an HOC, update its $el as well\r\n            if (vm.$vnode && vm.$parent && vm.$vnode === vm.$parent._vnode) {\r\n                vm.$parent.$el = vm.$el\r\n            }\r\n            // updated hook is called by the scheduler to ensure that children are\r\n            // updated in a parent's updated hook.\r\n        }\r\n\r\n        Vue.prototype.$forceUpdate = function() {\r\n            var vm = this\r\n            if (vm._watcher) {\r\n                vm._watcher.update()\r\n            }\r\n        }\r\n\r\n        Vue.prototype.$destroy = function() {\r\n            var vm = this\r\n            if (vm._isBeingDestroyed) {\r\n                return\r\n            }\r\n            callHook(vm, \"beforeDestroy\")\r\n            vm._isBeingDestroyed = true\r\n            // remove self from parent\r\n            var parent = vm.$parent\r\n            if (parent && !parent._isBeingDestroyed && !vm.$options.abstract) {\r\n                remove(parent.$children, vm)\r\n            }\r\n            // teardown watchers\r\n            if (vm._watcher) {\r\n                vm._watcher.teardown()\r\n            }\r\n            var i = vm._watchers.length\r\n            while (i--) {\r\n                vm._watchers[i].teardown()\r\n            }\r\n            // remove reference from data ob\r\n            // frozen object may not have observer.\r\n            if (vm._data.__ob__) {\r\n                vm._data.__ob__.vmCount--\r\n            }\r\n            // call the last hook...\r\n            vm._isDestroyed = true\r\n            // invoke destroy hooks on current rendered tree\r\n            vm.__patch__(vm._vnode, null)\r\n            // fire destroyed hook\r\n            callHook(vm, \"destroyed\")\r\n            // turn off all instance listeners.\r\n            vm.$off()\r\n            // remove __vue__ reference\r\n            if (vm.$el) {\r\n                vm.$el.__vue__ = null\r\n            }\r\n        }\r\n    }\r\n\r\n    function mountComponent(vm, el, hydrating) {\r\n        vm.$el = el\r\n        if (!vm.$options.render) {\r\n            vm.$options.render = createEmptyVNode\r\n        }\r\n        callHook(vm, \"beforeMount\")\r\n\r\n        var updateComponent\r\n        /* istanbul ignore if */\r\n        if (false) {} else {\r\n            updateComponent = function() {\r\n                vm._update(vm._render(), hydrating)\r\n            }\r\n        }\r\n\r\n        vm._watcher = new Watcher(vm, updateComponent, noop)\r\n        hydrating = false\r\n\r\n        // manually mounted instance, call mounted on self\r\n        // mounted is called for render-created child components in its inserted hook\r\n        if (vm.$vnode == null) {\r\n            vm._isMounted = true\r\n            callHook(vm, \"mounted\")\r\n        }\r\n        return vm\r\n    }\r\n\r\n    function updateChildComponent(vm, propsData, listeners, parentVnode, renderChildren) {\r\n        var hasChildren = !!(\r\n            renderChildren || // has new static slots\r\n            vm.$options._renderChildren || // has old static slots\r\n            parentVnode.data.scopedSlots || // has new scoped slots\r\n            vm.$scopedSlots !== emptyObject\r\n        ) // has old scoped slots\r\n\r\n        vm.$options._parentVnode = parentVnode\r\n        vm.$vnode = parentVnode // update vm's placeholder node without re-render\r\n\r\n        if (vm._vnode) {\r\n            // update child tree's parent\r\n            vm._vnode.parent = parentVnode\r\n        }\r\n        vm.$options._renderChildren = renderChildren\r\n\r\n        // update $attrs and $listensers hash\r\n        // these are also reactive so they may trigger child update if the child\r\n        // used them during render\r\n        vm.$attrs = parentVnode.data && parentVnode.data.attrs\r\n        vm.$listeners = listeners\r\n\r\n        // update props\r\n        if (propsData && vm.$options.props) {\r\n            observerState.shouldConvert = false\r\n            var props = vm._props\r\n            var propKeys = vm.$options._propKeys || []\r\n            for (var i = 0; i < propKeys.length; i++) {\r\n                var key = propKeys[i]\r\n                props[key] = validateProp(key, vm.$options.props, propsData, vm)\r\n            }\r\n            observerState.shouldConvert = true\r\n            // keep a copy of raw propsData\r\n            vm.$options.propsData = propsData\r\n        }\r\n\r\n        // update listeners\r\n        if (listeners) {\r\n            var oldListeners = vm.$options._parentListeners\r\n            vm.$options._parentListeners = listeners\r\n            updateComponentListeners(vm, listeners, oldListeners)\r\n        }\r\n        // resolve slots + force update if has children\r\n        if (hasChildren) {\r\n            vm.$slots = resolveSlots(renderChildren, parentVnode.context)\r\n            vm.$forceUpdate()\r\n        }\r\n    }\r\n\r\n    function isInInactiveTree(vm) {\r\n        while (vm && (vm = vm.$parent)) {\r\n            if (vm._inactive) {\r\n                return true\r\n            }\r\n        }\r\n        return false\r\n    }\r\n\r\n    function activateChildComponent(vm, direct) {\r\n        if (direct) {\r\n            vm._directInactive = false\r\n            if (isInInactiveTree(vm)) {\r\n                return\r\n            }\r\n        } else if (vm._directInactive) {\r\n            return\r\n        }\r\n        if (vm._inactive || vm._inactive === null) {\r\n            vm._inactive = false\r\n            for (var i = 0; i < vm.$children.length; i++) {\r\n                activateChildComponent(vm.$children[i])\r\n            }\r\n            callHook(vm, \"activated\")\r\n        }\r\n    }\r\n\r\n    function deactivateChildComponent(vm, direct) {\r\n        if (direct) {\r\n            vm._directInactive = true\r\n            if (isInInactiveTree(vm)) {\r\n                return\r\n            }\r\n        }\r\n        if (!vm._inactive) {\r\n            vm._inactive = true\r\n            for (var i = 0; i < vm.$children.length; i++) {\r\n                deactivateChildComponent(vm.$children[i])\r\n            }\r\n            callHook(vm, \"deactivated\")\r\n        }\r\n    }\r\n\r\n    function callHook(vm, hook) {\r\n        var handlers = vm.$options[hook]\r\n        if (handlers) {\r\n            for (var i = 0, j = handlers.length; i < j; i++) {\r\n                try {\r\n                    handlers[i].call(vm)\r\n                } catch (e) {\r\n                    handleError(e, vm, hook + \" hook\")\r\n                }\r\n            }\r\n        }\r\n        if (vm._hasHookEvent) {\r\n            vm.$emit(\"hook:\" + hook)\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    var MAX_UPDATE_COUNT = 100\r\n\r\n    var queue = []\r\n    var activatedChildren = []\r\n    var has = {}\r\n    var circular = {}\r\n    var waiting = false\r\n    var flushing = false\r\n    var index = 0\r\n\r\n    /**\r\n     * Reset the scheduler's state.\r\n     */\r\n    function resetSchedulerState() {\r\n        index = queue.length = activatedChildren.length = 0\r\n        has = {}\r\n        waiting = flushing = false\r\n    }\r\n\r\n    /**\r\n     * Flush both queues and run the watchers.\r\n     */\r\n    function flushSchedulerQueue() {\r\n        flushing = true\r\n        var watcher, id\r\n\r\n        // Sort queue before flush.\r\n        // This ensures that:\r\n        // 1. Components are updated from parent to child. (because parent is always\r\n        //    created before the child)\r\n        // 2. A component's user watchers are run before its render watcher (because\r\n        //    user watchers are created before the render watcher)\r\n        // 3. If a component is destroyed during a parent component's watcher run,\r\n        //    its watchers can be skipped.\r\n        queue.sort(function(a, b) {\r\n            return a.id - b.id\r\n        })\r\n\r\n        // do not cache length because more watchers might be pushed\r\n        // as we run existing watchers\r\n        for (index = 0; index < queue.length; index++) {\r\n            watcher = queue[index]\r\n            id = watcher.id\r\n            has[id] = null\r\n            watcher.run()\r\n            // in dev build, check and stop circular updates.\r\n            if (false) {}\r\n        }\r\n\r\n        // keep copies of post queues before resetting state\r\n        var activatedQueue = activatedChildren.slice()\r\n        var updatedQueue = queue.slice()\r\n\r\n        resetSchedulerState()\r\n\r\n        // call component updated and activated hooks\r\n        callActivatedHooks(activatedQueue)\r\n        callUpdatedHooks(updatedQueue)\r\n\r\n        // devtool hook\r\n        /* istanbul ignore if */\r\n        if (devtools && config.devtools) {\r\n            devtools.emit(\"flush\")\r\n        }\r\n    }\r\n\r\n    function callUpdatedHooks(queue) {\r\n        var i = queue.length\r\n        while (i--) {\r\n            var watcher = queue[i]\r\n            var vm = watcher.vm\r\n            if (vm._watcher === watcher && vm._isMounted) {\r\n                callHook(vm, \"updated\")\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Queue a kept-alive component that was activated during patch.\r\n     * The queue will be processed after the entire tree has been patched.\r\n     */\r\n    function queueActivatedComponent(vm) {\r\n        // setting _inactive to false here so that a render function can\r\n        // rely on checking whether it's in an inactive tree (e.g. router-view)\r\n        vm._inactive = false\r\n        activatedChildren.push(vm)\r\n    }\r\n\r\n    function callActivatedHooks(queue) {\r\n        for (var i = 0; i < queue.length; i++) {\r\n            queue[i]._inactive = true\r\n            activateChildComponent(queue[i], true /* true */)\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Push a watcher into the watcher queue.\r\n     * Jobs with duplicate IDs will be skipped unless it's\r\n     * pushed when the queue is being flushed.\r\n     */\r\n    function queueWatcher(watcher) {\r\n        var id = watcher.id\r\n        if (has[id] == null) {\r\n            has[id] = true\r\n            if (!flushing) {\r\n                queue.push(watcher)\r\n            } else {\r\n                // if already flushing, splice the watcher based on its id\r\n                // if already past its id, it will be run next immediately.\r\n                var i = queue.length - 1\r\n                while (i > index && queue[i].id > watcher.id) {\r\n                    i--\r\n                }\r\n                queue.splice(i + 1, 0, watcher)\r\n            }\r\n            // queue the flush\r\n            if (!waiting) {\r\n                waiting = true\r\n                nextTick(flushSchedulerQueue)\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    var uid$2 = 0\r\n\r\n    /**\r\n     * A watcher parses an expression, collects dependencies,\r\n     * and fires callback when the expression value changes.\r\n     * This is used for both the $watch() api and directives.\r\n     */\r\n    var Watcher = function Watcher(vm, expOrFn, cb, options) {\r\n        this.vm = vm\r\n        vm._watchers.push(this)\r\n        // options\r\n        if (options) {\r\n            this.deep = !!options.deep\r\n            this.user = !!options.user\r\n            this.lazy = !!options.lazy\r\n            this.sync = !!options.sync\r\n        } else {\r\n            this.deep = this.user = this.lazy = this.sync = false\r\n        }\r\n        this.cb = cb\r\n        this.id = ++uid$2 // uid for batching\r\n        this.active = true\r\n        this.dirty = this.lazy // for lazy watchers\r\n        this.deps = []\r\n        this.newDeps = []\r\n        this.depIds = new _Set()\r\n        this.newDepIds = new _Set()\r\n        this.expression = \"\"\r\n        // parse expression for getter\r\n        if (typeof expOrFn === \"function\") {\r\n            this.getter = expOrFn\r\n        } else {\r\n            this.getter = parsePath(expOrFn)\r\n            if (!this.getter) {\r\n                this.getter = function() {}\r\n                 false &&\r\n                    false\r\n            }\r\n        }\r\n        this.value = this.lazy ? undefined : this.get()\r\n    }\r\n\r\n    /**\r\n     * Evaluate the getter, and re-collect dependencies.\r\n     */\r\n    Watcher.prototype.get = function get() {\r\n        pushTarget(this)\r\n        var value\r\n        var vm = this.vm\r\n        try {\r\n            value = this.getter.call(vm, vm)\r\n        } catch (e) {\r\n            if (this.user) {\r\n                handleError(e, vm, 'getter for watcher \"' + this.expression + '\"')\r\n            } else {\r\n                throw e\r\n            }\r\n        } finally {\r\n            // \"touch\" every property so they are all tracked as\r\n            // dependencies for deep watching\r\n            if (this.deep) {\r\n                traverse(value)\r\n            }\r\n            popTarget()\r\n            this.cleanupDeps()\r\n        }\r\n        return value\r\n    }\r\n\r\n    /**\r\n     * Add a dependency to this directive.\r\n     */\r\n    Watcher.prototype.addDep = function addDep(dep) {\r\n        var id = dep.id\r\n        if (!this.newDepIds.has(id)) {\r\n            this.newDepIds.add(id)\r\n            this.newDeps.push(dep)\r\n            if (!this.depIds.has(id)) {\r\n                dep.addSub(this)\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Clean up for dependency collection.\r\n     */\r\n    Watcher.prototype.cleanupDeps = function cleanupDeps() {\r\n        var this$1 = this\r\n\r\n        var i = this.deps.length\r\n        while (i--) {\r\n            var dep = this$1.deps[i]\r\n            if (!this$1.newDepIds.has(dep.id)) {\r\n                dep.removeSub(this$1)\r\n            }\r\n        }\r\n        var tmp = this.depIds\r\n        this.depIds = this.newDepIds\r\n        this.newDepIds = tmp\r\n        this.newDepIds.clear()\r\n        tmp = this.deps\r\n        this.deps = this.newDeps\r\n        this.newDeps = tmp\r\n        this.newDeps.length = 0\r\n    }\r\n\r\n    /**\r\n     * Subscriber interface.\r\n     * Will be called when a dependency changes.\r\n     */\r\n    Watcher.prototype.update = function update() {\r\n        /* istanbul ignore else */\r\n        if (this.lazy) {\r\n            this.dirty = true\r\n        } else if (this.sync) {\r\n            this.run()\r\n        } else {\r\n            queueWatcher(this)\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Scheduler job interface.\r\n     * Will be called by the scheduler.\r\n     */\r\n    Watcher.prototype.run = function run() {\r\n        if (this.active) {\r\n            var value = this.get()\r\n            if (\r\n                value !== this.value ||\r\n                // Deep watchers and watchers on Object/Arrays should fire even\r\n                // when the value is the same, because the value may\r\n                // have mutated.\r\n                isObject(value) ||\r\n                this.deep\r\n            ) {\r\n                // set new value\r\n                var oldValue = this.value\r\n                this.value = value\r\n                if (this.user) {\r\n                    try {\r\n                        this.cb.call(this.vm, value, oldValue)\r\n                    } catch (e) {\r\n                        handleError(e, this.vm, 'callback for watcher \"' + this.expression + '\"')\r\n                    }\r\n                } else {\r\n                    this.cb.call(this.vm, value, oldValue)\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Evaluate the value of the watcher.\r\n     * This only gets called for lazy watchers.\r\n     */\r\n    Watcher.prototype.evaluate = function evaluate() {\r\n        this.value = this.get()\r\n        this.dirty = false\r\n    }\r\n\r\n    /**\r\n     * Depend on all deps collected by this watcher.\r\n     */\r\n    Watcher.prototype.depend = function depend() {\r\n        var this$1 = this\r\n\r\n        var i = this.deps.length\r\n        while (i--) {\r\n            this$1.deps[i].depend()\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Remove self from all dependencies' subscriber list.\r\n     */\r\n    Watcher.prototype.teardown = function teardown() {\r\n        var this$1 = this\r\n\r\n        if (this.active) {\r\n            // remove self from vm's watcher list\r\n            // this is a somewhat expensive operation so we skip it\r\n            // if the vm is being destroyed.\r\n            if (!this.vm._isBeingDestroyed) {\r\n                remove(this.vm._watchers, this)\r\n            }\r\n            var i = this.deps.length\r\n            while (i--) {\r\n                this$1.deps[i].removeSub(this$1)\r\n            }\r\n            this.active = false\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Recursively traverse an object to evoke all converted\r\n     * getters, so that every nested property inside the object\r\n     * is collected as a \"deep\" dependency.\r\n     */\r\n    var seenObjects = new _Set()\r\n\r\n    function traverse(val) {\r\n        seenObjects.clear()\r\n        _traverse(val, seenObjects)\r\n    }\r\n\r\n    function _traverse(val, seen) {\r\n        var i, keys\r\n        var isA = Array.isArray(val)\r\n        if ((!isA && !isObject(val)) || !Object.isExtensible(val)) {\r\n            return\r\n        }\r\n        if (val.__ob__) {\r\n            var depId = val.__ob__.dep.id\r\n            if (seen.has(depId)) {\r\n                return\r\n            }\r\n            seen.add(depId)\r\n        }\r\n        if (isA) {\r\n            i = val.length\r\n            while (i--) {\r\n                _traverse(val[i], seen)\r\n            }\r\n        } else {\r\n            keys = Object.keys(val)\r\n            i = keys.length\r\n            while (i--) {\r\n                _traverse(val[keys[i]], seen)\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    var sharedPropertyDefinition = {\r\n        enumerable: true,\r\n        configurable: true,\r\n        get: noop,\r\n        set: noop\r\n    }\r\n\r\n    function proxy(target, sourceKey, key) {\r\n        sharedPropertyDefinition.get = function proxyGetter() {\r\n            return this[sourceKey][key]\r\n        }\r\n        sharedPropertyDefinition.set = function proxySetter(val) {\r\n            this[sourceKey][key] = val\r\n        }\r\n        Object.defineProperty(target, key, sharedPropertyDefinition)\r\n    }\r\n\r\n    function initState(vm) {\r\n        vm._watchers = []\r\n        var opts = vm.$options\r\n        if (opts.props) {\r\n            initProps(vm, opts.props)\r\n        }\r\n        if (opts.methods) {\r\n            initMethods(vm, opts.methods)\r\n        }\r\n        if (opts.data) {\r\n            initData(vm)\r\n        } else {\r\n            observe((vm._data = {}), true /* asRootData */)\r\n        }\r\n        if (opts.computed) {\r\n            initComputed(vm, opts.computed)\r\n        }\r\n        if (opts.watch && opts.watch !== nativeWatch) {\r\n            initWatch(vm, opts.watch)\r\n        }\r\n    }\r\n\r\n    function checkOptionType(vm, name) {\r\n        var option = vm.$options[name]\r\n        if (!isPlainObject(option)) {\r\n            warn('component option \"' + name + '\" should be an object.', vm)\r\n        }\r\n    }\r\n\r\n    function initProps(vm, propsOptions) {\r\n        var propsData = vm.$options.propsData || {}\r\n        var props = (vm._props = {})\r\n        // cache prop keys so that future props updates can iterate using Array\r\n        // instead of dynamic object key enumeration.\r\n        var keys = (vm.$options._propKeys = [])\r\n        var isRoot = !vm.$parent\r\n        // root instance props should be converted\r\n        observerState.shouldConvert = isRoot\r\n        var loop = function(key) {\r\n            keys.push(key)\r\n            var value = validateProp(key, propsOptions, propsData, vm)\r\n            /* istanbul ignore else */\r\n            {\r\n                defineReactive$$1(props, key, value)\r\n            }\r\n            // static props are already proxied on the component's prototype\r\n            // during Vue.extend(). We only need to proxy props defined at\r\n            // instantiation here.\r\n            if (!(key in vm)) {\r\n                proxy(vm, \"_props\", key)\r\n            }\r\n        }\r\n\r\n        for (var key in propsOptions) loop(key)\r\n        observerState.shouldConvert = true\r\n    }\r\n\r\n    function initData(vm) {\r\n        var data = vm.$options.data\r\n        data = vm._data = typeof data === \"function\" ? getData(data, vm) : data || {}\r\n        if (!isPlainObject(data)) {\r\n            data = {}\r\n             false &&\r\n                false\r\n        }\r\n        // proxy data on instance\r\n        var keys = Object.keys(data)\r\n        var props = vm.$options.props\r\n        var methods = vm.$options.methods\r\n        var i = keys.length\r\n        while (i--) {\r\n            var key = keys[i]\r\n            if (props && hasOwn(props, key)) {\r\n                 false &&\r\n                    false\r\n            } else if (!isReserved(key)) {\r\n                proxy(vm, \"_data\", key)\r\n            }\r\n        }\r\n        // observe data\r\n        observe(data, true /* asRootData */)\r\n    }\r\n\r\n    function getData(data, vm) {\r\n        try {\r\n            return data.call(vm)\r\n        } catch (e) {\r\n            handleError(e, vm, \"data()\")\r\n            return {}\r\n        }\r\n    }\r\n\r\n    var computedWatcherOptions = {\r\n        lazy: true\r\n    }\r\n\r\n    function initComputed(vm, computed) {\r\n         false && false\r\n        var watchers = (vm._computedWatchers = Object.create(null))\r\n\r\n        for (var key in computed) {\r\n            var userDef = computed[key]\r\n            var getter = typeof userDef === \"function\" ? userDef : userDef.get\r\n            watchers[key] = new Watcher(vm, getter, noop, computedWatcherOptions)\r\n\r\n            // component-defined computed properties are already defined on the\r\n            // component prototype. We only need to define computed properties defined\r\n            // at instantiation here.\r\n            if (!(key in vm)) {\r\n                defineComputed(vm, key, userDef)\r\n            } else {\r\n            }\r\n        }\r\n    }\r\n\r\n    function defineComputed(target, key, userDef) {\r\n        if (typeof userDef === \"function\") {\r\n            sharedPropertyDefinition.get = createComputedGetter(key)\r\n            sharedPropertyDefinition.set = noop\r\n        } else {\r\n            sharedPropertyDefinition.get = userDef.get\r\n                ? userDef.cache !== false\r\n                    ? createComputedGetter(key)\r\n                    : userDef.get\r\n                : noop\r\n            sharedPropertyDefinition.set = userDef.set ? userDef.set : noop\r\n        }\r\n        Object.defineProperty(target, key, sharedPropertyDefinition)\r\n    }\r\n\r\n    function createComputedGetter(key) {\r\n        return function computedGetter() {\r\n            var watcher = this._computedWatchers && this._computedWatchers[key]\r\n            if (watcher) {\r\n                if (watcher.dirty) {\r\n                    watcher.evaluate()\r\n                }\r\n                if (Dep.target) {\r\n                    watcher.depend()\r\n                }\r\n                return watcher.value\r\n            }\r\n        }\r\n    }\r\n\r\n    function initMethods(vm, methods) {\r\n         false && false\r\n        var props = vm.$options.props\r\n        for (var key in methods) {\r\n            vm[key] = methods[key] == null ? noop : bind(methods[key], vm)\r\n        }\r\n    }\r\n\r\n    function initWatch(vm, watch) {\r\n         false && false\r\n        for (var key in watch) {\r\n            var handler = watch[key]\r\n            if (Array.isArray(handler)) {\r\n                for (var i = 0; i < handler.length; i++) {\r\n                    createWatcher(vm, key, handler[i])\r\n                }\r\n            } else {\r\n                createWatcher(vm, key, handler)\r\n            }\r\n        }\r\n    }\r\n\r\n    function createWatcher(vm, keyOrFn, handler, options) {\r\n        if (isPlainObject(handler)) {\r\n            options = handler\r\n            handler = handler.handler\r\n        }\r\n        if (typeof handler === \"string\") {\r\n            handler = vm[handler]\r\n        }\r\n        return vm.$watch(keyOrFn, handler, options)\r\n    }\r\n\r\n    function stateMixin(Vue) {\r\n        // flow somehow has problems with directly declared definition object\r\n        // when using Object.defineProperty, so we have to procedurally build up\r\n        // the object here.\r\n        var dataDef = {}\r\n        dataDef.get = function() {\r\n            return this._data\r\n        }\r\n        var propsDef = {}\r\n        propsDef.get = function() {\r\n            return this._props\r\n        }\r\n        Object.defineProperty(Vue.prototype, \"$data\", dataDef)\r\n        Object.defineProperty(Vue.prototype, \"$props\", propsDef)\r\n\r\n        Vue.prototype.$set = set\r\n        Vue.prototype.$delete = del\r\n\r\n        Vue.prototype.$watch = function(expOrFn, cb, options) {\r\n            var vm = this\r\n            if (isPlainObject(cb)) {\r\n                return createWatcher(vm, expOrFn, cb, options)\r\n            }\r\n            options = options || {}\r\n            options.user = true\r\n            var watcher = new Watcher(vm, expOrFn, cb, options)\r\n            if (options.immediate) {\r\n                cb.call(vm, watcher.value)\r\n            }\r\n            return function unwatchFn() {\r\n                watcher.teardown()\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    function initProvide(vm) {\r\n        var provide = vm.$options.provide\r\n        if (provide) {\r\n            vm._provided = typeof provide === \"function\" ? provide.call(vm) : provide\r\n        }\r\n    }\r\n\r\n    function initInjections(vm) {\r\n        var result = resolveInject(vm.$options.inject, vm)\r\n        if (result) {\r\n            observerState.shouldConvert = false\r\n            Object.keys(result).forEach(function(key) {\r\n                /* istanbul ignore else */\r\n                {\r\n                    defineReactive$$1(vm, key, result[key])\r\n                }\r\n            })\r\n            observerState.shouldConvert = true\r\n        }\r\n    }\r\n\r\n    function resolveInject(inject, vm) {\r\n        if (inject) {\r\n            // inject is :any because flow is not smart enough to figure out cached\r\n            var result = Object.create(null)\r\n            var keys = hasSymbol ? Reflect.ownKeys(inject) : Object.keys(inject)\r\n\r\n            for (var i = 0; i < keys.length; i++) {\r\n                var key = keys[i]\r\n                var provideKey = inject[key]\r\n                var source = vm\r\n                while (source) {\r\n                    if (source._provided && provideKey in source._provided) {\r\n                        result[key] = source._provided[provideKey]\r\n                        break\r\n                    }\r\n                    source = source.$parent\r\n                }\r\n                if (false) {}\r\n            }\r\n            return result\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    function createFunctionalComponent(Ctor, propsData, data, context, children) {\r\n        var props = {}\r\n        var propOptions = Ctor.options.props\r\n        if (isDef(propOptions)) {\r\n            for (var key in propOptions) {\r\n                props[key] = validateProp(key, propOptions, propsData || {})\r\n            }\r\n        } else {\r\n            if (isDef(data.attrs)) {\r\n                mergeProps(props, data.attrs)\r\n            }\r\n            if (isDef(data.props)) {\r\n                mergeProps(props, data.props)\r\n            }\r\n        }\r\n        // ensure the createElement function in functional components\r\n        // gets a unique context - this is necessary for correct named slot check\r\n        var _context = Object.create(context)\r\n        var h = function(a, b, c, d) {\r\n            return createElement(_context, a, b, c, d, true)\r\n        }\r\n        var vnode = Ctor.options.render.call(null, h, {\r\n            data: data,\r\n            props: props,\r\n            children: children,\r\n            parent: context,\r\n            listeners: data.on || {},\r\n            injections: resolveInject(Ctor.options.inject, context),\r\n            slots: function() {\r\n                return resolveSlots(children, context)\r\n            }\r\n        })\r\n        if (vnode instanceof VNode) {\r\n            vnode.functionalContext = context\r\n            vnode.functionalOptions = Ctor.options\r\n            if (data.slot) {\r\n                ;(vnode.data || (vnode.data = {})).slot = data.slot\r\n            }\r\n        }\r\n        return vnode\r\n    }\r\n\r\n    function mergeProps(to, from) {\r\n        for (var key in from) {\r\n            to[camelize(key)] = from[key]\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    // hooks to be invoked on component VNodes during patch\r\n    var componentVNodeHooks = {\r\n        init: function init(vnode, hydrating, parentElm, refElm) {\r\n            if (!vnode.componentInstance || vnode.componentInstance._isDestroyed) {\r\n                var child = (vnode.componentInstance = createComponentInstanceForVnode(\r\n                    vnode,\r\n                    activeInstance,\r\n                    parentElm,\r\n                    refElm\r\n                ))\r\n                child.$mount(hydrating ? vnode.elm : undefined, hydrating)\r\n            } else if (vnode.data.keepAlive) {\r\n                // kept-alive components, treat as a patch\r\n                var mountedNode = vnode // work around flow\r\n                componentVNodeHooks.prepatch(mountedNode, mountedNode)\r\n            }\r\n        },\r\n\r\n        prepatch: function prepatch(oldVnode, vnode) {\r\n            var options = vnode.componentOptions\r\n            var child = (vnode.componentInstance = oldVnode.componentInstance)\r\n            updateChildComponent(\r\n                child,\r\n                options.propsData, // updated props\r\n                options.listeners, // updated listeners\r\n                vnode, // new parent vnode\r\n                options.children // new children\r\n            )\r\n        },\r\n\r\n        insert: function insert(vnode) {\r\n            var context = vnode.context\r\n            var componentInstance = vnode.componentInstance\r\n\r\n            if (!componentInstance._isMounted) {\r\n                componentInstance._isMounted = true\r\n                callHook(componentInstance, \"mounted\")\r\n            }\r\n            if (vnode.data.keepAlive) {\r\n                if (context._isMounted) {\r\n                    // vue-router#1212\r\n                    // During updates, a kept-alive component's child components may\r\n                    // change, so directly walking the tree here may call activated hooks\r\n                    // on incorrect children. Instead we push them into a queue which will\r\n                    // be processed after the whole patch process ended.\r\n                    queueActivatedComponent(componentInstance)\r\n                } else {\r\n                    activateChildComponent(componentInstance, true /* direct */)\r\n                }\r\n            }\r\n        },\r\n\r\n        destroy: function destroy(vnode) {\r\n            var componentInstance = vnode.componentInstance\r\n            if (!componentInstance._isDestroyed) {\r\n                if (!vnode.data.keepAlive) {\r\n                    componentInstance.$destroy()\r\n                } else {\r\n                    deactivateChildComponent(componentInstance, true /* direct */)\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    var hooksToMerge = Object.keys(componentVNodeHooks)\r\n\r\n    function createComponent(Ctor, data, context, children, tag) {\r\n        if (isUndef(Ctor)) {\r\n            return\r\n        }\r\n\r\n        var baseCtor = context.$options._base\r\n\r\n        // plain options object: turn it into a constructor\r\n        if (isObject(Ctor)) {\r\n            Ctor = baseCtor.extend(Ctor)\r\n        }\r\n\r\n        // if at this stage it's not a constructor or an async component factory,\r\n        // reject.\r\n        if (typeof Ctor !== \"function\") {\r\n            return\r\n        }\r\n\r\n        // async component\r\n        var asyncFactory\r\n        if (isUndef(Ctor.cid)) {\r\n            asyncFactory = Ctor\r\n            Ctor = resolveAsyncComponent(asyncFactory, baseCtor, context)\r\n            if (Ctor === undefined) {\r\n                // return a placeholder node for async component, which is rendered\r\n                // as a comment node but preserves all the raw information for the node.\r\n                // the information will be used for async server-rendering and hydration.\r\n                return createAsyncPlaceholder(asyncFactory, data, context, children, tag)\r\n            }\r\n        }\r\n\r\n        data = data || {}\r\n\r\n        // resolve constructor options in case global mixins are applied after\r\n        // component constructor creation\r\n        resolveConstructorOptions(Ctor)\r\n\r\n        // transform component v-model data into props & events\r\n        if (isDef(data.model)) {\r\n            transformModel(Ctor.options, data)\r\n        }\r\n\r\n        // extract props\r\n        var propsData = extractPropsFromVNodeData(data, Ctor, tag)\r\n\r\n        // functional component\r\n        if (isTrue(Ctor.options.functional)) {\r\n            return createFunctionalComponent(Ctor, propsData, data, context, children)\r\n        }\r\n\r\n        // keep listeners\r\n        var listeners = data.on\r\n\r\n        if (isTrue(Ctor.options.abstract)) {\r\n            // abstract components do not keep anything\r\n            // other than props & listeners & slot\r\n\r\n            // work around flow\r\n            var slot = data.slot\r\n            data = {}\r\n            if (slot) {\r\n                data.slot = slot\r\n            }\r\n        }\r\n\r\n        // merge component management hooks onto the placeholder node\r\n        mergeHooks(data)\r\n\r\n        // return a placeholder vnode\r\n        var name = Ctor.options.name || tag\r\n        var vnode = new VNode(\r\n            \"vue-component-\" + Ctor.cid + (name ? \"-\" + name : \"\"),\r\n            data,\r\n            undefined,\r\n            undefined,\r\n            undefined,\r\n            context,\r\n            {\r\n                Ctor: Ctor,\r\n                propsData: propsData,\r\n                listeners: listeners,\r\n                tag: tag,\r\n                children: children\r\n            },\r\n            asyncFactory\r\n        )\r\n        return vnode\r\n    }\r\n\r\n    function createComponentInstanceForVnode(\r\n        vnode, // we know it's MountedComponentVNode but flow doesn't\r\n        parent, // activeInstance in lifecycle state\r\n        parentElm,\r\n        refElm\r\n    ) {\r\n        var vnodeComponentOptions = vnode.componentOptions\r\n        var options = {\r\n            _isComponent: true,\r\n            parent: parent,\r\n            propsData: vnodeComponentOptions.propsData,\r\n            _componentTag: vnodeComponentOptions.tag,\r\n            _parentVnode: vnode,\r\n            _parentListeners: vnodeComponentOptions.listeners,\r\n            _renderChildren: vnodeComponentOptions.children,\r\n            _parentElm: parentElm || null,\r\n            _refElm: refElm || null\r\n        }\r\n        // check inline-template render functions\r\n        var inlineTemplate = vnode.data.inlineTemplate\r\n        if (isDef(inlineTemplate)) {\r\n            options.render = inlineTemplate.render\r\n            options.staticRenderFns = inlineTemplate.staticRenderFns\r\n        }\r\n        return new vnodeComponentOptions.Ctor(options)\r\n    }\r\n\r\n    function mergeHooks(data) {\r\n        if (!data.hook) {\r\n            data.hook = {}\r\n        }\r\n        for (var i = 0; i < hooksToMerge.length; i++) {\r\n            var key = hooksToMerge[i]\r\n            var fromParent = data.hook[key]\r\n            var ours = componentVNodeHooks[key]\r\n            data.hook[key] = fromParent ? mergeHook$1(ours, fromParent) : ours\r\n        }\r\n    }\r\n\r\n    function mergeHook$1(one, two) {\r\n        return function(a, b, c, d) {\r\n            one(a, b, c, d)\r\n            two(a, b, c, d)\r\n        }\r\n    }\r\n\r\n    // transform component v-model info (value and callback) into\r\n    // prop and event handler respectively.\r\n    function transformModel(options, data) {\r\n        var prop = (options.model && options.model.prop) || \"value\"\r\n        var event = (options.model && options.model.event) || \"input\"\r\n        ;(data.props || (data.props = {}))[prop] = data.model.value\r\n        var on = data.on || (data.on = {})\r\n        if (isDef(on[event])) {\r\n            on[event] = [data.model.callback].concat(on[event])\r\n        } else {\r\n            on[event] = data.model.callback\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    var SIMPLE_NORMALIZE = 1\r\n    var ALWAYS_NORMALIZE = 2\r\n\r\n    // wrapper function for providing a more flexible interface\r\n    // without getting yelled at by flow\r\n    function createElement(context, tag, data, children, normalizationType, alwaysNormalize) {\r\n        if (Array.isArray(data) || isPrimitive(data)) {\r\n            normalizationType = children\r\n            children = data\r\n            data = undefined\r\n        }\r\n        if (isTrue(alwaysNormalize)) {\r\n            normalizationType = ALWAYS_NORMALIZE\r\n        }\r\n        return _createElement(context, tag, data, children, normalizationType)\r\n    }\r\n\r\n    function _createElement(context, tag, data, children, normalizationType) {\r\n        if (isDef(data) && isDef(data.__ob__)) {\r\n             false &&\r\n                false\r\n            return createEmptyVNode()\r\n        }\r\n        // object syntax in v-bind\r\n        if (isDef(data) && isDef(data.is)) {\r\n            tag = data.is\r\n        }\r\n        if (!tag) {\r\n            // in case of component :is set to falsy value\r\n            return createEmptyVNode()\r\n        }\r\n        // warn against non-primitive key\r\n        if (\r\n            false\r\n        ) {}\r\n        // support single function children as default scoped slot\r\n        if (Array.isArray(children) && typeof children[0] === \"function\") {\r\n            data = data || {}\r\n            data.scopedSlots = {\r\n                default: children[0]\r\n            }\r\n            children.length = 0\r\n        }\r\n        if (normalizationType === ALWAYS_NORMALIZE) {\r\n            children = normalizeChildren(children)\r\n        } else if (normalizationType === SIMPLE_NORMALIZE) {\r\n            children = simpleNormalizeChildren(children)\r\n        }\r\n        var vnode, ns\r\n        if (typeof tag === \"string\") {\r\n            var Ctor\r\n            ns = config.getTagNamespace(tag)\r\n            if (config.isReservedTag(tag)) {\r\n                // platform built-in elements\r\n                vnode = new VNode(\r\n                    config.parsePlatformTagName(tag),\r\n                    data,\r\n                    children,\r\n                    undefined,\r\n                    undefined,\r\n                    context\r\n                )\r\n            } else if (isDef((Ctor = resolveAsset(context.$options, \"components\", tag)))) {\r\n                // component\r\n                vnode = createComponent(Ctor, data, context, children, tag)\r\n            } else {\r\n                // unknown or unlisted namespaced elements\r\n                // check at runtime because it may get assigned a namespace when its\r\n                // parent normalizes children\r\n                vnode = new VNode(tag, data, children, undefined, undefined, context)\r\n            }\r\n        } else {\r\n            // direct component options / constructor\r\n            vnode = createComponent(tag, data, context, children)\r\n        }\r\n        if (isDef(vnode)) {\r\n            if (ns) {\r\n                applyNS(vnode, ns)\r\n            }\r\n            return vnode\r\n        } else {\r\n            return createEmptyVNode()\r\n        }\r\n    }\r\n\r\n    function applyNS(vnode, ns) {\r\n        vnode.ns = ns\r\n        if (vnode.tag === \"foreignObject\") {\r\n            // use default namespace inside foreignObject\r\n            return\r\n        }\r\n        if (isDef(vnode.children)) {\r\n            for (var i = 0, l = vnode.children.length; i < l; i++) {\r\n                var child = vnode.children[i]\r\n                if (isDef(child.tag) && isUndef(child.ns)) {\r\n                    applyNS(child, ns)\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Runtime helper for rendering v-for lists.\r\n     */\r\n    function renderList(val, render) {\r\n        var ret, i, l, keys, key\r\n        if (Array.isArray(val) || typeof val === \"string\") {\r\n            ret = new Array(val.length)\r\n            for (i = 0, l = val.length; i < l; i++) {\r\n                ret[i] = render(val[i], i)\r\n            }\r\n        } else if (typeof val === \"number\") {\r\n            ret = new Array(val)\r\n            for (i = 0; i < val; i++) {\r\n                ret[i] = render(i + 1, i)\r\n            }\r\n        } else if (isObject(val)) {\r\n            keys = Object.keys(val)\r\n            ret = new Array(keys.length)\r\n            for (i = 0, l = keys.length; i < l; i++) {\r\n                key = keys[i]\r\n                ret[i] = render(val[key], key, i)\r\n            }\r\n        }\r\n        if (isDef(ret)) {\r\n            ret._isVList = true\r\n        }\r\n        return ret\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Runtime helper for rendering <slot>\r\n     */\r\n    function renderSlot(name, fallback, props, bindObject) {\r\n        var scopedSlotFn = this.$scopedSlots[name]\r\n        if (scopedSlotFn) {\r\n            // scoped slot\r\n            props = props || {}\r\n            if (bindObject) {\r\n                props = extend(extend({}, bindObject), props)\r\n            }\r\n            return scopedSlotFn(props) || fallback\r\n        } else {\r\n            var slotNodes = this.$slots[name]\r\n            // warn duplicate slot usage\r\n            if (slotNodes && \"production\" !== \"production\") {\r\n                slotNodes._rendered &&\r\n                    warn(\r\n                        'Duplicate presence of slot \"' +\r\n                            name +\r\n                            '\" found in the same render tree ' +\r\n                            \"- this will likely cause render errors.\",\r\n                        this\r\n                    )\r\n                slotNodes._rendered = true\r\n            }\r\n            return slotNodes || fallback\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Runtime helper for resolving filters\r\n     */\r\n    function resolveFilter(id) {\r\n        return resolveAsset(this.$options, \"filters\", id, true) || identity\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Runtime helper for checking keyCodes from config.\r\n     */\r\n    function checkKeyCodes(eventKeyCode, key, builtInAlias) {\r\n        var keyCodes = config.keyCodes[key] || builtInAlias\r\n        if (Array.isArray(keyCodes)) {\r\n            return keyCodes.indexOf(eventKeyCode) === -1\r\n        } else {\r\n            return keyCodes !== eventKeyCode\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Runtime helper for merging v-bind=\"object\" into a VNode's data.\r\n     */\r\n    function bindObjectProps(data, tag, value, asProp, isSync) {\r\n        if (value) {\r\n            if (!isObject(value)) {\r\n                 false &&\r\n                    false\r\n            } else {\r\n                if (Array.isArray(value)) {\r\n                    value = toObject(value)\r\n                }\r\n                var hash\r\n                var loop = function(key) {\r\n                    if (key === \"class\" || key === \"style\" || isReservedAttribute(key)) {\r\n                        hash = data\r\n                    } else {\r\n                        var type = data.attrs && data.attrs.type\r\n                        hash =\r\n                            asProp || config.mustUseProp(tag, type, key)\r\n                                ? data.domProps || (data.domProps = {})\r\n                                : data.attrs || (data.attrs = {})\r\n                    }\r\n                    if (!(key in hash)) {\r\n                        hash[key] = value[key]\r\n\r\n                        if (isSync) {\r\n                            var on = data.on || (data.on = {})\r\n                            on[\"update:\" + key] = function($event) {\r\n                                value[key] = $event\r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n\r\n                for (var key in value) loop(key)\r\n            }\r\n        }\r\n        return data\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Runtime helper for rendering static trees.\r\n     */\r\n    function renderStatic(index, isInFor) {\r\n        var tree = this._staticTrees[index]\r\n        // if has already-rendered static tree and not inside v-for,\r\n        // we can reuse the same tree by doing a shallow clone.\r\n        if (tree && !isInFor) {\r\n            return Array.isArray(tree) ? cloneVNodes(tree) : cloneVNode(tree)\r\n        }\r\n        // otherwise, render a fresh tree.\r\n        tree = this._staticTrees[index] = this.$options.staticRenderFns[index].call(\r\n            this._renderProxy\r\n        )\r\n        markStatic(tree, \"__static__\" + index, false)\r\n        return tree\r\n    }\r\n\r\n    /**\r\n     * Runtime helper for v-once.\r\n     * Effectively it means marking the node as static with a unique key.\r\n     */\r\n    function markOnce(tree, index, key) {\r\n        markStatic(tree, \"__once__\" + index + (key ? \"_\" + key : \"\"), true)\r\n        return tree\r\n    }\r\n\r\n    function markStatic(tree, key, isOnce) {\r\n        if (Array.isArray(tree)) {\r\n            for (var i = 0; i < tree.length; i++) {\r\n                if (tree[i] && typeof tree[i] !== \"string\") {\r\n                    markStaticNode(tree[i], key + \"_\" + i, isOnce)\r\n                }\r\n            }\r\n        } else {\r\n            markStaticNode(tree, key, isOnce)\r\n        }\r\n    }\r\n\r\n    function markStaticNode(node, key, isOnce) {\r\n        node.isStatic = true\r\n        node.key = key\r\n        node.isOnce = isOnce\r\n    }\r\n\r\n    /*  */\r\n\r\n    function bindObjectListeners(data, value) {\r\n        if (value) {\r\n            if (!isPlainObject(value)) {\r\n                 false &&\r\n                    false\r\n            } else {\r\n                var on = (data.on = data.on ? extend({}, data.on) : {})\r\n                for (var key in value) {\r\n                    var existing = on[key]\r\n                    var ours = value[key]\r\n                    on[key] = existing ? [].concat(ours, existing) : ours\r\n                }\r\n            }\r\n        }\r\n        return data\r\n    }\r\n\r\n    /*  */\r\n\r\n    function initRender(vm) {\r\n        vm._vnode = null // the root of the child tree\r\n        vm._staticTrees = null\r\n        var parentVnode = (vm.$vnode = vm.$options._parentVnode) // the placeholder node in parent tree\r\n        var renderContext = parentVnode && parentVnode.context\r\n        vm.$slots = resolveSlots(vm.$options._renderChildren, renderContext)\r\n        vm.$scopedSlots = emptyObject\r\n        // bind the createElement fn to this instance\r\n        // so that we get proper render context inside it.\r\n        // args order: tag, data, children, normalizationType, alwaysNormalize\r\n        // internal version is used by render functions compiled from templates\r\n        vm._c = function(a, b, c, d) {\r\n            return createElement(vm, a, b, c, d, false)\r\n        }\r\n        // normalization is always applied for the public version, used in\r\n        // user-written render functions.\r\n        vm.$createElement = function(a, b, c, d) {\r\n            return createElement(vm, a, b, c, d, true)\r\n        }\r\n\r\n        // $attrs & $listeners are exposed for easier HOC creation.\r\n        // they need to be reactive so that HOCs using them are always updated\r\n        var parentData = parentVnode && parentVnode.data\r\n        /* istanbul ignore else */\r\n        {\r\n            defineReactive$$1(vm, \"$attrs\", parentData && parentData.attrs, null, true)\r\n            defineReactive$$1(vm, \"$listeners\", parentData && parentData.on, null, true)\r\n        }\r\n    }\r\n\r\n    function renderMixin(Vue) {\r\n        Vue.prototype.$nextTick = function(fn) {\r\n            return nextTick(fn, this)\r\n        }\r\n\r\n        Vue.prototype._render = function() {\r\n            var vm = this\r\n            var ref = vm.$options\r\n            var render = ref.render\r\n            var staticRenderFns = ref.staticRenderFns\r\n            var _parentVnode = ref._parentVnode\r\n\r\n            if (vm._isMounted) {\r\n                // clone slot nodes on re-renders\r\n                for (var key in vm.$slots) {\r\n                    vm.$slots[key] = cloneVNodes(vm.$slots[key])\r\n                }\r\n            }\r\n\r\n            vm.$scopedSlots = (_parentVnode && _parentVnode.data.scopedSlots) || emptyObject\r\n\r\n            if (staticRenderFns && !vm._staticTrees) {\r\n                vm._staticTrees = []\r\n            }\r\n            // set parent vnode. this allows render functions to have access\r\n            // to the data on the placeholder node.\r\n            vm.$vnode = _parentVnode\r\n            // render self\r\n            var vnode\r\n            try {\r\n                vnode = render.call(vm._renderProxy, vm.$createElement)\r\n            } catch (e) {\r\n                handleError(e, vm, \"render function\")\r\n                // return error render result,\r\n                // or previous vnode to prevent render error causing blank component\r\n                /* istanbul ignore else */\r\n                {\r\n                    vnode = vm._vnode\r\n                }\r\n            }\r\n            // return empty vnode in case the render function errored out\r\n            if (!(vnode instanceof VNode)) {\r\n                if (false) {}\r\n                vnode = createEmptyVNode()\r\n            }\r\n            // set parent\r\n            vnode.parent = _parentVnode\r\n            return vnode\r\n        }\r\n\r\n        // internal render helpers.\r\n        // these are exposed on the instance prototype to reduce generated render\r\n        // code size.\r\n        Vue.prototype._o = markOnce\r\n        Vue.prototype._n = toNumber\r\n        Vue.prototype._s = toString\r\n        Vue.prototype._l = renderList\r\n        Vue.prototype._t = renderSlot\r\n        Vue.prototype._q = looseEqual\r\n        Vue.prototype._i = looseIndexOf\r\n        Vue.prototype._m = renderStatic\r\n        Vue.prototype._f = resolveFilter\r\n        Vue.prototype._k = checkKeyCodes\r\n        Vue.prototype._b = bindObjectProps\r\n        Vue.prototype._v = createTextVNode\r\n        Vue.prototype._e = createEmptyVNode\r\n        Vue.prototype._u = resolveScopedSlots\r\n        Vue.prototype._g = bindObjectListeners\r\n    }\r\n\r\n    /*  */\r\n\r\n    var uid = 0\r\n\r\n    function initMixin(Vue) {\r\n        Vue.prototype._init = function(options) {\r\n            var vm = this\r\n            // a uid\r\n            vm._uid = uid++\r\n\r\n            var startTag, endTag\r\n            /* istanbul ignore if */\r\n            if (false) {}\r\n\r\n            // a flag to avoid this being observed\r\n            vm._isVue = true\r\n            // merge options\r\n            if (options && options._isComponent) {\r\n                // optimize internal component instantiation\r\n                // since dynamic options merging is pretty slow, and none of the\r\n                // internal component options needs special treatment.\r\n                initInternalComponent(vm, options)\r\n            } else {\r\n                vm.$options = mergeOptions(\r\n                    resolveConstructorOptions(vm.constructor),\r\n                    options || {},\r\n                    vm\r\n                )\r\n            }\r\n            /* istanbul ignore else */\r\n            {\r\n                vm._renderProxy = vm\r\n            }\r\n            // expose real self\r\n            vm._self = vm\r\n            initLifecycle(vm)\r\n            initEvents(vm)\r\n            initRender(vm)\r\n            callHook(vm, \"beforeCreate\")\r\n            initInjections(vm) // resolve injections before data/props\r\n            initState(vm)\r\n            initProvide(vm) // resolve provide after data/props\r\n            callHook(vm, \"created\")\r\n\r\n            /* istanbul ignore if */\r\n            if (false) {}\r\n\r\n            if (vm.$options.el) {\r\n                vm.$mount(vm.$options.el)\r\n            }\r\n        }\r\n    }\r\n\r\n    function initInternalComponent(vm, options) {\r\n        var opts = (vm.$options = Object.create(vm.constructor.options))\r\n        // doing this because it's faster than dynamic enumeration.\r\n        opts.parent = options.parent\r\n        opts.propsData = options.propsData\r\n        opts._parentVnode = options._parentVnode\r\n        opts._parentListeners = options._parentListeners\r\n        opts._renderChildren = options._renderChildren\r\n        opts._componentTag = options._componentTag\r\n        opts._parentElm = options._parentElm\r\n        opts._refElm = options._refElm\r\n        if (options.render) {\r\n            opts.render = options.render\r\n            opts.staticRenderFns = options.staticRenderFns\r\n        }\r\n    }\r\n\r\n    function resolveConstructorOptions(Ctor) {\r\n        var options = Ctor.options\r\n        if (Ctor.super) {\r\n            var superOptions = resolveConstructorOptions(Ctor.super)\r\n            var cachedSuperOptions = Ctor.superOptions\r\n            if (superOptions !== cachedSuperOptions) {\r\n                // super option changed,\r\n                // need to resolve new options.\r\n                Ctor.superOptions = superOptions\r\n                // check if there are any late-modified/attached options (#4976)\r\n                var modifiedOptions = resolveModifiedOptions(Ctor)\r\n                // update base extend options\r\n                if (modifiedOptions) {\r\n                    extend(Ctor.extendOptions, modifiedOptions)\r\n                }\r\n                options = Ctor.options = mergeOptions(superOptions, Ctor.extendOptions)\r\n                if (options.name) {\r\n                    options.components[options.name] = Ctor\r\n                }\r\n            }\r\n        }\r\n        return options\r\n    }\r\n\r\n    function resolveModifiedOptions(Ctor) {\r\n        var modified\r\n        var latest = Ctor.options\r\n        var extended = Ctor.extendOptions\r\n        var sealed = Ctor.sealedOptions\r\n        for (var key in latest) {\r\n            if (latest[key] !== sealed[key]) {\r\n                if (!modified) {\r\n                    modified = {}\r\n                }\r\n                modified[key] = dedupe(latest[key], extended[key], sealed[key])\r\n            }\r\n        }\r\n        return modified\r\n    }\r\n\r\n    function dedupe(latest, extended, sealed) {\r\n        // compare latest and sealed to ensure lifecycle hooks won't be duplicated\r\n        // between merges\r\n        if (Array.isArray(latest)) {\r\n            var res = []\r\n            sealed = Array.isArray(sealed) ? sealed : [sealed]\r\n            extended = Array.isArray(extended) ? extended : [extended]\r\n            for (var i = 0; i < latest.length; i++) {\r\n                // push original options and not sealed options to exclude duplicated options\r\n                if (extended.indexOf(latest[i]) >= 0 || sealed.indexOf(latest[i]) < 0) {\r\n                    res.push(latest[i])\r\n                }\r\n            }\r\n            return res\r\n        } else {\r\n            return latest\r\n        }\r\n    }\r\n\r\n    function Vue$3(options) {\r\n        if (false) {}\r\n        this._init(options)\r\n    }\r\n\r\n    initMixin(Vue$3)\r\n    stateMixin(Vue$3)\r\n    eventsMixin(Vue$3)\r\n    lifecycleMixin(Vue$3)\r\n    renderMixin(Vue$3)\r\n\r\n    /*  */\r\n\r\n    function initUse(Vue) {\r\n        Vue.use = function(plugin) {\r\n            var installedPlugins = this._installedPlugins || (this._installedPlugins = [])\r\n            if (installedPlugins.indexOf(plugin) > -1) {\r\n                return this\r\n            }\r\n\r\n            // additional parameters\r\n            var args = toArray(arguments, 1)\r\n            args.unshift(this)\r\n            if (typeof plugin.install === \"function\") {\r\n                plugin.install.apply(plugin, args)\r\n            } else if (typeof plugin === \"function\") {\r\n                plugin.apply(null, args)\r\n            }\r\n            installedPlugins.push(plugin)\r\n            return this\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    function initMixin$1(Vue) {\r\n        Vue.mixin = function(mixin) {\r\n            this.options = mergeOptions(this.options, mixin)\r\n            return this\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    function initExtend(Vue) {\r\n        /**\r\n         * Each instance constructor, including Vue, has a unique\r\n         * cid. This enables us to create wrapped \"child\r\n         * constructors\" for prototypal inheritance and cache them.\r\n         */\r\n        Vue.cid = 0\r\n        var cid = 1\r\n\r\n        /**\r\n         * Class inheritance\r\n         */\r\n        Vue.extend = function(extendOptions) {\r\n            extendOptions = extendOptions || {}\r\n            var Super = this\r\n            var SuperId = Super.cid\r\n            var cachedCtors = extendOptions._Ctor || (extendOptions._Ctor = {})\r\n            if (cachedCtors[SuperId]) {\r\n                return cachedCtors[SuperId]\r\n            }\r\n\r\n            var name = extendOptions.name || Super.options.name\r\n            var Sub = function VueComponent(options) {\r\n                this._init(options)\r\n            }\r\n            Sub.prototype = Object.create(Super.prototype)\r\n            Sub.prototype.constructor = Sub\r\n            Sub.cid = cid++\r\n            Sub.options = mergeOptions(Super.options, extendOptions)\r\n            Sub[\"super\"] = Super\r\n\r\n            // For props and computed properties, we define the proxy getters on\r\n            // the Vue instances at extension time, on the extended prototype. This\r\n            // avoids Object.defineProperty calls for each instance created.\r\n            if (Sub.options.props) {\r\n                initProps$1(Sub)\r\n            }\r\n            if (Sub.options.computed) {\r\n                initComputed$1(Sub)\r\n            }\r\n\r\n            // allow further extension/mixin/plugin usage\r\n            Sub.extend = Super.extend\r\n            Sub.mixin = Super.mixin\r\n            Sub.use = Super.use\r\n\r\n            // create asset registers, so extended classes\r\n            // can have their private assets too.\r\n            ASSET_TYPES.forEach(function(type) {\r\n                Sub[type] = Super[type]\r\n            })\r\n            // enable recursive self-lookup\r\n            if (name) {\r\n                Sub.options.components[name] = Sub\r\n            }\r\n\r\n            // keep a reference to the super options at extension time.\r\n            // later at instantiation we can check if Super's options have\r\n            // been updated.\r\n            Sub.superOptions = Super.options\r\n            Sub.extendOptions = extendOptions\r\n            Sub.sealedOptions = extend({}, Sub.options)\r\n\r\n            // cache constructor\r\n            cachedCtors[SuperId] = Sub\r\n            return Sub\r\n        }\r\n    }\r\n\r\n    function initProps$1(Comp) {\r\n        var props = Comp.options.props\r\n        for (var key in props) {\r\n            proxy(Comp.prototype, \"_props\", key)\r\n        }\r\n    }\r\n\r\n    function initComputed$1(Comp) {\r\n        var computed = Comp.options.computed\r\n        for (var key in computed) {\r\n            defineComputed(Comp.prototype, key, computed[key])\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    function initAssetRegisters(Vue) {\r\n        /**\r\n         * Create asset registration methods.\r\n         */\r\n        ASSET_TYPES.forEach(function(type) {\r\n            Vue[type] = function(id, definition) {\r\n                if (!definition) {\r\n                    return this.options[type + \"s\"][id]\r\n                } else {\r\n                    /* istanbul ignore if */\r\n                    if (type === \"component\" && isPlainObject(definition)) {\r\n                        definition.name = definition.name || id\r\n                        definition = this.options._base.extend(definition)\r\n                    }\r\n                    if (type === \"directive\" && typeof definition === \"function\") {\r\n                        definition = {\r\n                            bind: definition,\r\n                            update: definition\r\n                        }\r\n                    }\r\n                    this.options[type + \"s\"][id] = definition\r\n                    return definition\r\n                }\r\n            }\r\n        })\r\n    }\r\n\r\n    /*  */\r\n\r\n    var patternTypes = [String, RegExp, Array]\r\n\r\n    function getComponentName(opts) {\r\n        return opts && (opts.Ctor.options.name || opts.tag)\r\n    }\r\n\r\n    function matches(pattern, name) {\r\n        if (Array.isArray(pattern)) {\r\n            return pattern.indexOf(name) > -1\r\n        } else if (typeof pattern === \"string\") {\r\n            return pattern.split(\",\").indexOf(name) > -1\r\n        } else if (isRegExp(pattern)) {\r\n            return pattern.test(name)\r\n        }\r\n        /* istanbul ignore next */\r\n        return false\r\n    }\r\n\r\n    function pruneCache(cache, current, filter) {\r\n        for (var key in cache) {\r\n            var cachedNode = cache[key]\r\n            if (cachedNode) {\r\n                var name = getComponentName(cachedNode.componentOptions)\r\n                if (name && !filter(name)) {\r\n                    if (cachedNode !== current) {\r\n                        pruneCacheEntry(cachedNode)\r\n                    }\r\n                    cache[key] = null\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    function pruneCacheEntry(vnode) {\r\n        if (vnode) {\r\n            vnode.componentInstance.$destroy()\r\n        }\r\n    }\r\n\r\n    var KeepAlive = {\r\n        name: \"keep-alive\",\r\n        abstract: true,\r\n\r\n        props: {\r\n            include: patternTypes,\r\n            exclude: patternTypes\r\n        },\r\n\r\n        created: function created() {\r\n            this.cache = Object.create(null)\r\n        },\r\n\r\n        destroyed: function destroyed() {\r\n            var this$1 = this\r\n\r\n            for (var key in this$1.cache) {\r\n                pruneCacheEntry(this$1.cache[key])\r\n            }\r\n        },\r\n\r\n        watch: {\r\n            include: function include(val) {\r\n                pruneCache(this.cache, this._vnode, function(name) {\r\n                    return matches(val, name)\r\n                })\r\n            },\r\n            exclude: function exclude(val) {\r\n                pruneCache(this.cache, this._vnode, function(name) {\r\n                    return !matches(val, name)\r\n                })\r\n            }\r\n        },\r\n\r\n        render: function render() {\r\n            var vnode = getFirstComponentChild(this.$slots.default)\r\n            var componentOptions = vnode && vnode.componentOptions\r\n            if (componentOptions) {\r\n                // check pattern\r\n                var name = getComponentName(componentOptions)\r\n                if (\r\n                    name &&\r\n                    ((this.include && !matches(this.include, name)) ||\r\n                        (this.exclude && matches(this.exclude, name)))\r\n                ) {\r\n                    return vnode\r\n                }\r\n                var key =\r\n                    vnode.key == null\r\n                        ? // same constructor may get registered as different local components\r\n                          // so cid alone is not enough (#3269)\r\n                          componentOptions.Ctor.cid +\r\n                          (componentOptions.tag ? \"::\" + componentOptions.tag : \"\")\r\n                        : vnode.key\r\n                if (this.cache[key]) {\r\n                    vnode.componentInstance = this.cache[key].componentInstance\r\n                } else {\r\n                    this.cache[key] = vnode\r\n                }\r\n                vnode.data.keepAlive = true\r\n            }\r\n            return vnode\r\n        }\r\n    }\r\n\r\n    var builtInComponents = {\r\n        KeepAlive: KeepAlive\r\n    }\r\n\r\n    /*  */\r\n\r\n    function initGlobalAPI(Vue) {\r\n        // config\r\n        var configDef = {}\r\n        configDef.get = function() {\r\n            return config\r\n        }\r\n        Object.defineProperty(Vue, \"config\", configDef)\r\n\r\n        // exposed util methods.\r\n        // NOTE: these are not considered part of the public API - avoid relying on\r\n        // them unless you are aware of the risk.\r\n        Vue.util = {\r\n            warn: warn,\r\n            extend: extend,\r\n            mergeOptions: mergeOptions,\r\n            defineReactive: defineReactive$$1\r\n        }\r\n\r\n        Vue.set = set\r\n        Vue.delete = del\r\n        Vue.nextTick = nextTick\r\n\r\n        Vue.options = Object.create(null)\r\n        ASSET_TYPES.forEach(function(type) {\r\n            Vue.options[type + \"s\"] = Object.create(null)\r\n        })\r\n\r\n        // this is used to identify the \"base\" constructor to extend all plain-object\r\n        // components with in Weex's multi-instance scenarios.\r\n        Vue.options._base = Vue\r\n\r\n        extend(Vue.options.components, builtInComponents)\r\n\r\n        initUse(Vue)\r\n        initMixin$1(Vue)\r\n        initExtend(Vue)\r\n        initAssetRegisters(Vue)\r\n    }\r\n\r\n    initGlobalAPI(Vue$3)\r\n\r\n    Object.defineProperty(Vue$3.prototype, \"$isServer\", {\r\n        get: isServerRendering\r\n    })\r\n\r\n    Object.defineProperty(Vue$3.prototype, \"$ssrContext\", {\r\n        get: function get() {\r\n            /* istanbul ignore next */\r\n            return this.$vnode && this.$vnode.ssrContext\r\n        }\r\n    })\r\n\r\n    Vue$3.version = \"2.4.1\"\r\n    Vue$3.mpvueVersion = \"1.0.12\"\r\n\r\n    /* globals renderer */\r\n\r\n    var isReservedTag = makeMap(\r\n        \"template,script,style,element,content,slot,link,meta,svg,view,\" +\r\n            \"a,div,img,image,text,span,richtext,input,switch,textarea,spinner,select,\" +\r\n            \"slider,slider-neighbor,indicator,trisition,trisition-group,canvas,\" +\r\n            \"list,cell,header,loading,loading-indicator,refresh,scrollable,scroller,\" +\r\n            \"video,web,embed,tabbar,tabheader,datepicker,timepicker,marquee,countdown\",\r\n        true\r\n    )\r\n\r\n    // these are reserved for web because they are directly compiled away\r\n    // during template compilation\r\n    var isReservedAttr = makeMap(\"style,class\")\r\n\r\n    // Elements that you can, intentionally, leave open (and which close themselves)\r\n    // more flexable than web\r\n    var canBeLeftOpenTag = makeMap(\r\n        \"web,spinner,switch,video,textarea,canvas,\" + \"indicator,marquee,countdown\",\r\n        true\r\n    )\r\n\r\n    var isUnaryTag = makeMap(\"embed,img,image,input,link,meta\", true)\r\n\r\n    function mustUseProp() {\r\n        /* console.log('mustUseProp') */\r\n    }\r\n\r\n    function getTagNamespace() {\r\n        /* console.log('getTagNamespace') */\r\n    }\r\n\r\n    function isUnknownElement() {\r\n        /* console.log('isUnknownElement') */\r\n    }\r\n\r\n    function getComKey(vm) {\r\n        return vm && vm.$attrs ? vm.$attrs[\"mpcomid\"] : \"0\"\r\n    }\r\n\r\n    // 用于小程序的 event type 到 web 的 event\r\n    var eventTypeMap = {\r\n        tap: [\"tap\", \"click\"],\r\n        touchstart: [\"touchstart\"],\r\n        touchmove: [\"touchmove\"],\r\n        touchcancel: [\"touchcancel\"],\r\n        touchend: [\"touchend\"],\r\n        longtap: [\"longtap\"],\r\n        input: [\"input\"],\r\n        blur: [\"change\", \"blur\"],\r\n        submit: [\"submit\"],\r\n        focus: [\"focus\"],\r\n        scrolltoupper: [\"scrolltoupper\"],\r\n        scrolltolower: [\"scrolltolower\"],\r\n        scroll: [\"scroll\"]\r\n    }\r\n\r\n    /*  */\r\n\r\n    // import { namespaceMap } from 'mp/util/index'\r\n\r\n    var obj = {}\r\n\r\n    function createElement$1(tagName, vnode) {\r\n        return obj\r\n    }\r\n\r\n    function createElementNS(namespace, tagName) {\r\n        return obj\r\n    }\r\n\r\n    function createTextNode(text) {\r\n        return obj\r\n    }\r\n\r\n    function createComment(text) {\r\n        return obj\r\n    }\r\n\r\n    function insertBefore(parentNode, newNode, referenceNode) {}\r\n\r\n    function removeChild(node, child) {}\r\n\r\n    function appendChild(node, child) {}\r\n\r\n    function parentNode(node) {\r\n        return obj\r\n    }\r\n\r\n    function nextSibling(node) {\r\n        return obj\r\n    }\r\n\r\n    function tagName(node) {\r\n        return \"div\"\r\n    }\r\n\r\n    function setTextContent(node, text) {\r\n        return obj\r\n    }\r\n\r\n    function setAttribute(node, key, val) {\r\n        return obj\r\n    }\r\n\r\n    var nodeOps = Object.freeze({\r\n        createElement: createElement$1,\r\n        createElementNS: createElementNS,\r\n        createTextNode: createTextNode,\r\n        createComment: createComment,\r\n        insertBefore: insertBefore,\r\n        removeChild: removeChild,\r\n        appendChild: appendChild,\r\n        parentNode: parentNode,\r\n        nextSibling: nextSibling,\r\n        tagName: tagName,\r\n        setTextContent: setTextContent,\r\n        setAttribute: setAttribute\r\n    })\r\n\r\n    /*  */\r\n\r\n    var ref = {\r\n        create: function create(_, vnode) {\r\n            registerRef(vnode)\r\n        },\r\n        update: function update(oldVnode, vnode) {\r\n            if (oldVnode.data.ref !== vnode.data.ref) {\r\n                registerRef(oldVnode, true)\r\n                registerRef(vnode)\r\n            }\r\n        },\r\n        destroy: function destroy(vnode) {\r\n            registerRef(vnode, true)\r\n        }\r\n    }\r\n\r\n    function registerRef(vnode, isRemoval) {\r\n        var key = vnode.data.ref\r\n        if (!key) {\r\n            return\r\n        }\r\n\r\n        var vm = vnode.context\r\n        var ref = vnode.componentInstance || vnode.elm\r\n        var refs = vm.$refs\r\n        if (isRemoval) {\r\n            if (Array.isArray(refs[key])) {\r\n                remove(refs[key], ref)\r\n            } else if (refs[key] === ref) {\r\n                refs[key] = undefined\r\n            }\r\n        } else {\r\n            if (vnode.data.refInFor) {\r\n                if (!Array.isArray(refs[key])) {\r\n                    refs[key] = [ref]\r\n                } else if (refs[key].indexOf(ref) < 0) {\r\n                    // $flow-disable-line\r\n                    refs[key].push(ref)\r\n                }\r\n            } else {\r\n                refs[key] = ref\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Virtual DOM patching algorithm based on Snabbdom by\r\n     * Simon Friis Vindum (@paldepind)\r\n     * Licensed under the MIT License\r\n     * https://github.com/paldepind/snabbdom/blob/master/LICENSE\r\n     *\r\n     * modified by Evan You (@yyx990803)\r\n     *\r\n\r\n    /*\r\n     * Not type-checking this because this file is perf-critical and the cost\r\n     * of making flow understand it is not worth it.\r\n     */\r\n\r\n    var emptyNode = new VNode(\"\", {}, [])\r\n\r\n    var hooks = [\"create\", \"activate\", \"update\", \"remove\", \"destroy\"]\r\n\r\n    function sameVnode(a, b) {\r\n        return (\r\n            a.key === b.key &&\r\n            ((a.tag === b.tag &&\r\n                a.isComment === b.isComment &&\r\n                isDef(a.data) === isDef(b.data) &&\r\n                sameInputType(a, b)) ||\r\n                (isTrue(a.isAsyncPlaceholder) &&\r\n                    a.asyncFactory === b.asyncFactory &&\r\n                    isUndef(b.asyncFactory.error)))\r\n        )\r\n    }\r\n\r\n    // Some browsers do not support dynamically changing type for <input>\r\n    // so they need to be treated as different nodes\r\n    function sameInputType(a, b) {\r\n        if (a.tag !== \"input\") {\r\n            return true\r\n        }\r\n        var i\r\n        var typeA = isDef((i = a.data)) && isDef((i = i.attrs)) && i.type\r\n        var typeB = isDef((i = b.data)) && isDef((i = i.attrs)) && i.type\r\n        return typeA === typeB\r\n    }\r\n\r\n    function createKeyToOldIdx(children, beginIdx, endIdx) {\r\n        var i, key\r\n        var map = {}\r\n        for (i = beginIdx; i <= endIdx; ++i) {\r\n            key = children[i].key\r\n            if (isDef(key)) {\r\n                map[key] = i\r\n            }\r\n        }\r\n        return map\r\n    }\r\n\r\n    function createPatchFunction(backend) {\r\n        var i, j\r\n        var cbs = {}\r\n\r\n        var modules = backend.modules\r\n        var nodeOps = backend.nodeOps\r\n\r\n        for (i = 0; i < hooks.length; ++i) {\r\n            cbs[hooks[i]] = []\r\n            for (j = 0; j < modules.length; ++j) {\r\n                if (isDef(modules[j][hooks[i]])) {\r\n                    cbs[hooks[i]].push(modules[j][hooks[i]])\r\n                }\r\n            }\r\n        }\r\n\r\n        function emptyNodeAt(elm) {\r\n            return new VNode(nodeOps.tagName(elm).toLowerCase(), {}, [], undefined, elm)\r\n        }\r\n\r\n        function createRmCb(childElm, listeners) {\r\n            function remove$$1() {\r\n                if (--remove$$1.listeners === 0) {\r\n                    removeNode(childElm)\r\n                }\r\n            }\r\n            remove$$1.listeners = listeners\r\n            return remove$$1\r\n        }\r\n\r\n        function removeNode(el) {\r\n            var parent = nodeOps.parentNode(el)\r\n            // element may have already been removed due to v-html / v-text\r\n            if (isDef(parent)) {\r\n                nodeOps.removeChild(parent, el)\r\n            }\r\n        }\r\n\r\n        var inPre = 0\r\n\r\n        function createElm(vnode, insertedVnodeQueue, parentElm, refElm, nested) {\r\n            vnode.isRootInsert = !nested // for transition enter check\r\n            if (createComponent(vnode, insertedVnodeQueue, parentElm, refElm)) {\r\n                return\r\n            }\r\n\r\n            var data = vnode.data\r\n            var children = vnode.children\r\n            var tag = vnode.tag\r\n            if (isDef(tag)) {\r\n                vnode.elm = vnode.ns\r\n                    ? nodeOps.createElementNS(vnode.ns, tag)\r\n                    : nodeOps.createElement(tag, vnode)\r\n                setScope(vnode)\r\n\r\n                /* istanbul ignore if */\r\n                {\r\n                    createChildren(vnode, children, insertedVnodeQueue)\r\n                    if (isDef(data)) {\r\n                        invokeCreateHooks(vnode, insertedVnodeQueue)\r\n                    }\r\n                    insert(parentElm, vnode.elm, refElm)\r\n                }\r\n\r\n                if (false) {}\r\n            } else if (isTrue(vnode.isComment)) {\r\n                vnode.elm = nodeOps.createComment(vnode.text)\r\n                insert(parentElm, vnode.elm, refElm)\r\n            } else {\r\n                vnode.elm = nodeOps.createTextNode(vnode.text)\r\n                insert(parentElm, vnode.elm, refElm)\r\n            }\r\n        }\r\n\r\n        function createComponent(vnode, insertedVnodeQueue, parentElm, refElm) {\r\n            var i = vnode.data\r\n            if (isDef(i)) {\r\n                var isReactivated = isDef(vnode.componentInstance) && i.keepAlive\r\n                if (isDef((i = i.hook)) && isDef((i = i.init))) {\r\n                    i(vnode, false /* hydrating */, parentElm, refElm)\r\n                }\r\n                // after calling the init hook, if the vnode is a child component\r\n                // it should've created a child instance and mounted it. the child\r\n                // component also has set the placeholder vnode's elm.\r\n                // in that case we can just return the element and be done.\r\n                if (isDef(vnode.componentInstance)) {\r\n                    initComponent(vnode, insertedVnodeQueue)\r\n                    if (isTrue(isReactivated)) {\r\n                        reactivateComponent(vnode, insertedVnodeQueue, parentElm, refElm)\r\n                    }\r\n                    return true\r\n                }\r\n            }\r\n        }\r\n\r\n        function initComponent(vnode, insertedVnodeQueue) {\r\n            if (isDef(vnode.data.pendingInsert)) {\r\n                insertedVnodeQueue.push.apply(insertedVnodeQueue, vnode.data.pendingInsert)\r\n                vnode.data.pendingInsert = null\r\n            }\r\n            vnode.elm = vnode.componentInstance.$el\r\n            if (isPatchable(vnode)) {\r\n                invokeCreateHooks(vnode, insertedVnodeQueue)\r\n                setScope(vnode)\r\n            } else {\r\n                // empty component root.\r\n                // skip all element-related modules except for ref (#3455)\r\n                registerRef(vnode)\r\n                // make sure to invoke the insert hook\r\n                insertedVnodeQueue.push(vnode)\r\n            }\r\n        }\r\n\r\n        function reactivateComponent(vnode, insertedVnodeQueue, parentElm, refElm) {\r\n            var i\r\n            // hack for #4339: a reactivated component with inner transition\r\n            // does not trigger because the inner node's created hooks are not called\r\n            // again. It's not ideal to involve module-specific logic in here but\r\n            // there doesn't seem to be a better way to do it.\r\n            var innerNode = vnode\r\n            while (innerNode.componentInstance) {\r\n                innerNode = innerNode.componentInstance._vnode\r\n                if (isDef((i = innerNode.data)) && isDef((i = i.transition))) {\r\n                    for (i = 0; i < cbs.activate.length; ++i) {\r\n                        cbs.activate[i](emptyNode, innerNode)\r\n                    }\r\n                    insertedVnodeQueue.push(innerNode)\r\n                    break\r\n                }\r\n            }\r\n            // unlike a newly created component,\r\n            // a reactivated keep-alive component doesn't insert itself\r\n            insert(parentElm, vnode.elm, refElm)\r\n        }\r\n\r\n        function insert(parent, elm, ref$$1) {\r\n            if (isDef(parent)) {\r\n                if (isDef(ref$$1)) {\r\n                    if (ref$$1.parentNode === parent) {\r\n                        nodeOps.insertBefore(parent, elm, ref$$1)\r\n                    }\r\n                } else {\r\n                    nodeOps.appendChild(parent, elm)\r\n                }\r\n            }\r\n        }\r\n\r\n        function createChildren(vnode, children, insertedVnodeQueue) {\r\n            if (Array.isArray(children)) {\r\n                for (var i = 0; i < children.length; ++i) {\r\n                    createElm(children[i], insertedVnodeQueue, vnode.elm, null, true)\r\n                }\r\n            } else if (isPrimitive(vnode.text)) {\r\n                nodeOps.appendChild(vnode.elm, nodeOps.createTextNode(vnode.text))\r\n            }\r\n        }\r\n\r\n        function isPatchable(vnode) {\r\n            while (vnode.componentInstance) {\r\n                vnode = vnode.componentInstance._vnode\r\n            }\r\n            return isDef(vnode.tag)\r\n        }\r\n\r\n        function invokeCreateHooks(vnode, insertedVnodeQueue) {\r\n            for (var i$1 = 0; i$1 < cbs.create.length; ++i$1) {\r\n                cbs.create[i$1](emptyNode, vnode)\r\n            }\r\n            i = vnode.data.hook // Reuse variable\r\n            if (isDef(i)) {\r\n                if (isDef(i.create)) {\r\n                    i.create(emptyNode, vnode)\r\n                }\r\n                if (isDef(i.insert)) {\r\n                    insertedVnodeQueue.push(vnode)\r\n                }\r\n            }\r\n        }\r\n\r\n        // set scope id attribute for scoped CSS.\r\n        // this is implemented as a special case to avoid the overhead\r\n        // of going through the normal attribute patching process.\r\n        function setScope(vnode) {\r\n            var i\r\n            var ancestor = vnode\r\n            while (ancestor) {\r\n                if (isDef((i = ancestor.context)) && isDef((i = i.$options._scopeId))) {\r\n                    nodeOps.setAttribute(vnode.elm, i, \"\")\r\n                }\r\n                ancestor = ancestor.parent\r\n            }\r\n            // for slot content they should also get the scopeId from the host instance.\r\n            if (\r\n                isDef((i = activeInstance)) &&\r\n                i !== vnode.context &&\r\n                isDef((i = i.$options._scopeId))\r\n            ) {\r\n                nodeOps.setAttribute(vnode.elm, i, \"\")\r\n            }\r\n        }\r\n\r\n        function addVnodes(parentElm, refElm, vnodes, startIdx, endIdx, insertedVnodeQueue) {\r\n            for (; startIdx <= endIdx; ++startIdx) {\r\n                createElm(vnodes[startIdx], insertedVnodeQueue, parentElm, refElm)\r\n            }\r\n        }\r\n\r\n        function invokeDestroyHook(vnode) {\r\n            var i, j\r\n            var data = vnode.data\r\n            if (isDef(data)) {\r\n                if (isDef((i = data.hook)) && isDef((i = i.destroy))) {\r\n                    i(vnode)\r\n                }\r\n                for (i = 0; i < cbs.destroy.length; ++i) {\r\n                    cbs.destroy[i](vnode)\r\n                }\r\n            }\r\n            if (isDef((i = vnode.children))) {\r\n                for (j = 0; j < vnode.children.length; ++j) {\r\n                    invokeDestroyHook(vnode.children[j])\r\n                }\r\n            }\r\n        }\r\n\r\n        function removeVnodes(parentElm, vnodes, startIdx, endIdx) {\r\n            for (; startIdx <= endIdx; ++startIdx) {\r\n                var ch = vnodes[startIdx]\r\n                if (isDef(ch)) {\r\n                    if (isDef(ch.tag)) {\r\n                        removeAndInvokeRemoveHook(ch)\r\n                        invokeDestroyHook(ch)\r\n                    } else {\r\n                        // Text node\r\n                        removeNode(ch.elm)\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        function removeAndInvokeRemoveHook(vnode, rm) {\r\n            if (isDef(rm) || isDef(vnode.data)) {\r\n                var i\r\n                var listeners = cbs.remove.length + 1\r\n                if (isDef(rm)) {\r\n                    // we have a recursively passed down rm callback\r\n                    // increase the listeners count\r\n                    rm.listeners += listeners\r\n                } else {\r\n                    // directly removing\r\n                    rm = createRmCb(vnode.elm, listeners)\r\n                }\r\n                // recursively invoke hooks on child component root node\r\n                if (\r\n                    isDef((i = vnode.componentInstance)) &&\r\n                    isDef((i = i._vnode)) &&\r\n                    isDef(i.data)\r\n                ) {\r\n                    removeAndInvokeRemoveHook(i, rm)\r\n                }\r\n                for (i = 0; i < cbs.remove.length; ++i) {\r\n                    cbs.remove[i](vnode, rm)\r\n                }\r\n                if (isDef((i = vnode.data.hook)) && isDef((i = i.remove))) {\r\n                    i(vnode, rm)\r\n                } else {\r\n                    rm()\r\n                }\r\n            } else {\r\n                removeNode(vnode.elm)\r\n            }\r\n        }\r\n\r\n        function updateChildren(parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly) {\r\n            var oldStartIdx = 0\r\n            var newStartIdx = 0\r\n            var oldEndIdx = oldCh.length - 1\r\n            var oldStartVnode = oldCh[0]\r\n            var oldEndVnode = oldCh[oldEndIdx]\r\n            var newEndIdx = newCh.length - 1\r\n            var newStartVnode = newCh[0]\r\n            var newEndVnode = newCh[newEndIdx]\r\n            var oldKeyToIdx, idxInOld, elmToMove, refElm\r\n\r\n            // removeOnly is a special flag used only by <transition-group>\r\n            // to ensure removed elements stay in correct relative positions\r\n            // during leaving transitions\r\n            var canMove = !removeOnly\r\n\r\n            while (oldStartIdx <= oldEndIdx && newStartIdx <= newEndIdx) {\r\n                if (isUndef(oldStartVnode)) {\r\n                    oldStartVnode = oldCh[++oldStartIdx] // Vnode has been moved left\r\n                } else if (isUndef(oldEndVnode)) {\r\n                    oldEndVnode = oldCh[--oldEndIdx]\r\n                } else if (sameVnode(oldStartVnode, newStartVnode)) {\r\n                    patchVnode(oldStartVnode, newStartVnode, insertedVnodeQueue)\r\n                    oldStartVnode = oldCh[++oldStartIdx]\r\n                    newStartVnode = newCh[++newStartIdx]\r\n                } else if (sameVnode(oldEndVnode, newEndVnode)) {\r\n                    patchVnode(oldEndVnode, newEndVnode, insertedVnodeQueue)\r\n                    oldEndVnode = oldCh[--oldEndIdx]\r\n                    newEndVnode = newCh[--newEndIdx]\r\n                } else if (sameVnode(oldStartVnode, newEndVnode)) {\r\n                    // Vnode moved right\r\n                    patchVnode(oldStartVnode, newEndVnode, insertedVnodeQueue)\r\n                    canMove &&\r\n                        nodeOps.insertBefore(\r\n                            parentElm,\r\n                            oldStartVnode.elm,\r\n                            nodeOps.nextSibling(oldEndVnode.elm)\r\n                        )\r\n                    oldStartVnode = oldCh[++oldStartIdx]\r\n                    newEndVnode = newCh[--newEndIdx]\r\n                } else if (sameVnode(oldEndVnode, newStartVnode)) {\r\n                    // Vnode moved left\r\n                    patchVnode(oldEndVnode, newStartVnode, insertedVnodeQueue)\r\n                    canMove && nodeOps.insertBefore(parentElm, oldEndVnode.elm, oldStartVnode.elm)\r\n                    oldEndVnode = oldCh[--oldEndIdx]\r\n                    newStartVnode = newCh[++newStartIdx]\r\n                } else {\r\n                    if (isUndef(oldKeyToIdx)) {\r\n                        oldKeyToIdx = createKeyToOldIdx(oldCh, oldStartIdx, oldEndIdx)\r\n                    }\r\n                    idxInOld = isDef(newStartVnode.key) ? oldKeyToIdx[newStartVnode.key] : null\r\n                    if (isUndef(idxInOld)) {\r\n                        // New element\r\n                        createElm(newStartVnode, insertedVnodeQueue, parentElm, oldStartVnode.elm)\r\n                        newStartVnode = newCh[++newStartIdx]\r\n                    } else {\r\n                        elmToMove = oldCh[idxInOld]\r\n                        /* istanbul ignore if */\r\n                        if (false) {}\r\n                        if (sameVnode(elmToMove, newStartVnode)) {\r\n                            patchVnode(elmToMove, newStartVnode, insertedVnodeQueue)\r\n                            oldCh[idxInOld] = undefined\r\n                            canMove &&\r\n                                nodeOps.insertBefore(parentElm, elmToMove.elm, oldStartVnode.elm)\r\n                            newStartVnode = newCh[++newStartIdx]\r\n                        } else {\r\n                            // same key but different element. treat as new element\r\n                            createElm(\r\n                                newStartVnode,\r\n                                insertedVnodeQueue,\r\n                                parentElm,\r\n                                oldStartVnode.elm\r\n                            )\r\n                            newStartVnode = newCh[++newStartIdx]\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n            if (oldStartIdx > oldEndIdx) {\r\n                refElm = isUndef(newCh[newEndIdx + 1]) ? null : newCh[newEndIdx + 1].elm\r\n                addVnodes(parentElm, refElm, newCh, newStartIdx, newEndIdx, insertedVnodeQueue)\r\n            } else if (newStartIdx > newEndIdx) {\r\n                removeVnodes(parentElm, oldCh, oldStartIdx, oldEndIdx)\r\n            }\r\n        }\r\n\r\n        function patchVnode(oldVnode, vnode, insertedVnodeQueue, removeOnly) {\r\n            if (oldVnode === vnode) {\r\n                return\r\n            }\r\n\r\n            var elm = (vnode.elm = oldVnode.elm)\r\n\r\n            if (isTrue(oldVnode.isAsyncPlaceholder)) {\r\n                if (isDef(vnode.asyncFactory.resolved)) {\r\n                    hydrate(oldVnode.elm, vnode, insertedVnodeQueue)\r\n                } else {\r\n                    vnode.isAsyncPlaceholder = true\r\n                }\r\n                return\r\n            }\r\n\r\n            // reuse element for static trees.\r\n            // note we only do this if the vnode is cloned -\r\n            // if the new node is not cloned it means the render functions have been\r\n            // reset by the hot-reload-api and we need to do a proper re-render.\r\n            if (\r\n                isTrue(vnode.isStatic) &&\r\n                isTrue(oldVnode.isStatic) &&\r\n                vnode.key === oldVnode.key &&\r\n                (isTrue(vnode.isCloned) || isTrue(vnode.isOnce))\r\n            ) {\r\n                vnode.componentInstance = oldVnode.componentInstance\r\n                return\r\n            }\r\n\r\n            var i\r\n            var data = vnode.data\r\n            if (isDef(data) && isDef((i = data.hook)) && isDef((i = i.prepatch))) {\r\n                i(oldVnode, vnode)\r\n            }\r\n\r\n            var oldCh = oldVnode.children\r\n            var ch = vnode.children\r\n            if (isDef(data) && isPatchable(vnode)) {\r\n                for (i = 0; i < cbs.update.length; ++i) {\r\n                    cbs.update[i](oldVnode, vnode)\r\n                }\r\n                if (isDef((i = data.hook)) && isDef((i = i.update))) {\r\n                    i(oldVnode, vnode)\r\n                }\r\n            }\r\n            if (isUndef(vnode.text)) {\r\n                if (isDef(oldCh) && isDef(ch)) {\r\n                    if (oldCh !== ch) {\r\n                        updateChildren(elm, oldCh, ch, insertedVnodeQueue, removeOnly)\r\n                    }\r\n                } else if (isDef(ch)) {\r\n                    if (isDef(oldVnode.text)) {\r\n                        nodeOps.setTextContent(elm, \"\")\r\n                    }\r\n                    addVnodes(elm, null, ch, 0, ch.length - 1, insertedVnodeQueue)\r\n                } else if (isDef(oldCh)) {\r\n                    removeVnodes(elm, oldCh, 0, oldCh.length - 1)\r\n                } else if (isDef(oldVnode.text)) {\r\n                    nodeOps.setTextContent(elm, \"\")\r\n                }\r\n            } else if (oldVnode.text !== vnode.text) {\r\n                nodeOps.setTextContent(elm, vnode.text)\r\n            }\r\n            if (isDef(data)) {\r\n                if (isDef((i = data.hook)) && isDef((i = i.postpatch))) {\r\n                    i(oldVnode, vnode)\r\n                }\r\n            }\r\n        }\r\n\r\n        function invokeInsertHook(vnode, queue, initial) {\r\n            // delay insert hooks for component root nodes, invoke them after the\r\n            // element is really inserted\r\n            if (isTrue(initial) && isDef(vnode.parent)) {\r\n                vnode.parent.data.pendingInsert = queue\r\n            } else {\r\n                for (var i = 0; i < queue.length; ++i) {\r\n                    queue[i].data.hook.insert(queue[i])\r\n                }\r\n            }\r\n        }\r\n\r\n        var bailed = false\r\n        // list of modules that can skip create hook during hydration because they\r\n        // are already rendered on the client or has no need for initialization\r\n        var isRenderedModule = makeMap(\"attrs,style,class,staticClass,staticStyle,key\")\r\n\r\n        // Note: this is a browser-only function so we can assume elms are DOM nodes.\r\n        function hydrate(elm, vnode, insertedVnodeQueue) {\r\n            if (isTrue(vnode.isComment) && isDef(vnode.asyncFactory)) {\r\n                vnode.elm = elm\r\n                vnode.isAsyncPlaceholder = true\r\n                return true\r\n            }\r\n            vnode.elm = elm\r\n            var tag = vnode.tag\r\n            var data = vnode.data\r\n            var children = vnode.children\r\n            if (isDef(data)) {\r\n                if (isDef((i = data.hook)) && isDef((i = i.init))) {\r\n                    i(vnode, true /* hydrating */)\r\n                }\r\n                if (isDef((i = vnode.componentInstance))) {\r\n                    // child component. it should have hydrated its own tree.\r\n                    initComponent(vnode, insertedVnodeQueue)\r\n                    return true\r\n                }\r\n            }\r\n            if (isDef(tag)) {\r\n                if (isDef(children)) {\r\n                    // empty element, allow client to pick up and populate children\r\n                    if (!elm.hasChildNodes()) {\r\n                        createChildren(vnode, children, insertedVnodeQueue)\r\n                    } else {\r\n                        var childrenMatch = true\r\n                        var childNode = elm.firstChild\r\n                        for (var i$1 = 0; i$1 < children.length; i$1++) {\r\n                            if (\r\n                                !childNode ||\r\n                                !hydrate(childNode, children[i$1], insertedVnodeQueue)\r\n                            ) {\r\n                                childrenMatch = false\r\n                                break\r\n                            }\r\n                            childNode = childNode.nextSibling\r\n                        }\r\n                        // if childNode is not null, it means the actual childNodes list is\r\n                        // longer than the virtual children list.\r\n                        if (!childrenMatch || childNode) {\r\n                            if (\r\n                                false\r\n                            ) {}\r\n                            return false\r\n                        }\r\n                    }\r\n                }\r\n                if (isDef(data)) {\r\n                    for (var key in data) {\r\n                        if (!isRenderedModule(key)) {\r\n                            invokeCreateHooks(vnode, insertedVnodeQueue)\r\n                            break\r\n                        }\r\n                    }\r\n                }\r\n            } else if (elm.data !== vnode.text) {\r\n                elm.data = vnode.text\r\n            }\r\n            return true\r\n        }\r\n\r\n        return function patch(oldVnode, vnode, hydrating, removeOnly, parentElm, refElm) {\r\n            if (isUndef(vnode)) {\r\n                if (isDef(oldVnode)) {\r\n                    invokeDestroyHook(oldVnode)\r\n                }\r\n                return\r\n            }\r\n\r\n            var isInitialPatch = false\r\n            var insertedVnodeQueue = []\r\n\r\n            if (isUndef(oldVnode)) {\r\n                // empty mount (likely as component), create new root element\r\n                isInitialPatch = true\r\n                createElm(vnode, insertedVnodeQueue, parentElm, refElm)\r\n            } else {\r\n                var isRealElement = isDef(oldVnode.nodeType)\r\n                if (!isRealElement && sameVnode(oldVnode, vnode)) {\r\n                    // patch existing root node\r\n                    patchVnode(oldVnode, vnode, insertedVnodeQueue, removeOnly)\r\n                } else {\r\n                    if (isRealElement) {\r\n                        // mounting to a real element\r\n                        // check if this is server-rendered content and if we can perform\r\n                        // a successful hydration.\r\n                        if (oldVnode.nodeType === 1 && oldVnode.hasAttribute(SSR_ATTR)) {\r\n                            oldVnode.removeAttribute(SSR_ATTR)\r\n                            hydrating = true\r\n                        }\r\n                        if (isTrue(hydrating)) {\r\n                            if (hydrate(oldVnode, vnode, insertedVnodeQueue)) {\r\n                                invokeInsertHook(vnode, insertedVnodeQueue, true)\r\n                                return oldVnode\r\n                            } else {\r\n                            }\r\n                        }\r\n                        // either not server-rendered, or hydration failed.\r\n                        // create an empty node and replace it\r\n                        oldVnode = emptyNodeAt(oldVnode)\r\n                    }\r\n                    // replacing existing element\r\n                    var oldElm = oldVnode.elm\r\n                    var parentElm$1 = nodeOps.parentNode(oldElm)\r\n                    createElm(\r\n                        vnode,\r\n                        insertedVnodeQueue,\r\n                        // extremely rare edge case: do not insert if old element is in a\r\n                        // leaving transition. Only happens when combining transition +\r\n                        // keep-alive + HOCs. (#4590)\r\n                        oldElm._leaveCb ? null : parentElm$1,\r\n                        nodeOps.nextSibling(oldElm)\r\n                    )\r\n\r\n                    if (isDef(vnode.parent)) {\r\n                        // component root element replaced.\r\n                        // update parent placeholder node element, recursively\r\n                        var ancestor = vnode.parent\r\n                        while (ancestor) {\r\n                            ancestor.elm = vnode.elm\r\n                            ancestor = ancestor.parent\r\n                        }\r\n                        if (isPatchable(vnode)) {\r\n                            for (var i = 0; i < cbs.create.length; ++i) {\r\n                                cbs.create[i](emptyNode, vnode.parent)\r\n                            }\r\n                        }\r\n                    }\r\n\r\n                    if (isDef(parentElm$1)) {\r\n                        removeVnodes(parentElm$1, [oldVnode], 0, 0)\r\n                    } else if (isDef(oldVnode.tag)) {\r\n                        invokeDestroyHook(oldVnode)\r\n                    }\r\n                }\r\n            }\r\n\r\n            invokeInsertHook(vnode, insertedVnodeQueue, isInitialPatch)\r\n            return vnode.elm\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    // import baseModules from 'core/vdom/modules/index'\r\n    // const platformModules = []\r\n    // import platformModules from 'web/runtime/modules/index'\r\n\r\n    // the directive module should be applied last, after all\r\n    // built-in modules have been applied.\r\n    // const modules = platformModules.concat(baseModules)\r\n    var modules = [ref]\r\n\r\n    var corePatch = createPatchFunction({\r\n        nodeOps: nodeOps,\r\n        modules: modules\r\n    })\r\n\r\n    function patch() {\r\n        corePatch.apply(this, arguments)\r\n        this.$updateDataToMP()\r\n    }\r\n\r\n    function callHook$1(vm, hook, params) {\r\n        var handlers = vm.$options[hook]\r\n        if (hook === \"onError\" && handlers) {\r\n            handlers = [handlers]\r\n        }\r\n\r\n        var ret\r\n        if (handlers) {\r\n            for (var i = 0, j = handlers.length; i < j; i++) {\r\n                try {\r\n                    ret = handlers[i].call(vm, params)\r\n                } catch (e) {\r\n                    handleError(e, vm, hook + \" hook\")\r\n                }\r\n            }\r\n        }\r\n        if (vm._hasHookEvent) {\r\n            vm.$emit(\"hook:\" + hook)\r\n        }\r\n\r\n        // for child\r\n        if (vm.$children.length) {\r\n            vm.$children.forEach(function(v) {\r\n                return callHook$1(v, hook, params)\r\n            })\r\n        }\r\n\r\n        return ret\r\n    }\r\n\r\n    // mpType 小程序实例的类型，可能的值是 'app', 'page'\r\n    // rootVueVM 是 vue 的根组件实例，子组件中访问 this.$root 可得\r\n    function getGlobalData(app, rootVueVM) {\r\n        var mp = rootVueVM.$mp\r\n        if (app && app.globalData) {\r\n            mp.appOptions = app.globalData.appOptions\r\n        }\r\n    }\r\n\r\n    // 格式化 properties 属性，并给每个属性加上 observer 方法\r\n\r\n    // properties 的 一些类型 https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html\r\n    // properties: {\r\n    //   paramA: Number,\r\n    //   myProperty: { // 属性名\r\n    //     type: String, // 类型（必填），目前接受的类型包括：String, Number, Boolean, Object, Array, null（表示任意类型）\r\n    //     value: '', // 属性初始值（可选），如果未指定则会根据类型选择一个\r\n    //     observer: function(newVal, oldVal, changedPath) {\r\n    //        // 属性被改变时执行的函数（可选），也可以写成在methods段中定义的方法名字符串, 如：'_propertyChange'\r\n    //        // 通常 newVal 就是新设置的数据， oldVal 是旧数据\r\n    //     }\r\n    //   },\r\n    // }\r\n\r\n    // props 的一些类型 https://cn.vuejs.org/v2/guide/components-props.html#ad\r\n    // props: {\r\n    //   // 基础的类型检查 (`null` 匹配任何类型)\r\n    //   propA: Number,\r\n    //   // 多个可能的类型\r\n    //   propB: [String, Number],\r\n    //   // 必填的字符串\r\n    //   propC: {\r\n    //     type: String,\r\n    //     required: true\r\n    //   },\r\n    //   // 带有默认值的数字\r\n    //   propD: {\r\n    //     type: Number,\r\n    //     default: 100\r\n    //   },\r\n    //   // 带有默认值的对象\r\n    //   propE: {\r\n    //     type: Object,\r\n    //     // 对象或数组且一定会从一个工厂函数返回默认值\r\n    //     default: function () {\r\n    //       return { message: 'hello' }\r\n    //     }\r\n    //   },\r\n    //   // 自定义验证函数\r\n    //   propF: {\r\n    //     validator: function (value) {\r\n    //       // 这个值必须匹配下列字符串中的一个\r\n    //       return ['success', 'warning', 'danger'].indexOf(value) !== -1\r\n    //     }\r\n    //   }\r\n    // }\r\n\r\n    // core/util/options\r\n    function normalizeProps$1(props, res, vm) {\r\n        if (!props) {\r\n            return\r\n        }\r\n        var i, val, name\r\n        if (Array.isArray(props)) {\r\n            i = props.length\r\n            while (i--) {\r\n                val = props[i]\r\n                if (typeof val === \"string\") {\r\n                    name = camelize(val)\r\n                    res[name] = {\r\n                        type: null\r\n                    }\r\n                } else {\r\n                }\r\n            }\r\n        } else if (isPlainObject(props)) {\r\n            for (var key in props) {\r\n                val = props[key]\r\n                name = camelize(key)\r\n                res[name] = isPlainObject(val)\r\n                    ? val\r\n                    : {\r\n                          type: val\r\n                      }\r\n            }\r\n        }\r\n\r\n        // fix vueProps to properties\r\n        for (var key$1 in res) {\r\n            if (res.hasOwnProperty(key$1)) {\r\n                var item = res[key$1]\r\n                if (item.default) {\r\n                    item.value = item.default\r\n                }\r\n                var oldObserver = item.observer\r\n                item.observer = function(newVal, oldVal) {\r\n                    vm[name] = newVal\r\n                    // 先修改值再触发原始的 observer，跟 watch 行为保持一致\r\n                    if (typeof oldObserver === \"function\") {\r\n                        oldObserver.call(vm, newVal, oldVal)\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        return res\r\n    }\r\n\r\n    function normalizeProperties(vm) {\r\n        var properties = vm.$options.properties\r\n        var vueProps = vm.$options.props\r\n        var res = {}\r\n\r\n        normalizeProps$1(properties, res, vm)\r\n        normalizeProps$1(vueProps, res, vm)\r\n\r\n        return res\r\n    }\r\n\r\n    /**\r\n     * 把 properties 中的属性 proxy 到 vm 上\r\n     */\r\n    function initMpProps(vm) {\r\n        var mpProps = (vm._mpProps = {})\r\n        var keys = Object.keys(vm.$options.properties || {})\r\n        keys.forEach(function(key) {\r\n            if (!(key in vm)) {\r\n                proxy(vm, \"_mpProps\", key)\r\n                mpProps[key] = undefined // for observe\r\n            }\r\n        })\r\n        observe(mpProps, true)\r\n    }\r\n\r\n    function initMP(mpType, next) {\r\n        var rootVueVM = this.$root\r\n        if (!rootVueVM.$mp) {\r\n            rootVueVM.$mp = {}\r\n        }\r\n\r\n        var mp = rootVueVM.$mp\r\n\r\n        // Please do not register multiple Pages\r\n        // if (mp.registered) {\r\n        if (mp.status) {\r\n            // 处理子组件的小程序生命周期\r\n            if (mpType === \"app\") {\r\n                callHook$1(this, \"onLaunch\", mp.appOptions)\r\n            } else {\r\n                callHook$1(this, \"onLoad\", mp.query)\r\n                // callHook$1(this, \"onReady\") // 避免 onReady触发两次\r\n            }\r\n            return next()\r\n        }\r\n        // mp.registered = true\r\n\r\n        mp.mpType = mpType\r\n        mp.status = \"register\"\r\n\r\n        if (mpType === \"app\") {\r\n            global.App({\r\n                // 页面的初始数据\r\n                globalData: {\r\n                    appOptions: {}\r\n                },\r\n\r\n                handleProxy: function handleProxy(e) {\r\n                    return rootVueVM.$handleProxyWithVue(e)\r\n                },\r\n\r\n                // Do something initial when launch.\r\n                onLaunch: function onLaunch(options) {\r\n                    if (options === void 0) options = {}\r\n\r\n                    mp.app = this\r\n                    mp.status = \"launch\"\r\n                    this.globalData.appOptions = mp.appOptions = options\r\n                    callHook$1(rootVueVM, \"onLaunch\", options)\r\n                    next()\r\n                },\r\n\r\n                // Do something when app show.\r\n                onShow: function onShow(options) {\r\n                    if (options === void 0) options = {}\r\n\r\n                    mp.status = \"show\"\r\n                    this.globalData.appOptions = mp.appOptions = options\r\n                    callHook$1(rootVueVM, \"onShow\", options)\r\n                },\r\n\r\n                // Do something when app hide.\r\n                onHide: function onHide() {\r\n                    mp.status = \"hide\"\r\n                    callHook$1(rootVueVM, \"onHide\")\r\n                },\r\n\r\n                onError: function onError(err) {\r\n                    callHook$1(rootVueVM, \"onError\", err)\r\n                },\r\n                //fixed by xxxxxx\r\n                onUniNViewMessage: function onUniNViewMessage(e) {\r\n                    callHook$1(rootVueVM, \"onUniNViewMessage\", e)\r\n                }\r\n            })\r\n        } else if (mpType === \"component\") {\r\n            initMpProps(rootVueVM)\r\n\r\n            global.Component({\r\n                // 小程序原生的组件属性\r\n                properties: normalizeProperties(rootVueVM),\r\n                // 页面的初始数据\r\n                data: {\r\n                    $root: {}\r\n                },\r\n                methods: {\r\n                    handleProxy: function handleProxy(e) {\r\n                        return rootVueVM.$handleProxyWithVue(e)\r\n                    }\r\n                },\r\n                // mp lifecycle for vue\r\n                // 组件生命周期函数，在组件实例进入页面节点树时执行，注意此时不能调用 setData\r\n                created: function created() {\r\n                    mp.status = \"created\"\r\n                    mp.page = this\r\n                },\r\n                // 组件生命周期函数，在组件实例进入页面节点树时执行\r\n                attached: function attached() {\r\n                    mp.status = \"attached\"\r\n                    callHook$1(rootVueVM, \"attached\")\r\n                },\r\n                // 组件生命周期函数，在组件布局完成后执行，此时可以获取节点信息（使用 SelectorQuery ）\r\n                ready: function ready() {\r\n                    mp.status = \"ready\"\r\n\r\n                    callHook$1(rootVueVM, \"ready\")\r\n                    next()\r\n\r\n                    // 只有页面需要 setData\r\n                    rootVueVM.$nextTick(function() {\r\n                        rootVueVM._initDataToMP()\r\n                    })\r\n                },\r\n                // 组件生命周期函数，在组件实例被移动到节点树另一个位置时执行\r\n                moved: function moved() {\r\n                    callHook$1(rootVueVM, \"moved\")\r\n                },\r\n                // 组件生命周期函数，在组件实例被从页面节点树移除时执行\r\n                detached: function detached() {\r\n                    mp.status = \"detached\"\r\n                    callHook$1(rootVueVM, \"detached\")\r\n                }\r\n            })\r\n        } else {\r\n            var app = global.getApp()\r\n    \n            \r\n            global.Page({\r\n                // 页面的初始数据\r\n                data: {\r\n                    $root: {}\r\n                },\r\n\r\n                handleProxy: function handleProxy(e) {\r\n                    return rootVueVM.$handleProxyWithVue(e)\r\n                },\r\n\r\n                // mp lifecycle for vue\r\n                // 生命周期函数--监听页面加载\r\n                onLoad: function onLoad(query) {\r\n                    rootVueVM.__wxWebviewId__ = this.__wxWebviewId__//fixed by xxxxxx(createIntersectionObserver)\r\n                    mp.page = this\r\n                    mp.query = query\r\n                    mp.status = \"load\"\r\n                    getGlobalData(app, rootVueVM)\n                    //仅load时重置数据\n                    if (rootVueVM.$options && typeof rootVueVM.$options.data === \"function\") {\n                    \t\tObject.assign(rootVueVM.$data, rootVueVM.$options.data())\n                    }\r\n                    callHook$1(rootVueVM, \"onLoad\", query)\r\n                },\r\n\r\n                // 生命周期函数--监听页面显示\r\n                onShow: function onShow() {\n                    rootVueVM.__wxWebviewId__ = this.__wxWebviewId__//fixed by xxxxxx(createIntersectionObserver)\r\n                    mp.page = this\r\n                    mp.status = \"show\"\n                \r\n                    callHook$1(rootVueVM, \"onShow\")\n                    \n                    //   // 只有页面需要 setData\n                    rootVueVM.$nextTick(function () {\n                    \trootVueVM._initDataToMP();\n                    });\r\n                },\r\n\r\n                // 生命周期函数--监听页面初次渲染完成\r\n                onReady: function onReady() {\r\n                    mp.status = \"ready\"\r\n\r\n                    callHook$1(rootVueVM, \"onReady\")\r\n                    next()\r\n                },\r\n\r\n                // 生命周期函数--监听页面隐藏\r\n                onHide: function onHide() {\r\n                    mp.status = \"hide\"\r\n                    callHook$1(rootVueVM, \"onHide\")\r\n                },\r\n\r\n                // 生命周期函数--监听页面卸载\r\n                onUnload: function onUnload() {\r\n                    mp.status = \"unload\"\r\n                    callHook$1(rootVueVM, \"onUnload\")\r\n                    mp.page = null\r\n                },\r\n\r\n                // 页面相关事件处理函数--监听用户下拉动作\r\n                onPullDownRefresh: function onPullDownRefresh() {\r\n                    callHook$1(rootVueVM, \"onPullDownRefresh\")\r\n                },\r\n\r\n                // 页面上拉触底事件的处理函数\r\n                onReachBottom: function onReachBottom() {\r\n                    callHook$1(rootVueVM, \"onReachBottom\")\r\n                },\r\n\r\n                // 用户点击右上角分享\r\n                onShareAppMessage: rootVueVM.$options.onShareAppMessage\r\n                    ? function(options) {\r\n                          return callHook$1(rootVueVM, \"onShareAppMessage\", options)\r\n                      }\r\n                    : null,\r\n\r\n                // Do something when page scroll\r\n                onPageScroll: function onPageScroll(options) {\r\n                    callHook$1(rootVueVM, \"onPageScroll\", options)\r\n                },\r\n\r\n                // 当前是 tab 页时，点击 tab 时触发\r\n                onTabItemTap: function onTabItemTap(options) {\r\n                    callHook$1(rootVueVM, \"onTabItemTap\", options)\r\n                }\r\n            })\r\n        }\r\n    }\r\n\r\n    // 节流方法，性能优化\r\n    // 全局的命名约定，为了节省编译的包大小一律采取形象的缩写，说明如下。\r\n    // $c === $child\r\n    // $k === $comKey\r\n\r\n    // 新型的被拍平的数据结构\r\n    // {\r\n    //   $root: {\r\n    //     '1-1'{\r\n    //       // ... data\r\n    //     },\r\n    //     '1.2-1': {\r\n    //       // ... data1\r\n    //     },\r\n    //     '1.2-2': {\r\n    //       // ... data2\r\n    //     }\r\n    //   }\r\n    // }\r\n\r\n    function getVmData(vm) {\r\n        // 确保当前 vm 所有数据被同步\r\n        var dataKeys = [].concat(\r\n            Object.keys(vm._data || {}),\r\n            Object.keys(vm._props || {}),\r\n            Object.keys(vm._mpProps || {}),\r\n            Object.keys(vm._computedWatchers || {})\r\n        )\r\n        return dataKeys.reduce(function(res, key) {\r\n            res[key] = vm[key]\r\n            return res\r\n        }, {})\r\n    }\r\n\r\n    function getParentComKey(vm, res) {\r\n        if (res === void 0) res = []\r\n\r\n        var ref = vm || {}\r\n        var $parent = ref.$parent\r\n        if (!$parent) {\r\n            return res\r\n        }\r\n        res.unshift(getComKey($parent))\r\n        if ($parent.$parent) {\r\n            return getParentComKey($parent, res)\r\n        }\r\n        return res\r\n    }\r\n\r\n    function formatVmData(vm) {\r\n        var $p = getParentComKey(vm).join(\",\")\r\n        var $k = $p + ($p ? \",\" : \"\") + getComKey(vm)\r\n\r\n        // getVmData 这儿获取当前组件内的所有数据，包含 props、computed 的数据\r\n        // 改动 vue.runtime 所获的的核心能力\r\n        var data = Object.assign(getVmData(vm), {\r\n            $k: $k,\r\n            $kk: $k + \",\",\r\n            $p: $p\r\n        })\r\n        var key = \"$root.\" + $k\r\n        var res = {}\r\n        res[key] = data\r\n        return res\r\n    }\r\n\r\n    function collectVmData(vm, res) {\r\n        if (res === void 0) res = {}\r\n\r\n        var vms = vm.$children\r\n        if (vms && vms.length) {\r\n            vms.forEach(function(v) {\r\n                return collectVmData(v, res)\r\n            })\r\n        }\r\n        return Object.assign(res, formatVmData(vm))\r\n    }\r\n\r\n    /**\r\n     * 频率控制 返回函数连续调用时，func 执行频率限定为 次 / wait\r\n     * 自动合并 data\r\n     *\r\n     * @param  {function}   func      传入函数\r\n     * @param  {number}     wait      表示时间窗口的间隔\r\n     * @param  {object}     options   如果想忽略开始边界上的调用，传入{leading: false}。\r\n     *                                如果想忽略结尾边界上的调用，传入{trailing: false}\r\n     * @return {function}             返回客户调用函数\r\n     */\r\n    function throttle(func, wait, options) {\r\n        var context, args, result\r\n        var timeout = null\r\n        // 上次执行时间点\r\n        var previous = 0\r\n        if (!options) {\r\n            options = {}\r\n        }\r\n        // 延迟执行函数\r\n        function later() {\r\n            // 若设定了开始边界不执行选项，上次执行时间始终为0\r\n            previous = options.leading === false ? 0 : Date.now()\r\n            timeout = null\r\n            result = func.apply(context, args)\r\n            if (!timeout) {\r\n                context = args = null\r\n            }\r\n        }\r\n        return function(handle, data) {\r\n            var now = Date.now()\r\n            // 首次执行时，如果设定了开始边界不执行选项，将上次执行时间设定为当前时间。\r\n            if (!previous && options.leading === false) {\r\n                previous = now\r\n            }\r\n            // 延迟执行时间间隔\r\n            var remaining = wait - (now - previous)\r\n            context = this\r\n            args = args ? [handle, Object.assign(args[1], data)] : [handle, data]\r\n            // 延迟时间间隔remaining小于等于0，表示上次执行至此所间隔时间已经超过一个时间窗口\r\n            // remaining大于时间窗口wait，表示客户端系统时间被调整过\r\n            if (remaining <= 0 || remaining > wait) {\r\n                clearTimeout(timeout)\r\n                timeout = null\r\n                previous = now\r\n                result = func.apply(context, args)\r\n                if (!timeout) {\r\n                    context = args = null\r\n                }\r\n                // 如果延迟执行不存在，且没有设定结尾边界不执行选项\r\n            } else if (!timeout && options.trailing !== false) {\r\n                timeout = setTimeout(later, remaining)\r\n            }\r\n            return result\r\n        }\r\n    }\r\n\r\n    // 优化频繁的 setData: https://mp.weixin.qq.com/debug/wxadoc/dev/framework/performance/tips.html\r\n    var throttleSetData = throttle(function(handle, data) {\r\n        handle(data)\r\n    }, 50)\r\n\r\n    function getPage(vm) {\r\n        var rootVueVM = vm.$root\r\n        var ref = rootVueVM.$mp || {}\r\n        var mpType = ref.mpType\r\n        if (mpType === void 0) mpType = \"\"\r\n        var page = ref.page\r\n\r\n        // 优化后台态页面进行 setData: https://mp.weixin.qq.com/debug/wxadoc/dev/framework/performance/tips.html\r\n        if (mpType === \"app\" || !page || typeof page.setData !== \"function\") {\r\n            return\r\n        }\r\n        return page\r\n    }\r\n\r\n    // 优化每次 setData 都传递大量新数据\r\n    function updateDataToMP() {\r\n        var page = getPage(this)\r\n        if (!page) {\r\n            return\r\n        }\r\n\r\n        var data = JSON.parse(JSON.stringify(formatVmData(this)))\n        //fixed by xxxxxx\r\n        throttleSetData(page.setData.bind(page), diff(data, page.data))\r\n    }\r\n\r\n    function initDataToMP() {\r\n        var page = getPage(this)\r\n        if (!page) {\r\n            return\r\n        }\r\n\r\n        var data = collectVmData(this.$root)\n        //fixed by xxxxxx\r\n        page.setData(JSON.parse(JSON.stringify(data)))\r\n    }\r\n\r\n    function getVM(vm, comkeys) {\r\n        if (comkeys === void 0) comkeys = []\r\n\r\n        var keys = comkeys.slice(1)\r\n        if (!keys.length) {\r\n            return vm\r\n        }\r\n\r\n        return keys.reduce(function(res, key) {\r\n            var len = res.$children.length\r\n            for (var i = 0; i < len; i++) {\r\n                var v = res.$children[i]\r\n                var k = getComKey(v)\r\n                if (k === key) {\r\n                    res = v\r\n                    return res\r\n                }\r\n            }\r\n            return res\r\n        }, vm)\r\n    }\r\n\r\n    function getHandle(vnode, eventid, eventTypes) {\r\n        if (eventTypes === void 0) eventTypes = []\r\n\r\n        var res = []\r\n        if (!vnode || !vnode.tag) {\r\n            return res\r\n        }\r\n\r\n        var ref = vnode || {}\r\n        var data = ref.data\r\n        if (data === void 0) data = {}\r\n        var children = ref.children\r\n        if (children === void 0) children = []\r\n        var componentInstance = ref.componentInstance\r\n        if (componentInstance) {\r\n            // 增加 slot 情况的处理\r\n            // Object.values 会多增加几行编译后的代码\r\n            Object.keys(componentInstance.$slots).forEach(function(slotKey) {\r\n                var slot = componentInstance.$slots[slotKey]\r\n                var slots = Array.isArray(slot) ? slot : [slot]\r\n                slots.forEach(function(node) {\r\n                    res = res.concat(getHandle(node, eventid, eventTypes))\r\n                })\r\n            })\r\n        } else {\r\n            // 避免遍历超出当前组件的 vm\r\n            children.forEach(function(node) {\r\n                res = res.concat(getHandle(node, eventid, eventTypes))\r\n            })\r\n        }\r\n\r\n        var attrs = data.attrs\r\n        var on = data.on\r\n        if (attrs && on && attrs[\"eventid\"] === eventid) {\r\n            eventTypes.forEach(function(et) {\r\n                var h = on[et]\r\n                if (typeof h === \"function\") {\r\n                    res.push(h)\r\n                } else if (Array.isArray(h)) {\r\n                    res = res.concat(h)\r\n                }\r\n            })\r\n            return res\r\n        }\r\n\r\n        return res\r\n    }\r\n\r\n    function getWebEventByMP(e) {\r\n        var type = e.type\r\n        var timeStamp = e.timeStamp\r\n        var touches = e.touches\r\n        var detail = e.detail\r\n        if (detail === void 0) detail = {}\r\n        var target = e.target\r\n        if (target === void 0) target = {}\r\n        var currentTarget = e.currentTarget\r\n        if (currentTarget === void 0) currentTarget = {}\r\n        var x = detail.x\r\n        var y = detail.y\r\n        var event = {\r\n            mp: e,\r\n            type: type,\r\n            timeStamp: timeStamp,\r\n            x: x,\r\n            y: y,\r\n            target: Object.assign({}, target, detail),\r\n            detail: detail, //fixed by xxxxxx\r\n            currentTarget: currentTarget,\r\n            stopPropagation: noop,\r\n            preventDefault: noop\r\n        }\r\n\r\n        if (touches && touches.length) {\r\n            Object.assign(event, touches[0])\r\n            event.touches = touches\r\n        }\r\n        return event\r\n    }\r\n\r\n    function handleProxyWithVue(e) {\r\n        var rootVueVM = this.$root\r\n        var type = e.type\r\n        var target = e.target\r\n        if (target === void 0) target = {}\r\n        var currentTarget = e.currentTarget\r\n        var ref = currentTarget || target\r\n        var dataset = ref.dataset\r\n        if (dataset === void 0) dataset = {}\r\n        var comkey = dataset.comkey\r\n        if (comkey === void 0) comkey = \"\"\r\n        var eventid = dataset.eventid\r\n        var vm = getVM(rootVueVM, comkey.split(\",\"))\r\n\r\n        if (!vm) {\r\n            return\r\n        }\r\n\r\n        var webEventTypes = eventTypeMap[type] || [type]\r\n        var handles = getHandle(vm._vnode, eventid, webEventTypes)\r\n\r\n        // TODO, enevt 还需要处理更多\r\n        // https://developer.mozilla.org/zh-CN/docs/Web/API/Event\r\n        if (handles.length) {\r\n            var event = getWebEventByMP(e)\r\n            if (handles.length === 1) {\r\n                var result = handles[0](event)\r\n                return result\r\n            }\r\n            handles.forEach(function(h) {\r\n                return h(event)\r\n            })\r\n        }\r\n    }\r\n\r\n    // for platforms\r\n    // import config from 'core/config'\r\n    // install platform specific utils\r\n    Vue$3.config.mustUseProp = mustUseProp\r\n    Vue$3.config.isReservedTag = isReservedTag\r\n    Vue$3.config.isReservedAttr = isReservedAttr\r\n    Vue$3.config.getTagNamespace = getTagNamespace\r\n    Vue$3.config.isUnknownElement = isUnknownElement\r\n\r\n    // install platform patch function\r\n    Vue$3.prototype.__patch__ = patch\r\n\r\n    // public mount method\r\n    Vue$3.prototype.$mount = function(el, hydrating) {\r\n        var this$1 = this\r\n\r\n        // el = el && inBrowser ? query(el) : undefined\r\n        // return mountComponent(this, el, hydrating)\r\n\r\n        // 初始化小程序生命周期相关\r\n        var options = this.$options\r\n\r\n        if (options && (options.render || options.mpType)) {\r\n            var mpType = options.mpType\r\n            if (mpType === void 0) mpType = \"page\"\r\n            return this._initMP(mpType, function() {\r\n                return mountComponent(this$1, undefined, undefined)\r\n            })\r\n        } else {\r\n            return mountComponent(this, undefined, undefined)\r\n        }\r\n    }\r\n\r\n    // for mp\r\n    Vue$3.prototype._initMP = initMP\r\n\r\n    Vue$3.prototype.$updateDataToMP = updateDataToMP\r\n    Vue$3.prototype._initDataToMP = initDataToMP\r\n\r\n    Vue$3.prototype.$handleProxyWithVue = handleProxyWithVue\r\n\r\n    /*  */\r\n\r\n    return Vue$3\r\n})\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))\n\n//# sourceURL=Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue/index.js");
+eval("/* WEBPACK VAR INJECTION */(function(global) {// fix env\r\ntry {\r\n    if (!global) global = {}\r\n    global.process = global.process || {}\r\n    global.process.env = global.process.env || {}\r\n    global.App = global.App || App\r\n    global.Page = global.Page || Page\r\n    global.Component = global.Component || Component\r\n    global.getApp = global.getApp || getApp\r\n} catch (e) {}\r\n\r\n;(function(global, factory) {\r\n     true\r\n        ? (module.exports = factory())\r\n        : undefined\r\n})(this, function() {\r\n    \"use strict\"\r\n\r\n    //fixed by xxxxxx\r\n    function calcDiff(holder, key, newObj, oldObj) {\r\n        if (newObj === oldObj || newObj === undefined) {\r\n            return\r\n        }\r\n\r\n        if (newObj == null || oldObj == null || typeof newObj !== typeof oldObj) {\r\n            holder[key] = newObj\r\n        } else if (Array.isArray(newObj) && Array.isArray(oldObj)) {\r\n            if (newObj.length === oldObj.length) {\r\n                for (var i = 0, len = newObj.length; i < len; ++i) {\r\n                    calcDiff(holder, key + \"[\" + i + \"]\", newObj[i], oldObj[i])\r\n                }\r\n            } else {\r\n                holder[key] = newObj\r\n            }\r\n        } else if (typeof newObj === \"object\" && typeof oldObj === \"object\") {\r\n            var newKeys = Object.keys(newObj)\r\n            var oldKeys = Object.keys(oldObj)\r\n\r\n            if (newKeys.length !== oldKeys.length) {\r\n                holder[key] = newObj\r\n            } else {\r\n                var allKeysSet = Object.create(null)\r\n                for (var i = 0, len = newKeys.length; i < len; ++i) {\r\n                    allKeysSet[newKeys[i]] = true\r\n                    allKeysSet[oldKeys[i]] = true\r\n                }\r\n                if (Object.keys(allKeysSet).length !== newKeys.length) {\r\n                    holder[key] = newObj\r\n                } else {\r\n                    for (var i = 0, len = newKeys.length; i < len; ++i) {\r\n                        var k = newKeys[i]\r\n                        calcDiff(holder, key + \".\" + k, newObj[k], oldObj[k])\r\n                    }\r\n                }\r\n            }\r\n        } else if (newObj !== oldObj) {\r\n            holder[key] = newObj\r\n        }\r\n    }\r\n\r\n    function diff(newObj, oldObj) {\r\n        var keys = Object.keys(newObj)\r\n        var diffResult = {}\r\n        for (var i = 0, len = keys.length; i < len; ++i) {\r\n            var k = keys[i]\r\n            var oldKeyPath = k.split(\".\")\r\n            var oldValue = oldObj[oldKeyPath[0]]\r\n            for (var j = 1, jlen = oldKeyPath.length; j < jlen && oldValue !== undefined; ++j) {\r\n                oldValue = oldValue[oldKeyPath[j]]\r\n            }\r\n            calcDiff(diffResult, k, newObj[k], oldValue)\r\n        }\r\n        return diffResult\r\n    }\r\n\r\n    /*  */\r\n\r\n    // these helpers produces better vm code in JS engines due to their\r\n    // explicitness and function inlining\r\n    function isUndef(v) {\r\n        return v === undefined || v === null\r\n    }\r\n\r\n    function isDef(v) {\r\n        return v !== undefined && v !== null\r\n    }\r\n\r\n    function isTrue(v) {\r\n        return v === true\r\n    }\r\n\r\n    function isFalse(v) {\r\n        return v === false\r\n    }\r\n\r\n    /**\r\n     * Check if value is primitive\r\n     */\r\n    function isPrimitive(value) {\r\n        return typeof value === \"string\" || typeof value === \"number\"\r\n    }\r\n\r\n    /**\r\n     * Quick object check - this is primarily used to tell\r\n     * Objects from primitive values when we know the value\r\n     * is a JSON-compliant type.\r\n     */\r\n    function isObject(obj) {\r\n        return obj !== null && typeof obj === \"object\"\r\n    }\r\n\r\n    var _toString = Object.prototype.toString\r\n\r\n    /**\r\n     * Strict object type check. Only returns true\r\n     * for plain JavaScript objects.\r\n     */\r\n    function isPlainObject(obj) {\r\n        return _toString.call(obj) === \"[object Object]\"\r\n    }\r\n\r\n    function isRegExp(v) {\r\n        return _toString.call(v) === \"[object RegExp]\"\r\n    }\r\n\r\n    /**\r\n     * Check if val is a valid array index.\r\n     */\r\n    function isValidArrayIndex(val) {\r\n        var n = parseFloat(val)\r\n        return n >= 0 && Math.floor(n) === n && isFinite(val)\r\n    }\r\n\r\n    /**\r\n     * Convert a value to a string that is actually rendered.\r\n     */\r\n    function toString(val) {\r\n        return val == null\r\n            ? \"\"\r\n            : typeof val === \"object\"\r\n                ? JSON.stringify(val, null, 2)\r\n                : String(val)\r\n    }\r\n\r\n    /**\r\n     * Convert a input value to a number for persistence.\r\n     * If the conversion fails, return original string.\r\n     */\r\n    function toNumber(val) {\r\n        var n = parseFloat(val)\r\n        return isNaN(n) ? val : n\r\n    }\r\n\r\n    /**\r\n     * Make a map and return a function for checking if a key\r\n     * is in that map.\r\n     */\r\n    function makeMap(str, expectsLowerCase) {\r\n        var map = Object.create(null)\r\n        var list = str.split(\",\")\r\n        for (var i = 0; i < list.length; i++) {\r\n            map[list[i]] = true\r\n        }\r\n        return expectsLowerCase\r\n            ? function(val) {\r\n                  return map[val.toLowerCase()]\r\n              }\r\n            : function(val) {\r\n                  return map[val]\r\n              }\r\n    }\r\n\r\n    /**\r\n     * Check if a tag is a built-in tag.\r\n     */\r\n    var isBuiltInTag = makeMap(\"slot,component\", true)\r\n\r\n    /**\r\n     * Check if a attribute is a reserved attribute.\r\n     */\r\n    var isReservedAttribute = makeMap(\"key,ref,slot,is\")\r\n\r\n    /**\r\n     * Remove an item from an array\r\n     */\r\n    function remove(arr, item) {\r\n        if (arr.length) {\r\n            var index = arr.indexOf(item)\r\n            if (index > -1) {\r\n                return arr.splice(index, 1)\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Check whether the object has the property.\r\n     */\r\n    var hasOwnProperty = Object.prototype.hasOwnProperty\r\n\r\n    function hasOwn(obj, key) {\r\n        return hasOwnProperty.call(obj, key)\r\n    }\r\n\r\n    /**\r\n     * Create a cached version of a pure function.\r\n     */\r\n    function cached(fn) {\r\n        var cache = Object.create(null)\r\n        return function cachedFn(str) {\r\n            var hit = cache[str]\r\n            return hit || (cache[str] = fn(str))\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Camelize a hyphen-delimited string.\r\n     */\r\n    var camelizeRE = /-(\\w)/g\r\n    var camelize = cached(function(str) {\r\n        return str.replace(camelizeRE, function(_, c) {\r\n            return c ? c.toUpperCase() : \"\"\r\n        })\r\n    })\r\n\r\n    /**\r\n     * Capitalize a string.\r\n     */\r\n    var capitalize = cached(function(str) {\r\n        return str.charAt(0).toUpperCase() + str.slice(1)\r\n    })\r\n\r\n    /**\r\n     * Hyphenate a camelCase string.\r\n     */\r\n    var hyphenateRE = /([^-])([A-Z])/g\r\n    var hyphenate = cached(function(str) {\r\n        return str\r\n            .replace(hyphenateRE, \"$1-$2\")\r\n            .replace(hyphenateRE, \"$1-$2\")\r\n            .toLowerCase()\r\n    })\r\n\r\n    /**\r\n     * Simple bind, faster than native\r\n     */\r\n    function bind(fn, ctx) {\r\n        function boundFn(a) {\r\n            var l = arguments.length\r\n            return l ? (l > 1 ? fn.apply(ctx, arguments) : fn.call(ctx, a)) : fn.call(ctx)\r\n        }\r\n        // record original fn length\r\n        boundFn._length = fn.length\r\n        return boundFn\r\n    }\r\n\r\n    /**\r\n     * Convert an Array-like object to a real Array.\r\n     */\r\n    function toArray(list, start) {\r\n        start = start || 0\r\n        var i = list.length - start\r\n        var ret = new Array(i)\r\n        while (i--) {\r\n            ret[i] = list[i + start]\r\n        }\r\n        return ret\r\n    }\r\n\r\n    /**\r\n     * Mix properties into target object.\r\n     */\r\n    function extend(to, _from) {\r\n        for (var key in _from) {\r\n            to[key] = _from[key]\r\n        }\r\n        return to\r\n    }\r\n\r\n    /**\r\n     * Merge an Array of Objects into a single Object.\r\n     */\r\n    function toObject(arr) {\r\n        var res = {}\r\n        for (var i = 0; i < arr.length; i++) {\r\n            if (arr[i]) {\r\n                extend(res, arr[i])\r\n            }\r\n        }\r\n        return res\r\n    }\r\n\r\n    /**\r\n     * Perform no operation.\r\n     * Stubbing args to make Flow happy without leaving useless transpiled code\r\n     * with ...rest (https://flow.org/blog/2017/05/07/Strict-Function-Call-Arity/)\r\n     */\r\n    function noop(a, b, c) {}\r\n\r\n    /**\r\n     * Always return false.\r\n     */\r\n    var no = function(a, b, c) {\r\n        return false\r\n    }\r\n\r\n    /**\r\n     * Return same value\r\n     */\r\n    var identity = function(_) {\r\n        return _\r\n    }\r\n\r\n    /**\r\n     * Generate a static keys string from compiler modules.\r\n     */\r\n\r\n    /**\r\n     * Check if two values are loosely equal - that is,\r\n     * if they are plain objects, do they have the same shape?\r\n     */\r\n    function looseEqual(a, b) {\r\n        var isObjectA = isObject(a)\r\n        var isObjectB = isObject(b)\r\n        if (isObjectA && isObjectB) {\r\n            try {\r\n                return JSON.stringify(a) === JSON.stringify(b)\r\n            } catch (e) {\r\n                // possible circular reference\r\n                return a === b\r\n            }\r\n        } else if (!isObjectA && !isObjectB) {\r\n            return String(a) === String(b)\r\n        } else {\r\n            return false\r\n        }\r\n    }\r\n\r\n    function looseIndexOf(arr, val) {\r\n        for (var i = 0; i < arr.length; i++) {\r\n            if (looseEqual(arr[i], val)) {\r\n                return i\r\n            }\r\n        }\r\n        return -1\r\n    }\r\n\r\n    /**\r\n     * Ensure a function is called only once.\r\n     */\r\n    function once(fn) {\r\n        var called = false\r\n        return function() {\r\n            if (!called) {\r\n                called = true\r\n                fn.apply(this, arguments)\r\n            }\r\n        }\r\n    }\r\n\r\n    var SSR_ATTR = \"data-server-rendered\"\r\n\r\n    var ASSET_TYPES = [\"component\", \"directive\", \"filter\"]\r\n\r\n    var LIFECYCLE_HOOKS = [\r\n        \"beforeCreate\",\r\n        \"created\",\r\n        \"beforeMount\",\r\n        \"mounted\",\r\n        \"beforeUpdate\",\r\n        \"updated\",\r\n        \"beforeDestroy\",\r\n        \"destroyed\",\r\n        \"activated\",\r\n        \"deactivated\",\r\n        \"onLaunch\",\r\n        \"onLoad\",\r\n        \"onShow\",\r\n        \"onReady\",\r\n        \"onHide\",\r\n        \"onUnload\",\r\n        \"onPullDownRefresh\",\r\n        \"onReachBottom\",\r\n        \"onShareAppMessage\",\r\n        \"onPageScroll\",\r\n        \"onTabItemTap\",\r\n        \"attached\",\r\n        \"ready\",\r\n        \"moved\",\r\n        \"detached\",\r\n        \"onUniNViewMessage\", //fixed by xxxxxx\r\n        \"onNavigationBarButtonTap\", //fixed by xxxxxx\n        \"onBackPress\",//fixed by xxxxxx\r\n    ]\r\n\r\n    /*  */\r\n\r\n    var config = {\r\n        /**\r\n         * Option merge strategies (used in core/util/options)\r\n         */\r\n        optionMergeStrategies: Object.create(null),\r\n\r\n        /**\r\n         * Whether to suppress warnings.\r\n         */\r\n        silent: false,\r\n\r\n        /**\r\n         * Show production mode tip message on boot?\r\n         */\r\n        productionTip: \"production\" !== \"production\",\r\n\r\n        /**\r\n         * Whether to enable devtools\r\n         */\r\n        devtools: \"production\" !== \"production\",\r\n\r\n        /**\r\n         * Whether to record perf\r\n         */\r\n        performance: false,\r\n\r\n        /**\r\n         * Error handler for watcher errors\r\n         */\r\n        errorHandler: null,\r\n\r\n        /**\r\n         * Warn handler for watcher warns\r\n         */\r\n        warnHandler: null,\r\n\r\n        /**\r\n         * Ignore certain custom elements\r\n         */\r\n        ignoredElements: [],\r\n\r\n        /**\r\n         * Custom user key aliases for v-on\r\n         */\r\n        keyCodes: Object.create(null),\r\n\r\n        /**\r\n         * Check if a tag is reserved so that it cannot be registered as a\r\n         * component. This is platform-dependent and may be overwritten.\r\n         */\r\n        isReservedTag: no,\r\n\r\n        /**\r\n         * Check if an attribute is reserved so that it cannot be used as a component\r\n         * prop. This is platform-dependent and may be overwritten.\r\n         */\r\n        isReservedAttr: no,\r\n\r\n        /**\r\n         * Check if a tag is an unknown element.\r\n         * Platform-dependent.\r\n         */\r\n        isUnknownElement: no,\r\n\r\n        /**\r\n         * Get the namespace of an element\r\n         */\r\n        getTagNamespace: noop,\r\n\r\n        /**\r\n         * Parse the real tag name for the specific platform.\r\n         */\r\n        parsePlatformTagName: identity,\r\n\r\n        /**\r\n         * Check if an attribute must be bound using property, e.g. value\r\n         * Platform-dependent.\r\n         */\r\n        mustUseProp: no,\r\n\r\n        /**\r\n         * Exposed for legacy reasons\r\n         */\r\n        _lifecycleHooks: LIFECYCLE_HOOKS\r\n    }\r\n\r\n    /*  */\r\n\r\n    var emptyObject = Object.freeze({})\r\n\r\n    /**\r\n     * Check if a string starts with $ or _\r\n     */\r\n    function isReserved(str) {\r\n        var c = (str + \"\").charCodeAt(0)\r\n        return c === 0x24 || c === 0x5f\r\n    }\r\n\r\n    /**\r\n     * Define a property.\r\n     */\r\n    function def(obj, key, val, enumerable) {\r\n        Object.defineProperty(obj, key, {\r\n            value: val,\r\n            enumerable: !!enumerable,\r\n            writable: true,\r\n            configurable: true\r\n        })\r\n    }\r\n\r\n    /**\r\n     * Parse simple path.\r\n     */\r\n    var bailRE = /[^\\w.$]/\r\n\r\n    function parsePath(path) {\r\n        if (bailRE.test(path)) {\r\n            return\r\n        }\r\n        var segments = path.split(\".\")\r\n        return function(obj) {\r\n            for (var i = 0; i < segments.length; i++) {\r\n                if (!obj) {\r\n                    return\r\n                }\r\n                obj = obj[segments[i]]\r\n            }\r\n            return obj\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    var warn = noop\r\n\r\n    var formatComponentName = null // work around flow check\r\n\r\n    /*  */\r\n\r\n    function handleError(err, vm, info) {\r\n        if (config.errorHandler) {\r\n            config.errorHandler.call(null, err, vm, info)\r\n        } else {\r\n            if (inBrowser && typeof console !== \"undefined\") {\r\n                console.error(err)\r\n            } else {\r\n                throw err\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    // can we use __proto__?\r\n    var hasProto = \"__proto__\" in {}\r\n\r\n    // Browser environment sniffing\r\n    var inBrowser = typeof window !== \"undefined\"\r\n    var UA = [\"mpvue-runtime\"].join()\r\n    var isIE = UA && /msie|trident/.test(UA)\r\n    var isIE9 = UA && UA.indexOf(\"msie 9.0\") > 0\r\n    var isEdge = UA && UA.indexOf(\"edge/\") > 0\r\n    var isAndroid = UA && UA.indexOf(\"android\") > 0\r\n    var isIOS = UA && /iphone|ipad|ipod|ios/.test(UA)\r\n    var isChrome = UA && /chrome\\/\\d+/.test(UA) && !isEdge\r\n\r\n    // Firefix has a \"watch\" function on Object.prototype...\r\n    var nativeWatch = {}.watch\r\n\r\n    var supportsPassive = false\r\n    if (inBrowser) {\r\n        try {\r\n            var opts = {}\r\n            Object.defineProperty(opts, \"passive\", {\r\n                get: function get() {\r\n                    /* istanbul ignore next */\r\n                    supportsPassive = true\r\n                }\r\n            }) // https://github.com/facebook/flow/issues/285\r\n            window.addEventListener(\"test-passive\", null, opts)\r\n        } catch (e) {}\r\n    }\r\n\r\n    // this needs to be lazy-evaled because vue may be required before\r\n    // vue-server-renderer can set VUE_ENV\r\n    var _isServer\r\n    var isServerRendering = function() {\r\n        if (_isServer === undefined) {\r\n            /* istanbul ignore if */\r\n            if (!inBrowser && typeof global !== \"undefined\") {\r\n                // detect presence of vue-server-renderer and avoid\r\n                // Webpack shimming the process\r\n                _isServer = global[\"process\"].env.VUE_ENV === \"server\"\r\n            } else {\r\n                _isServer = false\r\n            }\r\n        }\r\n        return _isServer\r\n    }\r\n\r\n    // detect devtools\r\n    var devtools = inBrowser && window.__VUE_DEVTOOLS_GLOBAL_HOOK__\r\n\r\n    /* istanbul ignore next */\r\n    function isNative(Ctor) {\r\n        return typeof Ctor === \"function\" && /native code/.test(Ctor.toString())\r\n    }\r\n\r\n    var hasSymbol =\r\n        typeof Symbol !== \"undefined\" &&\r\n        isNative(Symbol) &&\r\n        typeof Reflect !== \"undefined\" &&\r\n        isNative(Reflect.ownKeys)\r\n\r\n    /**\r\n     * Defer a task to execute it asynchronously.\r\n     */\r\n    var nextTick = (function() {\r\n        var callbacks = []\r\n        var pending = false\r\n        var timerFunc\r\n\r\n        function nextTickHandler() {\r\n            pending = false\r\n            var copies = callbacks.slice(0)\r\n            callbacks.length = 0\r\n            for (var i = 0; i < copies.length; i++) {\r\n                copies[i]()\r\n            }\r\n        }\r\n\r\n        // the nextTick behavior leverages the microtask queue, which can be accessed\r\n        // via either native Promise.then or MutationObserver.\r\n        // MutationObserver has wider support, however it is seriously bugged in\r\n        // UIWebView in iOS >= 9.3.3 when triggered in touch event handlers. It\r\n        // completely stops working after triggering a few times... so, if native\r\n        // Promise is available, we will use it:\r\n        /* istanbul ignore if */\r\n        if (typeof Promise !== \"undefined\" && isNative(Promise)) {\r\n            var p = Promise.resolve()\r\n            var logError = function(err) {\r\n                console.error(err)\r\n            }\r\n            timerFunc = function() {\r\n                p.then(nextTickHandler).catch(logError)\r\n                // in problematic UIWebViews, Promise.then doesn't completely break, but\r\n                // it can get stuck in a weird state where callbacks are pushed into the\r\n                // microtask queue but the queue isn't being flushed, until the browser\r\n                // needs to do some other work, e.g. handle a timer. Therefore we can\r\n                // \"force\" the microtask queue to be flushed by adding an empty timer.\r\n                if (isIOS) {\r\n                    setTimeout(noop)\r\n                }\r\n            }\r\n            // } else if (typeof MutationObserver !== 'undefined' && (\r\n            //   isNative(MutationObserver) ||\r\n            //   // PhantomJS and iOS 7.x\r\n            //   MutationObserver.toString() === '[object MutationObserverConstructor]'\r\n            // )) {\r\n            //   // use MutationObserver where native Promise is not available,\r\n            //   // e.g. PhantomJS IE11, iOS7, Android 4.4\r\n            //   var counter = 1\r\n            //   var observer = new MutationObserver(nextTickHandler)\r\n            //   var textNode = document.createTextNode(String(counter))\r\n            //   observer.observe(textNode, {\r\n            //     characterData: true\r\n            //   })\r\n            //   timerFunc = () => {\r\n            //     counter = (counter + 1) % 2\r\n            //     textNode.data = String(counter)\r\n            //   }\r\n        } else {\r\n            // fallback to setTimeout\r\n            /* istanbul ignore next */\r\n            timerFunc = function() {\r\n                setTimeout(nextTickHandler, 0)\r\n            }\r\n        }\r\n\r\n        return function queueNextTick(cb, ctx) {\r\n            var _resolve\r\n            callbacks.push(function() {\r\n                if (cb) {\r\n                    try {\r\n                        cb.call(ctx)\r\n                    } catch (e) {\r\n                        handleError(e, ctx, \"nextTick\")\r\n                    }\r\n                } else if (_resolve) {\r\n                    _resolve(ctx)\r\n                }\r\n            })\r\n            if (!pending) {\r\n                pending = true\r\n                timerFunc()\r\n            }\r\n            if (!cb && typeof Promise !== \"undefined\") {\r\n                return new Promise(function(resolve, reject) {\r\n                    _resolve = resolve\r\n                })\r\n            }\r\n        }\r\n    })()\r\n\r\n    var _Set\r\n    /* istanbul ignore if */\r\n    if (typeof Set !== \"undefined\" && isNative(Set)) {\r\n        // use native Set when available.\r\n        _Set = Set\r\n    } else {\r\n        // a non-standard Set polyfill that only works with primitive keys.\r\n        _Set = (function() {\r\n            function Set() {\r\n                this.set = Object.create(null)\r\n            }\r\n            Set.prototype.has = function has(key) {\r\n                return this.set[key] === true\r\n            }\r\n            Set.prototype.add = function add(key) {\r\n                this.set[key] = true\r\n            }\r\n            Set.prototype.clear = function clear() {\r\n                this.set = Object.create(null)\r\n            }\r\n\r\n            return Set\r\n        })()\r\n    }\r\n\r\n    /*  */\r\n\r\n    var uid$1 = 0\r\n\r\n    /**\r\n     * A dep is an observable that can have multiple\r\n     * directives subscribing to it.\r\n     */\r\n    var Dep = function Dep() {\r\n        this.id = uid$1++\r\n        this.subs = []\r\n    }\r\n\r\n    Dep.prototype.addSub = function addSub(sub) {\r\n        this.subs.push(sub)\r\n    }\r\n\r\n    Dep.prototype.removeSub = function removeSub(sub) {\r\n        remove(this.subs, sub)\r\n    }\r\n\r\n    Dep.prototype.depend = function depend() {\r\n        if (Dep.target) {\r\n            Dep.target.addDep(this)\r\n        }\r\n    }\r\n\r\n    Dep.prototype.notify = function notify() {\r\n        // stabilize the subscriber list first\r\n        var subs = this.subs.slice()\r\n        for (var i = 0, l = subs.length; i < l; i++) {\r\n            subs[i].update()\r\n        }\r\n    }\r\n\r\n    // the current target watcher being evaluated.\r\n    // this is globally unique because there could be only one\r\n    // watcher being evaluated at any time.\r\n    Dep.target = null\r\n    var targetStack = []\r\n\r\n    function pushTarget(_target) {\r\n        if (Dep.target) {\r\n            targetStack.push(Dep.target)\r\n        }\r\n        Dep.target = _target\r\n    }\r\n\r\n    function popTarget() {\r\n        Dep.target = targetStack.pop()\r\n    }\r\n\r\n    /*\r\n     * not type checking this file because flow doesn't play well with\r\n     * dynamically accessing methods on Array prototype\r\n     */\r\n\r\n    var arrayProto = Array.prototype\r\n    var arrayMethods = Object.create(arrayProto)\r\n    ;[\"push\", \"pop\", \"shift\", \"unshift\", \"splice\", \"sort\", \"reverse\"].forEach(function(method) {\r\n        // cache original method\r\n        var original = arrayProto[method]\r\n        def(arrayMethods, method, function mutator() {\r\n            var args = [],\r\n                len = arguments.length\r\n            while (len--) args[len] = arguments[len]\r\n\r\n            var result = original.apply(this, args)\r\n            var ob = this.__ob__\r\n            var inserted\r\n            switch (method) {\r\n                case \"push\":\r\n                case \"unshift\":\r\n                    inserted = args\r\n                    break\r\n                case \"splice\":\r\n                    inserted = args.slice(2)\r\n                    break\r\n            }\r\n            if (inserted) {\r\n                ob.observeArray(inserted)\r\n            }\r\n            // notify change\r\n            ob.dep.notify()\r\n            return result\r\n        })\r\n    })\r\n\r\n    /*  */\r\n\r\n    var arrayKeys = Object.getOwnPropertyNames(arrayMethods)\r\n\r\n    /**\r\n     * By default, when a reactive property is set, the new value is\r\n     * also converted to become reactive. However when passing down props,\r\n     * we don't want to force conversion because the value may be a nested value\r\n     * under a frozen data structure. Converting it would defeat the optimization.\r\n     */\r\n    var observerState = {\r\n        shouldConvert: true\r\n    }\r\n\r\n    /**\r\n     * Observer class that are attached to each observed\r\n     * object. Once attached, the observer converts target\r\n     * object's property keys into getter/setters that\r\n     * collect dependencies and dispatches updates.\r\n     */\r\n    var Observer = function Observer(value) {\r\n        this.value = value\r\n        this.dep = new Dep()\r\n        this.vmCount = 0\r\n        def(value, \"__ob__\", this)\r\n        if (Array.isArray(value)) {\r\n            var augment = hasProto ? protoAugment : copyAugment\r\n            augment(value, arrayMethods, arrayKeys)\r\n            this.observeArray(value)\r\n        } else {\r\n            this.walk(value)\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Walk through each property and convert them into\r\n     * getter/setters. This method should only be called when\r\n     * value type is Object.\r\n     */\r\n    Observer.prototype.walk = function walk(obj) {\r\n        var keys = Object.keys(obj)\r\n        for (var i = 0; i < keys.length; i++) {\r\n            defineReactive$$1(obj, keys[i], obj[keys[i]])\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Observe a list of Array items.\r\n     */\r\n    Observer.prototype.observeArray = function observeArray(items) {\r\n        for (var i = 0, l = items.length; i < l; i++) {\r\n            observe(items[i])\r\n        }\r\n    }\r\n\r\n    // helpers\r\n\r\n    /**\r\n     * Augment an target Object or Array by intercepting\r\n     * the prototype chain using __proto__\r\n     */\r\n    function protoAugment(target, src, keys) {\r\n        /* eslint-disable no-proto */\r\n        target.__proto__ = src\r\n        /* eslint-enable no-proto */\r\n    }\r\n\r\n    /**\r\n     * Augment an target Object or Array by defining\r\n     * hidden properties.\r\n     */\r\n    /* istanbul ignore next */\r\n    function copyAugment(target, src, keys) {\r\n        for (var i = 0, l = keys.length; i < l; i++) {\r\n            var key = keys[i]\r\n            def(target, key, src[key])\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Attempt to create an observer instance for a value,\r\n     * returns the new observer if successfully observed,\r\n     * or the existing observer if the value already has one.\r\n     */\r\n    function observe(value, asRootData) {\r\n        if (!isObject(value)) {\r\n            return\r\n        }\r\n        var ob\r\n        if (hasOwn(value, \"__ob__\") && value.__ob__ instanceof Observer) {\r\n            ob = value.__ob__\r\n        } else if (\r\n            observerState.shouldConvert &&\r\n            !isServerRendering() &&\r\n            (Array.isArray(value) || isPlainObject(value)) &&\r\n            Object.isExtensible(value) &&\r\n            !value._isVue\r\n        ) {\r\n            ob = new Observer(value)\r\n        }\r\n        if (asRootData && ob) {\r\n            ob.vmCount++\r\n        }\r\n        return ob\r\n    }\r\n\r\n    /**\r\n     * Define a reactive property on an Object.\r\n     */\r\n    function defineReactive$$1(obj, key, val, customSetter, shallow) {\r\n        var dep = new Dep()\r\n\r\n        var property = Object.getOwnPropertyDescriptor(obj, key)\r\n        if (property && property.configurable === false) {\r\n            return\r\n        }\r\n\r\n        // cater for pre-defined getter/setters\r\n        var getter = property && property.get\r\n        var setter = property && property.set\r\n\r\n        var childOb = !shallow && observe(val)\r\n        Object.defineProperty(obj, key, {\r\n            enumerable: true,\r\n            configurable: true,\r\n            get: function reactiveGetter() {\r\n                var value = getter ? getter.call(obj) : val\r\n                if (Dep.target) {\r\n                    dep.depend()\r\n                    if (childOb) {\r\n                        childOb.dep.depend()\r\n                    }\r\n                    if (Array.isArray(value)) {\r\n                        dependArray(value)\r\n                    }\r\n                }\r\n                return value\r\n            },\r\n            set: function reactiveSetter(newVal) {\r\n                var value = getter ? getter.call(obj) : val\r\n                /* eslint-disable no-self-compare */\r\n                if (newVal === value || (newVal !== newVal && value !== value)) {\r\n                    return\r\n                }\r\n                /* eslint-enable no-self-compare */\r\n                if (false) {}\r\n                if (setter) {\r\n                    setter.call(obj, newVal)\r\n                } else {\r\n                    val = newVal\r\n                }\r\n                childOb = !shallow && observe(newVal)\r\n                dep.notify()\r\n            }\r\n        })\r\n    }\r\n\r\n    /**\r\n     * Set a property on an object. Adds the new property and\r\n     * triggers change notification if the property doesn't\r\n     * already exist.\r\n     */\r\n    function set(target, key, val) {\r\n        if (Array.isArray(target) && isValidArrayIndex(key)) {\r\n            target.length = Math.max(target.length, key)\r\n            target.splice(key, 1, val)\r\n            return val\r\n        }\r\n        if (hasOwn(target, key)) {\r\n            target[key] = val\r\n            return val\r\n        }\r\n        var ob = target.__ob__\r\n        if (target._isVue || (ob && ob.vmCount)) {\r\n             false &&\r\n                false\r\n            return val\r\n        }\r\n        if (!ob) {\r\n            target[key] = val\r\n            return val\r\n        }\r\n        defineReactive$$1(ob.value, key, val)\r\n        ob.dep.notify()\r\n        return val\r\n    }\r\n\r\n    /**\r\n     * Delete a property and trigger change if necessary.\r\n     */\r\n    function del(target, key) {\r\n        if (Array.isArray(target) && isValidArrayIndex(key)) {\r\n            target.splice(key, 1)\r\n            return\r\n        }\r\n        var ob = target.__ob__\r\n        if (target._isVue || (ob && ob.vmCount)) {\r\n             false &&\r\n                false\r\n            return\r\n        }\r\n        if (!hasOwn(target, key)) {\r\n            return\r\n        }\r\n        delete target[key]\r\n        if (!ob) {\r\n            return\r\n        }\r\n        ob.dep.notify()\r\n    }\r\n\r\n    /**\r\n     * Collect dependencies on array elements when the array is touched, since\r\n     * we cannot intercept array element access like property getters.\r\n     */\r\n    function dependArray(value) {\r\n        for (var e = void 0, i = 0, l = value.length; i < l; i++) {\r\n            e = value[i]\r\n            e && e.__ob__ && e.__ob__.dep.depend()\r\n            if (Array.isArray(e)) {\r\n                dependArray(e)\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Option overwriting strategies are functions that handle\r\n     * how to merge a parent option value and a child option\r\n     * value into the final value.\r\n     */\r\n    var strats = config.optionMergeStrategies\r\n\r\n    /**\r\n     * Options with restrictions\r\n     */\r\n    /**\r\n     * Helper that recursively merges two data objects together.\r\n     */\r\n    function mergeData(to, from) {\r\n        if (!from) {\r\n            return to\r\n        }\r\n        var key, toVal, fromVal\r\n        var keys = Object.keys(from)\r\n        for (var i = 0; i < keys.length; i++) {\r\n            key = keys[i]\r\n            toVal = to[key]\r\n            fromVal = from[key]\r\n            if (!hasOwn(to, key)) {\r\n                set(to, key, fromVal)\r\n            } else if (isPlainObject(toVal) && isPlainObject(fromVal)) {\r\n                mergeData(toVal, fromVal)\r\n            }\r\n        }\r\n        return to\r\n    }\r\n\r\n    /**\r\n     * Data\r\n     */\r\n    function mergeDataOrFn(parentVal, childVal, vm) {\r\n        if (!vm) {\r\n            // in a Vue.extend merge, both should be functions\r\n            if (!childVal) {\r\n                return parentVal\r\n            }\r\n            if (!parentVal) {\r\n                return childVal\r\n            }\r\n            // when parentVal & childVal are both present,\r\n            // we need to return a function that returns the\r\n            // merged result of both functions... no need to\r\n            // check if parentVal is a function here because\r\n            // it has to be a function to pass previous merges.\r\n            return function mergedDataFn() {\r\n                return mergeData(\r\n                    typeof childVal === \"function\" ? childVal.call(this) : childVal,\r\n                    parentVal.call(this)\r\n                )\r\n            }\r\n        } else if (parentVal || childVal) {\r\n            return function mergedInstanceDataFn() {\r\n                // instance merge\r\n                var instanceData = typeof childVal === \"function\" ? childVal.call(vm) : childVal\r\n                var defaultData = typeof parentVal === \"function\" ? parentVal.call(vm) : undefined\r\n                if (instanceData) {\r\n                    return mergeData(instanceData, defaultData)\r\n                } else {\r\n                    return defaultData\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    strats.data = function(parentVal, childVal, vm) {\r\n        if (!vm) {\r\n            if (childVal && typeof childVal !== \"function\") {\r\n                 false &&\r\n                    false\r\n\r\n                return parentVal\r\n            }\r\n            return mergeDataOrFn.call(this, parentVal, childVal)\r\n        }\r\n\r\n        return mergeDataOrFn(parentVal, childVal, vm)\r\n    }\r\n\r\n    /**\r\n     * Hooks and props are merged as arrays.\r\n     */\r\n    function mergeHook(parentVal, childVal) {\r\n        return childVal\r\n            ? parentVal\r\n                ? parentVal.concat(childVal)\r\n                : Array.isArray(childVal)\r\n                    ? childVal\r\n                    : [childVal]\r\n            : parentVal\r\n    }\r\n\r\n    LIFECYCLE_HOOKS.forEach(function(hook) {\r\n        strats[hook] = mergeHook\r\n    })\r\n\r\n    /**\r\n     * Assets\r\n     *\r\n     * When a vm is present (instance creation), we need to do\r\n     * a three-way merge between constructor options, instance\r\n     * options and parent options.\r\n     */\r\n    function mergeAssets(parentVal, childVal) {\r\n        var res = Object.create(parentVal || null)\r\n        return childVal ? extend(res, childVal) : res\r\n    }\r\n\r\n    ASSET_TYPES.forEach(function(type) {\r\n        strats[type + \"s\"] = mergeAssets\r\n    })\r\n\r\n    /**\r\n     * Watchers.\r\n     *\r\n     * Watchers hashes should not overwrite one\r\n     * another, so we merge them as arrays.\r\n     */\r\n    strats.watch = function(parentVal, childVal) {\r\n        // work around Firefox's Object.prototype.watch...\r\n        if (parentVal === nativeWatch) {\r\n            parentVal = undefined\r\n        }\r\n        if (childVal === nativeWatch) {\r\n            childVal = undefined\r\n        }\r\n        /* istanbul ignore if */\r\n        if (!childVal) {\r\n            return Object.create(parentVal || null)\r\n        }\r\n        if (!parentVal) {\r\n            return childVal\r\n        }\r\n        var ret = {}\r\n        extend(ret, parentVal)\r\n        for (var key in childVal) {\r\n            var parent = ret[key]\r\n            var child = childVal[key]\r\n            if (parent && !Array.isArray(parent)) {\r\n                parent = [parent]\r\n            }\r\n            ret[key] = parent ? parent.concat(child) : Array.isArray(child) ? child : [child]\r\n        }\r\n        return ret\r\n    }\r\n\r\n    /**\r\n     * Other object hashes.\r\n     */\r\n    strats.props = strats.methods = strats.inject = strats.computed = function(\r\n        parentVal,\r\n        childVal\r\n    ) {\r\n        if (!childVal) {\r\n            return Object.create(parentVal || null)\r\n        }\r\n        if (!parentVal) {\r\n            return childVal\r\n        }\r\n        var ret = Object.create(null)\r\n        extend(ret, parentVal)\r\n        extend(ret, childVal)\r\n        return ret\r\n    }\r\n    strats.provide = mergeDataOrFn\r\n\r\n    /**\r\n     * Default strategy.\r\n     */\r\n    var defaultStrat = function(parentVal, childVal) {\r\n        return childVal === undefined ? parentVal : childVal\r\n    }\r\n\r\n    /**\r\n     * Ensure all props option syntax are normalized into the\r\n     * Object-based format.\r\n     */\r\n    function normalizeProps(options) {\r\n        var props = options.props\r\n        if (!props) {\r\n            return\r\n        }\r\n        var res = {}\r\n        var i, val, name\r\n        if (Array.isArray(props)) {\r\n            i = props.length\r\n            while (i--) {\r\n                val = props[i]\r\n                if (typeof val === \"string\") {\r\n                    name = camelize(val)\r\n                    res[name] = {\r\n                        type: null\r\n                    }\r\n                } else {\r\n                }\r\n            }\r\n        } else if (isPlainObject(props)) {\r\n            for (var key in props) {\r\n                val = props[key]\r\n                name = camelize(key)\r\n                res[name] = isPlainObject(val)\r\n                    ? val\r\n                    : {\r\n                          type: val\r\n                      }\r\n            }\r\n        }\r\n        options.props = res\r\n    }\r\n\r\n    /**\r\n     * Normalize all injections into Object-based format\r\n     */\r\n    function normalizeInject(options) {\r\n        var inject = options.inject\r\n        if (Array.isArray(inject)) {\r\n            var normalized = (options.inject = {})\r\n            for (var i = 0; i < inject.length; i++) {\r\n                normalized[inject[i]] = inject[i]\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Normalize raw function directives into object format.\r\n     */\r\n    function normalizeDirectives(options) {\r\n        var dirs = options.directives\r\n        if (dirs) {\r\n            for (var key in dirs) {\r\n                var def = dirs[key]\r\n                if (typeof def === \"function\") {\r\n                    dirs[key] = {\r\n                        bind: def,\r\n                        update: def\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Merge two option objects into a new one.\r\n     * Core utility used in both instantiation and inheritance.\r\n     */\r\n    function mergeOptions(parent, child, vm) {\r\n        if (typeof child === \"function\") {\r\n            child = child.options\r\n        }\r\n\r\n        normalizeProps(child)\r\n        normalizeInject(child)\r\n        normalizeDirectives(child)\r\n        var extendsFrom = child.extends\r\n        if (extendsFrom) {\r\n            parent = mergeOptions(parent, extendsFrom, vm)\r\n        }\r\n        if (child.mixins) {\r\n            for (var i = 0, l = child.mixins.length; i < l; i++) {\r\n                parent = mergeOptions(parent, child.mixins[i], vm)\r\n            }\r\n        }\r\n        var options = {}\r\n        var key\r\n        for (key in parent) {\r\n            mergeField(key)\r\n        }\r\n        for (key in child) {\r\n            if (!hasOwn(parent, key)) {\r\n                mergeField(key)\r\n            }\r\n        }\r\n\r\n        function mergeField(key) {\r\n            var strat = strats[key] || defaultStrat\r\n            options[key] = strat(parent[key], child[key], vm, key)\r\n        }\r\n        return options\r\n    }\r\n\r\n    /**\r\n     * Resolve an asset.\r\n     * This function is used because child instances need access\r\n     * to assets defined in its ancestor chain.\r\n     */\r\n    function resolveAsset(options, type, id, warnMissing) {\r\n        /* istanbul ignore if */\r\n        if (typeof id !== \"string\") {\r\n            return\r\n        }\r\n        var assets = options[type]\r\n        // check local registration variations first\r\n        if (hasOwn(assets, id)) {\r\n            return assets[id]\r\n        }\r\n        var camelizedId = camelize(id)\r\n        if (hasOwn(assets, camelizedId)) {\r\n            return assets[camelizedId]\r\n        }\r\n        var PascalCaseId = capitalize(camelizedId)\r\n        if (hasOwn(assets, PascalCaseId)) {\r\n            return assets[PascalCaseId]\r\n        }\r\n        // fallback to prototype chain\r\n        var res = assets[id] || assets[camelizedId] || assets[PascalCaseId]\r\n        if (false) {}\r\n        return res\r\n    }\r\n\r\n    /*  */\r\n\r\n    function validateProp(key, propOptions, propsData, vm) {\r\n        var prop = propOptions[key]\r\n        var absent = !hasOwn(propsData, key)\r\n        var value = propsData[key]\r\n        // handle boolean props\r\n        if (isType(Boolean, prop.type)) {\r\n            if (absent && !hasOwn(prop, \"default\")) {\r\n                value = false\r\n            } else if (!isType(String, prop.type) && (value === \"\" || value === hyphenate(key))) {\r\n                value = true\r\n            }\r\n        }\r\n        // check default value\r\n        if (value === undefined) {\r\n            value = getPropDefaultValue(vm, prop, key)\r\n            // since the default value is a fresh copy,\r\n            // make sure to observe it.\r\n            var prevShouldConvert = observerState.shouldConvert\r\n            observerState.shouldConvert = true\r\n            observe(value)\r\n            observerState.shouldConvert = prevShouldConvert\r\n        }\r\n        return value\r\n    }\r\n\r\n    /**\r\n     * Get the default value of a prop.\r\n     */\r\n    function getPropDefaultValue(vm, prop, key) {\r\n        // no default, return undefined\r\n        if (!hasOwn(prop, \"default\")) {\r\n            return undefined\r\n        }\r\n        var def = prop.default\r\n        // warn against non-factory defaults for Object & Array\r\n        if (false) {}\r\n        // the raw prop value was also undefined from previous render,\r\n        // return previous default value to avoid unnecessary watcher trigger\r\n        if (\r\n            vm &&\r\n            vm.$options.propsData &&\r\n            vm.$options.propsData[key] === undefined &&\r\n            vm._props[key] !== undefined\r\n        ) {\r\n            return vm._props[key]\r\n        }\r\n        // call factory function for non-Function types\r\n        // a value is Function if its prototype is function even across different execution context\r\n        return typeof def === \"function\" && getType(prop.type) !== \"Function\" ? def.call(vm) : def\r\n    }\r\n\r\n    /**\r\n     * Use function string name to check built-in types,\r\n     * because a simple equality check will fail when running\r\n     * across different vms / iframes.\r\n     */\r\n    function getType(fn) {\r\n        var match = fn && fn.toString().match(/^\\s*function (\\w+)/)\r\n        return match ? match[1] : \"\"\r\n    }\r\n\r\n    function isType(type, fn) {\r\n        if (!Array.isArray(fn)) {\r\n            return getType(fn) === getType(type)\r\n        }\r\n        for (var i = 0, len = fn.length; i < len; i++) {\r\n            if (getType(fn[i]) === getType(type)) {\r\n                return true\r\n            }\r\n        }\r\n        /* istanbul ignore next */\r\n        return false\r\n    }\r\n\r\n    /*  */\r\n\r\n    /* not type checking this file because flow doesn't play well with Proxy */\r\n\r\n    var mark\r\n    var measure\r\n\r\n    /*  */\r\n\r\n    var VNode = function VNode(\r\n        tag,\r\n        data,\r\n        children,\r\n        text,\r\n        elm,\r\n        context,\r\n        componentOptions,\r\n        asyncFactory\r\n    ) {\r\n        this.tag = tag\r\n        this.data = data\r\n        this.children = children\r\n        this.text = text\r\n        this.elm = elm\r\n        this.ns = undefined\r\n        this.context = context\r\n        this.functionalContext = undefined\r\n        this.key = data && data.key\r\n        this.componentOptions = componentOptions\r\n        this.componentInstance = undefined\r\n        this.parent = undefined\r\n        this.raw = false\r\n        this.isStatic = false\r\n        this.isRootInsert = true\r\n        this.isComment = false\r\n        this.isCloned = false\r\n        this.isOnce = false\r\n        this.asyncFactory = asyncFactory\r\n        this.asyncMeta = undefined\r\n        this.isAsyncPlaceholder = false\r\n    }\r\n\r\n    var prototypeAccessors = {\r\n        child: {}\r\n    }\r\n\r\n    // DEPRECATED: alias for componentInstance for backwards compat.\r\n    /* istanbul ignore next */\r\n    prototypeAccessors.child.get = function() {\r\n        return this.componentInstance\r\n    }\r\n\r\n    Object.defineProperties(VNode.prototype, prototypeAccessors)\r\n\r\n    var createEmptyVNode = function(text) {\r\n        if (text === void 0) text = \"\"\r\n\r\n        var node = new VNode()\r\n        node.text = text\r\n        node.isComment = true\r\n        return node\r\n    }\r\n\r\n    function createTextVNode(val) {\r\n        return new VNode(undefined, undefined, undefined, String(val))\r\n    }\r\n\r\n    // optimized shallow clone\r\n    // used for static nodes and slot nodes because they may be reused across\r\n    // multiple renders, cloning them avoids errors when DOM manipulations rely\r\n    // on their elm reference.\r\n    function cloneVNode(vnode) {\r\n        var cloned = new VNode(\r\n            vnode.tag,\r\n            vnode.data,\r\n            vnode.children,\r\n            vnode.text,\r\n            vnode.elm,\r\n            vnode.context,\r\n            vnode.componentOptions,\r\n            vnode.asyncFactory\r\n        )\r\n        cloned.ns = vnode.ns\r\n        cloned.isStatic = vnode.isStatic\r\n        cloned.key = vnode.key\r\n        cloned.isComment = vnode.isComment\r\n        cloned.isCloned = true\r\n        return cloned\r\n    }\r\n\r\n    function cloneVNodes(vnodes) {\r\n        var len = vnodes.length\r\n        var res = new Array(len)\r\n        for (var i = 0; i < len; i++) {\r\n            res[i] = cloneVNode(vnodes[i])\r\n        }\r\n        return res\r\n    }\r\n\r\n    /*  */\r\n\r\n    var normalizeEvent = cached(function(name) {\r\n        var passive = name.charAt(0) === \"&\"\r\n        name = passive ? name.slice(1) : name\r\n        var once$$1 = name.charAt(0) === \"~\" // Prefixed last, checked first\r\n        name = once$$1 ? name.slice(1) : name\r\n        var capture = name.charAt(0) === \"!\"\r\n        name = capture ? name.slice(1) : name\r\n        return {\r\n            name: name,\r\n            once: once$$1,\r\n            capture: capture,\r\n            passive: passive\r\n        }\r\n    })\r\n\r\n    function createFnInvoker(fns) {\r\n        function invoker() {\r\n            var arguments$1 = arguments\r\n\r\n            var fns = invoker.fns\r\n            if (Array.isArray(fns)) {\r\n                var cloned = fns.slice()\r\n                for (var i = 0; i < cloned.length; i++) {\r\n                    cloned[i].apply(null, arguments$1)\r\n                }\r\n            } else {\r\n                // return handler return value for single handlers\r\n                return fns.apply(null, arguments)\r\n            }\r\n        }\r\n        invoker.fns = fns\r\n        return invoker\r\n    }\r\n\r\n    function updateListeners(on, oldOn, add, remove$$1, vm) {\r\n        var name, cur, old, event\r\n        for (name in on) {\r\n            cur = on[name]\r\n            old = oldOn[name]\r\n            event = normalizeEvent(name)\r\n            if (isUndef(cur)) {\r\n                 false &&\r\n                    false\r\n            } else if (isUndef(old)) {\r\n                if (isUndef(cur.fns)) {\r\n                    cur = on[name] = createFnInvoker(cur)\r\n                }\r\n                add(event.name, cur, event.once, event.capture, event.passive)\r\n            } else if (cur !== old) {\r\n                old.fns = cur\r\n                on[name] = old\r\n            }\r\n        }\r\n        for (name in oldOn) {\r\n            if (isUndef(on[name])) {\r\n                event = normalizeEvent(name)\r\n                remove$$1(event.name, oldOn[name], event.capture)\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    /*  */\r\n\r\n    function extractPropsFromVNodeData(data, Ctor, tag) {\r\n        // we are only extracting raw values here.\r\n        // validation and default values are handled in the child\r\n        // component itself.\r\n        var propOptions = Ctor.options.props\r\n        if (isUndef(propOptions)) {\r\n            return\r\n        }\r\n        var res = {}\r\n        var attrs = data.attrs\r\n        var props = data.props\r\n        if (isDef(attrs) || isDef(props)) {\r\n            for (var key in propOptions) {\r\n                var altKey = hyphenate(key)\r\n                checkProp(res, props, key, altKey, true) ||\r\n                    checkProp(res, attrs, key, altKey, false)\r\n            }\r\n        }\r\n        return res\r\n    }\r\n\r\n    function checkProp(res, hash, key, altKey, preserve) {\r\n        if (isDef(hash)) {\r\n            if (hasOwn(hash, key)) {\r\n                res[key] = hash[key]\r\n                if (!preserve) {\r\n                    delete hash[key]\r\n                }\r\n                return true\r\n            } else if (hasOwn(hash, altKey)) {\r\n                res[key] = hash[altKey]\r\n                if (!preserve) {\r\n                    delete hash[altKey]\r\n                }\r\n                return true\r\n            }\r\n        }\r\n        return false\r\n    }\r\n\r\n    /*  */\r\n\r\n    // The template compiler attempts to minimize the need for normalization by\r\n    // statically analyzing the template at compile time.\r\n    //\r\n    // For plain HTML markup, normalization can be completely skipped because the\r\n    // generated render function is guaranteed to return Array<VNode>. There are\r\n    // two cases where extra normalization is needed:\r\n\r\n    // 1. When the children contains components - because a functional component\r\n    // may return an Array instead of a single root. In this case, just a simple\r\n    // normalization is needed - if any child is an Array, we flatten the whole\r\n    // thing with Array.prototype.concat. It is guaranteed to be only 1-level deep\r\n    // because functional components already normalize their own children.\r\n    function simpleNormalizeChildren(children) {\r\n        for (var i = 0; i < children.length; i++) {\r\n            if (Array.isArray(children[i])) {\r\n                return Array.prototype.concat.apply([], children)\r\n            }\r\n        }\r\n        return children\r\n    }\r\n\r\n    // 2. When the children contains constructs that always generated nested Arrays,\r\n    // e.g. <template>, <slot>, v-for, or when the children is provided by user\r\n    // with hand-written render functions / JSX. In such cases a full normalization\r\n    // is needed to cater to all possible types of children values.\r\n    function normalizeChildren(children) {\r\n        return isPrimitive(children)\r\n            ? [createTextVNode(children)]\r\n            : Array.isArray(children)\r\n                ? normalizeArrayChildren(children)\r\n                : undefined\r\n    }\r\n\r\n    function isTextNode(node) {\r\n        return isDef(node) && isDef(node.text) && isFalse(node.isComment)\r\n    }\r\n\r\n    function normalizeArrayChildren(children, nestedIndex) {\r\n        var res = []\r\n        var i, c, last\r\n        for (i = 0; i < children.length; i++) {\r\n            c = children[i]\r\n            if (isUndef(c) || typeof c === \"boolean\") {\r\n                continue\r\n            }\r\n            last = res[res.length - 1]\r\n            //  nested\r\n            if (Array.isArray(c)) {\r\n                res.push.apply(res, normalizeArrayChildren(c, (nestedIndex || \"\") + \"_\" + i))\r\n            } else if (isPrimitive(c)) {\r\n                if (isTextNode(last)) {\r\n                    // merge adjacent text nodes\r\n                    // this is necessary for SSR hydration because text nodes are\r\n                    // essentially merged when rendered to HTML strings\r\n                    last.text += String(c)\r\n                } else if (c !== \"\") {\r\n                    // convert primitive to vnode\r\n                    res.push(createTextVNode(c))\r\n                }\r\n            } else {\r\n                if (isTextNode(c) && isTextNode(last)) {\r\n                    // merge adjacent text nodes\r\n                    res[res.length - 1] = createTextVNode(last.text + c.text)\r\n                } else {\r\n                    // default key for nested array children (likely generated by v-for)\r\n                    if (\r\n                        isTrue(children._isVList) &&\r\n                        isDef(c.tag) &&\r\n                        isUndef(c.key) &&\r\n                        isDef(nestedIndex)\r\n                    ) {\r\n                        c.key = \"__vlist\" + nestedIndex + \"_\" + i + \"__\"\r\n                    }\r\n                    res.push(c)\r\n                }\r\n            }\r\n        }\r\n        return res\r\n    }\r\n\r\n    /*  */\r\n\r\n    function ensureCtor(comp, base) {\r\n        if (comp.__esModule && comp.default) {\r\n            comp = comp.default\r\n        }\r\n        return isObject(comp) ? base.extend(comp) : comp\r\n    }\r\n\r\n    function createAsyncPlaceholder(factory, data, context, children, tag) {\r\n        var node = createEmptyVNode()\r\n        node.asyncFactory = factory\r\n        node.asyncMeta = {\r\n            data: data,\r\n            context: context,\r\n            children: children,\r\n            tag: tag\r\n        }\r\n        return node\r\n    }\r\n\r\n    function resolveAsyncComponent(factory, baseCtor, context) {\r\n        if (isTrue(factory.error) && isDef(factory.errorComp)) {\r\n            return factory.errorComp\r\n        }\r\n\r\n        if (isDef(factory.resolved)) {\r\n            return factory.resolved\r\n        }\r\n\r\n        if (isTrue(factory.loading) && isDef(factory.loadingComp)) {\r\n            return factory.loadingComp\r\n        }\r\n\r\n        if (isDef(factory.contexts)) {\r\n            // already pending\r\n            factory.contexts.push(context)\r\n        } else {\r\n            var contexts = (factory.contexts = [context])\r\n            var sync = true\r\n\r\n            var forceRender = function() {\r\n                for (var i = 0, l = contexts.length; i < l; i++) {\r\n                    contexts[i].$forceUpdate()\r\n                }\r\n            }\r\n\r\n            var resolve = once(function(res) {\r\n                // cache resolved\r\n                factory.resolved = ensureCtor(res, baseCtor)\r\n                // invoke callbacks only if this is not a synchronous resolve\r\n                // (async resolves are shimmed as synchronous during SSR)\r\n                if (!sync) {\r\n                    forceRender()\r\n                }\r\n            })\r\n\r\n            var reject = once(function(reason) {\r\n                 false &&\r\n                    false\r\n                if (isDef(factory.errorComp)) {\r\n                    factory.error = true\r\n                    forceRender()\r\n                }\r\n            })\r\n\r\n            var res = factory(resolve, reject)\r\n\r\n            if (isObject(res)) {\r\n                if (typeof res.then === \"function\") {\r\n                    // () => Promise\r\n                    if (isUndef(factory.resolved)) {\r\n                        res.then(resolve, reject)\r\n                    }\r\n                } else if (isDef(res.component) && typeof res.component.then === \"function\") {\r\n                    res.component.then(resolve, reject)\r\n\r\n                    if (isDef(res.error)) {\r\n                        factory.errorComp = ensureCtor(res.error, baseCtor)\r\n                    }\r\n\r\n                    if (isDef(res.loading)) {\r\n                        factory.loadingComp = ensureCtor(res.loading, baseCtor)\r\n                        if (res.delay === 0) {\r\n                            factory.loading = true\r\n                        } else {\r\n                            setTimeout(function() {\r\n                                if (isUndef(factory.resolved) && isUndef(factory.error)) {\r\n                                    factory.loading = true\r\n                                    forceRender()\r\n                                }\r\n                            }, res.delay || 200)\r\n                        }\r\n                    }\r\n\r\n                    if (isDef(res.timeout)) {\r\n                        setTimeout(function() {\r\n                            if (isUndef(factory.resolved)) {\r\n                                reject(null)\r\n                            }\r\n                        }, res.timeout)\r\n                    }\r\n                }\r\n            }\r\n\r\n            sync = false\r\n            // return in case resolved synchronously\r\n            return factory.loading ? factory.loadingComp : factory.resolved\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    function getFirstComponentChild(children) {\r\n        if (Array.isArray(children)) {\r\n            for (var i = 0; i < children.length; i++) {\r\n                var c = children[i]\r\n                if (isDef(c) && isDef(c.componentOptions)) {\r\n                    return c\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    /*  */\r\n\r\n    function initEvents(vm) {\r\n        vm._events = Object.create(null)\r\n        vm._hasHookEvent = false\r\n        // init parent attached events\r\n        var listeners = vm.$options._parentListeners\r\n        if (listeners) {\r\n            updateComponentListeners(vm, listeners)\r\n        }\r\n    }\r\n\r\n    var target\r\n\r\n    function add(event, fn, once$$1) {\r\n        if (once$$1) {\r\n            target.$once(event, fn)\r\n        } else {\r\n            target.$on(event, fn)\r\n        }\r\n    }\r\n\r\n    function remove$1(event, fn) {\r\n        target.$off(event, fn)\r\n    }\r\n\r\n    function updateComponentListeners(vm, listeners, oldListeners) {\r\n        target = vm\r\n        updateListeners(listeners, oldListeners || {}, add, remove$1, vm)\r\n    }\r\n\r\n    function eventsMixin(Vue) {\r\n        var hookRE = /^hook:/\r\n        Vue.prototype.$on = function(event, fn) {\r\n            var this$1 = this\r\n\r\n            var vm = this\r\n            if (Array.isArray(event)) {\r\n                for (var i = 0, l = event.length; i < l; i++) {\r\n                    this$1.$on(event[i], fn)\r\n                }\r\n            } else {\r\n                ;(vm._events[event] || (vm._events[event] = [])).push(fn)\r\n                // optimize hook:event cost by using a boolean flag marked at registration\r\n                // instead of a hash lookup\r\n                if (hookRE.test(event)) {\r\n                    vm._hasHookEvent = true\r\n                }\r\n            }\r\n            return vm\r\n        }\r\n\r\n        Vue.prototype.$once = function(event, fn) {\r\n            var vm = this\r\n\r\n            function on() {\r\n                vm.$off(event, on)\r\n                fn.apply(vm, arguments)\r\n            }\r\n            on.fn = fn\r\n            vm.$on(event, on)\r\n            return vm\r\n        }\r\n\r\n        Vue.prototype.$off = function(event, fn) {\r\n            var this$1 = this\r\n\r\n            var vm = this\r\n            // all\r\n            if (!arguments.length) {\r\n                vm._events = Object.create(null)\r\n                return vm\r\n            }\r\n            // array of events\r\n            if (Array.isArray(event)) {\r\n                for (var i$1 = 0, l = event.length; i$1 < l; i$1++) {\r\n                    this$1.$off(event[i$1], fn)\r\n                }\r\n                return vm\r\n            }\r\n            // specific event\r\n            var cbs = vm._events[event]\r\n            if (!cbs) {\r\n                return vm\r\n            }\r\n            if (arguments.length === 1) {\r\n                vm._events[event] = null\r\n                return vm\r\n            }\r\n            // specific handler\r\n            var cb\r\n            var i = cbs.length\r\n            while (i--) {\r\n                cb = cbs[i]\r\n                if (cb === fn || cb.fn === fn) {\r\n                    cbs.splice(i, 1)\r\n                    break\r\n                }\r\n            }\r\n            return vm\r\n        }\r\n\r\n        Vue.prototype.$emit = function(event) {\r\n            var vm = this\r\n            var cbs = vm._events[event]\r\n            if (cbs) {\r\n                cbs = cbs.length > 1 ? toArray(cbs) : cbs\r\n                var args = toArray(arguments, 1)\r\n                for (var i = 0, l = cbs.length; i < l; i++) {\r\n                    try {\r\n                        cbs[i].apply(vm, args)\r\n                    } catch (e) {\r\n                        handleError(e, vm, 'event handler for \"' + event + '\"')\r\n                    }\r\n                }\r\n            }\r\n            return vm\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Runtime helper for resolving raw children VNodes into a slot object.\r\n     */\r\n    function resolveSlots(children, context) {\r\n        var slots = {}\r\n        if (!children) {\r\n            return slots\r\n        }\r\n        var defaultSlot = []\r\n        for (var i = 0, l = children.length; i < l; i++) {\r\n            var child = children[i]\r\n            // named slots should only be respected if the vnode was rendered in the\r\n            // same context.\r\n            if (\r\n                (child.context === context || child.functionalContext === context) &&\r\n                child.data &&\r\n                child.data.slot != null\r\n            ) {\r\n                var name = child.data.slot\r\n                var slot = slots[name] || (slots[name] = [])\r\n                if (child.tag === \"template\") {\r\n                    slot.push.apply(slot, child.children)\r\n                } else {\r\n                    slot.push(child)\r\n                }\r\n            } else {\r\n                defaultSlot.push(child)\r\n            }\r\n        }\r\n        // ignore whitespace\r\n        if (!defaultSlot.every(isWhitespace)) {\r\n            slots.default = defaultSlot\r\n        }\r\n        return slots\r\n    }\r\n\r\n    function isWhitespace(node) {\r\n        return node.isComment || node.text === \" \"\r\n    }\r\n\r\n    function resolveScopedSlots(\r\n        fns, // see flow/vnode\r\n        res\r\n    ) {\r\n        res = res || {}\r\n        for (var i = 0; i < fns.length; i++) {\r\n            if (Array.isArray(fns[i])) {\r\n                resolveScopedSlots(fns[i], res)\r\n            } else {\r\n                res[fns[i].key] = fns[i].fn\r\n            }\r\n        }\r\n        return res\r\n    }\r\n\r\n    /*  */\r\n\r\n    var activeInstance = null\r\n\r\n    function initLifecycle(vm) {\r\n        var options = vm.$options\r\n\r\n        // locate first non-abstract parent\r\n        var parent = options.parent\r\n        if (parent && !options.abstract) {\r\n            while (parent.$options.abstract && parent.$parent) {\r\n                parent = parent.$parent\r\n            }\r\n            parent.$children.push(vm)\r\n        }\r\n\r\n        vm.$parent = parent\r\n        vm.$root = parent ? parent.$root : vm\r\n\r\n        vm.$children = []\r\n        vm.$refs = {}\r\n\r\n        vm._watcher = null\r\n        vm._inactive = null\r\n        vm._directInactive = false\r\n        vm._isMounted = false\r\n        vm._isDestroyed = false\r\n        vm._isBeingDestroyed = false\r\n    }\r\n\r\n    function lifecycleMixin(Vue) {\r\n        Vue.prototype._update = function(vnode, hydrating) {\r\n            var vm = this\r\n            if (vm._isMounted) {\r\n                callHook(vm, \"beforeUpdate\")\r\n            }\r\n            var prevEl = vm.$el\r\n            var prevVnode = vm._vnode\r\n            var prevActiveInstance = activeInstance\r\n            activeInstance = vm\r\n            vm._vnode = vnode\r\n            // Vue.prototype.__patch__ is injected in entry points\r\n            // based on the rendering backend used.\r\n            if (!prevVnode) {\r\n                // initial render\r\n                vm.$el = vm.__patch__(\r\n                    vm.$el,\r\n                    vnode,\r\n                    hydrating,\r\n                    false /* removeOnly */,\r\n                    vm.$options._parentElm,\r\n                    vm.$options._refElm\r\n                )\r\n                // no need for the ref nodes after initial patch\r\n                // this prevents keeping a detached DOM tree in memory (#5851)\r\n                vm.$options._parentElm = vm.$options._refElm = null\r\n            } else {\r\n                // updates\r\n                vm.$el = vm.__patch__(prevVnode, vnode)\r\n            }\r\n            activeInstance = prevActiveInstance\r\n            // update __vue__ reference\r\n            if (prevEl) {\r\n                prevEl.__vue__ = null\r\n            }\r\n            if (vm.$el) {\r\n                vm.$el.__vue__ = vm\r\n            }\r\n            // if parent is an HOC, update its $el as well\r\n            if (vm.$vnode && vm.$parent && vm.$vnode === vm.$parent._vnode) {\r\n                vm.$parent.$el = vm.$el\r\n            }\r\n            // updated hook is called by the scheduler to ensure that children are\r\n            // updated in a parent's updated hook.\r\n        }\r\n\r\n        Vue.prototype.$forceUpdate = function() {\r\n            var vm = this\r\n            if (vm._watcher) {\r\n                vm._watcher.update()\r\n            }\r\n        }\r\n\r\n        Vue.prototype.$destroy = function() {\r\n            var vm = this\r\n            if (vm._isBeingDestroyed) {\r\n                return\r\n            }\r\n            callHook(vm, \"beforeDestroy\")\r\n            vm._isBeingDestroyed = true\r\n            // remove self from parent\r\n            var parent = vm.$parent\r\n            if (parent && !parent._isBeingDestroyed && !vm.$options.abstract) {\r\n                remove(parent.$children, vm)\r\n            }\r\n            // teardown watchers\r\n            if (vm._watcher) {\r\n                vm._watcher.teardown()\r\n            }\r\n            var i = vm._watchers.length\r\n            while (i--) {\r\n                vm._watchers[i].teardown()\r\n            }\r\n            // remove reference from data ob\r\n            // frozen object may not have observer.\r\n            if (vm._data.__ob__) {\r\n                vm._data.__ob__.vmCount--\r\n            }\r\n            // call the last hook...\r\n            vm._isDestroyed = true\r\n            // invoke destroy hooks on current rendered tree\r\n            vm.__patch__(vm._vnode, null)\r\n            // fire destroyed hook\r\n            callHook(vm, \"destroyed\")\r\n            // turn off all instance listeners.\r\n            vm.$off()\r\n            // remove __vue__ reference\r\n            if (vm.$el) {\r\n                vm.$el.__vue__ = null\r\n            }\r\n        }\r\n    }\r\n\r\n    function mountComponent(vm, el, hydrating) {\r\n        vm.$el = el\r\n        if (!vm.$options.render) {\r\n            vm.$options.render = createEmptyVNode\r\n        }\r\n        callHook(vm, \"beforeMount\")\r\n\r\n        var updateComponent\r\n        /* istanbul ignore if */\r\n        if (false) {} else {\r\n            updateComponent = function() {\r\n                vm._update(vm._render(), hydrating)\r\n            }\r\n        }\r\n\r\n        vm._watcher = new Watcher(vm, updateComponent, noop)\r\n        hydrating = false\r\n\r\n        // manually mounted instance, call mounted on self\r\n        // mounted is called for render-created child components in its inserted hook\r\n        if (vm.$vnode == null) {\r\n            vm._isMounted = true\r\n            callHook(vm, \"mounted\")\r\n        }\r\n        return vm\r\n    }\r\n\r\n    function updateChildComponent(vm, propsData, listeners, parentVnode, renderChildren) {\r\n        var hasChildren = !!(\r\n            renderChildren || // has new static slots\r\n            vm.$options._renderChildren || // has old static slots\r\n            parentVnode.data.scopedSlots || // has new scoped slots\r\n            vm.$scopedSlots !== emptyObject\r\n        ) // has old scoped slots\r\n\r\n        vm.$options._parentVnode = parentVnode\r\n        vm.$vnode = parentVnode // update vm's placeholder node without re-render\r\n\r\n        if (vm._vnode) {\r\n            // update child tree's parent\r\n            vm._vnode.parent = parentVnode\r\n        }\r\n        vm.$options._renderChildren = renderChildren\r\n\r\n        // update $attrs and $listensers hash\r\n        // these are also reactive so they may trigger child update if the child\r\n        // used them during render\r\n        vm.$attrs = parentVnode.data && parentVnode.data.attrs\r\n        vm.$listeners = listeners\r\n\r\n        // update props\r\n        if (propsData && vm.$options.props) {\r\n            observerState.shouldConvert = false\r\n            var props = vm._props\r\n            var propKeys = vm.$options._propKeys || []\r\n            for (var i = 0; i < propKeys.length; i++) {\r\n                var key = propKeys[i]\r\n                props[key] = validateProp(key, vm.$options.props, propsData, vm)\r\n            }\r\n            observerState.shouldConvert = true\r\n            // keep a copy of raw propsData\r\n            vm.$options.propsData = propsData\r\n        }\r\n\r\n        // update listeners\r\n        if (listeners) {\r\n            var oldListeners = vm.$options._parentListeners\r\n            vm.$options._parentListeners = listeners\r\n            updateComponentListeners(vm, listeners, oldListeners)\r\n        }\r\n        // resolve slots + force update if has children\r\n        if (hasChildren) {\r\n            vm.$slots = resolveSlots(renderChildren, parentVnode.context)\r\n            vm.$forceUpdate()\r\n        }\r\n    }\r\n\r\n    function isInInactiveTree(vm) {\r\n        while (vm && (vm = vm.$parent)) {\r\n            if (vm._inactive) {\r\n                return true\r\n            }\r\n        }\r\n        return false\r\n    }\r\n\r\n    function activateChildComponent(vm, direct) {\r\n        if (direct) {\r\n            vm._directInactive = false\r\n            if (isInInactiveTree(vm)) {\r\n                return\r\n            }\r\n        } else if (vm._directInactive) {\r\n            return\r\n        }\r\n        if (vm._inactive || vm._inactive === null) {\r\n            vm._inactive = false\r\n            for (var i = 0; i < vm.$children.length; i++) {\r\n                activateChildComponent(vm.$children[i])\r\n            }\r\n            callHook(vm, \"activated\")\r\n        }\r\n    }\r\n\r\n    function deactivateChildComponent(vm, direct) {\r\n        if (direct) {\r\n            vm._directInactive = true\r\n            if (isInInactiveTree(vm)) {\r\n                return\r\n            }\r\n        }\r\n        if (!vm._inactive) {\r\n            vm._inactive = true\r\n            for (var i = 0; i < vm.$children.length; i++) {\r\n                deactivateChildComponent(vm.$children[i])\r\n            }\r\n            callHook(vm, \"deactivated\")\r\n        }\r\n    }\r\n\r\n    function callHook(vm, hook) {\r\n        var handlers = vm.$options[hook]\r\n        if (handlers) {\r\n            for (var i = 0, j = handlers.length; i < j; i++) {\r\n                try {\r\n                    handlers[i].call(vm)\r\n                } catch (e) {\r\n                    handleError(e, vm, hook + \" hook\")\r\n                }\r\n            }\r\n        }\r\n        if (vm._hasHookEvent) {\r\n            vm.$emit(\"hook:\" + hook)\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    var MAX_UPDATE_COUNT = 100\r\n\r\n    var queue = []\r\n    var activatedChildren = []\r\n    var has = {}\r\n    var circular = {}\r\n    var waiting = false\r\n    var flushing = false\r\n    var index = 0\r\n\r\n    /**\r\n     * Reset the scheduler's state.\r\n     */\r\n    function resetSchedulerState() {\r\n        index = queue.length = activatedChildren.length = 0\r\n        has = {}\r\n        waiting = flushing = false\r\n    }\r\n\r\n    /**\r\n     * Flush both queues and run the watchers.\r\n     */\r\n    function flushSchedulerQueue() {\r\n        flushing = true\r\n        var watcher, id\r\n\r\n        // Sort queue before flush.\r\n        // This ensures that:\r\n        // 1. Components are updated from parent to child. (because parent is always\r\n        //    created before the child)\r\n        // 2. A component's user watchers are run before its render watcher (because\r\n        //    user watchers are created before the render watcher)\r\n        // 3. If a component is destroyed during a parent component's watcher run,\r\n        //    its watchers can be skipped.\r\n        queue.sort(function(a, b) {\r\n            return a.id - b.id\r\n        })\r\n\r\n        // do not cache length because more watchers might be pushed\r\n        // as we run existing watchers\r\n        for (index = 0; index < queue.length; index++) {\r\n            watcher = queue[index]\r\n            id = watcher.id\r\n            has[id] = null\r\n            watcher.run()\r\n            // in dev build, check and stop circular updates.\r\n            if (false) {}\r\n        }\r\n\r\n        // keep copies of post queues before resetting state\r\n        var activatedQueue = activatedChildren.slice()\r\n        var updatedQueue = queue.slice()\r\n\r\n        resetSchedulerState()\r\n\r\n        // call component updated and activated hooks\r\n        callActivatedHooks(activatedQueue)\r\n        callUpdatedHooks(updatedQueue)\r\n\r\n        // devtool hook\r\n        /* istanbul ignore if */\r\n        if (devtools && config.devtools) {\r\n            devtools.emit(\"flush\")\r\n        }\r\n    }\r\n\r\n    function callUpdatedHooks(queue) {\r\n        var i = queue.length\r\n        while (i--) {\r\n            var watcher = queue[i]\r\n            var vm = watcher.vm\r\n            if (vm._watcher === watcher && vm._isMounted) {\r\n                callHook(vm, \"updated\")\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Queue a kept-alive component that was activated during patch.\r\n     * The queue will be processed after the entire tree has been patched.\r\n     */\r\n    function queueActivatedComponent(vm) {\r\n        // setting _inactive to false here so that a render function can\r\n        // rely on checking whether it's in an inactive tree (e.g. router-view)\r\n        vm._inactive = false\r\n        activatedChildren.push(vm)\r\n    }\r\n\r\n    function callActivatedHooks(queue) {\r\n        for (var i = 0; i < queue.length; i++) {\r\n            queue[i]._inactive = true\r\n            activateChildComponent(queue[i], true /* true */)\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Push a watcher into the watcher queue.\r\n     * Jobs with duplicate IDs will be skipped unless it's\r\n     * pushed when the queue is being flushed.\r\n     */\r\n    function queueWatcher(watcher) {\r\n        var id = watcher.id\r\n        if (has[id] == null) {\r\n            has[id] = true\r\n            if (!flushing) {\r\n                queue.push(watcher)\r\n            } else {\r\n                // if already flushing, splice the watcher based on its id\r\n                // if already past its id, it will be run next immediately.\r\n                var i = queue.length - 1\r\n                while (i > index && queue[i].id > watcher.id) {\r\n                    i--\r\n                }\r\n                queue.splice(i + 1, 0, watcher)\r\n            }\r\n            // queue the flush\r\n            if (!waiting) {\r\n                waiting = true\r\n                nextTick(flushSchedulerQueue)\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    var uid$2 = 0\r\n\r\n    /**\r\n     * A watcher parses an expression, collects dependencies,\r\n     * and fires callback when the expression value changes.\r\n     * This is used for both the $watch() api and directives.\r\n     */\r\n    var Watcher = function Watcher(vm, expOrFn, cb, options) {\r\n        this.vm = vm\r\n        vm._watchers.push(this)\r\n        // options\r\n        if (options) {\r\n            this.deep = !!options.deep\r\n            this.user = !!options.user\r\n            this.lazy = !!options.lazy\r\n            this.sync = !!options.sync\r\n        } else {\r\n            this.deep = this.user = this.lazy = this.sync = false\r\n        }\r\n        this.cb = cb\r\n        this.id = ++uid$2 // uid for batching\r\n        this.active = true\r\n        this.dirty = this.lazy // for lazy watchers\r\n        this.deps = []\r\n        this.newDeps = []\r\n        this.depIds = new _Set()\r\n        this.newDepIds = new _Set()\r\n        this.expression = \"\"\r\n        // parse expression for getter\r\n        if (typeof expOrFn === \"function\") {\r\n            this.getter = expOrFn\r\n        } else {\r\n            this.getter = parsePath(expOrFn)\r\n            if (!this.getter) {\r\n                this.getter = function() {}\r\n                 false &&\r\n                    false\r\n            }\r\n        }\r\n        this.value = this.lazy ? undefined : this.get()\r\n    }\r\n\r\n    /**\r\n     * Evaluate the getter, and re-collect dependencies.\r\n     */\r\n    Watcher.prototype.get = function get() {\r\n        pushTarget(this)\r\n        var value\r\n        var vm = this.vm\r\n        try {\r\n            value = this.getter.call(vm, vm)\r\n        } catch (e) {\r\n            if (this.user) {\r\n                handleError(e, vm, 'getter for watcher \"' + this.expression + '\"')\r\n            } else {\r\n                throw e\r\n            }\r\n        } finally {\r\n            // \"touch\" every property so they are all tracked as\r\n            // dependencies for deep watching\r\n            if (this.deep) {\r\n                traverse(value)\r\n            }\r\n            popTarget()\r\n            this.cleanupDeps()\r\n        }\r\n        return value\r\n    }\r\n\r\n    /**\r\n     * Add a dependency to this directive.\r\n     */\r\n    Watcher.prototype.addDep = function addDep(dep) {\r\n        var id = dep.id\r\n        if (!this.newDepIds.has(id)) {\r\n            this.newDepIds.add(id)\r\n            this.newDeps.push(dep)\r\n            if (!this.depIds.has(id)) {\r\n                dep.addSub(this)\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Clean up for dependency collection.\r\n     */\r\n    Watcher.prototype.cleanupDeps = function cleanupDeps() {\r\n        var this$1 = this\r\n\r\n        var i = this.deps.length\r\n        while (i--) {\r\n            var dep = this$1.deps[i]\r\n            if (!this$1.newDepIds.has(dep.id)) {\r\n                dep.removeSub(this$1)\r\n            }\r\n        }\r\n        var tmp = this.depIds\r\n        this.depIds = this.newDepIds\r\n        this.newDepIds = tmp\r\n        this.newDepIds.clear()\r\n        tmp = this.deps\r\n        this.deps = this.newDeps\r\n        this.newDeps = tmp\r\n        this.newDeps.length = 0\r\n    }\r\n\r\n    /**\r\n     * Subscriber interface.\r\n     * Will be called when a dependency changes.\r\n     */\r\n    Watcher.prototype.update = function update() {\r\n        /* istanbul ignore else */\r\n        if (this.lazy) {\r\n            this.dirty = true\r\n        } else if (this.sync) {\r\n            this.run()\r\n        } else {\r\n            queueWatcher(this)\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Scheduler job interface.\r\n     * Will be called by the scheduler.\r\n     */\r\n    Watcher.prototype.run = function run() {\r\n        if (this.active) {\r\n            var value = this.get()\r\n            if (\r\n                value !== this.value ||\r\n                // Deep watchers and watchers on Object/Arrays should fire even\r\n                // when the value is the same, because the value may\r\n                // have mutated.\r\n                isObject(value) ||\r\n                this.deep\r\n            ) {\r\n                // set new value\r\n                var oldValue = this.value\r\n                this.value = value\r\n                if (this.user) {\r\n                    try {\r\n                        this.cb.call(this.vm, value, oldValue)\r\n                    } catch (e) {\r\n                        handleError(e, this.vm, 'callback for watcher \"' + this.expression + '\"')\r\n                    }\r\n                } else {\r\n                    this.cb.call(this.vm, value, oldValue)\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Evaluate the value of the watcher.\r\n     * This only gets called for lazy watchers.\r\n     */\r\n    Watcher.prototype.evaluate = function evaluate() {\r\n        this.value = this.get()\r\n        this.dirty = false\r\n    }\r\n\r\n    /**\r\n     * Depend on all deps collected by this watcher.\r\n     */\r\n    Watcher.prototype.depend = function depend() {\r\n        var this$1 = this\r\n\r\n        var i = this.deps.length\r\n        while (i--) {\r\n            this$1.deps[i].depend()\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Remove self from all dependencies' subscriber list.\r\n     */\r\n    Watcher.prototype.teardown = function teardown() {\r\n        var this$1 = this\r\n\r\n        if (this.active) {\r\n            // remove self from vm's watcher list\r\n            // this is a somewhat expensive operation so we skip it\r\n            // if the vm is being destroyed.\r\n            if (!this.vm._isBeingDestroyed) {\r\n                remove(this.vm._watchers, this)\r\n            }\r\n            var i = this.deps.length\r\n            while (i--) {\r\n                this$1.deps[i].removeSub(this$1)\r\n            }\r\n            this.active = false\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Recursively traverse an object to evoke all converted\r\n     * getters, so that every nested property inside the object\r\n     * is collected as a \"deep\" dependency.\r\n     */\r\n    var seenObjects = new _Set()\r\n\r\n    function traverse(val) {\r\n        seenObjects.clear()\r\n        _traverse(val, seenObjects)\r\n    }\r\n\r\n    function _traverse(val, seen) {\r\n        var i, keys\r\n        var isA = Array.isArray(val)\r\n        if ((!isA && !isObject(val)) || !Object.isExtensible(val)) {\r\n            return\r\n        }\r\n        if (val.__ob__) {\r\n            var depId = val.__ob__.dep.id\r\n            if (seen.has(depId)) {\r\n                return\r\n            }\r\n            seen.add(depId)\r\n        }\r\n        if (isA) {\r\n            i = val.length\r\n            while (i--) {\r\n                _traverse(val[i], seen)\r\n            }\r\n        } else {\r\n            keys = Object.keys(val)\r\n            i = keys.length\r\n            while (i--) {\r\n                _traverse(val[keys[i]], seen)\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    var sharedPropertyDefinition = {\r\n        enumerable: true,\r\n        configurable: true,\r\n        get: noop,\r\n        set: noop\r\n    }\r\n\r\n    function proxy(target, sourceKey, key) {\r\n        sharedPropertyDefinition.get = function proxyGetter() {\r\n            return this[sourceKey][key]\r\n        }\r\n        sharedPropertyDefinition.set = function proxySetter(val) {\r\n            this[sourceKey][key] = val\r\n        }\r\n        Object.defineProperty(target, key, sharedPropertyDefinition)\r\n    }\r\n\r\n    function initState(vm) {\r\n        vm._watchers = []\r\n        var opts = vm.$options\r\n        if (opts.props) {\r\n            initProps(vm, opts.props)\r\n        }\r\n        if (opts.methods) {\r\n            initMethods(vm, opts.methods)\r\n        }\r\n        if (opts.data) {\r\n            initData(vm)\r\n        } else {\r\n            observe((vm._data = {}), true /* asRootData */)\r\n        }\r\n        if (opts.computed) {\r\n            initComputed(vm, opts.computed)\r\n        }\r\n        if (opts.watch && opts.watch !== nativeWatch) {\r\n            initWatch(vm, opts.watch)\r\n        }\r\n    }\r\n\r\n    function checkOptionType(vm, name) {\r\n        var option = vm.$options[name]\r\n        if (!isPlainObject(option)) {\r\n            warn('component option \"' + name + '\" should be an object.', vm)\r\n        }\r\n    }\r\n\r\n    function initProps(vm, propsOptions) {\r\n        var propsData = vm.$options.propsData || {}\r\n        var props = (vm._props = {})\r\n        // cache prop keys so that future props updates can iterate using Array\r\n        // instead of dynamic object key enumeration.\r\n        var keys = (vm.$options._propKeys = [])\r\n        var isRoot = !vm.$parent\r\n        // root instance props should be converted\r\n        observerState.shouldConvert = isRoot\r\n        var loop = function(key) {\r\n            keys.push(key)\r\n            var value = validateProp(key, propsOptions, propsData, vm)\r\n            /* istanbul ignore else */\r\n            {\r\n                defineReactive$$1(props, key, value)\r\n            }\r\n            // static props are already proxied on the component's prototype\r\n            // during Vue.extend(). We only need to proxy props defined at\r\n            // instantiation here.\r\n            if (!(key in vm)) {\r\n                proxy(vm, \"_props\", key)\r\n            }\r\n        }\r\n\r\n        for (var key in propsOptions) loop(key)\r\n        observerState.shouldConvert = true\r\n    }\r\n\r\n    function initData(vm) {\r\n        var data = vm.$options.data\r\n        data = vm._data = typeof data === \"function\" ? getData(data, vm) : data || {}\r\n        if (!isPlainObject(data)) {\r\n            data = {}\r\n             false &&\r\n                false\r\n        }\r\n        // proxy data on instance\r\n        var keys = Object.keys(data)\r\n        var props = vm.$options.props\r\n        var methods = vm.$options.methods\r\n        var i = keys.length\r\n        while (i--) {\r\n            var key = keys[i]\r\n            if (props && hasOwn(props, key)) {\r\n                 false &&\r\n                    false\r\n            } else if (!isReserved(key)) {\r\n                proxy(vm, \"_data\", key)\r\n            }\r\n        }\r\n        // observe data\r\n        observe(data, true /* asRootData */)\r\n    }\r\n\r\n    function getData(data, vm) {\r\n        try {\r\n            return data.call(vm)\r\n        } catch (e) {\r\n            handleError(e, vm, \"data()\")\r\n            return {}\r\n        }\r\n    }\r\n\r\n    var computedWatcherOptions = {\r\n        lazy: true\r\n    }\r\n\r\n    function initComputed(vm, computed) {\r\n         false && false\r\n        var watchers = (vm._computedWatchers = Object.create(null))\r\n\r\n        for (var key in computed) {\r\n            var userDef = computed[key]\r\n            var getter = typeof userDef === \"function\" ? userDef : userDef.get\r\n            watchers[key] = new Watcher(vm, getter, noop, computedWatcherOptions)\r\n\r\n            // component-defined computed properties are already defined on the\r\n            // component prototype. We only need to define computed properties defined\r\n            // at instantiation here.\r\n            if (!(key in vm)) {\r\n                defineComputed(vm, key, userDef)\r\n            } else {\r\n            }\r\n        }\r\n    }\r\n\r\n    function defineComputed(target, key, userDef) {\r\n        if (typeof userDef === \"function\") {\r\n            sharedPropertyDefinition.get = createComputedGetter(key)\r\n            sharedPropertyDefinition.set = noop\r\n        } else {\r\n            sharedPropertyDefinition.get = userDef.get\r\n                ? userDef.cache !== false\r\n                    ? createComputedGetter(key)\r\n                    : userDef.get\r\n                : noop\r\n            sharedPropertyDefinition.set = userDef.set ? userDef.set : noop\r\n        }\r\n        Object.defineProperty(target, key, sharedPropertyDefinition)\r\n    }\r\n\r\n    function createComputedGetter(key) {\r\n        return function computedGetter() {\r\n            var watcher = this._computedWatchers && this._computedWatchers[key]\r\n            if (watcher) {\r\n                if (watcher.dirty) {\r\n                    watcher.evaluate()\r\n                }\r\n                if (Dep.target) {\r\n                    watcher.depend()\r\n                }\r\n                return watcher.value\r\n            }\r\n        }\r\n    }\r\n\r\n    function initMethods(vm, methods) {\r\n         false && false\r\n        var props = vm.$options.props\r\n        for (var key in methods) {\r\n            vm[key] = methods[key] == null ? noop : bind(methods[key], vm)\r\n        }\r\n    }\r\n\r\n    function initWatch(vm, watch) {\r\n         false && false\r\n        for (var key in watch) {\r\n            var handler = watch[key]\r\n            if (Array.isArray(handler)) {\r\n                for (var i = 0; i < handler.length; i++) {\r\n                    createWatcher(vm, key, handler[i])\r\n                }\r\n            } else {\r\n                createWatcher(vm, key, handler)\r\n            }\r\n        }\r\n    }\r\n\r\n    function createWatcher(vm, keyOrFn, handler, options) {\r\n        if (isPlainObject(handler)) {\r\n            options = handler\r\n            handler = handler.handler\r\n        }\r\n        if (typeof handler === \"string\") {\r\n            handler = vm[handler]\r\n        }\r\n        return vm.$watch(keyOrFn, handler, options)\r\n    }\r\n\r\n    function stateMixin(Vue) {\r\n        // flow somehow has problems with directly declared definition object\r\n        // when using Object.defineProperty, so we have to procedurally build up\r\n        // the object here.\r\n        var dataDef = {}\r\n        dataDef.get = function() {\r\n            return this._data\r\n        }\r\n        var propsDef = {}\r\n        propsDef.get = function() {\r\n            return this._props\r\n        }\r\n        Object.defineProperty(Vue.prototype, \"$data\", dataDef)\r\n        Object.defineProperty(Vue.prototype, \"$props\", propsDef)\r\n\r\n        Vue.prototype.$set = set\r\n        Vue.prototype.$delete = del\r\n\r\n        Vue.prototype.$watch = function(expOrFn, cb, options) {\r\n            var vm = this\r\n            if (isPlainObject(cb)) {\r\n                return createWatcher(vm, expOrFn, cb, options)\r\n            }\r\n            options = options || {}\r\n            options.user = true\r\n            var watcher = new Watcher(vm, expOrFn, cb, options)\r\n            if (options.immediate) {\r\n                cb.call(vm, watcher.value)\r\n            }\r\n            return function unwatchFn() {\r\n                watcher.teardown()\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    function initProvide(vm) {\r\n        var provide = vm.$options.provide\r\n        if (provide) {\r\n            vm._provided = typeof provide === \"function\" ? provide.call(vm) : provide\r\n        }\r\n    }\r\n\r\n    function initInjections(vm) {\r\n        var result = resolveInject(vm.$options.inject, vm)\r\n        if (result) {\r\n            observerState.shouldConvert = false\r\n            Object.keys(result).forEach(function(key) {\r\n                /* istanbul ignore else */\r\n                {\r\n                    defineReactive$$1(vm, key, result[key])\r\n                }\r\n            })\r\n            observerState.shouldConvert = true\r\n        }\r\n    }\r\n\r\n    function resolveInject(inject, vm) {\r\n        if (inject) {\r\n            // inject is :any because flow is not smart enough to figure out cached\r\n            var result = Object.create(null)\r\n            var keys = hasSymbol ? Reflect.ownKeys(inject) : Object.keys(inject)\r\n\r\n            for (var i = 0; i < keys.length; i++) {\r\n                var key = keys[i]\r\n                var provideKey = inject[key]\r\n                var source = vm\r\n                while (source) {\r\n                    if (source._provided && provideKey in source._provided) {\r\n                        result[key] = source._provided[provideKey]\r\n                        break\r\n                    }\r\n                    source = source.$parent\r\n                }\r\n                if (false) {}\r\n            }\r\n            return result\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    function createFunctionalComponent(Ctor, propsData, data, context, children) {\r\n        var props = {}\r\n        var propOptions = Ctor.options.props\r\n        if (isDef(propOptions)) {\r\n            for (var key in propOptions) {\r\n                props[key] = validateProp(key, propOptions, propsData || {})\r\n            }\r\n        } else {\r\n            if (isDef(data.attrs)) {\r\n                mergeProps(props, data.attrs)\r\n            }\r\n            if (isDef(data.props)) {\r\n                mergeProps(props, data.props)\r\n            }\r\n        }\r\n        // ensure the createElement function in functional components\r\n        // gets a unique context - this is necessary for correct named slot check\r\n        var _context = Object.create(context)\r\n        var h = function(a, b, c, d) {\r\n            return createElement(_context, a, b, c, d, true)\r\n        }\r\n        var vnode = Ctor.options.render.call(null, h, {\r\n            data: data,\r\n            props: props,\r\n            children: children,\r\n            parent: context,\r\n            listeners: data.on || {},\r\n            injections: resolveInject(Ctor.options.inject, context),\r\n            slots: function() {\r\n                return resolveSlots(children, context)\r\n            }\r\n        })\r\n        if (vnode instanceof VNode) {\r\n            vnode.functionalContext = context\r\n            vnode.functionalOptions = Ctor.options\r\n            if (data.slot) {\r\n                ;(vnode.data || (vnode.data = {})).slot = data.slot\r\n            }\r\n        }\r\n        return vnode\r\n    }\r\n\r\n    function mergeProps(to, from) {\r\n        for (var key in from) {\r\n            to[camelize(key)] = from[key]\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    // hooks to be invoked on component VNodes during patch\r\n    var componentVNodeHooks = {\r\n        init: function init(vnode, hydrating, parentElm, refElm) {\r\n            if (!vnode.componentInstance || vnode.componentInstance._isDestroyed) {\r\n                var child = (vnode.componentInstance = createComponentInstanceForVnode(\r\n                    vnode,\r\n                    activeInstance,\r\n                    parentElm,\r\n                    refElm\r\n                ))\r\n                child.$mount(hydrating ? vnode.elm : undefined, hydrating)\r\n            } else if (vnode.data.keepAlive) {\r\n                // kept-alive components, treat as a patch\r\n                var mountedNode = vnode // work around flow\r\n                componentVNodeHooks.prepatch(mountedNode, mountedNode)\r\n            }\r\n        },\r\n\r\n        prepatch: function prepatch(oldVnode, vnode) {\r\n            var options = vnode.componentOptions\r\n            var child = (vnode.componentInstance = oldVnode.componentInstance)\r\n            updateChildComponent(\r\n                child,\r\n                options.propsData, // updated props\r\n                options.listeners, // updated listeners\r\n                vnode, // new parent vnode\r\n                options.children // new children\r\n            )\r\n        },\r\n\r\n        insert: function insert(vnode) {\r\n            var context = vnode.context\r\n            var componentInstance = vnode.componentInstance\r\n\r\n            if (!componentInstance._isMounted) {\r\n                componentInstance._isMounted = true\r\n                callHook(componentInstance, \"mounted\")\r\n            }\r\n            if (vnode.data.keepAlive) {\r\n                if (context._isMounted) {\r\n                    // vue-router#1212\r\n                    // During updates, a kept-alive component's child components may\r\n                    // change, so directly walking the tree here may call activated hooks\r\n                    // on incorrect children. Instead we push them into a queue which will\r\n                    // be processed after the whole patch process ended.\r\n                    queueActivatedComponent(componentInstance)\r\n                } else {\r\n                    activateChildComponent(componentInstance, true /* direct */)\r\n                }\r\n            }\r\n        },\r\n\r\n        destroy: function destroy(vnode) {\r\n            var componentInstance = vnode.componentInstance\r\n            if (!componentInstance._isDestroyed) {\r\n                if (!vnode.data.keepAlive) {\r\n                    componentInstance.$destroy()\r\n                } else {\r\n                    deactivateChildComponent(componentInstance, true /* direct */)\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    var hooksToMerge = Object.keys(componentVNodeHooks)\r\n\r\n    function createComponent(Ctor, data, context, children, tag) {\r\n        if (isUndef(Ctor)) {\r\n            return\r\n        }\r\n\r\n        var baseCtor = context.$options._base\r\n\r\n        // plain options object: turn it into a constructor\r\n        if (isObject(Ctor)) {\r\n            Ctor = baseCtor.extend(Ctor)\r\n        }\r\n\r\n        // if at this stage it's not a constructor or an async component factory,\r\n        // reject.\r\n        if (typeof Ctor !== \"function\") {\r\n            return\r\n        }\r\n\r\n        // async component\r\n        var asyncFactory\r\n        if (isUndef(Ctor.cid)) {\r\n            asyncFactory = Ctor\r\n            Ctor = resolveAsyncComponent(asyncFactory, baseCtor, context)\r\n            if (Ctor === undefined) {\r\n                // return a placeholder node for async component, which is rendered\r\n                // as a comment node but preserves all the raw information for the node.\r\n                // the information will be used for async server-rendering and hydration.\r\n                return createAsyncPlaceholder(asyncFactory, data, context, children, tag)\r\n            }\r\n        }\r\n\r\n        data = data || {}\r\n\r\n        // resolve constructor options in case global mixins are applied after\r\n        // component constructor creation\r\n        resolveConstructorOptions(Ctor)\r\n\r\n        // transform component v-model data into props & events\r\n        if (isDef(data.model)) {\r\n            transformModel(Ctor.options, data)\r\n        }\r\n\r\n        // extract props\r\n        var propsData = extractPropsFromVNodeData(data, Ctor, tag)\r\n\r\n        // functional component\r\n        if (isTrue(Ctor.options.functional)) {\r\n            return createFunctionalComponent(Ctor, propsData, data, context, children)\r\n        }\r\n\r\n        // keep listeners\r\n        var listeners = data.on\r\n\r\n        if (isTrue(Ctor.options.abstract)) {\r\n            // abstract components do not keep anything\r\n            // other than props & listeners & slot\r\n\r\n            // work around flow\r\n            var slot = data.slot\r\n            data = {}\r\n            if (slot) {\r\n                data.slot = slot\r\n            }\r\n        }\r\n\r\n        // merge component management hooks onto the placeholder node\r\n        mergeHooks(data)\r\n\r\n        // return a placeholder vnode\r\n        var name = Ctor.options.name || tag\r\n        var vnode = new VNode(\r\n            \"vue-component-\" + Ctor.cid + (name ? \"-\" + name : \"\"),\r\n            data,\r\n            undefined,\r\n            undefined,\r\n            undefined,\r\n            context,\r\n            {\r\n                Ctor: Ctor,\r\n                propsData: propsData,\r\n                listeners: listeners,\r\n                tag: tag,\r\n                children: children\r\n            },\r\n            asyncFactory\r\n        )\r\n        return vnode\r\n    }\r\n\r\n    function createComponentInstanceForVnode(\r\n        vnode, // we know it's MountedComponentVNode but flow doesn't\r\n        parent, // activeInstance in lifecycle state\r\n        parentElm,\r\n        refElm\r\n    ) {\r\n        var vnodeComponentOptions = vnode.componentOptions\r\n        var options = {\r\n            _isComponent: true,\r\n            parent: parent,\r\n            propsData: vnodeComponentOptions.propsData,\r\n            _componentTag: vnodeComponentOptions.tag,\r\n            _parentVnode: vnode,\r\n            _parentListeners: vnodeComponentOptions.listeners,\r\n            _renderChildren: vnodeComponentOptions.children,\r\n            _parentElm: parentElm || null,\r\n            _refElm: refElm || null\r\n        }\r\n        // check inline-template render functions\r\n        var inlineTemplate = vnode.data.inlineTemplate\r\n        if (isDef(inlineTemplate)) {\r\n            options.render = inlineTemplate.render\r\n            options.staticRenderFns = inlineTemplate.staticRenderFns\r\n        }\r\n        return new vnodeComponentOptions.Ctor(options)\r\n    }\r\n\r\n    function mergeHooks(data) {\r\n        if (!data.hook) {\r\n            data.hook = {}\r\n        }\r\n        for (var i = 0; i < hooksToMerge.length; i++) {\r\n            var key = hooksToMerge[i]\r\n            var fromParent = data.hook[key]\r\n            var ours = componentVNodeHooks[key]\r\n            data.hook[key] = fromParent ? mergeHook$1(ours, fromParent) : ours\r\n        }\r\n    }\r\n\r\n    function mergeHook$1(one, two) {\r\n        return function(a, b, c, d) {\r\n            one(a, b, c, d)\r\n            two(a, b, c, d)\r\n        }\r\n    }\r\n\r\n    // transform component v-model info (value and callback) into\r\n    // prop and event handler respectively.\r\n    function transformModel(options, data) {\r\n        var prop = (options.model && options.model.prop) || \"value\"\r\n        var event = (options.model && options.model.event) || \"input\"\r\n        ;(data.props || (data.props = {}))[prop] = data.model.value\r\n        var on = data.on || (data.on = {})\r\n        if (isDef(on[event])) {\r\n            on[event] = [data.model.callback].concat(on[event])\r\n        } else {\r\n            on[event] = data.model.callback\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    var SIMPLE_NORMALIZE = 1\r\n    var ALWAYS_NORMALIZE = 2\r\n\r\n    // wrapper function for providing a more flexible interface\r\n    // without getting yelled at by flow\r\n    function createElement(context, tag, data, children, normalizationType, alwaysNormalize) {\r\n        if (Array.isArray(data) || isPrimitive(data)) {\r\n            normalizationType = children\r\n            children = data\r\n            data = undefined\r\n        }\r\n        if (isTrue(alwaysNormalize)) {\r\n            normalizationType = ALWAYS_NORMALIZE\r\n        }\r\n        return _createElement(context, tag, data, children, normalizationType)\r\n    }\r\n\r\n    function _createElement(context, tag, data, children, normalizationType) {\r\n        if (isDef(data) && isDef(data.__ob__)) {\r\n             false &&\r\n                false\r\n            return createEmptyVNode()\r\n        }\r\n        // object syntax in v-bind\r\n        if (isDef(data) && isDef(data.is)) {\r\n            tag = data.is\r\n        }\r\n        if (!tag) {\r\n            // in case of component :is set to falsy value\r\n            return createEmptyVNode()\r\n        }\r\n        // warn against non-primitive key\r\n        if (\r\n            false\r\n        ) {}\r\n        // support single function children as default scoped slot\r\n        if (Array.isArray(children) && typeof children[0] === \"function\") {\r\n            data = data || {}\r\n            data.scopedSlots = {\r\n                default: children[0]\r\n            }\r\n            children.length = 0\r\n        }\r\n        if (normalizationType === ALWAYS_NORMALIZE) {\r\n            children = normalizeChildren(children)\r\n        } else if (normalizationType === SIMPLE_NORMALIZE) {\r\n            children = simpleNormalizeChildren(children)\r\n        }\r\n        var vnode, ns\r\n        if (typeof tag === \"string\") {\r\n            var Ctor\r\n            ns = config.getTagNamespace(tag)\r\n            if (config.isReservedTag(tag)) {\r\n                // platform built-in elements\r\n                vnode = new VNode(\r\n                    config.parsePlatformTagName(tag),\r\n                    data,\r\n                    children,\r\n                    undefined,\r\n                    undefined,\r\n                    context\r\n                )\r\n            } else if (isDef((Ctor = resolveAsset(context.$options, \"components\", tag)))) {\r\n                // component\r\n                vnode = createComponent(Ctor, data, context, children, tag)\r\n            } else {\r\n                // unknown or unlisted namespaced elements\r\n                // check at runtime because it may get assigned a namespace when its\r\n                // parent normalizes children\r\n                vnode = new VNode(tag, data, children, undefined, undefined, context)\r\n            }\r\n        } else {\r\n            // direct component options / constructor\r\n            vnode = createComponent(tag, data, context, children)\r\n        }\r\n        if (isDef(vnode)) {\r\n            if (ns) {\r\n                applyNS(vnode, ns)\r\n            }\r\n            return vnode\r\n        } else {\r\n            return createEmptyVNode()\r\n        }\r\n    }\r\n\r\n    function applyNS(vnode, ns) {\r\n        vnode.ns = ns\r\n        if (vnode.tag === \"foreignObject\") {\r\n            // use default namespace inside foreignObject\r\n            return\r\n        }\r\n        if (isDef(vnode.children)) {\r\n            for (var i = 0, l = vnode.children.length; i < l; i++) {\r\n                var child = vnode.children[i]\r\n                if (isDef(child.tag) && isUndef(child.ns)) {\r\n                    applyNS(child, ns)\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Runtime helper for rendering v-for lists.\r\n     */\r\n    function renderList(val, render) {\r\n        var ret, i, l, keys, key\r\n        if (Array.isArray(val) || typeof val === \"string\") {\r\n            ret = new Array(val.length)\r\n            for (i = 0, l = val.length; i < l; i++) {\r\n                ret[i] = render(val[i], i)\r\n            }\r\n        } else if (typeof val === \"number\") {\r\n            ret = new Array(val)\r\n            for (i = 0; i < val; i++) {\r\n                ret[i] = render(i + 1, i)\r\n            }\r\n        } else if (isObject(val)) {\r\n            keys = Object.keys(val)\r\n            ret = new Array(keys.length)\r\n            for (i = 0, l = keys.length; i < l; i++) {\r\n                key = keys[i]\r\n                ret[i] = render(val[key], key, i)\r\n            }\r\n        }\r\n        if (isDef(ret)) {\r\n            ret._isVList = true\r\n        }\r\n        return ret\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Runtime helper for rendering <slot>\r\n     */\r\n    function renderSlot(name, fallback, props, bindObject) {\r\n        var scopedSlotFn = this.$scopedSlots[name]\r\n        if (scopedSlotFn) {\r\n            // scoped slot\r\n            props = props || {}\r\n            if (bindObject) {\r\n                props = extend(extend({}, bindObject), props)\r\n            }\r\n            return scopedSlotFn(props) || fallback\r\n        } else {\r\n            var slotNodes = this.$slots[name]\r\n            // warn duplicate slot usage\r\n            if (slotNodes && \"production\" !== \"production\") {\r\n                slotNodes._rendered &&\r\n                    warn(\r\n                        'Duplicate presence of slot \"' +\r\n                            name +\r\n                            '\" found in the same render tree ' +\r\n                            \"- this will likely cause render errors.\",\r\n                        this\r\n                    )\r\n                slotNodes._rendered = true\r\n            }\r\n            return slotNodes || fallback\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Runtime helper for resolving filters\r\n     */\r\n    function resolveFilter(id) {\r\n        return resolveAsset(this.$options, \"filters\", id, true) || identity\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Runtime helper for checking keyCodes from config.\r\n     */\r\n    function checkKeyCodes(eventKeyCode, key, builtInAlias) {\r\n        var keyCodes = config.keyCodes[key] || builtInAlias\r\n        if (Array.isArray(keyCodes)) {\r\n            return keyCodes.indexOf(eventKeyCode) === -1\r\n        } else {\r\n            return keyCodes !== eventKeyCode\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Runtime helper for merging v-bind=\"object\" into a VNode's data.\r\n     */\r\n    function bindObjectProps(data, tag, value, asProp, isSync) {\r\n        if (value) {\r\n            if (!isObject(value)) {\r\n                 false &&\r\n                    false\r\n            } else {\r\n                if (Array.isArray(value)) {\r\n                    value = toObject(value)\r\n                }\r\n                var hash\r\n                var loop = function(key) {\r\n                    if (key === \"class\" || key === \"style\" || isReservedAttribute(key)) {\r\n                        hash = data\r\n                    } else {\r\n                        var type = data.attrs && data.attrs.type\r\n                        hash =\r\n                            asProp || config.mustUseProp(tag, type, key)\r\n                                ? data.domProps || (data.domProps = {})\r\n                                : data.attrs || (data.attrs = {})\r\n                    }\r\n                    if (!(key in hash)) {\r\n                        hash[key] = value[key]\r\n\r\n                        if (isSync) {\r\n                            var on = data.on || (data.on = {})\r\n                            on[\"update:\" + key] = function($event) {\r\n                                value[key] = $event\r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n\r\n                for (var key in value) loop(key)\r\n            }\r\n        }\r\n        return data\r\n    }\r\n\r\n    /*  */\r\n\r\n    /**\r\n     * Runtime helper for rendering static trees.\r\n     */\r\n    function renderStatic(index, isInFor) {\r\n        var tree = this._staticTrees[index]\r\n        // if has already-rendered static tree and not inside v-for,\r\n        // we can reuse the same tree by doing a shallow clone.\r\n        if (tree && !isInFor) {\r\n            return Array.isArray(tree) ? cloneVNodes(tree) : cloneVNode(tree)\r\n        }\r\n        // otherwise, render a fresh tree.\r\n        tree = this._staticTrees[index] = this.$options.staticRenderFns[index].call(\r\n            this._renderProxy\r\n        )\r\n        markStatic(tree, \"__static__\" + index, false)\r\n        return tree\r\n    }\r\n\r\n    /**\r\n     * Runtime helper for v-once.\r\n     * Effectively it means marking the node as static with a unique key.\r\n     */\r\n    function markOnce(tree, index, key) {\r\n        markStatic(tree, \"__once__\" + index + (key ? \"_\" + key : \"\"), true)\r\n        return tree\r\n    }\r\n\r\n    function markStatic(tree, key, isOnce) {\r\n        if (Array.isArray(tree)) {\r\n            for (var i = 0; i < tree.length; i++) {\r\n                if (tree[i] && typeof tree[i] !== \"string\") {\r\n                    markStaticNode(tree[i], key + \"_\" + i, isOnce)\r\n                }\r\n            }\r\n        } else {\r\n            markStaticNode(tree, key, isOnce)\r\n        }\r\n    }\r\n\r\n    function markStaticNode(node, key, isOnce) {\r\n        node.isStatic = true\r\n        node.key = key\r\n        node.isOnce = isOnce\r\n    }\r\n\r\n    /*  */\r\n\r\n    function bindObjectListeners(data, value) {\r\n        if (value) {\r\n            if (!isPlainObject(value)) {\r\n                 false &&\r\n                    false\r\n            } else {\r\n                var on = (data.on = data.on ? extend({}, data.on) : {})\r\n                for (var key in value) {\r\n                    var existing = on[key]\r\n                    var ours = value[key]\r\n                    on[key] = existing ? [].concat(ours, existing) : ours\r\n                }\r\n            }\r\n        }\r\n        return data\r\n    }\r\n\r\n    /*  */\r\n\r\n    function initRender(vm) {\r\n        vm._vnode = null // the root of the child tree\r\n        vm._staticTrees = null\r\n        var parentVnode = (vm.$vnode = vm.$options._parentVnode) // the placeholder node in parent tree\r\n        var renderContext = parentVnode && parentVnode.context\r\n        vm.$slots = resolveSlots(vm.$options._renderChildren, renderContext)\r\n        vm.$scopedSlots = emptyObject\r\n        // bind the createElement fn to this instance\r\n        // so that we get proper render context inside it.\r\n        // args order: tag, data, children, normalizationType, alwaysNormalize\r\n        // internal version is used by render functions compiled from templates\r\n        vm._c = function(a, b, c, d) {\r\n            return createElement(vm, a, b, c, d, false)\r\n        }\r\n        // normalization is always applied for the public version, used in\r\n        // user-written render functions.\r\n        vm.$createElement = function(a, b, c, d) {\r\n            return createElement(vm, a, b, c, d, true)\r\n        }\r\n\r\n        // $attrs & $listeners are exposed for easier HOC creation.\r\n        // they need to be reactive so that HOCs using them are always updated\r\n        var parentData = parentVnode && parentVnode.data\r\n        /* istanbul ignore else */\r\n        {\r\n            defineReactive$$1(vm, \"$attrs\", parentData && parentData.attrs, null, true)\r\n            defineReactive$$1(vm, \"$listeners\", parentData && parentData.on, null, true)\r\n        }\r\n    }\r\n\r\n    function renderMixin(Vue) {\r\n        Vue.prototype.$nextTick = function(fn) {\r\n            return nextTick(fn, this)\r\n        }\r\n\r\n        Vue.prototype._render = function() {\r\n            var vm = this\r\n            var ref = vm.$options\r\n            var render = ref.render\r\n            var staticRenderFns = ref.staticRenderFns\r\n            var _parentVnode = ref._parentVnode\r\n\r\n            if (vm._isMounted) {\r\n                // clone slot nodes on re-renders\r\n                for (var key in vm.$slots) {\r\n                    vm.$slots[key] = cloneVNodes(vm.$slots[key])\r\n                }\r\n            }\r\n\r\n            vm.$scopedSlots = (_parentVnode && _parentVnode.data.scopedSlots) || emptyObject\r\n\r\n            if (staticRenderFns && !vm._staticTrees) {\r\n                vm._staticTrees = []\r\n            }\r\n            // set parent vnode. this allows render functions to have access\r\n            // to the data on the placeholder node.\r\n            vm.$vnode = _parentVnode\r\n            // render self\r\n            var vnode\r\n            try {\r\n                vnode = render.call(vm._renderProxy, vm.$createElement)\r\n            } catch (e) {\r\n                handleError(e, vm, \"render function\")\r\n                // return error render result,\r\n                // or previous vnode to prevent render error causing blank component\r\n                /* istanbul ignore else */\r\n                {\r\n                    vnode = vm._vnode\r\n                }\r\n            }\r\n            // return empty vnode in case the render function errored out\r\n            if (!(vnode instanceof VNode)) {\r\n                if (false) {}\r\n                vnode = createEmptyVNode()\r\n            }\r\n            // set parent\r\n            vnode.parent = _parentVnode\r\n            return vnode\r\n        }\r\n\r\n        // internal render helpers.\r\n        // these are exposed on the instance prototype to reduce generated render\r\n        // code size.\r\n        Vue.prototype._o = markOnce\r\n        Vue.prototype._n = toNumber\r\n        Vue.prototype._s = toString\r\n        Vue.prototype._l = renderList\r\n        Vue.prototype._t = renderSlot\r\n        Vue.prototype._q = looseEqual\r\n        Vue.prototype._i = looseIndexOf\r\n        Vue.prototype._m = renderStatic\r\n        Vue.prototype._f = resolveFilter\r\n        Vue.prototype._k = checkKeyCodes\r\n        Vue.prototype._b = bindObjectProps\r\n        Vue.prototype._v = createTextVNode\r\n        Vue.prototype._e = createEmptyVNode\r\n        Vue.prototype._u = resolveScopedSlots\r\n        Vue.prototype._g = bindObjectListeners\r\n    }\r\n\r\n    /*  */\r\n\r\n    var uid = 0\r\n\r\n    function initMixin(Vue) {\r\n        Vue.prototype._init = function(options) {\r\n            var vm = this\r\n            // a uid\r\n            vm._uid = uid++\r\n\r\n            var startTag, endTag\r\n            /* istanbul ignore if */\r\n            if (false) {}\r\n\r\n            // a flag to avoid this being observed\r\n            vm._isVue = true\r\n            // merge options\r\n            if (options && options._isComponent) {\r\n                // optimize internal component instantiation\r\n                // since dynamic options merging is pretty slow, and none of the\r\n                // internal component options needs special treatment.\r\n                initInternalComponent(vm, options)\r\n            } else {\r\n                vm.$options = mergeOptions(\r\n                    resolveConstructorOptions(vm.constructor),\r\n                    options || {},\r\n                    vm\r\n                )\r\n            }\r\n            /* istanbul ignore else */\r\n            {\r\n                vm._renderProxy = vm\r\n            }\r\n            // expose real self\r\n            vm._self = vm\r\n            initLifecycle(vm)\r\n            initEvents(vm)\r\n            initRender(vm)\r\n            callHook(vm, \"beforeCreate\")\r\n            initInjections(vm) // resolve injections before data/props\r\n            initState(vm)\r\n            initProvide(vm) // resolve provide after data/props\r\n            callHook(vm, \"created\")\r\n\r\n            /* istanbul ignore if */\r\n            if (false) {}\r\n\r\n            if (vm.$options.el) {\r\n                vm.$mount(vm.$options.el)\r\n            }\r\n        }\r\n    }\r\n\r\n    function initInternalComponent(vm, options) {\r\n        var opts = (vm.$options = Object.create(vm.constructor.options))\r\n        // doing this because it's faster than dynamic enumeration.\r\n        opts.parent = options.parent\r\n        opts.propsData = options.propsData\r\n        opts._parentVnode = options._parentVnode\r\n        opts._parentListeners = options._parentListeners\r\n        opts._renderChildren = options._renderChildren\r\n        opts._componentTag = options._componentTag\r\n        opts._parentElm = options._parentElm\r\n        opts._refElm = options._refElm\r\n        if (options.render) {\r\n            opts.render = options.render\r\n            opts.staticRenderFns = options.staticRenderFns\r\n        }\r\n    }\r\n\r\n    function resolveConstructorOptions(Ctor) {\r\n        var options = Ctor.options\r\n        if (Ctor.super) {\r\n            var superOptions = resolveConstructorOptions(Ctor.super)\r\n            var cachedSuperOptions = Ctor.superOptions\r\n            if (superOptions !== cachedSuperOptions) {\r\n                // super option changed,\r\n                // need to resolve new options.\r\n                Ctor.superOptions = superOptions\r\n                // check if there are any late-modified/attached options (#4976)\r\n                var modifiedOptions = resolveModifiedOptions(Ctor)\r\n                // update base extend options\r\n                if (modifiedOptions) {\r\n                    extend(Ctor.extendOptions, modifiedOptions)\r\n                }\r\n                options = Ctor.options = mergeOptions(superOptions, Ctor.extendOptions)\r\n                if (options.name) {\r\n                    options.components[options.name] = Ctor\r\n                }\r\n            }\r\n        }\r\n        return options\r\n    }\r\n\r\n    function resolveModifiedOptions(Ctor) {\r\n        var modified\r\n        var latest = Ctor.options\r\n        var extended = Ctor.extendOptions\r\n        var sealed = Ctor.sealedOptions\r\n        for (var key in latest) {\r\n            if (latest[key] !== sealed[key]) {\r\n                if (!modified) {\r\n                    modified = {}\r\n                }\r\n                modified[key] = dedupe(latest[key], extended[key], sealed[key])\r\n            }\r\n        }\r\n        return modified\r\n    }\r\n\r\n    function dedupe(latest, extended, sealed) {\r\n        // compare latest and sealed to ensure lifecycle hooks won't be duplicated\r\n        // between merges\r\n        if (Array.isArray(latest)) {\r\n            var res = []\r\n            sealed = Array.isArray(sealed) ? sealed : [sealed]\r\n            extended = Array.isArray(extended) ? extended : [extended]\r\n            for (var i = 0; i < latest.length; i++) {\r\n                // push original options and not sealed options to exclude duplicated options\r\n                if (extended.indexOf(latest[i]) >= 0 || sealed.indexOf(latest[i]) < 0) {\r\n                    res.push(latest[i])\r\n                }\r\n            }\r\n            return res\r\n        } else {\r\n            return latest\r\n        }\r\n    }\r\n\r\n    function Vue$3(options) {\r\n        if (false) {}\r\n        this._init(options)\r\n    }\r\n\r\n    initMixin(Vue$3)\r\n    stateMixin(Vue$3)\r\n    eventsMixin(Vue$3)\r\n    lifecycleMixin(Vue$3)\r\n    renderMixin(Vue$3)\r\n\r\n    /*  */\r\n\r\n    function initUse(Vue) {\r\n        Vue.use = function(plugin) {\r\n            var installedPlugins = this._installedPlugins || (this._installedPlugins = [])\r\n            if (installedPlugins.indexOf(plugin) > -1) {\r\n                return this\r\n            }\r\n\r\n            // additional parameters\r\n            var args = toArray(arguments, 1)\r\n            args.unshift(this)\r\n            if (typeof plugin.install === \"function\") {\r\n                plugin.install.apply(plugin, args)\r\n            } else if (typeof plugin === \"function\") {\r\n                plugin.apply(null, args)\r\n            }\r\n            installedPlugins.push(plugin)\r\n            return this\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    function initMixin$1(Vue) {\r\n        Vue.mixin = function(mixin) {\r\n            this.options = mergeOptions(this.options, mixin)\r\n            return this\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    function initExtend(Vue) {\r\n        /**\r\n         * Each instance constructor, including Vue, has a unique\r\n         * cid. This enables us to create wrapped \"child\r\n         * constructors\" for prototypal inheritance and cache them.\r\n         */\r\n        Vue.cid = 0\r\n        var cid = 1\r\n\r\n        /**\r\n         * Class inheritance\r\n         */\r\n        Vue.extend = function(extendOptions) {\r\n            extendOptions = extendOptions || {}\r\n            var Super = this\r\n            var SuperId = Super.cid\r\n            var cachedCtors = extendOptions._Ctor || (extendOptions._Ctor = {})\r\n            if (cachedCtors[SuperId]) {\r\n                return cachedCtors[SuperId]\r\n            }\r\n\r\n            var name = extendOptions.name || Super.options.name\r\n            var Sub = function VueComponent(options) {\r\n                this._init(options)\r\n            }\r\n            Sub.prototype = Object.create(Super.prototype)\r\n            Sub.prototype.constructor = Sub\r\n            Sub.cid = cid++\r\n            Sub.options = mergeOptions(Super.options, extendOptions)\r\n            Sub[\"super\"] = Super\r\n\r\n            // For props and computed properties, we define the proxy getters on\r\n            // the Vue instances at extension time, on the extended prototype. This\r\n            // avoids Object.defineProperty calls for each instance created.\r\n            if (Sub.options.props) {\r\n                initProps$1(Sub)\r\n            }\r\n            if (Sub.options.computed) {\r\n                initComputed$1(Sub)\r\n            }\r\n\r\n            // allow further extension/mixin/plugin usage\r\n            Sub.extend = Super.extend\r\n            Sub.mixin = Super.mixin\r\n            Sub.use = Super.use\r\n\r\n            // create asset registers, so extended classes\r\n            // can have their private assets too.\r\n            ASSET_TYPES.forEach(function(type) {\r\n                Sub[type] = Super[type]\r\n            })\r\n            // enable recursive self-lookup\r\n            if (name) {\r\n                Sub.options.components[name] = Sub\r\n            }\r\n\r\n            // keep a reference to the super options at extension time.\r\n            // later at instantiation we can check if Super's options have\r\n            // been updated.\r\n            Sub.superOptions = Super.options\r\n            Sub.extendOptions = extendOptions\r\n            Sub.sealedOptions = extend({}, Sub.options)\r\n\r\n            // cache constructor\r\n            cachedCtors[SuperId] = Sub\r\n            return Sub\r\n        }\r\n    }\r\n\r\n    function initProps$1(Comp) {\r\n        var props = Comp.options.props\r\n        for (var key in props) {\r\n            proxy(Comp.prototype, \"_props\", key)\r\n        }\r\n    }\r\n\r\n    function initComputed$1(Comp) {\r\n        var computed = Comp.options.computed\r\n        for (var key in computed) {\r\n            defineComputed(Comp.prototype, key, computed[key])\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    function initAssetRegisters(Vue) {\r\n        /**\r\n         * Create asset registration methods.\r\n         */\r\n        ASSET_TYPES.forEach(function(type) {\r\n            Vue[type] = function(id, definition) {\r\n                if (!definition) {\r\n                    return this.options[type + \"s\"][id]\r\n                } else {\r\n                    /* istanbul ignore if */\r\n                    if (type === \"component\" && isPlainObject(definition)) {\r\n                        definition.name = definition.name || id\r\n                        definition = this.options._base.extend(definition)\r\n                    }\r\n                    if (type === \"directive\" && typeof definition === \"function\") {\r\n                        definition = {\r\n                            bind: definition,\r\n                            update: definition\r\n                        }\r\n                    }\r\n                    this.options[type + \"s\"][id] = definition\r\n                    return definition\r\n                }\r\n            }\r\n        })\r\n    }\r\n\r\n    /*  */\r\n\r\n    var patternTypes = [String, RegExp, Array]\r\n\r\n    function getComponentName(opts) {\r\n        return opts && (opts.Ctor.options.name || opts.tag)\r\n    }\r\n\r\n    function matches(pattern, name) {\r\n        if (Array.isArray(pattern)) {\r\n            return pattern.indexOf(name) > -1\r\n        } else if (typeof pattern === \"string\") {\r\n            return pattern.split(\",\").indexOf(name) > -1\r\n        } else if (isRegExp(pattern)) {\r\n            return pattern.test(name)\r\n        }\r\n        /* istanbul ignore next */\r\n        return false\r\n    }\r\n\r\n    function pruneCache(cache, current, filter) {\r\n        for (var key in cache) {\r\n            var cachedNode = cache[key]\r\n            if (cachedNode) {\r\n                var name = getComponentName(cachedNode.componentOptions)\r\n                if (name && !filter(name)) {\r\n                    if (cachedNode !== current) {\r\n                        pruneCacheEntry(cachedNode)\r\n                    }\r\n                    cache[key] = null\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    function pruneCacheEntry(vnode) {\r\n        if (vnode) {\r\n            vnode.componentInstance.$destroy()\r\n        }\r\n    }\r\n\r\n    var KeepAlive = {\r\n        name: \"keep-alive\",\r\n        abstract: true,\r\n\r\n        props: {\r\n            include: patternTypes,\r\n            exclude: patternTypes\r\n        },\r\n\r\n        created: function created() {\r\n            this.cache = Object.create(null)\r\n        },\r\n\r\n        destroyed: function destroyed() {\r\n            var this$1 = this\r\n\r\n            for (var key in this$1.cache) {\r\n                pruneCacheEntry(this$1.cache[key])\r\n            }\r\n        },\r\n\r\n        watch: {\r\n            include: function include(val) {\r\n                pruneCache(this.cache, this._vnode, function(name) {\r\n                    return matches(val, name)\r\n                })\r\n            },\r\n            exclude: function exclude(val) {\r\n                pruneCache(this.cache, this._vnode, function(name) {\r\n                    return !matches(val, name)\r\n                })\r\n            }\r\n        },\r\n\r\n        render: function render() {\r\n            var vnode = getFirstComponentChild(this.$slots.default)\r\n            var componentOptions = vnode && vnode.componentOptions\r\n            if (componentOptions) {\r\n                // check pattern\r\n                var name = getComponentName(componentOptions)\r\n                if (\r\n                    name &&\r\n                    ((this.include && !matches(this.include, name)) ||\r\n                        (this.exclude && matches(this.exclude, name)))\r\n                ) {\r\n                    return vnode\r\n                }\r\n                var key =\r\n                    vnode.key == null\r\n                        ? // same constructor may get registered as different local components\r\n                          // so cid alone is not enough (#3269)\r\n                          componentOptions.Ctor.cid +\r\n                          (componentOptions.tag ? \"::\" + componentOptions.tag : \"\")\r\n                        : vnode.key\r\n                if (this.cache[key]) {\r\n                    vnode.componentInstance = this.cache[key].componentInstance\r\n                } else {\r\n                    this.cache[key] = vnode\r\n                }\r\n                vnode.data.keepAlive = true\r\n            }\r\n            return vnode\r\n        }\r\n    }\r\n\r\n    var builtInComponents = {\r\n        KeepAlive: KeepAlive\r\n    }\r\n\r\n    /*  */\r\n\r\n    function initGlobalAPI(Vue) {\r\n        // config\r\n        var configDef = {}\r\n        configDef.get = function() {\r\n            return config\r\n        }\r\n        Object.defineProperty(Vue, \"config\", configDef)\r\n\r\n        // exposed util methods.\r\n        // NOTE: these are not considered part of the public API - avoid relying on\r\n        // them unless you are aware of the risk.\r\n        Vue.util = {\r\n            warn: warn,\r\n            extend: extend,\r\n            mergeOptions: mergeOptions,\r\n            defineReactive: defineReactive$$1\r\n        }\r\n\r\n        Vue.set = set\r\n        Vue.delete = del\r\n        Vue.nextTick = nextTick\r\n\r\n        Vue.options = Object.create(null)\r\n        ASSET_TYPES.forEach(function(type) {\r\n            Vue.options[type + \"s\"] = Object.create(null)\r\n        })\r\n\r\n        // this is used to identify the \"base\" constructor to extend all plain-object\r\n        // components with in Weex's multi-instance scenarios.\r\n        Vue.options._base = Vue\r\n\r\n        extend(Vue.options.components, builtInComponents)\r\n\r\n        initUse(Vue)\r\n        initMixin$1(Vue)\r\n        initExtend(Vue)\r\n        initAssetRegisters(Vue)\r\n    }\r\n\r\n    initGlobalAPI(Vue$3)\r\n\r\n    Object.defineProperty(Vue$3.prototype, \"$isServer\", {\r\n        get: isServerRendering\r\n    })\r\n\r\n    Object.defineProperty(Vue$3.prototype, \"$ssrContext\", {\r\n        get: function get() {\r\n            /* istanbul ignore next */\r\n            return this.$vnode && this.$vnode.ssrContext\r\n        }\r\n    })\r\n\r\n    Vue$3.version = \"2.4.1\"\r\n    Vue$3.mpvueVersion = \"1.0.12\"\r\n\r\n    /* globals renderer */\r\n\r\n    var isReservedTag = makeMap(\r\n        \"template,script,style,element,content,slot,link,meta,svg,view,\" +\r\n            \"a,div,img,image,text,span,richtext,input,switch,textarea,spinner,select,\" +\r\n            \"slider,slider-neighbor,indicator,trisition,trisition-group,canvas,\" +\r\n            \"list,cell,header,loading,loading-indicator,refresh,scrollable,scroller,\" +\r\n            \"video,web,embed,tabbar,tabheader,datepicker,timepicker,marquee,countdown\",\r\n        true\r\n    )\r\n\r\n    // these are reserved for web because they are directly compiled away\r\n    // during template compilation\r\n    var isReservedAttr = makeMap(\"style,class\")\r\n\r\n    // Elements that you can, intentionally, leave open (and which close themselves)\r\n    // more flexable than web\r\n    var canBeLeftOpenTag = makeMap(\r\n        \"web,spinner,switch,video,textarea,canvas,\" + \"indicator,marquee,countdown\",\r\n        true\r\n    )\r\n\r\n    var isUnaryTag = makeMap(\"embed,img,image,input,link,meta\", true)\r\n\r\n    function mustUseProp() {\r\n        /* console.log('mustUseProp') */\r\n    }\r\n\r\n    function getTagNamespace() {\r\n        /* console.log('getTagNamespace') */\r\n    }\r\n\r\n    function isUnknownElement() {\r\n        /* console.log('isUnknownElement') */\r\n    }\r\n\r\n    function getComKey(vm) {\r\n        return vm && vm.$attrs ? vm.$attrs[\"mpcomid\"] : \"0\"\r\n    }\r\n\r\n    // 用于小程序的 event type 到 web 的 event\r\n    var eventTypeMap = {\r\n        tap: [\"tap\", \"click\"],\r\n        touchstart: [\"touchstart\"],\r\n        touchmove: [\"touchmove\"],\r\n        touchcancel: [\"touchcancel\"],\r\n        touchend: [\"touchend\"],\r\n        longtap: [\"longtap\"],\r\n        input: [\"input\"],\r\n        blur: [\"change\", \"blur\"],\r\n        submit: [\"submit\"],\r\n        focus: [\"focus\"],\r\n        scrolltoupper: [\"scrolltoupper\"],\r\n        scrolltolower: [\"scrolltolower\"],\r\n        scroll: [\"scroll\"]\r\n    }\r\n\r\n    /*  */\r\n\r\n    // import { namespaceMap } from 'mp/util/index'\r\n\r\n    var obj = {}\r\n\r\n    function createElement$1(tagName, vnode) {\r\n        return obj\r\n    }\r\n\r\n    function createElementNS(namespace, tagName) {\r\n        return obj\r\n    }\r\n\r\n    function createTextNode(text) {\r\n        return obj\r\n    }\r\n\r\n    function createComment(text) {\r\n        return obj\r\n    }\r\n\r\n    function insertBefore(parentNode, newNode, referenceNode) {}\r\n\r\n    function removeChild(node, child) {}\r\n\r\n    function appendChild(node, child) {}\r\n\r\n    function parentNode(node) {\r\n        return obj\r\n    }\r\n\r\n    function nextSibling(node) {\r\n        return obj\r\n    }\r\n\r\n    function tagName(node) {\r\n        return \"div\"\r\n    }\r\n\r\n    function setTextContent(node, text) {\r\n        return obj\r\n    }\r\n\r\n    function setAttribute(node, key, val) {\r\n        return obj\r\n    }\r\n\r\n    var nodeOps = Object.freeze({\r\n        createElement: createElement$1,\r\n        createElementNS: createElementNS,\r\n        createTextNode: createTextNode,\r\n        createComment: createComment,\r\n        insertBefore: insertBefore,\r\n        removeChild: removeChild,\r\n        appendChild: appendChild,\r\n        parentNode: parentNode,\r\n        nextSibling: nextSibling,\r\n        tagName: tagName,\r\n        setTextContent: setTextContent,\r\n        setAttribute: setAttribute\r\n    })\r\n\r\n    /*  */\r\n\r\n    var ref = {\r\n        create: function create(_, vnode) {\r\n            registerRef(vnode)\r\n        },\r\n        update: function update(oldVnode, vnode) {\r\n            if (oldVnode.data.ref !== vnode.data.ref) {\r\n                registerRef(oldVnode, true)\r\n                registerRef(vnode)\r\n            }\r\n        },\r\n        destroy: function destroy(vnode) {\r\n            registerRef(vnode, true)\r\n        }\r\n    }\r\n\r\n    function registerRef(vnode, isRemoval) {\r\n        var key = vnode.data.ref\r\n        if (!key) {\r\n            return\r\n        }\r\n\r\n        var vm = vnode.context\r\n        var ref = vnode.componentInstance || vnode.elm\r\n        var refs = vm.$refs\r\n        if (isRemoval) {\r\n            if (Array.isArray(refs[key])) {\r\n                remove(refs[key], ref)\r\n            } else if (refs[key] === ref) {\r\n                refs[key] = undefined\r\n            }\r\n        } else {\r\n            if (vnode.data.refInFor) {\r\n                if (!Array.isArray(refs[key])) {\r\n                    refs[key] = [ref]\r\n                } else if (refs[key].indexOf(ref) < 0) {\r\n                    // $flow-disable-line\r\n                    refs[key].push(ref)\r\n                }\r\n            } else {\r\n                refs[key] = ref\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Virtual DOM patching algorithm based on Snabbdom by\r\n     * Simon Friis Vindum (@paldepind)\r\n     * Licensed under the MIT License\r\n     * https://github.com/paldepind/snabbdom/blob/master/LICENSE\r\n     *\r\n     * modified by Evan You (@yyx990803)\r\n     *\r\n\r\n    /*\r\n     * Not type-checking this because this file is perf-critical and the cost\r\n     * of making flow understand it is not worth it.\r\n     */\r\n\r\n    var emptyNode = new VNode(\"\", {}, [])\r\n\r\n    var hooks = [\"create\", \"activate\", \"update\", \"remove\", \"destroy\"]\r\n\r\n    function sameVnode(a, b) {\r\n        return (\r\n            a.key === b.key &&\r\n            ((a.tag === b.tag &&\r\n                a.isComment === b.isComment &&\r\n                isDef(a.data) === isDef(b.data) &&\r\n                sameInputType(a, b)) ||\r\n                (isTrue(a.isAsyncPlaceholder) &&\r\n                    a.asyncFactory === b.asyncFactory &&\r\n                    isUndef(b.asyncFactory.error)))\r\n        )\r\n    }\r\n\r\n    // Some browsers do not support dynamically changing type for <input>\r\n    // so they need to be treated as different nodes\r\n    function sameInputType(a, b) {\r\n        if (a.tag !== \"input\") {\r\n            return true\r\n        }\r\n        var i\r\n        var typeA = isDef((i = a.data)) && isDef((i = i.attrs)) && i.type\r\n        var typeB = isDef((i = b.data)) && isDef((i = i.attrs)) && i.type\r\n        return typeA === typeB\r\n    }\r\n\r\n    function createKeyToOldIdx(children, beginIdx, endIdx) {\r\n        var i, key\r\n        var map = {}\r\n        for (i = beginIdx; i <= endIdx; ++i) {\r\n            key = children[i].key\r\n            if (isDef(key)) {\r\n                map[key] = i\r\n            }\r\n        }\r\n        return map\r\n    }\r\n\r\n    function createPatchFunction(backend) {\r\n        var i, j\r\n        var cbs = {}\r\n\r\n        var modules = backend.modules\r\n        var nodeOps = backend.nodeOps\r\n\r\n        for (i = 0; i < hooks.length; ++i) {\r\n            cbs[hooks[i]] = []\r\n            for (j = 0; j < modules.length; ++j) {\r\n                if (isDef(modules[j][hooks[i]])) {\r\n                    cbs[hooks[i]].push(modules[j][hooks[i]])\r\n                }\r\n            }\r\n        }\r\n\r\n        function emptyNodeAt(elm) {\r\n            return new VNode(nodeOps.tagName(elm).toLowerCase(), {}, [], undefined, elm)\r\n        }\r\n\r\n        function createRmCb(childElm, listeners) {\r\n            function remove$$1() {\r\n                if (--remove$$1.listeners === 0) {\r\n                    removeNode(childElm)\r\n                }\r\n            }\r\n            remove$$1.listeners = listeners\r\n            return remove$$1\r\n        }\r\n\r\n        function removeNode(el) {\r\n            var parent = nodeOps.parentNode(el)\r\n            // element may have already been removed due to v-html / v-text\r\n            if (isDef(parent)) {\r\n                nodeOps.removeChild(parent, el)\r\n            }\r\n        }\r\n\r\n        var inPre = 0\r\n\r\n        function createElm(vnode, insertedVnodeQueue, parentElm, refElm, nested) {\r\n            vnode.isRootInsert = !nested // for transition enter check\r\n            if (createComponent(vnode, insertedVnodeQueue, parentElm, refElm)) {\r\n                return\r\n            }\r\n\r\n            var data = vnode.data\r\n            var children = vnode.children\r\n            var tag = vnode.tag\r\n            if (isDef(tag)) {\r\n                vnode.elm = vnode.ns\r\n                    ? nodeOps.createElementNS(vnode.ns, tag)\r\n                    : nodeOps.createElement(tag, vnode)\r\n                setScope(vnode)\r\n\r\n                /* istanbul ignore if */\r\n                {\r\n                    createChildren(vnode, children, insertedVnodeQueue)\r\n                    if (isDef(data)) {\r\n                        invokeCreateHooks(vnode, insertedVnodeQueue)\r\n                    }\r\n                    insert(parentElm, vnode.elm, refElm)\r\n                }\r\n\r\n                if (false) {}\r\n            } else if (isTrue(vnode.isComment)) {\r\n                vnode.elm = nodeOps.createComment(vnode.text)\r\n                insert(parentElm, vnode.elm, refElm)\r\n            } else {\r\n                vnode.elm = nodeOps.createTextNode(vnode.text)\r\n                insert(parentElm, vnode.elm, refElm)\r\n            }\r\n        }\r\n\r\n        function createComponent(vnode, insertedVnodeQueue, parentElm, refElm) {\r\n            var i = vnode.data\r\n            if (isDef(i)) {\r\n                var isReactivated = isDef(vnode.componentInstance) && i.keepAlive\r\n                if (isDef((i = i.hook)) && isDef((i = i.init))) {\r\n                    i(vnode, false /* hydrating */, parentElm, refElm)\r\n                }\r\n                // after calling the init hook, if the vnode is a child component\r\n                // it should've created a child instance and mounted it. the child\r\n                // component also has set the placeholder vnode's elm.\r\n                // in that case we can just return the element and be done.\r\n                if (isDef(vnode.componentInstance)) {\r\n                    initComponent(vnode, insertedVnodeQueue)\r\n                    if (isTrue(isReactivated)) {\r\n                        reactivateComponent(vnode, insertedVnodeQueue, parentElm, refElm)\r\n                    }\r\n                    return true\r\n                }\r\n            }\r\n        }\r\n\r\n        function initComponent(vnode, insertedVnodeQueue) {\r\n            if (isDef(vnode.data.pendingInsert)) {\r\n                insertedVnodeQueue.push.apply(insertedVnodeQueue, vnode.data.pendingInsert)\r\n                vnode.data.pendingInsert = null\r\n            }\r\n            vnode.elm = vnode.componentInstance.$el\r\n            if (isPatchable(vnode)) {\r\n                invokeCreateHooks(vnode, insertedVnodeQueue)\r\n                setScope(vnode)\r\n            } else {\r\n                // empty component root.\r\n                // skip all element-related modules except for ref (#3455)\r\n                registerRef(vnode)\r\n                // make sure to invoke the insert hook\r\n                insertedVnodeQueue.push(vnode)\r\n            }\r\n        }\r\n\r\n        function reactivateComponent(vnode, insertedVnodeQueue, parentElm, refElm) {\r\n            var i\r\n            // hack for #4339: a reactivated component with inner transition\r\n            // does not trigger because the inner node's created hooks are not called\r\n            // again. It's not ideal to involve module-specific logic in here but\r\n            // there doesn't seem to be a better way to do it.\r\n            var innerNode = vnode\r\n            while (innerNode.componentInstance) {\r\n                innerNode = innerNode.componentInstance._vnode\r\n                if (isDef((i = innerNode.data)) && isDef((i = i.transition))) {\r\n                    for (i = 0; i < cbs.activate.length; ++i) {\r\n                        cbs.activate[i](emptyNode, innerNode)\r\n                    }\r\n                    insertedVnodeQueue.push(innerNode)\r\n                    break\r\n                }\r\n            }\r\n            // unlike a newly created component,\r\n            // a reactivated keep-alive component doesn't insert itself\r\n            insert(parentElm, vnode.elm, refElm)\r\n        }\r\n\r\n        function insert(parent, elm, ref$$1) {\r\n            if (isDef(parent)) {\r\n                if (isDef(ref$$1)) {\r\n                    if (ref$$1.parentNode === parent) {\r\n                        nodeOps.insertBefore(parent, elm, ref$$1)\r\n                    }\r\n                } else {\r\n                    nodeOps.appendChild(parent, elm)\r\n                }\r\n            }\r\n        }\r\n\r\n        function createChildren(vnode, children, insertedVnodeQueue) {\r\n            if (Array.isArray(children)) {\r\n                for (var i = 0; i < children.length; ++i) {\r\n                    createElm(children[i], insertedVnodeQueue, vnode.elm, null, true)\r\n                }\r\n            } else if (isPrimitive(vnode.text)) {\r\n                nodeOps.appendChild(vnode.elm, nodeOps.createTextNode(vnode.text))\r\n            }\r\n        }\r\n\r\n        function isPatchable(vnode) {\r\n            while (vnode.componentInstance) {\r\n                vnode = vnode.componentInstance._vnode\r\n            }\r\n            return isDef(vnode.tag)\r\n        }\r\n\r\n        function invokeCreateHooks(vnode, insertedVnodeQueue) {\r\n            for (var i$1 = 0; i$1 < cbs.create.length; ++i$1) {\r\n                cbs.create[i$1](emptyNode, vnode)\r\n            }\r\n            i = vnode.data.hook // Reuse variable\r\n            if (isDef(i)) {\r\n                if (isDef(i.create)) {\r\n                    i.create(emptyNode, vnode)\r\n                }\r\n                if (isDef(i.insert)) {\r\n                    insertedVnodeQueue.push(vnode)\r\n                }\r\n            }\r\n        }\r\n\r\n        // set scope id attribute for scoped CSS.\r\n        // this is implemented as a special case to avoid the overhead\r\n        // of going through the normal attribute patching process.\r\n        function setScope(vnode) {\r\n            var i\r\n            var ancestor = vnode\r\n            while (ancestor) {\r\n                if (isDef((i = ancestor.context)) && isDef((i = i.$options._scopeId))) {\r\n                    nodeOps.setAttribute(vnode.elm, i, \"\")\r\n                }\r\n                ancestor = ancestor.parent\r\n            }\r\n            // for slot content they should also get the scopeId from the host instance.\r\n            if (\r\n                isDef((i = activeInstance)) &&\r\n                i !== vnode.context &&\r\n                isDef((i = i.$options._scopeId))\r\n            ) {\r\n                nodeOps.setAttribute(vnode.elm, i, \"\")\r\n            }\r\n        }\r\n\r\n        function addVnodes(parentElm, refElm, vnodes, startIdx, endIdx, insertedVnodeQueue) {\r\n            for (; startIdx <= endIdx; ++startIdx) {\r\n                createElm(vnodes[startIdx], insertedVnodeQueue, parentElm, refElm)\r\n            }\r\n        }\r\n\r\n        function invokeDestroyHook(vnode) {\r\n            var i, j\r\n            var data = vnode.data\r\n            if (isDef(data)) {\r\n                if (isDef((i = data.hook)) && isDef((i = i.destroy))) {\r\n                    i(vnode)\r\n                }\r\n                for (i = 0; i < cbs.destroy.length; ++i) {\r\n                    cbs.destroy[i](vnode)\r\n                }\r\n            }\r\n            if (isDef((i = vnode.children))) {\r\n                for (j = 0; j < vnode.children.length; ++j) {\r\n                    invokeDestroyHook(vnode.children[j])\r\n                }\r\n            }\r\n        }\r\n\r\n        function removeVnodes(parentElm, vnodes, startIdx, endIdx) {\r\n            for (; startIdx <= endIdx; ++startIdx) {\r\n                var ch = vnodes[startIdx]\r\n                if (isDef(ch)) {\r\n                    if (isDef(ch.tag)) {\r\n                        removeAndInvokeRemoveHook(ch)\r\n                        invokeDestroyHook(ch)\r\n                    } else {\r\n                        // Text node\r\n                        removeNode(ch.elm)\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        function removeAndInvokeRemoveHook(vnode, rm) {\r\n            if (isDef(rm) || isDef(vnode.data)) {\r\n                var i\r\n                var listeners = cbs.remove.length + 1\r\n                if (isDef(rm)) {\r\n                    // we have a recursively passed down rm callback\r\n                    // increase the listeners count\r\n                    rm.listeners += listeners\r\n                } else {\r\n                    // directly removing\r\n                    rm = createRmCb(vnode.elm, listeners)\r\n                }\r\n                // recursively invoke hooks on child component root node\r\n                if (\r\n                    isDef((i = vnode.componentInstance)) &&\r\n                    isDef((i = i._vnode)) &&\r\n                    isDef(i.data)\r\n                ) {\r\n                    removeAndInvokeRemoveHook(i, rm)\r\n                }\r\n                for (i = 0; i < cbs.remove.length; ++i) {\r\n                    cbs.remove[i](vnode, rm)\r\n                }\r\n                if (isDef((i = vnode.data.hook)) && isDef((i = i.remove))) {\r\n                    i(vnode, rm)\r\n                } else {\r\n                    rm()\r\n                }\r\n            } else {\r\n                removeNode(vnode.elm)\r\n            }\r\n        }\r\n\r\n        function updateChildren(parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly) {\r\n            var oldStartIdx = 0\r\n            var newStartIdx = 0\r\n            var oldEndIdx = oldCh.length - 1\r\n            var oldStartVnode = oldCh[0]\r\n            var oldEndVnode = oldCh[oldEndIdx]\r\n            var newEndIdx = newCh.length - 1\r\n            var newStartVnode = newCh[0]\r\n            var newEndVnode = newCh[newEndIdx]\r\n            var oldKeyToIdx, idxInOld, elmToMove, refElm\r\n\r\n            // removeOnly is a special flag used only by <transition-group>\r\n            // to ensure removed elements stay in correct relative positions\r\n            // during leaving transitions\r\n            var canMove = !removeOnly\r\n\r\n            while (oldStartIdx <= oldEndIdx && newStartIdx <= newEndIdx) {\r\n                if (isUndef(oldStartVnode)) {\r\n                    oldStartVnode = oldCh[++oldStartIdx] // Vnode has been moved left\r\n                } else if (isUndef(oldEndVnode)) {\r\n                    oldEndVnode = oldCh[--oldEndIdx]\r\n                } else if (sameVnode(oldStartVnode, newStartVnode)) {\r\n                    patchVnode(oldStartVnode, newStartVnode, insertedVnodeQueue)\r\n                    oldStartVnode = oldCh[++oldStartIdx]\r\n                    newStartVnode = newCh[++newStartIdx]\r\n                } else if (sameVnode(oldEndVnode, newEndVnode)) {\r\n                    patchVnode(oldEndVnode, newEndVnode, insertedVnodeQueue)\r\n                    oldEndVnode = oldCh[--oldEndIdx]\r\n                    newEndVnode = newCh[--newEndIdx]\r\n                } else if (sameVnode(oldStartVnode, newEndVnode)) {\r\n                    // Vnode moved right\r\n                    patchVnode(oldStartVnode, newEndVnode, insertedVnodeQueue)\r\n                    canMove &&\r\n                        nodeOps.insertBefore(\r\n                            parentElm,\r\n                            oldStartVnode.elm,\r\n                            nodeOps.nextSibling(oldEndVnode.elm)\r\n                        )\r\n                    oldStartVnode = oldCh[++oldStartIdx]\r\n                    newEndVnode = newCh[--newEndIdx]\r\n                } else if (sameVnode(oldEndVnode, newStartVnode)) {\r\n                    // Vnode moved left\r\n                    patchVnode(oldEndVnode, newStartVnode, insertedVnodeQueue)\r\n                    canMove && nodeOps.insertBefore(parentElm, oldEndVnode.elm, oldStartVnode.elm)\r\n                    oldEndVnode = oldCh[--oldEndIdx]\r\n                    newStartVnode = newCh[++newStartIdx]\r\n                } else {\r\n                    if (isUndef(oldKeyToIdx)) {\r\n                        oldKeyToIdx = createKeyToOldIdx(oldCh, oldStartIdx, oldEndIdx)\r\n                    }\r\n                    idxInOld = isDef(newStartVnode.key) ? oldKeyToIdx[newStartVnode.key] : null\r\n                    if (isUndef(idxInOld)) {\r\n                        // New element\r\n                        createElm(newStartVnode, insertedVnodeQueue, parentElm, oldStartVnode.elm)\r\n                        newStartVnode = newCh[++newStartIdx]\r\n                    } else {\r\n                        elmToMove = oldCh[idxInOld]\r\n                        /* istanbul ignore if */\r\n                        if (false) {}\r\n                        if (sameVnode(elmToMove, newStartVnode)) {\r\n                            patchVnode(elmToMove, newStartVnode, insertedVnodeQueue)\r\n                            oldCh[idxInOld] = undefined\r\n                            canMove &&\r\n                                nodeOps.insertBefore(parentElm, elmToMove.elm, oldStartVnode.elm)\r\n                            newStartVnode = newCh[++newStartIdx]\r\n                        } else {\r\n                            // same key but different element. treat as new element\r\n                            createElm(\r\n                                newStartVnode,\r\n                                insertedVnodeQueue,\r\n                                parentElm,\r\n                                oldStartVnode.elm\r\n                            )\r\n                            newStartVnode = newCh[++newStartIdx]\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n            if (oldStartIdx > oldEndIdx) {\r\n                refElm = isUndef(newCh[newEndIdx + 1]) ? null : newCh[newEndIdx + 1].elm\r\n                addVnodes(parentElm, refElm, newCh, newStartIdx, newEndIdx, insertedVnodeQueue)\r\n            } else if (newStartIdx > newEndIdx) {\r\n                removeVnodes(parentElm, oldCh, oldStartIdx, oldEndIdx)\r\n            }\r\n        }\r\n\r\n        function patchVnode(oldVnode, vnode, insertedVnodeQueue, removeOnly) {\r\n            if (oldVnode === vnode) {\r\n                return\r\n            }\r\n\r\n            var elm = (vnode.elm = oldVnode.elm)\r\n\r\n            if (isTrue(oldVnode.isAsyncPlaceholder)) {\r\n                if (isDef(vnode.asyncFactory.resolved)) {\r\n                    hydrate(oldVnode.elm, vnode, insertedVnodeQueue)\r\n                } else {\r\n                    vnode.isAsyncPlaceholder = true\r\n                }\r\n                return\r\n            }\r\n\r\n            // reuse element for static trees.\r\n            // note we only do this if the vnode is cloned -\r\n            // if the new node is not cloned it means the render functions have been\r\n            // reset by the hot-reload-api and we need to do a proper re-render.\r\n            if (\r\n                isTrue(vnode.isStatic) &&\r\n                isTrue(oldVnode.isStatic) &&\r\n                vnode.key === oldVnode.key &&\r\n                (isTrue(vnode.isCloned) || isTrue(vnode.isOnce))\r\n            ) {\r\n                vnode.componentInstance = oldVnode.componentInstance\r\n                return\r\n            }\r\n\r\n            var i\r\n            var data = vnode.data\r\n            if (isDef(data) && isDef((i = data.hook)) && isDef((i = i.prepatch))) {\r\n                i(oldVnode, vnode)\r\n            }\r\n\r\n            var oldCh = oldVnode.children\r\n            var ch = vnode.children\r\n            if (isDef(data) && isPatchable(vnode)) {\r\n                for (i = 0; i < cbs.update.length; ++i) {\r\n                    cbs.update[i](oldVnode, vnode)\r\n                }\r\n                if (isDef((i = data.hook)) && isDef((i = i.update))) {\r\n                    i(oldVnode, vnode)\r\n                }\r\n            }\r\n            if (isUndef(vnode.text)) {\r\n                if (isDef(oldCh) && isDef(ch)) {\r\n                    if (oldCh !== ch) {\r\n                        updateChildren(elm, oldCh, ch, insertedVnodeQueue, removeOnly)\r\n                    }\r\n                } else if (isDef(ch)) {\r\n                    if (isDef(oldVnode.text)) {\r\n                        nodeOps.setTextContent(elm, \"\")\r\n                    }\r\n                    addVnodes(elm, null, ch, 0, ch.length - 1, insertedVnodeQueue)\r\n                } else if (isDef(oldCh)) {\r\n                    removeVnodes(elm, oldCh, 0, oldCh.length - 1)\r\n                } else if (isDef(oldVnode.text)) {\r\n                    nodeOps.setTextContent(elm, \"\")\r\n                }\r\n            } else if (oldVnode.text !== vnode.text) {\r\n                nodeOps.setTextContent(elm, vnode.text)\r\n            }\r\n            if (isDef(data)) {\r\n                if (isDef((i = data.hook)) && isDef((i = i.postpatch))) {\r\n                    i(oldVnode, vnode)\r\n                }\r\n            }\r\n        }\r\n\r\n        function invokeInsertHook(vnode, queue, initial) {\r\n            // delay insert hooks for component root nodes, invoke them after the\r\n            // element is really inserted\r\n            if (isTrue(initial) && isDef(vnode.parent)) {\r\n                vnode.parent.data.pendingInsert = queue\r\n            } else {\r\n                for (var i = 0; i < queue.length; ++i) {\r\n                    queue[i].data.hook.insert(queue[i])\r\n                }\r\n            }\r\n        }\r\n\r\n        var bailed = false\r\n        // list of modules that can skip create hook during hydration because they\r\n        // are already rendered on the client or has no need for initialization\r\n        var isRenderedModule = makeMap(\"attrs,style,class,staticClass,staticStyle,key\")\r\n\r\n        // Note: this is a browser-only function so we can assume elms are DOM nodes.\r\n        function hydrate(elm, vnode, insertedVnodeQueue) {\r\n            if (isTrue(vnode.isComment) && isDef(vnode.asyncFactory)) {\r\n                vnode.elm = elm\r\n                vnode.isAsyncPlaceholder = true\r\n                return true\r\n            }\r\n            vnode.elm = elm\r\n            var tag = vnode.tag\r\n            var data = vnode.data\r\n            var children = vnode.children\r\n            if (isDef(data)) {\r\n                if (isDef((i = data.hook)) && isDef((i = i.init))) {\r\n                    i(vnode, true /* hydrating */)\r\n                }\r\n                if (isDef((i = vnode.componentInstance))) {\r\n                    // child component. it should have hydrated its own tree.\r\n                    initComponent(vnode, insertedVnodeQueue)\r\n                    return true\r\n                }\r\n            }\r\n            if (isDef(tag)) {\r\n                if (isDef(children)) {\r\n                    // empty element, allow client to pick up and populate children\r\n                    if (!elm.hasChildNodes()) {\r\n                        createChildren(vnode, children, insertedVnodeQueue)\r\n                    } else {\r\n                        var childrenMatch = true\r\n                        var childNode = elm.firstChild\r\n                        for (var i$1 = 0; i$1 < children.length; i$1++) {\r\n                            if (\r\n                                !childNode ||\r\n                                !hydrate(childNode, children[i$1], insertedVnodeQueue)\r\n                            ) {\r\n                                childrenMatch = false\r\n                                break\r\n                            }\r\n                            childNode = childNode.nextSibling\r\n                        }\r\n                        // if childNode is not null, it means the actual childNodes list is\r\n                        // longer than the virtual children list.\r\n                        if (!childrenMatch || childNode) {\r\n                            if (\r\n                                false\r\n                            ) {}\r\n                            return false\r\n                        }\r\n                    }\r\n                }\r\n                if (isDef(data)) {\r\n                    for (var key in data) {\r\n                        if (!isRenderedModule(key)) {\r\n                            invokeCreateHooks(vnode, insertedVnodeQueue)\r\n                            break\r\n                        }\r\n                    }\r\n                }\r\n            } else if (elm.data !== vnode.text) {\r\n                elm.data = vnode.text\r\n            }\r\n            return true\r\n        }\r\n\r\n        return function patch(oldVnode, vnode, hydrating, removeOnly, parentElm, refElm) {\r\n            if (isUndef(vnode)) {\r\n                if (isDef(oldVnode)) {\r\n                    invokeDestroyHook(oldVnode)\r\n                }\r\n                return\r\n            }\r\n\r\n            var isInitialPatch = false\r\n            var insertedVnodeQueue = []\r\n\r\n            if (isUndef(oldVnode)) {\r\n                // empty mount (likely as component), create new root element\r\n                isInitialPatch = true\r\n                createElm(vnode, insertedVnodeQueue, parentElm, refElm)\r\n            } else {\r\n                var isRealElement = isDef(oldVnode.nodeType)\r\n                if (!isRealElement && sameVnode(oldVnode, vnode)) {\r\n                    // patch existing root node\r\n                    patchVnode(oldVnode, vnode, insertedVnodeQueue, removeOnly)\r\n                } else {\r\n                    if (isRealElement) {\r\n                        // mounting to a real element\r\n                        // check if this is server-rendered content and if we can perform\r\n                        // a successful hydration.\r\n                        if (oldVnode.nodeType === 1 && oldVnode.hasAttribute(SSR_ATTR)) {\r\n                            oldVnode.removeAttribute(SSR_ATTR)\r\n                            hydrating = true\r\n                        }\r\n                        if (isTrue(hydrating)) {\r\n                            if (hydrate(oldVnode, vnode, insertedVnodeQueue)) {\r\n                                invokeInsertHook(vnode, insertedVnodeQueue, true)\r\n                                return oldVnode\r\n                            } else {\r\n                            }\r\n                        }\r\n                        // either not server-rendered, or hydration failed.\r\n                        // create an empty node and replace it\r\n                        oldVnode = emptyNodeAt(oldVnode)\r\n                    }\r\n                    // replacing existing element\r\n                    var oldElm = oldVnode.elm\r\n                    var parentElm$1 = nodeOps.parentNode(oldElm)\r\n                    createElm(\r\n                        vnode,\r\n                        insertedVnodeQueue,\r\n                        // extremely rare edge case: do not insert if old element is in a\r\n                        // leaving transition. Only happens when combining transition +\r\n                        // keep-alive + HOCs. (#4590)\r\n                        oldElm._leaveCb ? null : parentElm$1,\r\n                        nodeOps.nextSibling(oldElm)\r\n                    )\r\n\r\n                    if (isDef(vnode.parent)) {\r\n                        // component root element replaced.\r\n                        // update parent placeholder node element, recursively\r\n                        var ancestor = vnode.parent\r\n                        while (ancestor) {\r\n                            ancestor.elm = vnode.elm\r\n                            ancestor = ancestor.parent\r\n                        }\r\n                        if (isPatchable(vnode)) {\r\n                            for (var i = 0; i < cbs.create.length; ++i) {\r\n                                cbs.create[i](emptyNode, vnode.parent)\r\n                            }\r\n                        }\r\n                    }\r\n\r\n                    if (isDef(parentElm$1)) {\r\n                        removeVnodes(parentElm$1, [oldVnode], 0, 0)\r\n                    } else if (isDef(oldVnode.tag)) {\r\n                        invokeDestroyHook(oldVnode)\r\n                    }\r\n                }\r\n            }\r\n\r\n            invokeInsertHook(vnode, insertedVnodeQueue, isInitialPatch)\r\n            return vnode.elm\r\n        }\r\n    }\r\n\r\n    /*  */\r\n\r\n    // import baseModules from 'core/vdom/modules/index'\r\n    // const platformModules = []\r\n    // import platformModules from 'web/runtime/modules/index'\r\n\r\n    // the directive module should be applied last, after all\r\n    // built-in modules have been applied.\r\n    // const modules = platformModules.concat(baseModules)\r\n    var modules = [ref]\r\n\r\n    var corePatch = createPatchFunction({\r\n        nodeOps: nodeOps,\r\n        modules: modules\r\n    })\r\n\r\n    function patch() {\r\n        corePatch.apply(this, arguments)\r\n        this.$updateDataToMP()\r\n    }\r\n\r\n    function callHook$1(vm, hook, params) {\r\n        var handlers = vm.$options[hook]\r\n        if (hook === \"onError\" && handlers) {\r\n            handlers = [handlers]\r\n        }\r\n\r\n        var ret\r\n        if (handlers) {\r\n            for (var i = 0, j = handlers.length; i < j; i++) {\r\n                try {\r\n                    ret = handlers[i].call(vm, params)\r\n                } catch (e) {\r\n                    handleError(e, vm, hook + \" hook\")\r\n                }\r\n            }\r\n        }\r\n        if (vm._hasHookEvent) {\r\n            vm.$emit(\"hook:\" + hook)\r\n        }\r\n\r\n        // for child\r\n        if (vm.$children.length) {\r\n            vm.$children.forEach(function(v) {\r\n                return callHook$1(v, hook, params)\r\n            })\r\n        }\r\n\r\n        return ret\r\n    }\r\n\r\n    // mpType 小程序实例的类型，可能的值是 'app', 'page'\r\n    // rootVueVM 是 vue 的根组件实例，子组件中访问 this.$root 可得\r\n    function getGlobalData(app, rootVueVM) {\r\n        var mp = rootVueVM.$mp\r\n        if (app && app.globalData) {\r\n            mp.appOptions = app.globalData.appOptions\r\n        }\r\n    }\r\n\r\n    // 格式化 properties 属性，并给每个属性加上 observer 方法\r\n\r\n    // properties 的 一些类型 https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html\r\n    // properties: {\r\n    //   paramA: Number,\r\n    //   myProperty: { // 属性名\r\n    //     type: String, // 类型（必填），目前接受的类型包括：String, Number, Boolean, Object, Array, null（表示任意类型）\r\n    //     value: '', // 属性初始值（可选），如果未指定则会根据类型选择一个\r\n    //     observer: function(newVal, oldVal, changedPath) {\r\n    //        // 属性被改变时执行的函数（可选），也可以写成在methods段中定义的方法名字符串, 如：'_propertyChange'\r\n    //        // 通常 newVal 就是新设置的数据， oldVal 是旧数据\r\n    //     }\r\n    //   },\r\n    // }\r\n\r\n    // props 的一些类型 https://cn.vuejs.org/v2/guide/components-props.html#ad\r\n    // props: {\r\n    //   // 基础的类型检查 (`null` 匹配任何类型)\r\n    //   propA: Number,\r\n    //   // 多个可能的类型\r\n    //   propB: [String, Number],\r\n    //   // 必填的字符串\r\n    //   propC: {\r\n    //     type: String,\r\n    //     required: true\r\n    //   },\r\n    //   // 带有默认值的数字\r\n    //   propD: {\r\n    //     type: Number,\r\n    //     default: 100\r\n    //   },\r\n    //   // 带有默认值的对象\r\n    //   propE: {\r\n    //     type: Object,\r\n    //     // 对象或数组且一定会从一个工厂函数返回默认值\r\n    //     default: function () {\r\n    //       return { message: 'hello' }\r\n    //     }\r\n    //   },\r\n    //   // 自定义验证函数\r\n    //   propF: {\r\n    //     validator: function (value) {\r\n    //       // 这个值必须匹配下列字符串中的一个\r\n    //       return ['success', 'warning', 'danger'].indexOf(value) !== -1\r\n    //     }\r\n    //   }\r\n    // }\r\n\r\n    // core/util/options\r\n    function normalizeProps$1(props, res, vm) {\r\n        if (!props) {\r\n            return\r\n        }\r\n        var i, val, name\r\n        if (Array.isArray(props)) {\r\n            i = props.length\r\n            while (i--) {\r\n                val = props[i]\r\n                if (typeof val === \"string\") {\r\n                    name = camelize(val)\r\n                    res[name] = {\r\n                        type: null\r\n                    }\r\n                } else {\r\n                }\r\n            }\r\n        } else if (isPlainObject(props)) {\r\n            for (var key in props) {\r\n                val = props[key]\r\n                name = camelize(key)\r\n                res[name] = isPlainObject(val)\r\n                    ? val\r\n                    : {\r\n                          type: val\r\n                      }\r\n            }\r\n        }\r\n\r\n        // fix vueProps to properties\r\n        for (var key$1 in res) {\r\n            if (res.hasOwnProperty(key$1)) {\r\n                var item = res[key$1]\r\n                if (item.default) {\r\n                    item.value = item.default\r\n                }\r\n                var oldObserver = item.observer\r\n                item.observer = function(newVal, oldVal) {\r\n                    vm[name] = newVal\r\n                    // 先修改值再触发原始的 observer，跟 watch 行为保持一致\r\n                    if (typeof oldObserver === \"function\") {\r\n                        oldObserver.call(vm, newVal, oldVal)\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        return res\r\n    }\r\n\r\n    function normalizeProperties(vm) {\r\n        var properties = vm.$options.properties\r\n        var vueProps = vm.$options.props\r\n        var res = {}\r\n\r\n        normalizeProps$1(properties, res, vm)\r\n        normalizeProps$1(vueProps, res, vm)\r\n\r\n        return res\r\n    }\r\n\r\n    /**\r\n     * 把 properties 中的属性 proxy 到 vm 上\r\n     */\r\n    function initMpProps(vm) {\r\n        var mpProps = (vm._mpProps = {})\r\n        var keys = Object.keys(vm.$options.properties || {})\r\n        keys.forEach(function(key) {\r\n            if (!(key in vm)) {\r\n                proxy(vm, \"_mpProps\", key)\r\n                mpProps[key] = undefined // for observe\r\n            }\r\n        })\r\n        observe(mpProps, true)\r\n    }\r\n\r\n    function initMP(mpType, next) {\r\n        var rootVueVM = this.$root\r\n        if (!rootVueVM.$mp) {\r\n            rootVueVM.$mp = {}\r\n        }\r\n\r\n        var mp = rootVueVM.$mp\r\n\r\n        // Please do not register multiple Pages\r\n        // if (mp.registered) {\r\n        if (mp.status) {\r\n            // 处理子组件的小程序生命周期\r\n            if (mpType === \"app\") {\r\n                callHook$1(this, \"onLaunch\", mp.appOptions)\r\n            } else {\n                this.__wxWebviewId__ = rootVueVM.__wxWebviewId__\n                this.__wxExparserNodeId__ = rootVueVM.__wxExparserNodeId__\r\n                callHook$1(this, \"onLoad\", mp.query)\r\n                // callHook$1(this, \"onReady\") // 避免 onReady触发两次\r\n            }\r\n            return next()\r\n        }\r\n        // mp.registered = true\r\n\r\n        mp.mpType = mpType\r\n        mp.status = \"register\"\r\n\r\n        if (mpType === \"app\") {\r\n            global.App({\r\n                // 页面的初始数据\r\n                globalData: {\r\n                    appOptions: {}\r\n                },\r\n\r\n                handleProxy: function handleProxy(e) {\r\n                    return rootVueVM.$handleProxyWithVue(e)\r\n                },\r\n\r\n                // Do something initial when launch.\r\n                onLaunch: function onLaunch(options) {\r\n                    if (options === void 0) options = {}\r\n\r\n                    mp.app = this\r\n                    mp.status = \"launch\"\r\n                    this.globalData.appOptions = mp.appOptions = options\r\n                    callHook$1(rootVueVM, \"onLaunch\", options)\r\n                    next()\r\n                },\r\n\r\n                // Do something when app show.\r\n                onShow: function onShow(options) {\r\n                    if (options === void 0) options = {}\r\n\r\n                    mp.status = \"show\"\r\n                    this.globalData.appOptions = mp.appOptions = options\r\n                    callHook$1(rootVueVM, \"onShow\", options)\r\n                },\r\n\r\n                // Do something when app hide.\r\n                onHide: function onHide() {\r\n                    mp.status = \"hide\"\r\n                    callHook$1(rootVueVM, \"onHide\")\r\n                },\r\n\r\n                onError: function onError(err) {\r\n                    callHook$1(rootVueVM, \"onError\", err)\r\n                },\r\n                //fixed by xxxxxx\r\n                onUniNViewMessage: function onUniNViewMessage(e) {\r\n                    callHook$1(rootVueVM, \"onUniNViewMessage\", e)\r\n                }\r\n            })\r\n        } else if (mpType === \"component\") {\r\n            initMpProps(rootVueVM)\r\n\r\n            global.Component({\r\n                // 小程序原生的组件属性\r\n                properties: normalizeProperties(rootVueVM),\r\n                // 页面的初始数据\r\n                data: {\r\n                    $root: {}\r\n                },\r\n                methods: {\r\n                    handleProxy: function handleProxy(e) {\r\n                        return rootVueVM.$handleProxyWithVue(e)\r\n                    }\r\n                },\r\n                // mp lifecycle for vue\r\n                // 组件生命周期函数，在组件实例进入页面节点树时执行，注意此时不能调用 setData\r\n                created: function created() {\r\n                    mp.status = \"created\"\r\n                    mp.page = this\r\n                },\r\n                // 组件生命周期函数，在组件实例进入页面节点树时执行\r\n                attached: function attached() {\r\n                    mp.status = \"attached\"\r\n                    callHook$1(rootVueVM, \"attached\")\r\n                },\r\n                // 组件生命周期函数，在组件布局完成后执行，此时可以获取节点信息（使用 SelectorQuery ）\r\n                ready: function ready() {\r\n                    mp.status = \"ready\"\r\n\r\n                    callHook$1(rootVueVM, \"ready\")\r\n                    next()\r\n\r\n                    // 只有页面需要 setData\r\n                    rootVueVM.$nextTick(function() {\r\n                        rootVueVM._initDataToMP()\r\n                    })\r\n                },\r\n                // 组件生命周期函数，在组件实例被移动到节点树另一个位置时执行\r\n                moved: function moved() {\r\n                    callHook$1(rootVueVM, \"moved\")\r\n                },\r\n                // 组件生命周期函数，在组件实例被从页面节点树移除时执行\r\n                detached: function detached() {\r\n                    mp.status = \"detached\"\r\n                    callHook$1(rootVueVM, \"detached\")\r\n                }\r\n            })\r\n        } else {\r\n            var app = global.getApp()\r\n    \n            \r\n            global.Page({\r\n                // 页面的初始数据\r\n                data: {\r\n                    $root: {}\r\n                },\r\n\r\n                handleProxy: function handleProxy(e) {\r\n                    return rootVueVM.$handleProxyWithVue(e)\r\n                },\r\n\r\n                // mp lifecycle for vue\r\n                // 生命周期函数--监听页面加载\r\n                onLoad: function onLoad(query) {\r\n                    rootVueVM.__wxWebviewId__ = this.__wxWebviewId__//fixed by xxxxxx(createIntersectionObserver)\r\n                    rootVueVM.__wxExparserNodeId__ = this.__wxExparserNodeId__\n                    mp.page = this\r\n                    mp.query = query\r\n                    mp.status = \"load\"\r\n                    getGlobalData(app, rootVueVM)\n                    //仅load时重置数据\n                    if (rootVueVM.$options && typeof rootVueVM.$options.data === \"function\") {\n                    \t\tObject.assign(rootVueVM.$data, rootVueVM.$options.data())\n                    }\r\n                    callHook$1(rootVueVM, \"onLoad\", query)\r\n                },\r\n\r\n                // 生命周期函数--监听页面显示\r\n                onShow: function onShow() {\n                    rootVueVM.__wxWebviewId__ = this.__wxWebviewId__//fixed by xxxxxx(createIntersectionObserver)\r\n                    rootVueVM.__wxExparserNodeId__ = this.__wxExparserNodeId__\n                    mp.page = this\r\n                    mp.status = \"show\"\n                \r\n                    callHook$1(rootVueVM, \"onShow\")\n                    \n                    //   // 只有页面需要 setData\n                    rootVueVM.$nextTick(function () {\n                    \trootVueVM._initDataToMP();\n                    });\r\n                },\r\n\r\n                // 生命周期函数--监听页面初次渲染完成\r\n                onReady: function onReady() {\r\n                    mp.status = \"ready\"\r\n\r\n                    callHook$1(rootVueVM, \"onReady\")\r\n                    next()\r\n                },\r\n\r\n                // 生命周期函数--监听页面隐藏\r\n                onHide: function onHide() {\r\n                    mp.status = \"hide\"\r\n                    callHook$1(rootVueVM, \"onHide\")\r\n                },\r\n\r\n                // 生命周期函数--监听页面卸载\r\n                onUnload: function onUnload() {\r\n                    mp.status = \"unload\"\r\n                    callHook$1(rootVueVM, \"onUnload\")\r\n                    mp.page = null\r\n                },\r\n\r\n                // 页面相关事件处理函数--监听用户下拉动作\r\n                onPullDownRefresh: function onPullDownRefresh() {\r\n                    callHook$1(rootVueVM, \"onPullDownRefresh\")\r\n                },\r\n\r\n                // 页面上拉触底事件的处理函数\r\n                onReachBottom: function onReachBottom() {\r\n                    callHook$1(rootVueVM, \"onReachBottom\")\r\n                },\r\n\r\n                // 用户点击右上角分享\r\n                onShareAppMessage: rootVueVM.$options.onShareAppMessage\r\n                    ? function(options) {\r\n                          return callHook$1(rootVueVM, \"onShareAppMessage\", options)\r\n                      }\r\n                    : null,\r\n\r\n                // Do something when page scroll\r\n                onPageScroll: function onPageScroll(options) {\r\n                    callHook$1(rootVueVM, \"onPageScroll\", options)\r\n                },\r\n\r\n                // 当前是 tab 页时，点击 tab 时触发\r\n                onTabItemTap: function onTabItemTap(options) {\r\n                    callHook$1(rootVueVM, \"onTabItemTap\", options)\r\n                }\r\n            })\r\n        }\r\n    }\r\n\r\n    // 节流方法，性能优化\r\n    // 全局的命名约定，为了节省编译的包大小一律采取形象的缩写，说明如下。\r\n    // $c === $child\r\n    // $k === $comKey\r\n\r\n    // 新型的被拍平的数据结构\r\n    // {\r\n    //   $root: {\r\n    //     '1-1'{\r\n    //       // ... data\r\n    //     },\r\n    //     '1.2-1': {\r\n    //       // ... data1\r\n    //     },\r\n    //     '1.2-2': {\r\n    //       // ... data2\r\n    //     }\r\n    //   }\r\n    // }\r\n\r\n    function getVmData(vm) {\r\n        // 确保当前 vm 所有数据被同步\r\n        var dataKeys = [].concat(\r\n            Object.keys(vm._data || {}),\r\n            Object.keys(vm._props || {}),\r\n            Object.keys(vm._mpProps || {}),\r\n            Object.keys(vm._computedWatchers || {})\r\n        )\r\n        return dataKeys.reduce(function(res, key) {\r\n            res[key] = vm[key]\r\n            return res\r\n        }, {})\r\n    }\r\n\r\n    function getParentComKey(vm, res) {\r\n        if (res === void 0) res = []\r\n\r\n        var ref = vm || {}\r\n        var $parent = ref.$parent\r\n        if (!$parent) {\r\n            return res\r\n        }\r\n        res.unshift(getComKey($parent))\r\n        if ($parent.$parent) {\r\n            return getParentComKey($parent, res)\r\n        }\r\n        return res\r\n    }\r\n\r\n    function formatVmData(vm) {\r\n        var $p = getParentComKey(vm).join(\",\")\r\n        var $k = $p + ($p ? \",\" : \"\") + getComKey(vm)\r\n\r\n        // getVmData 这儿获取当前组件内的所有数据，包含 props、computed 的数据\r\n        // 改动 vue.runtime 所获的的核心能力\r\n        var data = Object.assign(getVmData(vm), {\r\n            $k: $k,\r\n            $kk: $k + \",\",\r\n            $p: $p\r\n        })\r\n        var key = \"$root.\" + $k\r\n        var res = {}\r\n        res[key] = data\r\n        return res\r\n    }\r\n\r\n    function collectVmData(vm, res) {\r\n        if (res === void 0) res = {}\r\n\r\n        var vms = vm.$children\r\n        if (vms && vms.length) {\r\n            vms.forEach(function(v) {\r\n                return collectVmData(v, res)\r\n            })\r\n        }\r\n        return Object.assign(res, formatVmData(vm))\r\n    }\r\n\r\n    /**\r\n     * 频率控制 返回函数连续调用时，func 执行频率限定为 次 / wait\r\n     * 自动合并 data\r\n     *\r\n     * @param  {function}   func      传入函数\r\n     * @param  {number}     wait      表示时间窗口的间隔\r\n     * @param  {object}     options   如果想忽略开始边界上的调用，传入{leading: false}。\r\n     *                                如果想忽略结尾边界上的调用，传入{trailing: false}\r\n     * @return {function}             返回客户调用函数\r\n     */\r\n    function throttle(func, wait, options) {\r\n        var context, args, result\r\n        var timeout = null\r\n        // 上次执行时间点\r\n        var previous = 0\r\n        if (!options) {\r\n            options = {}\r\n        }\r\n        // 延迟执行函数\r\n        function later() {\r\n            // 若设定了开始边界不执行选项，上次执行时间始终为0\r\n            previous = options.leading === false ? 0 : Date.now()\r\n            timeout = null\r\n            result = func.apply(context, args)\r\n            if (!timeout) {\r\n                context = args = null\r\n            }\r\n        }\r\n        return function(handle, data) {\r\n            var now = Date.now()\r\n            // 首次执行时，如果设定了开始边界不执行选项，将上次执行时间设定为当前时间。\r\n            if (!previous && options.leading === false) {\r\n                previous = now\r\n            }\r\n            // 延迟执行时间间隔\r\n            var remaining = wait - (now - previous)\r\n            context = this\r\n            args = args ? [handle, Object.assign(args[1], data)] : [handle, data]\r\n            // 延迟时间间隔remaining小于等于0，表示上次执行至此所间隔时间已经超过一个时间窗口\r\n            // remaining大于时间窗口wait，表示客户端系统时间被调整过\r\n            if (remaining <= 0 || remaining > wait) {\r\n                clearTimeout(timeout)\r\n                timeout = null\r\n                previous = now\r\n                result = func.apply(context, args)\r\n                if (!timeout) {\r\n                    context = args = null\r\n                }\r\n                // 如果延迟执行不存在，且没有设定结尾边界不执行选项\r\n            } else if (!timeout && options.trailing !== false) {\r\n                timeout = setTimeout(later, remaining)\r\n            }\r\n            return result\r\n        }\r\n    }\r\n\r\n    // 优化频繁的 setData: https://mp.weixin.qq.com/debug/wxadoc/dev/framework/performance/tips.html\r\n    var throttleSetData = throttle(function(handle, data) {\r\n        handle(data)\r\n    }, 50)\r\n\r\n    function getPage(vm) {\r\n        var rootVueVM = vm.$root\r\n        var ref = rootVueVM.$mp || {}\r\n        var mpType = ref.mpType\r\n        if (mpType === void 0) mpType = \"\"\r\n        var page = ref.page\r\n\r\n        // 优化后台态页面进行 setData: https://mp.weixin.qq.com/debug/wxadoc/dev/framework/performance/tips.html\r\n        if (mpType === \"app\" || !page || typeof page.setData !== \"function\") {\r\n            return\r\n        }\r\n        return page\r\n    }\r\n\r\n    // 优化每次 setData 都传递大量新数据\r\n    function updateDataToMP() {\r\n        var page = getPage(this)\r\n        if (!page) {\r\n            return\r\n        }\r\n\r\n        var data = JSON.parse(JSON.stringify(formatVmData(this)))\n        //fixed by xxxxxx\r\n        throttleSetData(page.setData.bind(page), diff(data, page.data))\r\n    }\r\n\r\n    function initDataToMP() {\r\n        var page = getPage(this)\r\n        if (!page) {\r\n            return\r\n        }\r\n\r\n        var data = collectVmData(this.$root)\n        //fixed by xxxxxx\r\n        page.setData(JSON.parse(JSON.stringify(data)))\r\n    }\r\n\r\n    function getVM(vm, comkeys) {\r\n        if (comkeys === void 0) comkeys = []\r\n\r\n        var keys = comkeys.slice(1)\r\n        if (!keys.length) {\r\n            return vm\r\n        }\r\n\r\n        return keys.reduce(function(res, key) {\r\n            var len = res.$children.length\r\n            for (var i = 0; i < len; i++) {\r\n                var v = res.$children[i]\r\n                var k = getComKey(v)\r\n                if (k === key) {\r\n                    res = v\r\n                    return res\r\n                }\r\n            }\r\n            return res\r\n        }, vm)\r\n    }\r\n\r\n    function getHandle(vnode, eventid, eventTypes) {\r\n        if (eventTypes === void 0) eventTypes = []\r\n\r\n        var res = []\r\n        if (!vnode || !vnode.tag) {\r\n            return res\r\n        }\r\n\r\n        var ref = vnode || {}\r\n        var data = ref.data\r\n        if (data === void 0) data = {}\r\n        var children = ref.children\r\n        if (children === void 0) children = []\r\n        var componentInstance = ref.componentInstance\r\n        if (componentInstance) {\r\n            // 增加 slot 情况的处理\r\n            // Object.values 会多增加几行编译后的代码\r\n            Object.keys(componentInstance.$slots).forEach(function(slotKey) {\r\n                var slot = componentInstance.$slots[slotKey]\r\n                var slots = Array.isArray(slot) ? slot : [slot]\r\n                slots.forEach(function(node) {\r\n                    res = res.concat(getHandle(node, eventid, eventTypes))\r\n                })\r\n            })\r\n        } else {\r\n            // 避免遍历超出当前组件的 vm\r\n            children.forEach(function(node) {\r\n                res = res.concat(getHandle(node, eventid, eventTypes))\r\n            })\r\n        }\r\n\r\n        var attrs = data.attrs\r\n        var on = data.on\r\n        if (attrs && on && attrs[\"eventid\"] === eventid) {\r\n            eventTypes.forEach(function(et) {\r\n                var h = on[et]\r\n                if (typeof h === \"function\") {\r\n                    res.push(h)\r\n                } else if (Array.isArray(h)) {\r\n                    res = res.concat(h)\r\n                }\r\n            })\r\n            return res\r\n        }\r\n\r\n        return res\r\n    }\r\n\r\n    function getWebEventByMP(e) {\r\n        var type = e.type\r\n        var timeStamp = e.timeStamp\r\n        var touches = e.touches\r\n        var detail = e.detail\r\n        if (detail === void 0) detail = {}\r\n        var target = e.target\r\n        if (target === void 0) target = {}\r\n        var currentTarget = e.currentTarget\r\n        if (currentTarget === void 0) currentTarget = {}\r\n        var x = detail.x\r\n        var y = detail.y\r\n        var event = {\r\n            mp: e,\r\n            type: type,\r\n            timeStamp: timeStamp,\r\n            x: x,\r\n            y: y,\r\n            target: Object.assign({}, target, detail),\r\n            detail: detail, //fixed by xxxxxx\r\n            currentTarget: currentTarget,\r\n            stopPropagation: noop,\r\n            preventDefault: noop\r\n        }\r\n\r\n        if (touches && touches.length) {\r\n            Object.assign(event, touches[0])\r\n            event.touches = touches\r\n        }\r\n        return event\r\n    }\r\n\r\n    function handleProxyWithVue(e) {\r\n        var rootVueVM = this.$root\r\n        var type = e.type\r\n        var target = e.target\r\n        if (target === void 0) target = {}\r\n        var currentTarget = e.currentTarget\r\n        var ref = currentTarget || target\r\n        var dataset = ref.dataset\r\n        if (dataset === void 0) dataset = {}\r\n        var comkey = dataset.comkey\r\n        if (comkey === void 0) comkey = \"\"\r\n        var eventid = dataset.eventid\r\n        var vm = getVM(rootVueVM, comkey.split(\",\"))\r\n\r\n        if (!vm) {\r\n            return\r\n        }\r\n\r\n        var webEventTypes = eventTypeMap[type] || [type]\r\n        var handles = getHandle(vm._vnode, eventid, webEventTypes)\r\n\r\n        // TODO, enevt 还需要处理更多\r\n        // https://developer.mozilla.org/zh-CN/docs/Web/API/Event\r\n        if (handles.length) {\r\n            var event = getWebEventByMP(e)\r\n            if (handles.length === 1) {\r\n                var result = handles[0](event)\r\n                return result\r\n            }\r\n            handles.forEach(function(h) {\r\n                return h(event)\r\n            })\r\n        }\r\n    }\r\n\r\n    // for platforms\r\n    // import config from 'core/config'\r\n    // install platform specific utils\r\n    Vue$3.config.mustUseProp = mustUseProp\r\n    Vue$3.config.isReservedTag = isReservedTag\r\n    Vue$3.config.isReservedAttr = isReservedAttr\r\n    Vue$3.config.getTagNamespace = getTagNamespace\r\n    Vue$3.config.isUnknownElement = isUnknownElement\r\n\r\n    // install platform patch function\r\n    Vue$3.prototype.__patch__ = patch\r\n\r\n    // public mount method\r\n    Vue$3.prototype.$mount = function(el, hydrating) {\r\n        var this$1 = this\r\n\r\n        // el = el && inBrowser ? query(el) : undefined\r\n        // return mountComponent(this, el, hydrating)\r\n\r\n        // 初始化小程序生命周期相关\r\n        var options = this.$options\r\n\r\n        if (options && (options.render || options.mpType)) {\r\n            var mpType = options.mpType\r\n            if (mpType === void 0) mpType = \"page\"\r\n            return this._initMP(mpType, function() {\r\n                return mountComponent(this$1, undefined, undefined)\r\n            })\r\n        } else {\r\n            return mountComponent(this, undefined, undefined)\r\n        }\r\n    }\r\n\r\n    // for mp\r\n    Vue$3.prototype._initMP = initMP\r\n\r\n    Vue$3.prototype.$updateDataToMP = updateDataToMP\r\n    Vue$3.prototype._initDataToMP = initDataToMP\r\n\r\n    Vue$3.prototype.$handleProxyWithVue = handleProxyWithVue\r\n\r\n    /*  */\r\n\r\n    return Vue$3\r\n})\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/global.js */ \"./node_modules/webpack/buildin/global.js\")))\n\n//# sourceURL=Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/@dcloudio/vue-cli-plugin-uni/packages/mpvue/index.js");
 
 /***/ }),
 
@@ -9411,7 +9385,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _App
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniDrawer = _interopRequireDefault(__webpack_require__(/*! @/components/drawer/uni-drawer.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/drawer/uni-drawer.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: _objectSpread({},\n  (0, _vuex.mapState)(['hasLogin', 'forcedLogin', 'userType', 'userInfo'])),\n\n  components: { uniDrawer: _uniDrawer.default },\n  data: function data() {\n    return {\n      // 右上角的按钮菜单\n      navBtnMuen: [],\n      // 当前主题: 0、默认主题 1、安全标准化主题 2、ISO45001主题\n      currentTemplate: 0 };\n\n  },\n  onLoad: function onLoad() {\n    var hydrantTab = {\n      name: '当月未检查',\n      id: '/mobile/xhsdywjclb.do' };\n\n    this.saveTabInfo('消火栓', hydrantTab);\n\n    var valveTab = {\n      name: '本周未检查',\n      id: '/mobile/fzzwjclb.do' };\n\n    this.saveTabInfo('阀组', valveTab);\n\n    var waterTab = {\n      name: '当天未检查',\n      id: '/mobile/jtwjclb.do' };\n\n    this.saveTabInfo('高位水箱', waterTab);\n    this.saveTabInfo('消防泵', waterTab);\n\n    this.setCurrentTemp();\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n    var that = this;\n    uni.showActionSheet({\n      itemList: that.navBtnMuen,\n      success: function success(res) {\n        console.log('选中了第' + (res.tapIndex + 1) + '个按钮');\n        uni.showLoading({\n          title: '正在切换主题...' });\n\n        setTimeout(function () {\n          uni.hideLoading();\n          that.currentTemplate = res.tapIndex;\n          that.setCurrentTemp();\n        }, 1000);\n      },\n      fail: function fail(res) {\n        console.log(res.errMsg);\n      } });\n\n  },\n  methods: {\n    // 设定当前选择的主题\n    setCurrentTemp: function setCurrentTemp() {\n      this.navBtnMuen = ['默认主题', '安全标准化主题', 'ISO45001主题'];\n      this.navBtnMuen[this.currentTemplate] += '[当前]';\n    },\n    jumpPage: function jumpPage(url) {\n      if (url == '') {\n        uni.showToast({\n          icon: 'none',\n          title: '敬请期待～' });\n\n        return;\n      } else {\n        uni.navigateTo({\n          url: url });\n\n      }\n    },\n    jumpPageForYCYJ: function jumpPageForYCYJ() {\n      plus.runtime.openWeb(_config.default.host + _config.default.getYjzsStatics);\n    },\n    saveTabInfo: function saveTabInfo(key, data) {\n      uni.setStorage({\n        key: key,\n        data: data,\n        success: function success() {\n          console.log('保存成功');\n        } });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/ptw/rapAdd.vue?vue&type=script&lang=js&?0585");
+eval("/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar _uniDrawer = _interopRequireDefault(__webpack_require__(/*! @/components/drawer/uni-drawer.vue */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/components/drawer/uni-drawer.vue\"));\nvar _config = _interopRequireDefault(__webpack_require__(/*! ../../util/config.js */ \"../../../../../../Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/util/config.js\"));\nvar _vuex = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm.js\");function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =\n\n\n\n{\n  computed: _objectSpread({},\n  (0, _vuex.mapState)(['hasLogin', 'forcedLogin', 'userType', 'userInfo'])),\n\n  components: { uniDrawer: _uniDrawer.default },\n  data: function data() {\n    return {\n      // 右上角的按钮菜单\n      navBtnMuen: [],\n      // 当前主题: 0、默认主题 1、安全标准化主题 2、ISO45001主题\n      currentTemplate: 0 };\n\n  },\n  onLoad: function onLoad() {\n    var hydrantTab = {\n      name: '当月未检查',\n      id: '/mobile/xhsdywjclb.do' };\n\n    this.saveTabInfo('消火栓', hydrantTab);\n\n    var valveTab = {\n      name: '本周未检查',\n      id: '/mobile/fzzwjclb.do' };\n\n    this.saveTabInfo('阀组', valveTab);\n\n    var waterTab = {\n      name: '当天未检查',\n      id: '/mobile/jtwjclb.do' };\n\n    this.saveTabInfo('高位水箱', waterTab);\n    this.saveTabInfo('消防泵', waterTab);\n\n    this.setCurrentTemp();\n  },\n  onNavigationBarButtonTap: function onNavigationBarButtonTap() {\n    var that = this;\n    uni.showActionSheet({\n      itemList: that.navBtnMuen,\n      success: function success(res) {\n        console.log('选中了第' + (res.tapIndex + 1) + '个按钮');\n        uni.showLoading({\n          title: '正在切换主题...' });\n\n        setTimeout(function () {\n          uni.hideLoading();\n          that.currentTemplate = res.tapIndex;\n          that.setCurrentTemp();\n        }, 1000);\n      },\n      fail: function fail(res) {\n        console.log(res.errMsg);\n      } });\n\n  },\n  methods: {\n    // 设定当前选择的主题\n    setCurrentTemp: function setCurrentTemp() {\n      this.navBtnMuen = ['默认主题', '安全标准化主题', 'ISO45001主题'];\n      this.navBtnMuen[this.currentTemplate] += '[当前]';\n    },\n    jumpConsider: function jumpConsider(e) {\n      console.log(e);\n      // \t\t\t\tuni.showToast({\n      // \t\t\t\t\ttitle: e.target.id\n      // \t\t\t\t})\n      uni.navigateTo({\n        url: 'rapConsider' });\n\n    },\n    jumpPage: function jumpPage(url) {\n      if (url == '') {\n        uni.showToast({\n          icon: 'none',\n          title: '敬请期待～' });\n\n        return;\n      } else {\n        uni.navigateTo({\n          url: url });\n\n      }\n    },\n    jumpPageForYCYJ: function jumpPageForYCYJ() {\n      plus.runtime.openWeb(_config.default.host + _config.default.getYjzsStatics);\n    },\n    saveTabInfo: function saveTabInfo(key, data) {\n      uni.setStorage({\n        key: key,\n        data: data,\n        success: function success() {\n          console.log('保存成功');\n        } });\n\n    } } };exports.default = _default;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js */ \"./node_modules/@dcloudio/vue-cli-plugin-hbuilderx/packages/uni-app-plus/dist/index.js\")[\"default\"]))\n\n//# sourceURL=uni-app:///pages/ptw/rapAdd.vue?vue&type=script&lang=js&?0585");
 
 /***/ }),
 
@@ -9434,7 +9408,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=Users/lijiabin/Do
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"part2\" },\n    [\n      _c(\"block\", [\n        _c(\"view\", { staticClass: \"titleView_pc\" }, [\n          _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"工况\")])\n        ]),\n        _c(\"view\", { staticClass: \"menuBlockView\" }, [\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-0\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"rapConsider\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-1\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-2\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-3\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-4\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-5\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-6\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-7\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-8\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-9\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-10\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-11\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-12\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-13\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-14\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          )\n        ]),\n        _c(\"view\", { staticClass: \"titleView_pc\" }, [\n          _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"操作\")])\n        ]),\n        _c(\"view\", { staticClass: \"menuBlockView\" }, [\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-15\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-16\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-17\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-18\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-19\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-20\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-21\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-22\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-23\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-24\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-25\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-26\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-27\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-28\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-29\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          )\n        ]),\n        _c(\"view\", { staticClass: \"titleView_pc\" }, [\n          _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"工具\")])\n        ]),\n        _c(\"view\", { staticClass: \"menuBlockView\" }, [\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-30\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-31\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-32\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-33\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-34\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-35\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-36\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-37\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-38\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-39\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-40\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-41\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-42\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-43\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { eventid: \"11e63791-44\" },\n              on: {\n                tap: function($event) {\n                  _vm.jumpPage(\"\")\n                }\n              }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          )\n        ])\n      ])\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/ptw/rapAdd.vue?vue&type=template&id=6ca1fb8a&");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"view\",\n    { staticClass: \"part2\" },\n    [\n      _c(\"block\", [\n        _c(\"view\", { staticClass: \"titleView_pc\" }, [\n          _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"工况\")])\n        ]),\n        _c(\"view\", { staticClass: \"menuBlockView\" }, [\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"8\", eventid: \"11e63791-0\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/8.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"屋顶作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"9\", eventid: \"11e63791-1\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/9.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"地下作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"11\", eventid: \"11e63791-2\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/11.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"非常规进入\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"35\", eventid: \"11e63791-3\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/35.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"登高作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"54\", eventid: \"11e63791-4\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/54.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"路边作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"60\", eventid: \"11e63791-5\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/60.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"临时作业棚\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"61\", eventid: \"11e63791-6\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/61.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"封路\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"81\", eventid: \"11e63791-7\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/81.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"设备拆离\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"87\", eventid: \"11e63791-8\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/87.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"石棉/陶瓷\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"88\", eventid: \"11e63791-9\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/88.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"水上作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"88-1\", eventid: \"11e63791-10\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/88-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"潜水/水下作业\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"92-1\", eventid: \"11e63791-11\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/92-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"装置区\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"92-2\", eventid: \"11e63791-12\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/92-2.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"罐区\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"92-3\", eventid: \"11e63791-13\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/92-3.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"热的区域和表面\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"92-4\", eventid: \"11e63791-14\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/92-4.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"危险物料\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"92-5\", eventid: \"11e63791-15\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/92-5.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"在火炬区域工作\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"92-6\", eventid: \"11e63791-16\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/92-6.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"运行设备上作业\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"92-7\", eventid: \"11e63791-17\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/92-7.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"加玻璃/聚四氟乙烯衬里的装置\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"92-8\", eventid: \"11e63791-18\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/92-8.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"冷却塔\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"92-9\", eventid: \"11e63791-19\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/92-9.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"非装置区\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"99\", eventid: \"11e63791-20\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/99.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"受限空间\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"99\", eventid: \"11e63791-21\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/99.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"受限空间\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"99-2\", eventid: \"11e63791-22\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/99-2.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"受限空间-脏的\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"99-3\", eventid: \"11e63791-23\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/99-3.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"受限空间-惰性气体\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"117\", eventid: \"11e63791-24\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/117.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"固定消防设备\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"396\", eventid: \"11e63791-25\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/396.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"格栅板\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"399\", eventid: \"11e63791-26\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/399.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"作业危害分析\")\n                ])\n              ])\n            ]\n          ),\n          _c(\"view\", { staticClass: \"dangerView\" }),\n          _c(\"view\", { staticClass: \"dangerView\" }),\n          _c(\"view\", { staticClass: \"dangerView\" })\n        ]),\n        _c(\"view\", { staticClass: \"titleView_pc\" }, [\n          _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"操作\")])\n        ]),\n        _c(\"view\", { staticClass: \"menuBlockView\" }, [\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"6\", eventid: \"11e63791-27\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/6.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"搭建/拆除脚手架\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"26\", eventid: \"11e63791-28\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/26.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"清理\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"32\", eventid: \"11e63791-29\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/32.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"土建\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"36\", eventid: \"11e63791-30\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/36.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"挖掘\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"43\", eventid: \"11e63791-31\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/43.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"涂漆\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"44\", eventid: \"11e63791-32\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/44.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"现场冲洗\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"64\", eventid: \"11e63791-33\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/64.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"电压等级（110/220/380V）\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"64-2\", eventid: \"11e63791-34\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/64-2.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"临时照明\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"64-3\", eventid: \"11e63791-35\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/64-3.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"电压等级（6KV-10KV）\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"64-4\", eventid: \"11e63791-36\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/64-4.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"电压等级（35KV）\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"64-5\", eventid: \"11e63791-37\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/64-5.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"电压等级（220KV）\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"64-6\", eventid: \"11e63791-38\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/64-6.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"在带电体上或附近作业\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"72-1\", eventid: \"11e63791-39\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/72-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"简易的机械作业\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"72-2\", eventid: \"11e63791-40\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/72-2.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"在线钻孔\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"72-3\", eventid: \"11e63791-41\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/72-3.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"机械密封/堵塞\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"72-4\", eventid: \"11e63791-42\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/72-4.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"在火炬系统作业\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"72-5\", eventid: \"11e63791-43\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/72-5.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"带压堵漏\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"72-6\", eventid: \"11e63791-44\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/72-6.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"在线设备螺栓更换\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"72-7\", eventid: \"11e63791-45\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/72-7.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"密封堵漏\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"72-8\", eventid: \"11e63791-46\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/72-8.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"安全阀测试（在线）\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"75-1\", eventid: \"11e63791-47\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/75-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"管道和设备防护\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"75-2\", eventid: \"11e63791-48\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/75-2.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"其他防护层\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"79-1\", eventid: \"11e63791-49\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/79-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"三级吊装\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"79-2\", eventid: \"11e63791-50\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/79-2.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"二级吊装\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"79-3\", eventid: \"11e63791-51\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/79-3.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"一级吊装\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"82-1\", eventid: \"11e63791-52\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/82-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"常规仪表作业\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"82-2\", eventid: \"11e63791-53\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/82-2.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"联镇报警仪器\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"82-3\", eventid: \"11e63791-54\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/82-3.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"应用支持(AST) – 二级\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"82-4\", eventid: \"11e63791-55\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/82-4.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"应用支持(AST) – 一级\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"84-1\", eventid: \"11e63791-56\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/84-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"断开管路 - 烃类\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"84-2\", eventid: \"11e63791-57\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/84-2.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"断开管路 - 腐蚀剂\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"84-3\", eventid: \"11e63791-58\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/84-3.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"断开管路 - 有毒物质\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"84-4\", eventid: \"11e63791-59\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/84-4.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"断开管路 - 蒸汽\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"84-5\", eventid: \"11e63791-60\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/84-5.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"断开管路 - 水和空气\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"84-6\", eventid: \"11e63791-61\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/84-6.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"断开管路 - 惰性气体\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"84-7\", eventid: \"11e63791-62\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/84-7.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"断开管路 - 固体\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"90-1\", eventid: \"11e63791-63\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/90-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"清洗设备\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"90-2\", eventid: \"11e63791-64\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/90-2.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"重新调试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"90-3\", eventid: \"11e63791-65\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/90-3.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"解除隔离/重新装填\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"90-4\", eventid: \"11e63791-66\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/90-4.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"停车\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"96-1\", eventid: \"11e63791-67\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/96-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"非射线的检查\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"96-2\", eventid: \"11e63791-68\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/96-2.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"射线探伤\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"100-1\", eventid: \"11e63791-69\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气密测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"100-2\", eventid: \"11e63791-70\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-2.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"水压测试\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"100-3\", eventid: \"11e63791-71\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-3.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"特殊气密测试\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"100-4\", eventid: \"11e63791-72\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/100-4.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"测压测试\")])\n              ])\n            ]\n          ),\n          _c(\"view\", { staticClass: \"dangerView\" })\n        ]),\n        _c(\"view\", { staticClass: \"titleView_pc\" }, [\n          _c(\"text\", { staticClass: \"titleText_pc\" }, [_vm._v(\"工具\")])\n        ]),\n        _c(\"view\", { staticClass: \"menuBlockView\" }, [\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"5\", eventid: \"11e63791-73\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/5.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"喷砂作业\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"7\", eventid: \"11e63791-74\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/7.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"移动式梯子\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"13-1\", eventid: \"11e63791-75\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/13-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"钻孔机和锯子\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"13-2\", eventid: \"11e63791-76\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/13-2.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"手工工具\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"18\", eventid: \"11e63791-77\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/18.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"高压水枪\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"21\", eventid: \"11e63791-78\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/21.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"机动车进入生产区\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"46\", eventid: \"11e63791-79\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/46.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"照相机\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"47\", eventid: \"11e63791-80\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/47.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"沥青熔化炉\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"48\", eventid: \"11e63791-81\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/48.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"一级动火\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"62\", eventid: \"11e63791-82\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/62.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"软管\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"73-1\", eventid: \"11e63791-83\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/73-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"便移式压缩机/鼓风机\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"73-2\", eventid: \"11e63791-84\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/73-2.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"发电机\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"73-3\", eventid: \"11e63791-85\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/73-3.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"移动泵\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"73-4\", eventid: \"11e63791-86\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/73-4.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"推土机\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"73-5\", eventid: \"11e63791-87\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/73-5.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"吸污设备\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"73-6\", eventid: \"11e63791-88\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/73-6.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"吊车\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"73-7\", eventid: \"11e63791-89\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/73-7.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"升降机\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"73-8\", eventid: \"11e63791-90\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/73-8.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"搅拌机\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"73-9\", eventid: \"11e63791-91\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/73-9.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"气动电动卷扬机\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"73-10\", eventid: \"11e63791-92\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/73-10.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"手动葫芦\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"73-11\", eventid: \"11e63791-93\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/73-11.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"牵引机\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"73-12\", eventid: \"11e63791-94\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/73-12.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"铲车\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"73-13\", eventid: \"11e63791-95\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/73-13.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"液压升降台\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"73-14\", eventid: \"11e63791-96\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/73-14.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"挖土机\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"73-15\", eventid: \"11e63791-97\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/73-15.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"垃圾车\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"74-1\", eventid: \"11e63791-98\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/74-1.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"切割、打磨机\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"74-2\", eventid: \"11e63791-99\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/74-2.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"射钉枪\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"74-3\", eventid: \"11e63791-100\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/74-3.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"气动工具\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"74-4\", eventid: \"11e63791-101\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/74-4.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"电动工具\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"74-5\", eventid: \"11e63791-102\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/74-5.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [\n                  _vm._v(\"内燃机驱动设备\")\n                ])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"74-6\", eventid: \"11e63791-103\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: {\n                  src: \"../../static/img/rap/74-6.jpg\",\n                  mode: \"widthFix\"\n                }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"电池工具\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"132\", eventid: \"11e63791-104\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/132.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"临时用电\")])\n              ])\n            ]\n          ),\n          _c(\n            \"view\",\n            {\n              staticClass: \"dangerView\",\n              attrs: { id: \"360\", eventid: \"11e63791-105\" },\n              on: { tap: _vm.jumpConsider }\n            },\n            [\n              _c(\"image\", {\n                staticClass: \"dangerIcon\",\n                attrs: { src: \"../../static/img/rap/360.jpg\", mode: \"widthFix\" }\n              }),\n              _c(\"view\", { staticClass: \"subView\" }, [\n                _c(\"text\", { staticClass: \"dangerText\" }, [_vm._v(\"特殊动火\")])\n              ])\n            ]\n          )\n        ])\n      ])\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=Users/lijiabin/Documents/GitHub/SafetyControl/SafteyControl/pages/ptw/rapAdd.vue?vue&type=template&id=6ca1fb8a&");
 
 /***/ })
 
