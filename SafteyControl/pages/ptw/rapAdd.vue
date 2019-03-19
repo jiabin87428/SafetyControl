@@ -745,12 +745,8 @@
 				this.navBtnMuen[this.currentTemplate] += '[当前]';
 			},
 			jumpConsider: function(e){
-				console.log(e);
-// 				uni.showToast({
-// 					title: e.target.id
-// 				})
 				uni.navigateTo({
-					url: 'rapConsider'
+					url: 'rapConsider?id=' + e.currentTarget.id
 				});
 			},
 			jumpPage: function (url) {

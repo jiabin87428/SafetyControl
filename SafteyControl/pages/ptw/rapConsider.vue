@@ -1,24 +1,21 @@
 <template>
 	<view class="baseView">
 		<view class="cellInfoView">
-			<view class="cellView" @click="jumpPage('rapHarm')">
-				<view class="infoView">
-					<view class="cellSubView">
-						<view class="cellText">出入是否有问题</view>
+			<block v-for="(item,idx) in considers" :key="idx">
+				<!-- <view class="littleImageView" v-bind:style="{width:littleImageWidth + 'px', height:littleImageWidth + 'px'}">
+				  <image class="littleImage" @click="viewPhoto" :id="idx" :src="imgObj.src" mode="aspectFit"></image>
+				  <image class='littleImageDelete' src='../../static/img/delete.png' @click="deleteImage(imgObj,idx)" :id='idx' mode="aspectFit"></image>
+				</view> -->
+				<view class="cellView" @click="jumpHarm(item.klysrecordid)">
+					<view class="infoView">
+						<view class="cellSubView">
+							<view class="cellText">{{item.klysnr}}</view>
+						</view>
+						<image class="arrow" src="../../static/img/rightArrow.png"></image>
 					</view>
-					<image class="arrow" src="../../static/img/rightArrow.png"></image>
+					<view class="line"></view>
 				</view>
-				<view class="line"></view>
-			</view>
-			<view class="cellView" @click="jumpPage('')">
-				<view class="infoView">
-					<view class="cellSubView">
-						<view class="cellText">工具是否会掉落</view>
-					</view>
-					<image class="arrow" src="../../static/img/rightArrow.png"></image>
-				</view>
-				<view class="line"></view>
-			</view>
+			</block>
 		</view>
 	</view>
 </template>
@@ -34,29 +31,40 @@
 		computed: mapState(['inputPageText', 'key', 'userInfo']),
 		data() {
 		    return {
-				
+				iconid: '',
+				considers: [],
 		    }
 		},
 		onLoad(option) {
-			
+			this.iconid = option.id;
+			this.getConsiders();
 		},
 		onShow() {
 			
 		},
 		methods:{
 			...mapMutations(['setSublistItem']),
-			jumpPage(url) {
-				if (url == '') {
-					uni.showToast({
-						icon: 'none',
-						title: '敬请期待～',
-					})
-					return;
-				}else {
-					uni.navigateTo({
-						url: url
-					});
-				}
+			jumpHarm(considerId) {
+				uni.navigateTo({
+					url: 'rapHarm?id=' + considerId
+				});
+			},
+			getConsiders: function () {
+				var that = this;
+				let param = {
+					iconid: that.iconid
+				};
+				//根据图标id获取考虑因素
+				request.requestLoadingNew(config.getConsiderByIcon, param, '正在加载考虑因素...', 
+					function(res){
+						if (res.success == 'true') {
+							that.considers = res.data.rapKlys;
+						}
+					},function(){
+						
+					},function() {
+						
+				});
 			},
 		}
 	}

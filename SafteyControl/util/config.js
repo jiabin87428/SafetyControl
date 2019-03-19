@@ -70,13 +70,20 @@ var config = {
 	listForInst:'/mobile/listForInst.do',
 	//获取预警指数统计结果的接口
 	getYjzsStatics:'/mobile/getYjzsStatics.do',
+	
 	//----------作业相关-----------------------
 	//安全措施选择器页面跳转
 	choiceICON:'/mobile/choiceICON.do',
 	//保存作业
 	savePTW:'/mobile/savePTW.do',
 	//保存作业并发起工作流
-	savePTWFlow:'/mobile/savePTWFlow.do'
+	savePTWFlow:'/mobile/savePTWFlow.do',
+	
+	//根据图标id获取考虑因素
+	getConsiderByIcon: '/mobile/loadklysForVue.do',
+	//根据考虑因素id获取考虑因素
+	getHarmByConsi: '/mobile/loadwhForVue.do',
+	
 	
 };
 //对外把对象config返回

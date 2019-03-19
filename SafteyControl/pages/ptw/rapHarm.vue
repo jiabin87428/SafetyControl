@@ -1,24 +1,17 @@
 <template>
 	<view class="baseView">
 		<view class="cellInfoView">
-			<view class="cellView" @click="jumpPage('rapSolution')">
-				<view class="infoView">
-					<view class="cellSubView">
-						<view class="cellText">物料掉落</view>
+			<block v-for="(item,idx) in harms" :key="idx">
+				<view class="cellView" @click="jumpSolution(item.whrecordid)">
+					<view class="infoView">
+						<view class="cellSubView">
+							<view class="cellText">{{item.whnr}}</view>
+						</view>
+						<image class="arrow" src="../../static/img/rightArrow.png"></image>
 					</view>
-					<image class="arrow" src="../../static/img/rightArrow.png"></image>
+					<view class="line"></view>
 				</view>
-				<view class="line"></view>
-			</view>
-			<view class="cellView" @click="jumpPage('')">
-				<view class="infoView">
-					<view class="cellSubView">
-						<view class="cellText">工具掉落</view>
-					</view>
-					<image class="arrow" src="../../static/img/rightArrow.png"></image>
-				</view>
-				<view class="line"></view>
-			</view>
+			</block>
 		</view>
 	</view>
 </template>
@@ -34,29 +27,40 @@
 		computed: mapState(['inputPageText', 'key', 'userInfo']),
 		data() {
 		    return {
-				
+				klysid: '',
+				harms: [],
 		    }
 		},
 		onLoad(option) {
-			
+			this.klysid = option.id;
+			this.getHarms();
 		},
 		onShow() {
 			
 		},
 		methods:{
 			...mapMutations(['setSublistItem']),
-			jumpPage(url) {
-				if (url == '') {
-					uni.showToast({
-						icon: 'none',
-						title: '敬请期待～',
-					})
-					return;
-				}else {
-					uni.navigateTo({
-						url: url
-					});
-				}
+			jumpSolution(hramId) {
+				uni.navigateTo({
+					url: 'rapSolution?id=' + hramId
+				});
+			},
+			getHarms: function () {
+				var that = this;
+				let param = {
+					klysid: that.klysid
+				};
+				//根据图标id获取考虑因素
+				request.requestLoadingNew(config.getHarmByConsi, param, '正在加载考虑因素...', 
+					function(res){
+						if (res.success == 'true') {
+							that.harms = JSON.parse(res.data).rapWh;
+						}
+					},function(){
+						
+					},function() {
+						
+				});
 			},
 		}
 	}
