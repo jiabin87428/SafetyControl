@@ -1,7 +1,18 @@
 <template>
 	<view class="baseView">
 		<view class="cellInfoView">
-			<view class="cellView" @click="jumpPage('rapSolution')">
+			<block v-for="(item,idx) in solutions" :key="idx">
+				<view class="cellView">
+					<view class="infoView">
+						<view class="cellSubView">
+							<view class="cellText">{{item.ckcsnr}}</view>
+						</view>
+						<view id="{{item.ckcsrecordid}}" class="addedText" @click="addSolution">已添加</view>
+					</view>
+					<view class="line"></view>
+				</view>
+			</block>
+			<!-- <view class="cellView" @click="jumpPage('rapSolution')">
 				<view class="infoView">
 					<view class="cellSubView">
 						<view class="cellText">不使用工具时应将其放在工具袋内1</view>
@@ -18,7 +29,7 @@
 					<view class="notAddText">添加</view>
 				</view>
 				<view class="line"></view>
-			</view>
+			</view> -->
 		</view>
 	</view>
 </template>
@@ -34,29 +45,38 @@
 		computed: mapState(['inputPageText', 'key', 'userInfo']),
 		data() {
 		    return {
-				
+				whid: '',
+				solutions: [],
 		    }
 		},
 		onLoad(option) {
-			
+			this.whid = option.id;
+			this.getSolutions();
 		},
 		onShow() {
 			
 		},
 		methods:{
 			...mapMutations(['setSublistItem']),
-			jumpPage(url) {
-				if (url == '') {
-					uni.showToast({
-						icon: 'none',
-						title: '敬请期待～',
-					})
-					return;
-				}else {
-					uni.navigateTo({
-						url: url
-					});
-				}
+			addSolution: function(e) {
+				var view = e.currentTarget
+			},
+			getSolutions: function () {
+				var that = this;
+				let param = {
+					whid: that.whid
+				};
+				//根据图标id获取考虑因素
+				request.requestLoadingNew(config.getSolutionsByHarmId, param, '正在加载考虑因素...', 
+					function(res){
+						if (res.success == 'true') {
+							that.solutions = res.data.rapCkcs;
+						}
+					},function(){
+						
+					},function() {
+						
+				});
 			},
 		}
 	}

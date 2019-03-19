@@ -456,8 +456,10 @@ var config = {
 
   //根据图标id获取考虑因素
   getConsiderByIcon: '/mobile/loadklysForVue.do',
-  //根据考虑因素id获取考虑因素
-  getHarmByConsi: '/mobile/loadwhForVue.do' };
+  //根据考虑因素id获取危害
+  getHarmByConsi: '/mobile/loadwhForVue.do',
+  //根据危害id获取参考措施
+  getSolutionsByHarmId: '/mobile/loadckcsForVue.do' };
 
 
 

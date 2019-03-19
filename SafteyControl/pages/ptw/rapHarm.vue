@@ -54,7 +54,7 @@
 				request.requestLoadingNew(config.getHarmByConsi, param, '正在加载考虑因素...', 
 					function(res){
 						if (res.success == 'true') {
-							that.harms = JSON.parse(res.data).rapWh;
+							that.harms = res.data.rapWh;
 						}
 					},function(){
 						
