@@ -32,11 +32,13 @@
 		data() {
 		    return {
 				iconid: '',
+				recordid: '',
 				considers: [],
 		    }
 		},
 		onLoad(option) {
 			this.iconid = option.id;
+			this.recordid = option.recordid;
 			this.getConsiders();
 		},
 		onShow() {
@@ -46,7 +48,7 @@
 			...mapMutations(['setSublistItem']),
 			jumpHarm(considerId) {
 				uni.navigateTo({
-					url: 'rapHarm?id=' + considerId
+					url: 'rapHarm?id=' + considerId + '&recordid=' + this.recordid
 				});
 			},
 			getConsiders: function () {
@@ -55,7 +57,7 @@
 					iconid: that.iconid
 				};
 				//根据图标id获取考虑因素
-				request.requestLoadingNew(config.getConsiderByIcon, param, '正在加载考虑因素...', 
+				request.requestLoadingNew(config.getConsiderByIcon, param, '正在加载...', 
 					function(res){
 						if (res.success == 'true') {
 							that.considers = res.data.rapKlys;

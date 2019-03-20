@@ -28,11 +28,13 @@
 		data() {
 		    return {
 				klysid: '',
+				recordid: '',
 				harms: [],
 		    }
 		},
 		onLoad(option) {
 			this.klysid = option.id;
+			this.recordid = option.recordid;
 			this.getHarms();
 		},
 		onShow() {
@@ -42,7 +44,7 @@
 			...mapMutations(['setSublistItem']),
 			jumpSolution(hramId) {
 				uni.navigateTo({
-					url: 'rapSolution?id=' + hramId
+					url: 'rapSolution?id=' + hramId + '&recordid=' + this.recordid
 				});
 			},
 			getHarms: function () {
@@ -51,7 +53,7 @@
 					klysid: that.klysid
 				};
 				//根据图标id获取考虑因素
-				request.requestLoadingNew(config.getHarmByConsi, param, '正在加载考虑因素...', 
+				request.requestLoadingNew(config.getHarmByConsi, param, '正在加载...', 
 					function(res){
 						if (res.success == 'true') {
 							that.harms = res.data.rapWh;

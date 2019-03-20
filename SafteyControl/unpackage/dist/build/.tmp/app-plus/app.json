@@ -21,7 +21,12 @@
     "pages/danger/addDanger",
     "pages/statistics/statistics",
     "pages/danger/detailDanger",
-    "pages/ptw/addPtw"
+    "pages/ptw/addPtw",
+    "pages/ptw/rapSelected",
+    "pages/ptw/rapAdd",
+    "pages/ptw/rapConsider",
+    "pages/ptw/rapHarm",
+    "pages/ptw/rapSolution"
   ],
   "subPackages": [],
   "window": {

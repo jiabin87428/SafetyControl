@@ -1,5 +1,5 @@
 <template>
-	<view class="baseView">
+	<view class="index" v-bind:style="[{'min-height': secondHeight + 'px' }]">
 		<view class="cellTitleView">
 			<text class="cellTitle">已选措施</text>
 			<view class="titleRect" style="background-color: #F9AB01;"></view>
@@ -9,239 +9,478 @@
 			<view class="titleRect" style="background-color: #017BCC;"></view>
 			<text class="cellTitle2">工具</text>
 		</view>
-		<view class="cellInfoView">
-			
-			<view class="cellView" @click="jumpInput(item.jcwtms)">
-				<view class="infoView">
-					<image class="cellImg" src="../../static/img/rap/8.jpg"></image>
-					<view class="cellSubView">
-						<!-- <text class="leftText">问题描述</text> -->
-						<view class="rightText">测试测试测试测试测试测试</view>
+		<view class="list-box">
+			<view class="container_of_slide" v-for="(item,index) in list" :key="index">
+				<view class="slide_list" @touchstart="touchStart($event,index)" @touchend="touchEnd($event,index)" @touchmove="touchMove($event,index)"
+				 @tap="recover(index)" :style="{transform:'translate3d('+item.slide_x+'px, 0, 0)'}">
+					<view class="now-message-info" hover-class="uni-list-cell-hover" :style="{width:Screen_width+'px'}">
+						<!-- <view class="icon-circle">{{item.surname}}</view> -->
+						<image class="cellImg" v-bind:src="'../../static' + item.imgpath"></image>
+						<view class="list-right">
+							<view class="list-title" v-if="item.nr">{{item.nr}}</view>
+							<!-- <view class="list-detail">{{item.remarks}}</view> -->
+						</view>
+						<!-- <view class="list-right-1">
+							{{item.dateTime}}
+						</view> -->
 					</view>
-					<!-- <image class="arrow" src="../../static/img/rightArrow.png"></image> -->
+					<view class="group-btn">
+						<view class="top btn-div" @tap="top(item.recordid)" v-if="item.isShare">
+							分享
+						</view>
+						<view class="removeM btn-div" @tap="removeM(index, item.recordid)">
+							删除
+						</view>
+					</view>
+					<view style="clear:both"></view>
 				</view>
-				<view class="line"></view>
 			</view>
 		</view>
-		<view class="btn-row">
-		    <button type="primary" class="primary" @tap="saveItem">确定</button>
+		<view class="btn-plusempty">
+			<!-- <image src="../../static/slide-list/jiahao.png" class="plusempty-img"></image> -->
+			<button type="primary" class="primary" @tap="okClick">确定</button>
 		</view>
 	</view>
 </template>
 
 <script>
-	import uniList from '@/components/list/uni-list/uni-list.vue'
-	import uniListItem from '@/components/list/uni-list-item/uni-list-item.vue'
+	import mSearch from '../../components/m-search/m-search.vue';
 	import config from '../../util/config.js';
 	import request from '../../util/request.js';
-	import {
-	    mapState,
-		mapMutations
-	} from 'vuex'
+
 	export default {
-		computed: mapState(['inputPageText', 'key', 'userInfo']),
-		components: {uniList,uniListItem},
+		components: {
+			mSearch
+		},
+		name: 'slide-list',
+		computed: {
+			Screen_width() {
+				return uni.getSystemInfoSync().windowWidth;
+			}
+		},
 		data() {
-		    return {
-				// 当页面OnShow的时候是否需要从state里去拿输入的内容
-				needGetInputOnShow: false,
+			return {
+				recordid: '',
+				// solutions: [],
 				
-				typeArray: ['正常', '未检', '异常'],
-				rectifyTypes: ['发起隐患整改单'],
-		        item: '',		// subList中的对象
-				itemIndex: 0,	// subList中的第几个数据，用于确定后替换原数据
-				
-				// 上传照片相关
-				imageViewHeight: 100,
-				imageList: [],
-				littleImageWidth: 0,
-		    }
+				img: '../../static/slide-list/qr_code.png',
+				visible: false,
+				start_slide_x: 0,
+				btnWidth: 0,
+				startX: 0,
+				LastX: 0,
+				startTime: 0,
+				screenName: '',
+				list : [
+// 					{
+// 						id: 1,
+// 						surname: '张',
+// 						name: '张三',
+// 						dateTime: '2019-03-18',
+// 						remarks: 'XXXXXXXXXXXXXXXXXXX公司',
+// 						isShare: true,
+// 						slide_x: 0
+// 					},
+// 					{
+// 						id: 2,
+// 						surname: '?',
+// 						name: '李二',
+// 						dateTime: '2019-03-17',
+// 						remarks: 'XXXXXXXXXXXXXXXXXXX公司',
+// 						isShare: false,
+// 						slide_x: 0
+// 					},
+// 					{
+// 						id: 3,
+// 						surname: '王',
+// 						name: '王五',
+// 						dateTime: '2019-03-18',
+// 						remarks: 'XXXXXXXXXXXXXXXXXXX公司',
+// 						isShare: true,
+// 						slide_x: 0
+// 					},
+// 					{
+// 						id: 4,
+// 						surname: '李',
+// 						name: '李珊珊',
+// 						dateTime: '2019-03-18',
+// 						remarks: 'XXXXXXXXXXXXXXXXXXX公司',
+// 						isShare: true,
+// 						slide_x: 0
+// 					}
+				],
+				btuBottom: '0',
+				secondHeight: ''
+			};
 		},
 		onLoad(option) {
-			console.log('测试：' + option.item)
-			this.item = JSON.parse(option.item);
-			this.itemIndex = JSON.parse(option.index);
-			this.littleImageWidth = (uni.getSystemInfoSync().windowWidth -50) / 4;
-			if(this.item.fj == null) {
-				return;
-			}
-			if (this.item.fj != "") {
-				console.log('FJ:' + this.item.fj);
-				let imgList = JSON.parse(this.item.fj);
-				for(var i=0; i<imgList.length; i++) {
-					let imgObj = imgList[i];
-					let imgUrl = config.host + config.loadImage + imgObj.fileId + "&userid=" + this.userInfo.userid;
-					let imgItem = {
-						fileid: imgObj.fileId,
-						src: imgUrl,
-						type: 2
-					}
-					this.imageList.push(imgItem);
-				}
-			}
+			this.recordid = option.recordid;
 		},
 		onShow() {
-			if (this.needGetInputOnShow == true) {
-				this.item[this.key] = this.inputPageText;
-				this.needGetInputOnShow = false;
-			}
+			const res = uni.getSystemInfoSync();
+			// 计算主体部分高度,单位为px
+			this.secondHeight = res.windowHeight;
+			
+			this.getSelectedSolutions();
 		},
 		onNavigationBarButtonTap() {
 			uni.navigateTo({
-				url: 'rapAdd'
+				url: 'rapAdd?recordid=' + this.recordid
 			})
 		},
-		methods:{
-			...mapMutations(['setSublistItem']),
-			bindTypeChange(e) {
-				this.item.jcjl = this.typeArray[e.detail.value];
-				if (this.item.jcjl == "正常") {
-					this.item.zgfs = "";
-				}
-			},
-			bindRectifyChange(e) {
-				this.item.zgfs = this.rectifyTypes[e.detail.value];
-			},
-			jumpInput(text) {
-				this.needGetInputOnShow = true;
-				uni.navigateTo({
-					url: '../common/inputPage?text=' + text + '&key=jcwtms&placeholder=请输入问题描述',
-				})
-			},
-			saveItem() {
+		methods: {
+			getSelectedSolutions: function(e) {
 				var that = this;
-				
-				// 上传照片，需要分两种情况，如是从后台加载的，不需要调用上传接口，如果是本地读取还未上传的，需要调上传接口
-				
-				let url = config.uploadImage + '?from=jc&yyid=' + that.item.id + '&userid=' + that.userInfo.userid
-				var imgList = []
-				for (var i=0 ; i<that.imageList.length; i++) {
-					let item = that.imageList[i]
-					if (item.type == 1 && !item.src.startsWith('http:')) {
-						imgList.push(item.src);
-					}
-				}
-				
-				if(imgList.length == 0) {
-					that.saveLocalItem();
-					uni.navigateBack({
-						delta: 1
-					})
-					return;
-				}
-				uni.showLoading({
-					title: '正在上传图片'
-				})
-				request.uploadImage(url, imgList, 0, 0, 0, imgList.length, function (res) {
-					let data = JSON.parse(res.data);
-					let fj = data.fj;
-					that.item.fj = fj;
-					console.log('Item:',JSON.stringify(that.item));
-				}, function(result){
-					uni.hideLoading();
-					if (result == '200') {
-						that.saveLocalItem();
-						uni.showToast({
-						  title: '上传成功',
-						  complete: setTimeout(function () {
-							uni.navigateBack({
-								delta: 1
-							})
-						  }, 1500)
-						})
-					}
-				});
-			},
-			
-			// 缓存Item，给上一个页面获取
-			saveLocalItem() {
-				let obj = {
-					item: this.item,
-					index: this.itemIndex
-				}
-				this.setSublistItem(obj);
-			},
-			
-			// 删除照片，需要分两种情况，如是从后台加载的，那需要调用删除接口，如果是直接本地读取还未上传的，不需要调删除接口
-			deleteImage(imgObj, index) {
-				var that = this;
-				if (imgObj.src.startsWith('http:')) {// 网络图片
-					let obj = {
-						item: that.item,
-						index: that.itemIndex
-					}
-					that.setSublistItem(obj);
-					
-					let param = {
-						from: 'jc',
-						yyid: that.item.id,
-						fileid: imgObj.fileid,
-						userid: that.userInfo.userid
-					};
-					request.requestLoading(config.deleteImage, param, '正在删除图片', 
-						function(res){
-							console.log('删除成功：' + JSON.stringify(res));
-							that.item.fj = res.fj
-							that.imageList.splice(index,1);
-						},function(){
-							uni.showToast({
-								icon: 'none',
-								title: '删除失败'
-							});
-						}, function(){
-							
+				let param = {
+					recordid: that.recordid
+				};
+				request.requestLoadingNew(config.getSelectedSolutionById, param, '正在加载...', 
+					function(res){
+						if (res.success == 'true') {
+							that.list = res.data.aqcs;
 						}
-					);
-				}else {// 刚选择好，还未上传，非网络图片
-					that.imageList.splice(index,1);
-				}
-			},
-			
-			// 浏览照片
-			viewPhoto() {
-				var that = this;
-				var imgList = []
-				for (var i=0 ; i<that.imageList.length; i++) {
-					let item = that.imageList[i]
-					imgList.push(item.src);
-				}
-				// 预览图片
-				uni.previewImage({
-					urls: imgList
+					},function(){
+						
+					},function() {
+						
 				});
 			},
-			
-			// 上传照片功能-添加照片
-			addPhoto() {
-				var that = this;
-				uni.chooseImage({
-					count: 9, //默认9
-					sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
-					sourceType: ['album', 'camera'], //从相册选择
-					success: function (res) {
-						console.log(JSON.stringify(res.tempFilePaths));
-						for (var i=0;i<res.tempFilePaths.length;i++) {
-							var imgObj = {//	type：1为新增需要上传，2为加载的，不需要上传
-								fileid: '',
-								src: res.tempFilePaths[i],
-								type: 1
-							}
-							that.imageList.push(imgObj);
+			cancelEvent(){
+				this.visible = false
+			},
+			search(e, val) {
+				this.screenName = e
+				console.log('点击搜索')
+			},
+			getDetail(item){
+				console.log('查看详情')
+			},
+			// 滑动开始
+			touchStart(e, index) {
+				//记录手指放上去的时间
+				this.startTime = e.timeStamp;
+				//记录滑块的初始位置
+				this.start_slide_x = this.list[index].slide_x;
+				// 按钮宽度
+				uni.createSelectorQuery()
+					.selectAll('.group-btn')
+					.boundingClientRect()
+					.exec(res => {
+						if (res[0] != null) {
+							this.btnWidth = res[0][index].width * -1;
 						}
+					});
+				// 记录上一次开始时手指所处位置
+				this.startX = e.touches[0].pageX;
+				// 记录上一次手指位置
+				this.lastX = this.startX;
+				//初始化非当前滑动消息列的位置
+				this.list.forEach((item, eq) => {
+					if (eq !== index) {
+						item.slide_x = 0;
 					}
 				});
+			},
+			// 滑动中
+			touchMove(e, index) {
+				const endX = e.touches[0].pageX;
+				const distance = endX - this.lastX;
+				// 预测滑块所处位置
+				const duang = this.list[index].slide_x + distance;
+				// 如果在可行区域内
+				if (duang <= 0 && duang >= this.btnWidth) {
+					this.list[index].slide_x = duang;
+				}
+				// 此处手指所处位置将成为下次手指移动时的上一次位置
+				this.lastX = endX;
+			},
+			// 滑动结束
+			touchEnd(e, index) {
+				let distance = 10;
+				const endTime = e.timeStamp;
+				const x_end_distance = this.startX - this.lastX;
+				if (Math.abs(endTime - this.startTime) > 200) {
+					distance = this.btnWidth / -2;
+				}
+				// 判断手指最终位置与手指开始位置的位置差距
+				if (x_end_distance > distance) {
+					this.list[index].slide_x = this.btnWidth;
+				} else if (x_end_distance < distance * -1) {
+					this.list[index].slide_x = 0;
+				} else {
+					this.list[index].slide_x = this.start_slide_x;
+				}
+			},
+			// 点击回复原状
+			recover(index) {
+				this.list[index].slide_x = 0;
+			},
+			// 分享
+			top(id) {
+				console.log('点击分享')
+				if(this.visible){
+					this.visible = false
+				}else{
+					this.visible = true
+				}
+			},
+			// 删除
+			removeM(index, id) {
+				// console.log('点击删除')
+				// this.list.splice(index, 1);
+				uni.showToast({
+					title: '点击删除',
+					icon: 'none'
+				})
+				
+				var that = this;
+				let param = {
+					ckcsid: id,
+					recordid: that.recordid
+				};
+				
+				request.requestLoadingNew(config.deleteSelectedSolution, param, '正在删除...', 
+					function(res){
+						if (res.success == 'true') {
+							that.getSelectedSolutions();
+						}
+					},function(){
+						
+					},function() {
+						
+				});
+			},
+			// 返回上一页
+			okClick: function(e) {
+				uni.navigateBack({
+					delta: 1
+				})
 			},
 		}
-	}
+	};
 </script>
 
-<style>
-	.baseView{  
+<style scoped>
+	.index{
 		display: flex;
 		flex: 1;
 		flex-direction: column;
-		background-color: #FFFFFF;
+		background: #F8F8F8;
 	}
+	.list-box{
+		padding: 20upx 0;
+	}
+	.container_of_slide {
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.slide_list {
+		transition: all 100ms;
+		transition-timing-function: ease-out;
+		min-width: 200%;
+		height: 160upx;
+	}
+
+	.now-message-info {
+		box-sizing:border-box;
+		display: flex;
+		align-items: center;
+		/* justify-content: space-between; */
+		font-size: 16px;
+		clear:both;
+		height: 160upx;
+		padding: 0 30upx;
+		margin-bottom: 20upx;
+		background: #FFFFFF;
+	}
+	.now-message-info,
+	.group-btn {
+		float: left;
+	}
+
+	.group-btn {
+		display: flex;
+		flex-direction: row;
+		height: 160upx;
+		min-width: 100upx;
+		align-items: center;
+
+	}
+
+	.group-btn .btn-div {
+		height: 160upx;
+		color: #fff;
+		text-align: center;
+		padding: 0 50upx;
+		font-size: 34upx;
+		line-height: 160upx;
+	}
+
+	.group-btn .top {
+		background-color: #c4c7cd;
+	}
+
+	.group-btn .removeM {
+		background-color: #ff3b32;
+	}
+	
+	
+	.icon-circle{
+		background: #3396fb;
+		border-radius: 100%;
+		width:100upx;
+		height: 100upx;
+		line-height:100upx;
+		text-align:center;
+		color: #FFFFFF;
+		font-weight: bold;
+		font-size: 20px;
+		float: left;
+	}
+	.list-right{
+		float: left;
+		margin-left: 25upx;
+		margin-right: 30upx;
+	}
+	.list-right-1{
+		float: right;
+		color: #A9A9A9;
+	}
+	.list-title{
+		font-size: 30upx;
+		width: 350upx;
+		line-height:1.5;
+		overflow:hidden;
+		margin-bottom: 10upx;
+		color:#333;
+		display:-webkit-box;
+		-webkit-box-orient:vertical;
+		-webkit-line-clamp:1;
+		overflow:hidden;
+	}
+	.list-detail{
+		width: 350upx;
+		font-size: 14px;
+		color: #a9a9a9;
+		display:-webkit-box;
+		-webkit-box-orient:vertical;
+		-webkit-line-clamp:1;
+		overflow:hidden;
+	}
+	.button-box{
+		box-sizing: border-box;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: 998;
+		background: #F8F8F8;
+	}
+	.btn-sub{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		float: left;
+		width: 100%;
+		height: 100upx;
+		background: #F8F8F8;
+		color: #7fb2ff;
+	}
+	.btn-plusempty{
+		width: 80%;
+		height: 110upx;
+		position: fixed;
+		bottom: 50upx;
+		left: 10%;
+		overflow: hidden;
+		text-align: center;
+		line-height: 110upx;
+	}
+	.empty{
+		color: #999999;
+	}
+	.plusempty-img{
+		width: 50upx;
+		height: 50upx;
+		margin-top: 30upx;
+	}
+	.scan-box{
+		display:block;
+		position:fixed;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		background-color:rgba(0, 0, 0, 0.3);
+		z-index:99999;
+	}
+	.scan-item{
+		display:-webkit-box;
+		display:-webkit-flex;
+		display:-ms-flexbox;
+		display:flex;
+		position:relative;
+		margin:0 auto;
+		width:80%;
+		height:100%;
+		-webkit-box-pack:center;
+		-webkit-justify-content:center;
+		-ms-flex-pack:center;
+		justify-content:center;
+		-webkit-box-align:center;
+		-webkit-align-items:center;
+		-ms-flex-align:center;
+		align-items:center;
+		-webkit-box-sizing:border-box;
+		box-sizing:border-box;
+		opacity:1;
+
+	}
+	.scan-content{
+		position:relative;
+		width: 400upx;
+		height: 400upx;
+
+	}
+	.scan-share{
+		width: 100%;
+		height: 100%;
+	}
+	.scan-img{
+		width: 300upx;
+		height: 300upx;
+		margin: auto;
+		display: block;
+		position: absolute;
+		top: 20%;
+		left: 10%;
+		z-index: 99;
+	}
+	.scan-btn{
+		top:-30upx;
+		left:auto;
+		right:-30upx;
+		bottom:auto;
+		position:absolute;
+		width:64upx;
+		height:64upx;
+		border-radius:50%;
+		z-index:99999;
+		display: flex;
+	}
+	.uni-list-cell-hover {
+		background-color: #eeeeee;
+	}
+	/**/
 	.cellTitleView {
 		width: 100%;
 		height: 60upx;
@@ -267,128 +506,9 @@
 		width: 20upx; 
 		height: 20upx;
 	}
-	.cellInfoView {
-		width: 100%;
-		background-color: #FFFFFF;
-		display: flex;
-		flex-direction: column;
-	}
-	.cellView {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	.infoView {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-	}
-	.cellSubView {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	.cellSubViewRow {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		/* justify-content: center; */
-	}
-	.leftTextRow {
-		width: 100%;
-		margin-left: 20upx;
-		font-size: 34upx;
-	}
-	.rightTextRow {
-		margin-top: 20upx;
-		margin-bottom: 20upx;
-		margin-right: 20upx;
-		text-align: right;
-		font-size: 28upx;
-		text-overflow: ellipsis;
-		white-space: normal;
-		color: inherit;
-		line-height: 1.5;
-		overflow: hidden;
-		color: #BBBBBB;
-	}
 	.cellImg {
-		width: 60upx;
-		height: 60upx;
+		width: 80upx;
+		height: 80upx;
 		margin-left: 20upx;
-	}
-	.arrow {
-		width: 15upx;
-		height: 25upx;
-		margin-right: 18upx;
-	}
-	.leftText {
-		margin-top: 20upx;
-		margin-left: 20upx;
-		font-size: 34upx;
-	}
-	.rightText {
-		margin-top: 35upx;
-		margin-left: 20upx;
-		margin-bottom: 35upx;
-		font-size: 30upx;
-		text-overflow: ellipsis;
-		white-space: normal;
-		color: inherit;
-		line-height: 1.5;
-		overflow: hidden;
-		color: #666666;
-	}
-	.line {
-		width: 100%;
-		height: 1upx;
-		background-color: #E8E8E8;
-	}
-	
-	/*添加照片的css样式*/
-	.imageBaseView {
-	  display:flex;
-	  flex-direction:column;
-	  width: 100%;
-	  background-color: white;
-	  /* margin-bottom: 10px; */
-	  border-bottom: 1rpx solid #D3D3D3;
-	  align-items:center;/*垂直居中*/
-	}
-	
-	.imageView {
-	  display:flex;
-	  flex-direction:row;
-	  width: 100%;
-	  /* height: 100px; */
-	  background-color: white;
-	  align-items: flex-start;/*垂直居中*/
-	  /* justify-content: space-between; */
-	  flex-wrap: wrap;
-	  margin-bottom: 10upx;
-	}
-	
-	.littleImageView {
-	  display:flex;
-	  flex-direction:row;
-	  margin: 20px 5px 5px 20px;
-	}
-	
-	.littleImageDelete {
-	  /* position: absolute; */
-	  position: relative;
-	  margin-left: -50upx;
-	  margin-top: -15upx;
-	  width: 60upx;
-	  height: 60upx;
-	}
-	
-	.littleImage {
-	  width: 100%;
-	  height: 100%; 
 	}
 </style>

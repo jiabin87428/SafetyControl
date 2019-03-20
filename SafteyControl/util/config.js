@@ -2,7 +2,7 @@
 /**
   * 小程序后端接口配置文件
   * http://222.223.19.166:10012/ehsq，外网
-  * http://10.57.167.214:8080/ehsq，内网
+  * http://10.57.167.214:8080/boeb9，内网
   */
 var host = "http://222.223.19.166:10012/ehsq"  //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
 
@@ -85,7 +85,12 @@ var config = {
 	getHarmByConsi: '/mobile/loadwhForVue.do',
 	//根据危害id获取参考措施
 	getSolutionsByHarmId: '/mobile/loadckcsForVue.do',
-	
+	//根据作业主键id获取已选参考措施
+	getSelectedSolutionById: '/mobile/loadIconAndAqcsForVue.do',
+	//添加参考措施
+	addSolution: '/mobile/addIconAndAqcsForVue.do',
+	//删除已选措施
+	deleteSelectedSolution: '/mobile/delIconAndAqcsForVue.do',
 	
 };
 //对外把对象config返回

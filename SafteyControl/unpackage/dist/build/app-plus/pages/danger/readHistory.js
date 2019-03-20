@@ -372,9 +372,9 @@ var copyObj = function copyObj(a) {
 /**
   * 小程序后端接口配置文件
   * http://222.223.19.166:10012/ehsq，外网
-  * http://10.57.167.214:8080/ehsq，内网
+  * http://10.57.167.214:8080/boeb9，内网
   */
-var host = "http://222.223.19.166:10012/ehsq"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
+var host = "http://10.57.167.214:8080/boeb9"; //域名要在小程序的管理平台配置好，如果出现调用时报错，无效的域名，可在微信开发工具左边点项目-》配置信息-》看一下配置的域名【request合法域名】有没有刷新下来，没有的话就点下面的刷新
 
 
 var config = {
@@ -440,13 +440,26 @@ var config = {
   listForInst: '/mobile/listForInst.do',
   //获取预警指数统计结果的接口
   getYjzsStatics: '/mobile/getYjzsStatics.do',
+
   //----------作业相关-----------------------
   //安全措施选择器页面跳转
   choiceICON: '/mobile/choiceICON.do',
   //保存作业
   savePTW: '/mobile/savePTW.do',
   //保存作业并发起工作流
-  savePTWFlow: '/mobile/savePTWFlow.do' };
+  savePTWFlow: '/mobile/savePTWFlow.do',
+
+  //根据图标id获取考虑因素
+  getConsiderByIcon: '/mobile/loadklysForVue.do',
+  //根据考虑因素id获取危害
+  getHarmByConsi: '/mobile/loadwhForVue.do',
+  //根据危害id获取参考措施
+  getSolutionsByHarmId: '/mobile/loadckcsForVue.do',
+  //根据作业主键id获取已选参考措施
+  getSelectedSolutionById: '/mobile/loadIconAndAqcsForVue.do',
+  //添加参考措施
+  addSolution: '/mobile/addIconAndAqcsForVue.do' };
+
 
 
 //对外把对象config返回

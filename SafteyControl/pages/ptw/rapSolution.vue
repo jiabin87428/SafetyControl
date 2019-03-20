@@ -7,29 +7,15 @@
 						<view class="cellSubView">
 							<view class="cellText">{{item.ckcsnr}}</view>
 						</view>
-						<view id="{{item.ckcsrecordid}}" class="addedText" @click="addSolution">已添加</view>
+						<view v-if="item.selected" v-bind:id="item.ckcsrecordid" class="addedText">已添加</view>
+						<view v-if="!item.selected" v-bind:id="item.ckcsrecordid" class="notAddText" @click="addSolution">添加</view>
 					</view>
 					<view class="line"></view>
 				</view>
 			</block>
-			<!-- <view class="cellView" @click="jumpPage('rapSolution')">
-				<view class="infoView">
-					<view class="cellSubView">
-						<view class="cellText">不使用工具时应将其放在工具袋内1</view>
-					</view>
-					<view class="addedText">已添加</view>
-				</view>
-				<view class="line"></view>
-			</view>
-			<view class="cellView" @click="jumpPage('')">
-				<view class="infoView">
-					<view class="cellSubView">
-						<view class="cellText">不使用工具时应将其放在工具袋内2</view>
-					</view>
-					<view class="notAddText">添加</view>
-				</view>
-				<view class="line"></view>
-			</view> -->
+		</view>
+		<view class="btn-row">
+		    <button type="primary" class="primary" @tap="gobackToSelected">确定</button>
 		</view>
 	</view>
 </template>
@@ -46,11 +32,14 @@
 		data() {
 		    return {
 				whid: '',
+				recordid: '',
 				solutions: [],
+				selectedSolutions: [],
 		    }
 		},
 		onLoad(option) {
 			this.whid = option.id;
+			this.recordid = option.recordid;
 			this.getSolutions();
 		},
 		onShow() {
@@ -59,7 +48,23 @@
 		methods:{
 			...mapMutations(['setSublistItem']),
 			addSolution: function(e) {
+				var that = this;
 				var view = e.currentTarget
+				let param = {
+					ckcsid: view.id,
+					recordid: that.recordid
+				};
+				//添加参考措施
+				request.requestLoadingNew(config.addSolution, param, '正在添加...', 
+					function(res){
+						if (res.success == 'true') {
+							that.getSelectedSolutions();
+						}
+					},function(){
+						
+					},function() {
+						
+				});
 			},
 			getSolutions: function () {
 				var that = this;
@@ -67,16 +72,51 @@
 					whid: that.whid
 				};
 				//根据图标id获取考虑因素
-				request.requestLoadingNew(config.getSolutionsByHarmId, param, '正在加载考虑因素...', 
+				request.requestLoadingNew(config.getSolutionsByHarmId, param, '正在加载...', 
 					function(res){
 						if (res.success == 'true') {
 							that.solutions = res.data.rapCkcs;
+							that.getSelectedSolutions();
 						}
 					},function(){
 						
 					},function() {
 						
 				});
+			},
+			getSelectedSolutions: function(e) {
+				var that = this;
+				let param = {
+					recordid: that.recordid
+				};
+				request.requestLoadingNew(config.getSelectedSolutionById, param, '正在加载...', 
+					function(res){
+						if (res.success == 'true') {
+							that.selectedSolutions = res.data.aqcs;
+							that.checkSelected();
+						}
+					},function(){
+						
+					},function() {
+						
+				});
+			},
+			checkSelected: function() {
+				for(var i in this.selectedSolutions){
+					let selectedItem = this.selectedSolutions[i];
+					for (var j in this.solutions) {
+						var item = this.solutions[j];
+						if (item.ckcsrecordid == selectedItem.yckcsid) {
+							item.selected = true;
+							console.log('' + JSON.stringify(this.solutions));
+						}
+					}
+				}
+			},
+			gobackToSelected: function(e) {
+				uni.navigateBack({
+					delta: 4
+				})
 			},
 		}
 	}
