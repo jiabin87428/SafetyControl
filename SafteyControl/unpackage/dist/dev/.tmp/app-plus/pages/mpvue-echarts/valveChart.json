@@ -1,4 +1,5 @@
 {
+  "usingComponents": {},
   "navigationBarTitleText": "阀组压力统计",
   "titleNView": {
     "buttons": [
