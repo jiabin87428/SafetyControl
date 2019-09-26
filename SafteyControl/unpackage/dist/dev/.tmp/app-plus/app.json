@@ -67,21 +67,25 @@
     "pages": {
       "pages/danger/readHistory.html": {
         "window": {
+          "usingComponents": {},
           "navigationBarTitleText": "审批阅读历史列表"
         }
       },
       "pages/danger/dangerList.html": {
         "window": {
+          "usingComponents": {},
           "navigationBarTitleText": "隐患审批"
         }
       },
       "pages/uni-tabs/uni-tabs.html": {
         "window": {
+          "usingComponents": {},
           "navigationBarTitleText": "点位检查11"
         }
       },
       "pages/pointList/uni-tabs.html": {
         "window": {
+          "usingComponents": {},
           "navigationBarTitleText": "点位检查",
           "titleNView": {
             "buttons": [
@@ -96,9 +100,11 @@
       }
     }
   },
+  "nvueCompiler": "weex",
   "splashscreen": {
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
-  "appname": "移动安全管家"
+  "appname": "移动安全管家",
+  "compilerVersion": "2.0.0"
 }

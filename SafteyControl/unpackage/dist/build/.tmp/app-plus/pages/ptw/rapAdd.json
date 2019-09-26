@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "新增安全措施"
+  "navigationBarTitleText": "新增安全措施",
+  "usingComponents": {
+    "uni-drawer": "/components/drawer/uni-drawer"
+  }
 }

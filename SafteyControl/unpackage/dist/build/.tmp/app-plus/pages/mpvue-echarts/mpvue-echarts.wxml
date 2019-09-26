@@ -1,2 +1,1 @@
-<import src="./mpvue-echarts.vue.wxml" />
-    <template is="18e9acfc" data="{{ ...$root['0'], $root }}"/>
+<view class="container"><view class="canvasView"><view class="canvas-bar"><view class="title">饼图示例</view><button class="update-btn" type="primary" size="mini" data-event-opts="{{[['tap',[['updatePie',['$event']]]]]}}" bindtap="__e">修改饼状图数据</button></view><mpvue-echarts class="vue-ref" vue-id="1" echarts="{{echarts}}" onInit="{{pieInit}}" canvasId="pie" data-ref="pieChart" bind:__l="__l"></mpvue-echarts></view><view class="canvasView"><view class="title">折线图示例</view><mpvue-echarts class="vue-ref" vue-id="2" echarts="{{echarts}}" onInit="{{lineInit}}" canvasId="line" data-ref="lineChart" bind:__l="__l"></mpvue-echarts></view></view>

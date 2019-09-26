@@ -1,3 +1,8 @@
 {
-  "navigationBarTitleText": "隐患上报"
+  "navigationBarTitleText": "隐患上报",
+  "usingComponents": {
+    "uni-list": "/components/list/uni-list/uni-list",
+    "uni-list-item": "/components/list/uni-list-item/uni-list-item",
+    "uni-icon": "/components/list/uni-icon/uni-icon"
+  }
 }

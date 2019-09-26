@@ -120,7 +120,8 @@
 	width: 100rpx;
 	height: 40rpx;
 	border-color: #2D68AA;
-	border-radius: 5rpx;
+	-webkit-border-radius: 5rpx;
+	        border-radius: 5rpx;
 	border-width: 1rpx;
 	border-style: solid;
 	color: #2D68AA;
@@ -134,7 +135,8 @@
 	width: 100rpx;
 	height: 40rpx;
 	border-color: #C8C7CC;
-	border-radius: 5rpx;
+	-webkit-border-radius: 5rpx;
+	        border-radius: 5rpx;
 	border-width: 1rpx;
 	border-style: solid;
 	color: #C8C7CC;

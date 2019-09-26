@@ -1,4 +1,5 @@
 {
+  "usingComponents": {},
   "navigationBarTitleText": "报警事件类型统计",
   "titleNView": {
     "buttons": [

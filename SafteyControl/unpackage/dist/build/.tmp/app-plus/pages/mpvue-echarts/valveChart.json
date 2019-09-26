@@ -8,5 +8,12 @@
         "fontSize": "22px"
       }
     ]
+  },
+  "usingComponents": {
+    "mpvue-echarts": "/components/mpvue-echarts/src/echarts",
+    "hj-dragabledrawer": "/components/drawer/hj-dragabledrawer",
+    "uni-list": "/components/list/uni-list/uni-list",
+    "uni-list-item": "/components/list/uni-list-item/uni-list-item",
+    "uni-icon": "/components/list/uni-icon/uni-icon"
   }
 }

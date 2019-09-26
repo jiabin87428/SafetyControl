@@ -8,5 +8,8 @@
         "fontSize": "22px"
       }
     ]
+  },
+  "usingComponents": {
+    "m-search": "/components/m-search/m-search"
   }
 }

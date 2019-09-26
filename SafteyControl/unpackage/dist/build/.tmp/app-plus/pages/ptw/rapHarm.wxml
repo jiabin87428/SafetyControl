@@ -1,2 +1,1 @@
-<import src="./rapHarm.vue.wxml" />
-    <template is="2ae3e004" data="{{ ...$root['0'], $root }}"/>
+<view class="baseView"><view class="cellInfoView"><block wx:for="{{harms}}" wx:for-item="item" wx:for-index="idx" wx:key="idx"><block><view data-event-opts="{{[['tap',[['jumpSolution',['$0'],[[['harms','',idx,'whrecordid']]]]]]]}}" class="cellView" bindtap="__e"><view class="infoView"><view class="cellSubView"><view class="cellText">{{item.whnr}}</view></view><image class="arrow" src="../../static/img/rightArrow.png"></image></view><view class="line"></view></view></block></block></view></view>

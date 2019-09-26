@@ -8,5 +8,9 @@
         "fontSize": "22px"
       }
     ]
+  },
+  "usingComponents": {
+    "mpvue-echarts": "/components/mpvue-echarts/src/echarts",
+    "hj-dragabledrawer": "/components/drawer/hj-dragabledrawer"
   }
 }

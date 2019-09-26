@@ -28,13 +28,11 @@
     "pages/ptw/rapHarm",
     "pages/ptw/rapSolution"
   ],
-  "subPackages": [],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarBackgroundColor": "#2D68AA",
     "backgroundColor": "#fbf9fe"
   },
-  "usingComponents": {},
   "tabBar": {
     "color": "#7a7e83",
     "selectedColor": "#0faeff",
@@ -65,23 +63,9 @@
   },
   "nvue": {
     "pages": {
-      "pages/danger/readHistory.html": {
-        "window": {
-          "navigationBarTitleText": "审批阅读历史列表"
-        }
-      },
-      "pages/danger/dangerList.html": {
-        "window": {
-          "navigationBarTitleText": "隐患审批"
-        }
-      },
-      "pages/uni-tabs/uni-tabs.html": {
-        "window": {
-          "navigationBarTitleText": "点位检查11"
-        }
-      },
       "pages/pointList/uni-tabs.html": {
         "window": {
+          "usingComponents": {},
           "navigationBarTitleText": "点位检查",
           "titleNView": {
             "buttons": [
@@ -92,13 +76,39 @@
               }
             ]
           }
-        }
+        },
+        "nvue": true
+      },
+      "pages/uni-tabs/uni-tabs.html": {
+        "window": {
+          "usingComponents": {},
+          "navigationBarTitleText": "点位检查11"
+        },
+        "nvue": true
+      },
+      "pages/danger/dangerList.html": {
+        "window": {
+          "usingComponents": {},
+          "navigationBarTitleText": "隐患审批"
+        },
+        "nvue": true
+      },
+      "pages/danger/readHistory.html": {
+        "window": {
+          "usingComponents": {},
+          "navigationBarTitleText": "审批阅读历史列表"
+        },
+        "nvue": true
       }
     }
   },
+  "nvueCompiler": "weex",
+  "renderer": "auto",
   "splashscreen": {
     "alwaysShowBeforeRender": true,
     "autoclose": false
   },
-  "appname": "移动安全管家"
+  "appname": "移动安全管家",
+  "compilerVersion": "2.3.3",
+  "usingComponents": {}
 }

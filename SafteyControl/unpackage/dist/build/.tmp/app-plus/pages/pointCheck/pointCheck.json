@@ -8,5 +8,8 @@
         "fontSize": "22px"
       }
     ]
+  },
+  "usingComponents": {
+    "uni-drawer": "/components/drawer/uni-drawer"
   }
 }

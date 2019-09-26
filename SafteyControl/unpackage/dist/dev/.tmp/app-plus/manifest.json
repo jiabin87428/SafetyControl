@@ -127,7 +127,9 @@
       }
     },
     "uni-app": {
-      "compilerVersion": "1.7.0"
+      "compilerVersion": "2.0.0",
+      "control": "webview",
+      "nvueCompiler": "weex"
     }
   }
 }

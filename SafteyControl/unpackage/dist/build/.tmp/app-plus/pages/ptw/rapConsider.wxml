@@ -1,2 +1,1 @@
-<import src="./rapConsider.vue.wxml" />
-    <template is="2d1004c9" data="{{ ...$root['0'], $root }}"/>
+<view class="baseView"><view class="cellInfoView"><block wx:for="{{considers}}" wx:for-item="item" wx:for-index="idx" wx:key="idx"><block><view data-event-opts="{{[['tap',[['jumpHarm',['$0'],[[['considers','',idx,'klysrecordid']]]]]]]}}" class="cellView" bindtap="__e"><view class="infoView"><view class="cellSubView"><view class="cellText">{{item.klysnr}}</view></view><image class="arrow" src="../../static/img/rightArrow.png"></image></view><view class="line"></view></view></block></block></view></view>

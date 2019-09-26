@@ -32,7 +32,8 @@
     -webkit-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
-    border-radius: 30rpx;
+    -webkit-border-radius: 30rpx;
+            border-radius: 30rpx;
 }
 .serach .content .content-box.data-v-0427270e {
       width: 100%;
@@ -216,7 +217,8 @@
 }
 .icon-circle.data-v-433cb182{
 	background: #3396fb;
-	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	        border-radius: 100%;
 	width:100rpx;
 	height: 100rpx;
 	line-height:100rpx;
@@ -363,7 +365,8 @@
 	position:absolute;
 	width:64rpx;
 	height:64rpx;
-	border-radius:50%;
+	-webkit-border-radius:50%;
+	        border-radius:50%;
 	z-index:99999;
 	display: -webkit-box;
 	display: -webkit-flex;
